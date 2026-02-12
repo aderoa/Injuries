@@ -20,8 +20,6 @@
   .loading-spinner { width: 40px; height: 40px; border: 3px solid #333; border-top-color: #667eea; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .preview { background: #fff; color: #333; border-radius: 8px; padding: 1rem; overflow-x: auto; margin-top: 1rem; }
-  .preview h2 { color: #1a1a2e !important; }
-  .preview table { width: 100%; }
   .error { text-align: center; padding: 2rem; color: #ef5350; }
   .tab-bar { display: flex; gap: 0.25rem; justify-content: center; margin-bottom: 1rem; }
   .tab-bar button { padding: 0.4rem 0.8rem; border: 1px solid #444; background: #1a1a2e; color: #888; border-radius: 6px 6px 0 0; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
@@ -32,19 +30,17 @@
 <div class="container">
   <header>
     <h1>🏥 NBA Injury Report</h1>
-    <p class="subtitle">Auto-generated from Google Sheets</p>
+    <p class="subtitle">Auto-generated from injuries.json + Google Sheets</p>
   </header>
-
   <div class="toolbar">
-    <button onclick="copyAll()">📋 Copy Full Report</button>
-    <button onclick="copySection(0)">📋 Today's Updates</button>
-    <button onclick="copySection(1)">📋 Full Report</button>
-    <button onclick="copySection(2)">📋 Salary Per Team</button>
-    <button onclick="copySection(3)">📋 Highest-Paid</button>
+    <button onclick="copyAll(this)">📋 Copy Full Report</button>
+    <button onclick="copySection(0, this)">📋 Today's Updates</button>
+    <button onclick="copySection(1, this)">📋 Full Report</button>
+    <button onclick="copySection(2, this)">📋 Salary Per Team</button>
+    <button onclick="copySection(3, this)">📋 Highest-Paid</button>
     <button onclick="refreshData(this)">🔄 Refresh</button>
     <span class="status" id="status"></span>
   </div>
-
   <div class="tab-bar">
     <button class="active" onclick="showTab(0, this)">Today's Updates</button>
     <button onclick="showTab(1, this)">Full Report</button>
@@ -52,146 +48,196 @@
     <button onclick="showTab(3, this)">Highest-Paid</button>
     <button onclick="showTab(-1, this)">All</button>
   </div>
-
-  <div id="loading" class="loading">
-    <div class="loading-spinner"></div>
-    <p>Loading injury data...</p>
-  </div>
-
+  <div id="loading" class="loading"><div class="loading-spinner"></div><p>Loading injury data...</p></div>
   <div id="preview" class="preview" style="display:none;"></div>
   <div id="error" class="error" style="display:none;"></div>
 </div>
-
 <script>
 const SHEET_ID = '2PACX-1vQ-TNS1Zxbcq2Altxh0-yY0LFEPvOXlwI8DjD8FdbSypf_sSWc3Xi6F88DwiOdSmR0FmXLzNicgCDwL';
 const INJ_GID = '306285159';
 const CSV_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
+const JSON_URL = 'injuries.json';
 
-let fullHTML = '';
-let sections = []; // [{title, html}]
+const TEAM_IDS = {
+  'Atlanta':1610612737,'Boston':1610612738,'Brooklyn':1610612751,
+  'Charlotte':1610612766,'Chicago':1610612741,'Cleveland':1610612739,
+  'Dallas':1610612742,'Denver':1610612743,'Detroit':1610612765,
+  'Golden State':1610612744,'Houston':1610612745,'Indiana':1610612754,
+  'LA Clippers':1610612746,'LA Lakers':1610612747,'Memphis':1610612763,
+  'Miami':1610612748,'Milwaukee':1610612749,'Minnesota':1610612750,
+  'New Orleans':1610612740,'New York':1610612752,'Oklahoma City':1610612760,
+  'Orlando':1610612753,'Philadelphia':1610612755,'Phoenix':1610612756,
+  'Portland':1610612757,'Sacramento':1610612758,'San Antonio':1610612759,
+  'Toronto':1610612761,'Utah':1610612762,'Washington':1610612764
+};
 
-function parseCSV(text) {
-  const rows = [];
-  let current = '';
-  let inQuotes = false;
-  let row = [];
-  for (let i = 0; i < text.length; i++) {
-    const ch = text[i];
-    if (ch === '"') {
-      if (inQuotes && text[i + 1] === '"') { current += '"'; i++; }
-      else inQuotes = !inQuotes;
-    } else if (ch === ',' && !inQuotes) {
-      row.push(current); current = '';
-    } else if ((ch === '\n' || ch === '\r') && !inQuotes) {
-      if (ch === '\r' && text[i + 1] === '\n') i++;
-      row.push(current); current = '';
-      rows.push(row); row = [];
-    } else {
-      current += ch;
-    }
+function teamLogo(t){const id=TEAM_IDS[t];return id?`https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg`:'';}
+function logoImg(t){const u=teamLogo(t);return u?`<img src="${u}" width="28" height="28" style="vertical-align:middle;">`:'';}
+function fmtSal(n){if(n>=1e6)return '$'+(n/1e6).toFixed(1)+'M';if(n>=1e3)return '$'+(n/1e3).toFixed(0)+'K';return '$'+n.toLocaleString();}
+function fmtSalFull(n){return '$'+n.toLocaleString();}
+function fmtDate(iso){const d=new Date(iso+'T00:00:00');const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[d.getMonth()]+' '+d.getDate();}
+function sColor(s){return{Out:'#d32f2f',Doubtful:'#e64a19',Questionable:'#f9a825',Probable:'#388e3c',Available:'#2e7d32'}[s]||'#666';}
+function sSpan(s){return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`;}
+
+function parseCSV(text){
+  const rows=[];let cur='',inQ=false,row=[];
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(c==='"'){if(inQ&&text[i+1]==='"'){cur+='"';i++;}else inQ=!inQ;}
+    else if(c===','&&!inQ){row.push(cur);cur='';}
+    else if((c==='\n'||c==='\r')&&!inQ){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cur);cur='';rows.push(row);row=[];}
+    else cur+=c;
   }
-  if (current || row.length) { row.push(current); rows.push(row); }
+  if(cur||row.length){row.push(cur);rows.push(row);}
   return rows;
 }
 
-async function loadData() {
-  const url = CSV_URL;
-  try {
-    console.log('Fetching:', url);
-    const resp = await fetch(url);
-    console.log('Response status:', resp.status);
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}: ${resp.statusText}`);
-    const text = await resp.text();
-    console.log('CSV length:', text.length, 'First 200 chars:', text.substring(0, 200));
-    if (text.length < 100) throw new Error('CSV too short — tab may not be published. Content: ' + text.substring(0, 100));
-    const rows = parseCSV(text);
+let sectionsHTML=[];
 
-    // Extract col 24 (0-indexed)
-    const htmlLines = [];
-    for (const row of rows) {
-      if (row.length > 24 && row[24].trim()) {
-        htmlLines.push(row[24]);
+async function loadData(){
+  try{
+    const [csvR,jsonR]=await Promise.all([fetch(CSV_URL),fetch(JSON_URL+'?t='+Date.now())]);
+    if(!csvR.ok) throw new Error('CSV fetch failed: '+csvR.status);
+    if(!jsonR.ok) throw new Error('injuries.json fetch failed: '+jsonR.status);
+    const csvText=await csvR.text();
+    const injuries=await jsonR.json();
+    const rows=parseCSV(csvText);
+
+    // Roster: cols 38(team),40(player),44(salary)
+    const roster={},teamSal={};
+    for(const r of rows){
+      if(r.length>44){
+        const team=(r[38]||'').trim(),player=(r[40]||'').trim(),sal=(r[44]||'').trim();
+        if(player&&player!=='PLAYER'&&team&&/^\d+$/.test(sal)){
+          roster[player]={team,salary:parseInt(sal)};
+          teamSal[team]=(teamSal[team]||0)+parseInt(sal);
+        }
       }
     }
-    fullHTML = htmlLines.join('\n');
 
-    // Split into sections by <h2> tags
-    sections = [];
-    const h2Pattern = /<h2[^>]*>([^<]+)<\/h2>/g;
-    const h2Matches = [...fullHTML.matchAll(h2Pattern)];
-    for (let i = 0; i < h2Matches.length; i++) {
-      const start = h2Matches[i].index;
-      const end = (i + 1 < h2Matches.length) ? h2Matches[i + 1].index : fullHTML.length;
-      sections.push({
-        title: h2Matches[i][1].trim(),
-        html: fullHTML.substring(start, end).replace(/<br>\s*$/, '')
-      });
+    // Days since last game: cols 71(player),73(days)
+    const daysMap={};
+    for(const r of rows){
+      if(r.length>73){
+        const p=(r[71]||'').trim(),d=(r[73]||'').trim();
+        if(p&&/^\d+$/.test(d)) daysMap[p]=parseInt(d);
+      }
     }
 
-    document.getElementById('loading').style.display = 'none';
-    const preview = document.getElementById('preview');
-    preview.style.display = 'block';
-    showTab(0, document.querySelector('.tab-bar button'));
+    // Process JSON
+    const today=new Date().toISOString().slice(0,10);
+    const latest={},prev={};
+    for(const e of injuries){
+      if(latest[e.player]) prev[e.player]=latest[e.player];
+      latest[e.player]=e;
+    }
 
-    const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    document.getElementById('status').textContent = `Updated ${t}`;
-  } catch (err) {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('error').style.display = 'block';
-    document.getElementById('error').innerHTML = `<p>Error: ${err.message}</p><p style="font-size:0.75rem;color:#999;margin-top:0.5rem;word-break:break-all;">URL: ${url}</p>`;
+    // T1: Today's Updates
+    const todayData=injuries.filter(e=>e.date===today).map(e=>{
+      const p=prev[e.player],r=roster[e.player]||{};
+      return{player:e.player,status:e.status,injury:e.injury,prevStatus:p?p.status:'',team:r.team||'',salary:r.salary||0};
+    }).sort((a,b)=>a.team.localeCompare(b.team)||b.salary-a.salary);
+
+    // T2: Full Report
+    const fullRpt=[];
+    for(const[player,entry]of Object.entries(latest)){
+      if(entry.status==='Available')continue;
+      const r=roster[player]||{};if(!r.team)continue;
+      fullRpt.push({player,status:entry.status,injury:entry.injury,date:entry.date,team:r.team,salary:r.salary||0});
+    }
+    fullRpt.sort((a,b)=>a.team.localeCompare(b.team)||b.salary-a.salary);
+
+    // T3: Salary Per Team
+    const tInj={};
+    for(const e of fullRpt) tInj[e.team]=(tInj[e.team]||0)+e.salary;
+    const salTeam=Object.entries(tInj).map(([t,inj])=>({
+      team:t,injSal:inj,totSal:teamSal[t]||1,pct:((inj/(teamSal[t]||1))*100).toFixed(2)
+    })).sort((a,b)=>b.injSal-a.injSal);
+
+    // T4: Highest-Paid
+    const highest=fullRpt.map(e=>({...e,days:daysMap[e.player]!==undefined?daysMap[e.player]:''})).sort((a,b)=>b.salary-a.salary);
+
+    // Build HTML
+    const TH='style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
+    const TD='style="text-align:center;height:40px;border:1px solid #eee;padding:4px;"';
+    const TBL='style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
+    const H2='style="font-size:22px;font-weight:700;margin-bottom:10px;"';
+
+    // Today's Updates
+    let h1=`<h2 ${H2}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
+    let lt='';
+    todayData.forEach((e,i)=>{
+      const bg=i%2===0?'#fff':'#f9f9f9';
+      const logo=e.team!==lt?logoImg(e.team):'';lt=e.team;
+      h1+=`<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus?sSpan(e.prevStatus):''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
+    });
+    h1+='</tbody></table>';
+
+    // Full Report
+    let h2=`<h2 ${H2}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>NOTES</th><th ${TH}>DATE</th></tr></thead><tbody>`;
+    lt='';
+    fullRpt.forEach((e,i)=>{
+      const bg=i%2===0?'#fff':'#f9f9f9';
+      const logo=e.team!==lt?logoImg(e.team):'';lt=e.team;
+      h2+=`<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${e.injury}</td><td ${TD}>${fmtDate(e.date)}</td></tr>`;
+    });
+    h2+='</tbody></table>';
+
+    // Salary Per Team
+    let h3=`<h2 ${H2}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
+    salTeam.forEach((e,i)=>{
+      const bg=i%2===0?'#fff':'#f9f9f9';
+      h3+=`<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.team}</strong></td><td ${TD}>${fmtSalFull(e.injSal)}</td><td ${TD}>${e.pct}%</td></tr>`;
+    });
+    h3+='</tbody></table>';
+
+    // Highest-Paid
+    let h4=`<h2 ${H2}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
+    highest.forEach((e,i)=>{
+      const bg=i%2===0?'#fff':'#f9f9f9';
+      h4+=`<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days}</td></tr>`;
+    });
+    h4+='</tbody></table>';
+
+    sectionsHTML=[h1,h2,h3,h4];
+    document.getElementById('loading').style.display='none';
+    document.getElementById('preview').style.display='block';
+    showTab(0,document.querySelector('.tab-bar button'));
+    document.getElementById('status').textContent='Updated '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  }catch(err){
+    document.getElementById('loading').style.display='none';
+    document.getElementById('error').style.display='block';
+    document.getElementById('error').innerHTML=`<p>${err.message}</p>`;
+    console.error(err);
   }
 }
 
-function showTab(idx, btn) {
-  document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
+function showTab(idx,btn){
+  document.querySelectorAll('.tab-bar button').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  const preview = document.getElementById('preview');
-  if (idx === -1) {
-    preview.innerHTML = fullHTML;
-  } else if (sections[idx]) {
-    preview.innerHTML = sections[idx].html;
-  }
+  document.getElementById('preview').innerHTML=idx===-1?sectionsHTML.join('<br>'):(sectionsHTML[idx]||'');
 }
-
-function copyToClipboard(html, btn) {
-  const orig = btn.textContent;
-  navigator.clipboard.writeText(html).then(() => {
-    btn.textContent = '✓ Copied!';
-    btn.classList.add('success');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
-  }).catch(() => {
-    const ta = document.createElement('textarea');
-    ta.value = html; document.body.appendChild(ta); ta.select();
-    document.execCommand('copy'); document.body.removeChild(ta);
-    btn.textContent = '✓ Copied!';
-    setTimeout(() => btn.textContent = orig, 2000);
+function copyToClipboard(html,btn){
+  const orig=btn.textContent;
+  const w=`<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${html}\n</div>`;
+  navigator.clipboard.writeText(w).then(()=>{
+    btn.textContent='✓ Copied!';btn.classList.add('success');
+    setTimeout(()=>{btn.textContent=orig;btn.classList.remove('success');},2000);
+  }).catch(()=>{
+    const ta=document.createElement('textarea');ta.value=w;document.body.appendChild(ta);ta.select();
+    document.execCommand('copy');document.body.removeChild(ta);
+    btn.textContent='✓ Copied!';btn.classList.add('success');
+    setTimeout(()=>{btn.textContent=orig;btn.classList.remove('success');},2000);
   });
 }
-
-function copyAll() {
-  const btn = event.target.closest('button');
-  // Wrap in the div wrapper like the original
-  const wrapped = `<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">\n${sections.map(s => s.html).join('\n<br>\n')}\n</div>`;
-  copyToClipboard(wrapped, btn);
-}
-
-function copySection(idx) {
-  const btn = event.target.closest('button');
-  if (!sections[idx]) return;
-  const wrapped = `<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">\n${sections[idx].html}\n</div>`;
-  copyToClipboard(wrapped, btn);
-}
-
-async function refreshData(btn) {
-  const orig = btn.textContent;
-  btn.textContent = '⏳ Refreshing...';
-  btn.disabled = true;
+function copyAll(btn){copyToClipboard(sectionsHTML.join('\n<br>\n'),btn);}
+function copySection(idx,btn){if(sectionsHTML[idx])copyToClipboard(sectionsHTML[idx],btn);}
+async function refreshData(btn){
+  const o=btn.textContent;btn.textContent='⏳ Refreshing...';btn.disabled=true;
   await loadData();
-  btn.textContent = '✓ Updated!';
-  btn.classList.add('success');
-  setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); btn.disabled = false; }, 2000);
+  btn.textContent='✓ Updated!';btn.classList.add('success');
+  setTimeout(()=>{btn.textContent=o;btn.classList.remove('success');btn.disabled=false;},2000);
 }
-
 loadData();
 </script>
 </body>
