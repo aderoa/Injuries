@@ -910,5 +910,17 @@
     "status": "Questionable",
     "injury": "Low Back Injury Management",
     "date": "2026-02-12"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-02-12"
   }
 ]
