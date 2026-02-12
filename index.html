@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA Injury Report</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f23; color: #e0e0e0; min-height: 100vh; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+  header { text-align: center; padding: 1.5rem 0 1rem; }
+  header h1 { font-size: 1.8rem; color: #fff; }
+  header .subtitle { color: #888; font-size: 0.9rem; margin-top: 0.3rem; }
+  .toolbar { display: flex; gap: 0.5rem; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; padding: 0.75rem; background: #1a1a2e; border-radius: 8px; }
+  .toolbar button { padding: 0.5rem 1rem; border: 1px solid #667eea; background: #667eea22; color: #667eea; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
+  .toolbar button:hover { background: #667eea44; }
+  .toolbar button.success { background: #16a34a; color: white; border-color: #16a34a; }
+  .toolbar .status { font-size: 0.75rem; color: #888; margin-left: 0.5rem; }
+  .loading { text-align: center; padding: 3rem; }
+  .loading-spinner { width: 40px; height: 40px; border: 3px solid #333; border-top-color: #667eea; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .preview { background: #fff; color: #333; border-radius: 8px; padding: 1rem; overflow-x: auto; margin-top: 1rem; }
+  .preview h2 { color: #1a1a2e !important; }
+  .preview table { width: 100%; }
+  .error { text-align: center; padding: 2rem; color: #ef5350; }
+  .tab-bar { display: flex; gap: 0.25rem; justify-content: center; margin-bottom: 1rem; }
+  .tab-bar button { padding: 0.4rem 0.8rem; border: 1px solid #444; background: #1a1a2e; color: #888; border-radius: 6px 6px 0 0; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
+  .tab-bar button.active { background: #667eea33; color: #667eea; border-color: #667eea; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🏥 NBA Injury Report</h1>
+    <p class="subtitle">Auto-generated from Google Sheets</p>
+  </header>
+
+  <div class="toolbar">
+    <button onclick="copyAll()">📋 Copy Full Report</button>
+    <button onclick="copySection(0)">📋 Today's Updates</button>
+    <button onclick="copySection(1)">📋 Full Report</button>
+    <button onclick="copySection(2)">📋 Salary Per Team</button>
+    <button onclick="copySection(3)">📋 Highest-Paid</button>
+    <button onclick="refreshData(this)">🔄 Refresh</button>
+    <span class="status" id="status"></span>
+  </div>
+
+  <div class="tab-bar">
+    <button class="active" onclick="showTab(0, this)">Today's Updates</button>
+    <button onclick="showTab(1, this)">Full Report</button>
+    <button onclick="showTab(2, this)">Salary Per Team</button>
+    <button onclick="showTab(3, this)">Highest-Paid</button>
+    <button onclick="showTab(-1, this)">All</button>
+  </div>
+
+  <div id="loading" class="loading">
+    <div class="loading-spinner"></div>
+    <p>Loading injury data...</p>
+  </div>
+
+  <div id="preview" class="preview" style="display:none;"></div>
+  <div id="error" class="error" style="display:none;"></div>
+</div>
+
+<script>
+const SHEET_ID = '2PACX-1vSg6im6IYB6HXMGzQbmmBnLw9SfQLzxCSo8OfChxlJLhsB6BBCO0wPF_TMch0YgAbtFqYkwDWrsxRe7';
+const INJ_GID = '306285159';
+const CSV_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
+
+let fullHTML = '';
+let sections = []; // [{title, html}]
+
+function parseCSV(text) {
+  const rows = [];
+  let current = '';
+  let inQuotes = false;
+  let row = [];
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (ch === '"') {
+      if (inQuotes && text[i + 1] === '"') { current += '"'; i++; }
+      else inQuotes = !inQuotes;
+    } else if (ch === ',' && !inQuotes) {
+      row.push(current); current = '';
+    } else if ((ch === '\n' || ch === '\r') && !inQuotes) {
+      if (ch === '\r' && text[i + 1] === '\n') i++;
+      row.push(current); current = '';
+      rows.push(row); row = [];
+    } else {
+      current += ch;
+    }
+  }
+  if (current || row.length) { row.push(current); rows.push(row); }
+  return rows;
+}
+
+async function loadData() {
+  try {
+    const resp = await fetch(CSV_URL);
+    if (!resp.ok) throw new Error('Failed to fetch CSV');
+    const text = await resp.text();
+    const rows = parseCSV(text);
+
+    // Extract col 24 (0-indexed)
+    const htmlLines = [];
+    for (const row of rows) {
+      if (row.length > 24 && row[24].trim()) {
+        htmlLines.push(row[24]);
+      }
+    }
+    fullHTML = htmlLines.join('\n');
+
+    // Split into sections by <h2> tags
+    sections = [];
+    const h2Pattern = /<h2[^>]*>([^<]+)<\/h2>/g;
+    const h2Matches = [...fullHTML.matchAll(h2Pattern)];
+    for (let i = 0; i < h2Matches.length; i++) {
+      const start = h2Matches[i].index;
+      const end = (i + 1 < h2Matches.length) ? h2Matches[i + 1].index : fullHTML.length;
+      sections.push({
+        title: h2Matches[i][1].trim(),
+        html: fullHTML.substring(start, end).replace(/<br>\s*$/, '')
+      });
+    }
+
+    document.getElementById('loading').style.display = 'none';
+    const preview = document.getElementById('preview');
+    preview.style.display = 'block';
+    showTab(0, document.querySelector('.tab-bar button'));
+
+    const t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    document.getElementById('status').textContent = `Updated ${t}`;
+  } catch (err) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('error').textContent = `Error: ${err.message}`;
+  }
+}
+
+function showTab(idx, btn) {
+  document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const preview = document.getElementById('preview');
+  if (idx === -1) {
+    preview.innerHTML = fullHTML;
+  } else if (sections[idx]) {
+    preview.innerHTML = sections[idx].html;
+  }
+}
+
+function copyToClipboard(html, btn) {
+  const orig = btn.textContent;
+  navigator.clipboard.writeText(html).then(() => {
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('success');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => btn.textContent = orig, 2000);
+  });
+}
+
+function copyAll() {
+  const btn = event.target.closest('button');
+  // Wrap in the div wrapper like the original
+  const wrapped = `<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">\n${sections.map(s => s.html).join('\n<br>\n')}\n</div>`;
+  copyToClipboard(wrapped, btn);
+}
+
+function copySection(idx) {
+  const btn = event.target.closest('button');
+  if (!sections[idx]) return;
+  const wrapped = `<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">\n${sections[idx].html}\n</div>`;
+  copyToClipboard(wrapped, btn);
+}
+
+async function refreshData(btn) {
+  const orig = btn.textContent;
+  btn.textContent = '⏳ Refreshing...';
+  btn.disabled = true;
+  await loadData();
+  btn.textContent = '✓ Updated!';
+  btn.classList.add('success');
+  setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); btn.disabled = false; }, 2000);
+}
+
+loadData();
+</script>
+</body>
+</html>
