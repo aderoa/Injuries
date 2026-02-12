@@ -394,7 +394,7 @@ function rebuildTables() {
   // T1: Today's Updates
   const todayData = allInjuries.filter(e => e.date === today && !purgedPlayers.has(e.player)).map(e => {
     const p = prev[e.player], r = roster[e.player] || {};
-    return { player: e.player, status: e.status, injury: e.injury, prevStatus: p ? p.status : '', team: r.team || '', salary: r.salary || 0 };
+    return { player: e.player, status: e.status, injury: e.injury, prevStatus: p ? p.status : 'Available', team: r.team || '', salary: r.salary || 0 };
   }).sort((a, b) => a.team.localeCompare(b.team) || sOrder(a.status) - sOrder(b.status) || b.salary - a.salary);
 
   // T2: Full Report — show all including Available (until purged)
