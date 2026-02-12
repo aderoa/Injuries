@@ -856,5 +856,17 @@
     "status": "Out",
     "injury": "Left Knee Surgery",
     "date": "2026-02-12"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Questionable",
+    "injury": "Left Foot Soreness",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Questionable",
+    "injury": "Right Foot Plantar Fasciitis",
+    "date": "2026-02-12"
   }
 ]
