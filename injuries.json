@@ -1132,5 +1132,17 @@
     "status": "Available",
     "injury": "Left Quad Contusion",
     "date": "2026-02-11"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-02-11"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "status": "Out",
+    "injury": "Left Knee Surgery",
+    "date": "2026-02-11"
   }
 ]
