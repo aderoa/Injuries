@@ -75,6 +75,17 @@
   .btn-open-gh:hover { color: #667eea; border-color: #667eea; }
   .btn-clear { background: transparent; color: #ef5350; border: 1px solid #ef535044; }
   .btn-clear:hover { background: #ef535022; }
+  .btn-save-gh { background: #16a34a; color: white; border: none; }
+  .btn-save-gh:hover { background: #15803d; }
+  .btn-save-gh.success { background: #16a34a; color: white; }
+  .gh-status { font-size: 0.8rem; color: #888; }
+  .token-row { display: flex; gap: 0.5rem; align-items: center; margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid #333; }
+  .token-row label { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
+  .token-row input { flex: 1; padding: 0.4rem 0.5rem; border: 1px solid #444; background: #0f0f23; color: #e0e0e0; border-radius: 4px; font-size: 0.8rem; font-family: monospace; }
+  .token-row .btn-token-toggle, .token-row .btn-token-save { padding: 0.4rem 0.6rem; border: 1px solid #444; background: #1a1a2e; color: #888; border-radius: 4px; cursor: pointer; font-size: 0.75rem; }
+  .token-row .btn-token-save { color: #667eea; border-color: #667eea; }
+  .token-row.saved label { color: #16a34a; }
+  .token-row.saved input { border-color: #16a34a44; }
 </style>
 </head>
 <body>
@@ -118,9 +129,16 @@
     <div class="pending-list" id="pendingList"></div>
 
     <div class="admin-actions">
-      <button class="btn-copy-json" onclick="copyJSON(this)">📋 Copy Updated JSON</button>
-      <button class="btn-open-gh" onclick="window.open('https://github.com/aderoa/Injuries/edit/main/injuries.json','_blank')">✏️ Open on GitHub</button>
+      <button class="btn-save-gh" onclick="saveToGitHub(this)">💾 Save to GitHub</button>
+      <button class="btn-copy-json" onclick="copyJSON(this)">📋 Copy JSON</button>
       <button class="btn-clear" onclick="clearPending()">🗑 Clear Pending</button>
+      <span class="gh-status" id="ghStatus"></span>
+    </div>
+    <div class="token-row" id="tokenRow">
+      <label>GitHub Token</label>
+      <input type="password" id="ghToken" placeholder="github_pat_..." value="">
+      <button class="btn-token-toggle" onclick="toggleToken()">👁</button>
+      <button class="btn-token-save" onclick="saveToken()">Save</button>
     </div>
   </div>
 
@@ -202,6 +220,7 @@ if (window.location.search.includes('admin')) {
   isAdmin = true;
   document.getElementById('adminBanner').style.display = 'block';
   document.getElementById('adminPanel').classList.add('visible');
+  initToken();
 }
 
 // Set default date to today
@@ -310,6 +329,74 @@ function renderPending() {
     </div>`;
   });
   el.innerHTML = html;
+}
+
+// ===== GITHUB TOKEN =====
+const GH_OWNER = 'aderoa';
+const GH_REPO = 'Injuries';
+const GH_FILE = 'injuries.json';
+
+function initToken() {
+  const saved = localStorage.getItem('gh_injuries_token');
+  if (saved) {
+    document.getElementById('ghToken').value = saved;
+    document.getElementById('tokenRow').classList.add('saved');
+  }
+}
+function saveToken() {
+  const token = document.getElementById('ghToken').value.trim();
+  if (token) {
+    localStorage.setItem('gh_injuries_token', token);
+    document.getElementById('tokenRow').classList.add('saved');
+    document.getElementById('ghStatus').textContent = '✓ Token saved';
+    setTimeout(() => document.getElementById('ghStatus').textContent = '', 2000);
+  }
+}
+function toggleToken() {
+  const inp = document.getElementById('ghToken');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+async function saveToGitHub(btn) {
+  const token = document.getElementById('ghToken').value.trim();
+  if (!token) { document.getElementById('ghStatus').textContent = '⚠ Enter token first'; return; }
+
+  const merged = [...baseInjuries, ...pendingEntries];
+  if (!pendingEntries.length) { document.getElementById('ghStatus').textContent = 'No pending changes'; setTimeout(() => document.getElementById('ghStatus').textContent = '', 2000); return; }
+
+  const orig = btn.textContent;
+  btn.textContent = '⏳ Saving...'; btn.disabled = true;
+  const statusEl = document.getElementById('ghStatus');
+
+  try {
+    // Get current file SHA (required for updates)
+    const getR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!getR.ok) throw new Error(getR.status === 401 ? 'Bad token — check your PAT' : 'Failed to read file: ' + getR.status);
+    const fileData = await getR.json();
+    const sha = fileData.sha;
+
+    // Push updated content
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(merged, null, 2))));
+    const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      method: 'PUT',
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: `Update injuries ${new Date().toISOString().slice(0,10)}`, content, sha })
+    });
+    if (!putR.ok) { const err = await putR.json(); throw new Error(err.message || 'Push failed: ' + putR.status); }
+
+    // Success: merge pending into base, clear pending
+    baseInjuries = merged;
+    pendingEntries = [];
+    renderPending();
+    btn.textContent = '✓ Saved!'; btn.classList.add('success');
+    statusEl.textContent = `Pushed ${new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`;
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); btn.disabled = false; }, 2000);
+  } catch (err) {
+    statusEl.textContent = '❌ ' + err.message;
+    btn.textContent = orig; btn.disabled = false;
+  }
 }
 
 // ===== COPY JSON =====
@@ -455,7 +542,7 @@ function rebuildTables() {
   const nbaTotInj = salTeam.reduce((a, e) => a + e.injSal, 0);
   const nbaPct = ((nbaTotInj / (nbaTotSal || 1)) * 100).toFixed(2);
   const nbaBg = salTeam.length % 2 === 0 ? '#fff' : '#f9f9f9';
-  h3 += `<tr style="background:${nbaBg};"><td ${TD}></td><td ${TD}><img src="https://cdn.nba.com/manage/2020/10/NBA20Primary20Logo-1-259x588.jpg" width="14" height="28" style="vertical-align:middle;"></td><td ${TD}><strong>NBA</strong></td><td ${TD}>${fmtSalFull(nbaTotInj)}</td><td ${TD}>${nbaPct}%</td></tr>`;
+  h3 += `<tr style="background:${nbaBg};"><td ${TD}></td><td ${TD}><img src="https://cdn.nba.com/manage/2020/10/NBA20Primary20Logo-1-259x588.jpg" width="14" height="28" style="vertical-align:middle;"></td><td ${TD}><strong>TOTAL</strong></td><td ${TD}>${fmtSalFull(nbaTotInj)}</td><td ${TD}>${nbaPct}%</td></tr>`;
   h3 += '</tbody></table>';
 
   let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
