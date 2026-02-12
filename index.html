@@ -291,6 +291,8 @@ function addEntry() {
   if (!injury) { document.getElementById('inputInjury').focus(); return; }
   if (!date) { document.getElementById('inputDate').focus(); return; }
 
+  // Remove any existing pending entry for same player + same date (replace, don't stack)
+  pendingEntries = pendingEntries.filter(e => !(e.player === player && e.date === date));
   pendingEntries.push({ player, status, injury, date });
 
   // Clear form
@@ -359,11 +361,21 @@ function toggleToken() {
   inp.type = inp.type === 'password' ? 'text' : 'password';
 }
 
+// Dedup: keep only the latest entry per player per day
+function dedupeInjuries(entries) {
+  const map = {};
+  for (const e of entries) {
+    const key = e.player + '|' + e.date;
+    map[key] = e; // last one wins
+  }
+  return Object.values(map).sort((a, b) => a.date.localeCompare(b.date) || a.player.localeCompare(b.player));
+}
+
 async function saveToGitHub(btn) {
   const token = document.getElementById('ghToken').value.trim();
   if (!token) { document.getElementById('ghStatus').textContent = '⚠ Enter token first'; return; }
 
-  const merged = [...baseInjuries, ...pendingEntries];
+  const merged = dedupeInjuries([...baseInjuries, ...pendingEntries]);
   if (!pendingEntries.length) { document.getElementById('ghStatus').textContent = 'No pending changes'; setTimeout(() => document.getElementById('ghStatus').textContent = '', 2000); return; }
 
   const orig = btn.textContent;
@@ -403,7 +415,7 @@ async function saveToGitHub(btn) {
 
 // ===== COPY JSON =====
 function copyJSON(btn) {
-  const merged = [...baseInjuries, ...pendingEntries];
+  const merged = dedupeInjuries([...baseInjuries, ...pendingEntries]);
   const json = JSON.stringify(merged, null, 2);
   const orig = btn.textContent;
   navigator.clipboard.writeText(json).then(() => {
@@ -471,7 +483,7 @@ async function loadData() {
 }
 
 function rebuildTables() {
-  const allInjuries = [...baseInjuries, ...pendingEntries];
+  const allInjuries = dedupeInjuries([...baseInjuries, ...pendingEntries]);
   const today = new Date().toISOString().slice(0, 10);
 
   const latest = {}, prevDay = {};
@@ -595,7 +607,7 @@ function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
 function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
 
 async function purgeAvailable(btn) {
-  const allInjuries = [...baseInjuries, ...pendingEntries];
+  const allInjuries = dedupeInjuries([...baseInjuries, ...pendingEntries]);
   const latest = {};
   for (const e of allInjuries) latest[e.player] = e;
   
