@@ -922,5 +922,17 @@
     "status": "Out",
     "injury": "Right Knee Soreness",
     "date": "2026-02-12"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Probable",
+    "injury": "Left Foot Strain",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-12"
   }
 ]
