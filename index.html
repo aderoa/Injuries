@@ -24,6 +24,57 @@
   .tab-bar { display: flex; gap: 0.25rem; justify-content: center; margin-bottom: 1rem; }
   .tab-bar button { padding: 0.4rem 0.8rem; border: 1px solid #444; background: #1a1a2e; color: #888; border-radius: 6px 6px 0 0; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
   .tab-bar button.active { background: #667eea33; color: #667eea; border-color: #667eea; }
+
+  /* Admin panel */
+  .admin-banner { background: #e65100; color: white; text-align: center; padding: 0.5rem; font-weight: 700; font-size: 0.9rem; border-radius: 6px; margin-bottom: 1rem; }
+  .admin-panel { background: #1a1a2e; border: 1px solid #667eea; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; display: none; }
+  .admin-panel.visible { display: block; }
+  .admin-section-title { color: #667eea; font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; }
+
+  .add-form { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: flex-end; margin-bottom: 1rem; }
+  .add-form .field { display: flex; flex-direction: column; gap: 0.25rem; }
+  .add-form label { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+  .add-form input, .add-form select { padding: 0.5rem 0.6rem; border: 1px solid #444; background: #0f0f23; color: #e0e0e0; border-radius: 4px; font-size: 0.9rem; }
+  .add-form input:focus, .add-form select:focus { outline: none; border-color: #667eea; }
+  .add-form .field-player { flex: 1; min-width: 180px; position: relative; }
+  .add-form .field-injury { flex: 1; min-width: 200px; }
+  .add-form .field-status select { min-width: 140px; }
+  .add-form .field-date input { width: 145px; }
+  .add-btn { padding: 0.5rem 1.2rem; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 700; font-size: 0.9rem; align-self: flex-end; }
+  .add-btn:hover { background: #5a6fd6; }
+
+  /* Autocomplete */
+  .autocomplete-list { position: absolute; top: 100%; left: 0; right: 0; background: #1e1e3a; border: 1px solid #667eea; border-top: none; border-radius: 0 0 4px 4px; max-height: 200px; overflow-y: auto; z-index: 100; display: none; }
+  .autocomplete-list.show { display: block; }
+  .autocomplete-item { padding: 0.4rem 0.6rem; cursor: pointer; font-size: 0.85rem; display: flex; justify-content: space-between; }
+  .autocomplete-item:hover, .autocomplete-item.selected { background: #667eea33; }
+  .autocomplete-item .team-hint { color: #888; font-size: 0.75rem; }
+
+  /* Pending entries */
+  .pending-list { margin-top: 0.75rem; }
+  .pending-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+  .pending-count { color: #667eea; font-size: 0.85rem; font-weight: 600; }
+  .pending-entry { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.6rem; background: #0f0f23; border-radius: 4px; margin-bottom: 0.3rem; font-size: 0.85rem; }
+  .pending-entry .pe-player { font-weight: 700; min-width: 160px; }
+  .pending-entry .pe-status { min-width: 100px; font-weight: 700; }
+  .pending-entry .pe-status.Out { color: #ef5350; }
+  .pending-entry .pe-status.Doubtful { color: #ff7043; }
+  .pending-entry .pe-status.Questionable { color: #fdd835; }
+  .pending-entry .pe-status.Probable { color: #66bb6a; }
+  .pending-entry .pe-status.Available { color: #4caf50; }
+  .pending-entry .pe-injury { flex: 1; color: #aaa; }
+  .pending-entry .pe-date { color: #888; min-width: 90px; }
+  .pending-entry .pe-remove { color: #ef5350; cursor: pointer; font-size: 1.1rem; padding: 0 0.3rem; }
+  .pending-entry .pe-remove:hover { color: #f44336; }
+
+  .admin-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid #333; }
+  .admin-actions button { padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; }
+  .btn-copy-json { background: #667eea; color: white; border: none; }
+  .btn-copy-json:hover { background: #5a6fd6; }
+  .btn-open-gh { background: transparent; color: #888; border: 1px solid #444; }
+  .btn-open-gh:hover { color: #667eea; border-color: #667eea; }
+  .btn-clear { background: transparent; color: #ef5350; border: 1px solid #ef535044; }
+  .btn-clear:hover { background: #ef535022; }
 </style>
 </head>
 <body>
@@ -32,6 +83,47 @@
     <h1>🏥 NBA Injury Report</h1>
     <p class="subtitle">Auto-generated from injuries.json + Google Sheets</p>
   </header>
+
+  <div id="adminBanner" class="admin-banner" style="display:none;">⚙️ ADMIN MODE</div>
+
+  <div id="adminPanel" class="admin-panel">
+    <div class="admin-section-title">➕ Add Injury Update</div>
+    <div class="add-form">
+      <div class="field field-player">
+        <label>Player</label>
+        <input type="text" id="inputPlayer" placeholder="Start typing..." autocomplete="off">
+        <div class="autocomplete-list" id="acList"></div>
+      </div>
+      <div class="field field-status">
+        <label>Status</label>
+        <select id="inputStatus">
+          <option value="Out">Out</option>
+          <option value="Doubtful">Doubtful</option>
+          <option value="Questionable">Questionable</option>
+          <option value="Probable">Probable</option>
+          <option value="Available">Available</option>
+        </select>
+      </div>
+      <div class="field field-injury">
+        <label>Injury</label>
+        <input type="text" id="inputInjury" placeholder="e.g. Left Knee Soreness">
+      </div>
+      <div class="field field-date">
+        <label>Date</label>
+        <input type="date" id="inputDate">
+      </div>
+      <button class="add-btn" onclick="addEntry()">+ Add</button>
+    </div>
+
+    <div class="pending-list" id="pendingList"></div>
+
+    <div class="admin-actions">
+      <button class="btn-copy-json" onclick="copyJSON(this)">📋 Copy Updated JSON</button>
+      <button class="btn-open-gh" onclick="window.open('https://github.com/aderoa/Injuries/edit/main/injuries.json','_blank')">✏️ Open on GitHub</button>
+      <button class="btn-clear" onclick="clearPending()">🗑 Clear Pending</button>
+    </div>
+  </div>
+
   <div class="toolbar">
     <button onclick="copyAll(this)">📋 Copy Full Report</button>
     <button onclick="copySection(0, this)">📋 Today's Updates</button>
@@ -41,6 +133,7 @@
     <button onclick="refreshData(this)">🔄 Refresh</button>
     <span class="status" id="status"></span>
   </div>
+
   <div class="tab-bar">
     <button class="active" onclick="showTab(0, this)">Today's Updates</button>
     <button onclick="showTab(1, this)">Full Report</button>
@@ -48,6 +141,7 @@
     <button onclick="showTab(3, this)">Highest-Paid</button>
     <button onclick="showTab(-1, this)">All</button>
   </div>
+
   <div id="loading" class="loading"><div class="loading-spinner"></div><p>Loading injury data...</p></div>
   <div id="preview" class="preview" style="display:none;"></div>
   <div id="error" class="error" style="display:none;"></div>
@@ -92,152 +186,310 @@ function parseCSV(text){
   return rows;
 }
 
-let sectionsHTML=[];
+// ===== STATE =====
+let sectionsHTML = [];
+let baseInjuries = []; // from JSON file
+let pendingEntries = []; // added via admin
+let roster = {}; // player -> {team, salary}
+let playerList = []; // for autocomplete
+let isAdmin = false;
 
-async function loadData(){
-  try{
-    const [csvR,jsonR]=await Promise.all([fetch(CSV_URL),fetch(JSON_URL+'?t='+Date.now())]);
-    if(!csvR.ok) throw new Error('CSV fetch failed: '+csvR.status);
-    if(!jsonR.ok) throw new Error('injuries.json fetch failed: '+jsonR.status);
-    const csvText=await csvR.text();
-    const injuries=await jsonR.json();
-    const rows=parseCSV(csvText);
+// Admin mode: ?admin in URL
+if (window.location.search.includes('admin')) {
+  isAdmin = true;
+  document.getElementById('adminBanner').style.display = 'block';
+  document.getElementById('adminPanel').classList.add('visible');
+}
 
-    // Roster: cols 38(team),40(player),44(salary)
-    const roster={},teamSal={};
-    for(const r of rows){
-      if(r.length>44){
-        const team=(r[38]||'').trim(),player=(r[40]||'').trim(),sal=(r[44]||'').trim();
-        if(player&&player!=='PLAYER'&&team&&/^\d+$/.test(sal)){
-          roster[player]={team,salary:parseInt(sal)};
-          teamSal[team]=(teamSal[team]||0)+parseInt(sal);
+// Set default date to today
+document.getElementById('inputDate').value = new Date().toISOString().slice(0, 10);
+
+// ===== AUTOCOMPLETE =====
+const inputPlayer = document.getElementById('inputPlayer');
+const acList = document.getElementById('acList');
+let acIndex = -1;
+
+inputPlayer.addEventListener('input', function() {
+  const val = this.value.toLowerCase().trim();
+  acList.innerHTML = '';
+  acIndex = -1;
+  if (val.length < 2) { acList.classList.remove('show'); return; }
+
+  const matches = playerList.filter(p => p.name.toLowerCase().includes(val)).slice(0, 12);
+  if (!matches.length) { acList.classList.remove('show'); return; }
+
+  matches.forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'autocomplete-item';
+    div.innerHTML = `<span>${p.name}</span><span class="team-hint">${p.team}</span>`;
+    div.addEventListener('click', () => selectPlayer(p));
+    acList.appendChild(div);
+  });
+  acList.classList.add('show');
+});
+
+inputPlayer.addEventListener('keydown', function(e) {
+  const items = acList.querySelectorAll('.autocomplete-item');
+  if (!items.length) return;
+  if (e.key === 'ArrowDown') { e.preventDefault(); acIndex = Math.min(acIndex + 1, items.length - 1); highlightAC(items); }
+  else if (e.key === 'ArrowUp') { e.preventDefault(); acIndex = Math.max(acIndex - 1, 0); highlightAC(items); }
+  else if (e.key === 'Enter' && acIndex >= 0) { e.preventDefault(); items[acIndex].click(); }
+  else if (e.key === 'Escape') { acList.classList.remove('show'); }
+});
+
+function highlightAC(items) {
+  items.forEach((it, i) => it.classList.toggle('selected', i === acIndex));
+}
+
+function selectPlayer(p) {
+  inputPlayer.value = p.name;
+  acList.classList.remove('show');
+  // Auto-fill last known injury if exists
+  const lastEntry = [...baseInjuries, ...pendingEntries].reverse().find(e => e.player === p.name);
+  if (lastEntry && lastEntry.injury) {
+    document.getElementById('inputInjury').value = lastEntry.injury;
+  }
+  document.getElementById('inputStatus').focus();
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.field-player')) acList.classList.remove('show');
+});
+
+// ===== ADD / REMOVE ENTRIES =====
+function addEntry() {
+  const player = inputPlayer.value.trim();
+  const status = document.getElementById('inputStatus').value;
+  const injury = document.getElementById('inputInjury').value.trim();
+  const date = document.getElementById('inputDate').value;
+
+  if (!player) { inputPlayer.focus(); return; }
+  if (!injury) { document.getElementById('inputInjury').focus(); return; }
+  if (!date) { document.getElementById('inputDate').focus(); return; }
+
+  pendingEntries.push({ player, status, injury, date });
+
+  // Clear form
+  inputPlayer.value = '';
+  document.getElementById('inputInjury').value = '';
+  document.getElementById('inputStatus').value = 'Out';
+  inputPlayer.focus();
+
+  renderPending();
+  rebuildTables();
+}
+
+function removeEntry(idx) {
+  pendingEntries.splice(idx, 1);
+  renderPending();
+  rebuildTables();
+}
+
+function clearPending() {
+  if (pendingEntries.length && !confirm('Clear all pending entries?')) return;
+  pendingEntries = [];
+  renderPending();
+  rebuildTables();
+}
+
+function renderPending() {
+  const el = document.getElementById('pendingList');
+  if (!pendingEntries.length) { el.innerHTML = ''; return; }
+
+  let html = `<div class="pending-header"><span class="pending-count">📝 ${pendingEntries.length} pending update${pendingEntries.length > 1 ? 's' : ''}</span></div>`;
+  pendingEntries.forEach((e, i) => {
+    html += `<div class="pending-entry">
+      <span class="pe-player">${e.player}</span>
+      <span class="pe-status ${e.status}">${e.status}</span>
+      <span class="pe-injury">${e.injury}</span>
+      <span class="pe-date">${e.date}</span>
+      <span class="pe-remove" onclick="removeEntry(${i})">✕</span>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+// ===== COPY JSON =====
+function copyJSON(btn) {
+  const merged = [...baseInjuries, ...pendingEntries];
+  const json = JSON.stringify(merged, null, 2);
+  const orig = btn.textContent;
+  navigator.clipboard.writeText(json).then(() => {
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => btn.textContent = orig, 2000);
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = json; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => btn.textContent = orig, 2000);
+  });
+}
+
+// ===== DATA LOADING =====
+let teamSalaries = {};
+let daysMap = {};
+
+async function loadData() {
+  try {
+    const [csvR, jsonR] = await Promise.all([fetch(CSV_URL), fetch(JSON_URL + '?t=' + Date.now())]);
+    if (!csvR.ok) throw new Error('CSV fetch failed: ' + csvR.status);
+    if (!jsonR.ok) throw new Error('injuries.json fetch failed: ' + jsonR.status);
+
+    const csvText = await csvR.text();
+    baseInjuries = await jsonR.json();
+    const rows = parseCSV(csvText);
+
+    // Roster
+    roster = {}; teamSalaries = {};
+    for (const r of rows) {
+      if (r.length > 44) {
+        const team = (r[38] || '').trim(), player = (r[40] || '').trim(), sal = (r[44] || '').trim();
+        if (player && player !== 'PLAYER' && team && /^\d+$/.test(sal)) {
+          roster[player] = { team, salary: parseInt(sal) };
+          teamSalaries[team] = (teamSalaries[team] || 0) + parseInt(sal);
         }
       }
     }
 
-    // Days since last game: cols 71(player),73(days)
-    const daysMap={};
-    for(const r of rows){
-      if(r.length>73){
-        const p=(r[71]||'').trim(),d=(r[73]||'').trim();
-        if(p&&/^\d+$/.test(d)) daysMap[p]=parseInt(d);
+    // Player list for autocomplete (sorted by name)
+    playerList = Object.entries(roster).map(([name, r]) => ({ name, team: r.team })).sort((a, b) => a.name.localeCompare(b.name));
+
+    // Days since last game
+    daysMap = {};
+    for (const r of rows) {
+      if (r.length > 73) {
+        const p = (r[71] || '').trim(), d = (r[73] || '').trim();
+        if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
       }
     }
 
-    // Process JSON
-    const today=new Date().toISOString().slice(0,10);
-    const latest={},prev={};
-    for(const e of injuries){
-      if(latest[e.player]) prev[e.player]=latest[e.player];
-      latest[e.player]=e;
-    }
+    rebuildTables();
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('preview').style.display = 'block';
+    showTab(0, document.querySelector('.tab-bar button'));
+    document.getElementById('status').textContent = 'Updated ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-    // T1: Today's Updates
-    const todayData=injuries.filter(e=>e.date===today).map(e=>{
-      const p=prev[e.player],r=roster[e.player]||{};
-      return{player:e.player,status:e.status,injury:e.injury,prevStatus:p?p.status:'',team:r.team||'',salary:r.salary||0};
-    }).sort((a,b)=>a.team.localeCompare(b.team)||b.salary-a.salary);
-
-    // T2: Full Report
-    const fullRpt=[];
-    for(const[player,entry]of Object.entries(latest)){
-      if(entry.status==='Available')continue;
-      const r=roster[player]||{};if(!r.team)continue;
-      fullRpt.push({player,status:entry.status,injury:entry.injury,date:entry.date,team:r.team,salary:r.salary||0});
-    }
-    fullRpt.sort((a,b)=>a.team.localeCompare(b.team)||b.salary-a.salary);
-
-    // T3: Salary Per Team
-    const tInj={};
-    for(const e of fullRpt) tInj[e.team]=(tInj[e.team]||0)+e.salary;
-    const salTeam=Object.entries(tInj).map(([t,inj])=>({
-      team:t,injSal:inj,totSal:teamSal[t]||1,pct:((inj/(teamSal[t]||1))*100).toFixed(2)
-    })).sort((a,b)=>b.injSal-a.injSal);
-
-    // T4: Highest-Paid
-    const highest=fullRpt.map(e=>({...e,days:daysMap[e.player]!==undefined?daysMap[e.player]:''})).sort((a,b)=>b.salary-a.salary);
-
-    // Build HTML
-    const TH='style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
-    const TD='style="text-align:center;height:40px;border:1px solid #eee;padding:4px;"';
-    const TBL='style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
-    const H2='style="font-size:22px;font-weight:700;margin-bottom:10px;"';
-
-    // Today's Updates
-    let h1=`<h2 ${H2}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
-    let lt='';
-    todayData.forEach((e,i)=>{
-      const bg=i%2===0?'#fff':'#f9f9f9';
-      const logo=e.team!==lt?logoImg(e.team):'';lt=e.team;
-      h1+=`<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus?sSpan(e.prevStatus):''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
-    });
-    h1+='</tbody></table>';
-
-    // Full Report
-    let h2=`<h2 ${H2}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>NOTES</th><th ${TH}>DATE</th></tr></thead><tbody>`;
-    lt='';
-    fullRpt.forEach((e,i)=>{
-      const bg=i%2===0?'#fff':'#f9f9f9';
-      const logo=e.team!==lt?logoImg(e.team):'';lt=e.team;
-      h2+=`<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${e.injury}</td><td ${TD}>${fmtDate(e.date)}</td></tr>`;
-    });
-    h2+='</tbody></table>';
-
-    // Salary Per Team
-    let h3=`<h2 ${H2}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
-    salTeam.forEach((e,i)=>{
-      const bg=i%2===0?'#fff':'#f9f9f9';
-      h3+=`<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.team}</strong></td><td ${TD}>${fmtSalFull(e.injSal)}</td><td ${TD}>${e.pct}%</td></tr>`;
-    });
-    h3+='</tbody></table>';
-
-    // Highest-Paid
-    let h4=`<h2 ${H2}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
-    highest.forEach((e,i)=>{
-      const bg=i%2===0?'#fff':'#f9f9f9';
-      h4+=`<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days}</td></tr>`;
-    });
-    h4+='</tbody></table>';
-
-    sectionsHTML=[h1,h2,h3,h4];
-    document.getElementById('loading').style.display='none';
-    document.getElementById('preview').style.display='block';
-    showTab(0,document.querySelector('.tab-bar button'));
-    document.getElementById('status').textContent='Updated '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
-  }catch(err){
-    document.getElementById('loading').style.display='none';
-    document.getElementById('error').style.display='block';
-    document.getElementById('error').innerHTML=`<p>${err.message}</p>`;
+  } catch (err) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('error').innerHTML = `<p>${err.message}</p>`;
     console.error(err);
   }
 }
 
-function showTab(idx,btn){
-  document.querySelectorAll('.tab-bar button').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('preview').innerHTML=idx===-1?sectionsHTML.join('<br>'):(sectionsHTML[idx]||'');
+function rebuildTables() {
+  const allInjuries = [...baseInjuries, ...pendingEntries];
+  const today = new Date().toISOString().slice(0, 10);
+
+  const latest = {}, prev = {};
+  for (const e of allInjuries) {
+    if (latest[e.player]) prev[e.player] = latest[e.player];
+    latest[e.player] = e;
+  }
+
+  // T1: Today's Updates
+  const todayData = allInjuries.filter(e => e.date === today).map(e => {
+    const p = prev[e.player], r = roster[e.player] || {};
+    return { player: e.player, status: e.status, injury: e.injury, prevStatus: p ? p.status : '', team: r.team || '', salary: r.salary || 0 };
+  }).sort((a, b) => a.team.localeCompare(b.team) || b.salary - a.salary);
+
+  // T2: Full Report
+  const fullRpt = [];
+  for (const [player, entry] of Object.entries(latest)) {
+    if (entry.status === 'Available') continue;
+    const r = roster[player] || {}; if (!r.team) continue;
+    fullRpt.push({ player, status: entry.status, injury: entry.injury, date: entry.date, team: r.team, salary: r.salary || 0 });
+  }
+  fullRpt.sort((a, b) => a.team.localeCompare(b.team) || b.salary - a.salary);
+
+  // T3: Salary Per Team
+  const tInj = {};
+  for (const e of fullRpt) tInj[e.team] = (tInj[e.team] || 0) + e.salary;
+  const salTeam = Object.entries(tInj).map(([t, inj]) => ({
+    team: t, injSal: inj, totSal: teamSalaries[t] || 1, pct: ((inj / (teamSalaries[t] || 1)) * 100).toFixed(2)
+  })).sort((a, b) => b.injSal - a.injSal);
+
+  // T4: Highest-Paid
+  const highest = fullRpt.map(e => ({ ...e, days: daysMap[e.player] !== undefined ? daysMap[e.player] : '' })).sort((a, b) => b.salary - a.salary);
+
+  // Build HTML
+  const TH = 'style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
+  const TD = 'style="text-align:center;height:40px;border:1px solid #eee;padding:4px;"';
+  const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
+  const H2S = 'style="font-size:22px;font-weight:700;margin-bottom:10px;"';
+
+  let h1 = `<h2 ${H2S}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
+  let lt = '';
+  todayData.forEach((e, i) => {
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
+    h1 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus ? sSpan(e.prevStatus) : ''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
+  });
+  h1 += '</tbody></table>';
+
+  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>NOTES</th><th ${TH}>DATE</th></tr></thead><tbody>`;
+  lt = '';
+  fullRpt.forEach((e, i) => {
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
+    h2 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${e.injury}</td><td ${TD}>${fmtDate(e.date)}</td></tr>`;
+  });
+  h2 += '</tbody></table>';
+
+  let h3 = `<h2 ${H2S}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
+  salTeam.forEach((e, i) => {
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    h3 += `<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.team}</strong></td><td ${TD}>${fmtSalFull(e.injSal)}</td><td ${TD}>${e.pct}%</td></tr>`;
+  });
+  h3 += '</tbody></table>';
+
+  let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
+  highest.forEach((e, i) => {
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    h4 += `<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days}</td></tr>`;
+  });
+  h4 += '</tbody></table>';
+
+  sectionsHTML = [h1, h2, h3, h4];
+
+  // Re-render active tab
+  const activeTab = document.querySelector('.tab-bar button.active');
+  if (activeTab) {
+    const idx = [...document.querySelectorAll('.tab-bar button')].indexOf(activeTab);
+    const tabIdx = idx === 4 ? -1 : idx;
+    document.getElementById('preview').innerHTML = tabIdx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[tabIdx] || '');
+  }
 }
-function copyToClipboard(html,btn){
-  const orig=btn.textContent;
-  const w=`<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${html}\n</div>`;
-  navigator.clipboard.writeText(w).then(()=>{
-    btn.textContent='✓ Copied!';btn.classList.add('success');
-    setTimeout(()=>{btn.textContent=orig;btn.classList.remove('success');},2000);
-  }).catch(()=>{
-    const ta=document.createElement('textarea');ta.value=w;document.body.appendChild(ta);ta.select();
-    document.execCommand('copy');document.body.removeChild(ta);
-    btn.textContent='✓ Copied!';btn.classList.add('success');
-    setTimeout(()=>{btn.textContent=orig;btn.classList.remove('success');},2000);
+
+// ===== UI =====
+function showTab(idx, btn) {
+  document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('preview').innerHTML = idx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[idx] || '');
+}
+function copyToClipboard(html, btn) {
+  const orig = btn.textContent;
+  const w = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${html}\n</div>`;
+  navigator.clipboard.writeText(w).then(() => {
+    btn.textContent = '✓ Copied!'; btn.classList.add('success');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  }).catch(() => {
+    const ta = document.createElement('textarea'); ta.value = w; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    btn.textContent = '✓ Copied!'; btn.classList.add('success');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
   });
 }
-function copyAll(btn){copyToClipboard(sectionsHTML.join('\n<br>\n'),btn);}
-function copySection(idx,btn){if(sectionsHTML[idx])copyToClipboard(sectionsHTML[idx],btn);}
-async function refreshData(btn){
-  const o=btn.textContent;btn.textContent='⏳ Refreshing...';btn.disabled=true;
+function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
+function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
+async function refreshData(btn) {
+  const o = btn.textContent; btn.textContent = '⏳ Refreshing...'; btn.disabled = true;
   await loadData();
-  btn.textContent='✓ Updated!';btn.classList.add('success');
-  setTimeout(()=>{btn.textContent=o;btn.classList.remove('success');btn.disabled=false;},2000);
+  btn.textContent = '✓ Updated!'; btn.classList.add('success');
+  setTimeout(() => { btn.textContent = o; btn.classList.remove('success'); btn.disabled = false; }, 2000);
 }
+
 loadData();
 </script>
 </body>
