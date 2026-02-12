@@ -868,5 +868,29 @@
     "status": "Questionable",
     "injury": "Right Foot Plantar Fasciitis",
     "date": "2026-02-12"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Out",
+    "injury": "Abdominal Strain / Left Ankle Sprain",
+    "date": "2026-01-22"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Branden Carlson",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Out",
+    "injury": "Right Soleus Injury Management",
+    "date": "2026-02-12"
   }
 ]
