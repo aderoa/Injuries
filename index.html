@@ -474,15 +474,22 @@ function rebuildTables() {
   const allInjuries = [...baseInjuries, ...pendingEntries];
   const today = new Date().toISOString().slice(0, 10);
 
-  const latest = {}, prev = {};
+  const latest = {}, prevDay = {};
   for (const e of allInjuries) {
-    if (latest[e.player]) prev[e.player] = latest[e.player];
+    // prevDay = most recent entry from a day BEFORE today
+    if (e.date !== today) prevDay[e.player] = e;
     latest[e.player] = e;
   }
 
-  // T1: Today's Updates
-  const todayData = allInjuries.filter(e => e.date === today && !purgedPlayers.has(e.player)).map(e => {
-    const p = prev[e.player], r = roster[e.player] || {};
+  // T1: Today's Updates — only the LATEST entry per player for today
+  const todayLatest = {};
+  for (const e of allInjuries) {
+    if (e.date === today && !purgedPlayers.has(e.player)) {
+      todayLatest[e.player] = e; // last one wins
+    }
+  }
+  const todayData = Object.values(todayLatest).map(e => {
+    const p = prevDay[e.player], r = roster[e.player] || {};
     return { player: e.player, status: e.status, injury: e.injury, prevStatus: p ? p.status : 'Available', team: r.team || '', salary: r.salary || 0 };
   }).sort((a, b) => a.team.localeCompare(b.team) || sOrder(a.status) - sOrder(b.status) || b.salary - a.salary);
 
