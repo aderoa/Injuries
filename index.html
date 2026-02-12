@@ -150,6 +150,7 @@
     <button onclick="copySection(3, this)">📋 Highest-Paid</button>
     <button onclick="refreshData(this)">🔄 Refresh</button>
     <button onclick="purgeAvailable(this)">🧹 Purge Available</button>
+    <button id="undoPurge" onclick="undoPurge(this)" style="display:none;border-color:#ff9800;color:#ff9800;background:#ff980022;">↩ Undo Purge</button>
     <span class="status" id="status"></span>
   </div>
 
@@ -214,6 +215,7 @@ let roster = {}; // player -> {team, salary}
 let playerList = []; // for autocomplete
 let isAdmin = false;
 let purgedPlayers = new Set();
+let prePurgeBackup = null; // stores JSON before last purge
 
 // Admin mode: ?admin in URL
 if (window.location.search.includes('admin')) {
@@ -585,23 +587,94 @@ function copyToClipboard(html, btn) {
 function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
 function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
 
-function purgeAvailable(btn) {
+async function purgeAvailable(btn) {
   const allInjuries = [...baseInjuries, ...pendingEntries];
   const latest = {};
   for (const e of allInjuries) latest[e.player] = e;
-  let count = 0;
+  
+  // Find players whose latest status is Available
+  const toPurge = new Set();
   for (const [player, entry] of Object.entries(latest)) {
-    if (entry.status === 'Available' && !purgedPlayers.has(player)) {
-      purgedPlayers.add(player);
-      count++;
-    }
+    if (entry.status === 'Available') toPurge.add(player);
   }
-  if (count === 0) { btn.textContent = 'No Available to purge'; setTimeout(() => btn.textContent = '🧹 Purge Available', 2000); return; }
-  rebuildTables();
+  if (toPurge.size === 0) { btn.textContent = 'No Available to purge'; setTimeout(() => btn.textContent = '🧹 Purge Available', 2000); return; }
+
+  const token = document.getElementById('ghToken').value.trim();
+  if (!token) { document.getElementById('ghStatus').textContent = '⚠ Enter token to purge permanently'; return; }
+
   const orig = btn.textContent;
-  btn.textContent = `✓ Purged ${count} players`;
-  btn.classList.add('success');
-  setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  btn.textContent = '⏳ Purging...'; btn.disabled = true;
+
+  // Save backup before purging
+  prePurgeBackup = allInjuries;
+
+  // Remove all entries for purged players
+  const cleaned = allInjuries.filter(e => !toPurge.has(e.player));
+
+  try {
+    const getR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!getR.ok) throw new Error(getR.status === 401 ? 'Bad token' : 'Failed: ' + getR.status);
+    const sha = (await getR.json()).sha;
+
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(cleaned, null, 2))));
+    const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      method: 'PUT',
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: `Purge ${toPurge.size} available players ${new Date().toISOString().slice(0,10)}`, content, sha })
+    });
+    if (!putR.ok) throw new Error('Push failed: ' + putR.status);
+
+    baseInjuries = cleaned;
+    pendingEntries = [];
+    purgedPlayers = new Set();
+    renderPending();
+    rebuildTables();
+    btn.textContent = `✓ Purged ${toPurge.size} players`;
+    document.getElementById('ghStatus').textContent = `Purged & saved ${new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`;
+    document.getElementById('undoPurge').style.display = 'inline-block';
+    setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 2000);
+  } catch (err) {
+    document.getElementById('ghStatus').textContent = '❌ ' + err.message;
+    btn.textContent = orig; btn.disabled = false;
+  }
+}
+async function undoPurge(btn) {
+  if (!prePurgeBackup) { btn.style.display = 'none'; return; }
+  const token = document.getElementById('ghToken').value.trim();
+  if (!token) { document.getElementById('ghStatus').textContent = '⚠ Need token to undo'; return; }
+
+  const orig = btn.textContent;
+  btn.textContent = '⏳ Reverting...'; btn.disabled = true;
+
+  try {
+    const getR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!getR.ok) throw new Error('Failed: ' + getR.status);
+    const sha = (await getR.json()).sha;
+
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(prePurgeBackup, null, 2))));
+    const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      method: 'PUT',
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: `Undo purge ${new Date().toISOString().slice(0,10)}`, content, sha })
+    });
+    if (!putR.ok) throw new Error('Push failed: ' + putR.status);
+
+    baseInjuries = prePurgeBackup;
+    pendingEntries = [];
+    prePurgeBackup = null;
+    purgedPlayers = new Set();
+    renderPending();
+    rebuildTables();
+    btn.style.display = 'none';
+    document.getElementById('ghStatus').textContent = `✓ Purge reverted ${new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`;
+  } catch (err) {
+    document.getElementById('ghStatus').textContent = '❌ ' + err.message;
+    btn.textContent = orig; btn.disabled = false;
+  }
 }
 async function refreshData(btn) {
   const o = btn.textContent; btn.textContent = '⏳ Refreshing...'; btn.disabled = true;
