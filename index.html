@@ -131,15 +131,16 @@
     <button onclick="copySection(2, this)">📋 Salary Per Team</button>
     <button onclick="copySection(3, this)">📋 Highest-Paid</button>
     <button onclick="refreshData(this)">🔄 Refresh</button>
+    <button onclick="purgeAvailable(this)">🧹 Purge Available</button>
     <span class="status" id="status"></span>
   </div>
 
   <div class="tab-bar">
-    <button class="active" onclick="showTab(0, this)">Today's Updates</button>
+    <button onclick="showTab(0, this)">Today's Updates</button>
     <button onclick="showTab(1, this)">Full Report</button>
     <button onclick="showTab(2, this)">Salary Per Team</button>
     <button onclick="showTab(3, this)">Highest-Paid</button>
-    <button onclick="showTab(-1, this)">All</button>
+    <button class="active" onclick="showTab(-1, this)">All</button>
   </div>
 
   <div id="loading" class="loading"><div class="loading-spinner"></div><p>Loading injury data...</p></div>
@@ -172,6 +173,7 @@ function fmtSalFull(n){return '$'+n.toLocaleString();}
 function fmtDate(iso){const d=new Date(iso+'T00:00:00');const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[d.getMonth()]+' '+d.getDate();}
 function sColor(s){return{Out:'#d32f2f',Doubtful:'#e64a19',Questionable:'#f9a825',Probable:'#388e3c',Available:'#2e7d32'}[s]||'#666';}
 function sSpan(s){return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`;}
+function sOrder(s){return{Out:0,Doubtful:1,Questionable:2,Probable:3,Available:4}[s]??5;}
 
 function parseCSV(text){
   const rows=[];let cur='',inQ=false,row=[];
@@ -193,6 +195,7 @@ let pendingEntries = []; // added via admin
 let roster = {}; // player -> {team, salary}
 let playerList = []; // for autocomplete
 let isAdmin = false;
+let purgedPlayers = new Set();
 
 // Admin mode: ?admin in URL
 if (window.location.search.includes('admin')) {
@@ -367,7 +370,7 @@ async function loadData() {
     rebuildTables();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('preview').style.display = 'block';
-    showTab(0, document.querySelector('.tab-bar button'));
+    showTab(-1, document.querySelector('.tab-bar button.active'));
     document.getElementById('status').textContent = 'Updated ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
   } catch (err) {
@@ -389,29 +392,35 @@ function rebuildTables() {
   }
 
   // T1: Today's Updates
-  const todayData = allInjuries.filter(e => e.date === today).map(e => {
+  const todayData = allInjuries.filter(e => e.date === today && !purgedPlayers.has(e.player)).map(e => {
     const p = prev[e.player], r = roster[e.player] || {};
     return { player: e.player, status: e.status, injury: e.injury, prevStatus: p ? p.status : '', team: r.team || '', salary: r.salary || 0 };
-  }).sort((a, b) => a.team.localeCompare(b.team) || b.salary - a.salary);
+  }).sort((a, b) => a.team.localeCompare(b.team) || sOrder(a.status) - sOrder(b.status) || b.salary - a.salary);
 
-  // T2: Full Report
+  // T2: Full Report — show all including Available (until purged)
   const fullRpt = [];
   for (const [player, entry] of Object.entries(latest)) {
-    if (entry.status === 'Available') continue;
+    if (purgedPlayers.has(player)) continue;
     const r = roster[player] || {}; if (!r.team) continue;
     fullRpt.push({ player, status: entry.status, injury: entry.injury, date: entry.date, team: r.team, salary: r.salary || 0 });
   }
-  fullRpt.sort((a, b) => a.team.localeCompare(b.team) || b.salary - a.salary);
+  fullRpt.sort((a, b) => a.team.localeCompare(b.team) || sOrder(a.status) - sOrder(b.status) || b.salary - a.salary);
 
-  // T3: Salary Per Team
+  // T3: Salary Per Team — only Out/Doubtful count as injured
   const tInj = {};
-  for (const e of fullRpt) tInj[e.team] = (tInj[e.team] || 0) + e.salary;
-  const salTeam = Object.entries(tInj).map(([t, inj]) => ({
-    team: t, injSal: inj, totSal: teamSalaries[t] || 1, pct: ((inj / (teamSalaries[t] || 1)) * 100).toFixed(2)
+  for (const e of fullRpt) {
+    if (e.status === 'Out' || e.status === 'Doubtful') {
+      tInj[e.team] = (tInj[e.team] || 0) + e.salary;
+    }
+  }
+  const allTeams = Object.keys(TEAM_IDS);
+  const salTeam = allTeams.map(t => ({
+    team: t, injSal: tInj[t] || 0, totSal: teamSalaries[t] || 1,
+    pct: (((tInj[t] || 0) / (teamSalaries[t] || 1)) * 100).toFixed(2)
   })).sort((a, b) => b.injSal - a.injSal);
 
-  // T4: Highest-Paid
-  const highest = fullRpt.map(e => ({ ...e, days: daysMap[e.player] !== undefined ? daysMap[e.player] : '' })).sort((a, b) => b.salary - a.salary);
+  // T4: Highest-Paid (exclude Available — they're not injured)
+  const highest = fullRpt.filter(e => e.status !== 'Available').map(e => ({ ...e, days: daysMap[e.player] !== undefined ? daysMap[e.player] : '' })).sort((a, b) => b.salary - a.salary);
 
   // Build HTML
   const TH = 'style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
@@ -442,6 +451,11 @@ function rebuildTables() {
     const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
     h3 += `<tr style="background:${bg};"><td ${TD}>${i+1}</td><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.team}</strong></td><td ${TD}>${fmtSalFull(e.injSal)}</td><td ${TD}>${e.pct}%</td></tr>`;
   });
+  const nbaTotSal = Object.values(teamSalaries).reduce((a, b) => a + b, 0);
+  const nbaTotInj = salTeam.reduce((a, e) => a + e.injSal, 0);
+  const nbaPct = ((nbaTotInj / (nbaTotSal || 1)) * 100).toFixed(2);
+  const nbaBg = salTeam.length % 2 === 0 ? '#fff' : '#f9f9f9';
+  h3 += `<tr style="background:${nbaBg};"><td ${TD}></td><td ${TD}><img src="https://cdn.nba.com/manage/2020/10/NBA20Primary20Logo-1-259x588.jpg" width="14" height="28" style="vertical-align:middle;"></td><td ${TD}><strong>NBA</strong></td><td ${TD}>${fmtSalFull(nbaTotInj)}</td><td ${TD}>${nbaPct}%</td></tr>`;
   h3 += '</tbody></table>';
 
   let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
@@ -483,6 +497,25 @@ function copyToClipboard(html, btn) {
 }
 function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
 function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
+
+function purgeAvailable(btn) {
+  const allInjuries = [...baseInjuries, ...pendingEntries];
+  const latest = {};
+  for (const e of allInjuries) latest[e.player] = e;
+  let count = 0;
+  for (const [player, entry] of Object.entries(latest)) {
+    if (entry.status === 'Available' && !purgedPlayers.has(player)) {
+      purgedPlayers.add(player);
+      count++;
+    }
+  }
+  if (count === 0) { btn.textContent = 'No Available to purge'; setTimeout(() => btn.textContent = '🧹 Purge Available', 2000); return; }
+  rebuildTables();
+  const orig = btn.textContent;
+  btn.textContent = `✓ Purged ${count} players`;
+  btn.classList.add('success');
+  setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+}
 async function refreshData(btn) {
   const o = btn.textContent; btn.textContent = '⏳ Refreshing...'; btn.disabled = true;
   await loadData();
