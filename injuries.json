@@ -910,5 +910,17 @@
     "status": "Out",
     "injury": "Left Knee Injury Management",
     "date": "2026-02-12"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Questionable",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Questionable",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-12"
   }
 ]
