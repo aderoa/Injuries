@@ -194,7 +194,7 @@
   {
     "player": "Ajay Mitchell",
     "status": "Out",
-    "injury": "Abdominal Strain",
+    "injury": "Abdominal Strain / Left Ankle Sprain",
     "date": "2026-01-22"
   },
   {
@@ -644,7 +644,7 @@
   {
     "player": "Alex Sarr",
     "status": "Out",
-    "injury": "Right Hamstring Tightness",
+    "injury": "Right Hamstring Strain",
     "date": "2026-02-11"
   },
   {
@@ -846,87 +846,9 @@
     "date": "2026-02-11"
   },
   {
-    "player": "Alex Sarr",
-    "status": "Out",
-    "injury": "Right Hamstring Strain",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Jaren Jackson Jr",
-    "status": "Out",
-    "injury": "Left Knee Injury Management",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Kyle Kuzma",
-    "status": "Questionable",
-    "injury": "Left Foot Soreness",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Ryan Rollins",
-    "status": "Questionable",
-    "injury": "Right Foot Plantar Fasciitis",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Ajay Mitchell",
-    "status": "Out",
-    "injury": "Abdominal Strain / Left Ankle Sprain",
-    "date": "2026-01-22"
-  },
-  {
-    "player": "Jalen Williams",
-    "status": "Out",
-    "injury": "Right Hamstring Strain",
-    "date": "2026-02-12"
-  },
-  {
     "player": "Branden Carlson",
     "status": "Out",
     "injury": "Low Back Spasms",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Isaiah Hartenstein",
-    "status": "Out",
-    "injury": "Right Soleus Injury Management",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Dillon Brooks",
-    "status": "Out",
-    "injury": "League Suspension",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Robert Williams",
-    "status": "Questionable",
-    "injury": "Left Knee Injury Management",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Deni Avdija",
-    "status": "Questionable",
-    "injury": "Low Back Injury Management",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Lauri Markkanen",
-    "status": "Out",
-    "injury": "Rest",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Deandre Ayton",
-    "status": "Out",
-    "injury": "Right Knee Soreness",
-    "date": "2026-02-12"
-  },
-  {
-    "player": "Naji Marshall",
-    "status": "Probable",
-    "injury": "Left Foot Strain",
     "date": "2026-02-12"
   },
   {
@@ -936,15 +858,75 @@
     "date": "2026-02-12"
   },
   {
-    "player": "Ryan Rollins",
+    "player": "Deandre Ayton",
     "status": "Out",
-    "injury": "Right Foot Plantar Fasciitis",
+    "injury": "Right Knee Soreness",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Questionable",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Dillon Brooks",
+    "status": "Out",
+    "injury": "League Suspension",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Out",
+    "injury": "Right Soleus Injury Management",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
     "date": "2026-02-12"
   },
   {
     "player": "Kyle Kuzma",
     "status": "Available",
     "injury": "Left Foot Soreness",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Out",
+    "injury": "Right Calf Soreness",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Probable",
+    "injury": "Left Foot Strain",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Questionable",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-02-12"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Out",
+    "injury": "Right Foot Plantar Fasciitis",
     "date": "2026-02-12"
   }
 ]
