@@ -30,6 +30,48 @@
   footer a { color: #667eea; text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
+  /* Modern public view */
+  .section-title { font-size: 1.3rem; font-weight: 700; color: #1a1a2e; margin: 1.5rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; }
+  .section-title:first-child { margin-top: 0; }
+  .team-group { margin-bottom: 0.25rem; }
+  .team-group-header { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; background: #f0f4ff; border-radius: 8px; margin-bottom: 0.25rem; }
+  .team-group-header img { width: 24px; height: 24px; }
+  .team-group-header span { font-weight: 700; font-size: 0.85rem; color: #1a1a2e; }
+  .player-row { display: flex; align-items: center; padding: 0.5rem 0.75rem; border-bottom: 1px solid #f0f0f0; transition: background 0.15s; gap: 0.75rem; }
+  .player-row:hover { background: #f8f9ff; }
+  .player-row:last-child { border-bottom: none; }
+  .pr-headshot { width: 48px; height: 36px; border-radius: 6px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); overflow: hidden; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .pr-headshot img { width: 100%; height: 100%; object-fit: cover; }
+  .pr-headshot .initials { color: white; font-weight: 700; font-size: 0.7rem; }
+  .pr-info { flex: 1; min-width: 0; }
+  .pr-name { font-weight: 700; font-size: 0.9rem; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pr-injury { font-size: 0.8rem; color: #6b7280; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pr-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; }
+  .pr-badge.out { background: #fde8e8; color: #d32f2f; }
+  .pr-badge.doubtful { background: #fff3e0; color: #e64a19; }
+  .pr-badge.questionable { background: #fff8e1; color: #f9a825; }
+  .pr-badge.probable { background: #e8f5e9; color: #388e3c; }
+  .pr-badge.available { background: #e8f5e9; color: #2e7d32; }
+  .pr-badge.left-game { background: #e3f2fd; color: #1565c0; }
+  .pr-meta { text-align: right; flex-shrink: 0; min-width: 70px; }
+  .pr-salary { font-weight: 700; font-size: 0.85rem; color: #1a1a2e; }
+  .pr-date { font-size: 0.75rem; color: #8892b0; }
+  .pr-prev { font-size: 0.7rem; color: #8892b0; margin-top: 1px; }
+  .pr-prev span { font-weight: 600; }
+  .rank-num { width: 28px; text-align: center; font-weight: 700; color: #8892b0; font-size: 0.85rem; flex-shrink: 0; }
+  .rank-num.top3 { color: #667eea; font-size: 1rem; }
+  .salary-bar-wrap { flex: 1; }
+  .salary-bar-label { display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 2px; }
+  .salary-bar-label .team-name { font-weight: 700; color: #1a1a2e; }
+  .salary-bar-label .pct { color: #8892b0; }
+  .salary-bar { height: 8px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
+  .salary-bar-fill { height: 100%; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); border-radius: 4px; transition: width 0.3s; }
+  .salary-total { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: #f0f4ff; border-radius: 8px; margin-top: 0.5rem; }
+  .salary-total img { width: 20px; height: 36px; }
+  .salary-total .team-name { font-weight: 700; color: #1a1a2e; }
+  .pr-days { font-size: 0.75rem; color: #8892b0; }
+  .empty-state { text-align: center; padding: 2rem; color: #8892b0; font-size: 0.9rem; }
+
   /* Admin panel */
   .admin-banner { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #1a1a2e; text-align: center; padding: 0.5rem; font-weight: 700; font-size: 0.9rem; border-radius: 6px; margin-bottom: 1rem; }
   .admin-panel { background: rgba(255,255,255,0.05); border: 1px solid #667eea; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; display: none; }
@@ -179,6 +221,8 @@ const SHEET_ID = '2PACX-1vQ-TNS1Zxbcq2Altxh0-yY0LFEPvOXlwI8DjD8FdbSypf_sSWc3Xi6F
 const INJ_GID = '306285159';
 const CSV_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
 const JSON_URL = 'injuries.json';
+const ROSTER_SHEET_ID = '2PACX-1vSg6im6IYB6HXMGzQbmmBnLw9SfQLzxCSo8OfChxlJLhsB6BBCO0wPF_TMch0YgAbtFqYkwDWrsxRe7';
+const ROSTER_CSV_URL = `https://docs.google.com/spreadsheets/d/e/${ROSTER_SHEET_ID}/pub?gid=0&single=true&output=csv`;
 
 const TEAM_IDS = {
   'Atlanta':1610612737,'Boston':1610612738,'Brooklyn':1610612751,
@@ -217,13 +261,23 @@ function parseCSV(text){
 
 // ===== STATE =====
 let sectionsHTML = [];
-let baseInjuries = []; // from JSON file
-let pendingEntries = []; // added via admin
-let roster = {}; // player -> {team, salary}
-let playerList = []; // for autocomplete
+let sectionsDisplay = [];
+let baseInjuries = [];
+let pendingEntries = [];
+let roster = {};
+let headshots = {};
+let playerList = [];
 let isAdmin = false;
 let purgedPlayers = new Set();
-let prePurgeBackup = null; // stores JSON before last purge
+let prePurgeBackup = null;
+
+function initials(name) { return name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase(); }
+function badgeClass(s) { return (s||'').toLowerCase().replace(/\s+/g,'-'); }
+function hsImg(name) {
+  const url = headshots[name];
+  if (url) return `<div class="pr-headshot"><img src="${url}" onerror="this.parentElement.innerHTML='<span class=\\'initials\\'>${initials(name)}</span>'"></div>`;
+  return `<div class="pr-headshot"><span class="initials">${initials(name)}</span></div>`;
+}
 
 // Admin mode: ?admin in URL
 if (window.location.search.includes('admin')) {
@@ -481,6 +535,26 @@ async function loadData() {
       }
     }
 
+    // Fetch headshots from Depth Charts roster CSV (non-blocking)
+    try {
+      const rosterR = await fetch(ROSTER_CSV_URL);
+      if (rosterR.ok) {
+        const rosterRows = parseCSV(await rosterR.text());
+        if (rosterRows.length > 1) {
+          const hdr = rosterRows[0];
+          const pi = hdr.findIndex(h => h.toUpperCase() === 'PLAYER');
+          const hi = hdr.findIndex(h => h.toUpperCase() === 'HEADSHOT');
+          if (pi >= 0 && hi >= 0) {
+            for (let i = 1; i < rosterRows.length; i++) {
+              const name = (rosterRows[i][pi] || '').trim();
+              const hs = (rosterRows[i][hi] || '').trim();
+              if (name && hs) headshots[name] = hs;
+            }
+          }
+        }
+      }
+    } catch(e) { console.warn('Headshots unavailable:', e); }
+
     rebuildTables();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('preview').style.display = 'block';
@@ -588,20 +662,67 @@ function rebuildTables() {
 
   sectionsHTML = [h1, h2, h3, h4];
 
+  // ===== MODERN DISPLAY (public view) =====
+  function teamHdr(t) { return `<div class="team-group-header"><img src="${teamLogo(t)}" alt="${t}"><span>${t}</span></div>`; }
+  function playerCard(e, extras) {
+    return `<div class="player-row">${hsImg(e.player)}<div class="pr-info"><div class="pr-name">${e.player}</div><div class="pr-injury">${e.injury || ''}</div>${extras||''}</div><span class="pr-badge ${badgeClass(e.status)}">${e.status}</span><div class="pr-meta"><div class="pr-salary">${fmtSal(e.salary)}</div>${e._dateLine||''}</div></div>`;
+  }
+
+  // D1: Today's Updates
+  let d1 = '<div class="section-title">Today\'s Injury Updates</div>';
+  if (!todayData.length) { d1 += '<div class="empty-state">No updates today</div>'; }
+  else {
+    let lt2 = '';
+    todayData.forEach(e => {
+      if (e.team !== lt2) { d1 += teamHdr(e.team); lt2 = e.team; }
+      const prev = `<div class="pr-prev">was <span style="color:${sColor(e.prevStatus)}">${e.prevStatus}</span></div>`;
+      d1 += playerCard({...e, _dateLine:''}, prev);
+    });
+  }
+
+  // D2: Full Report
+  let d2 = '<div class="section-title">Full Injury Report</div>';
+  let lt3 = '';
+  fullRpt.forEach(e => {
+    if (e.team !== lt3) { d2 += teamHdr(e.team); lt3 = e.team; }
+    d2 += playerCard({...e, _dateLine:`<div class="pr-date">${fmtDate(e.date)}</div>`});
+  });
+
+  // D3: Salary Per Team
+  const maxInj = Math.max(...salTeam.map(e => e.injSal), 1);
+  let d3 = '<div class="section-title">Injured Salary Per Team</div>';
+  salTeam.forEach((e, i) => {
+    const pct = (e.injSal / maxInj * 100).toFixed(0);
+    d3 += `<div class="player-row"><span class="rank-num ${i<3?'top3':''}">${i+1}</span><img src="${teamLogo(e.team)}" width="28" height="28" style="flex-shrink:0;"><div class="salary-bar-wrap"><div class="salary-bar-label"><span class="team-name">${e.team}</span><span class="pct">${fmtSalFull(e.injSal)} · ${e.pct}%</span></div><div class="salary-bar"><div class="salary-bar-fill" style="width:${pct}%"></div></div></div></div>`;
+  });
+  d3 += `<div class="salary-total"><img src="https://cdn.nba.com/manage/2020/10/NBA20Primary20Logo-1-259x588.jpg" width="14" height="28"><span class="team-name">TOTAL</span><span style="margin-left:auto;font-weight:700;color:#1a1a2e;">${fmtSalFull(nbaTotInj)} · ${nbaPct}%</span></div>`;
+
+  // D4: Highest-Paid
+  let d4 = '<div class="section-title">Top 25 Highest-Paid Injured Players</div>';
+  highest.slice(0, 25).forEach((e, i) => {
+    d4 += `<div class="player-row"><span class="rank-num ${i<3?'top3':''}">${i+1}</span>${hsImg(e.player)}<img src="${teamLogo(e.team)}" width="24" height="24" style="flex-shrink:0;"><div class="pr-info"><div class="pr-name">${e.player}</div><div class="pr-injury">${e.injury || ''}</div></div><span class="pr-badge ${badgeClass(e.status)}">${e.status}</span><div class="pr-meta"><div class="pr-salary">${fmtSalFull(e.salary)}</div>${e.days !== '' ? `<div class="pr-days">${e.days} days out</div>` : ''}</div></div>`;
+  });
+
+  sectionsDisplay = [d1, d2, d3, d4];
+
   // Re-render active tab
   const activeTab = document.querySelector('.tab-bar button.active');
   if (activeTab) {
     const idx = [...document.querySelectorAll('.tab-bar button')].indexOf(activeTab);
     const tabIdx = idx === 4 ? -1 : idx;
-    document.getElementById('preview').innerHTML = tabIdx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[tabIdx] || '');
+    renderTab(tabIdx);
   }
 }
 
 // ===== UI =====
+function renderTab(idx) {
+  const src = isAdmin ? sectionsHTML : sectionsDisplay;
+  document.getElementById('preview').innerHTML = idx === -1 ? src.join(isAdmin ? '<br>' : '') : (src[idx] || '');
+}
 function showTab(idx, btn) {
   document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('preview').innerHTML = idx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[idx] || '');
+  renderTab(idx);
 }
 function copyToClipboard(html, btn) {
   const orig = btn.textContent;
