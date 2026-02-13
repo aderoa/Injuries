@@ -225,8 +225,12 @@ if (window.location.search.includes('admin')) {
   initToken();
 }
 
-// Set default date to today
-document.getElementById('inputDate').value = new Date().toISOString().slice(0, 10);
+function todayPT() {
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' }); // returns YYYY-MM-DD
+}
+
+// Set default date to today (Pacific)
+document.getElementById('inputDate').value = todayPT();
 
 // ===== AUTOCOMPLETE =====
 const inputPlayer = document.getElementById('inputPlayer');
@@ -396,7 +400,7 @@ async function saveToGitHub(btn) {
     const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
       method: 'PUT',
       headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: `Update injuries ${new Date().toISOString().slice(0,10)}`, content, sha })
+      body: JSON.stringify({ message: `Update injuries ${todayPT()}`, content, sha })
     });
     if (!putR.ok) { const err = await putR.json(); throw new Error(err.message || 'Push failed: ' + putR.status); }
 
@@ -484,7 +488,7 @@ async function loadData() {
 
 function rebuildTables() {
   const allInjuries = dedupeInjuries([...baseInjuries, ...pendingEntries]);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayPT();
 
   const latest = {}, prevDay = {};
   for (const e of allInjuries) {
@@ -641,7 +645,7 @@ async function purgeAvailable(btn) {
     const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
       method: 'PUT',
       headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: `Purge ${toPurge.size} available players ${new Date().toISOString().slice(0,10)}`, content, sha })
+      body: JSON.stringify({ message: `Purge ${toPurge.size} available players ${todayPT()}`, content, sha })
     });
     if (!putR.ok) throw new Error('Push failed: ' + putR.status);
 
@@ -678,7 +682,7 @@ async function undoPurge(btn) {
     const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
       method: 'PUT',
       headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: `Undo purge ${new Date().toISOString().slice(0,10)}`, content, sha })
+      body: JSON.stringify({ message: `Undo purge ${todayPT()}`, content, sha })
     });
     if (!putR.ok) throw new Error('Push failed: ' + putR.status);
 
