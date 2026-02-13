@@ -858,6 +858,12 @@
     "date": "2026-02-12"
   },
   {
+    "player": "Daniel Gafford",
+    "status": "Left Game",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-02-12"
+  },
+  {
     "player": "Deandre Ayton",
     "status": "Out",
     "injury": "Right Knee Soreness",
@@ -913,7 +919,7 @@
   },
   {
     "player": "Naji Marshall",
-    "status": "Available",
+    "status": "Left Game",
     "injury": "Left Foot Strain",
     "date": "2026-02-12"
   },
