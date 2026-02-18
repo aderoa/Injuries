@@ -954,6 +954,12 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Devin Booker",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Dorian Finney-Smith",
     "status": "Available",
     "injury": "Left Ankle Injury Management",
@@ -972,9 +978,27 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Grayson Allen",
+    "status": "Available",
+    "injury": "Right Knee Sprain",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Isaac Okoro",
     "status": "Available",
     "injury": "Left Knee Soreness",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Isaiah Livers",
+    "status": "Available",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Jalen Green",
+    "status": "Available",
+    "injury": "Right Hamstring Injury Management",
     "date": "2026-02-18"
   },
   {
