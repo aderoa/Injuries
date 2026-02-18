@@ -936,9 +936,27 @@
     "date": "2026-02-12"
   },
   {
+    "player": "Aaron Nesmith",
+    "status": "Questionable",
+    "injury": "Lumbar Sprain",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Dorian Finney-Smith",
     "status": "Available",
     "injury": "Left Ankle Injury Management",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Dylan Cardwell",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
     "date": "2026-02-18"
   },
   {
@@ -972,6 +990,12 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Micah Potter",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Michael Porter",
     "status": "Available",
     "injury": "Right Knee Tendinitis",
@@ -990,9 +1014,33 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Pascal Siakam",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Ron Holland",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Questionable",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Tre Jones",
     "status": "Questionable",
     "injury": "Left Hamstring Strain",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Available",
+    "injury": "Illness",
     "date": "2026-02-18"
   }
 ]
