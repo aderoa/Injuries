@@ -948,9 +948,21 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Michael Porter",
+    "status": "Available",
+    "injury": "Right Knee Tendinitis",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Nicolas Claxton",
     "status": "Out",
     "injury": "Right Ankle Sprain",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
     "date": "2026-02-18"
   }
 ]
