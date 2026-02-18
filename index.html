@@ -571,14 +571,21 @@ async function loadData() {
         const pi = hdr.indexOf('PLAYER');
         const ti = hdr.indexOf('TEAM');
         const hi = hdr.indexOf('HEADSHOT');
-        console.log(`Roster headers: PLAYER=${pi} TEAM=${ti} HEADSHOT=${hi}, ${rRows.length} rows`);
+        // Try to find a salary column in roster as fallback
+        let rSi = hdr.indexOf('SALARY');
+        if (rSi < 0) { for (let c = 0; c < hdr.length; c++) { if (hdr[c].includes('SAL')) { rSi = c; break; } } }
+        console.log(`Roster headers: PLAYER=${pi} TEAM=${ti} HEADSHOT=${hi} SALARY_FALLBACK=${rSi}, ${rRows.length} rows`);
         for (let i = 1; i < rRows.length; i++) {
           const r = rRows[i];
           const player = pi >= 0 ? (r[pi] || '').trim() : '';
           const team = ti >= 0 ? (r[ti] || '').trim() : '';
           const hs = hi >= 0 ? (r[hi] || '').trim() : '';
           if (!player || player === 'PLAYER' || !team) continue;
-          const sal = salMap[player] || 0;
+          // Use contracts salary first, fallback to roster salary column
+          let sal = salMap[player] || 0;
+          if (!sal && rSi >= 0) {
+            sal = parseInt(((r[rSi] || '').trim()).replace(/[$,\s]/g, '')) || 0;
+          }
           roster[player] = { team, salary: sal };
           teamSalaries[team] = (teamSalaries[team] || 0) + sal;
           if (hs) headshots[player] = hs;
