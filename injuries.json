@@ -940,5 +940,11 @@
     "status": "Out",
     "injury": "Left Ankle Injury Management",
     "date": "2026-02-18"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-18"
   }
 ]
