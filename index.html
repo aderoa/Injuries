@@ -217,12 +217,9 @@
   <footer>Data sourced from <a href="https://hoopsmatic.com" target="_blank">HoopsMatic</a> · <a href="https://aderoa.github.io/DepthCharts/" target="_blank">Depth Charts</a></footer>
 </div>
 <script>
-const SHEET_ID = '2PACX-1vQ-TNS1Zxbcq2Altxh0-yY0LFEPvOXlwI8DjD8FdbSypf_sSWc3Xi6F88DwiOdSmR0FmXLzNicgCDwL';
+const SSID = '11llk0icQqoi0JwJXat5KO8y2RQeBMN5rS9FhAY56Idc';
 const INJ_GID = '306285159';
-const CSV_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
 const JSON_URL = 'injuries.json';
-const ROSTER_SHEET_ID = '2PACX-1vSg6im6IYB6HXMGzQbmmBnLw9SfQLzxCSo8OfChxlJLhsB6BBCO0wPF_TMch0YgAbtFqYkwDWrsxRe7';
-const ROSTER_CSV_URL = `https://docs.google.com/spreadsheets/d/e/${ROSTER_SHEET_ID}/pub?gid=0&single=true&output=csv`;
 
 const TEAM_IDS = {
   'Atlanta':1610612737,'Boston':1610612738,'Brooklyn':1610612751,
@@ -501,13 +498,31 @@ function copyJSON(btn) {
 let teamSalaries = {};
 let daysMap = {};
 
+async function fetchWithFallback(gid, label) {
+  const isCSV = (d) => d && d.length > 50 && !d.trim().startsWith('<');
+  // Try gviz first
+  try {
+    const r = await fetch(`https://docs.google.com/spreadsheets/d/${SSID}/gviz/tq?tqx=out:csv&gid=${gid}`);
+    if (r.ok) { const t = await r.text(); if (isCSV(t)) { console.log(`✓ ${label} (gviz)`); return t; } }
+  } catch(e) {}
+  // Fallback: export format
+  try {
+    const r = await fetch(`https://docs.google.com/spreadsheets/d/${SSID}/export?format=csv&gid=${gid}`);
+    if (r.ok) { const t = await r.text(); if (isCSV(t)) { console.log(`✓ ${label} (export)`); return t; } }
+  } catch(e) {}
+  console.error(`✗ ${label}: all formats failed`);
+  return null;
+}
+
 async function loadData() {
   try {
-    const [csvR, jsonR] = await Promise.all([fetch(CSV_URL), fetch(JSON_URL + '?t=' + Date.now())]);
-    if (!csvR.ok) throw new Error('CSV fetch failed: ' + csvR.status);
+    const [csvText, jsonR] = await Promise.all([
+      fetchWithFallback(INJ_GID, 'Injuries CSV'),
+      fetch(JSON_URL + '?t=' + Date.now())
+    ]);
+    if (!csvText) throw new Error('CSV fetch failed');
     if (!jsonR.ok) throw new Error('injuries.json fetch failed: ' + jsonR.status);
 
-    const csvText = await csvR.text();
     baseInjuries = await jsonR.json();
     const rows = parseCSV(csvText);
 
@@ -515,10 +530,13 @@ async function loadData() {
     roster = {}; teamSalaries = {};
     for (const r of rows) {
       if (r.length > 44) {
-        const team = (r[38] || '').trim(), player = (r[40] || '').trim(), sal = (r[44] || '').trim();
-        if (player && player !== 'PLAYER' && team && /^\d+$/.test(sal)) {
-          roster[player] = { team, salary: parseInt(sal) };
-          teamSalaries[team] = (teamSalaries[team] || 0) + parseInt(sal);
+        const team = (r[38] || '').trim(), player = (r[40] || '').trim(), salRaw = (r[44] || '').trim();
+        // Parse salary: strip $, commas, spaces; accept pure digits or formatted numbers
+        const salClean = salRaw.replace(/[$,\s]/g, '');
+        const sal = parseInt(salClean) || 0;
+        if (player && player !== 'PLAYER' && team && sal > 0) {
+          roster[player] = { team, salary: sal };
+          teamSalaries[team] = (teamSalaries[team] || 0) + sal;
         }
       }
     }
@@ -535,11 +553,11 @@ async function loadData() {
       }
     }
 
-    // Fetch headshots from Depth Charts roster CSV (non-blocking)
+    // Fetch headshots from roster CSV (non-blocking)
     try {
-      const rosterR = await fetch(ROSTER_CSV_URL);
-      if (rosterR.ok) {
-        const rosterRows = parseCSV(await rosterR.text());
+      const rosterText = await fetchWithFallback('0', 'Roster CSV');
+      if (rosterText) {
+        const rosterRows = parseCSV(rosterText);
         if (rosterRows.length > 1) {
           const hdr = rosterRows[0];
           const pi = hdr.findIndex(h => h.toUpperCase() === 'PLAYER');
