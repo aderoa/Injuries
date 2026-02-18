@@ -948,9 +948,27 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Isaac Okoro",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Probable",
+    "injury": "Right Calf Strain",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Jett Howard",
     "status": "Available",
     "injury": "Left Ankle Sprain",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
     "date": "2026-02-18"
   },
   {
@@ -969,6 +987,12 @@
     "player": "Noah Clowney",
     "status": "Available",
     "injury": "Left Ankle Sprain",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Tre Jones",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
     "date": "2026-02-18"
   }
 ]
