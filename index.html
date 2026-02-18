@@ -539,7 +539,7 @@ async function loadData() {
         for (let c = 30; c < hdr.length; c++) {
           if (hdr[c] === 'TEAM' && rTeamCol < 0) rTeamCol = c;
           if (hdr[c] === 'PLAYER' && rPlayerCol < 0 && c > 30) rPlayerCol = c;
-          if ((hdr[c] === 'SALARY' || hdr[c] === 'SAL') && rSalCol < 0) rSalCol = c;
+          if ((hdr[c] === 'SALARY' || hdr[c] === 'SAL' || hdr[c] === '2026' || hdr[c].includes("'25-26")) && rSalCol < 0) rSalCol = c;
         }
         // Fallback to original hardcoded positions
         if (rTeamCol < 0) rTeamCol = 38;
