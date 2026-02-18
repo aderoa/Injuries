@@ -535,9 +535,10 @@ async function loadData() {
       for (const r of rows) {
         if (r.length > 44) {
           const team = (r[38] || '').trim(), player = (r[40] || '').trim(), sal = (r[44] || '').trim();
-          if (player && player !== 'PLAYER' && team && /^\d+$/.test(sal)) {
-            roster[player] = { team, salary: parseInt(sal) };
-            teamSalaries[team] = (teamSalaries[team] || 0) + parseInt(sal);
+          const salNum = parseInt(sal.replace(/[$,\s]/g, '')) || 0;
+          if (player && player !== 'PLAYER' && team) {
+            roster[player] = { team, salary: salNum };
+            teamSalaries[team] = (teamSalaries[team] || 0) + salNum;
           }
         }
       }
@@ -554,21 +555,37 @@ async function loadData() {
       console.log(`Days map: ${Object.keys(daysMap).length} players`);
     }
 
-    // Fetch headshots from roster CSV (different spreadsheet, gid=0)
+    // Fetch headshots + fallback roster from roster CSV (different spreadsheet, gid=0)
     if (rosterCsvText) {
       const rRows = parseCSV(rosterCsvText);
       if (rRows.length > 1) {
         const hdr = rRows[0].map(h => (h || '').trim().toUpperCase());
         const pi = hdr.indexOf('PLAYER');
         const hi = hdr.indexOf('HEADSHOT');
-        if (pi >= 0 && hi >= 0) {
+        const ti = hdr.indexOf('TEAM');
+        if (pi >= 0) {
           for (let i = 1; i < rRows.length; i++) {
             const name = (rRows[i][pi] || '').trim();
-            const hs = (rRows[i][hi] || '').trim();
-            if (name && hs) headshots[name] = hs;
+            if (!name) continue;
+            const hs = hi >= 0 ? (rRows[i][hi] || '').trim() : '';
+            if (hs) headshots[name] = hs;
+            // Add players missing from injuries CSV roster
+            if (!roster[name] && ti >= 0) {
+              const team = (rRows[i][ti] || '').trim();
+              if (team) {
+                roster[name] = { team, salary: 0 };
+                // Try to find salary in any column named SALARY or containing numbers
+                for (let c = 0; c < rRows[i].length; c++) {
+                  if (hdr[c] === 'SALARY' || hdr[c] === '2026') {
+                    const s = parseInt((rRows[i][c] || '').trim().replace(/[$,\s]/g, '')) || 0;
+                    if (s > 0) { roster[name].salary = s; break; }
+                  }
+                }
+              }
+            }
           }
         }
-        console.log(`Headshots: ${Object.keys(headshots).length}`);
+        console.log(`Headshots: ${Object.keys(headshots).length}, Roster after fallback: ${Object.keys(roster).length}`);
       }
     }
 
