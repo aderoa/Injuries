@@ -946,5 +946,11 @@
     "status": "Available",
     "injury": "Left Ankle Sprain",
     "date": "2026-02-18"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-18"
   }
 ]
