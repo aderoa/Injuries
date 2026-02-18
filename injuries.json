@@ -948,6 +948,12 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Collin Murray-Boyles",
+    "status": "Probable",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Dorian Finney-Smith",
     "status": "Available",
     "injury": "Left Ankle Injury Management",
@@ -1023,6 +1029,12 @@
     "player": "Ron Holland",
     "status": "Available",
     "injury": "Personal Reasons",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Sandro Mamukelashvili",
+    "status": "Questionable",
+    "injury": "Right Rib Contusion",
     "date": "2026-02-18"
   },
   {
