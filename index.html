@@ -516,62 +516,70 @@ async function fetchWithFallback(gid, label) {
 
 async function loadData() {
   try {
-    const [csvText, jsonR] = await Promise.all([
+    const [injCsvText, rosterCsvText, jsonR] = await Promise.all([
       fetchWithFallback(INJ_GID, 'Injuries CSV'),
+      fetchWithFallback('0', 'Roster CSV'),
       fetch(JSON_URL + '?t=' + Date.now())
     ]);
-    if (!csvText) throw new Error('CSV fetch failed');
+    if (!injCsvText) throw new Error('Injuries CSV fetch failed');
     if (!jsonR.ok) throw new Error('injuries.json fetch failed: ' + jsonR.status);
 
     baseInjuries = await jsonR.json();
-    const rows = parseCSV(csvText);
+    const injRows = parseCSV(injCsvText);
 
-    // Roster
-    roster = {}; teamSalaries = {};
-    for (const r of rows) {
-      if (r.length > 44) {
-        const team = (r[38] || '').trim(), player = (r[40] || '').trim(), salRaw = (r[44] || '').trim();
-        // Parse salary: strip $, commas, spaces; accept pure digits or formatted numbers
-        const salClean = salRaw.replace(/[$,\s]/g, '');
-        const sal = parseInt(salClean) || 0;
-        if (player && player !== 'PLAYER' && team && sal > 0) {
+    // Build roster from gid=0 by header names
+    roster = {}; teamSalaries = {}; headshots = {};
+    if (rosterCsvText) {
+      const rRows = parseCSV(rosterCsvText);
+      if (rRows.length > 1) {
+        const hdr = rRows[0].map(h => (h || '').trim().toUpperCase());
+        const pi = hdr.indexOf('PLAYER');
+        const ti = hdr.indexOf('TEAM');
+        const si = hdr.indexOf('SALARY');
+        const hi = hdr.indexOf('HEADSHOT');
+        console.log(`Roster headers: PLAYER=${pi} TEAM=${ti} SALARY=${si} HEADSHOT=${hi}, ${rRows.length} rows`);
+        for (let i = 1; i < rRows.length; i++) {
+          const r = rRows[i];
+          const player = pi >= 0 ? (r[pi] || '').trim() : '';
+          const team = ti >= 0 ? (r[ti] || '').trim() : '';
+          const salRaw = si >= 0 ? (r[si] || '').trim() : '0';
+          const sal = parseInt(salRaw.replace(/[$,\s]/g, '')) || 0;
+          const hs = hi >= 0 ? (r[hi] || '').trim() : '';
+          if (!player || player === 'PLAYER' || !team) continue;
           roster[player] = { team, salary: sal };
           teamSalaries[team] = (teamSalaries[team] || 0) + sal;
+          if (hs) headshots[player] = hs;
         }
+        console.log(`Roster: ${Object.keys(roster).length} players, ${Object.keys(headshots).length} headshots`);
       }
     }
 
     // Player list for autocomplete (sorted by name)
     playerList = Object.entries(roster).map(([name, r]) => ({ name, team: r.team })).sort((a, b) => a.name.localeCompare(b.name));
 
-    // Days since last game
+    // Days since last game from injuries CSV (cols 71, 73 - try by header too)
     daysMap = {};
-    for (const r of rows) {
-      if (r.length > 73) {
-        const p = (r[71] || '').trim(), d = (r[73] || '').trim();
-        if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
+    if (injRows.length > 1) {
+      const injHdr = injRows[0].map(h => (h || '').trim().toUpperCase());
+      // Try finding by header names first
+      let dPlayerCol = -1, dDaysCol = -1;
+      for (let c = 0; c < injHdr.length; c++) {
+        if (injHdr[c] === 'PLAYER' && c > 50) dPlayerCol = c; // second PLAYER col
+        if (injHdr[c] === 'DAYS SINCE LAST GAME' || injHdr[c] === 'DAYS') dDaysCol = c;
       }
-    }
-
-    // Fetch headshots from roster CSV (non-blocking)
-    try {
-      const rosterText = await fetchWithFallback('0', 'Roster CSV');
-      if (rosterText) {
-        const rosterRows = parseCSV(rosterText);
-        if (rosterRows.length > 1) {
-          const hdr = rosterRows[0];
-          const pi = hdr.findIndex(h => h.toUpperCase() === 'PLAYER');
-          const hi = hdr.findIndex(h => h.toUpperCase() === 'HEADSHOT');
-          if (pi >= 0 && hi >= 0) {
-            for (let i = 1; i < rosterRows.length; i++) {
-              const name = (rosterRows[i][pi] || '').trim();
-              const hs = (rosterRows[i][hi] || '').trim();
-              if (name && hs) headshots[name] = hs;
-            }
-          }
+      // Fallback to hardcoded
+      if (dPlayerCol < 0) dPlayerCol = 71;
+      if (dDaysCol < 0) dDaysCol = 73;
+      for (let i = 1; i < injRows.length; i++) {
+        const r = injRows[i];
+        if (r.length > dDaysCol) {
+          const p = (r[dPlayerCol] || '').trim();
+          const d = (r[dDaysCol] || '').trim().replace(/[$,\s]/g, '');
+          if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
         }
       }
-    } catch(e) { console.warn('Headshots unavailable:', e); }
+      console.log(`Days map: ${Object.keys(daysMap).length} players`);
+    }
 
     rebuildTables();
     document.getElementById('loading').style.display = 'none';
