@@ -217,7 +217,8 @@
   <footer>Data sourced from <a href="https://hoopsmatic.com" target="_blank">HoopsMatic</a> · <a href="https://aderoa.github.io/DepthCharts/" target="_blank">Depth Charts</a></footer>
 </div>
 <script>
-const SSID = '11llk0icQqoi0JwJXat5KO8y2RQeBMN5rS9FhAY56Idc';
+const INJ_SSID = '14TQPdQ9mDhHMMMQa5vcs0coL98ZloHORtYElDikKoWY';
+const ROSTER_SSID = '11llk0icQqoi0JwJXat5KO8y2RQeBMN5rS9FhAY56Idc';
 const INJ_GID = '306285159';
 const JSON_URL = 'injuries.json';
 
@@ -498,16 +499,16 @@ function copyJSON(btn) {
 let teamSalaries = {};
 let daysMap = {};
 
-async function fetchWithFallback(gid, label) {
+async function fetchWithFallback(ssid, gid, label) {
   const isCSV = (d) => d && d.length > 50 && !d.trim().startsWith('<');
   // Try gviz first
   try {
-    const r = await fetch(`https://docs.google.com/spreadsheets/d/${SSID}/gviz/tq?tqx=out:csv&gid=${gid}`);
+    const r = await fetch(`https://docs.google.com/spreadsheets/d/${ssid}/gviz/tq?tqx=out:csv&gid=${gid}`);
     if (r.ok) { const t = await r.text(); if (isCSV(t)) { console.log(`✓ ${label} (gviz)`); return t; } }
   } catch(e) {}
   // Fallback: export format
   try {
-    const r = await fetch(`https://docs.google.com/spreadsheets/d/${SSID}/export?format=csv&gid=${gid}`);
+    const r = await fetch(`https://docs.google.com/spreadsheets/d/${ssid}/export?format=csv&gid=${gid}`);
     if (r.ok) { const t = await r.text(); if (isCSV(t)) { console.log(`✓ ${label} (export)`); return t; } }
   } catch(e) {}
   console.error(`✗ ${label}: all formats failed`);
@@ -517,8 +518,8 @@ async function fetchWithFallback(gid, label) {
 async function loadData() {
   try {
     const [injCsvText, rosterCsvText, jsonR] = await Promise.all([
-      fetchWithFallback(INJ_GID, 'Injuries CSV'),
-      fetchWithFallback('0', 'Roster CSV'),
+      fetchWithFallback(INJ_SSID, INJ_GID, 'Injuries CSV'),
+      fetchWithFallback(ROSTER_SSID, '0', 'Roster CSV'),
       fetch(JSON_URL + '?t=' + Date.now())
     ]);
     if (!injCsvText) throw new Error('Injuries CSV fetch failed');
@@ -526,49 +527,34 @@ async function loadData() {
 
     baseInjuries = await jsonR.json();
 
-    // Build roster from injuries CSV (has embedded roster section at cols ~38/40/44)
+    // Build roster from injuries CSV: cols 38(team), 40(player), 44(salary)
     roster = {}; teamSalaries = {}; headshots = {};
 
     if (injCsvText) {
       const rows = parseCSV(injCsvText);
-      if (rows.length > 0) {
-        const hdr = rows[0].map(h => (h || '').trim().toUpperCase());
-        // Find the roster columns: look for TEAM, PLAYER, SALARY after col 30
-        // (earlier columns are injury data, roster section starts around col 38)
-        let rTeamCol = -1, rPlayerCol = -1, rSalCol = -1;
-        for (let c = 30; c < hdr.length; c++) {
-          if (hdr[c] === 'TEAM' && rTeamCol < 0) rTeamCol = c;
-          if (hdr[c] === 'PLAYER' && rPlayerCol < 0 && c > 30) rPlayerCol = c;
-          if ((hdr[c] === 'SALARY' || hdr[c] === 'SAL' || hdr[c] === '2026' || hdr[c].includes("'25-26")) && rSalCol < 0) rSalCol = c;
-        }
-        // Fallback to original hardcoded positions
-        if (rTeamCol < 0) rTeamCol = 38;
-        if (rPlayerCol < 0) rPlayerCol = 40;
-        if (rSalCol < 0) rSalCol = 44;
-        console.log(`Injuries roster cols: TEAM=${rTeamCol} PLAYER=${rPlayerCol} SALARY=${rSalCol}, ${rows.length} rows`);
-        // Log sample data for debugging
-        for (let i = 1; i < Math.min(rows.length, 4); i++) {
-          const r = rows[i];
-          console.log(`  Sample[${i}]: team="${(r[rTeamCol]||'').trim()}" player="${(r[rPlayerCol]||'').trim()}" sal="${(r[rSalCol]||'').trim()}"`);
-        }
-        for (let i = 1; i < rows.length; i++) {
-          const r = rows[i];
-          if (r.length > rSalCol) {
-            const team = (r[rTeamCol] || '').trim();
-            const player = (r[rPlayerCol] || '').trim();
-            const salRaw = (r[rSalCol] || '').trim();
-            const sal = parseInt(salRaw.replace(/[$,\s]/g, '')) || 0;
-            if (player && player !== 'PLAYER' && team) {
-              roster[player] = { team, salary: sal };
-              teamSalaries[team] = (teamSalaries[team] || 0) + sal;
-            }
+      for (const r of rows) {
+        if (r.length > 44) {
+          const team = (r[38] || '').trim(), player = (r[40] || '').trim(), sal = (r[44] || '').trim();
+          if (player && player !== 'PLAYER' && team && /^\d+$/.test(sal)) {
+            roster[player] = { team, salary: parseInt(sal) };
+            teamSalaries[team] = (teamSalaries[team] || 0) + parseInt(sal);
           }
         }
-        console.log(`Roster: ${Object.keys(roster).length} players`);
       }
+      console.log(`Roster: ${Object.keys(roster).length} players`);
+
+      // Days since last game: cols 71(player), 73(days)
+      daysMap = {};
+      for (const r of rows) {
+        if (r.length > 73) {
+          const p = (r[71] || '').trim(), d = (r[73] || '').trim();
+          if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
+        }
+      }
+      console.log(`Days map: ${Object.keys(daysMap).length} players`);
     }
 
-    // Fetch headshots from gid=0
+    // Fetch headshots from roster CSV (different spreadsheet, gid=0)
     if (rosterCsvText) {
       const rRows = parseCSV(rosterCsvText);
       if (rRows.length > 1) {
@@ -588,31 +574,6 @@ async function loadData() {
 
     // Player list for autocomplete (sorted by name)
     playerList = Object.entries(roster).map(([name, r]) => ({ name, team: r.team })).sort((a, b) => a.name.localeCompare(b.name));
-
-    // Days since last game from injuries CSV
-    daysMap = {};
-    if (injCsvText) {
-      const injRows = parseCSV(injCsvText);
-      if (injRows.length > 1) {
-        const injHdr = injRows[0].map(h => (h || '').trim().toUpperCase());
-        let dPlayerCol = -1, dDaysCol = -1;
-        for (let c = 0; c < injHdr.length; c++) {
-          if (injHdr[c] === 'PLAYER' && c > 50) dPlayerCol = c;
-          if (injHdr[c] === 'DAYS SINCE LAST GAME' || injHdr[c] === 'DAYS') dDaysCol = c;
-        }
-        if (dPlayerCol < 0) dPlayerCol = 71;
-        if (dDaysCol < 0) dDaysCol = 73;
-        for (let i = 1; i < injRows.length; i++) {
-          const r = injRows[i];
-          if (r.length > dDaysCol) {
-            const p = (r[dPlayerCol] || '').trim();
-            const d = (r[dDaysCol] || '').trim().replace(/[$,\s]/g, '');
-            if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
-          }
-        }
-        console.log(`Days map: ${Object.keys(daysMap).length} players`);
-      }
-    }
 
     rebuildTables();
     document.getElementById('loading').style.display = 'none';
