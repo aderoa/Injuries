@@ -516,9 +516,10 @@ async function fetchWithFallback(gid, label) {
 
 async function loadData() {
   try {
-    const [injCsvText, rosterCsvText, jsonR] = await Promise.all([
+    const [injCsvText, rosterCsvText, contractsCsvText, jsonR] = await Promise.all([
       fetchWithFallback(INJ_GID, 'Injuries CSV'),
       fetchWithFallback('0', 'Roster CSV'),
+      fetchWithFallback('1649473047', 'Contracts CSV'),
       fetch(JSON_URL + '?t=' + Date.now())
     ]);
     if (!injCsvText) throw new Error('Injuries CSV fetch failed');
@@ -529,23 +530,55 @@ async function loadData() {
 
     // Build roster from gid=0 by header names
     roster = {}; teamSalaries = {}; headshots = {};
+    const salMap = {};
+
+    // First, build salary map from contracts sheet (GID 1649473047)
+    if (contractsCsvText) {
+      const cRows = parseCSV(contractsCsvText);
+      if (cRows.length > 1) {
+        const cHdr = cRows[0].map(h => (h || '').trim().toUpperCase());
+        const cPi = cHdr.indexOf('PLAYER');
+        const cTi = cHdr.indexOf('TEAM');
+        // Find the first salary/year column (e.g. "'25-26 SAL", "2025-26", "SAL '25-26", etc.)
+        let cSi = -1;
+        for (let c = 0; c < cHdr.length; c++) {
+          if (cHdr[c].includes("'25-26") && (cHdr[c].includes('SAL') || c > 1)) { cSi = c; break; }
+          if (cHdr[c] === 'SALARY' || cHdr[c] === 'SAL') { cSi = c; break; }
+        }
+        // Fallback: first column after TEAM that looks numeric
+        if (cSi < 0) {
+          for (let c = Math.max(cTi + 1, 2); c < Math.min(cHdr.length, 10); c++) {
+            const v = (cRows[1] && cRows[1][c] || '').trim().replace(/[$,\s"]/g, '');
+            if (/^\d+$/.test(v) && parseInt(v) > 10000) { cSi = c; break; }
+          }
+        }
+        console.log(`Contracts headers: PLAYER=${cPi} TEAM=${cTi} SAL_COL=${cSi}, ${cRows.length} rows`);
+        for (let i = 1; i < cRows.length; i++) {
+          const r = cRows[i];
+          const player = cPi >= 0 ? (r[cPi] || '').trim() : '';
+          const salRaw = cSi >= 0 ? (r[cSi] || '').trim() : '0';
+          const sal = parseInt(salRaw.replace(/[$,\s]/g, '')) || 0;
+          if (player && sal > 0) salMap[player] = sal;
+        }
+        console.log(`Salary map: ${Object.keys(salMap).length} players`);
+      }
+    }
+
     if (rosterCsvText) {
       const rRows = parseCSV(rosterCsvText);
       if (rRows.length > 1) {
         const hdr = rRows[0].map(h => (h || '').trim().toUpperCase());
         const pi = hdr.indexOf('PLAYER');
         const ti = hdr.indexOf('TEAM');
-        const si = hdr.indexOf('SALARY');
         const hi = hdr.indexOf('HEADSHOT');
-        console.log(`Roster headers: PLAYER=${pi} TEAM=${ti} SALARY=${si} HEADSHOT=${hi}, ${rRows.length} rows`);
+        console.log(`Roster headers: PLAYER=${pi} TEAM=${ti} HEADSHOT=${hi}, ${rRows.length} rows`);
         for (let i = 1; i < rRows.length; i++) {
           const r = rRows[i];
           const player = pi >= 0 ? (r[pi] || '').trim() : '';
           const team = ti >= 0 ? (r[ti] || '').trim() : '';
-          const salRaw = si >= 0 ? (r[si] || '').trim() : '0';
-          const sal = parseInt(salRaw.replace(/[$,\s]/g, '')) || 0;
           const hs = hi >= 0 ? (r[hi] || '').trim() : '';
           if (!player || player === 'PLAYER' || !team) continue;
+          const sal = salMap[player] || 0;
           roster[player] = { team, salary: sal };
           teamSalaries[team] = (teamSalaries[team] || 0) + sal;
           if (hs) headshots[player] = hs;
