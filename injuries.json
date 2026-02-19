@@ -852,6 +852,18 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Caleb Martin",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Questionable",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Grayson Allen",
     "status": "Questionable",
     "injury": "Right Ankle Sprain",
@@ -876,9 +888,21 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Max Christie",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Micah Potter",
     "status": "Available",
     "injury": "Left Ankle Sprain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Available",
+    "injury": "Left Foot Strain",
     "date": "2026-02-19"
   },
   {
