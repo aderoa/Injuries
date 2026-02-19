@@ -638,7 +638,7 @@
   {
     "player": "Yves Missi",
     "status": "Out",
-    "injury": "Left Calf Soreness",
+    "injury": "Left Calf Strain",
     "date": "2026-02-11"
   },
   {
@@ -885,6 +885,12 @@
     "player": "Tre Jones",
     "status": "Probable",
     "injury": "Left Hamstring Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Doubtful",
+    "injury": "Right Shoulder Contusion",
     "date": "2026-02-19"
   },
   {
