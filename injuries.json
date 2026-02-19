@@ -840,6 +840,12 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Andrew Wiggins",
+    "status": "Available",
+    "injury": "Left Toe Inflammation",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Grayson Allen",
     "status": "Questionable",
     "injury": "Right Ankle Sprain",
@@ -858,9 +864,33 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Keshad Johnson",
+    "status": "Questionable",
+    "injury": "Left Calf Soreness",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "Low Back Tightness",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Available",
+    "injury": "Right Forearm Strain",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Tre Jones",
     "status": "Probable",
     "injury": "Left Hamstring Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Probable",
+    "injury": "Right Costochondral Rib Injury",
     "date": "2026-02-19"
   }
 ]
