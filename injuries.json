@@ -138,12 +138,6 @@
     "date": "2026-01-04"
   },
   {
-    "player": "Keegan Murray",
-    "status": "Out",
-    "injury": "Left Ankle Sprain",
-    "date": "2026-01-05"
-  },
-  {
     "player": "Kris Murray",
     "status": "Out",
     "injury": "Lumbar Strain",
@@ -222,12 +216,6 @@
     "date": "2026-01-24"
   },
   {
-    "player": "Evan Mobley",
-    "status": "Out",
-    "injury": "Left Calf Strain",
-    "date": "2026-01-27"
-  },
-  {
     "player": "Miles McBride",
     "status": "Out",
     "injury": "Pelvic Core Muscle Surgery",
@@ -282,12 +270,6 @@
     "date": "2026-02-04"
   },
   {
-    "player": "LJ Cryer",
-    "status": "Out",
-    "injury": "Left Hamstring Injury Management",
-    "date": "2026-02-05"
-  },
-  {
     "player": "Peyton Watson",
     "status": "Out",
     "injury": "Left Hamstring Strain",
@@ -298,18 +280,6 @@
     "status": "Out",
     "injury": "Right Knee Injury Management",
     "date": "2026-02-05"
-  },
-  {
-    "player": "Grayson Allen",
-    "status": "Out",
-    "injury": "Right Knee Sprain",
-    "date": "2026-02-06"
-  },
-  {
-    "player": "Isaiah Livers",
-    "status": "Out",
-    "injury": "Left Shoulder Sprain",
-    "date": "2026-02-06"
   },
   {
     "player": "Luka Doncic",
@@ -330,12 +300,6 @@
     "date": "2026-02-07"
   },
   {
-    "player": "Malik Monk",
-    "status": "Out",
-    "injury": "Illness",
-    "date": "2026-02-07"
-  },
-  {
     "player": "Shaedon Sharpe",
     "status": "Out",
     "injury": "Left Calf Strain",
@@ -352,24 +316,6 @@
     "status": "Out",
     "injury": "Right Ankle Sprain",
     "date": "2026-02-08"
-  },
-  {
-    "player": "Michael Porter",
-    "status": "Out",
-    "injury": "Right Knee Tendinitis",
-    "date": "2026-02-08"
-  },
-  {
-    "player": "Ron Holland",
-    "status": "Out",
-    "injury": "Personal Reasons",
-    "date": "2026-02-08"
-  },
-  {
-    "player": "Dean Wade",
-    "status": "Out",
-    "injury": "Left Ankle Sprain",
-    "date": "2026-02-09"
   },
   {
     "player": "Domantas Sabonis",
@@ -414,12 +360,6 @@
     "date": "2026-02-10"
   },
   {
-    "player": "Andrew Nembhard",
-    "status": "Available",
-    "injury": "Low Back Injury Management",
-    "date": "2026-02-10"
-  },
-  {
     "player": "Andrew Wiggins",
     "status": "Questionable",
     "injury": "Left Toe Inflammation",
@@ -456,24 +396,6 @@
     "date": "2026-02-10"
   },
   {
-    "player": "Devin Booker",
-    "status": "Available",
-    "injury": "Right Ankle Injury Management",
-    "date": "2026-02-10"
-  },
-  {
-    "player": "Dorian Finney-Smith",
-    "status": "Available",
-    "injury": "Left Ankle Injury Management",
-    "date": "2026-02-10"
-  },
-  {
-    "player": "Isaac Okoro",
-    "status": "Available",
-    "injury": "Left Knee Soreness",
-    "date": "2026-02-10"
-  },
-  {
     "player": "Isaiah Stewart",
     "status": "Available",
     "injury": "League Suspension",
@@ -492,21 +414,9 @@
     "date": "2026-02-10"
   },
   {
-    "player": "Jalen Green",
-    "status": "Available",
-    "injury": "Right Hamstring Injury Management",
-    "date": "2026-02-10"
-  },
-  {
     "player": "Jalen Smith",
     "status": "Doubtful",
     "injury": "Right Calf Strain",
-    "date": "2026-02-10"
-  },
-  {
-    "player": "Jett Howard",
-    "status": "Available",
-    "injury": "Left Ankle Sprain",
     "date": "2026-02-10"
   },
   {
@@ -546,21 +456,9 @@
     "date": "2026-02-10"
   },
   {
-    "player": "Nicolas Batum",
-    "status": "Available",
-    "injury": "Rest",
-    "date": "2026-02-10"
-  },
-  {
     "player": "Nicolas Claxton",
     "status": "Questionable",
     "injury": "Right Hip Soreness",
-    "date": "2026-02-10"
-  },
-  {
-    "player": "Noah Clowney",
-    "status": "Probable",
-    "injury": "Left Ankle Sprain",
     "date": "2026-02-10"
   },
   {
@@ -576,27 +474,9 @@
     "date": "2026-02-10"
   },
   {
-    "player": "Quentin Grimes",
-    "status": "Questionable",
-    "injury": "Illness",
-    "date": "2026-02-10"
-  },
-  {
-    "player": "Russell Westbrook",
-    "status": "Out",
-    "injury": "Right Ankle Sprain",
-    "date": "2026-02-10"
-  },
-  {
     "player": "Ryan Rollins",
     "status": "Available",
     "injury": "Right Foot Plantar Fasciitis",
-    "date": "2026-02-10"
-  },
-  {
-    "player": "Spencer Jones",
-    "status": "Questionable",
-    "injury": "Concussion Protocol",
     "date": "2026-02-10"
   },
   {
@@ -612,21 +492,9 @@
     "date": "2026-02-10"
   },
   {
-    "player": "Tristan Vukcevic",
-    "status": "Available",
-    "injury": "Illness",
-    "date": "2026-02-10"
-  },
-  {
     "player": "Walter Clayton",
     "status": "Doubtful",
     "injury": "Right Calf Contusion",
-    "date": "2026-02-10"
-  },
-  {
-    "player": "Will Richard",
-    "status": "Questionable",
-    "injury": "Right Knee Contusion",
     "date": "2026-02-10"
   },
   {
@@ -645,12 +513,6 @@
     "player": "Alex Sarr",
     "status": "Out",
     "injury": "Right Hamstring Strain",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Andrew Nembhard",
-    "status": "Out",
-    "injury": "Low Back Injury Management",
     "date": "2026-02-11"
   },
   {
@@ -684,24 +546,6 @@
     "date": "2026-02-11"
   },
   {
-    "player": "Devin Booker",
-    "status": "Out",
-    "injury": "Right Ankle Injury Management",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Dorian Finney-Smith",
-    "status": "Out",
-    "injury": "Left Ankle Injury Management",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Isaac Okoro",
-    "status": "Out",
-    "injury": "Left Knee Soreness",
-    "date": "2026-02-11"
-  },
-  {
     "player": "Isaiah Stewart",
     "status": "Out",
     "injury": "League Suspension",
@@ -714,21 +558,9 @@
     "date": "2026-02-11"
   },
   {
-    "player": "Jalen Green",
-    "status": "Out",
-    "injury": "Right Hamstring Injury Management",
-    "date": "2026-02-11"
-  },
-  {
     "player": "Jalen Smith",
     "status": "Out",
     "injury": "Right Calf Strain",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Jett Howard",
-    "status": "Out",
-    "injury": "Left Ankle Sprain",
     "date": "2026-02-11"
   },
   {
@@ -768,21 +600,9 @@
     "date": "2026-02-11"
   },
   {
-    "player": "Nicolas Batum",
-    "status": "Out",
-    "injury": "Rest",
-    "date": "2026-02-11"
-  },
-  {
     "player": "Nicolas Claxton",
     "status": "Out",
     "injury": "Right Hip Soreness",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Noah Clowney",
-    "status": "Out",
-    "injury": "Left Ankle Sprain",
     "date": "2026-02-11"
   },
   {
@@ -792,21 +612,9 @@
     "date": "2026-02-11"
   },
   {
-    "player": "Quentin Grimes",
-    "status": "Out",
-    "injury": "Illness",
-    "date": "2026-02-11"
-  },
-  {
     "player": "Ryan Rollins",
     "status": "Out",
     "injury": "Right Foot Plantar Fasciitis",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Spencer Jones",
-    "status": "Out",
-    "injury": "Concussion Protocol",
     "date": "2026-02-11"
   },
   {
@@ -822,21 +630,9 @@
     "date": "2026-02-11"
   },
   {
-    "player": "Tristan Vukcevic",
-    "status": "Out",
-    "injury": "Illness",
-    "date": "2026-02-11"
-  },
-  {
     "player": "Walter Clayton",
     "status": "Out",
     "injury": "Right Calf Contusion",
-    "date": "2026-02-11"
-  },
-  {
-    "player": "Will Richard",
-    "status": "Out",
-    "injury": "Right Knee Contusion",
     "date": "2026-02-11"
   },
   {
@@ -942,33 +738,9 @@
     "date": "2026-02-18"
   },
   {
-    "player": "Andrew Nembhard",
-    "status": "Available",
-    "injury": "Low Back Injury Management",
-    "date": "2026-02-18"
-  },
-  {
     "player": "Collin Murray-Boyles",
     "status": "Probable",
     "injury": "Left Thumb Sprain",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Dean Wade",
-    "status": "Available",
-    "injury": "Left Ankle Sprain",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Devin Booker",
-    "status": "Available",
-    "injury": "Right Ankle Injury Management",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Dorian Finney-Smith",
-    "status": "Available",
-    "injury": "Left Ankle Injury Management",
     "date": "2026-02-18"
   },
   {
@@ -978,39 +750,9 @@
     "date": "2026-02-18"
   },
   {
-    "player": "Evan Mobley",
-    "status": "Available",
-    "injury": "Left Calf Strain",
-    "date": "2026-02-18"
-  },
-  {
     "player": "Franz Wagner",
     "status": "Out",
     "injury": "Left Ankle Injury Management",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Grayson Allen",
-    "status": "Available",
-    "injury": "Right Knee Sprain",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Isaac Okoro",
-    "status": "Available",
-    "injury": "Left Knee Soreness",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Isaiah Livers",
-    "status": "Available",
-    "injury": "Left Shoulder Sprain",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Jalen Green",
-    "status": "Available",
-    "injury": "Right Hamstring Injury Management",
     "date": "2026-02-18"
   },
   {
@@ -1026,21 +768,9 @@
     "date": "2026-02-18"
   },
   {
-    "player": "Jett Howard",
-    "status": "Available",
-    "injury": "Left Ankle Sprain",
-    "date": "2026-02-18"
-  },
-  {
     "player": "Josh Giddey",
     "status": "Questionable",
     "injury": "Left Hamstring Strain",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Keegan Murray",
-    "status": "Available",
-    "injury": "Left Ankle Sprain",
     "date": "2026-02-18"
   },
   {
@@ -1056,18 +786,6 @@
     "date": "2026-02-18"
   },
   {
-    "player": "LJ Cryer",
-    "status": "Available",
-    "injury": "Left Hamstring Injury Management",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Malik Monk",
-    "status": "Available",
-    "injury": "Illness",
-    "date": "2026-02-18"
-  },
-  {
     "player": "Mason Plumlee",
     "status": "Out",
     "injury": "Return to Competition Conditioning",
@@ -1080,33 +798,15 @@
     "date": "2026-02-18"
   },
   {
-    "player": "Michael Porter",
-    "status": "Available",
-    "injury": "Right Knee Tendinitis",
-    "date": "2026-02-18"
-  },
-  {
     "player": "Nae'Qwan Tomlin",
     "status": "Out",
     "injury": "Left Calf Soreness",
     "date": "2026-02-18"
   },
   {
-    "player": "Nicolas Batum",
-    "status": "Available",
-    "injury": "Rest",
-    "date": "2026-02-18"
-  },
-  {
     "player": "Nicolas Claxton",
     "status": "Out",
     "injury": "Right Ankle Sprain",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Noah Clowney",
-    "status": "Available",
-    "injury": "Left Ankle Sprain",
     "date": "2026-02-18"
   },
   {
@@ -1122,33 +822,9 @@
     "date": "2026-02-18"
   },
   {
-    "player": "Quentin Grimes",
-    "status": "Available",
-    "injury": "Illness",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Ron Holland",
-    "status": "Available",
-    "injury": "Personal Reasons",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Russell Westbrook",
-    "status": "Available",
-    "injury": "Right Ankle Sprain",
-    "date": "2026-02-18"
-  },
-  {
     "player": "Sandro Mamukelashvili",
     "status": "Questionable",
     "injury": "Right Rib Contusion",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Spencer Jones",
-    "status": "Available",
-    "injury": "Concussion Protocol",
     "date": "2026-02-18"
   },
   {
@@ -1161,18 +837,6 @@
     "player": "Tre Jones",
     "status": "Questionable",
     "injury": "Left Hamstring Strain",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Tristan Vukcevic",
-    "status": "Available",
-    "injury": "Illness",
-    "date": "2026-02-18"
-  },
-  {
-    "player": "Will Richard",
-    "status": "Available",
-    "injury": "Right Knee Contusion",
     "date": "2026-02-18"
   }
 ]
