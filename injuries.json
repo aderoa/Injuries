@@ -840,6 +840,12 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Lumbar Sprain",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Andrew Wiggins",
     "status": "Available",
     "injury": "Left Toe Inflammation",
@@ -870,6 +876,12 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Micah Potter",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Norman Powell",
     "status": "Questionable",
     "injury": "Low Back Tightness",
@@ -879,6 +891,12 @@
     "player": "Pelle Larsson",
     "status": "Available",
     "injury": "Right Forearm Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Out",
+    "injury": "Right Hamstring Soreness",
     "date": "2026-02-19"
   },
   {
