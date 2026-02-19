@@ -894,9 +894,21 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Right Calf Strain",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Josh Giddey",
-    "status": "Probable",
+    "status": "Available",
     "injury": "Left Hamstring Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Jusuf Nurkic",
+    "status": "Out",
+    "injury": "Nose Injury Management",
     "date": "2026-02-19"
   },
   {
@@ -949,7 +961,7 @@
   },
   {
     "player": "Tre Jones",
-    "status": "Probable",
+    "status": "Available",
     "injury": "Left Hamstring Strain",
     "date": "2026-02-19"
   },
