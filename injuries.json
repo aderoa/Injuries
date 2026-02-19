@@ -838,5 +838,17 @@
     "status": "Questionable",
     "injury": "Left Hamstring Strain",
     "date": "2026-02-18"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Probable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Tre Jones",
+    "status": "Probable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-02-19"
   }
 ]
