@@ -564,6 +564,12 @@
     "date": "2026-02-11"
   },
   {
+    "player": "Jaren Jackson Jr",
+    "status": "Out",
+    "injury": "Left Knee Injury Recovery",
+    "date": "2026-02-11"
+  },
+  {
     "player": "Joel Embiid",
     "status": "Out",
     "injury": "Right Knee Injury Management / Right Shin Soreness",
@@ -573,6 +579,12 @@
     "player": "Josh Giddey",
     "status": "Out",
     "injury": "Left Hamstring Strain",
+    "date": "2026-02-11"
+  },
+  {
+    "player": "Jusuf Nurkic",
+    "status": "Out",
+    "injury": "Nose Injury Management",
     "date": "2026-02-11"
   },
   {
@@ -603,6 +615,12 @@
     "player": "Nicolas Claxton",
     "status": "Out",
     "injury": "Right Hip Soreness",
+    "date": "2026-02-11"
+  },
+  {
+    "player": "Oscar Tshiebwe",
+    "status": "Questionable",
+    "injury": "Concussion Protocol",
     "date": "2026-02-11"
   },
   {
