@@ -530,7 +530,7 @@
   {
     "player": "Cedric Coward",
     "status": "Out",
-    "injury": "Right Knee Soreness",
+    "injury": "Right Knee Hyperextension",
     "date": "2026-02-11"
   },
   {
@@ -794,7 +794,7 @@
   {
     "player": "Kentavious Caldwell-Pope",
     "status": "Out",
-    "injury": "Right Pinky Finger Surgery",
+    "injury": "Right 5th Finger Surgery Recovery",
     "date": "2026-02-18"
   },
   {
@@ -954,6 +954,12 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Scotty Pippen Jr",
+    "status": "Out",
+    "injury": "Left Great Toe Injury Management",
+    "date": "2026-02-19"
+  },
+  {
     "player": "TJ McConnell",
     "status": "Out",
     "injury": "Right Hamstring Soreness",
@@ -972,9 +978,21 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Tyler Herro",
     "status": "Probable",
     "injury": "Right Costochondral Rib Injury",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Doubtful",
+    "injury": "Right Calf Contusion",
     "date": "2026-02-19"
   }
 ]
