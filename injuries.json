@@ -882,6 +882,12 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Collin Murray-Boyles",
+    "status": "Available",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Daniel Gafford",
     "status": "Questionable",
     "injury": "Right Ankle Injury Management",
@@ -963,6 +969,12 @@
     "player": "Pelle Larsson",
     "status": "Available",
     "injury": "Right Forearm Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Sandro Mamukelashvili",
+    "status": "Available",
+    "injury": "Right Rib Contusion",
     "date": "2026-02-19"
   },
   {
