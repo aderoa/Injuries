@@ -1026,6 +1026,12 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Keegan Murray",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Kristaps Porzingis",
     "status": "Questionable",
     "injury": "Left Achilles Tendon Injury Management",
@@ -1035,6 +1041,12 @@
     "player": "LJ Cryer",
     "status": "Available",
     "injury": "Left Hamstring Injury Management",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Available",
+    "injury": "Illness",
     "date": "2026-02-18"
   },
   {
@@ -1077,6 +1089,12 @@
     "player": "Ron Holland",
     "status": "Available",
     "injury": "Personal Reasons",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Russell Westbrook",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
     "date": "2026-02-18"
   },
   {
