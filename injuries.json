@@ -870,6 +870,12 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Branden Carlson",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Caleb Martin",
     "status": "Questionable",
     "injury": "Left Ankle Sprain",
@@ -891,6 +897,12 @@
     "player": "Haywood Highsmith",
     "status": "Out",
     "injury": "Right Knee Injury Management",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Available",
+    "injury": "Right Soleus Injury Management",
     "date": "2026-02-19"
   },
   {
