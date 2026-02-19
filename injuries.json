@@ -1026,6 +1026,18 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Kristaps Porzingis",
+    "status": "Questionable",
+    "injury": "Left Achilles Tendon Injury Management",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Available",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Mason Plumlee",
     "status": "Out",
     "injury": "Return to Competition Conditioning",
@@ -1095,6 +1107,12 @@
     "player": "Tristan Vukcevic",
     "status": "Available",
     "injury": "Illness",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
     "date": "2026-02-18"
   }
 ]
