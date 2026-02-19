@@ -954,6 +954,12 @@
     "date": "2026-02-18"
   },
   {
+    "player": "Dean Wade",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-18"
+  },
+  {
     "player": "Devin Booker",
     "status": "Available",
     "injury": "Right Ankle Injury Management",
@@ -969,6 +975,12 @@
     "player": "Dylan Cardwell",
     "status": "Out",
     "injury": "Left Ankle Sprain",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Evan Mobley",
+    "status": "Available",
+    "injury": "Left Calf Strain",
     "date": "2026-02-18"
   },
   {
@@ -1071,6 +1083,12 @@
     "player": "Michael Porter",
     "status": "Available",
     "injury": "Right Knee Tendinitis",
+    "date": "2026-02-18"
+  },
+  {
+    "player": "Nae'Qwan Tomlin",
+    "status": "Out",
+    "injury": "Left Calf Soreness",
     "date": "2026-02-18"
   },
   {
