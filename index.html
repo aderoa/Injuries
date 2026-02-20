@@ -351,10 +351,12 @@ if (isAdmin) {
         <span class="subtitle" id="lastUpdate"></span>
       </div>
       <div class="admin-toolbar" id="toolbar">
-        <button class="primary" onclick="copyJSON(this)">📋 Copy Updated JSON</button>
+        <button class="primary" onclick="copyPrestoHTML(this)">📋 Copy Presto HTML</button>
+        <button onclick="copyJSON(this)">📋 Copy Updated JSON</button>
         <button onclick="window.open('https://github.com/aderoa/Injuries/edit/main/injuries.json','_blank')">✏️ Open on GitHub</button>
-        <button onclick="copyPrestoHTML(this)">📋 Copy Presto HTML</button>
-        <button onclick="resetAll()">↩ Reset All</button>
+        <button class="btn-purge" onclick="purgeAvailable(this)">🧹 Purge Available</button>
+        <button id="undoBtn" style="display:none;" onclick="undoPurge(this)">↩ Undo Purge</button>
+        <button onclick="resetAll()">🗑 Reset All</button>
         <span class="spacer"></span>
         <span class="badge" id="changesBadge">0 changes</span>
       </div>
@@ -629,9 +631,47 @@ function toggleFilter(type, btn) {
 function resetAll() {
   if (Object.keys(modifications).length && !confirm('Reset all changes?')) return;
   modifications = {};
+  prePurgeSnapshot = null;
+  document.getElementById('undoBtn').style.display = 'none';
   try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
   renderRoster();
   updateBadge();
+}
+
+let prePurgeSnapshot = null;
+
+function purgeAvailable(btn) {
+  // Save snapshot for undo
+  prePurgeSnapshot = JSON.parse(JSON.stringify(modifications));
+
+  // For every player in JSON whose latest effective status is "Available",
+  // add a modification clearing their injury and date
+  for (const [player, entry] of Object.entries(latestStatus)) {
+    const effective = modifications[player] || entry;
+    if (effective.status === 'Available' && (entry.injury || entry.date)) {
+      modifications[player] = { status: 'Available', injury: '', date: '' };
+    }
+  }
+
+  renderRoster();
+  updateBadge();
+  updateTeamInjuredCounts();
+
+  document.getElementById('undoBtn').style.display = '';
+  const orig = btn.textContent;
+  btn.textContent = '✓ Purged!'; btn.classList.add('active');
+  setTimeout(() => { btn.textContent = orig; btn.classList.remove('active'); }, 2000);
+}
+
+function undoPurge(btn) {
+  if (prePurgeSnapshot !== null) {
+    modifications = prePurgeSnapshot;
+    prePurgeSnapshot = null;
+    renderRoster();
+    updateBadge();
+    updateTeamInjuredCounts();
+  }
+  btn.style.display = 'none';
 }
 
 // ===== JSON GENERATION =====
@@ -683,12 +723,13 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
   const H2S = 'style="font-size:22px;font-weight:700;margin-bottom:10px;"';
 
-  // Table 1: Today's Updates
-  const todayEntries = entries.filter(e => e.date === today)
-    .filter(e => !usePurge || e.status !== 'Available')
-    .map(e => {
-      const p = prv[e.player], r = roster[e.player] || {};
-      return { player:e.player, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
+  // Table 1: Today's Updates (use latest status per player, not raw entries)
+  const todayEntries = Object.entries(lat)
+    .filter(([name,e]) => e.date === today && roster[name])
+    .filter(([_,e]) => !usePurge || e.status !== 'Available')
+    .map(([name,e]) => {
+      const p = prv[name], r = roster[name] || {};
+      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
     }).sort((a,b) => {
       if (a.team !== b.team) return a.team.localeCompare(b.team);
       return lastName(a.player).localeCompare(lastName(b.player));
