@@ -859,8 +859,8 @@
   },
   {
     "player": "Aaron Nesmith",
-    "status": "Available",
-    "injury": "Lumbar Sprain",
+    "status": "Left Game",
+    "injury": "Right Ankle Sprain",
     "date": "2026-02-19"
   },
   {
@@ -939,6 +939,12 @@
     "player": "Jusuf Nurkic",
     "status": "Out",
     "injury": "Nose Injury Management",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Kam Jones",
+    "status": "Left Game",
+    "injury": "Lower Back Soreness",
     "date": "2026-02-19"
   },
   {
