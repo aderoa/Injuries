@@ -778,5 +778,23 @@
     "status": "Doubtful",
     "injury": "Right Calf Contusion",
     "date": "2026-02-19"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-02-20"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-20"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Out",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-02-20"
   }
 ]
