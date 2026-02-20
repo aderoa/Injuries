@@ -698,19 +698,19 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
 
   // Table 2: Full Report
   const allInjured = Object.entries(lat)
-    .filter(([_,e]) => e.status !== 'Available')
+    .filter(([name,e]) => e.status !== 'Available' && roster[name])
     .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
     .sort((a,b) => {
       if (a.team !== b.team) return a.team.localeCompare(b.team);
       return (STATUS_GRAVITY[a.status]||4) - (STATUS_GRAVITY[b.status]||4);
     });
 
-  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>NOTES</th><th ${TH}>DATE</th></tr></thead><tbody>`;
+  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>DATE</th></tr></thead><tbody>`;
   lt = '';
   allInjured.forEach((e, i) => {
     const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
     const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
-    h2 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${sSpan(e.status)} — ${e.injury||''}</td><td ${TD}>${e.date ? fmtDate(e.date) : ''}</td></tr>`;
+    h2 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury||''}</td><td ${TD}>${e.date ? fmtDate(e.date) : ''}</td></tr>`;
   });
   h2 += '</tbody></table>';
 
