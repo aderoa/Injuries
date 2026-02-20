@@ -656,7 +656,7 @@
   {
     "player": "Pascal Siakam",
     "status": "Out",
-    "injury": "Personal Reasons",
+    "injury": "Left Hamstring Injury Management",
     "date": "2026-02-18"
   },
   {
@@ -780,9 +780,21 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Aaron Nesmith",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-20"
+  },
+  {
     "player": "Evan Mobley",
     "status": "Out",
     "injury": "Left Calf Injury Management",
+    "date": "2026-02-20"
+  },
+  {
+    "player": "Kam Jones",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
     "date": "2026-02-20"
   },
   {
@@ -819,6 +831,12 @@
     "player": "Norman Powell",
     "status": "Available",
     "injury": "Low Back Tightness",
+    "date": "2026-02-20"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Questionable",
+    "injury": "Right Hamstring Soreness",
     "date": "2026-02-20"
   },
   {
