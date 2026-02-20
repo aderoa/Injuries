@@ -798,9 +798,21 @@
     "date": "2026-02-20"
   },
   {
+    "player": "Norman Powell",
+    "status": "Available",
+    "injury": "Low Back Tightness",
+    "date": "2026-02-20"
+  },
+  {
     "player": "Trey Murphy",
     "status": "Out",
     "injury": "Right Shoulder Contusion",
+    "date": "2026-02-20"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Available",
+    "injury": "Right Costochondral Rib Injury",
     "date": "2026-02-20"
   }
 ]
