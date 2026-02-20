@@ -257,6 +257,7 @@ function fmtDate(iso) { const d=new Date(iso+'T00:00:00'); const m=['Jan','Feb',
 function sColor(s) { return {Out:'#ef4444',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
 function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`; }
 function statusClass(s) { return 's-'+s.toLowerCase(); }
+function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
 function todayISO() { return new Date().toISOString().slice(0,10); }
 
 function parseCSV(text) {
@@ -407,9 +408,15 @@ let activeFilter = null;
 
 async function initAdmin() {
   try {
+    // Load saved modifications from localStorage
+    try {
+      const saved = localStorage.getItem('injuries_modifications');
+      if (saved) { modifications = JSON.parse(saved); }
+    } catch(e) {}
     await loadData();
     document.getElementById('lastUpdate').textContent = `${Object.keys(roster).length} players loaded`;
     renderRoster();
+    updateBadge();
   } catch(e) {
     document.getElementById('rosterArea').innerHTML = `<div class="error-msg">Error: ${e.message}</div>`;
   }
@@ -422,7 +429,7 @@ function renderRoster() {
   for (const team of NBA_TEAMS) {
     const players = Object.entries(roster)
       .filter(([_,v]) => v.team === team)
-      .sort((a,b) => b[1].salary - a[1].salary);
+      .sort((a,b) => lastName(a[0]).localeCompare(lastName(b[0])));
     if (!players.length) continue;
 
     const injuredCount = players.filter(([name]) => {
@@ -558,6 +565,8 @@ function updateBadge() {
   const badge = document.getElementById('changesBadge');
   badge.textContent = `${count} change${count!==1?'s':''}`;
   badge.className = count ? 'badge has-changes' : 'badge';
+  // Auto-save to localStorage
+  try { localStorage.setItem('injuries_modifications', JSON.stringify(modifications)); } catch(e) {}
 }
 
 function updateTeamInjuredCounts() {
@@ -620,6 +629,7 @@ function toggleFilter(type, btn) {
 function resetAll() {
   if (Object.keys(modifications).length && !confirm('Reset all changes?')) return;
   modifications = {};
+  try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
   renderRoster();
   updateBadge();
 }
@@ -681,7 +691,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
       return { player:e.player, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
     }).sort((a,b) => {
       if (a.team !== b.team) return a.team.localeCompare(b.team);
-      return (STATUS_GRAVITY[a.status]||4) - (STATUS_GRAVITY[b.status]||4);
+      return lastName(a.player).localeCompare(lastName(b.player));
     });
 
   let h1 = `<h2 ${H2S}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
@@ -702,7 +712,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
     .sort((a,b) => {
       if (a.team !== b.team) return a.team.localeCompare(b.team);
-      return (STATUS_GRAVITY[a.status]||4) - (STATUS_GRAVITY[b.status]||4);
+      return lastName(a.player).localeCompare(lastName(b.player));
     });
 
   let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>DATE</th></tr></thead><tbody>`;
