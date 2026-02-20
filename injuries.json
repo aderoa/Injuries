@@ -780,6 +780,12 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Evan Mobley",
+    "status": "Out",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-02-20"
+  },
+  {
     "player": "Keshad Johnson",
     "status": "Available",
     "injury": "Left Calf Soreness",
@@ -801,6 +807,12 @@
     "player": "Max Christie",
     "status": "Doubtful",
     "injury": "Left Ankle Sprain",
+    "date": "2026-02-20"
+  },
+  {
+    "player": "Nae'Qwan Tomlin",
+    "status": "Probable",
+    "injury": "Left Calf Soreness",
     "date": "2026-02-20"
   },
   {
