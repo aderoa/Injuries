@@ -4,224 +4,226 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NBA Injury Report</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: white; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
-  header { text-align: center; padding: 1.5rem 0 1rem; }
-  header h1 { font-size: 2.2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-  header .subtitle { color: #8892b0; font-size: 1rem; margin-top: 0.3rem; }
-  .toolbar { display: flex; gap: 0.5rem; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; }
-  .toolbar button { padding: 0.5rem 1rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); color: #c0c8e0; border-radius: 8px; cursor: pointer; font-size: 0.85rem; font-weight: 600; font-family: 'DM Sans', sans-serif; transition: all 0.2s; }
-  .toolbar button:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: white; }
-  .toolbar button.success { background: #16a34a; color: white; border-color: #16a34a; }
-  .toolbar .status { font-size: 0.75rem; color: #8892b0; margin-left: 0.5rem; }
-  .loading { text-align: center; padding: 3rem; color: #8892b0; }
-  .loading-spinner { width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.2); border-top-color: #667eea; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .preview { background: rgba(255,255,255,0.95); color: #333; border-radius: 16px; padding: 1.5rem; overflow-x: auto; margin-top: 0.5rem; box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
-  .error { text-align: center; padding: 2rem; color: #f87171; }
-  .tab-bar { display: flex; gap: 0.25rem; justify-content: center; margin-bottom: 0.5rem; }
-  .tab-bar button { padding: 0.5rem 1rem; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #8892b0; border-radius: 8px 8px 0 0; cursor: pointer; font-size: 0.85rem; font-family: 'DM Sans', sans-serif; font-weight: 500; transition: all 0.2s; }
-  .tab-bar button:hover { color: #c0c8e0; background: rgba(255,255,255,0.08); }
-  .tab-bar button.active { background: rgba(102,126,234,0.2); color: #667eea; border-color: #667eea; font-weight: 700; }
-  footer { text-align: center; margin-top: 2rem; padding: 1rem; color: #8892b0; font-size: 0.9rem; }
-  footer a { color: #667eea; text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-  /* Modern public view */
-  .section-title { font-size: 1.3rem; font-weight: 700; color: #1a1a2e; margin: 1.5rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; }
-  .section-title:first-child { margin-top: 0; }
-  .team-group { margin-bottom: 0.25rem; }
-  .team-group-header { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; background: #f0f4ff; border-radius: 8px; margin-bottom: 0.25rem; }
-  .team-group-header img { width: 24px; height: 24px; }
-  .team-group-header span { font-weight: 700; font-size: 0.85rem; color: #1a1a2e; }
-  .player-row { display: flex; align-items: center; padding: 0.5rem 0.75rem; border-bottom: 1px solid #f0f0f0; transition: background 0.15s; gap: 0.75rem; }
-  .player-row:hover { background: #f8f9ff; }
-  .player-row:last-child { border-bottom: none; }
-  .pr-headshot { width: 48px; height: 36px; border-radius: 6px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); overflow: hidden; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
-  .pr-headshot img { width: 100%; height: 100%; object-fit: cover; }
-  .pr-headshot .initials { color: white; font-weight: 700; font-size: 0.7rem; }
-  .pr-info { flex: 1; min-width: 0; }
-  .pr-name { font-weight: 700; font-size: 0.9rem; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .pr-injury { font-size: 0.8rem; color: #6b7280; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .pr-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; }
-  .pr-badge.out { background: #fde8e8; color: #d32f2f; }
-  .pr-badge.doubtful { background: #fff3e0; color: #e64a19; }
-  .pr-badge.questionable { background: #fff8e1; color: #f9a825; }
-  .pr-badge.probable { background: #e8f5e9; color: #388e3c; }
-  .pr-badge.available { background: #e8f5e9; color: #2e7d32; }
-  .pr-badge.left-game { background: #e3f2fd; color: #1565c0; }
-  .pr-meta { text-align: right; flex-shrink: 0; min-width: 70px; }
-  .pr-salary { font-weight: 700; font-size: 0.85rem; color: #1a1a2e; }
-  .pr-date { font-size: 0.75rem; color: #8892b0; }
-  .pr-prev { font-size: 0.7rem; color: #8892b0; margin-top: 1px; }
-  .pr-prev span { font-weight: 600; }
-  .rank-num { width: 28px; text-align: center; font-weight: 700; color: #8892b0; font-size: 0.85rem; flex-shrink: 0; }
-  .rank-num.top3 { color: #667eea; font-size: 1rem; }
-  .salary-bar-wrap { flex: 1; }
-  .salary-bar-label { display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 2px; }
-  .salary-bar-label .team-name { font-weight: 700; color: #1a1a2e; }
-  .salary-bar-label .pct { color: #8892b0; }
-  .salary-bar { height: 8px; background: #f0f0f0; border-radius: 4px; overflow: hidden; }
-  .salary-bar-fill { height: 100%; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); border-radius: 4px; transition: width 0.3s; }
-  .salary-total { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; background: #f0f4ff; border-radius: 8px; margin-top: 0.5rem; }
-  .salary-total img { width: 20px; height: 36px; }
-  .salary-total .team-name { font-weight: 700; color: #1a1a2e; }
-  .pr-days { font-size: 0.75rem; color: #8892b0; }
-  .empty-state { text-align: center; padding: 2rem; color: #8892b0; font-size: 0.9rem; }
+:root {
+  --bg: #0a0a0c;
+  --surface: #141418;
+  --surface2: #1c1c22;
+  --border: #2a2a32;
+  --text: #e8e8ec;
+  --text2: #8a8a96;
+  --accent: #3b82f6;
+  --out: #ef4444;
+  --doubtful: #f97316;
+  --questionable: #eab308;
+  --probable: #22c55e;
+  --available: #10b981;
+  --modified-bg: rgba(59,130,246,0.06);
+  --modified-border: rgba(59,130,246,0.25);
+}
 
-  /* Admin panel */
-  .admin-banner { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #1a1a2e; text-align: center; padding: 0.5rem; font-weight: 700; font-size: 0.9rem; border-radius: 6px; margin-bottom: 1rem; }
-  .admin-panel { background: rgba(255,255,255,0.05); border: 1px solid #667eea; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; display: none; }
-  .admin-panel.visible { display: block; }
-  .admin-section-title { color: #667eea; font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
 
-  .add-form { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: flex-end; margin-bottom: 1rem; }
-  .add-form .field { display: flex; flex-direction: column; gap: 0.25rem; }
-  .add-form label { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
-  .add-form input, .add-form select { padding: 0.5rem 0.6rem; border: 1px solid #444; background: #0f0f23; color: #e0e0e0; border-radius: 4px; font-size: 0.9rem; font-family: 'DM Sans', sans-serif; }
-  .add-form input:focus, .add-form select:focus { outline: none; border-color: #667eea; }
-  .add-form .field-player { flex: 1; min-width: 180px; position: relative; }
-  .add-form .field-injury { flex: 1; min-width: 200px; }
-  .add-form .field-status select { min-width: 140px; }
-  .add-form .field-date input { width: 145px; }
-  .add-btn { padding: 0.5rem 1.2rem; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 700; font-size: 0.9rem; font-family: 'DM Sans', sans-serif; align-self: flex-end; }
-  .add-btn:hover { background: #5a6fd6; }
+/* ============ ADMIN VIEW ============ */
+.admin-container { max-width:1100px; margin:0 auto; padding:16px 20px 80px; }
 
-  /* Autocomplete */
-  .autocomplete-list { position: absolute; top: 100%; left: 0; right: 0; background: #1e1e3a; border: 1px solid #667eea; border-top: none; border-radius: 0 0 4px 4px; max-height: 200px; overflow-y: auto; z-index: 100; display: none; }
-  .autocomplete-list.show { display: block; }
-  .autocomplete-item { padding: 0.4rem 0.6rem; cursor: pointer; font-size: 0.85rem; display: flex; justify-content: space-between; }
-  .autocomplete-item:hover, .autocomplete-item.selected { background: #667eea33; }
-  .autocomplete-item .team-hint { color: #888; font-size: 0.75rem; }
+.admin-header {
+  display:flex; align-items:center; gap:16px; padding:20px 0 16px;
+  border-bottom:1px solid var(--border); margin-bottom:16px;
+}
+.admin-header h1 { font-size:20px; font-weight:700; letter-spacing:-0.02em; }
+.admin-header .subtitle { color:var(--text2); font-size:13px; margin-left:auto; }
 
-  /* Pending entries */
-  .pending-list { margin-top: 0.75rem; }
-  .pending-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
-  .pending-count { color: #667eea; font-size: 0.85rem; font-weight: 600; }
-  .pending-entry { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.6rem; background: #0f0f23; border-radius: 4px; margin-bottom: 0.3rem; font-size: 0.85rem; }
-  .pending-entry .pe-player { font-weight: 700; min-width: 160px; }
-  .pending-entry .pe-status { min-width: 100px; font-weight: 700; }
-  .pending-entry .pe-status.Out { color: #ef5350; }
-  .pending-entry .pe-status.Doubtful { color: #ff7043; }
-  .pending-entry .pe-status.Questionable { color: #fdd835; }
-  .pending-entry .pe-status.Probable { color: #66bb6a; }
-  .pending-entry .pe-status.Available { color: #4caf50; }
-  .pending-entry .pe-status.Left-Game { color: #1565c0; }
-  .pending-entry .pe-injury { flex: 1; color: #aaa; }
-  .pending-entry .pe-date { color: #888; min-width: 90px; }
-  .pending-entry .pe-remove { color: #ef5350; cursor: pointer; font-size: 1.1rem; padding: 0 0.3rem; }
-  .pending-entry .pe-remove:hover { color: #f44336; }
+/* Sticky toolbar */
+.admin-toolbar {
+  position:sticky; top:0; z-index:100; background:var(--bg);
+  border-bottom:1px solid var(--border);
+  padding:10px 0; margin-bottom:16px;
+  display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+}
+.admin-toolbar button {
+  font-family:inherit; font-size:12px; font-weight:600;
+  padding:7px 14px; border-radius:6px; border:1px solid var(--border);
+  background:var(--surface); color:var(--text); cursor:pointer;
+  transition:all 0.15s;
+}
+.admin-toolbar button:hover { background:var(--surface2); border-color:#444; }
+.admin-toolbar button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+.admin-toolbar button.primary:hover { background:#2563eb; }
+.admin-toolbar button.success { background:#059669!important; border-color:#059669!important; color:#fff!important; }
+.admin-toolbar .spacer { flex:1; }
+.admin-toolbar .badge {
+  font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500;
+  padding:4px 10px; border-radius:99px; background:var(--surface2); color:var(--text2);
+}
+.admin-toolbar .badge.has-changes { background:rgba(59,130,246,0.15); color:var(--accent); }
 
-  .admin-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid #333; }
-  .admin-actions button { padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; font-family: 'DM Sans', sans-serif; }
-  .btn-copy-json { background: #667eea; color: white; border: none; }
-  .btn-copy-json:hover { background: #5a6fd6; }
-  .btn-open-gh { background: transparent; color: #888; border: 1px solid #444; }
-  .btn-open-gh:hover { color: #667eea; border-color: #667eea; }
-  .btn-clear { background: transparent; color: #ef5350; border: 1px solid #ef535044; }
-  .btn-clear:hover { background: #ef535022; }
-  .btn-save-gh { background: #16a34a; color: white; border: none; }
-  .btn-save-gh:hover { background: #15803d; }
-  .btn-save-gh.success { background: #16a34a; color: white; }
-  .gh-status { font-size: 0.8rem; color: #888; }
-  .token-row { display: flex; gap: 0.5rem; align-items: center; margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid #333; }
-  .token-row label { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
-  .token-row input { flex: 1; padding: 0.4rem 0.5rem; border: 1px solid #444; background: #0f0f23; color: #e0e0e0; border-radius: 4px; font-size: 0.8rem; font-family: monospace; }
-  .token-row .btn-token-toggle, .token-row .btn-token-save { padding: 0.4rem 0.6rem; border: 1px solid #444; background: #1a1a2e; color: #888; border-radius: 4px; cursor: pointer; font-size: 0.75rem; }
-  .token-row .btn-token-save { color: #667eea; border-color: #667eea; }
-  .token-row.saved label { color: #16a34a; }
-  .token-row.saved input { border-color: #16a34a44; }
+/* Search / filter */
+.filter-bar {
+  display:flex; gap:8px; margin-bottom:16px; align-items:center;
+}
+.filter-bar input {
+  font-family:inherit; font-size:13px; padding:8px 12px; border-radius:6px;
+  border:1px solid var(--border); background:var(--surface); color:var(--text);
+  flex:1; max-width:320px; outline:none;
+}
+.filter-bar input:focus { border-color:var(--accent); }
+.filter-bar .filter-btn {
+  font-family:inherit; font-size:12px; font-weight:600;
+  padding:7px 12px; border-radius:6px; border:1px solid var(--border);
+  background:var(--surface); color:var(--text2); cursor:pointer; transition:all 0.15s;
+}
+.filter-bar .filter-btn:hover { color:var(--text); border-color:#444; }
+.filter-bar .filter-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+
+/* Team sections */
+.team-section { margin-bottom:8px; }
+.team-header {
+  display:flex; align-items:center; gap:10px; padding:10px 12px;
+  background:var(--surface); border:1px solid var(--border); border-radius:8px;
+  cursor:pointer; user-select:none; transition:all 0.15s;
+}
+.team-header:hover { background:var(--surface2); }
+.team-header img { width:28px; height:28px; }
+.team-header .team-name { font-size:14px; font-weight:600; }
+.team-header .team-count { font-size:12px; color:var(--text2); margin-left:auto; }
+.team-header .team-injured {
+  font-size:11px; font-weight:600; padding:2px 8px; border-radius:99px;
+  background:rgba(239,68,68,0.12); color:var(--out);
+}
+.team-header .team-injured.none { display:none; }
+.team-header .chevron {
+  color:var(--text2); font-size:14px; transition:transform 0.2s;
+  margin-left:8px;
+}
+.team-section.collapsed .chevron { transform:rotate(-90deg); }
+.team-section.collapsed .team-players { display:none; }
+
+.team-players { border:1px solid var(--border); border-top:none; border-radius:0 0 8px 8px; overflow:hidden; }
+
+/* Player row */
+.player-row {
+  display:grid;
+  grid-template-columns: 1fr 90px 130px 1fr 110px;
+  gap:8px; align-items:center;
+  padding:6px 12px; border-bottom:1px solid var(--border);
+  font-size:13px; transition:background 0.15s;
+}
+.player-row:last-child { border-bottom:none; }
+.player-row:hover { background:rgba(255,255,255,0.02); }
+.player-row.modified { background:var(--modified-bg); border-color:var(--modified-border); }
+
+.player-name { font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.player-salary { font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--text2); text-align:right; }
+
+.player-row select {
+  font-family:inherit; font-size:12px; font-weight:600; padding:4px 6px;
+  border-radius:4px; border:1px solid var(--border); background:var(--surface);
+  color:var(--text); cursor:pointer; outline:none; width:100%;
+}
+.player-row select:focus { border-color:var(--accent); }
+.player-row select.s-out { color:var(--out); }
+.player-row select.s-doubtful { color:var(--doubtful); }
+.player-row select.s-questionable { color:var(--questionable); }
+.player-row select.s-probable { color:var(--probable); }
+.player-row select.s-available { color:var(--available); }
+
+.player-row input[type="text"] {
+  font-family:inherit; font-size:12px; padding:4px 6px;
+  border-radius:4px; border:1px solid var(--border); background:var(--surface);
+  color:var(--text); outline:none; width:100%;
+}
+.player-row input[type="text"]:focus { border-color:var(--accent); }
+.player-row input[type="text"].inactive { color:var(--text2); border-color:transparent; background:transparent; }
+
+.player-row input[type="date"] {
+  font-family:'JetBrains Mono',monospace; font-size:11px; padding:4px 4px;
+  border-radius:4px; border:1px solid var(--border); background:var(--surface);
+  color:var(--text); outline:none; width:100%;
+  color-scheme:dark;
+}
+.player-row input[type="date"]:focus { border-color:var(--accent); }
+.player-row input[type="date"].inactive { color:var(--text2); border-color:transparent; background:transparent; }
+
+/* Column headers */
+.col-headers {
+  display:grid;
+  grid-template-columns: 1fr 90px 130px 1fr 110px;
+  gap:8px; padding:8px 12px;
+  font-size:11px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:0.05em;
+  background:var(--surface); border-bottom:1px solid var(--border);
+  position:sticky; top:50px; z-index:50;
+}
+.col-headers span:nth-child(2) { text-align:right; }
+
+/* Loading state */
+.loading-state {
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:80px 0; color:var(--text2);
+}
+.loading-spinner {
+  width:32px; height:32px; border:3px solid var(--border); border-top-color:var(--accent);
+  border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:16px;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* ============ REPORT VIEW (non-admin) ============ */
+.report-container { max-width:900px; margin:0 auto; padding:16px 20px 80px; }
+
+.report-toolbar {
+  display:flex; gap:8px; flex-wrap:wrap; padding:12px 0;
+  border-bottom:1px solid var(--border); margin-bottom:16px;
+}
+.report-toolbar button {
+  font-family:inherit; font-size:12px; font-weight:600;
+  padding:7px 14px; border-radius:6px; border:1px solid var(--border);
+  background:var(--surface); color:var(--text); cursor:pointer; transition:all 0.15s;
+}
+.report-toolbar button:hover { background:var(--surface2); }
+.report-toolbar button.success { background:#059669!important; border-color:#059669!important; color:#fff!important; }
+
+.tab-bar { display:flex; gap:4px; margin-bottom:16px; }
+.tab-bar button {
+  font-family:inherit; font-size:12px; font-weight:600;
+  padding:7px 14px; border-radius:6px; border:1px solid transparent;
+  background:transparent; color:var(--text2); cursor:pointer; transition:all 0.15s;
+}
+.tab-bar button:hover { color:var(--text); }
+.tab-bar button.active { background:var(--surface); color:var(--text); border-color:var(--border); }
+
+.preview { padding:8px 0; }
+.preview table { font-size:13px; }
+
+.error-msg { padding:40px; text-align:center; color:var(--out); }
+
+/* Purge button */
+.btn-purge {
+  font-family:inherit; font-size:12px; font-weight:600;
+  padding:7px 14px; border-radius:6px; border:1px solid rgba(239,68,68,0.3);
+  background:rgba(239,68,68,0.08); color:var(--out); cursor:pointer; transition:all 0.15s;
+}
+.btn-purge:hover { background:rgba(239,68,68,0.15); }
 </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>🏥 NBA Injury Report</h1>
-    <p class="subtitle">Powered by <a href="https://hoopsmatic.com" target="_blank" style="color:#667eea;text-decoration:none;">HoopsMatic</a></p>
-  </header>
 
-  <div id="adminBanner" class="admin-banner" style="display:none;">⚙️ ADMIN MODE</div>
-
-  <div id="adminPanel" class="admin-panel">
-    <div class="admin-section-title">➕ Add Injury Update</div>
-    <div class="add-form">
-      <div class="field field-player">
-        <label>Player</label>
-        <input type="text" id="inputPlayer" placeholder="Start typing..." autocomplete="off">
-        <div class="autocomplete-list" id="acList"></div>
-      </div>
-      <div class="field field-status">
-        <label>Status</label>
-        <select id="inputStatus">
-          <option value="Out">Out</option>
-          <option value="Doubtful">Doubtful</option>
-          <option value="Questionable">Questionable</option>
-          <option value="Probable">Probable</option>
-          <option value="Available">Available</option>
-          <option value="Left Game">Left Game</option>
-        </select>
-      </div>
-      <div class="field field-injury">
-        <label>Injury</label>
-        <input type="text" id="inputInjury" placeholder="e.g. Left Knee Soreness">
-      </div>
-      <div class="field field-date">
-        <label>Date</label>
-        <input type="date" id="inputDate">
-      </div>
-      <button class="add-btn" onclick="addEntry()">+ Add</button>
-    </div>
-
-    <div class="pending-list" id="pendingList"></div>
-
-    <div class="admin-actions">
-      <button class="btn-save-gh" onclick="saveToGitHub(this)">💾 Save to GitHub</button>
-      <button class="btn-copy-json" onclick="copyJSON(this)">📋 Copy JSON</button>
-      <button class="btn-clear" onclick="clearPending()">🗑 Clear Pending</button>
-      <span class="gh-status" id="ghStatus"></span>
-    </div>
-    <div class="token-row" id="tokenRow">
-      <label>GitHub Token</label>
-      <input type="password" id="ghToken" placeholder="github_pat_..." value="">
-      <button class="btn-token-toggle" onclick="toggleToken()">👁</button>
-      <button class="btn-token-save" onclick="saveToken()">Save</button>
-    </div>
-  </div>
-
-  <div class="toolbar" id="adminToolbar" style="display:none;">
-    <button onclick="copyAll(this)">📋 Copy Full Report</button>
-    <button onclick="copySection(0, this)">📋 Today's Updates</button>
-    <button onclick="copySection(1, this)">📋 Full Report</button>
-    <button onclick="copySection(2, this)">📋 Salary Per Team</button>
-    <button onclick="copySection(3, this)">📋 Highest-Paid</button>
-    <button onclick="refreshData(this)">🔄 Refresh</button>
-    <button onclick="purgeAvailable(this)">🧹 Purge Available</button>
-    <button id="undoPurge" onclick="undoPurge(this)" style="display:none;border-color:#ff9800;color:#ff9800;background:#ff980022;">↩ Undo Purge</button>
-    <span class="status" id="status"></span>
-  </div>
-
-  <div class="tab-bar">
-    <button onclick="showTab(0, this)">Today's Updates</button>
-    <button onclick="showTab(1, this)">Full Report</button>
-    <button onclick="showTab(2, this)">Salary Per Team</button>
-    <button onclick="showTab(3, this)">Highest-Paid</button>
-    <button class="active" onclick="showTab(-1, this)">All</button>
-  </div>
-
-  <div id="loading" class="loading"><div class="loading-spinner"></div><p>Loading injury data...</p></div>
-  <div id="preview" class="preview" style="display:none;"></div>
-  <div id="error" class="error" style="display:none;"></div>
-  <footer>Data sourced from <a href="https://hoopsmatic.com" target="_blank">HoopsMatic</a> · <a href="https://aderoa.github.io/DepthCharts/" target="_blank">Depth Charts</a></footer>
-</div>
 <script>
-const INJ_SSID = '14TQPdQ9mDhHMMMQa5vcs0coL98ZloHORtYElDikKoWY';
-const ROSTER_SSID = '11llk0icQqoi0JwJXat5KO8y2RQeBMN5rS9FhAY56Idc';
+// ===== CONFIG =====
+const SHEET_ID = '2PACX-1vQ-TNS1Zxbcq2Altxh0-yY0LFEPvOXlwI8DjD8FdbSypf_sSWc3Xi6F88DwiOdSmR0FmXLzNicgCDwL';
 const INJ_GID = '306285159';
+const CSV_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
 const JSON_URL = 'injuries.json';
 
+const NBA_TEAMS = [
+  'Atlanta','Boston','Brooklyn','Charlotte','Chicago','Cleveland',
+  'Dallas','Denver','Detroit','Golden State','Houston','Indiana',
+  'LA Clippers','LA Lakers','Memphis','Miami','Milwaukee','Minnesota',
+  'New Orleans','New York','Oklahoma City','Orlando','Philadelphia','Phoenix',
+  'Portland','Sacramento','San Antonio','Toronto','Utah','Washington'
+];
 const TEAM_IDS = {
   'Atlanta':1610612737,'Boston':1610612738,'Brooklyn':1610612751,
   'Charlotte':1610612766,'Chicago':1610612741,'Cleveland':1610612739,
@@ -234,18 +236,27 @@ const TEAM_IDS = {
   'Portland':1610612757,'Sacramento':1610612758,'San Antonio':1610612759,
   'Toronto':1610612761,'Utah':1610612762,'Washington':1610612764
 };
+const TEAM_ABBREV = {
+  'Atlanta':'ATL','Boston':'BOS','Brooklyn':'BKN','Charlotte':'CHA','Chicago':'CHI','Cleveland':'CLE',
+  'Dallas':'DAL','Denver':'DEN','Detroit':'DET','Golden State':'GSW','Houston':'HOU','Indiana':'IND',
+  'LA Clippers':'LAC','LA Lakers':'LAL','Memphis':'MEM','Miami':'MIA','Milwaukee':'MIL','Minnesota':'MIN',
+  'New Orleans':'NOP','New York':'NYK','Oklahoma City':'OKC','Orlando':'ORL','Philadelphia':'PHI','Phoenix':'PHX',
+  'Portland':'POR','Sacramento':'SAC','San Antonio':'SAS','Toronto':'TOR','Utah':'UTA','Washington':'WAS'
+};
+const STATUSES = ['Available','Probable','Questionable','Doubtful','Out'];
+const STATUS_GRAVITY = { 'Out':0,'Doubtful':1,'Questionable':2,'Probable':3,'Available':4 };
 
-function teamLogo(t){const id=TEAM_IDS[t];return id?`https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg`:'';}
-function logoImg(t){const u=teamLogo(t);return u?`<img src="${u}" width="28" height="28" style="vertical-align:middle;">`:'';}
-function fmtSal(n){if(n>=1e6)return '$'+(n/1e6).toFixed(1)+'M';if(n>=1e3)return '$'+(n/1e3).toFixed(0)+'K';return '$'+n.toLocaleString();}
-function fmtSalFull(n){return '$'+n.toLocaleString();}
-function fmtDate(iso){const d=new Date(iso+'T00:00:00');const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[d.getMonth()]+' '+d.getDate();}
-function sColor(s){return{Out:'#d32f2f',Doubtful:'#e64a19',Questionable:'#f9a825',Probable:'#388e3c',Available:'#2e7d32','Left Game':'#1565c0'}[s]||'#666';}
-function sSpan(s){return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`;}
-function sOrder(s){return{Out:0,Doubtful:1,Questionable:2,Probable:3,Available:4,'Left Game':2.5}[s]??5;}
+function teamLogo(t) { const id=TEAM_IDS[t]; return id ? `https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg` : ''; }
+function fmtSal(n) { if(n>=1e6) return '$'+(n/1e6).toFixed(1)+'M'; if(n>=1e3) return '$'+(n/1e3).toFixed(0)+'K'; return '$'+n.toLocaleString(); }
+function fmtSalFull(n) { return '$'+n.toLocaleString(); }
+function fmtDate(iso) { const d=new Date(iso+'T00:00:00'); const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return m[d.getMonth()]+' '+d.getDate(); }
+function sColor(s) { return {Out:'#ef4444',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
+function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`; }
+function statusClass(s) { return 's-'+s.toLowerCase(); }
+function todayISO() { return new Date().toISOString().slice(0,10); }
 
-function parseCSV(text){
-  const rows=[];let cur='',inQ=false,row=[];
+function parseCSV(text) {
+  const rows=[]; let cur='',inQ=false,row=[];
   for(let i=0;i<text.length;i++){
     const c=text[i];
     if(c==='"'){if(inQ&&text[i+1]==='"'){cur+='"';i++;}else inQ=!inQ;}
@@ -257,519 +268,648 @@ function parseCSV(text){
   return rows;
 }
 
-// ===== STATE =====
-let sectionsHTML = [];
-let sectionsDisplay = [];
-let baseInjuries = [];
-let pendingEntries = [];
-let roster = {};
-let headshots = {};
-let playerList = [];
-let isAdmin = false;
-let purgedPlayers = new Set();
-let prePurgeBackup = null;
-
-function initials(name) { return name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase(); }
-function badgeClass(s) { return (s||'').toLowerCase().replace(/\s+/g,'-'); }
-function hsImg(name) {
-  const url = headshots[name];
-  if (url) return `<div class="pr-headshot"><img src="${url}" onerror="this.parentElement.innerHTML='<span class=\\'initials\\'>${initials(name)}</span>'"></div>`;
-  return `<div class="pr-headshot"><span class="initials">${initials(name)}</span></div>`;
-}
-
-// Admin mode: ?admin in URL
-if (window.location.search.includes('admin')) {
-  isAdmin = true;
-  document.getElementById('adminBanner').style.display = 'block';
-  document.getElementById('adminPanel').classList.add('visible');
-  document.getElementById('adminToolbar').style.display = 'flex';
-  initToken();
-}
-
-function todayPT() {
-  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' }); // returns YYYY-MM-DD
-}
-
-// Set default date to today (Pacific)
-document.getElementById('inputDate').value = todayPT();
-
-// ===== AUTOCOMPLETE =====
-const inputPlayer = document.getElementById('inputPlayer');
-const acList = document.getElementById('acList');
-let acIndex = -1;
-
-inputPlayer.addEventListener('input', function() {
-  const val = this.value.toLowerCase().trim();
-  acList.innerHTML = '';
-  acIndex = -1;
-  if (val.length < 2) { acList.classList.remove('show'); return; }
-
-  const matches = playerList.filter(p => p.name.toLowerCase().includes(val)).slice(0, 12);
-  if (!matches.length) { acList.classList.remove('show'); return; }
-
-  matches.forEach((p, i) => {
-    const div = document.createElement('div');
-    div.className = 'autocomplete-item';
-    div.innerHTML = `<span>${p.name}</span><span class="team-hint">${p.team}</span>`;
-    div.addEventListener('click', () => selectPlayer(p));
-    acList.appendChild(div);
-  });
-  acList.classList.add('show');
-});
-
-inputPlayer.addEventListener('keydown', function(e) {
-  const items = acList.querySelectorAll('.autocomplete-item');
-  if (!items.length) return;
-  if (e.key === 'ArrowDown') { e.preventDefault(); acIndex = Math.min(acIndex + 1, items.length - 1); highlightAC(items); }
-  else if (e.key === 'ArrowUp') { e.preventDefault(); acIndex = Math.max(acIndex - 1, 0); highlightAC(items); }
-  else if (e.key === 'Enter') { e.preventDefault(); if(acIndex < 0) acIndex = 0; items[acIndex].click(); }
-  else if (e.key === 'Escape') { acList.classList.remove('show'); }
-});
-
-function highlightAC(items) {
-  items.forEach((it, i) => it.classList.toggle('selected', i === acIndex));
-}
-
-function selectPlayer(p) {
-  inputPlayer.value = p.name;
-  acList.classList.remove('show');
-  // Auto-fill last known injury if exists
-  const lastEntry = [...baseInjuries, ...pendingEntries].reverse().find(e => e.player === p.name);
-  if (lastEntry && lastEntry.injury) {
-    document.getElementById('inputInjury').value = lastEntry.injury;
-  }
-  document.getElementById('inputStatus').focus();
-}
-
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('.field-player')) acList.classList.remove('show');
-});
-
-// ===== ADD / REMOVE ENTRIES =====
-function addEntry() {
-  const player = inputPlayer.value.trim();
-  const status = document.getElementById('inputStatus').value;
-  const injury = document.getElementById('inputInjury').value.trim();
-  const date = document.getElementById('inputDate').value;
-
-  if (!player) { inputPlayer.focus(); return; }
-  if (!injury) { document.getElementById('inputInjury').focus(); return; }
-  if (!date) { document.getElementById('inputDate').focus(); return; }
-
-  // Remove any existing pending entry for same player + same date (replace, don't stack)
-  pendingEntries = pendingEntries.filter(e => !(e.player === player && e.date === date));
-  pendingEntries.push({ player, status, injury, date });
-
-  // Clear form
-  inputPlayer.value = '';
-  document.getElementById('inputInjury').value = '';
-  document.getElementById('inputStatus').value = 'Out';
-  inputPlayer.focus();
-
-  renderPending();
-  rebuildTables();
-}
-
-function removeEntry(idx) {
-  pendingEntries.splice(idx, 1);
-  renderPending();
-  rebuildTables();
-}
-
-function clearPending() {
-  if (pendingEntries.length && !confirm('Clear all pending entries?')) return;
-  pendingEntries = [];
-  renderPending();
-  rebuildTables();
-}
-
-function renderPending() {
-  const el = document.getElementById('pendingList');
-  if (!pendingEntries.length) { el.innerHTML = ''; return; }
-
-  let html = `<div class="pending-header"><span class="pending-count">📝 ${pendingEntries.length} pending update${pendingEntries.length > 1 ? 's' : ''}</span></div>`;
-  pendingEntries.forEach((e, i) => {
-    html += `<div class="pending-entry">
-      <span class="pe-player">${e.player}</span>
-      <span class="pe-status" style="color:${sColor(e.status)}">${e.status}</span>
-      <span class="pe-injury">${e.injury}</span>
-      <span class="pe-date">${e.date}</span>
-      <span class="pe-remove" onclick="removeEntry(${i})">✕</span>
-    </div>`;
-  });
-  el.innerHTML = html;
-}
-
-// ===== GITHUB TOKEN =====
-const GH_OWNER = 'aderoa';
-const GH_REPO = 'Injuries';
-const GH_FILE = 'injuries.json';
-
-function initToken() {
-  const saved = localStorage.getItem('gh_injuries_token');
-  if (saved) {
-    document.getElementById('ghToken').value = saved;
-    document.getElementById('tokenRow').classList.add('saved');
-  }
-}
-function saveToken() {
-  const token = document.getElementById('ghToken').value.trim();
-  if (token) {
-    localStorage.setItem('gh_injuries_token', token);
-    document.getElementById('tokenRow').classList.add('saved');
-    document.getElementById('ghStatus').textContent = '✓ Token saved';
-    setTimeout(() => document.getElementById('ghStatus').textContent = '', 2000);
-  }
-}
-function toggleToken() {
-  const inp = document.getElementById('ghToken');
-  inp.type = inp.type === 'password' ? 'text' : 'password';
-}
-
-// Dedup: keep only the latest entry per player per day
-function dedupeInjuries(entries) {
-  const map = {};
-  for (const e of entries) {
-    const key = e.player + '|' + e.date;
-    map[key] = e; // last one wins
-  }
-  return Object.values(map).sort((a, b) => a.date.localeCompare(b.date) || a.player.localeCompare(b.player));
-}
-
-async function saveToGitHub(btn) {
-  const token = document.getElementById('ghToken').value.trim();
-  if (!token) { document.getElementById('ghStatus').textContent = '⚠ Enter token first'; return; }
-
-  const merged = dedupeInjuries([...baseInjuries, ...pendingEntries]);
-  if (!pendingEntries.length) { document.getElementById('ghStatus').textContent = 'No pending changes'; setTimeout(() => document.getElementById('ghStatus').textContent = '', 2000); return; }
-
-  const orig = btn.textContent;
-  btn.textContent = '⏳ Saving...'; btn.disabled = true;
-  const statusEl = document.getElementById('ghStatus');
-
-  try {
-    // Get current file SHA (required for updates)
-    const getR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
-      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
-    });
-    if (!getR.ok) throw new Error(getR.status === 401 ? 'Bad token — check your PAT' : 'Failed to read file: ' + getR.status);
-    const fileData = await getR.json();
-    const sha = fileData.sha;
-
-    // Push updated content
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(merged, null, 2))));
-    const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
-      method: 'PUT',
-      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: `Update injuries ${todayPT()}`, content, sha })
-    });
-    if (!putR.ok) { const err = await putR.json(); throw new Error(err.message || 'Push failed: ' + putR.status); }
-
-    // Success: merge pending into base, clear pending
-    baseInjuries = merged;
-    pendingEntries = [];
-    renderPending();
-    btn.textContent = '✓ Saved!'; btn.classList.add('success');
-    statusEl.textContent = `Pushed ${new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`;
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); btn.disabled = false; }, 2000);
-  } catch (err) {
-    statusEl.textContent = '❌ ' + err.message;
-    btn.textContent = orig; btn.disabled = false;
-  }
-}
-
-// ===== COPY JSON =====
-function copyJSON(btn) {
-  const merged = dedupeInjuries([...baseInjuries, ...pendingEntries]);
-  const json = JSON.stringify(merged, null, 2);
-  const orig = btn.textContent;
-  navigator.clipboard.writeText(json).then(() => {
-    btn.textContent = '✓ Copied!';
-    setTimeout(() => btn.textContent = orig, 2000);
-  }).catch(() => {
-    const ta = document.createElement('textarea');
-    ta.value = json; document.body.appendChild(ta); ta.select();
-    document.execCommand('copy'); document.body.removeChild(ta);
-    btn.textContent = '✓ Copied!';
-    setTimeout(() => btn.textContent = orig, 2000);
-  });
-}
+// ===== SHARED STATE =====
+let roster = {};      // player -> {team, salary}
+let teamSalaries = {}; // team -> total salary
+let daysMap = {};     // player -> days since last game
+let jsonEntries = []; // raw injuries.json
+let latestStatus = {}; // player -> {status, injury, date}
+let modifications = {}; // player -> {status, injury, date} (admin edits)
 
 // ===== DATA LOADING =====
-let teamSalaries = {};
-let daysMap = {};
+async function loadData() {
+  const [csvR, jsonR] = await Promise.all([
+    fetch(CSV_URL),
+    fetch(JSON_URL + '?t=' + Date.now())
+  ]);
+  if (!csvR.ok) throw new Error('CSV fetch failed: ' + csvR.status);
+  if (!jsonR.ok) throw new Error('injuries.json fetch failed: ' + jsonR.status);
 
-async function fetchWithFallback(ssid, gid, label) {
-  const isCSV = (d) => d && d.length > 50 && !d.trim().startsWith('<');
-  // Try gviz first
-  try {
-    const r = await fetch(`https://docs.google.com/spreadsheets/d/${ssid}/gviz/tq?tqx=out:csv&gid=${gid}`);
-    if (r.ok) { const t = await r.text(); if (isCSV(t)) { console.log(`✓ ${label} (gviz)`); return t; } }
-  } catch(e) {}
-  // Fallback: export format
-  try {
-    const r = await fetch(`https://docs.google.com/spreadsheets/d/${ssid}/export?format=csv&gid=${gid}`);
-    if (r.ok) { const t = await r.text(); if (isCSV(t)) { console.log(`✓ ${label} (export)`); return t; } }
-  } catch(e) {}
-  console.error(`✗ ${label}: all formats failed`);
-  return null;
+  const csvText = await csvR.text();
+  const injuries = await jsonR.json();
+  const rows = parseCSV(csvText);
+
+  // Roster: cols 38(team), 40(player), 44(salary)
+  roster = {}; teamSalaries = {};
+  for (const r of rows) {
+    if (r.length > 44) {
+      const team = (r[38]||'').trim(), player = (r[40]||'').trim(), sal = (r[44]||'').trim();
+      if (player && player !== 'PLAYER' && team && /^\d+$/.test(sal)) {
+        roster[player] = { team, salary: parseInt(sal) };
+        teamSalaries[team] = (teamSalaries[team]||0) + parseInt(sal);
+      }
+    }
+  }
+
+  // Days since last game: cols 71(player), 73(days)
+  daysMap = {};
+  for (const r of rows) {
+    if (r.length > 73) {
+      const p = (r[71]||'').trim(), d = (r[73]||'').trim();
+      if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
+    }
+  }
+
+  // Process JSON entries
+  jsonEntries = injuries;
+  latestStatus = {};
+  const prev = {};
+  for (const e of injuries) {
+    if (latestStatus[e.player]) prev[e.player] = latestStatus[e.player];
+    latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date };
+  }
+
+  return { prev };
 }
 
-async function loadData() {
+// ===== IS ADMIN? =====
+const isAdmin = new URLSearchParams(window.location.search).has('admin');
+
+if (isAdmin) {
+  document.body.innerHTML = `
+    <div class="admin-container">
+      <div class="admin-header">
+        <h1>🏥 Injury Report — Admin</h1>
+        <span class="subtitle" id="lastUpdate"></span>
+      </div>
+      <div class="admin-toolbar" id="toolbar">
+        <button class="primary" onclick="copyJSON(this)">📋 Copy Updated JSON</button>
+        <button onclick="window.open('https://github.com/aderoa/Injuries/edit/main/injuries.json','_blank')">✏️ Open on GitHub</button>
+        <button onclick="copyPrestoHTML(this)">📋 Copy Presto HTML</button>
+        <button onclick="resetAll()">↩ Reset All</button>
+        <span class="spacer"></span>
+        <span class="badge" id="changesBadge">0 changes</span>
+      </div>
+      <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="Search player or team..." oninput="filterPlayers()">
+        <button class="filter-btn" onclick="toggleFilter('modified',this)" title="Show only modified">✎ Modified</button>
+        <button class="filter-btn" onclick="toggleFilter('injured',this)" title="Show only injured">🔴 Injured</button>
+        <button class="filter-btn" onclick="toggleFilter('available',this)" title="Show only available">🟢 Available</button>
+      </div>
+      <div class="col-headers">
+        <span>Player</span><span>Salary</span><span>Status</span><span>Injury</span><span>Date</span>
+      </div>
+      <div id="rosterArea"><div class="loading-state"><div class="loading-spinner"></div><p>Loading roster...</p></div></div>
+    </div>
+  `;
+  initAdmin();
+} else {
+  document.body.innerHTML = `
+    <div class="report-container">
+      <div class="admin-header">
+        <h1>🏥 NBA Injury Report</h1>
+      </div>
+      <div class="report-toolbar" id="reportToolbar">
+        <button onclick="copyAll(this)">📋 Copy Full Report</button>
+        <button onclick="copySection(0,this)">📋 Today's Updates</button>
+        <button onclick="copySection(1,this)">📋 Full Report</button>
+        <button onclick="copySection(2,this)">📋 Salary Per Team</button>
+        <button onclick="copySection(3,this)">📋 Highest-Paid</button>
+        <button onclick="refreshReport(this)">🔄 Refresh</button>
+        <button class="btn-purge" onclick="togglePurge(this)">🧹 Purge Available</button>
+      </div>
+      <div class="tab-bar" id="tabBar">
+        <button onclick="showTab(0,this)">Today's Updates</button>
+        <button onclick="showTab(1,this)">Full Report</button>
+        <button onclick="showTab(2,this)">Salary Per Team</button>
+        <button onclick="showTab(3,this)">Highest-Paid</button>
+        <button class="active" onclick="showTab(-1,this)">All</button>
+      </div>
+      <div id="loading" class="loading-state"><div class="loading-spinner"></div><p>Loading injury data...</p></div>
+      <div id="preview" class="preview" style="display:none;"></div>
+      <div id="error" class="error-msg" style="display:none;"></div>
+    </div>
+  `;
+  initReport();
+}
+
+// ==========================================
+// ADMIN MODE
+// ==========================================
+let activeFilter = null;
+
+async function initAdmin() {
   try {
-    const [injCsvText, rosterCsvText, jsonR] = await Promise.all([
-      fetchWithFallback(INJ_SSID, INJ_GID, 'Injuries CSV'),
-      fetchWithFallback(ROSTER_SSID, '0', 'Roster CSV'),
-      fetch(JSON_URL + '?t=' + Date.now())
-    ]);
-    if (!injCsvText) throw new Error('Injuries CSV fetch failed');
-    if (!jsonR.ok) throw new Error('injuries.json fetch failed: ' + jsonR.status);
+    await loadData();
+    document.getElementById('lastUpdate').textContent = `${Object.keys(roster).length} players loaded`;
+    renderRoster();
+  } catch(e) {
+    document.getElementById('rosterArea').innerHTML = `<div class="error-msg">Error: ${e.message}</div>`;
+  }
+}
 
-    baseInjuries = await jsonR.json();
+function renderRoster() {
+  const area = document.getElementById('rosterArea');
+  let html = '';
 
-    // Build roster from injuries CSV: cols 38(team), 40(player), 44(salary)
-    roster = {}; teamSalaries = {}; headshots = {};
+  for (const team of NBA_TEAMS) {
+    const players = Object.entries(roster)
+      .filter(([_,v]) => v.team === team)
+      .sort((a,b) => b[1].salary - a[1].salary);
+    if (!players.length) continue;
 
-    if (injCsvText) {
-      const rows = parseCSV(injCsvText);
-      for (const r of rows) {
-        if (r.length > 44) {
-          const team = (r[38] || '').trim(), player = (r[40] || '').trim(), sal = (r[44] || '').trim();
-          const salNum = parseInt(sal.replace(/[$,\s]/g, '')) || 0;
-          if (player && player !== 'PLAYER' && team) {
-            roster[player] = { team, salary: salNum };
-            teamSalaries[team] = (teamSalaries[team] || 0) + salNum;
-          }
-        }
+    const injuredCount = players.filter(([name]) => {
+      const mod = modifications[name];
+      const cur = mod || latestStatus[name];
+      return cur && cur.status !== 'Available';
+    }).length;
+
+    html += `<div class="team-section" data-team="${team}" id="team-${team.replace(/\s/g,'')}">`;
+    html += `<div class="team-header" onclick="toggleTeam(this)">`;
+    html += `<img src="${teamLogo(team)}" alt="${team}">`;
+    html += `<span class="team-name">${team}</span>`;
+    html += `<span class="team-count">${players.length} players</span>`;
+    html += `<span class="team-injured ${injuredCount?'':'none'}">${injuredCount} injured</span>`;
+    html += `<span class="chevron">▼</span>`;
+    html += `</div>`;
+    html += `<div class="team-players">`;
+
+    for (const [name, info] of players) {
+      const cur = modifications[name] || latestStatus[name] || { status:'Available', injury:'', date:'' };
+      const isModified = !!modifications[name];
+      const isAvail = cur.status === 'Available';
+
+      html += `<div class="player-row ${isModified?'modified':''}" data-player="${name}" data-team="${team}">`;
+      html += `<span class="player-name" title="${name}">${name}</span>`;
+      html += `<span class="player-salary">${fmtSal(info.salary)}</span>`;
+
+      // Status select
+      html += `<select class="${statusClass(cur.status)}" onchange="onStatusChange('${name.replace(/'/g,"\\'")}',this)">`;
+      for (const s of STATUSES) {
+        html += `<option value="${s}" ${s===cur.status?'selected':''}>${s}</option>`;
       }
-      console.log(`Roster: ${Object.keys(roster).length} players`);
+      html += `</select>`;
 
-      // Days since last game: cols 71(player), 73(days)
-      daysMap = {};
-      for (const r of rows) {
-        if (r.length > 73) {
-          const p = (r[71] || '').trim(), d = (r[73] || '').trim();
-          if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
-        }
-      }
-      console.log(`Days map: ${Object.keys(daysMap).length} players`);
+      // Injury input
+      html += `<input type="text" value="${cur.injury||''}" class="${isAvail?'inactive':''}" placeholder="${isAvail?'—':'Injury reason'}" onchange="onInjuryChange('${name.replace(/'/g,"\\'")}',this)" onfocus="this.classList.remove('inactive')">`;
+
+      // Date input
+      html += `<input type="date" value="${cur.date||''}" class="${isAvail?'inactive':''}" onchange="onDateChange('${name.replace(/'/g,"\\'")}',this)">`;
+
+      html += `</div>`;
     }
 
-    // Fetch headshots + fallback roster from roster CSV (different spreadsheet, gid=0)
-    if (rosterCsvText) {
-      const rRows = parseCSV(rosterCsvText);
-      if (rRows.length > 1) {
-        const hdr = rRows[0].map(h => (h || '').trim().toUpperCase());
-        const pi = hdr.indexOf('PLAYER');
-        const hi = hdr.indexOf('HEADSHOT');
-        const ti = hdr.indexOf('TEAM');
-        if (pi >= 0) {
-          for (let i = 1; i < rRows.length; i++) {
-            const name = (rRows[i][pi] || '').trim();
-            if (!name) continue;
-            const hs = hi >= 0 ? (rRows[i][hi] || '').trim() : '';
-            if (hs) headshots[name] = hs;
-            // Add players missing from injuries CSV roster
-            if (!roster[name] && ti >= 0) {
-              const team = (rRows[i][ti] || '').trim();
-              if (team) {
-                roster[name] = { team, salary: 0 };
-                // Try to find salary in any column named SALARY or containing numbers
-                for (let c = 0; c < rRows[i].length; c++) {
-                  if (hdr[c] === 'SALARY' || hdr[c] === '2026') {
-                    const s = parseInt((rRows[i][c] || '').trim().replace(/[$,\s]/g, '')) || 0;
-                    if (s > 0) { roster[name].salary = s; break; }
-                  }
-                }
-              }
-            }
-          }
-        }
-        console.log(`Headshots: ${Object.keys(headshots).length}, Roster after fallback: ${Object.keys(roster).length}`);
-      }
+    html += `</div></div>`;
+  }
+
+  area.innerHTML = html;
+}
+
+function toggleTeam(el) {
+  el.closest('.team-section').classList.toggle('collapsed');
+}
+
+function getEffectiveStatus(name) {
+  return modifications[name] || latestStatus[name] || { status:'Available', injury:'', date:'' };
+}
+
+function onStatusChange(name, sel) {
+  const row = sel.closest('.player-row');
+  const injInput = row.querySelector('input[type="text"]');
+  const dateInput = row.querySelector('input[type="date"]');
+  const newStatus = sel.value;
+
+  // Determine the original status from JSON
+  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
+
+  // Update select color class
+  sel.className = statusClass(newStatus);
+
+  if (newStatus === original.status && !injInput.value && !dateInput.value) {
+    // Reverted to original — remove modification
+    delete modifications[name];
+    row.classList.remove('modified');
+    injInput.className = newStatus==='Available' ? 'inactive' : '';
+    dateInput.className = newStatus==='Available' ? 'inactive' : '';
+  } else {
+    // Set default date to today if empty
+    if (!dateInput.value) dateInput.value = todayISO();
+    // Carry forward injury from JSON if available and field empty
+    if (!injInput.value && original.injury && newStatus !== 'Available') {
+      injInput.value = original.injury;
     }
 
-    // Player list for autocomplete (sorted by name)
-    playerList = Object.entries(roster).map(([name, r]) => ({ name, team: r.team })).sort((a, b) => a.name.localeCompare(b.name));
+    modifications[name] = {
+      status: newStatus,
+      injury: injInput.value,
+      date: dateInput.value
+    };
+    row.classList.add('modified');
+    injInput.classList.remove('inactive');
+    dateInput.classList.remove('inactive');
+  }
 
-    rebuildTables();
+  updateBadge();
+  updateTeamInjuredCounts();
+}
+
+function onInjuryChange(name, inp) {
+  const row = inp.closest('.player-row');
+  const sel = row.querySelector('select');
+  const dateInput = row.querySelector('input[type="date"]');
+  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
+
+  if (sel.value === original.status && !inp.value && !dateInput.value) {
+    delete modifications[name];
+    row.classList.remove('modified');
+  } else {
+    if (!dateInput.value) dateInput.value = todayISO();
+    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value };
+    row.classList.add('modified');
+  }
+  updateBadge();
+}
+
+function onDateChange(name, inp) {
+  const row = inp.closest('.player-row');
+  const sel = row.querySelector('select');
+  const injInput = row.querySelector('input[type="text"]');
+  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
+
+  if (sel.value === original.status && !injInput.value && !inp.value) {
+    delete modifications[name];
+    row.classList.remove('modified');
+  } else {
+    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value };
+    row.classList.add('modified');
+  }
+  updateBadge();
+}
+
+function updateBadge() {
+  const count = Object.keys(modifications).length;
+  const badge = document.getElementById('changesBadge');
+  badge.textContent = `${count} change${count!==1?'s':''}`;
+  badge.className = count ? 'badge has-changes' : 'badge';
+}
+
+function updateTeamInjuredCounts() {
+  document.querySelectorAll('.team-section').forEach(sec => {
+    const team = sec.dataset.team;
+    const rows = sec.querySelectorAll('.player-row');
+    let injured = 0;
+    rows.forEach(r => {
+      const sel = r.querySelector('select');
+      if (sel && sel.value !== 'Available') injured++;
+    });
+    const badge = sec.querySelector('.team-injured');
+    if (badge) {
+      badge.textContent = `${injured} injured`;
+      badge.classList.toggle('none', injured === 0);
+    }
+  });
+}
+
+function filterPlayers() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  document.querySelectorAll('.team-section').forEach(sec => {
+    let anyVisible = false;
+    sec.querySelectorAll('.player-row').forEach(row => {
+      const name = row.dataset.player.toLowerCase();
+      const team = row.dataset.team.toLowerCase();
+      let show = !q || name.includes(q) || team.includes(q);
+
+      // Apply active filter
+      if (show && activeFilter === 'modified') show = row.classList.contains('modified');
+      if (show && activeFilter === 'injured') {
+        const sel = row.querySelector('select');
+        show = sel && sel.value !== 'Available';
+      }
+      if (show && activeFilter === 'available') {
+        const sel = row.querySelector('select');
+        show = sel && sel.value === 'Available';
+      }
+
+      row.style.display = show ? '' : 'none';
+      if (show) anyVisible = true;
+    });
+    sec.style.display = anyVisible ? '' : 'none';
+    if (anyVisible) sec.classList.remove('collapsed');
+  });
+}
+
+function toggleFilter(type, btn) {
+  if (activeFilter === type) {
+    activeFilter = null;
+    btn.classList.remove('active');
+  } else {
+    activeFilter = type;
+    document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  filterPlayers();
+}
+
+function resetAll() {
+  if (Object.keys(modifications).length && !confirm('Reset all changes?')) return;
+  modifications = {};
+  renderRoster();
+  updateBadge();
+}
+
+// ===== JSON GENERATION =====
+function buildMergedJSON() {
+  // Start with original entries
+  const merged = [...jsonEntries];
+
+  // Append modifications as new entries
+  for (const [player, mod] of Object.entries(modifications)) {
+    merged.push({
+      player,
+      status: mod.status,
+      injury: mod.injury || '',
+      date: mod.date || todayISO()
+    });
+  }
+
+  return merged;
+}
+
+function copyJSON(btn) {
+  const merged = buildMergedJSON();
+  const json = JSON.stringify(merged, null, 2);
+  navigator.clipboard.writeText(json).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copied!'; btn.classList.add('success');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  });
+}
+
+// ===== PRESTO HTML GENERATION (same 4 tables) =====
+function buildPrestoHTML() {
+  const merged = buildMergedJSON();
+
+  // Rebuild latest + prev from merged
+  const lat = {}, prv = {};
+  for (const e of merged) {
+    if (lat[e.player]) prv[e.player] = lat[e.player];
+    lat[e.player] = e;
+  }
+
+  const today = todayISO();
+  const tStyle = 'border-collapse:collapse;width:100%;font-family:Arial,sans-serif;font-size:14px;';
+  const thStyle = 'background:#1a1a2e;color:#fff;padding:10px 12px;text-align:left;border:1px solid #333;';
+  const tdS = 'padding:8px 12px;border:1px solid #ddd;';
+
+  // Table 1: Today's Updates
+  const todayEntries = merged.filter(e => e.date === today).map(e => {
+    const p = prv[e.player], r = roster[e.player] || {};
+    return { player:e.player, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
+  }).sort((a,b) => {
+    if (a.team !== b.team) return a.team.localeCompare(b.team);
+    return (STATUS_GRAVITY[a.status]||4) - (STATUS_GRAVITY[b.status]||4);
+  });
+
+  let t1 = `<table style="${tStyle}"><thead><tr>`;
+  t1 += `<th style="${thStyle}">Team</th><th style="${thStyle}">Player</th><th style="${thStyle}">Status</th><th style="${thStyle}">Injury</th><th style="${thStyle}">Prev</th>`;
+  t1 += `</tr></thead><tbody>`;
+  if (!todayEntries.length) {
+    t1 += `<tr><td colspan="5" style="${tdS}text-align:center;color:#888;">No updates today</td></tr>`;
+  }
+  for (const e of todayEntries) {
+    const logo = TEAM_IDS[e.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[e.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t1 += `<tr><td style="${tdS}">${logo} ${TEAM_ABBREV[e.team]||e.team}</td>`;
+    t1 += `<td style="${tdS}font-weight:600;">${e.player}</td>`;
+    t1 += `<td style="${tdS}color:${sColor(e.status)};font-weight:700;">${e.status}</td>`;
+    t1 += `<td style="${tdS}">${e.injury}</td>`;
+    t1 += `<td style="${tdS}color:${sColor(e.prevStatus)};font-weight:700;">${e.prevStatus}</td></tr>`;
+  }
+  t1 += `</tbody></table>`;
+
+  // Table 2: Full Report
+  const allInjured = Object.entries(lat)
+    .filter(([_,e]) => e.status !== 'Available')
+    .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
+    .sort((a,b) => {
+      if (a.team !== b.team) return a.team.localeCompare(b.team);
+      return (STATUS_GRAVITY[a.status]||4) - (STATUS_GRAVITY[b.status]||4);
+    });
+
+  let t2 = `<table style="${tStyle}"><thead><tr>`;
+  t2 += `<th style="${thStyle}">Team</th><th style="${thStyle}">Player</th><th style="${thStyle}">Status</th><th style="${thStyle}">Injury</th><th style="${thStyle}">Since</th><th style="${thStyle}">Days</th><th style="${thStyle}">Salary</th>`;
+  t2 += `</tr></thead><tbody>`;
+  for (const e of allInjured) {
+    const logo = TEAM_IDS[e.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[e.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t2 += `<tr><td style="${tdS}">${logo} ${TEAM_ABBREV[e.team]||e.team}</td>`;
+    t2 += `<td style="${tdS}font-weight:600;">${e.player}</td>`;
+    t2 += `<td style="${tdS}color:${sColor(e.status)};font-weight:700;">${e.status}</td>`;
+    t2 += `<td style="${tdS}">${e.injury||''}</td>`;
+    t2 += `<td style="${tdS}">${e.date ? fmtDate(e.date) : ''}</td>`;
+    t2 += `<td style="${tdS}text-align:center;">${e.days||''}</td>`;
+    t2 += `<td style="${tdS}text-align:right;">${fmtSal(e.salary)}</td></tr>`;
+  }
+  t2 += `</tbody></table>`;
+
+  // Table 3: Salary Per Team
+  const teamInjSal = {};
+  for (const e of allInjured) {
+    if (e.status === 'Out' || e.status === 'Doubtful') {
+      teamInjSal[e.team] = (teamInjSal[e.team]||0) + e.salary;
+    }
+  }
+  let totalNBASal = 0, totalNBAInj = 0;
+  for (const t of NBA_TEAMS) { totalNBASal += teamSalaries[t]||0; totalNBAInj += teamInjSal[t]||0; }
+
+  const teamRows = NBA_TEAMS.map(t => ({
+    team:t, injured:teamInjSal[t]||0, total:teamSalaries[t]||0,
+    pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
+  })).sort((a,b) => b.injured - a.injured);
+
+  let t3 = `<table style="${tStyle}"><thead><tr>`;
+  t3 += `<th style="${thStyle}">Team</th><th style="${thStyle}">Injured Salary</th><th style="${thStyle}">Total Salary</th><th style="${thStyle}">%</th>`;
+  t3 += `</tr></thead><tbody>`;
+  for (const r of teamRows) {
+    const logo = TEAM_IDS[r.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[r.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t3 += `<tr><td style="${tdS}">${logo} ${r.team}</td>`;
+    t3 += `<td style="${tdS}text-align:right;font-weight:600;${r.injured?'color:#ef4444;':''}">${fmtSalFull(r.injured)}</td>`;
+    t3 += `<td style="${tdS}text-align:right;">${fmtSalFull(r.total)}</td>`;
+    t3 += `<td style="${tdS}text-align:right;">${r.pct.toFixed(1)}%</td></tr>`;
+  }
+  // NBA total row
+  const nbaLogo = `<img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="24" height="24" style="vertical-align:middle;">`;
+  t3 += `<tr style="background:#1a1a2e;color:#fff;font-weight:700;">`;
+  t3 += `<td style="${tdS}border-color:#333;">${nbaLogo} NBA</td>`;
+  t3 += `<td style="${tdS}text-align:right;border-color:#333;color:#ef4444;">${fmtSalFull(totalNBAInj)}</td>`;
+  t3 += `<td style="${tdS}text-align:right;border-color:#333;">${fmtSalFull(totalNBASal)}</td>`;
+  t3 += `<td style="${tdS}text-align:right;border-color:#333;">${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(1):'0.0'}%</td></tr>`;
+  t3 += `</tbody></table>`;
+
+  // Table 4: Highest-Paid Injured
+  const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
+  let t4 = `<table style="${tStyle}"><thead><tr>`;
+  t4 += `<th style="${thStyle}">#</th><th style="${thStyle}">Team</th><th style="${thStyle}">Player</th><th style="${thStyle}">Status</th><th style="${thStyle}">Injury</th><th style="${thStyle}">Salary</th>`;
+  t4 += `</tr></thead><tbody>`;
+  topPaid.forEach((e,i) => {
+    const logo = TEAM_IDS[e.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[e.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t4 += `<tr><td style="${tdS}text-align:center;font-weight:600;">${i+1}</td>`;
+    t4 += `<td style="${tdS}">${logo} ${TEAM_ABBREV[e.team]||e.team}</td>`;
+    t4 += `<td style="${tdS}font-weight:600;">${e.player}</td>`;
+    t4 += `<td style="${tdS}color:${sColor(e.status)};font-weight:700;">${e.status}</td>`;
+    t4 += `<td style="${tdS}">${e.injury||''}</td>`;
+    t4 += `<td style="${tdS}text-align:right;font-weight:600;">${fmtSalFull(e.salary)}</td></tr>`;
+  });
+  t4 += `</tbody></table>`;
+
+  return [t1, t2, t3, t4];
+}
+
+function copyPrestoHTML(btn) {
+  const sections = buildPrestoHTML();
+  const html = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sections.join('\n<br>\n')}\n</div>`;
+  navigator.clipboard.writeText(html).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copied!'; btn.classList.add('success');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  });
+}
+
+// ==========================================
+// REPORT MODE (non-admin)
+// ==========================================
+let sectionsHTML = [];
+let purgeActive = false;
+
+async function initReport() {
+  try {
+    const { prev } = await loadData();
+    buildReportSections(prev);
     document.getElementById('loading').style.display = 'none';
     document.getElementById('preview').style.display = 'block';
     showTab(-1, document.querySelector('.tab-bar button.active'));
-    document.getElementById('status').textContent = 'Updated ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-  } catch (err) {
+  } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
-    document.getElementById('error').innerHTML = `<p>${err.message}</p>`;
-    console.error(err);
+    document.getElementById('error').textContent = 'Error: ' + e.message;
   }
 }
 
-function rebuildTables() {
-  const allInjuries = dedupeInjuries([...baseInjuries, ...pendingEntries]);
-  const today = todayPT();
+function buildReportSections(prev) {
+  // Reuse buildPrestoHTML logic for the preview
+  const merged = jsonEntries; // no modifications in report mode
+  const lat = {};
+  for (const e of merged) { lat[e.player] = e; }
 
-  const latest = {}, prevDay = {};
-  for (const e of allInjuries) {
-    // prevDay = most recent entry from a day BEFORE today
-    if (e.date !== today) prevDay[e.player] = e;
-    latest[e.player] = e;
-  }
+  const sections = buildPrestoHTMLFromData(merged, lat, prev);
+  sectionsHTML = sections;
+}
 
-  // T1: Today's Updates — only the LATEST entry per player for today
-  const todayLatest = {};
-  for (const e of allInjuries) {
-    if (e.date === today && !purgedPlayers.has(e.player)) {
-      todayLatest[e.player] = e; // last one wins
-    }
-  }
-  const todayData = Object.values(todayLatest).map(e => {
-    const p = prevDay[e.player], r = roster[e.player] || {};
-    return { player: e.player, status: e.status, injury: e.injury, prevStatus: p ? p.status : 'Available', team: r.team || '', salary: r.salary || 0 };
-  }).sort((a, b) => a.team.localeCompare(b.team) || sOrder(a.status) - sOrder(b.status) || b.salary - a.salary);
+function buildPrestoHTMLFromData(entries, lat, prv) {
+  // Same logic as buildPrestoHTML but using provided data
+  const today = todayISO();
+  const tStyle = 'border-collapse:collapse;width:100%;font-family:Arial,sans-serif;font-size:14px;';
+  const thStyle = 'background:#1a1a2e;color:#fff;padding:10px 12px;text-align:left;border:1px solid #333;';
+  const tdS = 'padding:8px 12px;border:1px solid #ddd;';
 
-  // T2: Full Report — show all including Available (until purged)
-  const fullRpt = [];
-  for (const [player, entry] of Object.entries(latest)) {
-    if (purgedPlayers.has(player)) continue;
-    const r = roster[player] || {}; if (!r.team) continue;
-    fullRpt.push({ player, status: entry.status, injury: entry.injury, date: entry.date, team: r.team, salary: r.salary || 0 });
-  }
-  fullRpt.sort((a, b) => a.team.localeCompare(b.team) || sOrder(a.status) - sOrder(b.status) || b.salary - a.salary);
-
-  // T3: Salary Per Team — only Out/Doubtful count as injured
-  const tInj = {};
-  for (const e of fullRpt) {
-    if (e.status === 'Out' || e.status === 'Doubtful') {
-      tInj[e.team] = (tInj[e.team] || 0) + e.salary;
-    }
-  }
-  const allTeams = Object.keys(TEAM_IDS);
-  const salTeam = allTeams.map(t => ({
-    team: t, injSal: tInj[t] || 0, totSal: teamSalaries[t] || 1,
-    pct: (((tInj[t] || 0) / (teamSalaries[t] || 1)) * 100).toFixed(2)
-  })).sort((a, b) => b.injSal - a.injSal);
-
-  // T4: Highest-Paid (exclude Available — they're not injured)
-  const highest = fullRpt.filter(e => e.status !== 'Available').map(e => ({ ...e, days: daysMap[e.player] !== undefined ? daysMap[e.player] : '' })).sort((a, b) => b.salary - a.salary);
-
-  // Build HTML
-  const TH = 'style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
-  const TD = 'style="text-align:center;height:40px;border:1px solid #eee;padding:4px;"';
-  const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
-  const H2S = 'style="font-size:22px;font-weight:700;margin-bottom:10px;"';
-
-  let h1 = `<h2 ${H2S}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
-  let lt = '';
-  todayData.forEach((e, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
-    h1 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus ? sSpan(e.prevStatus) : ''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
-  });
-  h1 += '</tbody></table>';
-
-  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>LAST UPDATE</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
-  lt = '';
-  fullRpt.forEach((e, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
-    h2 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${fmtDate(e.date)}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
-  });
-  h2 += '</tbody></table>';
-
-  let h3 = `<h2 ${H2S}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
-  salTeam.forEach((e, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    h3 += `<tr style="background:${bg};"><td ${TD}>${i+1}</td><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.team}</strong></td><td ${TD}>${fmtSalFull(e.injSal)}</td><td ${TD}>${e.pct}%</td></tr>`;
-  });
-  const nbaTotSal = Object.values(teamSalaries).reduce((a, b) => a + b, 0);
-  const nbaTotInj = salTeam.reduce((a, e) => a + e.injSal, 0);
-  const nbaPct = ((nbaTotInj / (nbaTotSal || 1)) * 100).toFixed(2);
-  const nbaBg = salTeam.length % 2 === 0 ? '#fff' : '#f9f9f9';
-  h3 += `<tr style="background:${nbaBg};"><td ${TD}></td><td ${TD}><img src="https://cdn.nba.com/manage/2020/10/NBA20Primary20Logo-1-259x588.jpg" width="14" height="28" style="vertical-align:middle;"></td><td ${TD}><strong>TOTAL</strong></td><td ${TD}>${fmtSalFull(nbaTotInj)}</td><td ${TD}>${nbaPct}%</td></tr>`;
-  h3 += '</tbody></table>';
-
-  let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
-  highest.slice(0, 25).forEach((e, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    h4 += `<tr style="background:${bg};"><td ${TD}>${i+1}</td><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days}</td></tr>`;
-  });
-  h4 += '</tbody></table>';
-
-  sectionsHTML = [h1, h2, h3, h4];
-
-  // ===== MODERN DISPLAY (public view) =====
-  function teamHdr(t) { return `<div class="team-group-header"><img src="${teamLogo(t)}" alt="${t}"><span>${t}</span></div>`; }
-  function playerCard(e, extras) {
-    return `<div class="player-row">${hsImg(e.player)}<div class="pr-info"><div class="pr-name">${e.player}</div><div class="pr-injury">${e.injury || ''}</div>${extras||''}</div><span class="pr-badge ${badgeClass(e.status)}">${e.status}</span><div class="pr-meta"><div class="pr-salary">${fmtSal(e.salary)}</div>${e._dateLine||''}</div></div>`;
-  }
-
-  // D1: Today's Updates
-  let d1 = '<div class="section-title">Today\'s Injury Updates</div>';
-  if (!todayData.length) { d1 += '<div class="empty-state">No updates today</div>'; }
-  else {
-    let lt2 = '';
-    todayData.forEach(e => {
-      if (e.team !== lt2) { d1 += teamHdr(e.team); lt2 = e.team; }
-      const prev = `<div class="pr-prev">was <span style="color:${sColor(e.prevStatus)}">${e.prevStatus}</span></div>`;
-      d1 += playerCard({...e, _dateLine:''}, prev);
+  const todayEntries = entries.filter(e => e.date === today)
+    .filter(e => !purgeActive || e.status !== 'Available')
+    .map(e => {
+      const p = prv[e.player], r = roster[e.player] || {};
+      return { player:e.player, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
+    }).sort((a,b) => {
+      if (a.team !== b.team) return a.team.localeCompare(b.team);
+      return (STATUS_GRAVITY[a.status]||4) - (STATUS_GRAVITY[b.status]||4);
     });
+
+  let t1 = `<table style="${tStyle}"><thead><tr>`;
+  t1 += `<th style="${thStyle}">Team</th><th style="${thStyle}">Player</th><th style="${thStyle}">Status</th><th style="${thStyle}">Injury</th><th style="${thStyle}">Prev</th>`;
+  t1 += `</tr></thead><tbody>`;
+  if (!todayEntries.length) {
+    t1 += `<tr><td colspan="5" style="${tdS}text-align:center;color:#888;">No updates today</td></tr>`;
   }
-
-  // D2: Full Report
-  let d2 = '<div class="section-title">Full Injury Report</div>';
-  let lt3 = '';
-  fullRpt.forEach(e => {
-    if (e.team !== lt3) { d2 += teamHdr(e.team); lt3 = e.team; }
-    d2 += playerCard({...e, _dateLine:`<div class="pr-date">${fmtDate(e.date)}</div>`});
-  });
-
-  // D3: Salary Per Team
-  const maxInj = Math.max(...salTeam.map(e => e.injSal), 1);
-  let d3 = '<div class="section-title">Injured Salary Per Team</div>';
-  salTeam.forEach((e, i) => {
-    const pct = (e.injSal / maxInj * 100).toFixed(0);
-    d3 += `<div class="player-row"><span class="rank-num ${i<3?'top3':''}">${i+1}</span><img src="${teamLogo(e.team)}" width="28" height="28" style="flex-shrink:0;"><div class="salary-bar-wrap"><div class="salary-bar-label"><span class="team-name">${e.team}</span><span class="pct">${fmtSalFull(e.injSal)} · ${e.pct}%</span></div><div class="salary-bar"><div class="salary-bar-fill" style="width:${pct}%"></div></div></div></div>`;
-  });
-  d3 += `<div class="salary-total"><img src="https://cdn.nba.com/manage/2020/10/NBA20Primary20Logo-1-259x588.jpg" width="14" height="28"><span class="team-name">TOTAL</span><span style="margin-left:auto;font-weight:700;color:#1a1a2e;">${fmtSalFull(nbaTotInj)} · ${nbaPct}%</span></div>`;
-
-  // D4: Highest-Paid
-  let d4 = '<div class="section-title">Top 25 Highest-Paid Injured Players</div>';
-  highest.slice(0, 25).forEach((e, i) => {
-    d4 += `<div class="player-row"><span class="rank-num ${i<3?'top3':''}">${i+1}</span>${hsImg(e.player)}<img src="${teamLogo(e.team)}" width="24" height="24" style="flex-shrink:0;"><div class="pr-info"><div class="pr-name">${e.player}</div><div class="pr-injury">${e.injury || ''}</div></div><span class="pr-badge ${badgeClass(e.status)}">${e.status}</span><div class="pr-meta"><div class="pr-salary">${fmtSalFull(e.salary)}</div>${e.days !== '' ? `<div class="pr-days">${e.days} days out</div>` : ''}</div></div>`;
-  });
-
-  sectionsDisplay = [d1, d2, d3, d4];
-
-  // Re-render active tab
-  const activeTab = document.querySelector('.tab-bar button.active');
-  if (activeTab) {
-    const idx = [...document.querySelectorAll('.tab-bar button')].indexOf(activeTab);
-    const tabIdx = idx === 4 ? -1 : idx;
-    renderTab(tabIdx);
+  for (const e of todayEntries) {
+    const logo = TEAM_IDS[e.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[e.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t1 += `<tr><td style="${tdS}">${logo} ${TEAM_ABBREV[e.team]||e.team}</td>`;
+    t1 += `<td style="${tdS}font-weight:600;">${e.player}</td>`;
+    t1 += `<td style="${tdS}color:${sColor(e.status)};font-weight:700;">${e.status}</td>`;
+    t1 += `<td style="${tdS}">${e.injury}</td>`;
+    t1 += `<td style="${tdS}color:${sColor(e.prevStatus)};font-weight:700;">${e.prevStatus}</td></tr>`;
   }
+  t1 += `</tbody></table>`;
+
+  const allInjured = Object.entries(lat)
+    .filter(([_,e]) => e.status !== 'Available')
+    .filter(([_,e]) => !purgeActive || e.status !== 'Available')
+    .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
+    .sort((a,b) => {
+      if (a.team !== b.team) return a.team.localeCompare(b.team);
+      return (STATUS_GRAVITY[a.status]||4) - (STATUS_GRAVITY[b.status]||4);
+    });
+
+  let t2 = `<table style="${tStyle}"><thead><tr>`;
+  t2 += `<th style="${thStyle}">Team</th><th style="${thStyle}">Player</th><th style="${thStyle}">Status</th><th style="${thStyle}">Injury</th><th style="${thStyle}">Since</th><th style="${thStyle}">Days</th><th style="${thStyle}">Salary</th>`;
+  t2 += `</tr></thead><tbody>`;
+  for (const e of allInjured) {
+    const logo = TEAM_IDS[e.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[e.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t2 += `<tr><td style="${tdS}">${logo} ${TEAM_ABBREV[e.team]||e.team}</td>`;
+    t2 += `<td style="${tdS}font-weight:600;">${e.player}</td>`;
+    t2 += `<td style="${tdS}color:${sColor(e.status)};font-weight:700;">${e.status}</td>`;
+    t2 += `<td style="${tdS}">${e.injury||''}</td>`;
+    t2 += `<td style="${tdS}">${e.date ? fmtDate(e.date) : ''}</td>`;
+    t2 += `<td style="${tdS}text-align:center;">${e.days||''}</td>`;
+    t2 += `<td style="${tdS}text-align:right;">${fmtSal(e.salary)}</td></tr>`;
+  }
+  t2 += `</tbody></table>`;
+
+  const teamInjSal = {};
+  for (const e of allInjured) {
+    if (e.status === 'Out' || e.status === 'Doubtful') {
+      teamInjSal[e.team] = (teamInjSal[e.team]||0) + e.salary;
+    }
+  }
+  let totalNBASal = 0, totalNBAInj = 0;
+  for (const t of NBA_TEAMS) { totalNBASal += teamSalaries[t]||0; totalNBAInj += teamInjSal[t]||0; }
+
+  const teamRowsArr = NBA_TEAMS.map(t => ({
+    team:t, injured:teamInjSal[t]||0, total:teamSalaries[t]||0,
+    pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
+  })).sort((a,b) => b.injured - a.injured);
+
+  let t3 = `<table style="${tStyle}"><thead><tr>`;
+  t3 += `<th style="${thStyle}">Team</th><th style="${thStyle}">Injured Salary</th><th style="${thStyle}">Total Salary</th><th style="${thStyle}">%</th>`;
+  t3 += `</tr></thead><tbody>`;
+  for (const r of teamRowsArr) {
+    const logo = TEAM_IDS[r.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[r.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t3 += `<tr><td style="${tdS}">${logo} ${r.team}</td>`;
+    t3 += `<td style="${tdS}text-align:right;font-weight:600;${r.injured?'color:#ef4444;':''}">${fmtSalFull(r.injured)}</td>`;
+    t3 += `<td style="${tdS}text-align:right;">${fmtSalFull(r.total)}</td>`;
+    t3 += `<td style="${tdS}text-align:right;">${r.pct.toFixed(1)}%</td></tr>`;
+  }
+  const nbaLogo = `<img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="24" height="24" style="vertical-align:middle;">`;
+  t3 += `<tr style="background:#1a1a2e;color:#fff;font-weight:700;">`;
+  t3 += `<td style="${tdS}border-color:#333;">${nbaLogo} NBA</td>`;
+  t3 += `<td style="${tdS}text-align:right;border-color:#333;color:#ef4444;">${fmtSalFull(totalNBAInj)}</td>`;
+  t3 += `<td style="${tdS}text-align:right;border-color:#333;">${fmtSalFull(totalNBASal)}</td>`;
+  t3 += `<td style="${tdS}text-align:right;border-color:#333;">${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(1):'0.0'}%</td></tr>`;
+  t3 += `</tbody></table>`;
+
+  const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
+  let t4 = `<table style="${tStyle}"><thead><tr>`;
+  t4 += `<th style="${thStyle}">#</th><th style="${thStyle}">Team</th><th style="${thStyle}">Player</th><th style="${thStyle}">Status</th><th style="${thStyle}">Injury</th><th style="${thStyle}">Salary</th>`;
+  t4 += `</tr></thead><tbody>`;
+  topPaid.forEach((e,i) => {
+    const logo = TEAM_IDS[e.team] ? `<img src="https://cdn.nba.com/logos/nba/${TEAM_IDS[e.team]}/primary/L/logo.svg" width="24" height="24" style="vertical-align:middle;">` : '';
+    t4 += `<tr><td style="${tdS}text-align:center;font-weight:600;">${i+1}</td>`;
+    t4 += `<td style="${tdS}">${logo} ${TEAM_ABBREV[e.team]||e.team}</td>`;
+    t4 += `<td style="${tdS}font-weight:600;">${e.player}</td>`;
+    t4 += `<td style="${tdS}color:${sColor(e.status)};font-weight:700;">${e.status}</td>`;
+    t4 += `<td style="${tdS}">${e.injury||''}</td>`;
+    t4 += `<td style="${tdS}text-align:right;font-weight:600;">${fmtSalFull(e.salary)}</td></tr>`;
+  });
+  t4 += `</tbody></table>`;
+
+  return [t1, t2, t3, t4];
 }
 
-// ===== UI =====
-function renderTab(idx) {
-  const src = isAdmin ? sectionsHTML : sectionsDisplay;
-  document.getElementById('preview').innerHTML = idx === -1 ? src.join(isAdmin ? '<br>' : '') : (src[idx] || '');
-}
 function showTab(idx, btn) {
   document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  renderTab(idx);
+  document.getElementById('preview').innerHTML = idx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[idx] || '');
 }
+
 function copyToClipboard(html, btn) {
   const orig = btn.textContent;
   const w = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${html}\n</div>`;
   navigator.clipboard.writeText(w).then(() => {
-    btn.textContent = '✓ Copied!'; btn.classList.add('success');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
-  }).catch(() => {
-    const ta = document.createElement('textarea'); ta.value = w; document.body.appendChild(ta); ta.select();
-    document.execCommand('copy'); document.body.removeChild(ta);
     btn.textContent = '✓ Copied!'; btn.classList.add('success');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
   });
@@ -777,103 +917,30 @@ function copyToClipboard(html, btn) {
 function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
 function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
 
-async function purgeAvailable(btn) {
-  const allInjuries = dedupeInjuries([...baseInjuries, ...pendingEntries]);
-  const latest = {};
-  for (const e of allInjuries) latest[e.player] = e;
-  
-  // Find players whose latest status is Available
-  const toPurge = new Set();
-  for (const [player, entry] of Object.entries(latest)) {
-    if (entry.status === 'Available') toPurge.add(player);
-  }
-  if (toPurge.size === 0) { btn.textContent = 'No Available to purge'; setTimeout(() => btn.textContent = '🧹 Purge Available', 2000); return; }
-
-  const token = document.getElementById('ghToken').value.trim();
-  if (!token) { document.getElementById('ghStatus').textContent = '⚠ Enter token to purge permanently'; return; }
-
-  const orig = btn.textContent;
-  btn.textContent = '⏳ Purging...'; btn.disabled = true;
-
-  // Save backup before purging
-  prePurgeBackup = allInjuries;
-
-  // Remove all entries for purged players
-  const cleaned = allInjuries.filter(e => !toPurge.has(e.player));
-
-  try {
-    const getR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
-      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
-    });
-    if (!getR.ok) throw new Error(getR.status === 401 ? 'Bad token' : 'Failed: ' + getR.status);
-    const sha = (await getR.json()).sha;
-
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(cleaned, null, 2))));
-    const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
-      method: 'PUT',
-      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: `Purge ${toPurge.size} available players ${todayPT()}`, content, sha })
-    });
-    if (!putR.ok) throw new Error('Push failed: ' + putR.status);
-
-    baseInjuries = cleaned;
-    pendingEntries = [];
-    purgedPlayers = new Set();
-    renderPending();
-    rebuildTables();
-    btn.textContent = `✓ Purged ${toPurge.size} players`;
-    document.getElementById('ghStatus').textContent = `Purged & saved ${new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`;
-    document.getElementById('undoPurge').style.display = 'inline-block';
-    setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 2000);
-  } catch (err) {
-    document.getElementById('ghStatus').textContent = '❌ ' + err.message;
-    btn.textContent = orig; btn.disabled = false;
-  }
-}
-async function undoPurge(btn) {
-  if (!prePurgeBackup) { btn.style.display = 'none'; return; }
-  const token = document.getElementById('ghToken').value.trim();
-  if (!token) { document.getElementById('ghStatus').textContent = '⚠ Need token to undo'; return; }
-
-  const orig = btn.textContent;
-  btn.textContent = '⏳ Reverting...'; btn.disabled = true;
-
-  try {
-    const getR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
-      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
-    });
-    if (!getR.ok) throw new Error('Failed: ' + getR.status);
-    const sha = (await getR.json()).sha;
-
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(prePurgeBackup, null, 2))));
-    const putR = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
-      method: 'PUT',
-      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: `Undo purge ${todayPT()}`, content, sha })
-    });
-    if (!putR.ok) throw new Error('Push failed: ' + putR.status);
-
-    baseInjuries = prePurgeBackup;
-    pendingEntries = [];
-    prePurgeBackup = null;
-    purgedPlayers = new Set();
-    renderPending();
-    rebuildTables();
-    btn.style.display = 'none';
-    document.getElementById('ghStatus').textContent = `✓ Purge reverted ${new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`;
-  } catch (err) {
-    document.getElementById('ghStatus').textContent = '❌ ' + err.message;
-    btn.textContent = orig; btn.disabled = false;
-  }
-}
-async function refreshData(btn) {
+async function refreshReport(btn) {
   const o = btn.textContent; btn.textContent = '⏳ Refreshing...'; btn.disabled = true;
-  await loadData();
+  try {
+    const { prev } = await loadData();
+    buildReportSections(prev);
+    showTab(-1, document.querySelector('.tab-bar button.active'));
+  } catch(e) {}
   btn.textContent = '✓ Updated!'; btn.classList.add('success');
   setTimeout(() => { btn.textContent = o; btn.classList.remove('success'); btn.disabled = false; }, 2000);
 }
 
-loadData();
+function togglePurge(btn) {
+  purgeActive = !purgeActive;
+  btn.classList.toggle('active', purgeActive);
+  btn.style.background = purgeActive ? 'rgba(239,68,68,0.2)' : '';
+  // Rebuild
+  const lat = {}, prv = {};
+  for (const e of jsonEntries) {
+    if (lat[e.player]) prv[e.player] = lat[e.player];
+    lat[e.player] = e;
+  }
+  sectionsHTML = buildPrestoHTMLFromData(jsonEntries, lat, prv);
+  showTab(-1, document.querySelector('.tab-bar button.active'));
+}
 </script>
 </body>
 </html>
