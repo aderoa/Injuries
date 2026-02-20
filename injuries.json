@@ -786,6 +786,12 @@
     "date": "2026-02-20"
   },
   {
+    "player": "Andrew Nembhard",
+    "status": "Doubtful",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-20"
+  },
+  {
     "player": "Evan Mobley",
     "status": "Out",
     "injury": "Left Calf Injury Management",
@@ -818,6 +824,12 @@
   {
     "player": "Max Christie",
     "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-20"
+  },
+  {
+    "player": "Micah Potter",
+    "status": "Questionable",
     "injury": "Left Ankle Sprain",
     "date": "2026-02-20"
   },
