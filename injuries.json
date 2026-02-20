@@ -894,6 +894,12 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Deni Avdija",
+    "status": "Available",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Grayson Allen",
     "status": "Out",
     "injury": "Right Ankle Sprain",
@@ -936,6 +942,18 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Kris Murray",
+    "status": "Available",
+    "injury": "Lumbar Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Matisse Thybulle",
+    "status": "Questionable",
+    "injury": "Right Knee Tendinopathy",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Max Christie",
     "status": "Questionable",
     "injury": "Left Ankle Sprain",
@@ -969,6 +987,12 @@
     "player": "Pelle Larsson",
     "status": "Available",
     "injury": "Right Forearm Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
     "date": "2026-02-19"
   },
   {
