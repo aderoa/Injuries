@@ -894,6 +894,12 @@
     "date": "2026-02-19"
   },
   {
+    "player": "Deandre Ayton",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-02-19"
+  },
+  {
     "player": "Deni Avdija",
     "status": "Available",
     "injury": "Low Back Injury Management",
@@ -945,6 +951,12 @@
     "player": "Kris Murray",
     "status": "Available",
     "injury": "Lumbar Strain",
+    "date": "2026-02-19"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Available",
+    "injury": "Left Hamstring Strain",
     "date": "2026-02-19"
   },
   {
