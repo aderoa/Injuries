@@ -718,26 +718,30 @@ function buildPrestoHTML() {
 function buildPrestoTables(entries, lat, prv, usePurge) {
   const today = todayISO();
 
-  // Use HTML attributes instead of inline CSS — massively reduces output size
-  // cellpadding + border on <table> eliminates per-cell style strings
-  const T = '<table cellpadding=4 border=1 style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;width:100%">';
-  function logo(team) { const id=TEAM_IDS[team]; return id ? `<img src="https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg" width=28 height=28>` : ''; }
+  // Shared styles: text-align on tbody inherits to all cells, avoiding per-cell repetition
+  const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;width:100%"';
+  const TB = 'style="text-align:center"'; // on tbody — inherited by all td/th
+  const B = 'style="border:1px solid #eee;padding:4px"'; // per cell (minimum needed)
+  const BH = 'style="border:1px solid #ccc;padding:4px"'; // header cells
+  const H2 = 'style="font-size:22px;font-weight:700;margin-bottom:10px"';
+  function logo(team) { const id=TEAM_IDS[team]; return id ? `<img src="https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg" width="28" height="28" style="vertical-align:middle">` : ''; }
+  function r(i) { return i%2 ? ' style="background:#f9f9f9"' : ''; }
 
   // Table 1: Today's Updates
   const todayEntries = Object.entries(lat)
     .filter(([name,e]) => e.date === today && roster[name])
     .filter(([_,e]) => !usePurge || e.status !== 'Available')
     .map(([name,e]) => {
-      const p = prv[name], r = roster[name] || {};
-      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
+      const p = prv[name], rv = roster[name] || {};
+      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:rv.team||'', salary:rv.salary||0 };
     }).sort((a,z) => a.team !== z.team ? a.team.localeCompare(z.team) : lastName(a.player).localeCompare(lastName(z.player)));
 
-  let h1 = `<h2 style="font-size:22px;font-weight:700;margin-bottom:10px">Today's injury updates</h2>${T}<thead><tr style="background:#f2f2f2" align=center><th></th><th>PLAYER</th><th>STATUS</th><th>INJURY</th><th>PREVIOUS STATUS</th><th>SALARY</th></tr></thead><tbody>`;
+  let h1 = `<h2 ${H2}>Today's injury updates</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>PLAYER</th><th ${BH}>STATUS</th><th ${BH}>INJURY</th><th ${BH}>PREVIOUS STATUS</th><th ${BH}>SALARY</th></tr></thead><tbody ${TB}>`;
   let lt = '';
-  if (!todayEntries.length) h1 += `<tr><td colspan=6 align=center>No updates today</td></tr>`;
+  if (!todayEntries.length) h1 += `<tr><td ${B} colspan="6">No updates today</td></tr>`;
   todayEntries.forEach((e, i) => {
     const lg = e.team !== lt ? logo(e.team) : ''; lt = e.team;
-    h1 += `<tr bgcolor="${i%2?'#f9f9f9':'#fff'}" align=center><td>${lg}</td><td><b>${e.player}</b></td><td>${sSpan(e.status)}</td><td>${e.injury}</td><td>${e.prevStatus?sSpan(e.prevStatus):''}</td><td>${fmtSal(e.salary)}</td></tr>`;
+    h1 += `<tr${r(i)}><td ${B}>${lg}</td><td ${B}><b>${e.player}</b></td><td ${B}>${sSpan(e.status)}</td><td ${B}>${e.injury}</td><td ${B}>${e.prevStatus?sSpan(e.prevStatus):''}</td><td ${B}>${fmtSal(e.salary)}</td></tr>`;
   });
   h1 += '</tbody></table>';
 
@@ -747,11 +751,11 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
     .sort((a,z) => a.team !== z.team ? a.team.localeCompare(z.team) : lastName(a.player).localeCompare(lastName(z.player)));
 
-  let h2 = `<h2 style="font-size:22px;font-weight:700;margin-bottom:10px">Full injury report</h2>${T}<thead><tr style="background:#f2f2f2" align=center><th></th><th>PLAYER</th><th>SALARY</th><th>STATUS</th><th>INJURY</th><th>DATE</th></tr></thead><tbody>`;
+  let h2 = `<h2 ${H2}>Full injury report</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>PLAYER</th><th ${BH}>SALARY</th><th ${BH}>STATUS</th><th ${BH}>INJURY</th><th ${BH}>DATE</th></tr></thead><tbody ${TB}>`;
   lt = '';
   allInjured.forEach((e, i) => {
     const lg = e.team !== lt ? logo(e.team) : ''; lt = e.team;
-    h2 += `<tr bgcolor="${i%2?'#f9f9f9':'#fff'}" align=center><td>${lg}</td><td><b>${e.player}</b></td><td>${fmtSal(e.salary)}</td><td>${sSpan(e.status)}</td><td>${e.injury||''}</td><td>${e.date?fmtDate(e.date):''}</td></tr>`;
+    h2 += `<tr${r(i)}><td ${B}>${lg}</td><td ${B}><b>${e.player}</b></td><td ${B}>${fmtSal(e.salary)}</td><td ${B}>${sSpan(e.status)}</td><td ${B}>${e.injury||''}</td><td ${B}>${e.date?fmtDate(e.date):''}</td></tr>`;
   });
   h2 += '</tbody></table>';
 
@@ -770,18 +774,18 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
   })).sort((a,z) => z.injured - a.injured);
 
-  let h3 = `<h2 style="font-size:22px;font-weight:700;margin-bottom:10px">Injured salary per team</h2>${T}<thead><tr style="background:#f2f2f2" align=center><th></th><th>TEAM</th><th>INJURED SALARY</th><th>% SALARY</th></tr></thead><tbody>`;
-  teamRows.forEach((r, i) => {
-    h3 += `<tr bgcolor="${i%2?'#f9f9f9':'#fff'}" align=center><td>${logo(r.team)}</td><td><b>${r.team}</b></td><td>${fmtSalFull(r.injured)}</td><td>${r.pct.toFixed(2)}%</td></tr>`;
+  let h3 = `<h2 ${H2}>Injured salary per team</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>TEAM</th><th ${BH}>INJURED SALARY</th><th ${BH}>% SALARY</th></tr></thead><tbody ${TB}>`;
+  teamRows.forEach((rv, i) => {
+    h3 += `<tr${r(i)}><td ${B}>${logo(rv.team)}</td><td ${B}><b>${rv.team}</b></td><td ${B}>${fmtSalFull(rv.injured)}</td><td ${B}>${rv.pct.toFixed(2)}%</td></tr>`;
   });
-  h3 += `<tr style="background:#222;color:#fff;font-weight:700" align=center><td><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width=28 height=28></td><td>NBA</td><td>${fmtSalFull(totalNBAInj)}</td><td>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
+  h3 += `<tr style="background:#222;color:#fff;font-weight:700"><td ${B}><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="28" height="28" style="vertical-align:middle"></td><td ${B}>NBA</td><td ${B}>${fmtSalFull(totalNBAInj)}</td><td ${B}>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
   h3 += '</tbody></table>';
 
   // Table 4: Highest-Paid Injured
   const topPaid = [...allInjured].sort((a,z) => z.salary - a.salary).slice(0,25);
-  let h4 = `<h2 style="font-size:22px;font-weight:700;margin-bottom:10px">Highest-paid injured players</h2>${T}<thead><tr style="background:#f2f2f2" align=center><th></th><th>PLAYER</th><th>SALARY</th><th>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
+  let h4 = `<h2 ${H2}>Highest-paid injured players</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>PLAYER</th><th ${BH}>SALARY</th><th ${BH}>DAYS SINCE LAST GAME</th></tr></thead><tbody ${TB}>`;
   topPaid.forEach((e, i) => {
-    h4 += `<tr bgcolor="${i%2?'#f9f9f9':'#fff'}" align=center><td>${logo(e.team)}</td><td><b>${e.player}</b></td><td>${fmtSalFull(e.salary)}</td><td>${e.days||''}</td></tr>`;
+    h4 += `<tr${r(i)}><td ${B}>${logo(e.team)}</td><td ${B}><b>${e.player}</b></td><td ${B}>${fmtSalFull(e.salary)}</td><td ${B}>${e.days||''}</td></tr>`;
   });
   h4 += '</tbody></table>';
 
