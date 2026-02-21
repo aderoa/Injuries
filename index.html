@@ -728,7 +728,8 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     .filter(([name,e]) => e.date === today && roster[name])
     .map(([name,e]) => {
       const p = prv[name], r = roster[name] || {};
-      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
+      const fallbackStatus = latestStatus[name] ? latestStatus[name].status : 'Available';
+      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:fallbackStatus, team:r.team||'', salary:r.salary||0 };
     })
     .filter(e => !(e.status === 'Available' && e.prevStatus === 'Available'))
     .sort((a,b) => {
