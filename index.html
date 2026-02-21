@@ -738,6 +738,8 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
       prevDateStatus[e.player] = e.status;
     }
   }
+  // TEMP FIX: Ivey's prior-date entry missing from JSON
+  if (!prevDateStatus['Jaden Ivey']) prevDateStatus['Jaden Ivey'] = 'Questionable';
 
   const todayEntries = Object.entries(lat)
     .filter(([name,e]) => e.date === today && roster[name])
