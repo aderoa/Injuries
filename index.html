@@ -498,6 +498,9 @@ function onStatusChange(name, sel) {
   // Determine the original status from JSON
   const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
 
+  // Effective status BEFORE this change (prior modification or original)
+  const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
+
   // Update select color class
   sel.className = statusClass(newStatus);
 
@@ -518,7 +521,8 @@ function onStatusChange(name, sel) {
     modifications[name] = {
       status: newStatus,
       injury: injInput.value,
-      date: dateInput.value
+      date: dateInput.value,
+      prevStatus: effectiveBefore
     };
     row.classList.add('modified');
     injInput.classList.remove('inactive');
@@ -534,13 +538,14 @@ function onInjuryChange(name, inp) {
   const sel = row.querySelector('select');
   const dateInput = row.querySelector('input[type="date"]');
   const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
+  const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
 
   if (sel.value === original.status && !inp.value && !dateInput.value) {
     delete modifications[name];
     row.classList.remove('modified');
   } else {
     if (!dateInput.value) dateInput.value = todayISO();
-    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value };
+    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, prevStatus: effectiveBefore };
     row.classList.add('modified');
   }
   updateBadge();
@@ -551,12 +556,13 @@ function onDateChange(name, inp) {
   const sel = row.querySelector('select');
   const injInput = row.querySelector('input[type="text"]');
   const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
+  const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
 
   if (sel.value === original.status && !injInput.value && !inp.value) {
     delete modifications[name];
     row.classList.remove('modified');
   } else {
-    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value };
+    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, prevStatus: effectiveBefore };
     row.classList.add('modified');
   }
   updateBadge();
@@ -685,7 +691,8 @@ function buildMergedJSON() {
       player,
       status: mod.status,
       injury: mod.injury || '',
-      date: mod.date !== undefined && mod.date !== null ? mod.date : todayISO()
+      date: mod.date !== undefined && mod.date !== null ? mod.date : todayISO(),
+      prevStatus: mod.prevStatus || null
     });
   }
 
@@ -724,12 +731,20 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   const H2S = 'style="font-size:22px;font-weight:700;margin-bottom:10px;"';
 
   // Table 1: Today's Updates (use latest status per player, not raw entries)
+  // Build previous-date status: for each player, their latest status from before today
+  const prevDateStatus = {};
+  for (const e of entries) {
+    if (e.date && e.date < today) {
+      prevDateStatus[e.player] = e.status;
+    }
+  }
+
   const todayEntries = Object.entries(lat)
     .filter(([name,e]) => e.date === today && roster[name])
     .map(([name,e]) => {
-      const p = prv[name], r = roster[name] || {};
-      const fallbackStatus = latestStatus[name] ? latestStatus[name].status : 'Available';
-      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:fallbackStatus, team:r.team||'', salary:r.salary||0 };
+      const r = roster[name] || {};
+      const prev = prevDateStatus[name] || 'Available';
+      return { player:name, status:e.status, injury:e.injury, prevStatus:prev, team:r.team||'', salary:r.salary||0 };
     })
     .filter(e => !(e.status === 'Available' && e.prevStatus === 'Available'))
     .sort((a,b) => {
