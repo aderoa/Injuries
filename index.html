@@ -107,7 +107,7 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 /* Player row */
 .player-row {
   display:grid;
-  grid-template-columns: 1fr 90px 130px 1fr 110px;
+  grid-template-columns: 1fr 90px 130px 1fr 110px 100px;
   gap:8px; align-items:center;
   padding:6px 12px; border-bottom:1px solid var(--border);
   font-size:13px; transition:background 0.15s;
@@ -130,6 +130,7 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 .player-row select.s-questionable { color:var(--questionable); }
 .player-row select.s-probable { color:var(--probable); }
 .player-row select.s-available { color:var(--available); }
+.player-row select.s-left { color:#f97316; }
 
 .player-row input[type="text"] {
   font-family:inherit; font-size:12px; padding:4px 6px;
@@ -148,10 +149,13 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 .player-row input[type="date"]:focus { border-color:var(--accent); }
 .player-row input[type="date"].inactive { color:var(--text2); border-color:transparent; background:transparent; }
 
+.player-row select.prev-status { font-size:11px; opacity:0.7; }
+.player-row select.prev-status:hover { opacity:1; }
+
 /* Column headers */
 .col-headers {
   display:grid;
-  grid-template-columns: 1fr 90px 130px 1fr 110px;
+  grid-template-columns: 1fr 90px 130px 1fr 110px 100px;
   gap:8px; padding:8px 12px;
   font-size:11px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:0.05em;
   background:var(--surface); border-bottom:1px solid var(--border);
@@ -367,7 +371,7 @@ if (isAdmin) {
         <button class="filter-btn" onclick="toggleFilter('available',this)" title="Show only available">🟢 Available</button>
       </div>
       <div class="col-headers">
-        <span>Player</span><span>Salary</span><span>Status</span><span>Injury</span><span>Date</span>
+        <span>Player</span><span>Salary</span><span>Status</span><span>Injury</span><span>Date</span><span>Prev</span>
       </div>
       <div id="rosterArea"><div class="loading-state"><div class="loading-spinner"></div><p>Loading roster...</p></div></div>
     </div>
@@ -472,6 +476,15 @@ function renderRoster() {
       // Date input
       html += `<input type="date" value="${cur.date||''}" class="${isAvail?'inactive':''}" onchange="onDateChange('${name.replace(/'/g,"\\'")}',this)">`;
 
+      // Previous status select (editable, defaults to computed prev)
+      const prevSt = getEffectivePrevStatus(name);
+      html += `<select class="prev-status ${statusClass(prevSt)}" onchange="onPrevStatusChange('${name.replace(/'/g,"\\'")}',this)">`;
+      html += `<option value="" ${!prevSt?'selected':''}>—</option>`;
+      for (const s of [...STATUSES, 'Left Game']) {
+        html += `<option value="${s}" ${s===prevSt?'selected':''}>${s}</option>`;
+      }
+      html += `</select>`;
+
       html += `</div>`;
     }
 
@@ -522,11 +535,19 @@ function onStatusChange(name, sel) {
       status: newStatus,
       injury: injInput.value,
       date: dateInput.value,
-      prevStatus: effectiveBefore
+      prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : effectiveBefore
     };
     row.classList.add('modified');
     injInput.classList.remove('inactive');
     dateInput.classList.remove('inactive');
+  }
+
+  // Update the prev-status select visually
+  const prevSel = row.querySelector('select.prev-status');
+  if (prevSel) {
+    const ps = getEffectivePrevStatus(name);
+    prevSel.value = ps || '';
+    prevSel.className = 'prev-status ' + statusClass(ps || '');
   }
 
   updateBadge();
@@ -545,7 +566,7 @@ function onInjuryChange(name, inp) {
     row.classList.remove('modified');
   } else {
     if (!dateInput.value) dateInput.value = todayISO();
-    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, prevStatus: effectiveBefore };
+    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : effectiveBefore };
     row.classList.add('modified');
   }
   updateBadge();
@@ -557,14 +578,62 @@ function onDateChange(name, inp) {
   const injInput = row.querySelector('input[type="text"]');
   const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
   const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
+  const prevSt = modifications[name]?.prevStatus !== undefined ? modifications[name].prevStatus : null;
 
   if (sel.value === original.status && !injInput.value && !inp.value) {
     delete modifications[name];
     row.classList.remove('modified');
   } else {
-    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, prevStatus: effectiveBefore };
+    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, prevStatus: prevSt !== null ? prevSt : effectiveBefore };
     row.classList.add('modified');
   }
+  updateBadge();
+}
+
+function getEffectivePrevStatus(name) {
+  // 1) If modification has explicit prevStatus, use it
+  if (modifications[name] && modifications[name].prevStatus != null) {
+    return modifications[name].prevStatus;
+  }
+  // 2) Check latest JSON entry for this player for prevStatus field
+  const entries = jsonEntries.filter(e => e.player === name);
+  const lastEntry = entries.length ? entries[entries.length - 1] : null;
+  if (lastEntry && lastEntry.prevStatus != null) {
+    return lastEntry.prevStatus;
+  }
+  // 3) Scan entries for latest status from a prior date
+  const today = todayISO();
+  let prev = null;
+  for (const e of jsonEntries) {
+    if (e.player === name && e.date && e.date.length >= 10 && e.date < today) {
+      prev = e.status;
+    }
+  }
+  return prev || '';
+}
+
+function onPrevStatusChange(name, sel) {
+  const row = sel.closest('.player-row');
+  const statusSel = row.querySelector('select:not(.prev-status)');
+  const injInput = row.querySelector('input[type="text"]');
+  const dateInput = row.querySelector('input[type="date"]');
+  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
+
+  // Update color class
+  sel.className = 'prev-status ' + statusClass(sel.value || '');
+
+  // Ensure a modification record exists
+  if (!modifications[name]) {
+    modifications[name] = {
+      status: statusSel.value,
+      injury: injInput.value,
+      date: dateInput.value || todayISO(),
+      prevStatus: sel.value || null
+    };
+  } else {
+    modifications[name].prevStatus = sel.value || null;
+  }
+  row.classList.add('modified');
   updateBadge();
 }
 
