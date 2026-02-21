@@ -715,37 +715,42 @@ function buildPrestoHTML() {
     lat[e.player] = e;
   }
 
-  return buildPrestoTables(merged, lat, prv, false);
+  const result = buildPrestoTables(merged, lat, prv, false);
+  return result.tables.map(t => result.style + t);
 }
 
 function buildPrestoTables(entries, lat, prv, usePurge) {
   const today = todayISO();
-  const TH = 'style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
-  const TD = 'style="text-align:center;height:40px;border:1px solid #eee;padding:4px;"';
-  const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
-  const H2S = 'style="font-size:22px;font-weight:700;margin-bottom:10px;"';
 
-  // Table 1: Today's Updates (use latest status per player, not raw entries)
+  // Lightweight class-based styles instead of inline on every element
+  const STYLE = `<style>
+.ir{border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%}
+.ir th{border:1px solid #ccc;padding:4px;text-align:center;height:36px}
+.ir td{text-align:center;height:40px;border:1px solid #eee;padding:4px}
+.ir thead tr{background:#f2f2f2}
+.ir .o{background:#fff}.ir .e{background:#f9f9f9}
+.ir .t{font-weight:700}
+.ih{font-size:22px;font-weight:700;margin-bottom:10px}
+</style>`;
+
+  function logo(team) { const id=TEAM_IDS[team]; return id ? `<img src="https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg" width=28 height=28>` : ''; }
+  function row(i) { return i%2===0?'o':'e'; }
+
+  // Table 1: Today's Updates
   const todayEntries = Object.entries(lat)
     .filter(([name,e]) => e.date === today && roster[name])
     .filter(([_,e]) => !usePurge || e.status !== 'Available')
     .map(([name,e]) => {
       const p = prv[name], r = roster[name] || {};
       return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
-    }).sort((a,b) => {
-      if (a.team !== b.team) return a.team.localeCompare(b.team);
-      return lastName(a.player).localeCompare(lastName(b.player));
-    });
+    }).sort((a,b) => a.team !== b.team ? a.team.localeCompare(b.team) : lastName(a.player).localeCompare(lastName(b.player)));
 
-  let h1 = `<h2 ${H2S}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
+  let h1 = `<h2 class="ih">Today's injury updates</h2><table class="ir"><thead><tr><th></th><th>PLAYER</th><th>STATUS</th><th>INJURY</th><th>PREVIOUS STATUS</th><th>SALARY</th></tr></thead><tbody>`;
   let lt = '';
-  if (!todayEntries.length) {
-    h1 += `<tr><td colspan="6" ${TD}>No updates today</td></tr>`;
-  }
+  if (!todayEntries.length) h1 += `<tr><td colspan=6>No updates today</td></tr>`;
   todayEntries.forEach((e, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
-    h1 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus ? sSpan(e.prevStatus) : ''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
+    const lg = e.team !== lt ? logo(e.team) : ''; lt = e.team;
+    h1 += `<tr class="${row(i)}"><td>${lg}</td><td class=t>${e.player}</td><td>${sSpan(e.status)}</td><td>${e.injury}</td><td>${e.prevStatus ? sSpan(e.prevStatus) : ''}</td><td>${fmtSal(e.salary)}</td></tr>`;
   });
   h1 += '</tbody></table>';
 
@@ -753,17 +758,13 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   const allInjured = Object.entries(lat)
     .filter(([name,e]) => e.status !== 'Available' && roster[name])
     .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
-    .sort((a,b) => {
-      if (a.team !== b.team) return a.team.localeCompare(b.team);
-      return lastName(a.player).localeCompare(lastName(b.player));
-    });
+    .sort((a,b) => a.team !== b.team ? a.team.localeCompare(b.team) : lastName(a.player).localeCompare(lastName(b.player)));
 
-  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>DATE</th></tr></thead><tbody>`;
+  let h2 = `<h2 class="ih">Full injury report</h2><table class="ir"><thead><tr><th></th><th>PLAYER</th><th>SALARY</th><th>STATUS</th><th>INJURY</th><th>DATE</th></tr></thead><tbody>`;
   lt = '';
   allInjured.forEach((e, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
-    h2 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury||''}</td><td ${TD}>${e.date ? fmtDate(e.date) : ''}</td></tr>`;
+    const lg = e.team !== lt ? logo(e.team) : ''; lt = e.team;
+    h2 += `<tr class="${row(i)}"><td>${lg}</td><td class=t>${e.player}</td><td>${fmtSal(e.salary)}</td><td>${sSpan(e.status)}</td><td>${e.injury||''}</td><td>${e.date ? fmtDate(e.date) : ''}</td></tr>`;
   });
   h2 += '</tbody></table>';
 
@@ -782,26 +783,23 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
   })).sort((a,b) => b.injured - a.injured);
 
-  let h3 = `<h2 ${H2S}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
+  let h3 = `<h2 class="ih">Injured salary per team</h2><table class="ir"><thead><tr><th></th><th>TEAM</th><th>INJURED SALARY</th><th>% SALARY</th></tr></thead><tbody>`;
   teamRows.forEach((r, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    h3 += `<tr style="background:${bg};"><td ${TD}>${logoImg(r.team)}</td><td ${TD}><strong>${r.team}</strong></td><td ${TD}>${fmtSalFull(r.injured)}</td><td ${TD}>${r.pct.toFixed(2)}%</td></tr>`;
+    h3 += `<tr class="${row(i)}"><td>${logo(r.team)}</td><td class=t>${r.team}</td><td>${fmtSalFull(r.injured)}</td><td>${r.pct.toFixed(2)}%</td></tr>`;
   });
-  // NBA total row
-  const nbaLogo = `<img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="28" height="28" style="vertical-align:middle;">`;
-  h3 += `<tr style="background:#222;color:#fff;font-weight:700;"><td ${TD}>${nbaLogo}</td><td ${TD}>NBA</td><td ${TD}>${fmtSalFull(totalNBAInj)}</td><td ${TD}>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
+  const nbaLogo = `<img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width=28 height=28>`;
+  h3 += `<tr style="background:#222;color:#fff;font-weight:700"><td>${nbaLogo}</td><td>NBA</td><td>${fmtSalFull(totalNBAInj)}</td><td>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
   h3 += '</tbody></table>';
 
   // Table 4: Highest-Paid Injured
   const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
-  let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
+  let h4 = `<h2 class="ih">Highest-paid injured players</h2><table class="ir"><thead><tr><th></th><th>PLAYER</th><th>SALARY</th><th>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
   topPaid.forEach((e, i) => {
-    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    h4 += `<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days||''}</td></tr>`;
+    h4 += `<tr class="${row(i)}"><td>${logo(e.team)}</td><td class=t>${e.player}</td><td>${fmtSalFull(e.salary)}</td><td>${e.days||''}</td></tr>`;
   });
   h4 += '</tbody></table>';
 
-  return [h1, h2, h3, h4];
+  return { style: STYLE, tables: [h1, h2, h3, h4] };
 }
 
 function copyPrestoHTML(btn) {
@@ -818,6 +816,7 @@ function copyPrestoHTML(btn) {
 // REPORT MODE (non-admin)
 // ==========================================
 let sectionsHTML = [];
+let prestoStyle = '';
 let purgeActive = false;
 
 async function initReport() {
@@ -837,18 +836,20 @@ async function initReport() {
 function buildReportSections(prev) {
   const lat = {};
   for (const e of jsonEntries) { lat[e.player] = e; }
-  sectionsHTML = buildPrestoTables(jsonEntries, lat, prev, purgeActive);
+  const result = buildPrestoTables(jsonEntries, lat, prev, purgeActive);
+  prestoStyle = result.style;
+  sectionsHTML = result.tables;
 }
 
 function showTab(idx, btn) {
   document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('preview').innerHTML = idx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[idx] || '');
+  document.getElementById('preview').innerHTML = prestoStyle + (idx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[idx] || ''));
 }
 
 function copyToClipboard(html, btn) {
   const orig = btn.textContent;
-  const w = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${html}\n</div>`;
+  const w = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${prestoStyle}\n${html}\n</div>`;
   navigator.clipboard.writeText(w).then(() => {
     btn.textContent = '✓ Copied!'; btn.classList.add('success');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
