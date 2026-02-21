@@ -734,18 +734,20 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   // Build previous-date status: for each player, their latest status from before today
   const prevDateStatus = {};
   for (const e of entries) {
-    if (e.date && e.date < today) {
+    if (e.date && e.date.length >= 10 && e.date < today) {
       prevDateStatus[e.player] = e.status;
     }
   }
-  // TEMP FIX: Ivey's prior-date entry missing from JSON
-  if (!prevDateStatus['Jaden Ivey']) prevDateStatus['Jaden Ivey'] = 'Questionable';
 
   const todayEntries = Object.entries(lat)
     .filter(([name,e]) => e.date === today && roster[name])
     .map(([name,e]) => {
       const r = roster[name] || {};
-      const prev = prevDateStatus[name] || 'Available';
+      // Priority: 1) explicit prevStatus stored in entry (from modification tracking)
+      //           2) latest status from a prior date in JSON
+      //           3) 'Available' (truly new player)
+      const prev = (e.prevStatus != null) ? e.prevStatus
+                 : prevDateStatus[name] || 'Available';
       return { player:name, status:e.status, injury:e.injury, prevStatus:prev, team:r.team||'', salary:r.salary||0 };
     })
     .filter(e => !(e.status === 'Available' && e.prevStatus === 'Available'))
