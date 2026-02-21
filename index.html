@@ -16,6 +16,7 @@
   --text2: #8a8a96;
   --accent: #3b82f6;
   --out: #ef4444;
+  --left-game: #f43f5e;
   --doubtful: #f97316;
   --questionable: #eab308;
   --probable: #22c55e;
@@ -126,6 +127,7 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 }
 .player-row select:focus { border-color:var(--accent); }
 .player-row select.s-out { color:var(--out); }
+.player-row select.s-left-game { color:var(--left-game); }
 .player-row select.s-doubtful { color:var(--doubtful); }
 .player-row select.s-questionable { color:var(--questionable); }
 .player-row select.s-probable { color:var(--probable); }
@@ -246,17 +248,17 @@ const TEAM_ABBREV = {
   'New Orleans':'NOP','New York':'NYK','Oklahoma City':'OKC','Orlando':'ORL','Philadelphia':'PHI','Phoenix':'PHX',
   'Portland':'POR','Sacramento':'SAC','San Antonio':'SAS','Toronto':'TOR','Utah':'UTA','Washington':'WAS'
 };
-const STATUSES = ['Available','Probable','Questionable','Doubtful','Out'];
-const STATUS_GRAVITY = { 'Out':0,'Doubtful':1,'Questionable':2,'Probable':3,'Available':4 };
+const STATUSES = ['Available','Probable','Questionable','Doubtful','Left Game','Out'];
+const STATUS_GRAVITY = { 'Out':0,'Left Game':1,'Doubtful':2,'Questionable':3,'Probable':4,'Available':5 };
 
 function teamLogo(t) { const id=TEAM_IDS[t]; return id ? `https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg` : ''; }
 function logoImg(t) { const u=teamLogo(t); return u ? `<img src="${u}" width="28" height="28" style="vertical-align:middle;">` : ''; }
 function fmtSal(n) { if(n>=1e6) return '$'+(n/1e6).toFixed(1)+'M'; if(n>=1e3) return '$'+(n/1e3).toFixed(0)+'K'; return '$'+n.toLocaleString(); }
 function fmtSalFull(n) { return '$'+n.toLocaleString(); }
 function fmtDate(iso) { const d=new Date(iso+'T00:00:00'); const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return m[d.getMonth()]+' '+d.getDate(); }
-function sColor(s) { return {Out:'#ef4444',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
+function sColor(s) { return {Out:'#ef4444','Left Game':'#f43f5e',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
 function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`; }
-function statusClass(s) { return 's-'+s.toLowerCase(); }
+function statusClass(s) { return 's-'+s.toLowerCase().replace(/\s+/g,'-'); }
 function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
 function todayISO() { return new Date().toISOString().slice(0,10); }
 
@@ -508,8 +510,8 @@ function onStatusChange(name, sel) {
     injInput.className = newStatus==='Available' ? 'inactive' : '';
     dateInput.className = newStatus==='Available' ? 'inactive' : '';
   } else {
-    // Set default date to today if empty
-    if (!dateInput.value) dateInput.value = todayISO();
+    // Always set date to today on status change
+    dateInput.value = todayISO();
     // Carry forward injury from JSON if available and field empty
     if (!injInput.value && original.injury && newStatus !== 'Available') {
       injInput.value = original.injury;
@@ -768,7 +770,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   // Table 3: Salary Per Team
   const teamInjSal = {};
   for (const e of allInjured) {
-    if (e.status === 'Out' || e.status === 'Doubtful') {
+    if (e.status === 'Out' || e.status === 'Left Game' || e.status === 'Doubtful') {
       teamInjSal[e.team] = (teamInjSal[e.team]||0) + e.salary;
     }
   }
