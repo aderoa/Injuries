@@ -262,7 +262,9 @@ function sColor(s) { return {Out:'#ef4444',Doubtful:'#f97316',Questionable:'#eab
 function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`; }
 function statusClass(s) { return 's-'+s.toLowerCase(); }
 function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
-function todayISO() { return new Date().toISOString().slice(0,10); }
+function todayISO() {
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
+}
 
 function parseCSV(text) {
   const rows=[]; let cur='',inQ=false,row=[];
@@ -524,8 +526,8 @@ function onStatusChange(name, sel) {
     injInput.className = newStatus==='Available' ? 'inactive' : '';
     dateInput.className = newStatus==='Available' ? 'inactive' : '';
   } else {
-    // Set default date to today if empty
-    if (!dateInput.value) dateInput.value = todayISO();
+    // Set date to today on any status change
+    dateInput.value = todayISO();
     // Carry forward injury from JSON if available and field empty
     if (!injInput.value && original.injury && newStatus !== 'Available') {
       injInput.value = original.injury;
