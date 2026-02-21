@@ -685,7 +685,7 @@ function buildMergedJSON() {
       player,
       status: mod.status,
       injury: mod.injury || '',
-      date: mod.date || todayISO()
+      date: mod.date !== undefined && mod.date !== null ? mod.date : todayISO()
     });
   }
 
