@@ -821,7 +821,6 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
                  : prevDateStatus[name] || 'Available';
       return { player:name, status:e.status, injury:e.injury, prevStatus:prev, team:r.team||'', salary:r.salary||0 };
     })
-    .filter(e => !(e.status === 'Available' && e.prevStatus === 'Available'))
     .sort((a,b) => {
       if (a.team !== b.team) return a.team.localeCompare(b.team);
       return lastName(a.player).localeCompare(lastName(b.player));
