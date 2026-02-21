@@ -260,7 +260,7 @@ function sColor(s) { return {Out:'#ef4444','Left Game':'#f43f5e',Doubtful:'#f973
 function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`; }
 function statusClass(s) { return 's-'+s.toLowerCase().replace(/\s+/g,'-'); }
 function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
-function todayISO() { return new Date().toISOString().slice(0,10); }
+function todayISO() { return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' }); }
 
 function parseCSV(text) {
   const rows=[]; let cur='',inQ=false,row=[];
