@@ -16,7 +16,6 @@
   --text2: #8a8a96;
   --accent: #3b82f6;
   --out: #ef4444;
-  --left-game: #f43f5e;
   --doubtful: #f97316;
   --questionable: #eab308;
   --probable: #22c55e;
@@ -127,7 +126,6 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 }
 .player-row select:focus { border-color:var(--accent); }
 .player-row select.s-out { color:var(--out); }
-.player-row select.s-left-game { color:var(--left-game); }
 .player-row select.s-doubtful { color:var(--doubtful); }
 .player-row select.s-questionable { color:var(--questionable); }
 .player-row select.s-probable { color:var(--probable); }
@@ -248,19 +246,19 @@ const TEAM_ABBREV = {
   'New Orleans':'NOP','New York':'NYK','Oklahoma City':'OKC','Orlando':'ORL','Philadelphia':'PHI','Phoenix':'PHX',
   'Portland':'POR','Sacramento':'SAC','San Antonio':'SAS','Toronto':'TOR','Utah':'UTA','Washington':'WAS'
 };
-const STATUSES = ['Available','Probable','Questionable','Doubtful','Left Game','Out'];
-const STATUS_GRAVITY = { 'Out':0,'Left Game':1,'Doubtful':2,'Questionable':3,'Probable':4,'Available':5 };
+const STATUSES = ['Available','Probable','Questionable','Doubtful','Out'];
+const STATUS_GRAVITY = { 'Out':0,'Doubtful':1,'Questionable':2,'Probable':3,'Available':4 };
 
 function teamLogo(t) { const id=TEAM_IDS[t]; return id ? `https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg` : ''; }
 function logoImg(t) { const u=teamLogo(t); return u ? `<img src="${u}" width="28" height="28" style="vertical-align:middle;">` : ''; }
 function fmtSal(n) { if(n>=1e6) return '$'+(n/1e6).toFixed(1)+'M'; if(n>=1e3) return '$'+(n/1e3).toFixed(0)+'K'; return '$'+n.toLocaleString(); }
 function fmtSalFull(n) { return '$'+n.toLocaleString(); }
 function fmtDate(iso) { const d=new Date(iso+'T00:00:00'); const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return m[d.getMonth()]+' '+d.getDate(); }
-function sColor(s) { return {Out:'#ef4444','Left Game':'#f43f5e',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
+function sColor(s) { return {Out:'#ef4444',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
 function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`; }
-function statusClass(s) { return 's-'+s.toLowerCase().replace(/\s+/g,'-'); }
+function statusClass(s) { return 's-'+s.toLowerCase(); }
 function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
-function todayISO() { return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' }); }
+function todayISO() { return new Date().toISOString().slice(0,10); }
 
 function parseCSV(text) {
   const rows=[]; let cur='',inQ=false,row=[];
@@ -510,8 +508,8 @@ function onStatusChange(name, sel) {
     injInput.className = newStatus==='Available' ? 'inactive' : '';
     dateInput.className = newStatus==='Available' ? 'inactive' : '';
   } else {
-    // Always set date to today on status change
-    dateInput.value = todayISO();
+    // Set default date to today if empty
+    if (!dateInput.value) dateInput.value = todayISO();
     // Carry forward injury from JSON if available and field empty
     if (!injInput.value && original.injury && newStatus !== 'Available') {
       injInput.value = original.injury;
@@ -707,41 +705,46 @@ function copyJSON(btn) {
 // ===== PRESTO HTML GENERATION (same 4 tables) =====
 function buildPrestoHTML() {
   const merged = buildMergedJSON();
+
+  // Rebuild latest + prev from merged
   const lat = {}, prv = {};
   for (const e of merged) {
     if (lat[e.player]) prv[e.player] = lat[e.player];
     lat[e.player] = e;
   }
+
   return buildPrestoTables(merged, lat, prv, false);
 }
 
 function buildPrestoTables(entries, lat, prv, usePurge) {
   const today = todayISO();
+  const TH = 'style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
+  const TD = 'style="text-align:center;height:40px;border:1px solid #eee;padding:4px;"';
+  const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
+  const H2S = 'style="font-size:22px;font-weight:700;margin-bottom:10px;"';
 
-  // Shared styles: text-align on tbody inherits to all cells, avoiding per-cell repetition
-  const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;width:100%"';
-  const TB = 'style="text-align:center"'; // on tbody — inherited by all td/th
-  const B = 'style="border:1px solid #eee;padding:4px"'; // per cell (minimum needed)
-  const BH = 'style="border:1px solid #ccc;padding:4px"'; // header cells
-  const H2 = 'style="font-size:22px;font-weight:700;margin-bottom:10px"';
-  function logo(team) { const id=TEAM_IDS[team]; return id ? `<img src="https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg" width="28" height="28" style="vertical-align:middle">` : ''; }
-  function r(i) { return i%2 ? ' style="background:#f9f9f9"' : ''; }
-
-  // Table 1: Today's Updates
+  // Table 1: Today's Updates (use latest status per player, not raw entries)
   const todayEntries = Object.entries(lat)
     .filter(([name,e]) => e.date === today && roster[name])
-    .filter(([_,e]) => !usePurge || e.status !== 'Available')
     .map(([name,e]) => {
-      const p = prv[name], rv = roster[name] || {};
-      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:rv.team||'', salary:rv.salary||0 };
-    }).sort((a,z) => a.team !== z.team ? a.team.localeCompare(z.team) : lastName(a.player).localeCompare(lastName(z.player)));
+      const p = prv[name], r = roster[name] || {};
+      return { player:name, status:e.status, injury:e.injury, prevStatus:p?p.status:'Available', team:r.team||'', salary:r.salary||0 };
+    })
+    .filter(e => !(e.status === 'Available' && e.prevStatus === 'Available'))
+    .sort((a,b) => {
+      if (a.team !== b.team) return a.team.localeCompare(b.team);
+      return lastName(a.player).localeCompare(lastName(b.player));
+    });
 
-  let h1 = `<h2 ${H2}>Today's injury updates</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>PLAYER</th><th ${BH}>STATUS</th><th ${BH}>INJURY</th><th ${BH}>PREVIOUS STATUS</th><th ${BH}>SALARY</th></tr></thead><tbody ${TB}>`;
+  let h1 = `<h2 ${H2S}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
   let lt = '';
-  if (!todayEntries.length) h1 += `<tr><td ${B} colspan="6">No updates today</td></tr>`;
+  if (!todayEntries.length) {
+    h1 += `<tr><td colspan="6" ${TD}>No updates today</td></tr>`;
+  }
   todayEntries.forEach((e, i) => {
-    const lg = e.team !== lt ? logo(e.team) : ''; lt = e.team;
-    h1 += `<tr${r(i)}><td ${B}>${lg}</td><td ${B}><b>${e.player}</b></td><td ${B}>${sSpan(e.status)}</td><td ${B}>${e.injury}</td><td ${B}>${e.prevStatus?sSpan(e.prevStatus):''}</td><td ${B}>${fmtSal(e.salary)}</td></tr>`;
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
+    h1 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus ? sSpan(e.prevStatus) : ''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
   });
   h1 += '</tbody></table>';
 
@@ -749,20 +752,24 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   const allInjured = Object.entries(lat)
     .filter(([name,e]) => e.status !== 'Available' && roster[name])
     .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
-    .sort((a,z) => a.team !== z.team ? a.team.localeCompare(z.team) : lastName(a.player).localeCompare(lastName(z.player)));
+    .sort((a,b) => {
+      if (a.team !== b.team) return a.team.localeCompare(b.team);
+      return lastName(a.player).localeCompare(lastName(b.player));
+    });
 
-  let h2 = `<h2 ${H2}>Full injury report</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>PLAYER</th><th ${BH}>SALARY</th><th ${BH}>STATUS</th><th ${BH}>INJURY</th><th ${BH}>DATE</th></tr></thead><tbody ${TB}>`;
+  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>DATE</th></tr></thead><tbody>`;
   lt = '';
   allInjured.forEach((e, i) => {
-    const lg = e.team !== lt ? logo(e.team) : ''; lt = e.team;
-    h2 += `<tr${r(i)}><td ${B}>${lg}</td><td ${B}><b>${e.player}</b></td><td ${B}>${fmtSal(e.salary)}</td><td ${B}>${sSpan(e.status)}</td><td ${B}>${e.injury||''}</td><td ${B}>${e.date?fmtDate(e.date):''}</td></tr>`;
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
+    h2 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury||''}</td><td ${TD}>${e.date ? fmtDate(e.date) : ''}</td></tr>`;
   });
   h2 += '</tbody></table>';
 
   // Table 3: Salary Per Team
   const teamInjSal = {};
   for (const e of allInjured) {
-    if (e.status === 'Out' || e.status === 'Left Game' || e.status === 'Doubtful') {
+    if (e.status === 'Out' || e.status === 'Doubtful') {
       teamInjSal[e.team] = (teamInjSal[e.team]||0) + e.salary;
     }
   }
@@ -772,20 +779,24 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   const teamRows = NBA_TEAMS.map(t => ({
     team:t, injured:teamInjSal[t]||0, total:teamSalaries[t]||0,
     pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
-  })).sort((a,z) => z.injured - a.injured);
+  })).sort((a,b) => b.injured - a.injured);
 
-  let h3 = `<h2 ${H2}>Injured salary per team</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>TEAM</th><th ${BH}>INJURED SALARY</th><th ${BH}>% SALARY</th></tr></thead><tbody ${TB}>`;
-  teamRows.forEach((rv, i) => {
-    h3 += `<tr${r(i)}><td ${B}>${logo(rv.team)}</td><td ${B}><b>${rv.team}</b></td><td ${B}>${fmtSalFull(rv.injured)}</td><td ${B}>${rv.pct.toFixed(2)}%</td></tr>`;
+  let h3 = `<h2 ${H2S}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
+  teamRows.forEach((r, i) => {
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    h3 += `<tr style="background:${bg};"><td ${TD}>${logoImg(r.team)}</td><td ${TD}><strong>${r.team}</strong></td><td ${TD}>${fmtSalFull(r.injured)}</td><td ${TD}>${r.pct.toFixed(2)}%</td></tr>`;
   });
-  h3 += `<tr style="background:#222;color:#fff;font-weight:700"><td ${B}><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="28" height="28" style="vertical-align:middle"></td><td ${B}>NBA</td><td ${B}>${fmtSalFull(totalNBAInj)}</td><td ${B}>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
+  // NBA total row
+  const nbaLogo = `<img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="28" height="28" style="vertical-align:middle;">`;
+  h3 += `<tr style="background:#222;color:#fff;font-weight:700;"><td ${TD}>${nbaLogo}</td><td ${TD}>NBA</td><td ${TD}>${fmtSalFull(totalNBAInj)}</td><td ${TD}>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
   h3 += '</tbody></table>';
 
   // Table 4: Highest-Paid Injured
-  const topPaid = [...allInjured].sort((a,z) => z.salary - a.salary).slice(0,25);
-  let h4 = `<h2 ${H2}>Highest-paid injured players</h2><table ${TBL}><thead ${TB}><tr style="background:#f2f2f2"><th ${BH}></th><th ${BH}>PLAYER</th><th ${BH}>SALARY</th><th ${BH}>DAYS SINCE LAST GAME</th></tr></thead><tbody ${TB}>`;
+  const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
+  let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
   topPaid.forEach((e, i) => {
-    h4 += `<tr${r(i)}><td ${B}>${logo(e.team)}</td><td ${B}><b>${e.player}</b></td><td ${B}>${fmtSalFull(e.salary)}</td><td ${B}>${e.days||''}</td></tr>`;
+    const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
+    h4 += `<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days||''}</td></tr>`;
   });
   h4 += '</tbody></table>';
 
