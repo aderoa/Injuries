@@ -1674,5 +1674,12 @@
     "injury": "Left Hand Contusion",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Doubtful",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
