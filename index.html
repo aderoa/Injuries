@@ -61,6 +61,15 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 }
 .admin-toolbar .badge.has-changes { background:rgba(59,130,246,0.15); color:var(--accent); }
 
+/* Sync status */
+.sync-status { font-size:12px; display:flex; align-items:center; gap:4px; padding:4px 10px; border-radius:99px; white-space:nowrap; }
+.sync-idle { color:var(--text2); }
+.sync-syncing { color:var(--accent); animation:syncPulse 1s ease infinite; }
+.sync-success { color:#059669; }
+.sync-error { color:#ef4444; cursor:pointer; }
+.sync-notoken { color:#f59e0b; cursor:pointer; }
+@keyframes syncPulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+
 /* Search / filter */
 .filter-bar {
   display:flex; gap:8px; margin-bottom:16px; align-items:center;
@@ -287,6 +296,16 @@ let jsonEntries = []; // raw injuries.json
 let latestStatus = {}; // player -> {status, injury, date}
 let modifications = {}; // player -> {status, injury, date} (admin edits)
 
+// ===== GITHUB AUTO-SYNC =====
+const GH_REPO = 'aderoa/Injuries';
+const GH_FILE = 'injuries.json';
+const GH_BRANCH = 'main';
+const GH_API = `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`;
+let _ghToken = localStorage.getItem('gh_injuries_token') || '';
+let _ghSyncTimer = null;
+let _ghSyncing = false;
+let _ghLastSha = null; // cached SHA to avoid extra GET
+
 // ===== DATA LOADING =====
 async function loadData() {
   const [csvR, rosterR, jsonR] = await Promise.all([
@@ -359,11 +378,13 @@ if (isAdmin) {
       <div class="admin-toolbar" id="toolbar">
         <button class="primary" onclick="copyPrestoHTML(this)">📋 Copy Presto HTML</button>
         <button onclick="copyJSON(this)">📋 Copy Updated JSON</button>
-        <button onclick="window.open('https://github.com/aderoa/Injuries/edit/main/injuries.json','_blank')">✏️ Open on GitHub</button>
+        <button onclick="pushToGitHub()">⬆️ Push Now</button>
+        <button onclick="setupGitHubToken()">🔑 Token</button>
         <button class="btn-purge" onclick="purgeAvailable(this)">🧹 Purge Available</button>
         <button id="undoBtn" style="display:none;" onclick="undoPurge(this)">↩ Undo Purge</button>
         <button onclick="resetAll()">🗑 Reset All</button>
         <span class="spacer"></span>
+        <span class="sync-status sync-idle" id="syncStatus" onclick="if(this.classList.contains('sync-error')||this.classList.contains('sync-notoken'))setupGitHubToken()">🔗 <span>Auto-sync on</span></span>
         <span class="badge" id="changesBadge">0 changes</span>
       </div>
       <div class="filter-bar">
@@ -425,6 +446,19 @@ async function initAdmin() {
     document.getElementById('lastUpdate').textContent = `${Object.keys(roster).length} players loaded`;
     renderRoster();
     updateBadge();
+    // Initialize GitHub sync status
+    if (_ghToken) {
+      setSyncStatus('idle', 'Auto-sync on');
+      // Pre-fetch SHA for faster first push
+      try {
+        const r = await fetch(GH_API + '?ref=' + GH_BRANCH, {
+          headers: { 'Authorization': 'token ' + _ghToken, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        if (r.ok) { const d = await r.json(); _ghLastSha = d.sha; }
+      } catch(e) {}
+    } else {
+      setSyncStatus('notoken', 'Set token to auto-sync');
+    }
   } catch(e) {
     document.getElementById('rosterArea').innerHTML = `<div class="error-msg">Error: ${e.message}</div>`;
   }
@@ -650,6 +684,119 @@ function updateBadge() {
   badge.className = count ? 'badge has-changes' : 'badge';
   // Auto-save to localStorage
   try { localStorage.setItem('injuries_modifications', JSON.stringify(modifications)); } catch(e) {}
+  // Debounced auto-push to GitHub
+  scheduleGitHubSync();
+}
+
+// ===== GITHUB SYNC ENGINE =====
+function setSyncStatus(state, msg) {
+  const el = document.getElementById('syncStatus');
+  if (!el) return;
+  const icons = { idle:'🔗', syncing:'🔄', success:'✅', error:'❌', notoken:'🔑' };
+  el.innerHTML = `${icons[state]||''} <span>${msg}</span>`;
+  el.className = 'sync-status sync-' + state;
+}
+
+function setupGitHubToken() {
+  const current = _ghToken ? '(token is set)' : '(no token)';
+  const token = prompt(`GitHub Personal Access Token ${current}\n\nNeeds "Contents: Read and write" permission on ${GH_REPO}.\n\nPaste token (or leave blank to clear):`, '');
+  if (token === null) return; // cancelled
+  _ghToken = token.trim();
+  if (_ghToken) {
+    localStorage.setItem('gh_injuries_token', _ghToken);
+    setSyncStatus('idle', 'Token saved');
+  } else {
+    localStorage.removeItem('gh_injuries_token');
+    _ghToken = '';
+    setSyncStatus('notoken', 'No token');
+  }
+}
+
+function scheduleGitHubSync() {
+  if (!_ghToken) return;
+  clearTimeout(_ghSyncTimer);
+  _ghSyncTimer = setTimeout(() => pushToGitHub(), 3000);
+}
+
+async function pushToGitHub() {
+  if (!_ghToken) { setSyncStatus('notoken', 'Set token'); return; }
+  if (_ghSyncing) { scheduleGitHubSync(); return; } // retry after current push
+  _ghSyncing = true;
+  setSyncStatus('syncing', 'Pushing…');
+
+  try {
+    // Build merged JSON
+    const merged = buildMergedJSON();
+    const content = JSON.stringify(merged, null, 2) + '\n';
+    const b64 = btoa(unescape(encodeURIComponent(content)));
+
+    // Get current SHA (use cached if available, otherwise fetch)
+    let sha = _ghLastSha;
+    if (!sha) {
+      const getR = await fetch(GH_API + '?ref=' + GH_BRANCH, {
+        headers: { 'Authorization': 'token ' + _ghToken, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (!getR.ok) throw new Error('GET failed: ' + getR.status);
+      const getData = await getR.json();
+      sha = getData.sha;
+    }
+
+    // Build commit message
+    const names = Object.keys(modifications);
+    const msg = names.length <= 3
+      ? `Update: ${names.join(', ')}`
+      : `Update ${names.length} players`;
+
+    // PUT to update file
+    const putR = await fetch(GH_API, {
+      method: 'PUT',
+      headers: {
+        'Authorization': 'token ' + _ghToken,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: msg,
+        content: b64,
+        sha: sha,
+        branch: GH_BRANCH
+      })
+    });
+
+    if (!putR.ok) {
+      const err = await putR.json().catch(() => ({}));
+      if (putR.status === 409) {
+        // SHA conflict — clear cache and retry once
+        _ghLastSha = null;
+        _ghSyncing = false;
+        return pushToGitHub();
+      }
+      throw new Error(err.message || putR.status);
+    }
+
+    const putData = await putR.json();
+    _ghLastSha = putData.content.sha; // cache new SHA
+
+    // Merge modifications into jsonEntries so they're now "committed"
+    jsonEntries = merged;
+    modifications = {};
+    try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
+
+    // Update UI
+    const badge = document.getElementById('changesBadge');
+    badge.textContent = '0 changes';
+    badge.className = 'badge';
+    document.querySelectorAll('.player-row.modified').forEach(r => r.classList.remove('modified'));
+
+    setSyncStatus('success', 'Synced');
+    setTimeout(() => setSyncStatus('idle', 'Auto-sync on'), 3000);
+
+  } catch(err) {
+    console.error('GitHub sync error:', err);
+    setSyncStatus('error', err.message || 'Sync failed');
+  } finally {
+    _ghSyncing = false;
+  }
 }
 
 function updateTeamInjuredCounts() {
