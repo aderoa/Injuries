@@ -1625,5 +1625,12 @@
     "injury": "Left Hip Impingement",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nickeil Alexander-Walker",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
