@@ -1765,5 +1765,12 @@
     "injury": "",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
