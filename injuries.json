@@ -1702,5 +1702,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-02-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
