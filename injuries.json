@@ -1681,5 +1681,12 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Available",
+    "injury": "Right Quad Contusion",
+    "date": "2026-02-25",
+    "prevStatus": "Questionable"
   }
 ]
