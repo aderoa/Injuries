@@ -1716,5 +1716,12 @@
     "injury": "Left Foot Soreness",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Yang Hansen",
+    "status": "Questionable",
+    "injury": "Mid Back Soreness",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
