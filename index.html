@@ -537,7 +537,7 @@ function onStatusChange(name, sel) {
       status: newStatus,
       injury: injInput.value,
       date: dateInput.value,
-      prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : effectiveBefore
+      prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : (prevStatusSnapshot[name] || effectiveBefore)
     };
     row.classList.add('modified');
     injInput.classList.remove('inactive');
@@ -568,7 +568,7 @@ function onInjuryChange(name, inp) {
     row.classList.remove('modified');
   } else {
     if (!dateInput.value) dateInput.value = todayISO();
-    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : effectiveBefore };
+    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : (prevStatusSnapshot[name] || effectiveBefore) };
     row.classList.add('modified');
   }
   updateBadge();
@@ -586,7 +586,7 @@ function onDateChange(name, inp) {
     delete modifications[name];
     row.classList.remove('modified');
   } else {
-    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, prevStatus: prevSt !== null ? prevSt : effectiveBefore };
+    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, prevStatus: prevSt !== null ? prevSt : (prevStatusSnapshot[name] || effectiveBefore) };
     row.classList.add('modified');
   }
   updateBadge();
@@ -597,13 +597,17 @@ function getEffectivePrevStatus(name) {
   if (modifications[name] && modifications[name].prevStatus != null) {
     return modifications[name].prevStatus;
   }
-  // 2) Check latest JSON entry for this player for prevStatus field
+  // 2) Check purge snapshot (set when Purge Available is clicked)
+  if (prevStatusSnapshot[name]) {
+    return prevStatusSnapshot[name];
+  }
+  // 3) Check latest JSON entry for this player for prevStatus field
   const entries = jsonEntries.filter(e => e.player === name);
   const lastEntry = entries.length ? entries[entries.length - 1] : null;
   if (lastEntry && lastEntry.prevStatus != null) {
     return lastEntry.prevStatus;
   }
-  // 3) Scan entries for latest status from a prior date
+  // 4) Scan entries for latest status from a prior date
   const today = todayISO();
   let prev = null;
   for (const e of jsonEntries) {
@@ -716,13 +720,23 @@ function resetAll() {
 }
 
 let prePurgeSnapshot = null;
+let prevStatusSnapshot = {};    // player → status at time of last purge
+let prePurgePrevSnapshot = {};  // for undo
 
 function purgeAvailable(btn) {
   // Save snapshot for undo
   prePurgeSnapshot = JSON.parse(JSON.stringify(modifications));
+  prePurgePrevSnapshot = prevStatusSnapshot ? {...prevStatusSnapshot} : {};
 
-  // For every player in JSON whose latest effective status is "Available",
-  // add a modification clearing their injury and date
+  // Step 1: Snapshot ALL current statuses → prevStatusSnapshot
+  // This sets the "previous status" baseline for the new day
+  prevStatusSnapshot = {};
+  for (const [player, entry] of Object.entries(latestStatus)) {
+    const effective = modifications[player] || entry;
+    prevStatusSnapshot[player] = effective.status || 'Available';
+  }
+
+  // Step 2: Purge available players (clear injury + date)
   for (const [player, entry] of Object.entries(latestStatus)) {
     const effective = modifications[player] || entry;
     if (effective.status === 'Available' && (entry.injury || entry.date)) {
@@ -744,6 +758,8 @@ function undoPurge(btn) {
   if (prePurgeSnapshot !== null) {
     modifications = prePurgeSnapshot;
     prePurgeSnapshot = null;
+    prevStatusSnapshot = prePurgePrevSnapshot;
+    prePurgePrevSnapshot = {};
     renderRoster();
     updateBadge();
     updateTeamInjuredCounts();
@@ -763,7 +779,7 @@ function buildMergedJSON() {
       status: mod.status,
       injury: mod.injury || '',
       date: mod.date !== undefined && mod.date !== null ? mod.date : todayISO(),
-      prevStatus: mod.prevStatus || null
+      prevStatus: mod.prevStatus || prevStatusSnapshot[player] || null
     });
   }
 
