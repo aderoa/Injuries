@@ -1639,5 +1639,12 @@
     "injury": "Left Foot Sprain",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Questionable",
+    "injury": "Left Hip Flexor Injury",
+    "date": "2026-02-25",
+    "prevStatus": "Questionable"
   }
 ]
