@@ -1660,5 +1660,19 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-02-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Doubtful",
+    "injury": "Right Calf Strain",
+    "date": "2026-02-25",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Doubtful",
+    "injury": "Left Hand Contusion",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
