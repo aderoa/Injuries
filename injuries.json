@@ -1555,5 +1555,12 @@
     "injury": "Left Calf Injury Maintenance",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-25",
+    "prevStatus": "Doubtful"
   }
 ]
