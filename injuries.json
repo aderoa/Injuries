@@ -1653,5 +1653,12 @@
     "injury": "Left Hip Flexor Irritation",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Out",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-02-25",
+    "prevStatus": "Questionable"
   }
 ]
