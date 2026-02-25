@@ -1688,5 +1688,19 @@
     "injury": "Right Quad Contusion",
     "date": "2026-02-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-25",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-02-25",
+    "prevStatus": "Doubtful"
   }
 ]
