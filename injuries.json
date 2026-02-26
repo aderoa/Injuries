@@ -2276,5 +2276,19 @@
     "injury": "Right Knee Soreness",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Available",
+    "injury": "Right Soleus Injury Management",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
