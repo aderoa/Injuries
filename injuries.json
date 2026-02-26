@@ -2192,5 +2192,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-02-26",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Nickeil Alexander-Walker",
+    "status": "Out",
+    "injury": "Left Foot Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
