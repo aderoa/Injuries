@@ -1814,5 +1814,12 @@
     "injury": "Illness",
     "date": "2026-02-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-25",
+    "prevStatus": "Out"
   }
 ]
