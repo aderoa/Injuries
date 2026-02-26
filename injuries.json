@@ -2220,5 +2220,12 @@
     "injury": "Illness",
     "date": "2026-02-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Julian Strawther",
+    "status": "Probable",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
