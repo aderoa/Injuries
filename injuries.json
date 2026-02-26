@@ -2297,5 +2297,19 @@
     "injury": "Illness",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Available",
+    "injury": "Left HIp Flexor Tightness",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keldon Johnson",
+    "status": "Available",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
