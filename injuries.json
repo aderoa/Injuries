@@ -2052,5 +2052,12 @@
     "injury": "Illness",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
