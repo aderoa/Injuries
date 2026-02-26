@@ -2199,5 +2199,12 @@
     "injury": "Left Foot Sprain",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zaccharie Risacher",
+    "status": "Available",
+    "injury": "Right Hip Contusion",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
