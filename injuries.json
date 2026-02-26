@@ -2003,5 +2003,12 @@
     "injury": "Right Shoulder Stinger",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
