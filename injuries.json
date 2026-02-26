@@ -1772,5 +1772,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "James Harden",
+    "status": "Out",
+    "injury": "Right Thumb Non-Displaced Fracture",
+    "date": "2026-02-25",
+    "prevStatus": "Questionable"
   }
 ]
