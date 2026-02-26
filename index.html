@@ -909,12 +909,22 @@ function purgeAvailable(btn) {
     const effective = modifications[player] || entry;
     prevStatusSnapshot[player] = effective.status || 'Available';
   }
+  // Also capture any modified players not in latestStatus
+  for (const [player, mod] of Object.entries(modifications)) {
+    if (!prevStatusSnapshot[player]) {
+      prevStatusSnapshot[player] = mod.status || 'Available';
+    }
+  }
 
-  // Step 2: Purge available players (clear injury + date)
+  // Step 2: Purge available players (clear injury + date) AND set prevStatus on all
   for (const [player, entry] of Object.entries(latestStatus)) {
     const effective = modifications[player] || entry;
     if (effective.status === 'Available' && (entry.injury || entry.date)) {
-      modifications[player] = { status: 'Available', injury: '', date: '' };
+      // Purge: clear injury/date, carry prevStatus from snapshot
+      modifications[player] = { status: 'Available', injury: '', date: '', prevStatus: prevStatusSnapshot[player] || null };
+    } else if (modifications[player]) {
+      // Non-available modified player: update prevStatus from snapshot
+      modifications[player].prevStatus = prevStatusSnapshot[player] || modifications[player].prevStatus || null;
     }
   }
 
