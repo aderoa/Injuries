@@ -1122,7 +1122,8 @@ function buildReportSections(prev) {
 function showTab(idx, btn) {
   document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('preview').innerHTML = idx === -1 ? sectionsHTML.join('<br>') : (sectionsHTML[idx] || '');
+  // No preview render — data stays in memory for copy buttons only
+  document.getElementById('preview').innerHTML = '<p style="color:#888;text-align:center;padding:2rem;">Preview disabled for performance. Use the copy buttons above.</p>';
 }
 
 function copyToClipboard(html, btn) {
