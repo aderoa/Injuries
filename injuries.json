@@ -2122,5 +2122,12 @@
     "injury": "Right Thumb Non-Displaced Fracture",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Evan Mobley",
+    "status": "Available",
+    "injury": "Left Calf Injury Maintenance",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
