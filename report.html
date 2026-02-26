@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NBA Injury Report</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;font-size:14px;background:#fff;color:#111;padding:12px}
+h2{font-size:22px;font-weight:700;margin-bottom:10px}
+table{border-collapse:collapse;width:100%;border:1px solid #ccc;margin-bottom:24px}
+th{border:1px solid #ccc;padding:4px;text-align:center;height:36px;background:#f2f2f2;font-size:13px}
+td{text-align:center;height:40px;border:1px solid #eee;padding:4px}
+tr.odd{background:#f9f9f9}
+.total-row{background:#222;color:#fff;font-weight:700}
+strong{font-weight:700}
+.loading{text-align:center;padding:40px;color:#888}
+.spinner{display:inline-block;width:20px;height:20px;border:2px solid #ddd;border-top-color:#3b82f6;border-radius:50%;animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div id="content"><div class="loading"><div class="spinner"></div><p style="margin-top:8px">Loading...</p></div></div>
+<script>
+const SHEET_ID='2PACX-1vQ-TNS1Zxbcq2Altxh0-yY0LFEPvOXlwI8DjD8FdbSypf_sSWc3Xi6F88DwiOdSmR0FmXLzNicgCDwL';
+const INJ_GID='306285159';
+const CSV_URL=`https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
+const ROSTER_SHEET_ID='2PACX-1vSg6im6IYB6HXMGzQbmmBnLw9SfQLzxCSo8OfChxlJLhsB6BBCO0wPF_TMch0YgAbtFqYkwDWrsxRe7';
+const ROSTER_CSV_URL=`https://docs.google.com/spreadsheets/d/e/${ROSTER_SHEET_ID}/pub?gid=0&single=true&output=csv`;
+const JSON_URL='injuries.json';
+
+const NBA_TEAMS=['Atlanta','Boston','Brooklyn','Charlotte','Chicago','Cleveland','Dallas','Denver','Detroit','Golden State','Houston','Indiana','LA Clippers','LA Lakers','Memphis','Miami','Milwaukee','Minnesota','New Orleans','New York','Oklahoma City','Orlando','Philadelphia','Phoenix','Portland','Sacramento','San Antonio','Toronto','Utah','Washington'];
+const TEAM_IDS={'Atlanta':1610612737,'Boston':1610612738,'Brooklyn':1610612751,'Charlotte':1610612766,'Chicago':1610612741,'Cleveland':1610612739,'Dallas':1610612742,'Denver':1610612743,'Detroit':1610612765,'Golden State':1610612744,'Houston':1610612745,'Indiana':1610612754,'LA Clippers':1610612746,'LA Lakers':1610612747,'Memphis':1610612763,'Miami':1610612748,'Milwaukee':1610612749,'Minnesota':1610612750,'New Orleans':1610612740,'New York':1610612752,'Oklahoma City':1610612760,'Orlando':1610612753,'Philadelphia':1610612755,'Phoenix':1610612756,'Portland':1610612757,'Sacramento':1610612758,'San Antonio':1610612759,'Toronto':1610612761,'Utah':1610612762,'Washington':1610612764};
+
+function logoImg(t){const id=TEAM_IDS[t];return id?`<img src="https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg" width="28" height="28" style="vertical-align:middle">`:''}
+function fmtSal(n){if(n>=1e6)return'$'+(n/1e6).toFixed(1)+'M';if(n>=1e3)return'$'+(n/1e3).toFixed(0)+'K';return'$'+n.toLocaleString()}
+function fmtSalFull(n){return'$'+n.toLocaleString()}
+function fmtDate(iso){const d=new Date(iso+'T00:00:00');const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[d.getMonth()]+' '+d.getDate()}
+function sColor(s){return{Out:'#ef4444','Left Game':'#f97316',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'}
+function sSpan(s){return`<span style="color:${sColor(s)};font-weight:700">${s}</span>`}
+function lastName(n){const p=n.trim().split(/\s+/);return p.length>1?p[p.length-1]:n}
+function todayISO(){return new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})}
+function parseCSV(t){const rows=[];let cur='',inQ=false,row=[];for(let i=0;i<t.length;i++){const c=t[i];if(c==='"'){if(inQ&&t[i+1]==='"'){cur+='"';i++}else inQ=!inQ}else if(c===','&&!inQ){row.push(cur);cur=''}else if((c==='\n'||c==='\r')&&!inQ){if(c==='\r'&&t[i+1]==='\n')i++;row.push(cur);cur='';rows.push(row);row=[]}else cur+=c}if(cur||row.length){row.push(cur);rows.push(row)}return rows}
+
+const params=new URLSearchParams(location.search);
+const TAB=params.has('tab')?parseInt(params.get('tab')):-1;
+
+(async function(){
+  try{
+    const[csvR,rosterR,jsonR]=await Promise.all([fetch(CSV_URL),fetch(ROSTER_CSV_URL),fetch(JSON_URL+'?t='+Date.now())]);
+    if(!jsonR.ok)throw new Error('injuries.json: '+jsonR.status);
+
+    const roster={},teamSalaries={},daysMap={};
+
+    // Roster
+    if(rosterR.ok){
+      const rows=parseCSV(await rosterR.text());
+      if(rows.length>1){
+        const hdr=rows[0];
+        const col=n=>hdr.findIndex(h=>h.toUpperCase().trim()===n.toUpperCase());
+        const pi=col('PLAYER'),ti=col('TEAM'),si=col('2026');
+        if(pi>=0&&ti>=0)for(let i=1;i<rows.length;i++){
+          const r=rows[i],p=(r[pi]||'').trim(),t=(r[ti]||'').trim(),s=parseInt((si>=0?(r[si]||'0'):'0').replace(/[$,]/g,''))||0;
+          if(p&&t){roster[p]={team:t,salary:s};teamSalaries[t]=(teamSalaries[t]||0)+s}
+        }
+      }
+    }
+
+    // Days since last game
+    if(csvR.ok){
+      for(const r of parseCSV(await csvR.text())){
+        if(r.length>73){const p=(r[71]||'').trim(),d=(r[73]||'').trim();if(p&&/^\d+$/.test(d))daysMap[p]=parseInt(d)}
+      }
+    }
+
+    // Injuries JSON
+    const entries=await jsonR.json();
+    const lat={},prv={};
+    for(const e of entries){if(lat[e.player])prv[e.player]=lat[e.player];lat[e.player]=e}
+
+    const today=todayISO();
+    const sections=[];
+
+    // === Table 0: Today's Updates ===
+    const prevDate={};
+    for(const e of entries){if(e.date&&e.date.length>=10&&e.date<today)prevDate[e.player]=e.status}
+    const todayE=Object.entries(lat)
+      .filter(([n,e])=>e.date===today&&roster[n])
+      .map(([n,e])=>{const r=roster[n]||{};return{player:n,status:e.status,injury:e.injury,prevStatus:e.prevStatus!=null?e.prevStatus:(prevDate[n]||'Available'),team:r.team||'',salary:r.salary||0}})
+      .sort((a,b)=>a.team!==b.team?a.team.localeCompare(b.team):lastName(a.player).localeCompare(lastName(b.player)));
+    let h1='<h2>Today\'s injury updates</h2><table><thead><tr><th></th><th>PLAYER</th><th>STATUS</th><th>INJURY</th><th>PREVIOUS STATUS</th><th>SALARY</th></tr></thead><tbody>';
+    let lt='';
+    if(!todayE.length)h1+='<tr><td colspan="6">No updates today</td></tr>';
+    todayE.forEach((e,i)=>{const lg=e.team!==lt?logoImg(e.team):'';lt=e.team;h1+=`<tr class="${i%2?'odd':''}"><td>${lg}</td><td><strong>${e.player}</strong></td><td>${sSpan(e.status)}</td><td>${e.injury}</td><td>${e.prevStatus?sSpan(e.prevStatus):''}</td><td>${fmtSal(e.salary)}</td></tr>`});
+    h1+='</tbody></table>';
+    sections.push(h1);
+
+    // === Table 1: Full Report ===
+    const allInj=Object.entries(lat)
+      .filter(([n,e])=>e.status!=='Available'&&roster[n])
+      .map(([n,e])=>({player:n,...e,team:(roster[n]||{}).team||'',salary:(roster[n]||{}).salary||0,days:daysMap[n]||0}))
+      .sort((a,b)=>a.team!==b.team?a.team.localeCompare(b.team):lastName(a.player).localeCompare(lastName(b.player)));
+    let h2='<h2>Full injury report</h2><table><thead><tr><th></th><th>PLAYER</th><th>SALARY</th><th>STATUS</th><th>INJURY</th><th>DATE</th></tr></thead><tbody>';
+    lt='';
+    allInj.forEach((e,i)=>{const lg=e.team!==lt?logoImg(e.team):'';lt=e.team;h2+=`<tr class="${i%2?'odd':''}"><td>${lg}</td><td><strong>${e.player}</strong></td><td>${fmtSal(e.salary)}</td><td>${sSpan(e.status)}</td><td>${e.injury||''}</td><td>${e.date?fmtDate(e.date):''}</td></tr>`});
+    h2+='</tbody></table>';
+    sections.push(h2);
+
+    // === Table 2: Salary Per Team ===
+    const tis={};
+    for(const e of allInj){if(e.status==='Out'||e.status==='Doubtful')tis[e.team]=(tis[e.team]||0)+e.salary}
+    let tns=0,tni=0;for(const t of NBA_TEAMS){tns+=teamSalaries[t]||0;tni+=tis[t]||0}
+    const tRows=NBA_TEAMS.map(t=>({team:t,injured:tis[t]||0,total:teamSalaries[t]||0,pct:teamSalaries[t]?((tis[t]||0)/teamSalaries[t]*100):0})).sort((a,b)=>b.injured-a.injured);
+    let h3='<h2>Injured salary per team</h2><table><thead><tr><th></th><th>TEAM</th><th>INJURED SALARY</th><th>% SALARY</th></tr></thead><tbody>';
+    tRows.forEach((r,i)=>{h3+=`<tr class="${i%2?'odd':''}"><td>${logoImg(r.team)}</td><td><strong>${r.team}</strong></td><td>${fmtSalFull(r.injured)}</td><td>${r.pct.toFixed(2)}%</td></tr>`});
+    h3+=`<tr class="total-row"><td><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="28" height="28" style="vertical-align:middle"></td><td>NBA</td><td>${fmtSalFull(tni)}</td><td>${tns?(tni/tns*100).toFixed(2):'0.00'}%</td></tr>`;
+    h3+='</tbody></table>';
+    sections.push(h3);
+
+    // === Table 3: Highest-Paid Injured ===
+    const top=[...allInj].sort((a,b)=>b.salary-a.salary).slice(0,25);
+    let h4='<h2>Highest-paid injured players</h2><table><thead><tr><th></th><th>PLAYER</th><th>SALARY</th><th>DAYS SINCE LAST GAME</th></tr></thead><tbody>';
+    top.forEach((e,i)=>{h4+=`<tr class="${i%2?'odd':''}"><td>${logoImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days||''}</td></tr>`});
+    h4+='</tbody></table>';
+    sections.push(h4);
+
+    // Render
+    const el=document.getElementById('content');
+    if(TAB>=0&&TAB<sections.length) el.innerHTML=sections[TAB];
+    else el.innerHTML=sections.join('');
+
+    // Tell parent iframe to resize
+    try{window.parent.postMessage({type:'resize',height:document.body.scrollHeight},'*')}catch(e){}
+
+  }catch(e){
+    document.getElementById('content').innerHTML='<p style="color:red;padding:20px">Error: '+e.message+'</p>';
+  }
+})();
+</script>
+</body>
+</html>
