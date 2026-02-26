@@ -1786,5 +1786,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-02-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
