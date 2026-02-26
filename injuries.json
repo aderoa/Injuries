@@ -2010,5 +2010,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Out",
+    "injury": "Right Calf Strain",
+    "date": "2026-02-26",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Out",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-02-26",
+    "prevStatus": "Doubtful"
   }
 ]
