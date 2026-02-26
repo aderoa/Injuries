@@ -1877,5 +1877,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
