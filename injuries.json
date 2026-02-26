@@ -1842,5 +1842,12 @@
     "injury": "Right Ankle Sprain / Right Hip Impingement",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain / Right Hip Impingement",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
