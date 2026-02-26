@@ -1968,5 +1968,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Available",
+    "injury": "Left Hip Impingement",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
