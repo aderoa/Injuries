@@ -2157,5 +2157,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Right Foot Stress Fracture",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
