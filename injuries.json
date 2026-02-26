@@ -2255,5 +2255,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Available",
+    "injury": "Abdominal Strain",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
