@@ -129,8 +129,18 @@ const TAB=params.has('tab')?parseInt(params.get('tab')):-1;
     if(TAB>=0&&TAB<sections.length) el.innerHTML=sections[TAB];
     else el.innerHTML=sections.join('');
 
-    // Tell parent iframe to resize
-    try{window.parent.postMessage({type:'resize',height:document.body.scrollHeight},'*')}catch(e){}
+    // Auto-resize: tell parent iframe our height
+    function postHeight(){
+      const h=document.documentElement.scrollHeight;
+      window.parent.postMessage({type:'injuryResize',tab:TAB,height:h},'*');
+    }
+    postHeight();
+    // Re-post after images load (team logos)
+    document.querySelectorAll('img').forEach(img=>{
+      if(!img.complete)img.onload=postHeight;
+    });
+    setTimeout(postHeight,500);
+    setTimeout(postHeight,1500);
 
   }catch(e){
     document.getElementById('content').innerHTML='<p style="color:red;padding:20px">Error: '+e.message+'</p>';
