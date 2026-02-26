@@ -2269,5 +2269,12 @@
     "injury": "Left Glut Contusion",
     "date": "2026-02-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Pickett",
+    "status": "Questionable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
