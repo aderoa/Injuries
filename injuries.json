@@ -2073,5 +2073,12 @@
     "injury": "",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Russell Westbrook",
+    "status": "Out",
+    "injury": "Right Thigh Contusion",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
