@@ -1800,5 +1800,12 @@
     "injury": "Right Ankle Injury",
     "date": "2026-02-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Available",
+    "injury": "Back Lower Strain Injury Management",
+    "date": "2026-02-25",
+    "prevStatus": "Out"
   }
 ]
