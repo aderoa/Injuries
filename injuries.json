@@ -2241,5 +2241,19 @@
     "injury": "Right Groin Soreness",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Branden Carlson",
+    "status": "Out",
+    "injury": "Low Back Strain",
+    "date": "2026-02-26",
+    "prevStatus": "Left Game"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
