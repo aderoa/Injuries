@@ -1870,5 +1870,12 @@
     "injury": "Head Laceraton, Neck Soreness",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
