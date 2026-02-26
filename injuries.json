@@ -2290,5 +2290,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
