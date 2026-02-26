@@ -1982,5 +1982,12 @@
     "injury": "Right Ankle Sprain / Right Hip Impingement",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Available",
+    "injury": "Left Quadricep Tendinitis",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
