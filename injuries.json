@@ -2206,5 +2206,19 @@
     "injury": "Right Hip Contusion",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Questionable",
+    "injury": "Right Shoulder Strain",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-02-26",
+    "prevStatus": "Left Game"
   }
 ]
