@@ -2066,5 +2066,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-02-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Russell Westbrook",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
