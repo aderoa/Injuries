@@ -1975,5 +1975,12 @@
     "injury": "Left Hip Impingement",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "injury": "Right Ankle Sprain / Right Hip Impingement",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
