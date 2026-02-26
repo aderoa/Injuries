@@ -1989,5 +1989,12 @@
     "injury": "Left Quadricep Tendinitis",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Out",
+    "injury": "Left Hip Flexor Irritation",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
