@@ -2059,5 +2059,12 @@
     "injury": "",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Left Game"
   }
 ]
