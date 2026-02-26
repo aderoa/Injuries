@@ -2262,5 +2262,12 @@
     "injury": "Abdominal Strain",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Available",
+    "injury": "Left Glut Contusion",
+    "date": "2026-02-26",
+    "prevStatus": "Left Game"
   }
 ]
