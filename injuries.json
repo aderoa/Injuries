@@ -2185,5 +2185,12 @@
     "injury": "Back Strain",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Out",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Doubtful"
   }
 ]
