@@ -2178,5 +2178,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Suggs",
+    "status": "Available",
+    "injury": "Back Strain",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
