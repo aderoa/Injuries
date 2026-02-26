@@ -2080,5 +2080,12 @@
     "injury": "Right Thigh Contusion",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
