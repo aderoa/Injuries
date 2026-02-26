@@ -1856,5 +1856,12 @@
     "injury": "",
     "date": "",
     "prevStatus": null
+  },
+  {
+    "player": "John Collins",
+    "status": "Questionable",
+    "injury": "Head Laceraton, Neck Soreness",
+    "date": "2026-02-25",
+    "prevStatus": "Out"
   }
 ]
