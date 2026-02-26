@@ -1083,28 +1083,10 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   return [h1, h2, h3, h4];
 }
 
-const REPORT_BASE = 'https://aderoa.github.io/Injuries/report.html';
-
-function iframeEmbed(tabParam, id) {
-  const src = tabParam !== null
-    ? `${REPORT_BASE}?tab=${tabParam}&t=${Date.now()}`
-    : `${REPORT_BASE}?t=${Date.now()}`;
-  const scOpen = '<' + 'script>';
-  const scClose = '</' + 'script>';
-  return `<div><iframe id="${id}" src="${src}" width="100%" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:100%;"></iframe></div>
-${scOpen}
-window.addEventListener('message',function(e){
-  if(e.data&&e.data.type==='injuryResize'){
-    var f=document.getElementById('${id}');
-    if(f)f.style.height=e.data.height+'px';
-  }
-});
-${scClose}`;
-}
-
 function copyPrestoHTML(btn) {
-  const embeds = [0,1,2,3].map(i => iframeEmbed(i, 'inj-'+i)).join('\n');
-  navigator.clipboard.writeText(embeds).then(() => {
+  const sections = buildPrestoHTML();
+  const html = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sections.join('\n<br>\n')}\n</div>`;
+  navigator.clipboard.writeText(html).then(() => {
     const orig = btn.textContent;
     btn.textContent = '✓ Copied!'; btn.classList.add('success');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
@@ -1146,17 +1128,14 @@ function showTab(idx, btn) {
 
 function copyToClipboard(html, btn) {
   const orig = btn.textContent;
-  navigator.clipboard.writeText(html).then(() => {
+  const w = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${html}\n</div>`;
+  navigator.clipboard.writeText(w).then(() => {
     btn.textContent = '✓ Copied!'; btn.classList.add('success');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
   });
 }
-function copyAll(btn) {
-  copyToClipboard(iframeEmbed(null, 'inj-all'), btn);
-}
-function copySection(idx, btn) {
-  copyToClipboard(iframeEmbed(idx, 'inj-'+idx), btn);
-}
+function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
+function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
 
 async function refreshReport(btn) {
   const o = btn.textContent; btn.textContent = '⏳ Refreshing...'; btn.disabled = true;
