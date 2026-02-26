@@ -1947,5 +1947,12 @@
     "injury": "Right Hamstring Tightness",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Left Game",
+    "injury": "Illness",
+    "date": "2026-02-25",
+    "prevStatus": "Left Game"
   }
 ]
