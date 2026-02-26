@@ -684,8 +684,26 @@ function updateBadge() {
   badge.className = count ? 'badge has-changes' : 'badge';
   // Auto-save to localStorage
   try { localStorage.setItem('injuries_modifications', JSON.stringify(modifications)); } catch(e) {}
+  // Broadcast full latest status for other apps (Depth Charts, etc.)
+  broadcastInjuries();
   // Debounced auto-push to GitHub
   scheduleGitHubSync();
+}
+
+// Write full latest injury status to localStorage so other apps get instant access
+function broadcastInjuries() {
+  try {
+    const latest = {};
+    // Start with JSON base
+    for (const e of jsonEntries) {
+      latest[e.player] = { status: e.status, injury: e.injury || '', date: e.date || '' };
+    }
+    // Overlay modifications
+    for (const [name, mod] of Object.entries(modifications)) {
+      latest[name] = { status: mod.status, injury: mod.injury || '', date: mod.date || '' };
+    }
+    localStorage.setItem('injuries_latest', JSON.stringify(latest));
+  } catch(e) {}
 }
 
 // ===== GITHUB SYNC ENGINE =====
@@ -781,6 +799,15 @@ async function pushToGitHub() {
     jsonEntries = merged;
     modifications = {};
     try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
+
+    // Broadcast updated data to other apps immediately
+    broadcastInjuries();
+
+    // Update latestStatus from merged data so UI stays correct
+    latestStatus = {};
+    for (const e of jsonEntries) {
+      latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date };
+    }
 
     // Update UI
     const badge = document.getElementById('changesBadge');
