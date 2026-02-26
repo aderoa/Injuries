@@ -2094,5 +2094,12 @@
     "injury": "Head Laceraton, Neck Soreness",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
