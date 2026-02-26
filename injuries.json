@@ -1828,5 +1828,12 @@
     "injury": "",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sviatoslav Mykhailiuk",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain / ",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
