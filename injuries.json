@@ -2038,5 +2038,12 @@
     "injury": "",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keldon Johnson",
+    "status": "Questionable",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
