@@ -2136,5 +2136,19 @@
     "injury": "",
     "date": "2026-02-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
