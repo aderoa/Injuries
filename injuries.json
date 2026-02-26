@@ -1996,5 +1996,12 @@
     "injury": "Left Hip Flexor Irritation",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Khris Middleton",
+    "status": "Probable",
+    "injury": "Right Shoulder Stinger",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
