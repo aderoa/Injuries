@@ -1884,5 +1884,12 @@
     "injury": "",
     "date": "2026-02-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Branden Carlson",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-02-25",
+    "prevStatus": "Available"
   }
 ]
