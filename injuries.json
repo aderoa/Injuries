@@ -1779,5 +1779,12 @@
     "injury": "Right Thumb Non-Displaced Fracture",
     "date": "2026-02-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Devin Carter",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-02-25",
+    "prevStatus": "Questionable"
   }
 ]
