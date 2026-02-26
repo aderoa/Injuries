@@ -2101,5 +2101,12 @@
     "injury": "Illness",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keon Ellis",
+    "status": "Questionable",
+    "injury": "Left",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
