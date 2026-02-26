@@ -353,11 +353,26 @@ async function loadData() {
     }
   }
 
-  // Process JSON entries
-  jsonEntries = injuries;
+  // Process JSON entries — use local committed cache if it's newer than the fetched file
+  // This handles the race condition where auto-sync pushes to GitHub but CDN is still stale
+  let localCommitted = null;
+  try {
+    const cached = localStorage.getItem('injuries_committed');
+    if (cached) localCommitted = JSON.parse(cached);
+  } catch(e) {}
+
+  // Use whichever has more entries (local cache includes the just-pushed changes)
+  if (localCommitted && localCommitted.length > injuries.length) {
+    jsonEntries = localCommitted;
+  } else {
+    jsonEntries = injuries;
+    // Remote is up to date — clear local cache
+    try { localStorage.removeItem('injuries_committed'); } catch(e) {}
+  }
+
   latestStatus = {};
   const prev = {};
-  for (const e of injuries) {
+  for (const e of jsonEntries) {
     if (latestStatus[e.player]) prev[e.player] = latestStatus[e.player];
     latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date };
   }
@@ -799,6 +814,8 @@ async function pushToGitHub() {
     jsonEntries = merged;
     modifications = {};
     try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
+    // Cache committed JSON locally so page refresh uses it even if GitHub CDN is stale
+    try { localStorage.setItem('injuries_committed', JSON.stringify(jsonEntries)); } catch(e) {}
 
     // Broadcast updated data to other apps immediately
     broadcastInjuries();
@@ -889,6 +906,7 @@ function resetAll() {
   prePurgeSnapshot = null;
   document.getElementById('undoBtn').style.display = 'none';
   try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
+  try { localStorage.removeItem('injuries_committed'); } catch(e) {}
   renderRoster();
   updateBadge();
 }
