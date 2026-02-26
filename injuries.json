@@ -2024,5 +2024,12 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-02-26",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Questionable",
+    "injury": "Left HIp Flexor Tightness",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
