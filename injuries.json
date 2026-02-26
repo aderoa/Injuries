@@ -2164,5 +2164,12 @@
     "injury": "Right Foot Stress Fracture",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Lower Back Injury Management",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
