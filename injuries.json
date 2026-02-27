@@ -2906,5 +2906,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-02-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Probable",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
