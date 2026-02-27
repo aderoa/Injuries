@@ -2899,5 +2899,12 @@
     "injury": "Left Hip Impingement",
     "date": "2026-02-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Doubtful",
+    "injury": "Low Back Soreness",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
   }
 ]
