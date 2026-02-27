@@ -2346,5 +2346,26 @@
     "injury": "Left Knee Contusion",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Donovan Clingan",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Yang Hansen",
+    "status": "Available",
+    "injury": "Mid Back Soreness",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Left Foot Soreness",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
