@@ -2927,5 +2927,19 @@
     "injury": "Right Thumb Non-Displaced Fracture",
     "date": "2026-02-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Doubtful"
   }
 ]
