@@ -2920,5 +2920,12 @@
     "injury": "General Illness",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "James Harden",
+    "status": "Out",
+    "injury": "Right Thumb Non-Displaced Fracture",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
   }
 ]
