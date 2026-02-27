@@ -2892,5 +2892,12 @@
     "injury": "",
     "date": "2026-02-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Questionable",
+    "injury": "Left Hip Impingement",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
   }
 ]
