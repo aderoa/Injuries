@@ -2808,5 +2808,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Out",
+    "injury": "Neck Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
