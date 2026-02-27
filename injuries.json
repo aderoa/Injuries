@@ -2717,5 +2717,12 @@
     "injury": "Left Index Finger Fracture",
     "date": "2026-02-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Out"
   }
 ]
