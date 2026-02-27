@@ -2801,5 +2801,12 @@
     "injury": "",
     "date": "2026-02-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jabari Smith",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
