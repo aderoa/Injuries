@@ -2395,5 +2395,12 @@
     "injury": "",
     "date": "2026-02-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Available",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
