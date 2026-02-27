@@ -2731,5 +2731,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
   }
 ]
