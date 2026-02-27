@@ -2850,5 +2850,12 @@
     "injury": "Illness",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Shaedon Sharpe",
+    "status": "Out",
+    "injury": "Left Fibulla Stress Reaction",
+    "date": "2026-02-07",
+    "prevStatus": "Out"
   }
 ]
