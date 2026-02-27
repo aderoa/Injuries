@@ -2332,5 +2332,12 @@
     "injury": "Transaction Pending",
     "date": "2026-02-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Out",
+    "injury": "Transaction Pending",
+    "date": "2026-02-26",
+    "prevStatus": "Out"
   }
 ]
