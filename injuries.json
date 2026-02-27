@@ -2766,5 +2766,19 @@
     "injury": "",
     "date": "2026-02-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-02-27",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Khris Middleton",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Probable"
   }
 ]
