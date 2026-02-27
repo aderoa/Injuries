@@ -2836,5 +2836,19 @@
     "injury": "Right Groin Strain",
     "date": "2026-02-27",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Doubtful",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Donovan Clingan",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
