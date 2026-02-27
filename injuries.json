@@ -2752,5 +2752,12 @@
     "injury": "",
     "date": "2026-02-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
