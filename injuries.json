@@ -2878,5 +2878,12 @@
     "injury": "",
     "date": "2026-02-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Will Riley",
+    "status": "Questionable",
+    "injury": "Right Ankle Contusion",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
   }
 ]
