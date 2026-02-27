@@ -2710,5 +2710,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keon Ellis",
+    "status": "Out",
+    "injury": "Left Index Finger Fracture",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
   }
 ]
