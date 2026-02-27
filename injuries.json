@@ -2339,5 +2339,12 @@
     "injury": "Transaction Pending",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyshawn George",
+    "status": "Out",
+    "injury": "Left Knee Contusion",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
