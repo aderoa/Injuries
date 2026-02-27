@@ -2864,5 +2864,12 @@
     "injury": "Lower Back Injury Management",
     "date": "2026-02-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyshawn George",
+    "status": "Questionable",
+    "injury": "Left Knee Contusion",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
