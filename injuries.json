@@ -2871,5 +2871,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Will Riley",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-27",
+    "prevStatus": "Available"
   }
 ]
