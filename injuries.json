@@ -2913,5 +2913,12 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Questionable",
+    "injury": "General Illness",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
