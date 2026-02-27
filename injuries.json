@@ -2822,5 +2822,12 @@
     "injury": "Left Thumb Contusion",
     "date": "2026-02-27",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Doubtful",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Doubtful"
   }
 ]
