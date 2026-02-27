@@ -2885,5 +2885,12 @@
     "injury": "Right Ankle Contusion",
     "date": "2026-02-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-27",
+    "prevStatus": "Available"
   }
 ]
