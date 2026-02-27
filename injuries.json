@@ -2388,5 +2388,12 @@
     "injury": "Right Groin Strain",
     "date": "2026-02-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
