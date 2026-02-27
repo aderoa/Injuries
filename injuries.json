@@ -2759,5 +2759,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-27",
+    "prevStatus": "Available"
   }
 ]
