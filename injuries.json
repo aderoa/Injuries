@@ -2318,5 +2318,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-02-26",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Knee Injury Management / Right Shin Soreness",
+    "date": "2026-02-26",
+    "prevStatus": "Probable"
   }
 ]
