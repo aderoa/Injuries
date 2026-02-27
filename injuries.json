@@ -2857,5 +2857,12 @@
     "injury": "Left Fibulla Stress Reaction",
     "date": "2026-02-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nikola Jovic",
+    "status": "Out",
+    "injury": "Lower Back Injury Management",
+    "date": "2026-02-24",
+    "prevStatus": "Out"
   }
 ]
