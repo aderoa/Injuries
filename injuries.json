@@ -2416,5 +2416,12 @@
     "injury": "Left Index Finger Fracture",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keon Ellis",
+    "status": "Questionable",
+    "injury": "Left Index Finger Fracture",
+    "date": "2026-02-26",
+    "prevStatus": "Questionable"
   }
 ]
