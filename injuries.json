@@ -2780,5 +2780,19 @@
     "injury": "",
     "date": "",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Doubtful",
+    "injury": "Rest",
+    "date": "2026-02-27",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
