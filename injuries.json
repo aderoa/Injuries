@@ -2374,5 +2374,12 @@
     "injury": "Right Ankle Injury",
     "date": "2026-02-26",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Left Game",
+    "injury": "Right Groin Soreness",
+    "date": "2026-02-26",
+    "prevStatus": "Available"
   }
 ]
