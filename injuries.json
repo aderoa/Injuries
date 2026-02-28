@@ -3186,5 +3186,12 @@
     "injury": "Right Thumb Non-Displaced Fracture",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-28",
+    "prevStatus": "Available"
   }
 ]
