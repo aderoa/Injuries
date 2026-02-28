@@ -3319,5 +3319,12 @@
     "injury": "Rest",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Julius Randle",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-02-28",
+    "prevStatus": "Available"
   }
 ]
