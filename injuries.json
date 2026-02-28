@@ -3200,5 +3200,12 @@
     "injury": "Low Back and Neck Soreness",
     "date": "2026-02-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Doubtful",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
