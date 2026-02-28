@@ -3242,5 +3242,12 @@
     "injury": "Right Oblique Strain",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Doubtful",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
