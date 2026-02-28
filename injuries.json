@@ -2976,5 +2976,12 @@
     "injury": "",
     "date": "2026-02-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Return to Competition Conditioning",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
