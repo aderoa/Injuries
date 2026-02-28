@@ -3193,5 +3193,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "Low Back and Neck Soreness",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
