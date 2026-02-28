@@ -3305,5 +3305,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
