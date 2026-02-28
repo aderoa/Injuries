@@ -3333,5 +3333,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-02-28",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Egor Demin",
+    "status": "Out",
+    "injury": "Left Plantar Fascit",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
