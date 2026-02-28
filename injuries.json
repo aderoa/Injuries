@@ -3207,5 +3207,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-02-28",
+    "prevStatus": "Available"
   }
 ]
