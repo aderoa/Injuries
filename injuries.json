@@ -2997,5 +2997,12 @@
     "injury": "Right Hip Impingement",
     "date": "2026-02-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-02-27",
+    "prevStatus": "Doubtful"
   }
 ]
