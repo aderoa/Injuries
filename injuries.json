@@ -3095,5 +3095,19 @@
     "injury": "Illness",
     "date": "2026-02-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Will Riley",
+    "status": "Available",
+    "injury": "Right Ankle Contusion",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Available",
+    "injury": "Left Hip Impingement",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
