@@ -3221,5 +3221,12 @@
     "injury": "Right Foot Stress ",
     "date": "2026-02-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Nickeil Alexander-Walker",
+    "status": "Questionable",
+    "injury": "Left Foot Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
