@@ -3368,5 +3368,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Probable",
+    "injury": "Right Ankle Inflammation",
+    "date": "2026-02-28",
+    "prevStatus": "Probable"
   }
 ]
