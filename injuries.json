@@ -3277,5 +3277,12 @@
     "injury": "Return to Competition Reconditioning",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Harrison Barnes",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-02-28",
+    "prevStatus": "Available"
   }
 ]
