@@ -3249,5 +3249,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Doubtful",
+    "injury": "Right Knee Posterior Capsule Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
