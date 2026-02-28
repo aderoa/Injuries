@@ -3361,5 +3361,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-02-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-02-28",
+    "prevStatus": "Available"
   }
 ]
