@@ -3291,5 +3291,19 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Questionable",
+    "injury": "Right Finger Contusion",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
