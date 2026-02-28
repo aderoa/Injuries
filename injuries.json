@@ -3004,5 +3004,12 @@
     "injury": "Illness",
     "date": "2026-02-27",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
