@@ -2969,5 +2969,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-02-27",
+    "prevStatus": "Available"
   }
 ]
