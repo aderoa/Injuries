@@ -3214,5 +3214,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Probable",
+    "injury": "Right Foot Stress ",
+    "date": "2026-02-28",
+    "prevStatus": "Probable"
   }
 ]
