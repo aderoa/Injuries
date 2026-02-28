@@ -3256,5 +3256,12 @@
     "injury": "Right Knee Posterior Capsule Sprain",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
