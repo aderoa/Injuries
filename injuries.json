@@ -3109,5 +3109,12 @@
     "injury": "Left Hip Impingement",
     "date": "2026-02-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Yves Missi",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
