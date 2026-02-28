@@ -2962,5 +2962,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-02-27",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Yves Missi",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-02-27",
+    "prevStatus": "Out"
   }
 ]
