@@ -3375,5 +3375,12 @@
     "injury": "Right Ankle Inflammation",
     "date": "2026-02-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
