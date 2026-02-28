@@ -3011,5 +3011,12 @@
     "injury": "Illness",
     "date": "2026-02-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Available",
+    "injury": "Right Shoulder Strain",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
   }
 ]
