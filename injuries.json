@@ -3354,5 +3354,12 @@
     "injury": "Left Plantar Fascia Injury Management",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Questionable",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
