@@ -3116,5 +3116,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-02-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
