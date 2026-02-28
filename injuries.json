@@ -3270,5 +3270,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Out",
+    "injury": "Return to Competition Reconditioning",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
