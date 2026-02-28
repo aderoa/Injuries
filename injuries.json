@@ -3326,5 +3326,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Out",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Doubtful"
   }
 ]
