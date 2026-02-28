@@ -3018,5 +3018,19 @@
     "injury": "Right Shoulder Strain",
     "date": "2026-02-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Pickett",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-02-27",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Julian Strawther",
+    "status": "Available",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Probable"
   }
 ]
