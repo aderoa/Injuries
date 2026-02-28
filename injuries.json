@@ -3074,5 +3074,19 @@
     "injury": "Illness",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Out",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-28",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Donovan Clingan",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
