@@ -3144,5 +3144,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Egor Demin",
+    "status": "Out",
+    "injury": "Left Plantas ",
+    "date": "2026-02-28",
+    "prevStatus": "Available"
   }
 ]
