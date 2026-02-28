@@ -3235,5 +3235,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Right Oblique Strain",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
