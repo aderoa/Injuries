@@ -3151,5 +3151,12 @@
     "injury": "Left Plantas ",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyshawn George",
+    "status": "Available",
+    "injury": "Left Knee Contusion",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
