@@ -3088,5 +3088,12 @@
     "injury": "Illness",
     "date": "2026-02-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sidy Cissoko",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-02-28",
+    "prevStatus": "Questionable"
   }
 ]
