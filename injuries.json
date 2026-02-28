@@ -3172,5 +3172,19 @@
     "injury": "Left Thumb Fracture",
     "date": "2026-02-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keon Ellis",
+    "status": "Questionable",
+    "injury": "Left Index Finger Fracture",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "James Harden",
+    "status": "Questionable",
+    "injury": "Right Thumb Non-Displaced Fracture",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
