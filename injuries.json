@@ -3312,5 +3312,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
