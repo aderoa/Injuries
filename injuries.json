@@ -2941,5 +2941,26 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-02-27",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-02-27",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-02-27",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-02-27",
+    "prevStatus": "Doubtful"
   }
 ]
