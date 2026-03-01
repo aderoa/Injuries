@@ -3613,5 +3613,12 @@
     "injury": "",
     "date": "2026-03-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Out",
+    "injury": "General Illness",
+    "date": "2026-01-27",
+    "prevStatus": "Out"
   }
 ]
