@@ -3809,5 +3809,12 @@
     "injury": "Right Quad Contusion",
     "date": "2026-03-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Out",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
