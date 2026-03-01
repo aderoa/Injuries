@@ -3851,5 +3851,19 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyshawn George",
+    "status": "Questionable",
+    "injury": "Left Knee Contusion",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Gill",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
