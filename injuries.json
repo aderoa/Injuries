@@ -3760,5 +3760,12 @@
     "injury": "Right Ankle Injury",
     "date": "2026-03-01",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Left Foot",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
