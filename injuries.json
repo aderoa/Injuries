@@ -3676,5 +3676,12 @@
     "injury": "Right Ankle Inflammation",
     "date": "2026-03-01",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Out",
+    "injury": "Right Shoulder Sprain",
+    "date": "2026-03-01",
+    "prevStatus": "Out"
   }
 ]
