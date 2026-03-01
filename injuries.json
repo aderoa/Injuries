@@ -3802,5 +3802,12 @@
     "injury": "Left Hip Flexor Irritation",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Left Game",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
