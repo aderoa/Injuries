@@ -3879,5 +3879,12 @@
     "injury": "Left Thigh Contusion",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Left Game",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-03-01",
+    "prevStatus": "Left Game"
   }
 ]
