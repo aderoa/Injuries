@@ -3557,5 +3557,12 @@
     "injury": "General Illness",
     "date": "2026-03-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Out",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
