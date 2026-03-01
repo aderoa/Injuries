@@ -522,7 +522,7 @@ function renderRoster() {
       html += `</select>`;
 
       // Injury input
-      html += `<input type="text" value="${cur.injury||''}" class="${isAvail?'inactive':''}" placeholder="${isAvail?'—':'Injury reason'}" onchange="onInjuryChange('${name.replace(/'/g,"\\'")}',this)" onfocus="this.classList.remove('inactive')">`;
+      html += `<input type="text" value="${cur.injury||''}" class="${isAvail?'inactive':''}" placeholder="${isAvail?'—':'Injury reason'}" oninput="onInjuryChange('${name.replace(/'/g,"\\'")}',this)" onfocus="this.classList.remove('inactive')">`;
 
       // Date input
       html += `<input type="date" value="${cur.date||''}" class="${isAvail?'inactive':''}" onchange="onDateChange('${name.replace(/'/g,"\\'")}',this)">`;
