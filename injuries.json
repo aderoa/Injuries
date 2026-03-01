@@ -3536,5 +3536,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Thanasis Antetokounmpo",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
