@@ -3718,5 +3718,26 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-03-01",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-01",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Out",
+    "injury": "Right Knee Posterior Capsule Sprain",
+    "date": "2026-03-01",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-01",
+    "prevStatus": "Doubtful"
   }
 ]
