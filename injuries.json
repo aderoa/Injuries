@@ -3662,5 +3662,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-03-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
