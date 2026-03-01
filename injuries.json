@@ -3634,5 +3634,12 @@
     "injury": "Right Ankle Injury",
     "date": "2026-02-28",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Julius Randle",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
