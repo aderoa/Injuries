@@ -3641,5 +3641,12 @@
     "injury": "",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Doubtful",
+    "injury": "Right Finger Contusion",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
