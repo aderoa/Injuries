@@ -3767,5 +3767,19 @@
     "injury": "Left Foot",
     "date": "2026-03-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Left Foot Arthritis",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-01",
+    "prevStatus": "Out"
   }
 ]
