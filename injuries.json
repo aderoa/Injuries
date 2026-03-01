@@ -3739,5 +3739,26 @@
     "injury": "Illness",
     "date": "2026-03-01",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Available",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-03-01",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Available",
+    "injury": "Return to Competition Conditioning",
+    "date": "2026-03-01",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Questionable",
+    "injury": "Right Ankle Injury",
+    "date": "2026-03-01",
+    "prevStatus": "Left Game"
   }
 ]
