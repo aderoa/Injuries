@@ -3788,5 +3788,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nickeil Alexander-Walker",
+    "status": "Available",
+    "injury": "Left Foot Sprain",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
