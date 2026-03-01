@@ -3844,5 +3844,12 @@
     "injury": "Left Thumb Fracture",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Leaky Black",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
