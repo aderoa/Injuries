@@ -3886,5 +3886,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-03-01",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Out",
+    "injury": "Right Finger Contusion",
+    "date": "2026-03-01",
+    "prevStatus": "Doubtful"
   }
 ]
