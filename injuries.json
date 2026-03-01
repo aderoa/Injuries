@@ -3396,5 +3396,12 @@
     "injury": "Right Thigh Contusion",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-02-28",
+    "prevStatus": "Probable"
   }
 ]
