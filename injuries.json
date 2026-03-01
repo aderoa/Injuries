@@ -3445,5 +3445,12 @@
     "injury": "",
     "date": "2026-02-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Left Game",
+    "injury": "Right Ankle Injury",
+    "date": "2026-02-28",
+    "prevStatus": "Left Game"
   }
 ]
