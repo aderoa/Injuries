@@ -3417,5 +3417,19 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-02-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "John Collins",
+    "status": "Questionable",
+    "injury": "Head Laceraton, Neck Soreness",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
