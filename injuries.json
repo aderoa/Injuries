@@ -3830,5 +3830,12 @@
     "injury": "Mid Back Soreness",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Left Game",
+    "injury": "Right Ankle Injury",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
