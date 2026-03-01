@@ -3410,5 +3410,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-02-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-02-28",
+    "prevStatus": "Out"
   }
 ]
