@@ -3683,5 +3683,19 @@
     "injury": "Right Shoulder Sprain",
     "date": "2026-03-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keon Ellis",
+    "status": "Available",
+    "injury": "Left Index Finger Fracture",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "James Harden",
+    "status": "Available",
+    "injury": "Right Thumb Non-Displaced Fracture",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
