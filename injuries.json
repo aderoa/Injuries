@@ -3403,5 +3403,12 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-02-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-02-28",
+    "prevStatus": "Probable"
   }
 ]
