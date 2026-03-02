@@ -3893,5 +3893,12 @@
     "injury": "Right Finger Contusion",
     "date": "2026-03-01",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Kevin Love",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
