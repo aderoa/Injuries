@@ -4194,5 +4194,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-03-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Davion Mitchell",
+    "status": "Questionable",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-03-02",
+    "prevStatus": "Available"
   }
 ]
