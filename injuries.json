@@ -4159,5 +4159,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Available",
+    "injury": "League Suspension",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
