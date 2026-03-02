@@ -3935,5 +3935,12 @@
     "injury": "Head Laceraton, Neck Soreness",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Available",
+    "injury": "Left Foot Arthritis",
+    "date": "2026-03-01",
+    "prevStatus": "Questionable"
   }
 ]
