@@ -4173,5 +4173,12 @@
     "injury": "Right Calf Strain",
     "date": "2026-03-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Liam McNeeley",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
