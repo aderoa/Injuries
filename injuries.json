@@ -4152,5 +4152,12 @@
     "injury": "Neck Soreness",
     "date": "2026-03-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
