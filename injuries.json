@@ -3921,5 +3921,12 @@
     "injury": "Left Ankle Impingement",
     "date": "2026-03-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Out",
+    "injury": "Right Ankle Injury",
+    "date": "2026-03-01",
+    "prevStatus": "Left Game"
   }
 ]
