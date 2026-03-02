@@ -4075,5 +4075,12 @@
     "injury": "Right Calf Strain",
     "date": "2026-03-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Darius Garland",
+    "status": "Available",
+    "injury": "Left Toe Injury Management",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
