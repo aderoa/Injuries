@@ -4208,5 +4208,12 @@
     "injury": "Right Knee Surgery Recovery",
     "date": "2026-02-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
