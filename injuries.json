@@ -4145,5 +4145,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "John Collins",
+    "status": "Out",
+    "injury": "Neck Soreness",
+    "date": "2026-03-02",
+    "prevStatus": "Available"
   }
 ]
