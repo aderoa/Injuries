@@ -3956,5 +3956,12 @@
     "injury": "",
     "date": "2026-03-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Left Game",
+    "injury": "Right Adductor Contusion",
+    "date": "2026-03-01",
+    "prevStatus": "Left Game"
   }
 ]
