@@ -4187,5 +4187,12 @@
     "injury": "Left Calf Injury Management",
     "date": "2026-03-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Probable",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
