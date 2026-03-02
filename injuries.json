@@ -4054,5 +4054,19 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Out",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-03-02",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyshawn George",
+    "status": "Available",
+    "injury": "Left Knee Contusion",
+    "date": "2026-03-02",
+    "prevStatus": "Questionable"
   }
 ]
