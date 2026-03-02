@@ -4110,5 +4110,12 @@
     "injury": "Right Quad Contusion",
     "date": "2026-03-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Doubtful",
+    "injury": "Left Midfoot Sprain",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
