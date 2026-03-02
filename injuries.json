@@ -4201,5 +4201,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-03-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Johni Broome",
+    "status": "Out",
+    "injury": "Right Knee Surgery Recovery",
+    "date": "2026-02-22",
+    "prevStatus": "Out"
   }
 ]
