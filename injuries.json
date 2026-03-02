@@ -3942,5 +3942,19 @@
     "injury": "Left Foot Arthritis",
     "date": "2026-03-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-01",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-03-01",
+    "prevStatus": "Available"
   }
 ]
