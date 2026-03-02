@@ -4103,5 +4103,12 @@
     "injury": "Right Ankle Inflammation",
     "date": "2026-03-02",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Probable",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
