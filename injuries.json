@@ -4418,5 +4418,12 @@
     "injury": "Illness",
     "date": "2026-03-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Maxi Kleber",
+    "status": "Questionable",
+    "injury": "Back Soreness",
+    "date": "2026-03-03",
+    "prevStatus": "Available"
   }
 ]
