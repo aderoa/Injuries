@@ -4544,5 +4544,19 @@
     "injury": "Illness",
     "date": "2026-03-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kris Murray",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-03",
+    "prevStatus": "Left Game"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Questionable",
+    "injury": "Low Back Injury Management",
+    "date": "2026-03-03",
+    "prevStatus": "Out"
   }
 ]
