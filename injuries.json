@@ -4250,5 +4250,12 @@
     "injury": "Illness",
     "date": "2026-03-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
