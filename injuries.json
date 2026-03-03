@@ -4369,5 +4369,19 @@
     "injury": "Illness",
     "date": "2026-03-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Doubtful",
+    "injury": "Right Adductor Contusion",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
   }
 ]
