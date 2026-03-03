@@ -4558,5 +4558,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-03-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-03",
+    "prevStatus": "Out"
   }
 ]
