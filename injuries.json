@@ -4432,5 +4432,19 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-03-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-03",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-03-03",
+    "prevStatus": "Out"
   }
 ]
