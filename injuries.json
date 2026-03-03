@@ -4264,5 +4264,19 @@
     "injury": "Right HIp Strain",
     "date": "2026-03-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Haywood Highsmith",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Khaman Maluach",
+    "status": "Questionable",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-03-02",
+    "prevStatus": "Available"
   }
 ]
