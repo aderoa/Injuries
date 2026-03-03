@@ -4530,5 +4530,12 @@
     "injury": "",
     "date": "2026-03-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Harrison Barnes",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
   }
 ]
