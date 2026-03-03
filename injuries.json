@@ -4348,5 +4348,12 @@
     "injury": "Right Quad Contusion",
     "date": "2026-03-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-03",
+    "prevStatus": "Available"
   }
 ]
