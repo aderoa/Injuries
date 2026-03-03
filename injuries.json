@@ -4523,5 +4523,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Harrison Barnes",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-03",
+    "prevStatus": "Available"
   }
 ]
