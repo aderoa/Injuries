@@ -4509,5 +4509,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Wendell Carter Jr",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
   }
 ]
