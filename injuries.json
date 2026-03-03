@@ -4292,5 +4292,54 @@
     "injury": "Transaction Pending",
     "date": "2026-03-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Darius Garland",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Liam McNeeley",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Devin Booker",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Haywood Highsmith",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kyshawn George",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
