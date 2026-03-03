@@ -4495,5 +4495,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Davion Mitchell",
+    "status": "Available",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
   }
 ]
