@@ -4362,5 +4362,12 @@
     "injury": "Bilateral Patellar Tendinitis",
     "date": "2026-03-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-03",
+    "prevStatus": "Available"
   }
 ]
