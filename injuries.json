@@ -4502,5 +4502,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-03-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-03",
+    "prevStatus": "Available"
   }
 ]
