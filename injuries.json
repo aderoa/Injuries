@@ -4852,5 +4852,19 @@
     "injury": "Lumbar Contusion",
     "date": "2026-03-04",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Available",
+    "injury": "Abdominal Strain Injury Management",
+    "date": "2026-03-04",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Available",
+    "injury": "Right Soleus Injury Management",
+    "date": "2026-03-04",
+    "prevStatus": "Out"
   }
 ]
