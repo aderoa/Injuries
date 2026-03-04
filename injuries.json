@@ -5062,5 +5062,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Doubtful",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-04",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Doubtful",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-03-04",
+    "prevStatus": "Out"
   }
 ]
