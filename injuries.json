@@ -4621,5 +4621,12 @@
     "injury": "Right Soleus Injury Management",
     "date": "2026-03-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-03",
+    "prevStatus": "Available"
   }
 ]
