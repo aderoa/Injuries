@@ -5048,5 +5048,12 @@
     "injury": "Personal Reasons",
     "date": "2026-03-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-04",
+    "prevStatus": "Available"
   }
 ]
