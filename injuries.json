@@ -5076,5 +5076,12 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-03-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Doubtful",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-04",
+    "prevStatus": "Questionable"
   }
 ]
