@@ -4691,5 +4691,12 @@
     "injury": "Lower Back Soreness",
     "date": "2026-03-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Maxi Kleber",
+    "status": "Available",
+    "injury": "Back Soreness",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
   }
 ]
