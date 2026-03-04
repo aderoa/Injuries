@@ -4593,5 +4593,26 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Available",
+    "injury": "Right Knee Posterior Capsule Sprain",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
   }
 ]
