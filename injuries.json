@@ -4845,5 +4845,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-03-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Out",
+    "injury": "Lumbar Contusion",
+    "date": "2026-03-04",
+    "prevStatus": "Left Game"
   }
 ]
