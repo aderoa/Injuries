@@ -4684,5 +4684,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Left Game",
+    "injury": "Lower Back Soreness",
+    "date": "2026-03-03",
+    "prevStatus": "Available"
   }
 ]
