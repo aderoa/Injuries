@@ -4649,5 +4649,12 @@
     "injury": "Right Foot Stress Fracture",
     "date": "2026-03-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "John Collins",
+    "status": "Out",
+    "injury": "Neck Strain",
+    "date": "2026-03-02",
+    "prevStatus": "Out"
   }
 ]
