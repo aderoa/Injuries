@@ -4950,5 +4950,19 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-03-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Questionable",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-04",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Wendell Carter Jr",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-04",
+    "prevStatus": "Out"
   }
 ]
