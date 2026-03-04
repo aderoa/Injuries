@@ -5055,5 +5055,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-04",
+    "prevStatus": "Available"
   }
 ]
