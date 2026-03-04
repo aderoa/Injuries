@@ -4677,5 +4677,12 @@
     "injury": "Right Soleus Injury Management",
     "date": "2026-03-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-03",
+    "prevStatus": "Questionable"
   }
 ]
