@@ -124,6 +124,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 .player-row:last-child { border-bottom:none; }
 .player-row:hover { background:rgba(255,255,255,0.02); }
 .player-row.modified { background:var(--modified-bg); border-color:var(--modified-border); }
+.player-row.row-probable { background:rgba(34,197,94,0.08); }
+.player-row.row-doubtful { background:rgba(249,115,22,0.08); }
+.player-row.row-probable.modified { background:linear-gradient(90deg, var(--modified-bg), rgba(34,197,94,0.08)); }
+.player-row.row-doubtful.modified { background:linear-gradient(90deg, var(--modified-bg), rgba(249,115,22,0.08)); }
 
 .player-name { font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .player-salary { font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--text2); text-align:right; }
@@ -224,14 +228,13 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 <body>
 
 <script>
-// ===== CONFIG — Google Sheets API (live, no cache) =====
-const SHEETS_ID = '11llk0icQqoi0JwJXat5KO8y2RQeBMN5rS9FhAY56Idc';
-const INJ_SHEETS_ID = '14TQPdQ9mDhHMMMQa5vcs0coL98ZloHORtYElDikKoWY';
-const API_KEY = 'AIzaSyB9g7c6llswswuZQ2I5y2MwGk6BzYEtHsY';
-const SHEETS_API = `https://sheets.googleapis.com/v4/spreadsheets/${SHEETS_ID}/values`;
-const INJ_SHEETS_API = `https://sheets.googleapis.com/v4/spreadsheets/${INJ_SHEETS_ID}/values`;
-const ROSTER_URL = `${SHEETS_API}/Sheet1?key=${API_KEY}`;
-const INJ_URL = `${INJ_SHEETS_API}/Injuries?key=${API_KEY}`;
+// ===== CONFIG =====
+const SHEET_ID = '2PACX-1vQ-TNS1Zxbcq2Altxh0-yY0LFEPvOXlwI8DjD8FdbSypf_sSWc3Xi6F88DwiOdSmR0FmXLzNicgCDwL';
+const INJ_GID = '306285159';
+const CSV_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
+const ROSTER_SHEET_ID = '2PACX-1vSg6im6IYB6HXMGzQbmmBnLw9SfQLzxCSo8OfChxlJLhsB6BBCO0wPF_TMch0YgAbtFqYkwDWrsxRe7';
+const ROSTER_GID = '0';
+const ROSTER_CSV_URL = `https://docs.google.com/spreadsheets/d/e/${ROSTER_SHEET_ID}/pub?gid=${ROSTER_GID}&single=true&output=csv`;
 const JSON_URL = 'injuries.json';
 
 const NBA_TEAMS = [
@@ -276,6 +279,19 @@ function todayISO() {
   return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
 }
 
+function parseCSV(text) {
+  const rows=[]; let cur='',inQ=false,row=[];
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(c==='"'){if(inQ&&text[i+1]==='"'){cur+='"';i++;}else inQ=!inQ;}
+    else if(c===','&&!inQ){row.push(cur);cur='';}
+    else if((c==='\n'||c==='\r')&&!inQ){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cur);cur='';rows.push(row);row=[];}
+    else cur+=c;
+  }
+  if(cur||row.length){row.push(cur);rows.push(row);}
+  return rows;
+}
+
 // ===== SHARED STATE =====
 let roster = {};      // player -> {team, salary}
 let teamSalaries = {}; // team -> total salary
@@ -296,24 +312,26 @@ let _ghLastSha = null; // cached SHA to avoid extra GET
 
 // ===== DATA LOADING =====
 async function loadData() {
-  const [injR, rosterR, jsonR] = await Promise.all([
-    fetch(INJ_URL),
-    fetch(ROSTER_URL),
+  const [csvR, rosterR, jsonR] = await Promise.all([
+    fetch(CSV_URL),
+    fetch(ROSTER_CSV_URL),
     fetch(JSON_URL + '?t=' + Date.now())
   ]);
-  if (!injR.ok) throw new Error('Injuries sheet fetch failed: ' + injR.status);
-  if (!rosterR.ok) throw new Error('Roster sheet fetch failed: ' + rosterR.status);
+  if (!csvR.ok) throw new Error('Injuries CSV fetch failed: ' + csvR.status);
+  if (!rosterR.ok) throw new Error('Roster CSV fetch failed: ' + rosterR.status);
   if (!jsonR.ok) throw new Error('injuries.json fetch failed: ' + jsonR.status);
 
-  const injRows = (await injR.json()).values || [];
-  const rosterRows = (await rosterR.json()).values || [];
+  const csvText = await csvR.text();
+  const rosterText = await rosterR.text();
   const injuries = await jsonR.json();
+  const injRows = parseCSV(csvText);
+  const rosterRows = parseCSV(rosterText);
 
   // Parse roster by header names (same source as Depth Charts)
   roster = {}; teamSalaries = {};
   if (rosterRows.length > 1) {
     const header = rosterRows[0];
-    const col = n => header.findIndex(h => (h||'').trim().toUpperCase() === n.toUpperCase());
+    const col = n => header.findIndex(h => h.toUpperCase().trim() === n.toUpperCase());
     const playerIdx = col('PLAYER'), teamIdx = col('TEAM'), salaryIdx = col('2026');
     if (playerIdx >= 0 && teamIdx >= 0) {
       for (let i = 1; i < rosterRows.length; i++) {
@@ -330,7 +348,7 @@ async function loadData() {
     }
   }
 
-  // Days since last game: cols 71(player), 73(days) from Injuries sheet
+  // Days since last game: cols 71(player), 73(days) from Injuries CSV
   daysMap = {};
   for (const r of injRows) {
     if (r.length > 73) {
@@ -496,7 +514,8 @@ function renderRoster() {
       const isModified = !!modifications[name];
       const isAvail = cur.status === 'Available';
 
-      html += `<div class="player-row ${isModified?'modified':''}" data-player="${name}" data-team="${team}">`;
+      const rowStatusClass = cur.status === 'Probable' ? 'row-probable' : cur.status === 'Doubtful' ? 'row-doubtful' : '';
+      html += `<div class="player-row ${isModified?'modified':''} ${rowStatusClass}" data-player="${name}" data-team="${team}">`;
       html += `<span class="player-name" title="${name}">${name}</span>`;
       html += `<span class="player-salary">${fmtSal(info.salary)}</span>`;
 
@@ -553,6 +572,10 @@ function onStatusChange(name, sel) {
 
   // Update select color class
   sel.className = statusClass(newStatus);
+  // Update row background tint
+  row.classList.remove('row-probable', 'row-doubtful');
+  if (newStatus === 'Probable') row.classList.add('row-probable');
+  if (newStatus === 'Doubtful') row.classList.add('row-doubtful');
 
   if (newStatus === original.status && !injInput.value && !dateInput.value) {
     // Reverted to original — remove modification
