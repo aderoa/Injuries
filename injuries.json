@@ -5167,5 +5167,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-04",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-04",
+    "prevStatus": "Doubtful"
   }
 ]
