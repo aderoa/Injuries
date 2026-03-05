@@ -5384,5 +5384,12 @@
     "injury": "Left Midfoot Sprain",
     "date": "2026-03-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Available",
+    "injury": "Right Finger Contusion",
+    "date": "2026-03-05",
+    "prevStatus": "Probable"
   }
 ]
