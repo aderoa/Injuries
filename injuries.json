@@ -5370,5 +5370,12 @@
     "injury": "Lower Back Contusion",
     "date": "2026-03-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-03-05",
+    "prevStatus": "Out"
   }
 ]
