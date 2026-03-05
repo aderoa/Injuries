@@ -5174,5 +5174,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-04",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-04",
+    "prevStatus": "Questionable"
   }
 ]
