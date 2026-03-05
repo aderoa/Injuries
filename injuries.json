@@ -5447,5 +5447,19 @@
     "injury": "Illness",
     "date": "2026-03-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tidjane Salaun",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-03-04",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-05",
+    "prevStatus": "Out"
   }
 ]
