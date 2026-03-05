@@ -5356,5 +5356,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-02-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Vince Williams Jr",
+    "status": "Out",
+    "injury": "Left Knee Injury Recovery",
+    "date": "2026-02-24",
+    "prevStatus": "Out"
   }
 ]
