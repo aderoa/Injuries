@@ -5363,5 +5363,12 @@
     "injury": "Left Knee Injury Recovery",
     "date": "2026-02-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Lower Back Contusion",
+    "date": "2026-03-05",
+    "prevStatus": "Available"
   }
 ]
