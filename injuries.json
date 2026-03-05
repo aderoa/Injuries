@@ -5531,5 +5531,12 @@
     "injury": "",
     "date": "2026-03-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Out",
+    "injury": "Left Foot Third ",
+    "date": "2026-03-05",
+    "prevStatus": "Out"
   }
 ]
