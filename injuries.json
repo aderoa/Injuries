@@ -5321,5 +5321,12 @@
     "injury": "Illness",
     "date": "2026-03-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-05",
+    "prevStatus": "Available"
   }
 ]
