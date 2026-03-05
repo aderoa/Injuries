@@ -5195,5 +5195,12 @@
     "injury": "Back Soreness",
     "date": "2026-03-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyshawn George",
+    "status": "Out",
+    "injury": "Left Elbow Partial UCL Tear",
+    "date": "2026-03-03",
+    "prevStatus": "Out"
   }
 ]
