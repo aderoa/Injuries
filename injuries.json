@@ -5342,5 +5342,12 @@
     "injury": "Right Achilles Repair",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-05",
+    "prevStatus": "Available"
   }
 ]
