@@ -5314,5 +5314,12 @@
     "injury": "Left Quad Contusion",
     "date": "2026-03-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-05",
+    "prevStatus": "Available"
   }
 ]
