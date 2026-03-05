@@ -5209,5 +5209,26 @@
     "injury": "Left Knee Inflammation",
     "date": "2026-03-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Low Back and Neck Soreness",
+    "date": "2026-03-04",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-04",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Available",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-03-04",
+    "prevStatus": "Questionable"
   }
 ]
