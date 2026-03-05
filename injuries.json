@@ -5377,5 +5377,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Available",
+    "injury": "Left Midfoot Sprain",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
   }
 ]
