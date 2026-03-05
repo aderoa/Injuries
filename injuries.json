@@ -5307,5 +5307,12 @@
     "injury": "Transaction Pending",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Questionable",
+    "injury": "Left Quad Contusion",
+    "date": "2026-03-05",
+    "prevStatus": "Probable"
   }
 ]
