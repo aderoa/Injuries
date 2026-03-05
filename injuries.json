@@ -5335,5 +5335,12 @@
     "injury": "Right Foot Injury Maintenance",
     "date": "2026-03-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "Right Achilles Repair",
+    "date": "2026-03-05",
+    "prevStatus": "Out"
   }
 ]
