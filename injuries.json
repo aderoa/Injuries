@@ -5440,5 +5440,12 @@
     "injury": "Left Ankle Impingement",
     "date": "2026-03-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
   }
 ]
