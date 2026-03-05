@@ -5398,5 +5398,12 @@
     "injury": "Right Adductor Contusion",
     "date": "2026-03-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Out",
+    "injury": "Left Quad Contusion",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
   }
 ]
