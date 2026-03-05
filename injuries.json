@@ -5496,5 +5496,26 @@
     "injury": "Illness",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jabari Smith",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
   }
 ]
