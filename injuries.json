@@ -6000,5 +6000,19 @@
     "injury": "Right Ankle Injury",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dru Smith",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-06",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Out",
+    "injury": "Bilateral Patellar Tendinitis",
+    "date": "2026-03-06",
+    "prevStatus": "Doubtful"
   }
 ]
