@@ -5804,5 +5804,26 @@
     "injury": "Low Back Injury Management",
     "date": "2026-02-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dru Smith",
+    "status": "Probable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-06",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kel'el Ware",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-03-06",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Doubtful",
+    "injury": "Bilateral Patellar Tendinitis",
+    "date": "2026-03-06",
+    "prevStatus": "Available"
   }
 ]
