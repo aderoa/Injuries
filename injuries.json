@@ -5902,5 +5902,19 @@
     "injury": "Return to Competition Conditioning",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Questionable",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Questionable",
+    "injury": "Right Ankle Inflammation",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
