@@ -5797,5 +5797,12 @@
     "injury": "Illness",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Jovic",
+    "status": "Out",
+    "injury": "Low Back Injury Management",
+    "date": "2026-02-24",
+    "prevStatus": "Out"
   }
 ]
