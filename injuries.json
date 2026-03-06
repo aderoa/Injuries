@@ -5832,5 +5832,12 @@
     "injury": "Right Foot Lisfranc Ligament Tear",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Doubtful",
+    "injury": "Neck Sprain",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
