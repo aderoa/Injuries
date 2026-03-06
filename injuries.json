@@ -5965,5 +5965,12 @@
     "injury": "Left Sciatic Nerve Irritation",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Questionable",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-06",
+    "prevStatus": "Available"
   }
 ]
