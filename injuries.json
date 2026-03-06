@@ -6077,5 +6077,19 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Out",
+    "injury": "Neck Sprain",
+    "date": "2026-03-06",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-06",
+    "prevStatus": "Doubtful"
   }
 ]
