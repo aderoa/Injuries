@@ -6056,5 +6056,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-06",
+    "prevStatus": "Available"
   }
 ]
