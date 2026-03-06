@@ -6140,5 +6140,12 @@
     "injury": "Left Hip Contusion",
     "date": "2026-03-06",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Out",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-06",
+    "prevStatus": "Left Game"
   }
 ]
