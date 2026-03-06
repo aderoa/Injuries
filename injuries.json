@@ -6105,5 +6105,12 @@
     "injury": "Left Quad Contusion",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Available",
+    "injury": "Left Quad Contusion",
+    "date": "2026-03-06",
+    "prevStatus": "Probable"
   }
 ]
