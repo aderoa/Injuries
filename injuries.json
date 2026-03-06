@@ -6021,5 +6021,12 @@
     "injury": "Lumbar Contusion",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
