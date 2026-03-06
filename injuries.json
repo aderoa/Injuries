@@ -5552,5 +5552,26 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Out",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-05",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Out",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-03-05",
+    "prevStatus": "Doubtful"
   }
 ]
