@@ -5958,5 +5958,12 @@
     "injury": "Lumbar Back Strain",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Questionable",
+    "injury": "Left Sciatic Nerve Irritation",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
