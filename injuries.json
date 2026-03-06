@@ -6063,5 +6063,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joe Ingles",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Questionable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-06",
+    "prevStatus": "Available"
   }
 ]
