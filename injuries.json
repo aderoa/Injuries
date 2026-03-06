@@ -6168,5 +6168,12 @@
     "injury": "Illness",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Available",
+    "injury": "Left Great Toe Injury Management",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
