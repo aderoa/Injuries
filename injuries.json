@@ -5825,5 +5825,12 @@
     "injury": "Bilateral Patellar Tendinitis",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Yanic Konan Niederhauser",
+    "status": "Out",
+    "injury": "Right Foot Lisfranc Ligament Tear",
+    "date": "2026-03-05",
+    "prevStatus": "Out"
   }
 ]
