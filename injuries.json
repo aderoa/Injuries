@@ -5573,5 +5573,12 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-03-05",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Ron Holland",
+    "status": "Left Game",
+    "injury": "Left Eye Injury",
+    "date": "2026-03-05",
+    "prevStatus": "Available"
   }
 ]
