@@ -5636,5 +5636,12 @@
     "injury": "Right Foot Lisfranc Injury",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Left Game",
+    "injury": "Knee Soreness",
+    "date": "2026-03-05",
+    "prevStatus": "Available"
   }
 ]
