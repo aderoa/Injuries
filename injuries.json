@@ -6028,5 +6028,12 @@
     "injury": "Illness",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Questionable",
+    "injury": "Left Knee Inflammation",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
