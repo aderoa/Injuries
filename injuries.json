@@ -5951,5 +5951,12 @@
     "injury": "Left Elbow Contusion / Left Foot Arthitis",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Maxi Kleber",
+    "status": "Out",
+    "injury": "Lumbar Back Strain",
+    "date": "2026-03-05",
+    "prevStatus": "Out"
   }
 ]
