@@ -5895,5 +5895,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Available",
+    "injury": "Return to Competition Conditioning",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
