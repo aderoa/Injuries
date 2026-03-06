@@ -6154,5 +6154,19 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Out",
+    "injury": "Left Ankle Surgery Recovery",
+    "date": "2025-12-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-06",
+    "prevStatus": "Out"
   }
 ]
