@@ -5545,5 +5545,12 @@
     "injury": "Left Foot Third Metatarsal Stress Reaction",
     "date": "2026-03-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-05",
+    "prevStatus": "Questionable"
   }
 ]
