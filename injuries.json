@@ -6189,5 +6189,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Out",
+    "injury": "Low Back Injury Management",
+    "date": "2026-03-06",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Kris Murray",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-06",
+    "prevStatus": "Questionable"
   }
 ]
