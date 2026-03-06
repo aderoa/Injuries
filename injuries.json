@@ -5643,5 +5643,12 @@
     "injury": "Knee Soreness",
     "date": "2026-03-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Left Game",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-05",
+    "prevStatus": "Left Game"
   }
 ]
