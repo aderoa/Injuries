@@ -5839,5 +5839,12 @@
     "injury": "Neck Sprain",
     "date": "2026-03-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Doubtful",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-06",
+    "prevStatus": "Available"
   }
 ]
