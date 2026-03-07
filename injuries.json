@@ -6546,5 +6546,12 @@
     "injury": "Illness",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "injury": "Flu",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
