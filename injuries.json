@@ -6231,5 +6231,12 @@
     "injury": "Right Ring Finger Fracture",
     "date": "2026-03-06",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-03-06",
+    "prevStatus": "Questionable"
   }
 ]
