@@ -6476,5 +6476,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Out",
+    "injury": "Lumbar Contusion",
+    "date": "2026-03-07",
+    "prevStatus": "Doubtful"
   }
 ]
