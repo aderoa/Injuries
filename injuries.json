@@ -6259,5 +6259,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Julian Champagnie",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-06",
+    "prevStatus": "Questionable"
   }
 ]
