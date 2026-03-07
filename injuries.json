@@ -6511,5 +6511,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Out",
+    "injury": "Left Quadriceps Contusion",
+    "date": "2026-03-07",
+    "prevStatus": "Questionable"
   }
 ]
