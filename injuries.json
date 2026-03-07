@@ -6518,5 +6518,12 @@
     "injury": "Left Quadriceps Contusion",
     "date": "2026-03-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Darius Garland",
+    "status": "Available",
+    "injury": "Left Toe Injury Management",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
