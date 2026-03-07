@@ -6630,5 +6630,12 @@
     "injury": "Neck Sprain",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Questionable",
+    "injury": "Left Midfoot Injury Management",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
