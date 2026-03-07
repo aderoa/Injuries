@@ -6469,5 +6469,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-07",
+    "prevStatus": "Questionable"
   }
 ]
