@@ -6651,5 +6651,12 @@
     "injury": "Right Calf Tightness",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-03-07",
+    "prevStatus": "Probable"
   }
 ]
