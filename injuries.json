@@ -6539,5 +6539,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
