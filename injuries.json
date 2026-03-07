@@ -6252,5 +6252,12 @@
     "injury": "Right Shoulder Sprain",
     "date": "2026-03-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Royce O'Neale",
+    "status": "Available",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-06",
+    "prevStatus": "Questionable"
   }
 ]
