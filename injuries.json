@@ -6588,5 +6588,12 @@
     "injury": "Illness",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Out",
+    "injury": "Right Knee Tendonitits",
+    "date": "2026-03-07",
+    "prevStatus": "Left Game"
   }
 ]
