@@ -6637,5 +6637,12 @@
     "injury": "Left Midfoot Injury Management",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
