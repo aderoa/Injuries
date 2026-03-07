@@ -6658,5 +6658,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-03-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
