@@ -6602,5 +6602,12 @@
     "injury": "Right Groin Strain",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tyrese Proctor",
+    "status": "Out",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
