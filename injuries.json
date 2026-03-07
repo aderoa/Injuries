@@ -6497,5 +6497,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jase Richardson",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
