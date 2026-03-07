@@ -6294,5 +6294,12 @@
     "injury": "Right Ankle and Lower Back Sprain",
     "date": "2026-03-06",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Available",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-03-06",
+    "prevStatus": "Probable"
   }
 ]
