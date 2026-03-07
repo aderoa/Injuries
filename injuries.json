@@ -6203,5 +6203,12 @@
     "injury": "Illness",
     "date": "2026-03-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jabari Smith",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-06",
+    "prevStatus": "Questionable"
   }
 ]
