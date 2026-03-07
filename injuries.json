@@ -6483,5 +6483,12 @@
     "injury": "Lumbar Contusion",
     "date": "2026-03-07",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jase Richardson",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
