@@ -6644,5 +6644,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dwight Powell",
+    "status": "Probable",
+    "injury": "Right Calf Tightness",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
