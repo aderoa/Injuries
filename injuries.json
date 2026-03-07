@@ -6609,5 +6609,19 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "Neck Strain",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
