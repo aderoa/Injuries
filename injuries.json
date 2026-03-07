@@ -6504,5 +6504,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-07",
+    "prevStatus": "Questionable"
   }
 ]
