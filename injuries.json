@@ -6574,5 +6574,19 @@
     "injury": "Low Back Strain",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Vucevic",
+    "status": "Out",
+    "injury": "Right Ring Finger Fracture",
+    "date": "2026-03-07",
+    "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jordan Walsh",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
