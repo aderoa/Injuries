@@ -6560,5 +6560,12 @@
     "injury": "Left Big Toe Inflammation",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Out",
+    "injury": "Left Knee Inflammation",
+    "date": "2026-03-07",
+    "prevStatus": "Questionable"
   }
 ]
