@@ -6224,5 +6224,12 @@
     "injury": "",
     "date": "2026-03-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Vucevic",
+    "status": "Left Game",
+    "injury": "Right Ring Finger Fracture",
+    "date": "2026-03-06",
+    "prevStatus": "Left Game"
   }
 ]
