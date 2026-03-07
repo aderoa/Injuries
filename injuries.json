@@ -6553,5 +6553,12 @@
     "injury": "Flu",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Questionable",
+    "injury": "Left Big Toe Inflammation",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
