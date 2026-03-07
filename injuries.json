@@ -6238,5 +6238,19 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-03-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Available",
+    "injury": "Right Ankle Inflammation",
+    "date": "2026-03-06",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Available",
+    "injury": "Right Shoulder Sprain",
+    "date": "2026-03-06",
+    "prevStatus": "Questionable"
   }
 ]
