@@ -7253,5 +7253,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Thoracic Spine Contusion",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
