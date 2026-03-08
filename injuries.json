@@ -7078,5 +7078,12 @@
     "injury": "Rest",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ben Saraf",
+    "status": "Probable",
+    "injury": "Back Tightness",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
