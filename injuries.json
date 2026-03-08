@@ -7155,5 +7155,12 @@
     "injury": "Flu",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Available",
+    "injury": "Abdominal Strain / Left Ankle Sprain",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
