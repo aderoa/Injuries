@@ -7008,5 +7008,12 @@
     "injury": "Left Elbow Contusion / Left Foot Arthitis",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Probable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
