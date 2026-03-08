@@ -7225,5 +7225,12 @@
     "injury": "Left Sciatic Nerve Irritation",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Questionable",
+    "injury": "Right Ankle Injury",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
