@@ -7141,5 +7141,12 @@
     "injury": "Left Hip Contusion",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Available",
+    "injury": "Flu",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
