@@ -6679,5 +6679,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Available",
+    "injury": "Left Ankle Impingement",
+    "date": "2026-03-07",
+    "prevStatus": "Probable"
   }
 ]
