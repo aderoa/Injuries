@@ -7022,5 +7022,12 @@
     "injury": "Illness",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Available",
+    "injury": "Neck Sprain",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
