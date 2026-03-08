@@ -6994,5 +6994,12 @@
     "injury": "Lumbar Back Strain",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Landry Shamet",
+    "status": "Available",
+    "injury": "Neck Cervical Sprain",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
