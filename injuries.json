@@ -7239,5 +7239,12 @@
     "injury": "",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Out",
+    "injury": "Left Big Toe Injury Management",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
