@@ -7281,5 +7281,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Available",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
