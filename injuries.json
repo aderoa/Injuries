@@ -7113,5 +7113,12 @@
     "injury": "Left Midfoot Injury Management",
     "date": "2026-03-08",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Available",
+    "injury": "Left Quadriceps Contusion",
+    "date": "2026-03-08",
+    "prevStatus": "Probable"
   }
 ]
