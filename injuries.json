@@ -7099,5 +7099,12 @@
     "injury": "Right Calf Tightness",
     "date": "2026-03-08",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Probable",
+    "injury": "Left Midfoot Injury Management",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
