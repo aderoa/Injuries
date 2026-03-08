@@ -7064,5 +7064,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Doubtful",
+    "injury": "Right Great Toe Soreness",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
