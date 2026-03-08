@@ -7190,5 +7190,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Out",
+    "injury": "Right Middle Finger Injury",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
