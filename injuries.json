@@ -6819,5 +6819,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Available",
+    "injury": "Neck Strain",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
