@@ -7169,5 +7169,26 @@
     "injury": "Low Back Strain",
     "date": "2026-03-08",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Out",
+    "injury": "Low Back Strain",
+    "date": "2026-03-08",
+    "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Out",
+    "injury": "Left Knee Strain",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jase Richardson",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
