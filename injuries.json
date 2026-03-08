@@ -7043,5 +7043,12 @@
     "injury": "Right Finger Sprain",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Doubtful",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
