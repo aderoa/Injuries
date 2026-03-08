@@ -6735,5 +6735,12 @@
     "injury": "Right Ankle Injury",
     "date": "2026-03-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Questionable",
+    "injury": "Low Back Injury Management",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
