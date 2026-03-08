@@ -7127,5 +7127,12 @@
     "injury": "Illness",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
