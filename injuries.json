@@ -7218,5 +7218,12 @@
     "injury": "Right Middle Finger Dislocation",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Probable",
+    "injury": "Left Sciatic Nerve Irritation",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
