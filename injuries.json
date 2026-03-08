@@ -6721,5 +6721,12 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
