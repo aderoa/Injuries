@@ -7204,5 +7204,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kris Murray",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
