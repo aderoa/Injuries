@@ -6805,5 +6805,12 @@
     "injury": "Neck and Lower Back Soreness",
     "date": "2026-03-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
