@@ -7197,5 +7197,12 @@
     "injury": "Right Middle Finger Injury",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Available",
+    "injury": "Low Back Injury Management",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
