@@ -7288,5 +7288,12 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Out",
+    "injury": "Left Toe Injury Management",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
