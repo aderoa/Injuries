@@ -7050,5 +7050,19 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Doubtful",
+    "injury": "Right Thumb Soreness",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Doubtful",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
