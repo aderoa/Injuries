@@ -6749,5 +6749,12 @@
     "injury": "Illness",
     "date": "2026-03-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Landry Shamet",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-07",
+    "prevStatus": "Available"
   }
 ]
