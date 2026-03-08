@@ -7001,5 +7001,12 @@
     "injury": "Neck Cervical Sprain",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Out",
+    "injury": "Left Elbow Contusion / Left Foot Arthitis",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
