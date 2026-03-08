@@ -6693,5 +6693,12 @@
     "injury": "General Illness",
     "date": "2026-03-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-07",
+    "prevStatus": "Out"
   }
 ]
