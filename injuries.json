@@ -7260,5 +7260,12 @@
     "injury": "Thoracic Spine Contusion",
     "date": "2026-03-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-08",
+    "prevStatus": "Questionable"
   }
 ]
