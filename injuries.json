@@ -7715,5 +7715,12 @@
     "injury": "Flu",
     "date": "2026-03-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-09",
+    "prevStatus": "Doubtful"
   }
 ]
