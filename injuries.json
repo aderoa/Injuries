@@ -7708,5 +7708,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "injury": "Flu",
+    "date": "2026-03-09",
+    "prevStatus": "Questionable"
   }
 ]
