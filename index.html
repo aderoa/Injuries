@@ -124,10 +124,6 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 .player-row:last-child { border-bottom:none; }
 .player-row:hover { background:rgba(255,255,255,0.02); }
 .player-row.modified { background:var(--modified-bg); border-color:var(--modified-border); }
-.player-row.row-probable { background:rgba(34,197,94,0.08); }
-.player-row.row-doubtful { background:rgba(249,115,22,0.08); }
-.player-row.row-probable.modified { background:linear-gradient(90deg, var(--modified-bg), rgba(34,197,94,0.08)); }
-.player-row.row-doubtful.modified { background:linear-gradient(90deg, var(--modified-bg), rgba(249,115,22,0.08)); }
 
 .player-name { font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .player-salary { font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--text2); text-align:right; }
@@ -267,12 +263,12 @@ const STATUSES = ['Available','Probable','Questionable','Doubtful','Out','Left G
 const STATUS_GRAVITY = { 'Out':0,'Left Game':0.5,'Doubtful':1,'Questionable':2,'Probable':3,'Available':4 };
 
 function teamLogo(t) { const id=TEAM_IDS[t]; return id ? `https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg` : ''; }
-function logoImg(t) { const u=teamLogo(t); return u ? `<img src="${u}" width="28" height="28" style="vertical-align:middle;">` : ''; }
+function logoImg(t) { const u=teamLogo(t); return u ? `<img src="${u}" width="28" height="28" alt="${t}" style="vertical-align:middle;display:inline-block;">` : ''; }
 function fmtSal(n) { if(n>=1e6) return '$'+(n/1e6).toFixed(1)+'M'; if(n>=1e3) return '$'+(n/1e3).toFixed(0)+'K'; return '$'+n.toLocaleString(); }
 function fmtSalFull(n) { return '$'+n.toLocaleString(); }
 function fmtDate(iso) { const d=new Date(iso+'T00:00:00'); const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return m[d.getMonth()]+' '+d.getDate(); }
 function sColor(s) { return {Out:'#ef4444','Left Game':'#f97316',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
-function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;">${s}</span>`; }
+function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;white-space:nowrap;">${s}</span>`; }
 function statusClass(s) { return 's-'+s.toLowerCase().replace(/\s+/g,'-'); }
 function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
 function todayISO() {
@@ -514,8 +510,7 @@ function renderRoster() {
       const isModified = !!modifications[name];
       const isAvail = cur.status === 'Available';
 
-      const rowStatusClass = cur.status === 'Probable' ? 'row-probable' : cur.status === 'Doubtful' ? 'row-doubtful' : '';
-      html += `<div class="player-row ${isModified?'modified':''} ${rowStatusClass}" data-player="${name}" data-team="${team}">`;
+      html += `<div class="player-row ${isModified?'modified':''}" data-player="${name}" data-team="${team}">`;
       html += `<span class="player-name" title="${name}">${name}</span>`;
       html += `<span class="player-salary">${fmtSal(info.salary)}</span>`;
 
@@ -572,10 +567,6 @@ function onStatusChange(name, sel) {
 
   // Update select color class
   sel.className = statusClass(newStatus);
-  // Update row background tint
-  row.classList.remove('row-probable', 'row-doubtful');
-  if (newStatus === 'Probable') row.classList.add('row-probable');
-  if (newStatus === 'Doubtful') row.classList.add('row-doubtful');
 
   if (newStatus === original.status && !injInput.value && !dateInput.value) {
     // Reverted to original — remove modification
@@ -1024,7 +1015,9 @@ function buildPrestoHTML() {
 function buildPrestoTables(entries, lat, prv, usePurge) {
   const today = todayISO();
   const TH = 'style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;"';
+  const TH_LOGO = 'style="border:1px solid #ccc;padding:4px;text-align:center;height:36px;width:36px;min-width:36px;"';
   const TD = 'style="text-align:center;height:40px;border:1px solid #eee;padding:4px;"';
+  const TD_LOGO = 'style="text-align:center;height:40px;border:1px solid #eee;padding:4px;width:36px;min-width:36px;"';
   const TBL = 'style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%;"';
   const H2S = 'style="font-size:22px;font-weight:700;margin-bottom:10px;"';
 
@@ -1053,7 +1046,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
       return lastName(a.player).localeCompare(lastName(b.player));
     });
 
-  let h1 = `<h2 ${H2S}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
+  let h1 = `<h2 ${H2S}>Today's injury updates</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH_LOGO}></th><th ${TH}>PLAYER</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>PREVIOUS STATUS</th><th ${TH}>SALARY</th></tr></thead><tbody>`;
   let lt = '';
   if (!todayEntries.length) {
     h1 += `<tr><td colspan="6" ${TD}>No updates today</td></tr>`;
@@ -1061,7 +1054,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   todayEntries.forEach((e, i) => {
     const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
     const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
-    h1 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus ? sSpan(e.prevStatus) : ''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
+    h1 += `<tr style="background:${bg};"><td ${TD_LOGO}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury}</td><td ${TD}>${e.prevStatus ? sSpan(e.prevStatus) : ''}</td><td ${TD}>${fmtSal(e.salary)}</td></tr>`;
   });
   h1 += '</tbody></table>';
 
@@ -1074,12 +1067,12 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
       return lastName(a.player).localeCompare(lastName(b.player));
     });
 
-  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>DATE</th></tr></thead><tbody>`;
+  let h2 = `<h2 ${H2S}>Full injury report</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH_LOGO}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>STATUS</th><th ${TH}>INJURY</th><th ${TH}>DATE</th></tr></thead><tbody>`;
   lt = '';
   allInjured.forEach((e, i) => {
     const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
     const logo = e.team !== lt ? logoImg(e.team) : ''; lt = e.team;
-    h2 += `<tr style="background:${bg};"><td ${TD}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury||''}</td><td ${TD}>${e.date ? fmtDate(e.date) : ''}</td></tr>`;
+    h2 += `<tr style="background:${bg};"><td ${TD_LOGO}>${logo}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSal(e.salary)}</td><td ${TD}>${sSpan(e.status)}</td><td ${TD}>${e.injury||''}</td><td ${TD}>${e.date ? fmtDate(e.date) : ''}</td></tr>`;
   });
   h2 += '</tbody></table>';
 
@@ -1098,22 +1091,22 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
   })).sort((a,b) => b.injured - a.injured);
 
-  let h3 = `<h2 ${H2S}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
+  let h3 = `<h2 ${H2S}>Injured salary per team</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH_LOGO}></th><th ${TH}>TEAM</th><th ${TH}>INJURED SALARY</th><th ${TH}>% SALARY</th></tr></thead><tbody>`;
   teamRows.forEach((r, i) => {
     const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    h3 += `<tr style="background:${bg};"><td ${TD}>${logoImg(r.team)}</td><td ${TD}><strong>${r.team}</strong></td><td ${TD}>${fmtSalFull(r.injured)}</td><td ${TD}>${r.pct.toFixed(2)}%</td></tr>`;
+    h3 += `<tr style="background:${bg};"><td ${TD_LOGO}>${logoImg(r.team)}</td><td ${TD}><strong>${r.team}</strong></td><td ${TD}>${fmtSalFull(r.injured)}</td><td ${TD}>${r.pct.toFixed(2)}%</td></tr>`;
   });
   // NBA total row
   const nbaLogo = `<img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="28" height="28" style="vertical-align:middle;">`;
-  h3 += `<tr style="background:#222;color:#fff;font-weight:700;"><td ${TD}>${nbaLogo}</td><td ${TD}>NBA</td><td ${TD}>${fmtSalFull(totalNBAInj)}</td><td ${TD}>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
+  h3 += `<tr style="background:#222;color:#fff;font-weight:700;"><td ${TD_LOGO}>${nbaLogo}</td><td ${TD}>NBA</td><td ${TD}>${fmtSalFull(totalNBAInj)}</td><td ${TD}>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
   h3 += '</tbody></table>';
 
   // Table 4: Highest-Paid Injured
   const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
-  let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
+  let h4 = `<h2 ${H2S}>Highest-paid injured players</h2><table ${TBL}><thead><tr style="background:#f2f2f2;"><th ${TH_LOGO}></th><th ${TH}>PLAYER</th><th ${TH}>SALARY</th><th ${TH}>DAYS SINCE LAST GAME</th></tr></thead><tbody>`;
   topPaid.forEach((e, i) => {
     const bg = i % 2 === 0 ? '#fff' : '#f9f9f9';
-    h4 += `<tr style="background:${bg};"><td ${TD}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days||''}</td></tr>`;
+    h4 += `<tr style="background:${bg};"><td ${TD_LOGO}>${logoImg(e.team)}</td><td ${TD}><strong>${e.player}</strong></td><td ${TD}>${fmtSalFull(e.salary)}</td><td ${TD}>${e.days||''}</td></tr>`;
   });
   h4 += '</tbody></table>';
 
@@ -1122,8 +1115,24 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
 
 function copyPrestoHTML(btn) {
   const sections = buildPrestoHTML();
-  const html = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sections.join('\n<br>\n')}\n</div>`;
-  navigator.clipboard.writeText(html).then(() => {
+  const tableHTML = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sections.join('\n<br>\n')}\n</div>`;
+  const fullArticle = `<!-- wp:paragraph -->
+<p>To keep track of who's available, who's not, and who's in doubt for the next game, here's the complete list of every player included in each team's injury report.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">2025-26 Injury Report</h2>
+<!-- /wp:heading -->
+<!-- wp:html -->
+${tableHTML}
+<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>This tool may be blocked in parts of Europe due to&nbsp;<a href="https://gdpr.eu/what-is-gdpr/" target="_blank" rel="noreferrer noopener">GDPR</a>. To use it, connect your&nbsp;<a href="https://windscribe.com/" target="_blank" rel="noreferrer noopener">VPN</a>&nbsp;to a non-EU country and try again.</p>
+<!-- /wp:paragraph -->
+<!-- wp:gannett/asset-card-content-list {"asset":{"authoringTypeCode":"contentlist","friendlyId":"87056419007","siteCode":"SHHP","status":"published"}} /-->
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->`;
+  navigator.clipboard.writeText(fullArticle).then(() => {
     const orig = btn.textContent;
     btn.textContent = '✓ Copied!'; btn.classList.add('success');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
@@ -1171,7 +1180,30 @@ function copyToClipboard(html, btn) {
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
   });
 }
-function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
+function copyAll(btn) {
+  const tableHTML = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sectionsHTML.join('\n<br>\n')}\n</div>`;
+  const fullArticle = `<!-- wp:paragraph -->
+<p>To keep track of who's available, who's not, and who's in doubt for the next game, here's the complete list of every player included in each team's injury report.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">2025-26 Injury Report</h2>
+<!-- /wp:heading -->
+<!-- wp:html -->
+${tableHTML}
+<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>This tool may be blocked in parts of Europe due to&nbsp;<a href="https://gdpr.eu/what-is-gdpr/" target="_blank" rel="noreferrer noopener">GDPR</a>. To use it, connect your&nbsp;<a href="https://windscribe.com/" target="_blank" rel="noreferrer noopener">VPN</a>&nbsp;to a non-EU country and try again.</p>
+<!-- /wp:paragraph -->
+<!-- wp:gannett/asset-card-content-list {"asset":{"authoringTypeCode":"contentlist","friendlyId":"87056419007","siteCode":"SHHP","status":"published"}} /-->
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->`;
+  const orig = btn.textContent;
+  navigator.clipboard.writeText(fullArticle).then(() => {
+    btn.textContent = '✓ Copied!'; btn.classList.add('success');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  });
+}
 function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
 
 async function refreshReport(btn) {
