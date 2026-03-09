@@ -7624,5 +7624,12 @@
     "injury": "Left Knee Bone Bruise",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Available",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
