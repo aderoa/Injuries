@@ -7638,5 +7638,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Available",
+    "injury": "Thoracic Spine Contusion",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
