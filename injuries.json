@@ -7687,5 +7687,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
