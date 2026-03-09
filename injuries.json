@@ -7337,5 +7337,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Left Game",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-03-08",
+    "prevStatus": "Available"
   }
 ]
