@@ -7631,5 +7631,12 @@
     "injury": "Left Thigh Contusion",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Available",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
