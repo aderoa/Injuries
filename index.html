@@ -387,7 +387,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="admin-container">
       <div class="admin-header">
-        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.3</span></h1>
+        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.4</span></h1>
         <span class="subtitle" id="lastUpdate"></span>
       </div>
       <div class="admin-toolbar" id="toolbar">
@@ -419,7 +419,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="report-container">
       <div class="admin-header">
-        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.3</span></h1>
+        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.4</span></h1>
       </div>
       <div class="report-toolbar" id="reportToolbar">
         <button onclick="copyAll(this)">📋 Copy Full Report</button>
@@ -1115,24 +1115,8 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
 
 function copyPrestoHTML(btn) {
   const sections = buildPrestoHTML();
-  const tableHTML = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sections.join('\n<br>\n')}\n</div>`;
-  const fullArticle = `<!-- wp:paragraph -->
-<p>To keep track of who's available, who's not, and who's in doubt for the next game, here's the complete list of every player included in each team's injury report.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">2025-26 Injury Report</h2>
-<!-- /wp:heading -->
-<!-- wp:html -->
-${tableHTML}
-<!-- /wp:html -->
-<!-- wp:paragraph -->
-<p>This tool may be blocked in parts of Europe due to&nbsp;<a href="https://gdpr.eu/what-is-gdpr/" target="_blank" rel="noreferrer noopener">GDPR</a>. To use it, connect your&nbsp;<a href="https://windscribe.com/" target="_blank" rel="noreferrer noopener">VPN</a>&nbsp;to a non-EU country and try again.</p>
-<!-- /wp:paragraph -->
-<!-- wp:gannett/asset-card-content-list {"asset":{"authoringTypeCode":"contentlist","friendlyId":"87056419007","siteCode":"SHHP","status":"published"}} /-->
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->`;
-  navigator.clipboard.writeText(fullArticle).then(() => {
+  const html = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sections.join('\n<br>\n')}\n</div>`;
+  navigator.clipboard.writeText(html).then(() => {
     const orig = btn.textContent;
     btn.textContent = '✓ Copied!'; btn.classList.add('success');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
@@ -1180,30 +1164,7 @@ function copyToClipboard(html, btn) {
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
   });
 }
-function copyAll(btn) {
-  const tableHTML = `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">\n${sectionsHTML.join('\n<br>\n')}\n</div>`;
-  const fullArticle = `<!-- wp:paragraph -->
-<p>To keep track of who's available, who's not, and who's in doubt for the next game, here's the complete list of every player included in each team's injury report.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">2025-26 Injury Report</h2>
-<!-- /wp:heading -->
-<!-- wp:html -->
-${tableHTML}
-<!-- /wp:html -->
-<!-- wp:paragraph -->
-<p>This tool may be blocked in parts of Europe due to&nbsp;<a href="https://gdpr.eu/what-is-gdpr/" target="_blank" rel="noreferrer noopener">GDPR</a>. To use it, connect your&nbsp;<a href="https://windscribe.com/" target="_blank" rel="noreferrer noopener">VPN</a>&nbsp;to a non-EU country and try again.</p>
-<!-- /wp:paragraph -->
-<!-- wp:gannett/asset-card-content-list {"asset":{"authoringTypeCode":"contentlist","friendlyId":"87056419007","siteCode":"SHHP","status":"published"}} /-->
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->`;
-  const orig = btn.textContent;
-  navigator.clipboard.writeText(fullArticle).then(() => {
-    btn.textContent = '✓ Copied!'; btn.classList.add('success');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
-  });
-}
+function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
 function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
 
 async function refreshReport(btn) {
