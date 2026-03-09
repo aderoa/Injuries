@@ -7603,5 +7603,12 @@
     "injury": "Right Shoulder Strain",
     "date": "2026-03-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Available",
+    "injury": "Left Sciatic Nerve Irritation",
+    "date": "2026-03-09",
+    "prevStatus": "Probable"
   }
 ]
