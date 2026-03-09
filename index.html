@@ -263,7 +263,7 @@ const STATUSES = ['Available','Probable','Questionable','Doubtful','Out','Left G
 const STATUS_GRAVITY = { 'Out':0,'Left Game':0.5,'Doubtful':1,'Questionable':2,'Probable':3,'Available':4 };
 
 function teamLogo(t) { const id=TEAM_IDS[t]; return id ? `https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg` : ''; }
-function logoImg(t) { const u=teamLogo(t); return u ? `<span style="display:inline-block;width:28px;height:28px;background:url(${u}) center/contain no-repeat;vertical-align:middle;">&nbsp;</span>` : ''; }
+function logoImg(t) { const abbr = TEAM_ABBREV[t] || t; return t ? `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#222;color:#fff;font-size:11px;font-weight:700;letter-spacing:0.5px;vertical-align:middle;">${abbr}</span>` : ''; }
 function fmtSal(n) { if(n>=1e6) return '$'+(n/1e6).toFixed(1)+'M'; if(n>=1e3) return '$'+(n/1e3).toFixed(0)+'K'; return '$'+n.toLocaleString(); }
 function fmtSalFull(n) { return '$'+n.toLocaleString(); }
 function fmtDate(iso) { const d=new Date(iso+'T00:00:00'); const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return m[d.getMonth()]+' '+d.getDate(); }
@@ -387,7 +387,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="admin-container">
       <div class="admin-header">
-        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.1</span></h1>
+        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.2</span></h1>
         <span class="subtitle" id="lastUpdate"></span>
       </div>
       <div class="admin-toolbar" id="toolbar">
@@ -419,7 +419,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="report-container">
       <div class="admin-header">
-        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.1</span></h1>
+        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.2</span></h1>
       </div>
       <div class="report-toolbar" id="reportToolbar">
         <button onclick="copyAll(this)">📋 Copy Full Report</button>
@@ -1097,7 +1097,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     h3 += `<tr style="background:${bg};"><td ${TD_LOGO}>${logoImg(r.team)}</td><td ${TD}><strong>${r.team}</strong></td><td ${TD}>${fmtSalFull(r.injured)}</td><td ${TD}>${r.pct.toFixed(2)}%</td></tr>`;
   });
   // NBA total row
-  const nbaLogo = `<span style="display:inline-block;width:28px;height:28px;background:url(https://cdn.nba.com/logos/leagues/logo-nba.svg) center/contain no-repeat;vertical-align:middle;">&nbsp;</span>`;
+  const nbaLogo = `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#c9082a;color:#fff;font-size:11px;font-weight:700;letter-spacing:0.5px;vertical-align:middle;">NBA</span>`;
   h3 += `<tr style="background:#222;color:#fff;font-weight:700;"><td ${TD_LOGO}>${nbaLogo}</td><td ${TD}>NBA</td><td ${TD}>${fmtSalFull(totalNBAInj)}</td><td ${TD}>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>`;
   h3 += '</tbody></table>';
 
