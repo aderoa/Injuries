@@ -7309,5 +7309,12 @@
     "injury": "Personal Reasons",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-08",
+    "prevStatus": "Probable"
   }
 ]
