@@ -7722,5 +7722,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-09",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Out",
+    "injury": "Right Thumb Soreness",
+    "date": "2026-03-09",
+    "prevStatus": "Doubtful"
   }
 ]
