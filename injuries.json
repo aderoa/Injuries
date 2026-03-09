@@ -7533,5 +7533,12 @@
     "injury": "Back Tightness",
     "date": "2026-03-09",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-09",
+    "prevStatus": "Available"
   }
 ]
