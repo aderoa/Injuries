@@ -7694,5 +7694,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-09",
+    "prevStatus": "Probable"
   }
 ]
