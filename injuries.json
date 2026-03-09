@@ -7589,5 +7589,12 @@
     "injury": "",
     "date": "2026-03-09",
     "prevStatus": null
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Probable",
+    "injury": "Left Groin Strain",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
