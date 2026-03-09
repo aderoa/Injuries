@@ -7519,5 +7519,12 @@
     "injury": "Illness",
     "date": "2026-03-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-09",
+    "prevStatus": "Available"
   }
 ]
