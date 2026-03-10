@@ -8275,5 +8275,12 @@
     "injury": "Left Quadriceps ",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Out",
+    "injury": "Left Quadriceps Soreness",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
