@@ -8345,5 +8345,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Probable",
+    "injury": "Back Spasms",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
