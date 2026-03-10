@@ -7946,5 +7946,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Questionable",
+    "injury": "Left Quadriceps ",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
