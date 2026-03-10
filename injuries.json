@@ -8156,5 +8156,12 @@
     "injury": "Bilateral Foot Soreness",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Available",
+    "injury": "Left Toe Injury Management",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
