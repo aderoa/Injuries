@@ -8184,5 +8184,19 @@
     "injury": "",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
