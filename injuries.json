@@ -8079,5 +8079,12 @@
     "injury": "Left Calf Injury Management",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Out",
+    "injury": "Neck Spasm",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
