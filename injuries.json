@@ -7820,5 +7820,12 @@
     "injury": "Right Knee Sprain",
     "date": "2026-03-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain / Mid Back Soreness",
+    "date": "2026-03-09",
+    "prevStatus": "Available"
   }
 ]
