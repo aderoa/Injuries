@@ -7785,5 +7785,12 @@
     "injury": "Left Elbow Contusion / Left Foot Arthitis",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Right Hip Contusion / Left Foot Arthitis",
+    "date": "2026-03-09",
+    "prevStatus": "Questionable"
   }
 ]
