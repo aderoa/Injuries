@@ -7995,5 +7995,12 @@
     "injury": "Left Lateral Abdominal Muscle Strain",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
