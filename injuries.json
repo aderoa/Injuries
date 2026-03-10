@@ -8268,5 +8268,12 @@
     "injury": "Right Finger Tendon Injury",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Out",
+    "injury": "Left Quadriceps ",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
