@@ -8261,5 +8261,12 @@
     "injury": "Illness",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyrese Maxey",
+    "status": "Out",
+    "injury": "Right Finger Tendon Injury",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
