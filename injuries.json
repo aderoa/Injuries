@@ -7778,5 +7778,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Left Elbow Contusion / Left Foot Arthitis",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
