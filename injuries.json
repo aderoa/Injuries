@@ -8247,5 +8247,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Available",
+    "injury": "Neck Surgery",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
