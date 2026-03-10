@@ -8352,5 +8352,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
