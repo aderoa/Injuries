@@ -8324,5 +8324,12 @@
     "injury": "Illness",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "John Konchar",
+    "status": "Questionable",
+    "injury": "Left Calf Soreness",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
