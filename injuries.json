@@ -8072,5 +8072,12 @@
     "injury": "Illness",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Coby White",
+    "status": "Out",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
