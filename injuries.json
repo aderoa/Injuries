@@ -7960,5 +7960,12 @@
     "injury": "Right Shoulder Strain",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Out",
+    "injury": "Left Big Toe Sesamoiditis",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
