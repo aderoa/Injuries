@@ -8037,5 +8037,19 @@
     "injury": "Right Patella Tendonitis",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Johni Broome",
+    "status": "Out",
+    "injury": "Right Knee Surgery Recovery",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Questionable",
+    "injury": "Lumbar Contusion",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
