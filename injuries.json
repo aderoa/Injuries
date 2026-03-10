@@ -8030,5 +8030,12 @@
     "injury": "Back Thoracic Spine Contusion",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jericho Sims",
+    "status": "Questionable",
+    "injury": "Right Patella Tendonitis",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
