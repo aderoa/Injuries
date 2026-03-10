@@ -8163,5 +8163,12 @@
     "injury": "Left Toe Injury Management",
     "date": "2026-03-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Available",
+    "injury": "General Illness Management",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
