@@ -8009,5 +8009,12 @@
     "injury": "Right Thumb Soreness",
     "date": "2026-03-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Available",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
