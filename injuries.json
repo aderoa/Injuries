@@ -8205,5 +8205,12 @@
     "injury": "Lumbar Contusion",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Available",
+    "injury": "Left Knee Bone Bruise",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
