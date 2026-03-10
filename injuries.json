@@ -7988,5 +7988,12 @@
     "injury": "Left Abdominal ",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Out",
+    "injury": "Left Lateral Abdominal Muscle Strain",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
   }
 ]
