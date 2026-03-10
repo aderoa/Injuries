@@ -8219,5 +8219,12 @@
     "injury": "Left Knee Bone Bruise",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bryce McGowens",
+    "status": "Out",
+    "injury": "Right Small Toe Fracture",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
