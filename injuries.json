@@ -7953,5 +7953,12 @@
     "injury": "Left Quadriceps ",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kel'el Ware",
+    "status": "Out",
+    "injury": "Right Shoulder Strain",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
