@@ -8331,5 +8331,12 @@
     "injury": "Left Calf Soreness",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Questionable",
+    "injury": "Back Spasms",
+    "date": "2026-03-10",
+    "prevStatus": "Probable"
   }
 ]
