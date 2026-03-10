@@ -8114,5 +8114,12 @@
     "injury": "Left Knee Strain",
     "date": "2026-03-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jase Richardson",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
