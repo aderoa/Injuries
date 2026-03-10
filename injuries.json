@@ -8310,5 +8310,12 @@
     "injury": "Illness",
     "date": "2026-03-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Collier",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
