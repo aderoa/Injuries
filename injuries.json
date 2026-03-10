@@ -8254,5 +8254,12 @@
     "injury": "Neck Surgery",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lindy Waters III",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
