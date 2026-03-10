@@ -8093,5 +8093,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
