@@ -8100,5 +8100,19 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Out",
+    "injury": "Left Lateral Abdominal Strain",
+    "date": "2026-03-08",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Questionable",
+    "injury": "Left Knee Strain",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
