@@ -8142,5 +8142,19 @@
     "injury": "Left Adductor Soreness",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Probable",
+    "injury": "Left Ankle Impingement",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Questionable",
+    "injury": "Bilateral Foot Soreness",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
