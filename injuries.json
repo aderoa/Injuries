@@ -7855,5 +7855,19 @@
     "injury": "Left Fibular Head Contusion",
     "date": "2026-03-09",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "Left Calf Strain",
+    "date": "2026-03-09",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-09",
+    "prevStatus": "Available"
   }
 ]
