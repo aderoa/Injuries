@@ -7813,5 +7813,12 @@
     "injury": "Lower Back and Neck Soreness",
     "date": "2026-03-09",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Out",
+    "injury": "Right Knee Sprain",
+    "date": "2026-03-09",
+    "prevStatus": "Available"
   }
 ]
