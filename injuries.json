@@ -8506,5 +8506,12 @@
     "injury": "Lumbar Back Strain",
     "date": "2026-03-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
