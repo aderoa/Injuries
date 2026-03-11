@@ -8373,5 +8373,12 @@
     "injury": "Bilateral Foot Soreness",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-10",
+    "prevStatus": "Probable"
   }
 ]
