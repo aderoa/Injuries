@@ -1087,25 +1087,25 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   return [h1, h2, h3, h4];
 }
 
-const PRESTO_CSS = `<style>
-.inj-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.inj-wrap h2{font-size:22px;font-weight:700;margin-bottom:10px;font-family:Arial,sans-serif}
-.inj-tbl{border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%}
-.inj-tbl thead tr{background:#f2f2f2}
-.inj-tbl th{border:1px solid #ccc;padding:4px;text-align:center;height:36px}
-.inj-tbl th.logo-col{width:36px;min-width:36px}
-.inj-tbl td{border:1px solid #eee;padding:4px;text-align:center;height:40px}
-.inj-tbl td.logo-col{width:36px;min-width:36px}
-.inj-tbl tbody tr:nth-child(odd){background:#fff}
-.inj-tbl tbody tr:nth-child(even){background:#f9f9f9}
-.inj-tbl tbody tr.inj-total{background:#222;color:#fff;font-weight:700}
-.inj-logo{vertical-align:middle}
-.s-avail{color:#10b981;font-weight:700;white-space:nowrap}
-.s-prob{color:#22c55e;font-weight:700;white-space:nowrap}
-.s-quest{color:#eab308;font-weight:700;white-space:nowrap}
-.s-doubt{color:#f97316;font-weight:700;white-space:nowrap}
-.s-out{color:#ef4444;font-weight:700;white-space:nowrap}
-</style>`;
+const PRESTO_CSS = '<style>\n'
++ '.inj-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}\n'
++ '.inj-wrap h2{font-size:22px;font-weight:700;margin-bottom:10px;font-family:Arial,sans-serif}\n'
++ '.inj-tbl{border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%}\n'
++ '.inj-tbl thead tr{background:#f2f2f2}\n'
++ '.inj-tbl th{border:1px solid #ccc;padding:4px;text-align:center;height:36px}\n'
++ '.inj-tbl th.logo-col{width:36px;min-width:36px}\n'
++ '.inj-tbl td{border:1px solid #eee;padding:4px;text-align:center;height:40px}\n'
++ '.inj-tbl td.logo-col{width:36px;min-width:36px}\n'
++ '.inj-tbl tbody tr:nth-child(odd){background:#fff}\n'
++ '.inj-tbl tbody tr:nth-child(even){background:#f9f9f9}\n'
++ '.inj-tbl tbody tr.inj-total{background:#222;color:#fff;font-weight:700}\n'
++ '.inj-logo{vertical-align:middle}\n'
++ '.s-avail{color:#10b981;font-weight:700;white-space:nowrap}\n'
++ '.s-prob{color:#22c55e;font-weight:700;white-space:nowrap}\n'
++ '.s-quest{color:#eab308;font-weight:700;white-space:nowrap}\n'
++ '.s-doubt{color:#f97316;font-weight:700;white-space:nowrap}\n'
++ '.s-out{color:#ef4444;font-weight:700;white-space:nowrap}\n'
++ '<' + '/style>';
 
 function copyPrestoHTML(btn) {
   const sections = buildPrestoHTML();
