@@ -8499,5 +8499,12 @@
     "injury": "",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Maxi Kleber",
+    "status": "Out",
+    "injury": "Lumbar Back Strain",
+    "date": "2026-03-10",
+    "prevStatus": "Out"
   }
 ]
