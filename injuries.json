@@ -8394,5 +8394,26 @@
     "injury": "Left Fibular Head Contusion",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-09",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-03-10",
+    "prevStatus": "Available"
   }
 ]
