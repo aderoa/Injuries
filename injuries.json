@@ -9017,5 +9017,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Out",
+    "injury": "Right Great Toe Sesamoiditis",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
