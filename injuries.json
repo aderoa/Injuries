@@ -8772,5 +8772,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Out",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Left Game"
   }
 ]
