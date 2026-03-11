@@ -8751,5 +8751,12 @@
     "injury": "Left Ankle Inju",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dorian Finney-Smith",
+    "status": "Out",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
