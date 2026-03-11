@@ -9066,5 +9066,12 @@
     "injury": "Flu",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Available",
+    "injury": "Right Middle Finger Dislocation",
+    "date": "2026-03-11",
+    "prevStatus": "Questionable"
   }
 ]
