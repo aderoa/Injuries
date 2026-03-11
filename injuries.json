@@ -8786,5 +8786,19 @@
     "injury": "Right Quadriceps Contusion",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Coby White",
+    "status": "Available",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
