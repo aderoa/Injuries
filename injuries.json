@@ -8884,5 +8884,12 @@
     "injury": "Left Elbow Sprain",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quenton Jackson",
+    "status": "Doubtful",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
