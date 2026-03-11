@@ -8877,5 +8877,12 @@
     "injury": "Back Soreness",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Out",
+    "injury": "Left Elbow Sprain",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
