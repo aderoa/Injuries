@@ -8737,5 +8737,12 @@
     "injury": "Illness",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Doubtful",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Questionable"
   }
 ]
