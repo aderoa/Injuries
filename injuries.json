@@ -8450,5 +8450,12 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
