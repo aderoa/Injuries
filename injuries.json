@@ -8842,5 +8842,12 @@
     "injury": "Rest",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ziaire Williams",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
