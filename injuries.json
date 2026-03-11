@@ -8968,5 +8968,12 @@
     "injury": "Rest",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Probable",
+    "injury": "Neck Spasm",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
