@@ -8723,5 +8723,12 @@
     "injury": "Left Calf Soreness",
     "date": "2026-03-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Questionable",
+    "injury": "Right Middle Finger Dislocation",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
