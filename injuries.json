@@ -8513,5 +8513,12 @@
     "injury": "",
     "date": "2026-03-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Left Game",
+    "injury": "Right Ankle Injury",
+    "date": "2026-03-10",
+    "prevStatus": "Left Game"
   }
 ]
