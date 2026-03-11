@@ -9080,5 +9080,12 @@
     "injury": "Right Achilles Injury Reconditioning",
     "date": "2026-03-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-11",
+    "prevStatus": "Questionable"
   }
 ]
