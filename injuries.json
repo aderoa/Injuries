@@ -8800,5 +8800,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Carlton Carrington",
+    "status": "Questionable",
+    "injury": "Right Hip Flexor Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
