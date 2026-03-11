@@ -8478,5 +8478,12 @@
     "injury": "Right Ankle Sprain / Mid Back Soreness",
     "date": "2026-03-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Isaac Okoro",
+    "status": "Out",
+    "injury": "Right Patellofemoral Pain Syndrome",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
