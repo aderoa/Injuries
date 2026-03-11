@@ -8485,5 +8485,12 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Out",
+    "injury": "Right Hip Contusion / Left Foot Arthitis",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
