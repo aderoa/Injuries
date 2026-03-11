@@ -8996,5 +8996,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Doubtful",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
