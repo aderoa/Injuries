@@ -8835,5 +8835,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
