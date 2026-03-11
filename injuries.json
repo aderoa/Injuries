@@ -8807,5 +8807,12 @@
     "injury": "Right Hip Flexor Soreness",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamir Watkins",
+    "status": "Available",
+    "injury": "Left Ankle and Foot Sprain",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
