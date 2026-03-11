@@ -8849,5 +8849,12 @@
     "injury": "Illness",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Porter",
+    "status": "Questionable",
+    "injury": "Right Knee Synovitis",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
