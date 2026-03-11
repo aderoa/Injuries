@@ -8709,5 +8709,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jase Richardson",
+    "status": "Available",
+    "injury": "Low Back Sprain",
+    "date": "2026-03-11",
+    "prevStatus": "Questionable"
   }
 ]
