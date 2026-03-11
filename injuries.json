@@ -8366,5 +8366,12 @@
     "injury": "Left Ankle Impingement",
     "date": "2026-03-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Out",
+    "injury": "Bilateral Foot Soreness",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
