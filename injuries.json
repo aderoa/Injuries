@@ -8856,5 +8856,12 @@
     "injury": "Right Knee Synovitis",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Questionable",
+    "injury": "Back Thoracic Spine Contusion",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
