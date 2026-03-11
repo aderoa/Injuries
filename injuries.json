@@ -8989,5 +8989,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Doubtful",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
