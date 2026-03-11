@@ -8457,5 +8457,12 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-03-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Out",
+    "injury": "Left Adductor Soreness",
+    "date": "2026-03-10",
+    "prevStatus": "Questionable"
   }
 ]
