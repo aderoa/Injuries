@@ -8975,5 +8975,12 @@
     "injury": "Neck Spasm",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "Right Achilles Repair Reconditioning",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
