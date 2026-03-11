@@ -8898,5 +8898,12 @@
     "injury": "Right Hamstring Soreness",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "Lower Back and Neck Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
