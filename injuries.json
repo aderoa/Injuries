@@ -8758,5 +8758,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-03-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Questionable",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
