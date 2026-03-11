@@ -8891,5 +8891,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Questionable",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
