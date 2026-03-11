@@ -8765,5 +8765,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Devin Carter",
+    "status": "Out",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
