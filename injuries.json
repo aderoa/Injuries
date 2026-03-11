@@ -8716,5 +8716,12 @@
     "injury": "Low Back Sprain",
     "date": "2026-03-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "John Konchar",
+    "status": "Out",
+    "injury": "Left Calf Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Questionable"
   }
 ]
