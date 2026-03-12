@@ -9374,5 +9374,12 @@
     "injury": "Left Calf Injury Management",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Quenton Jackson",
+    "status": "Out",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Doubtful"
   }
 ]
