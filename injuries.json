@@ -9164,5 +9164,19 @@
     "injury": "",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Probable",
+    "injury": "Back Soreness",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Right Hip Contusion / Left Foot Arthitis",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
