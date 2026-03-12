@@ -9409,5 +9409,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "injury": "Bilateral Knee Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Available"
   }
 ]
