@@ -9416,5 +9416,12 @@
     "injury": "Bilateral Knee Soreness",
     "date": "2026-03-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Questionable",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-03-12",
+    "prevStatus": "Available"
   }
 ]
