@@ -9388,5 +9388,12 @@
     "injury": "Right Knee Sprain",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Available",
+    "injury": "Neck Spasm",
+    "date": "2026-03-12",
+    "prevStatus": "Probable"
   }
 ]
