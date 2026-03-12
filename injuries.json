@@ -9696,5 +9696,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-12",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-12",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Out",
+    "injury": "Return to Competition Reconditioning",
+    "date": "2026-03-12",
+    "prevStatus": "Doubtful"
   }
 ]
