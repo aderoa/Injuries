@@ -9353,5 +9353,12 @@
     "injury": "Right Shoulder Strain",
     "date": "2026-03-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kel'el Ware",
+    "status": "Available",
+    "injury": "Right Shoulder Strain",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
