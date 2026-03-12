@@ -9451,5 +9451,26 @@
     "injury": "Left Foot Soreness",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Out",
+    "injury": "Back Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Out",
+    "injury": "Right Hip Contusion",
+    "date": "2026-03-12",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Maxi Kleber",
+    "status": "Out",
+    "injury": "Lumbar Back Strain",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
