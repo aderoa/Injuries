@@ -9402,5 +9402,12 @@
     "injury": "Right Achilles Injury Reconditioning",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Out"
   }
 ]
