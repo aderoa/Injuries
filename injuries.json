@@ -9381,5 +9381,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-12",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Out",
+    "injury": "Right Knee Sprain",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
