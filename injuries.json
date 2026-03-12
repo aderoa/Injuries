@@ -9500,5 +9500,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andre Drummond",
+    "status": "Out",
+    "injury": "Back Spasms",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
