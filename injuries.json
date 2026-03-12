@@ -9157,5 +9157,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-11",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
