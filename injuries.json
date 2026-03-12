@@ -9563,5 +9563,12 @@
     "injury": "Low Back and Neck Soreness",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-12",
+    "prevStatus": "Available"
   }
 ]
