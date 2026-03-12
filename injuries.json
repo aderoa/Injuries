@@ -9185,5 +9185,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-03-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-11",
+    "prevStatus": "Probable"
   }
 ]
