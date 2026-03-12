@@ -9192,5 +9192,12 @@
     "injury": "Illness",
     "date": "2026-03-11",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Available",
+    "injury": "Back Spasms",
+    "date": "2026-03-11",
+    "prevStatus": "Probable"
   }
 ]
