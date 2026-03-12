@@ -9332,5 +9332,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Available",
+    "injury": "Left Groin Strain",
+    "date": "2026-03-12",
+    "prevStatus": "Probable"
   }
 ]
