@@ -9325,5 +9325,12 @@
     "injury": "Illness",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andre Drummond",
+    "status": "Questionable",
+    "injury": "Back Spasms",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
