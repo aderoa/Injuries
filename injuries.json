@@ -9360,5 +9360,12 @@
     "injury": "Right Shoulder Strain",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Carlton Carrington",
+    "status": "Available",
+    "injury": "Right Hip Flexor Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
