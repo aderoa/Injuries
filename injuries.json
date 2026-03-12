@@ -9654,5 +9654,26 @@
     "injury": "Left Thumb Ulnar Collateral Ligament Tear",
     "date": "2026-03-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Porter",
+    "status": "Available",
+    "injury": "Right Knee Synovitis",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Available",
+    "injury": "Back Thoracic Spine Contusion",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jericho Sims",
+    "status": "Available",
+    "injury": "Right Patella Tendonitis",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
