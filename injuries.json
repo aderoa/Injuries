@@ -9318,5 +9318,12 @@
     "injury": "Right Finger Tendon Strain",
     "date": "2026-03-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ziaire Williams",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
