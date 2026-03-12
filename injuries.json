@@ -9213,5 +9213,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-03-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-11",
+    "prevStatus": "Available"
   }
 ]
