@@ -9710,5 +9710,19 @@
     "injury": "Return to Competition Reconditioning",
     "date": "2026-03-12",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-12",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
