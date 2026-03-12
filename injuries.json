@@ -9605,5 +9605,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-03-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Questionable",
+    "injury": "Low Back Pain",
+    "date": "2026-03-12",
+    "prevStatus": "Available"
   }
 ]
