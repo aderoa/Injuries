@@ -9444,5 +9444,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Doubtful",
+    "injury": "Left Foot Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
