@@ -1,1190 +1,1220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NBA Injury Report</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA Depth Charts by Trade Value</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: white; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+    header { text-align: center; margin-bottom: 2rem; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .subtitle { color: #8892b0; font-size: 1.1rem; }
+    .back-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: white; text-decoration: none; font-weight: 500; margin-bottom: 1.5rem; transition: all 0.2s; }
+    .back-btn:hover { background: rgba(255,255,255,0.2); }
 
-:root {
-  --bg: #0a0a0c;
-  --surface: #141418;
-  --surface2: #1c1c22;
-  --border: #2a2a32;
-  --text: #e8e8ec;
-  --text2: #8a8a96;
-  --accent: #3b82f6;
-  --out: #ef4444;
-  --doubtful: #f97316;
-  --questionable: #eab308;
-  --probable: #22c55e;
-  --available: #10b981;
-  --modified-bg: rgba(59,130,246,0.06);
-  --modified-border: rgba(59,130,246,0.25);
-}
+    /* Admin banner */
+    .admin-banner { display: none; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #1a1a2e; text-align: center; padding: 0.5rem 1rem; font-weight: 700; font-size: 0.9rem; position: sticky; top: 0; z-index: 100; }
+    .admin-banner.active { display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .admin-save-status { display: inline-block; font-weight: 500; opacity: 0; transition: opacity 0.3s; }
+    .admin-save-status.visible { opacity: 1; }
+    .export-btn { padding: 0.4rem 1rem; background: #1a1a2e; color: #f59e0b; border: 1px solid #1a1a2e; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.8rem; cursor: pointer; transition: all 0.2s; }
+    .export-btn:hover { background: #2a2a4e; }
 
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+    /* Team grid */
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .team-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.25rem; text-align: center; cursor: pointer; transition: all 0.2s; text-decoration: none; color: white; }
+    .team-card:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); transform: translateY(-2px); }
+    .team-logo { width: 56px; height: 56px; margin: 0 auto 0.75rem; object-fit: contain; }
+    .team-name { font-weight: 600; font-size: 0.95rem; }
+    .team-abbrev { color: #8892b0; font-size: 0.8rem; margin-top: 0.25rem; }
 
-/* ============ ADMIN VIEW ============ */
-.admin-container { max-width:1100px; margin:0 auto; padding:16px 20px 80px; }
+    /* Single team view */
+    .depth-chart-container { display: none; }
+    .depth-chart-container.active { display: block; }
+    .team-header { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+    .team-header-logo { width: 72px; height: 72px; object-fit: contain; }
+    .team-header-name { font-size: 1.75rem; font-weight: 700; }
+    .drag-hint { text-align: center; color: #8892b0; font-size: 0.85rem; margin-bottom: 1rem; }
 
-.admin-header {
-  display:flex; align-items:center; gap:16px; padding:20px 0 16px;
-  border-bottom:1px solid var(--border); margin-bottom:16px;
-}
-.admin-header h1 { font-size:20px; font-weight:700; letter-spacing:-0.02em; }
-.admin-header .subtitle { color:var(--text2); font-size:13px; margin-left:auto; }
+    .depth-chart { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; background: rgba(255,255,255,0.95); border-radius: 16px; padding: 1.25rem; color: #1a1a2e; }
+    .position-column { display: flex; flex-direction: column; gap: 0.5rem; min-height: 200px; }
+    .position-header { text-align: center; font-weight: 700; font-size: 1.1rem; color: #1a1a2e; padding: 0.5rem; border-bottom: 3px solid #667eea; margin-bottom: 0.25rem; }
+    .player-card { background: white; border-radius: 12px; padding: 0.75rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s; border: 2px solid transparent; cursor: grab; user-select: none; }
+    .player-card.spacer { background: transparent; box-shadow: none; border: 2px solid transparent; opacity: 1; cursor: default; pointer-events: none; }
+    .player-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.12); border-color: #667eea; }
+    .player-card.starter { background: linear-gradient(135deg, #fff 0%, #f0f4ff 100%); border: 2px solid #667eea; }
+    .player-card.dragging { opacity: 0.5; cursor: grabbing; }
+    .player-card.drag-over { border: 2px dashed #667eea; background: #f0f4ff; }
+    .position-column.drag-over { background: rgba(102,126,234,0.1); border-radius: 8px; }
+    /* Drop indicator line */
+    .drop-indicator { height: 3px; background: #667eea; border-radius: 2px; margin: 2px 0; pointer-events: none; box-shadow: 0 0 6px rgba(102,126,234,0.6); transition: none; }
+    .player-image { width: 80px; height: 60px; margin: 0 auto 0.5rem; border-radius: 8px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; pointer-events: none; }
+    .player-image img { width: 100%; height: 100%; object-fit: cover; }
+    .player-image .initials { color: white; font-weight: 700; font-size: 1.2rem; }
+    .player-name { font-weight: 600; font-size: 0.8rem; color: #1a1a2e; margin-bottom: 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
+    .trade-value { font-size: 0.8rem; font-weight: 600; pointer-events: none; }
+    .trade-value.high { color: #16a34a; }
+    .trade-value.medium { color: #ca8a04; }
+    .trade-value.low { color: #6b7280; }
 
-/* Sticky toolbar */
-.admin-toolbar {
-  position:sticky; top:0; z-index:100; background:var(--bg);
-  border-bottom:1px solid var(--border);
-  padding:10px 0; margin-bottom:16px;
-  display:flex; gap:8px; flex-wrap:wrap; align-items:center;
-}
-.admin-toolbar button {
-  font-family:inherit; font-size:12px; font-weight:600;
-  padding:7px 14px; border-radius:6px; border:1px solid var(--border);
-  background:var(--surface); color:var(--text); cursor:pointer;
-  transition:all 0.15s;
-}
-.admin-toolbar button:hover { background:var(--surface2); border-color:#444; }
-.admin-toolbar button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
-.admin-toolbar button.primary:hover { background:#2563eb; }
-.admin-toolbar button.success { background:#059669!important; border-color:#059669!important; color:#fff!important; }
-.admin-toolbar .spacer { flex:1; }
-.admin-toolbar .badge {
-  font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500;
-  padding:4px 10px; border-radius:99px; background:var(--surface2); color:var(--text2);
-}
-.admin-toolbar .badge.has-changes { background:rgba(59,130,246,0.15); color:var(--accent); }
+    .loading { text-align: center; padding: 4rem 2rem; }
+    .loading-spinner { width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.2); border-top-color: #667eea; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .error { text-align: center; padding: 2rem; color: #f87171; }
+    footer { text-align: center; margin-top: 2rem; padding: 1rem; color: #8892b0; font-size: 0.9rem; }
+    footer a { color: #667eea; text-decoration: none; }
 
-/* Sync status */
-.sync-status { font-size:12px; display:flex; align-items:center; gap:4px; padding:4px 10px; border-radius:99px; white-space:nowrap; }
-.sync-idle { color:var(--text2); }
-.sync-syncing { color:var(--accent); animation:syncPulse 1s ease infinite; }
-.sync-success { color:#059669; }
-.sync-error { color:#ef4444; cursor:pointer; }
-.sync-notoken { color:#f59e0b; cursor:pointer; }
-@keyframes syncPulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+    /* Admin all-teams */
+    .admin-all-teams { display: none; }
+    .admin-all-teams.active { display: block; }
+    .admin-team-row { margin-bottom: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; }
+    .admin-team-row-header { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .admin-team-row-logo { width: 36px; height: 36px; object-fit: contain; }
+    .admin-team-row-name { font-weight: 700; font-size: 1rem; }
+    .admin-team-row-abbrev { color: #8892b0; font-size: 0.8rem; margin-left: 0.25rem; }
+    .admin-depth-chart { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; padding: 0.75rem; background: rgba(255,255,255,0.92); color: #1a1a2e; }
+    .admin-position-column { display: flex; flex-direction: column; gap: 0.35rem; min-height: 80px; }
+    .admin-position-header { text-align: center; font-weight: 700; font-size: 0.85rem; color: #1a1a2e; padding: 0.3rem; border-bottom: 2px solid #667eea; margin-bottom: 0.2rem; }
+    .admin-player-card { background: white; border-radius: 8px; padding: 0.4rem 0.5rem; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.06); transition: transform 0.1s, box-shadow 0.1s, opacity 0.1s; border: 2px solid transparent; cursor: grab; user-select: none; font-size: 0.75rem; }
+    .admin-player-card:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-color: #667eea; }
+    .admin-player-card.starter { background: linear-gradient(135deg, #fff 0%, #f0f4ff 100%); border: 2px solid #667eea; }
+    .admin-player-card.dragging { opacity: 0.5; cursor: grabbing; }
+    .admin-player-card.drag-over { border: 2px dashed #667eea; background: #f0f4ff; }
+    .admin-player-card.spacer.drag-over { opacity: 1; border: 2px solid #667eea; background: #3a3a6e; }
+    .admin-position-column.drag-over { background: rgba(102,126,234,0.1); border-radius: 6px; }
+    .admin-drop-indicator { height: 3px; background: #667eea; border-radius: 2px; margin: 1px 0; pointer-events: none; box-shadow: 0 0 6px rgba(102,126,234,0.6); transition: none; }
+    .admin-player-name { font-weight: 600; font-size: 0.75rem; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
+    .admin-player-card.two-way { background: #e1bee7; }
+    .admin-player-card.ten-day { background: #fff9c4; }
+    .admin-player-card.spacer { background: #2a2a4e; border: 1px dashed #444; display: flex; align-items: center; justify-content: center; opacity: 0.6; cursor: grab; position: relative; padding: 0.4rem 0.5rem; }
+    .admin-player-card.spacer > * { pointer-events: none; }
+    .admin-player-card.spacer .spacer-label { color: #666; font-size: 0.65rem; }
+    .admin-player-card.spacer .spacer-delete { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #f44; cursor: pointer; font-size: 0.7rem; padding: 2px 4px; line-height: 1; }
+    .admin-player-card.spacer .spacer-delete:hover { color: #ff6666; }
+    .add-spacer-btn { width: 100%; padding: 3px; margin-top: 4px; background: transparent; border: 1px dashed #444; border-radius: 4px; color: #666; font-size: 0.65rem; cursor: pointer; transition: all 0.2s; }
+    .add-spacer-btn:hover { border-color: #888; color: #aaa; background: rgba(255,255,255,0.03); }
+    .admin-player-card.injured { background: #ef5350; color: white; }
+    .admin-player-card.injured .admin-player-name { color: white; }
+    .admin-player-card.injured .admin-trade-value { color: #ffcdd2 !important; }
+    .admin-player-card.questionable { background: #ef9a9a; }
+    .admin-player-card.doubtful { background: #ff8a65; color: white; }
+    .admin-player-card.doubtful .admin-player-name { color: white; }
+    .admin-player-card.doubtful .admin-trade-value { color: #ffe0b2 !important; }
+    .admin-player-card.probable { background: #a5d6a7; }
+    .admin-separator { height: 2px; background: #ef5350; margin: 4px 0; border-radius: 1px; opacity: 0.6; pointer-events: none; }
+    .injury-separator { height: 2px; background: #ef5350; margin: 4px 0; border-radius: 1px; opacity: 0.6; }
+    .admin-trade-value { font-size: 0.65rem; font-weight: 600; pointer-events: none; margin-top: 1px; }
+    .admin-trade-value.high { color: #16a34a; }
+    .admin-trade-value.medium { color: #ca8a04; }
+    .admin-trade-value.low { color: #6b7280; }
 
-/* Search / filter */
-.filter-bar {
-  display:flex; gap:8px; margin-bottom:16px; align-items:center;
-}
-.filter-bar input {
-  font-family:inherit; font-size:13px; padding:8px 12px; border-radius:6px;
-  border:1px solid var(--border); background:var(--surface); color:var(--text);
-  flex:1; max-width:320px; outline:none;
-}
-.filter-bar input:focus { border-color:var(--accent); }
-.filter-bar .filter-btn {
-  font-family:inherit; font-size:12px; font-weight:600;
-  padding:7px 12px; border-radius:6px; border:1px solid var(--border);
-  background:var(--surface); color:var(--text2); cursor:pointer; transition:all 0.15s;
-}
-.filter-bar .filter-btn:hover { color:var(--text); border-color:#444; }
-.filter-bar .filter-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+    @media (max-width: 900px) { .depth-chart, .admin-depth-chart { grid-template-columns: repeat(3, 1fr); } .team-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); } }
+    @media (max-width: 600px) { .depth-chart, .admin-depth-chart { grid-template-columns: repeat(2, 1fr); } h1 { font-size: 1.75rem; } .player-image { width: 60px; height: 45px; } }
 
-/* Team sections */
-.team-section { margin-bottom:8px; }
-.team-header {
-  display:flex; align-items:center; gap:10px; padding:10px 12px;
-  background:var(--surface); border:1px solid var(--border); border-radius:8px;
-  cursor:pointer; user-select:none; transition:all 0.15s;
-}
-.team-header:hover { background:var(--surface2); }
-.team-header img { width:28px; height:28px; }
-.team-header .team-name { font-size:14px; font-weight:600; }
-.team-header .team-count { font-size:12px; color:var(--text2); margin-left:auto; }
-.team-header .team-injured {
-  font-size:11px; font-weight:600; padding:2px 8px; border-radius:99px;
-  background:rgba(239,68,68,0.12); color:var(--out);
-}
-.team-header .team-injured.none { display:none; }
-.team-header .chevron {
-  color:var(--text2); font-size:14px; transition:transform 0.2s;
-  margin-left:8px;
-}
-.team-section.collapsed .chevron { transform:rotate(-90deg); }
-.team-section.collapsed .team-players { display:none; }
-
-.team-players { border:1px solid var(--border); border-top:none; border-radius:0 0 8px 8px; overflow:hidden; }
-
-/* Player row */
-.player-row {
-  display:grid;
-  grid-template-columns: 1fr 90px 130px 1fr 110px 100px;
-  gap:8px; align-items:center;
-  padding:6px 12px; border-bottom:1px solid var(--border);
-  font-size:13px; transition:background 0.15s;
-}
-.player-row:last-child { border-bottom:none; }
-.player-row:hover { background:rgba(255,255,255,0.02); }
-.player-row.modified { background:var(--modified-bg); border-color:var(--modified-border); }
-
-.player-name { font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.player-salary { font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--text2); text-align:right; }
-
-.player-row select {
-  font-family:inherit; font-size:12px; font-weight:600; padding:4px 6px;
-  border-radius:4px; border:1px solid var(--border); background:var(--surface);
-  color:var(--text); cursor:pointer; outline:none; width:100%;
-}
-.player-row select:focus { border-color:var(--accent); }
-.player-row select.s-out { color:var(--out); }
-.player-row select.s-doubtful { color:var(--doubtful); }
-.player-row select.s-questionable { color:var(--questionable); }
-.player-row select.s-probable { color:var(--probable); }
-.player-row select.s-available { color:var(--available); }
-.player-row select.s-left-game { color:#f97316; }
-
-.player-row input[type="text"] {
-  font-family:inherit; font-size:12px; padding:4px 6px;
-  border-radius:4px; border:1px solid var(--border); background:var(--surface);
-  color:var(--text); outline:none; width:100%;
-}
-.player-row input[type="text"]:focus { border-color:var(--accent); }
-.player-row input[type="text"].inactive { color:var(--text2); border-color:transparent; background:transparent; }
-
-.player-row input[type="date"] {
-  font-family:'JetBrains Mono',monospace; font-size:11px; padding:4px 4px;
-  border-radius:4px; border:1px solid var(--border); background:var(--surface);
-  color:var(--text); outline:none; width:100%;
-  color-scheme:dark;
-}
-.player-row input[type="date"]:focus { border-color:var(--accent); }
-.player-row input[type="date"].inactive { color:var(--text2); border-color:transparent; background:transparent; }
-
-.player-row select.prev-status { font-size:11px; opacity:0.7; }
-.player-row select.prev-status:hover { opacity:1; }
-
-/* Column headers */
-.col-headers {
-  display:grid;
-  grid-template-columns: 1fr 90px 130px 1fr 110px 100px;
-  gap:8px; padding:8px 12px;
-  font-size:11px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:0.05em;
-  background:var(--surface); border-bottom:1px solid var(--border);
-  position:sticky; top:50px; z-index:50;
-}
-.col-headers span:nth-child(2) { text-align:right; }
-
-/* Loading state */
-.loading-state {
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  padding:80px 0; color:var(--text2);
-}
-.loading-spinner {
-  width:32px; height:32px; border:3px solid var(--border); border-top-color:var(--accent);
-  border-radius:50%; animation:spin 0.8s linear infinite; margin-bottom:16px;
-}
-@keyframes spin { to { transform:rotate(360deg); } }
-
-/* ============ REPORT VIEW (non-admin) ============ */
-.report-container { max-width:900px; margin:0 auto; padding:16px 20px 80px; }
-
-.report-toolbar {
-  display:flex; gap:8px; flex-wrap:wrap; padding:12px 0;
-  border-bottom:1px solid var(--border); margin-bottom:16px;
-}
-.report-toolbar button {
-  font-family:inherit; font-size:12px; font-weight:600;
-  padding:7px 14px; border-radius:6px; border:1px solid var(--border);
-  background:var(--surface); color:var(--text); cursor:pointer; transition:all 0.15s;
-}
-.report-toolbar button:hover { background:var(--surface2); }
-.report-toolbar button.success { background:#059669!important; border-color:#059669!important; color:#fff!important; }
-
-.tab-bar { display:flex; gap:4px; margin-bottom:16px; }
-.tab-bar button {
-  font-family:inherit; font-size:12px; font-weight:600;
-  padding:7px 14px; border-radius:6px; border:1px solid transparent;
-  background:transparent; color:var(--text2); cursor:pointer; transition:all 0.15s;
-}
-.tab-bar button:hover { color:var(--text); }
-.tab-bar button.active { background:var(--surface); color:var(--text); border-color:var(--border); }
-
-.preview { padding:8px 0; }
-.preview table { font-size:13px; }
-
-.error-msg { padding:40px; text-align:center; color:var(--out); }
-
-/* Purge button */
-.btn-purge {
-  font-family:inherit; font-size:12px; font-weight:600;
-  padding:7px 14px; border-radius:6px; border:1px solid rgba(239,68,68,0.3);
-  background:rgba(239,68,68,0.08); color:var(--out); cursor:pointer; transition:all 0.15s;
-}
-.btn-purge:hover { background:rgba(239,68,68,0.15); }
-</style>
+    /* Export modal */
+    .export-modal { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); z-index:200; align-items:center; justify-content:center; padding:2rem; }
+    .export-modal.active { display:flex; }
+    .export-modal-inner { background:#1e2a3a; border-radius:16px; width:100%; max-width:900px; max-height:90vh; display:flex; flex-direction:column; overflow:hidden; }
+    .export-modal-header { display:flex; align-items:center; justify-content:space-between; padding:1rem 1.5rem; border-bottom:1px solid rgba(255,255,255,0.1); }
+    .export-modal-header h3 { font-size:1.1rem; }
+    .export-modal-actions { display:flex; gap:0.5rem; }
+    .export-modal-actions button { padding:0.5rem 1rem; border-radius:8px; border:none; font-family:'DM Sans',sans-serif; font-weight:600; font-size:0.85rem; cursor:pointer; transition:all 0.2s; }
+    .copy-btn { background:#667eea; color:white; }
+    .copy-btn:hover { background:#5a6fd6; }
+    .copy-btn.copied { background:#16a34a; }
+    .close-btn { background:rgba(255,255,255,0.1); color:white; }
+    .close-btn:hover { background:rgba(255,255,255,0.2); }
+    .export-modal textarea { flex:1; background:#0d1117; color:#c9d1d9; border:none; padding:1rem 1.5rem; font-family:'Courier New',monospace; font-size:0.8rem; resize:none; outline:none; line-height:1.5; }
+  </style>
 </head>
 <body>
+  <div id="adminBanner" class="admin-banner">
+    <span>🔧 ADMIN MODE — Drag to reorder, synced to GitHub</span>
+    <span id="saveStatus" class="admin-save-status">✓ Saved</span>
+    <div style="display:flex;gap:0.5rem;align-items:center;">
+      <button class="export-btn" onclick="copyExportDirect(true,0,15)">📷 Copy ATL-MEM</button>
+      <button class="export-btn" onclick="copyExportDirect(true,15,30)">📷 Copy MIA-WAS</button>
+      <button class="export-btn" onclick="manualRefresh(this)">🔄 Refresh Data</button>
+      <span id="refreshStatus" style="color:#1a1a2e;font-size:0.7rem;margin-left:8px;opacity:0.7;">Auto-refresh: 60s</span>
+    </div>
+  </div>
+  <div class="container">
+    <header><h1>🏀 NBA Depth Charts</h1><p class="subtitle">Ranked by Trade Value</p></header>
+    <div id="loading" class="loading"><div class="loading-spinner"></div><p>Loading NBA data...</p></div>
+    <div id="teamGrid" class="team-grid" style="display:none;"></div>
+    <div id="depthChartContainer" class="depth-chart-container">
+      <a href="?" class="back-btn">← All Teams</a>
+      <div class="team-header"><img id="teamLogo" class="team-header-logo" src="" alt=""><h2 id="teamName" class="team-header-name"></h2></div>
+      <p class="drag-hint">💡 Drag players to rearrange or move between positions</p>
+      <div id="depthChart" class="depth-chart"></div>
+    </div>
+    <div id="adminAllTeams" class="admin-all-teams">
+      <p class="drag-hint">💡 Drag players to rearrange — changes auto-sync to GitHub</p>
+      <div id="adminTeamsList"></div>
+    </div>
 
+  <!-- Export Modal -->
+  <div id="exportModal" class="export-modal" onclick="if(event.target===this)closeExportModal()">
+    <div class="export-modal-inner">
+      <div class="export-modal-header">
+        <h3 id="exportModalTitle">📋 Export HTML</h3>
+        <div class="export-modal-actions">
+          <button class="copy-btn" onclick="copyExportCode()">📋 Copy to Clipboard</button>
+          <button class="copy-btn" onclick="downloadExportCode()" style="margin-left:8px;">💾 Download .txt</button>
+          <button class="close-btn" onclick="closeExportModal()">✕ Close</button>
+        </div>
+      </div>
+      <textarea id="exportCode" readonly></textarea>
+    </div>
+  </div>
+    <div id="error" class="error" style="display:none;"></div>
+    <footer>Trade values computed using <a href="https://hoopsmatic.com" target="_blank">HoopsMatic</a> methodology</footer>
+  </div>
 <script>
-// ===== CONFIG =====
-const SHEET_ID = '2PACX-1vQ-TNS1Zxbcq2Altxh0-yY0LFEPvOXlwI8DjD8FdbSypf_sSWc3Xi6F88DwiOdSmR0FmXLzNicgCDwL';
-const INJ_GID = '306285159';
-const CSV_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${INJ_GID}&single=true&output=csv`;
-const ROSTER_SHEET_ID = '2PACX-1vSg6im6IYB6HXMGzQbmmBnLw9SfQLzxCSo8OfChxlJLhsB6BBCO0wPF_TMch0YgAbtFqYkwDWrsxRe7';
-const ROSTER_GID = '0';
-const ROSTER_CSV_URL = `https://docs.google.com/spreadsheets/d/e/${ROSTER_SHEET_ID}/pub?gid=${ROSTER_GID}&single=true&output=csv`;
-const JSON_URL = 'injuries.json';
+// =====================================================
+// HYBRID PERSISTENCE: localStorage (fast) + GitHub (durable)
+// =====================================================
+const STORAGE_KEY = 'depthcharts_orders';
+const ADMIN_KEY = 'hoopsmatic2025';
+const GH_TOKEN_KEY = 'depthcharts_gh_token';
+const GH_REPO = 'aderoa/DepthCharts';
+const GH_FILE = 'order.json';
+const GH_API = `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`;
+let isAdmin = false;
+let ghSHA = null;         // current SHA of order.json on GitHub
+let ghSaveTimer = null;   // debounce timer for GitHub pushes
+let ghOrdersCache = null; // in-memory cache of the full orders object
 
-const NBA_TEAMS = [
-  'Atlanta','Boston','Brooklyn','Charlotte','Chicago','Cleveland',
-  'Dallas','Denver','Detroit','Golden State','Houston','Indiana',
-  'LA Clippers','LA Lakers','Memphis','Miami','Milwaukee','Minnesota',
-  'New Orleans','New York','Oklahoma City','Orlando','Philadelphia','Phoenix',
-  'Portland','Sacramento','San Antonio','Toronto','Utah','Washington'
-];
-const TEAM_IDS = {
-  'Atlanta':1610612737,'Boston':1610612738,'Brooklyn':1610612751,
-  'Charlotte':1610612766,'Chicago':1610612741,'Cleveland':1610612739,
-  'Dallas':1610612742,'Denver':1610612743,'Detroit':1610612765,
-  'Golden State':1610612744,'Houston':1610612745,'Indiana':1610612754,
-  'LA Clippers':1610612746,'LA Lakers':1610612747,'Memphis':1610612763,
-  'Miami':1610612748,'Milwaukee':1610612749,'Minnesota':1610612750,
-  'New Orleans':1610612740,'New York':1610612752,'Oklahoma City':1610612760,
-  'Orlando':1610612753,'Philadelphia':1610612755,'Phoenix':1610612756,
-  'Portland':1610612757,'Sacramento':1610612758,'San Antonio':1610612759,
-  'Toronto':1610612761,'Utah':1610612762,'Washington':1610612764
-};
-const TEAM_ABBREV = {
-  'Atlanta':'ATL','Boston':'BOS','Brooklyn':'BKN','Charlotte':'CHA','Chicago':'CHI','Cleveland':'CLE',
-  'Dallas':'DAL','Denver':'DEN','Detroit':'DET','Golden State':'GSW','Houston':'HOU','Indiana':'IND',
-  'LA Clippers':'LAC','LA Lakers':'LAL','Memphis':'MEM','Miami':'MIA','Milwaukee':'MIL','Minnesota':'MIN',
-  'New Orleans':'NOP','New York':'NYK','Oklahoma City':'OKC','Orlando':'ORL','Philadelphia':'PHI','Phoenix':'PHX',
-  'Portland':'POR','Sacramento':'SAC','San Antonio':'SAS','Toronto':'TOR','Utah':'UTA','Washington':'WAS'
-};
-const STATUSES = ['Available','Probable','Questionable','Doubtful','Out','Left Game'];
-const STATUS_GRAVITY = { 'Out':0,'Left Game':0.5,'Doubtful':1,'Questionable':2,'Probable':3,'Available':4 };
+function loadAllOrders() {
+  if (ghOrdersCache) return ghOrdersCache;
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch(e) { return {}; }
+}
+function saveAllOrders(orders) {
+  ghOrdersCache = orders;
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(orders)); } catch(e) {}
+  // Debounce GitHub push (admin only)
+  if (isAdmin) {
+    clearTimeout(ghSaveTimer);
+    ghSaveTimer = setTimeout(() => pushToGitHub(orders), 2000);
+  }
+}
+function saveTeamOrder(teamAbbrev, container) {
+  const columns = container.querySelectorAll('[class*="position-column"]');
+  const order = {};
+  columns.forEach(col => {
+    const pos = col.dataset.position;
+    if (!pos) return;
+    order[pos] = [];
+    col.childNodes.forEach(node => {
+      if (node.classList && node.classList.contains('admin-separator')) {
+        order[pos].push('__SEPARATOR__');
+      } else if (node.classList && (node.classList.contains('admin-player-card') || node.classList.contains('player-card'))) {
+        if (node.dataset.player === '__SPACER__') order[pos].push('__SPACER__');
+        else if (node.dataset.player) order[pos].push(node.dataset.player);
+      }
+    });
+  });
+  const all = loadAllOrders();
+  all[teamAbbrev] = order;
+  saveAllOrders(all);
+  showSaveStatus('local');
+}
+function loadTeamOrder(t) { return (loadAllOrders())[t] || null; }
 
-function teamLogo(t) { const id=TEAM_IDS[t]; return id ? `https://cdn.nba.com/logos/nba/${id}/primary/L/logo.svg` : ''; }
-function logoImg(t) { const u=teamLogo(t); return u ? `<img src="${u}" width="28" height="28" style="vertical-align:middle;">` : ''; }
-function fmtSal(n) { if(n>=1e6) return '$'+(n/1e6).toFixed(1)+'M'; if(n>=1e3) return '$'+(n/1e3).toFixed(0)+'K'; return '$'+n.toLocaleString(); }
-function fmtSalFull(n) { return '$'+n.toLocaleString(); }
-function fmtDate(iso) { const d=new Date(iso+'T00:00:00'); const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return m[d.getMonth()]+' '+d.getDate(); }
-function sColor(s) { return {Out:'#ef4444','Left Game':'#f97316',Doubtful:'#f97316',Questionable:'#eab308',Probable:'#22c55e',Available:'#10b981'}[s]||'#888'; }
-function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;white-space:nowrap;">${s}</span>`; }
-function statusClass(s) { return 's-'+s.toLowerCase().replace(/\s+/g,'-'); }
-function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
-function todayISO() {
-  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
+function showSaveStatus(mode) {
+  const el = document.getElementById('saveStatus');
+  if (mode === 'local') { el.textContent = '💾 Saving...'; el.style.color = '#1a1a2e'; }
+  else if (mode === 'github') { el.textContent = '✓ Synced to GitHub'; el.style.color = '#065f46'; }
+  else if (mode === 'error') { el.textContent = '✗ GitHub sync failed'; el.style.color = '#991b1b'; }
+  else if (mode === 'loading') { el.textContent = '⏳ Loading from GitHub...'; el.style.color = '#1a1a2e'; }
+  el.classList.add('visible');
+  clearTimeout(el._t);
+  if (mode === 'github' || mode === 'error') el._t = setTimeout(() => el.classList.remove('visible'), 4000);
 }
 
-function parseCSV(text) {
-  const rows=[]; let cur='',inQ=false,row=[];
-  for(let i=0;i<text.length;i++){
-    const c=text[i];
-    if(c==='"'){if(inQ&&text[i+1]==='"'){cur+='"';i++;}else inQ=!inQ;}
-    else if(c===','&&!inQ){row.push(cur);cur='';}
-    else if((c==='\n'||c==='\r')&&!inQ){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cur);cur='';rows.push(row);row=[];}
-    else cur+=c;
+// ---- GitHub Token Management ----
+function getGHToken() {
+  return localStorage.getItem(GH_TOKEN_KEY) || null;
+}
+function promptGHToken() {
+  const token = prompt('Enter your GitHub Personal Access Token (needs repo scope).\nThis is stored locally and used to sync order.json to GitHub.');
+  if (token && token.trim()) {
+    localStorage.setItem(GH_TOKEN_KEY, token.trim());
+    return token.trim();
   }
-  if(cur||row.length){row.push(cur);rows.push(row);}
+  return null;
+}
+
+// ---- Fetch order.json from GitHub (source of truth) ----
+async function fetchFromGitHub() {
+  try {
+    const headers = { 'Accept': 'application/vnd.github.v3+json' };
+    const token = getGHToken();
+    if (token) headers['Authorization'] = `token ${token}`;
+    const resp = await fetch(GH_API, { headers });
+    if (!resp.ok) {
+      if (resp.status === 404) { console.log('order.json not found on GitHub, will create on first save'); return null; }
+      throw new Error(`GitHub API ${resp.status}`);
+    }
+    const data = await resp.json();
+    ghSHA = data.sha;
+    const content = atob(data.content.replace(/\n/g, ''));
+    const orders = JSON.parse(content);
+    // Update localStorage and cache
+    ghOrdersCache = orders;
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(orders)); } catch(e) {}
+    console.log('Loaded order.json from GitHub (SHA: ' + ghSHA.slice(0,7) + ')');
+    return orders;
+  } catch(e) {
+    console.warn('Failed to fetch from GitHub:', e.message);
+    return null;
+  }
+}
+
+// ---- Push order.json to GitHub ----
+async function pushToGitHub(orders) {
+  let token = getGHToken();
+  if (!token) {
+    token = promptGHToken();
+    if (!token) { showSaveStatus('error'); return; }
+  }
+  try {
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(orders, null, 2))));
+    const body = {
+      message: `Update depth chart orders — ${new Date().toLocaleString()}`,
+      content: content,
+      branch: 'main'
+    };
+    if (ghSHA) body.sha = ghSHA;
+    const resp = await fetch(GH_API, {
+      method: 'PUT',
+      headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (resp.status === 401 || resp.status === 403) {
+      localStorage.removeItem(GH_TOKEN_KEY);
+      showSaveStatus('error');
+      alert('GitHub token expired or invalid. You will be prompted for a new one on next save.');
+      return;
+    }
+    if (!resp.ok) throw new Error(`GitHub PUT ${resp.status}`);
+    const data = await resp.json();
+    ghSHA = data.content.sha;
+    showSaveStatus('github');
+    console.log('Pushed order.json to GitHub (SHA: ' + ghSHA.slice(0,7) + ')');
+  } catch(e) {
+    console.error('GitHub push failed:', e);
+    showSaveStatus('error');
+  }
+}
+
+// =====================================================
+// TEAMS & ALIASES
+// =====================================================
+const NBA_TEAMS = [
+  {abbrev:'ATL',name:'Atlanta Hawks',logo:'https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg'},
+  {abbrev:'BOS',name:'Boston Celtics',logo:'https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg'},
+  {abbrev:'BKN',name:'Brooklyn Nets',logo:'https://cdn.nba.com/logos/nba/1610612751/global/L/logo.svg'},
+  {abbrev:'CHA',name:'Charlotte Hornets',logo:'https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg'},
+  {abbrev:'CHI',name:'Chicago Bulls',logo:'https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg'},
+  {abbrev:'CLE',name:'Cleveland Cavaliers',logo:'https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg'},
+  {abbrev:'DAL',name:'Dallas Mavericks',logo:'https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg'},
+  {abbrev:'DEN',name:'Denver Nuggets',logo:'https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg'},
+  {abbrev:'DET',name:'Detroit Pistons',logo:'https://cdn.nba.com/logos/nba/1610612765/global/L/logo.svg'},
+  {abbrev:'GSW',name:'Golden State Warriors',logo:'https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg'},
+  {abbrev:'HOU',name:'Houston Rockets',logo:'https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg'},
+  {abbrev:'IND',name:'Indiana Pacers',logo:'https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg'},
+  {abbrev:'LAC',name:'LA Clippers',logo:'https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg'},
+  {abbrev:'LAL',name:'Los Angeles Lakers',logo:'https://cdn.nba.com/logos/nba/1610612747/global/L/logo.svg'},
+  {abbrev:'MEM',name:'Memphis Grizzlies',logo:'https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg'},
+  {abbrev:'MIA',name:'Miami Heat',logo:'https://cdn.nba.com/logos/nba/1610612748/global/L/logo.svg'},
+  {abbrev:'MIL',name:'Milwaukee Bucks',logo:'https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg'},
+  {abbrev:'MIN',name:'Minnesota Timberwolves',logo:'https://cdn.nba.com/logos/nba/1610612750/global/L/logo.svg'},
+  {abbrev:'NOP',name:'New Orleans Pelicans',logo:'https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg'},
+  {abbrev:'NYK',name:'New York Knicks',logo:'https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg'},
+  {abbrev:'OKC',name:'Oklahoma City Thunder',logo:'https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg'},
+  {abbrev:'ORL',name:'Orlando Magic',logo:'https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg'},
+  {abbrev:'PHI',name:'Philadelphia 76ers',logo:'https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg'},
+  {abbrev:'PHX',name:'Phoenix Suns',logo:'https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg'},
+  {abbrev:'POR',name:'Portland Trail Blazers',logo:'https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg'},
+  {abbrev:'SAC',name:'Sacramento Kings',logo:'https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg'},
+  {abbrev:'SAS',name:'San Antonio Spurs',logo:'https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg'},
+  {abbrev:'TOR',name:'Toronto Raptors',logo:'https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg'},
+  {abbrev:'UTA',name:'Utah Jazz',logo:'https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg'},
+  {abbrev:'WAS',name:'Washington Wizards',logo:'https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg'}
+];
+const TEAM_ALIASES = {
+  'Atlanta':'ATL','Hawks':'ATL','Boston':'BOS','Celtics':'BOS','Brooklyn':'BKN','Nets':'BKN',
+  'Charlotte':'CHA','Hornets':'CHA','Chicago':'CHI','Bulls':'CHI','Cleveland':'CLE','Cavaliers':'CLE','Cavs':'CLE',
+  'Dallas':'DAL','Mavericks':'DAL','Mavs':'DAL','Denver':'DEN','Nuggets':'DEN','Detroit':'DET','Pistons':'DET',
+  'Golden State':'GSW','Warriors':'GSW','Houston':'HOU','Rockets':'HOU','Indiana':'IND','Pacers':'IND',
+  'LA Clippers':'LAC','Clippers':'LAC','Los Angeles Lakers':'LAL','Lakers':'LAL','LA Lakers':'LAL',
+  'Memphis':'MEM','Grizzlies':'MEM','Miami':'MIA','Heat':'MIA','Milwaukee':'MIL','Bucks':'MIL',
+  'Minnesota':'MIN','Timberwolves':'MIN','Wolves':'MIN','New Orleans':'NOP','Pelicans':'NOP',
+  'New York':'NYK','Knicks':'NYK','Oklahoma City':'OKC','Thunder':'OKC','Orlando':'ORL','Magic':'ORL',
+  'Philadelphia':'PHI','76ers':'PHI','Sixers':'PHI','Phoenix':'PHX','Suns':'PHX',
+  'Portland':'POR','Trail Blazers':'POR','Blazers':'POR','Sacramento':'SAC','Kings':'SAC',
+  'San Antonio':'SAS','Spurs':'SAS','Toronto':'TOR','Raptors':'TOR','Utah':'UTA','Jazz':'UTA',
+  'Washington':'WAS','Wizards':'WAS'
+};
+
+// =====================================================
+// DATA URLs
+// =====================================================
+const TV_SHEET_ID = '2PACX-1vSg6im6IYB6HXMGzQbmmBnLw9SfQLzxCSo8OfChxlJLhsB6BBCO0wPF_TMch0YgAbtFqYkwDWrsxRe7';
+const TV_GID = '1310971167';
+const TV_CSV_URL = `https://docs.google.com/spreadsheets/d/e/${TV_SHEET_ID}/pub?gid=${TV_GID}&single=true&output=csv`;
+const ROSTER_GID = '0';
+const ROSTER_CSV_URL = `https://docs.google.com/spreadsheets/d/e/${TV_SHEET_ID}/pub?gid=${ROSTER_GID}&single=true&output=csv`;
+const INJURIES_JSON_URL = 'https://aderoa.github.io/Injuries/injuries.json';
+
+let allPlayers = [], tradeValueMap = new Map(), draggedElement = null;
+
+// =====================================================
+// CSV PARSER
+// =====================================================
+function parseCSV(text) {
+  const rows = []; let cur = '', inQ = false, row = [];
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) { if (c === '"' && text[i+1] === '"') { cur += '"'; i++; } else if (c === '"') inQ = false; else cur += c; }
+    else { if (c === '"') inQ = true; else if (c === ',') { row.push(cur.trim()); cur = ''; }
+    else if (c === '\n' || c === '\r') { if (c === '\r' && text[i+1] === '\n') i++; row.push(cur.trim()); if (row.length > 1 || row[0] !== '') rows.push(row); row = []; cur = ''; }
+    else cur += c; }
+  }
+  if (cur || row.length > 0) { row.push(cur.trim()); if (row.length > 1 || row[0] !== '') rows.push(row); }
   return rows;
 }
 
-// ===== SHARED STATE =====
-let roster = {};      // player -> {team, salary}
-let teamSalaries = {}; // team -> total salary
-let daysMap = {};     // player -> days since last game
-let jsonEntries = []; // raw injuries.json
-let latestStatus = {}; // player -> {status, injury, date}
-let modifications = {}; // player -> {status, injury, date} (admin edits)
+// =====================================================
+// TRADE VALUE COMPUTATION
+// =====================================================
+function computeTradeValues(csvText) {
+  const rows = parseCSV(csvText); const roster = [], historical = []; let todayStr = null;
+  for (const row of rows.slice(1)) {
+    while (row.length < 22) row.push('');
+    if (row[18] && !todayStr) todayStr = row[18];
+    if (row[0] && row[1]) roster.push({ player: row[1].trim(), rat365: parseFloat(row[2])||0, salary: parseInt(row[3].replace(/[$,]/g,''))||0, birthday: row[4]||'', draftPick: parseInt(row[20])||null });
+    if (row[6] && row[7]) { const g = parseInt(row[9])||0; if (g > 0) historical.push({ year: row[6], player: row[7].trim(), totalRat: parseFloat(row[8].replace(/,/g,''))||0, games: g }); }
+  }
+  const playerHist = {}; for (const h of historical) { const k = h.player.toLowerCase(); if (!playerHist[k]) playerHist[k] = []; playerHist[k].push(h); }
+  const WEIGHTS = {'2025-26':1.0,'2024-25':0.6,'2023-24':0.36,'2022-23':0.216,'2021-22':0.1296};
+  const EXPECTED = {'2021-22':82,'2022-23':82,'2023-24':82,'2024-25':82,'2025-26':48};
+  const EXP=1.8, BETA=0.8, MAX_MULT=1.4, MIN_PCT=0.40, WM_W=0.85, RAT_W=0.15, AGE_BONUS=1.0, OLD_TH=35, OLD_PEN=0.03;
+  for (const p of roster) {
+    const hist = playerHist[p.player.toLowerCase()]||[]; let num=0, den=0;
+    for (const h of hist) { const w = WEIGHTS[h.year]||0; if (w<=0||h.games<=0) continue; let pg = h.totalRat/h.games; const exp = EXPECTED[h.year]||82; if (h.games/exp >= MIN_PCT) pg *= Math.min(MAX_MULT, Math.pow(exp/h.games, BETA)); num += pg*w*h.games; den += w*h.games; }
+    p.watermark = den > 0 ? num/den : 0;
+    const cur = hist.filter(h => h.year==='2025-26'); const cg = cur.reduce((s,h) => s+h.games, 0);
+    p.rat365adj = (cg > 0 && cg/48 >= MIN_PCT) ? p.rat365 * Math.min(MAX_MULT, Math.pow(48/cg, BETA)) : p.rat365;
+  }
+  const pd = s => { if (!s) return null; const p = s.split('/'); return p.length===3 ? new Date(+p[2],+p[0]-1,+p[1]) : null; };
+  const today = pd(todayStr)||new Date(); const ages = [];
+  for (const p of roster) { const bd = pd(p.birthday); p.age = bd ? (today-bd)/(365.25*864e5) : null; if (p.age) ages.push(p.age); }
+  const avgAge = ages.length > 0 ? ages.reduce((a,b)=>a+b,0)/ages.length : 26;
+  const maxDev = avgAge - Math.min(...ages);
+  for (const p of roster) {
+    if (p.age!==null && p.age < avgAge) p.ageMult = 1.0 + AGE_BONUS*(avgAge-p.age)/maxDev;
+    else if (p.age!==null && p.age >= OLD_TH) p.ageMult = Math.max(0.5, 1.0-OLD_PEN*(p.age-OLD_TH));
+    else p.ageMult = 1.0;
+  }
+  const tSP = roster.reduce((s,p)=>s+p.salary,0);
+  const tWM = roster.reduce((s,p)=>s+Math.pow(Math.max(p.watermark,0),EXP),0);
+  const tRAT = roster.reduce((s,p)=>s+Math.pow(Math.max(p.rat365adj,0),EXP),0);
+  for (const p of roster) {
+    const tvWM = tWM>0 ? (Math.pow(Math.max(p.watermark,0),EXP)/tWM)*tSP : 0;
+    const tvRAT = tRAT>0 ? (Math.pow(Math.max(p.rat365adj,0),EXP)/tRAT)*tSP : 0;
+    p.tvWithAge = (WM_W*tvWM + RAT_W*tvRAT) * p.ageMult;
+  }
+  const tWA = roster.reduce((s,p)=>s+p.tvWithAge,0); const result = new Map();
+  for (const p of roster) {
+    const baseTV = tWA>0 ? Math.round((p.tvWithAge/tWA)*tSP) : 0; let bonus = 0;
+    if (p.age!==null && p.age<25 && p.draftPick && p.draftPick>=1 && p.draftPick<=60) { bonus = Math.round(7e6 * Math.exp(-0.05*(p.draftPick-1)) * Math.exp(-0.5*Math.max(0,p.age-18.82))); }
+    result.set(p.player.toLowerCase(), baseTV+bonus);
+  }
+  return result;
+}
 
-// ===== GITHUB AUTO-SYNC =====
-const GH_REPO = 'aderoa/Injuries';
-const GH_FILE = 'injuries.json';
-const GH_BRANCH = 'main';
-const GH_API = `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`;
-let _ghToken = localStorage.getItem('gh_injuries_token') || '';
-let _ghSyncTimer = null;
-let _ghSyncing = false;
-let _ghLastSha = null; // cached SHA to avoid extra GET
+// =====================================================
+// ROSTER PARSER (salary, headshot, status, injury)
+// =====================================================
+function parseRosterCSV(csvText) {
+  const rows = parseCSV(csvText); if (rows.length < 2) return [];
+  const hdr = rows[0]; const col = n => hdr.findIndex(h => h.toUpperCase() === n.toUpperCase());
+  const PI=col('PLAYER'), TI=col('TEAM'), SI=col('2026'), STI=col('ST 25-26'), OI=col('OUT?'), RI=col('REASON'), LI=col('LOGO'), HI=col('HEADSHOT'), POI=col('POSITION');
+  if (PI<0||TI<0) return [];
+  const players = [];
+  for (let i = 1; i < rows.length; i++) {
+    const r = rows[i]; const name = r[PI]?.trim(); const team = r[TI]?.trim();
+    if (!name||!team) continue;
+    const abbrev = TEAM_ALIASES[team]||team;
+    const pos = POI>=0 ? (r[POI]?.trim()||'SF') : 'SF';
+    const headshot = HI>=0 ? (r[HI]?.trim()||'') : '';
+    const tv = tradeValueMap.get(name.toLowerCase())||0;
+    const salary = SI>=0 ? (parseInt((r[SI]||'0').replace(/[$,]/g,''))||0) : 0;
+    const status = STI>=0 ? (r[STI]?.trim()||'GUARANTEED') : 'GUARANTEED';
+    const injury = OI>=0 ? (r[OI]?.trim()||'') : '';
+    const reason = RI>=0 ? (r[RI]?.trim()||'') : '';
+    const logo = LI>=0 ? (r[LI]?.trim()||'') : '';
+    let color = 'normal';
+    if (status==='TWO-WAY'||status==='10-DAY') color = 'twoway';
+    if (injury==='Out') color = 'injured';
+    else if (injury==='Doubtful') color = 'doubtful';
+    else if (injury==='Questionable') color = 'questionable';
+    else if (injury==='Probable') color = 'probable';
+    players.push({name, team:abbrev, position:pos, tradeValue:tv, headshot, salary, contractStatus:status, injuryStatus:injury, injuryReason:reason, colorCode:color, teamLogo:logo});
+  }
+  return players;
+}
 
-// ===== DATA LOADING =====
-async function loadData() {
-  const [csvR, rosterR, jsonR] = await Promise.all([
-    fetch(CSV_URL),
-    fetch(ROSTER_CSV_URL),
-    fetch(JSON_URL + '?t=' + Date.now())
-  ]);
-  if (!csvR.ok) throw new Error('Injuries CSV fetch failed: ' + csvR.status);
-  if (!rosterR.ok) throw new Error('Roster CSV fetch failed: ' + rosterR.status);
-  if (!jsonR.ok) throw new Error('injuries.json fetch failed: ' + jsonR.status);
-
-  const csvText = await csvR.text();
-  const rosterText = await rosterR.text();
-  const injuries = await jsonR.json();
-  const injRows = parseCSV(csvText);
-  const rosterRows = parseCSV(rosterText);
-
-  // Parse roster by header names (same source as Depth Charts)
-  roster = {}; teamSalaries = {};
-  if (rosterRows.length > 1) {
-    const header = rosterRows[0];
-    const col = n => header.findIndex(h => h.toUpperCase().trim() === n.toUpperCase());
-    const playerIdx = col('PLAYER'), teamIdx = col('TEAM'), salaryIdx = col('2026');
-    if (playerIdx >= 0 && teamIdx >= 0) {
-      for (let i = 1; i < rosterRows.length; i++) {
-        const row = rosterRows[i];
-        const player = (row[playerIdx] || '').trim();
-        const team = (row[teamIdx] || '').trim();
-        const salRaw = salaryIdx >= 0 ? (row[salaryIdx] || '0').replace(/[$,]/g, '') : '0';
-        const salary = parseInt(salRaw) || 0;
-        if (player && team) {
-          roster[player] = { team, salary };
-          teamSalaries[team] = (teamSalaries[team] || 0) + salary;
-        }
-      }
-    }
+// Overlay injury status from GitHub injuries.json onto allPlayers
+function applyInjuriesJSON(injuries) {
+  // Reset ALL players to healthy first (JSON is authoritative over spreadsheet)
+  for (const p of allPlayers) {
+    const base = (p.contractStatus === 'TWO-WAY' || p.contractStatus === '10-DAY') ? 'twoway' : 'normal';
+    p.injuryStatus = '';
+    p.injuryReason = '';
+    p.colorCode = base;
   }
 
-  // Days since last game: cols 71(player), 73(days) from Injuries CSV
-  daysMap = {};
-  for (const r of injRows) {
-    if (r.length > 73) {
-      const p = (r[71] || '').trim(), d = (r[73] || '').trim();
-      if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
-    }
-  }
-
-  // Process JSON entries — use local committed cache if it's newer than the fetched file
-  // This handles the race condition where auto-sync pushes to GitHub but CDN is still stale
-  let localCommitted = null;
+  // Priority: injuries_latest (instant, written by Injuries admin on every change)
+  // Fallback: injuries.json + injuries_modifications (legacy path)
+  let latest = {};
   try {
-    const cached = localStorage.getItem('injuries_committed');
-    if (cached) localCommitted = JSON.parse(cached);
+    const live = localStorage.getItem('injuries_latest');
+    if (live) {
+      latest = JSON.parse(live);
+    }
   } catch(e) {}
 
-  // Use whichever has more entries (local cache includes the just-pushed changes)
-  if (localCommitted && localCommitted.length > injuries.length) {
-    jsonEntries = localCommitted;
-  } else {
-    jsonEntries = injuries;
-    // Remote is up to date — clear local cache
-    try { localStorage.removeItem('injuries_committed'); } catch(e) {}
-  }
-
-  latestStatus = {};
-  const prev = {};
-  for (const e of jsonEntries) {
-    if (latestStatus[e.player]) prev[e.player] = latestStatus[e.player];
-    latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date };
-  }
-
-  return { prev };
-}
-
-// ===== IS ADMIN? =====
-const isAdmin = new URLSearchParams(window.location.search).has('admin');
-
-if (isAdmin) {
-  document.body.innerHTML = `
-    <div class="admin-container">
-      <div class="admin-header">
-        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.4</span></h1>
-        <span class="subtitle" id="lastUpdate"></span>
-      </div>
-      <div class="admin-toolbar" id="toolbar">
-        <button class="primary" onclick="copyPrestoHTML(this)">📋 Copy Presto HTML</button>
-        <button onclick="copyJSON(this)">📋 Copy Updated JSON</button>
-        <button onclick="pushToGitHub()">⬆️ Push Now</button>
-        <button onclick="setupGitHubToken()">🔑 Token</button>
-        <button class="btn-purge" onclick="purgeAvailable(this)">🧹 Purge Available</button>
-        <button id="undoBtn" style="display:none;" onclick="undoPurge(this)">↩ Undo Purge</button>
-        <button onclick="resetAll()">🗑 Reset All</button>
-        <span class="spacer"></span>
-        <span class="sync-status sync-idle" id="syncStatus" onclick="if(this.classList.contains('sync-error')||this.classList.contains('sync-notoken'))setupGitHubToken()">🔗 <span>Auto-sync on</span></span>
-        <span class="badge" id="changesBadge">0 changes</span>
-      </div>
-      <div class="filter-bar">
-        <input type="text" id="searchInput" placeholder="Search player or team..." oninput="filterPlayers()">
-        <button class="filter-btn" onclick="toggleFilter('modified',this)" title="Show only modified">✎ Modified</button>
-        <button class="filter-btn" onclick="toggleFilter('injured',this)" title="Show only injured">🔴 Injured</button>
-        <button class="filter-btn" onclick="toggleFilter('available',this)" title="Show only available">🟢 Available</button>
-      </div>
-      <div class="col-headers">
-        <span>Player</span><span>Salary</span><span>Status</span><span>Injury</span><span>Date</span><span>Prev</span>
-      </div>
-      <div id="rosterArea"><div class="loading-state"><div class="loading-spinner"></div><p>Loading roster...</p></div></div>
-    </div>
-  `;
-  initAdmin();
-} else {
-  document.body.innerHTML = `
-    <div class="report-container">
-      <div class="admin-header">
-        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.4</span></h1>
-      </div>
-      <div class="report-toolbar" id="reportToolbar">
-        <button onclick="copyAll(this)">📋 Copy Full Report</button>
-        <button onclick="copySection(0,this)">📋 Today's Updates</button>
-        <button onclick="copySection(1,this)">📋 Full Report</button>
-        <button onclick="copySection(2,this)">📋 Salary Per Team</button>
-        <button onclick="copySection(3,this)">📋 Highest-Paid</button>
-        <button onclick="refreshReport(this)">🔄 Refresh</button>
-        <button class="btn-purge" onclick="togglePurge(this)">🧹 Purge Available</button>
-      </div>
-      <div class="tab-bar" id="tabBar">
-        <button onclick="showTab(0,this)">Today's Updates</button>
-        <button onclick="showTab(1,this)">Full Report</button>
-        <button onclick="showTab(2,this)">Salary Per Team</button>
-        <button onclick="showTab(3,this)">Highest-Paid</button>
-        <button class="active" onclick="showTab(-1,this)">All</button>
-      </div>
-      <div id="loading" class="loading-state"><div class="loading-spinner"></div><p>Loading injury data...</p></div>
-      <div id="preview" class="preview" style="display:none;"></div>
-      <div id="error" class="error-msg" style="display:none;"></div>
-    </div>
-  `;
-  initReport();
-}
-
-// ==========================================
-// ADMIN MODE
-// ==========================================
-let activeFilter = null;
-
-async function initAdmin() {
-  try {
-    // Load saved modifications from localStorage
+  // If no injuries_latest, build from JSON + modifications (legacy)
+  if (!Object.keys(latest).length) {
+    if (injuries && injuries.length) {
+      for (const e of injuries) latest[e.player] = { status: e.status, injury: e.injury || '' };
+    }
     try {
       const saved = localStorage.getItem('injuries_modifications');
-      if (saved) { modifications = JSON.parse(saved); }
+      if (saved) {
+        const mods = JSON.parse(saved);
+        for (const [name, mod] of Object.entries(mods)) {
+          latest[name] = { status: mod.status, injury: mod.injury || '' };
+        }
+      }
     } catch(e) {}
-    await loadData();
-    document.getElementById('lastUpdate').textContent = `${Object.keys(roster).length} players loaded`;
-    renderRoster();
-    updateBadge();
-    // Initialize GitHub sync status
-    if (_ghToken) {
-      setSyncStatus('idle', 'Auto-sync on');
-      // Pre-fetch SHA for faster first push
-      try {
-        const r = await fetch(GH_API + '?ref=' + GH_BRANCH, {
-          headers: { 'Authorization': 'token ' + _ghToken, 'Accept': 'application/vnd.github.v3+json' }
-        });
-        if (r.ok) { const d = await r.json(); _ghLastSha = d.sha; }
-      } catch(e) {}
-    } else {
-      setSyncStatus('notoken', 'Set token to auto-sync');
-    }
-  } catch(e) {
-    document.getElementById('rosterArea').innerHTML = `<div class="error-msg">Error: ${e.message}</div>`;
+  }
+
+  // Apply to all players
+  for (const p of allPlayers) {
+    const entry = latest[p.name];
+    if (!entry) continue;
+    if (entry.status === 'Available') continue;
+    p.injuryStatus = entry.status;
+    p.injuryReason = entry.injury || '';
+    const base = (p.contractStatus === 'TWO-WAY' || p.contractStatus === '10-DAY') ? 'twoway' : 'normal';
+    if (entry.status === 'Out') p.colorCode = 'injured';
+    else if (entry.status === 'Doubtful') p.colorCode = 'doubtful';
+    else if (entry.status === 'Questionable') p.colorCode = 'questionable';
+    else if (entry.status === 'Probable') p.colorCode = 'probable';
+    else p.colorCode = base;
   }
 }
 
-function renderRoster() {
-  const area = document.getElementById('rosterArea');
+// =====================================================
+// FORMATTING UTILS
+// =====================================================
+function fmtTV(tv) { if (tv>=1e6) return '$'+(tv/1e6).toFixed(1)+'M'; if (tv>=1e3) return '$'+Math.round(tv/1e3)+'K'; return '$'+tv.toLocaleString(); }
+function fmtSal(s) { if (s>=1e6) return '$'+(s/1e6).toFixed(1)+'M'; if (s>=1e3) return '$'+Math.round(s/1e3)+'K'; return '$'+s.toLocaleString(); }
+function fmtSalFull(s) { return '$'+s.toLocaleString('en-US'); }
+function valClass(tv) { return tv>=2e7?'high':tv>=5e6?'medium':'low'; }
+function initials(n) { return n.split(' ').map(w=>w[0]).join(''); }
+
+// =====================================================
+// RENDER TEAM GRID
+// =====================================================
+function renderTeamGrid() {
+  const g = document.getElementById('teamGrid');
+  g.innerHTML = NBA_TEAMS.map(t=>`<a href="?team=${t.abbrev}" class="team-card"><img class="team-logo" src="${t.logo}" alt="${t.name}" onerror="this.style.opacity='0.3'"><div class="team-name">${t.name}</div><div class="team-abbrev">${t.abbrev}</div></a>`).join('');
+  g.style.display = 'grid';
+}
+
+// =====================================================
+// BUILD POSITION MAP (shared by single-team & admin)
+// =====================================================
+function buildPositionMap(teamPlayers, savedOrder, minRows) {
+  const positions = ['PG','SG','SF','PF','C'];
+  const byPos = {}; positions.forEach(p => byPos[p] = []);
+  if (savedOrder) {
+    const pm = {}; teamPlayers.forEach(p => pm[p.name] = p);
+    const placed = new Set();
+    positions.forEach(pos => { if (savedOrder[pos]) savedOrder[pos].forEach(n => {
+      if (n === '__SPACER__') { byPos[pos].push('__SPACER__'); }
+      else if (pm[n]&&!placed.has(n)) { byPos[pos].push(pm[n]); placed.add(n); }
+    }); });
+    teamPlayers.forEach(p => { if (!placed.has(p.name)) byPos[positions.includes(p.position)?p.position:'SF'].push(p); });
+  } else {
+    teamPlayers.forEach(p => byPos[positions.includes(p.position)?p.position:'SF'].push(p));
+    positions.forEach(pos => byPos[pos].sort((a,b) => b.tradeValue - a.tradeValue));
+  }
+  // Pad columns to minRows with spacers (for admin mode)
+  if (minRows) {
+    positions.forEach(pos => {
+      while (byPos[pos].length < minRows) byPos[pos].push('__SPACER__');
+    });
+  }
+  return byPos;
+}
+
+// =====================================================
+// SINGLE TEAM VIEW
+// =====================================================
+function renderDepthChart(teamAbbrev) {
+  const team = NBA_TEAMS.find(t=>t.abbrev===teamAbbrev);
+  if (!team) { document.getElementById('error').textContent='Team not found'; document.getElementById('error').style.display='block'; return; }
+  const tp = allPlayers.filter(p=>p.team===teamAbbrev);
+  if (!tp.length) { document.getElementById('error').textContent=`No players for ${team.name}`; document.getElementById('error').style.display='block'; return; }
+  document.getElementById('teamLogo').src = team.logo;
+  document.getElementById('teamName').textContent = team.name;
+  document.title = `${team.name} Depth Chart`;
+  const positions = ['PG','SG','SF','PF','C'];
+  const byPos = buildPositionMap(tp, loadTeamOrder(teamAbbrev));
+
+  // Split each position into healthy and injured
+  const healthyByPos = {}, injuredByPos = {};
+  positions.forEach(pos => {
+    healthyByPos[pos] = [];
+    injuredByPos[pos] = [];
+    byPos[pos].forEach(p => {
+      if (p === '__SPACER__') return;
+      if (p.colorCode === 'injured' || p.colorCode === 'doubtful' || p.colorCode === 'questionable') injuredByPos[pos].push(p);
+      else healthyByPos[pos].push(p);
+    });
+  });
+
+  // Find max healthy rows to align separator
+  const maxHealthy = Math.max(...positions.map(pos => healthyByPos[pos].length), 1);
+
   let html = '';
+  positions.forEach(pos => {
+    html += `<div class="position-column" data-position="${pos}"><div class="position-header">${pos}</div>`;
+    let firstReal = true;
 
+    // Healthy players
+    healthyByPos[pos].forEach(p => {
+      html += `<div class="player-card ${firstReal?'starter':''}" draggable="true" data-player="${p.name}" data-tv="${p.tradeValue}">
+        <div class="player-image">${p.headshot?`<img src="${p.headshot}" alt="${p.name}" onerror="this.parentElement.innerHTML='<span class=\\'initials\\'>${initials(p.name)}</span>'">`:`<span class="initials">${initials(p.name)}</span>`}</div>
+        <div class="player-name">${p.name}</div>
+        <div class="trade-value ${valClass(p.tradeValue)}">${fmtSal(p.salary)}</div></div>`;
+      firstReal = false;
+    });
+
+    // Pad with spacers to align separator across columns
+    for (let i = healthyByPos[pos].length; i < maxHealthy; i++) {
+      html += `<div class="player-card spacer" data-player="__SPACER__">
+        <div class="player-image"><span class="initials" style="visibility:hidden;">&nbsp;</span></div>
+        <div class="player-name" style="visibility:hidden;">—</div>
+        <div class="trade-value" style="visibility:hidden;">&nbsp;</div></div>`;
+    }
+
+    // Red separator line (only if there are injured players on this team)
+    if (injuredByPos[pos].length || positions.some(p2 => injuredByPos[p2].length)) {
+      html += `<div class="injury-separator"></div>`;
+    }
+
+    // Injured players
+    injuredByPos[pos].forEach(p => {
+      html += `<div class="player-card" draggable="true" data-player="${p.name}" data-tv="${p.tradeValue}">
+        <div class="player-image">${p.headshot?`<img src="${p.headshot}" alt="${p.name}" onerror="this.parentElement.innerHTML='<span class=\\'initials\\'>${initials(p.name)}</span>'">`:`<span class="initials">${initials(p.name)}</span>`}</div>
+        <div class="player-name">${p.name}</div>
+        <div class="trade-value ${valClass(p.tradeValue)}">${fmtSal(p.salary)}</div></div>`;
+    });
+
+    html += '</div>';
+  });
+  document.getElementById('depthChart').innerHTML = html;
+  document.getElementById('depthChartContainer').classList.add('active');
+  setupDragDrop(document.getElementById('depthChart'), teamAbbrev, false);
+}
+
+// =====================================================
+// ADMIN ALL-TEAMS VIEW
+// =====================================================
+function renderAdminAllTeams() {
+  document.getElementById('adminBanner').classList.add('active');
+  document.title = 'NBA Depth Charts — ADMIN';
+  const container = document.getElementById('adminTeamsList');
+  const positions = ['PG','SG','SF','PF','C'];
+  const savedOrders = loadAllOrders();
+  // Build player lookup
+  const pMap = {};
+  allPlayers.forEach(p => pMap[p.name] = p);
+
+  let html = '';
   for (const team of NBA_TEAMS) {
-    const players = Object.entries(roster)
-      .filter(([_,v]) => v.team === team)
-      .sort((a,b) => lastName(a[0]).localeCompare(lastName(b[0])));
-    if (!players.length) continue;
+    const tp = allPlayers.filter(p=>p.team===team.abbrev);
+    if (!tp.length) continue;
+    const saved = savedOrders[team.abbrev] || null;
 
-    const injuredCount = players.filter(([name]) => {
-      const mod = modifications[name];
-      const cur = mod || latestStatus[name];
-      return cur && cur.status !== 'Available';
-    }).length;
+    // For each position, build healthy and injured arrays
+    const healthyByPos = {}, injuredByPos = {};
+    const globalPlaced = new Set();
+    positions.forEach(pos => {
+      healthyByPos[pos] = [];
+      injuredByPos[pos] = [];
 
-    html += `<div class="team-section" data-team="${team}" id="team-${team.replace(/\s/g,'')}">`;
-    html += `<div class="team-header" onclick="toggleTeam(this)">`;
-    html += `<img src="${teamLogo(team)}" alt="${team}">`;
-    html += `<span class="team-name">${team}</span>`;
-    html += `<span class="team-count">${players.length} players</span>`;
-    html += `<span class="team-injured ${injuredCount?'':'none'}">${injuredCount} injured</span>`;
-    html += `<span class="chevron">▼</span>`;
-    html += `</div>`;
-    html += `<div class="team-players">`;
+      if (saved && saved[pos]) {
+        const sepIdx = saved[pos].indexOf('__SEPARATOR__');
+        const aboveNames = sepIdx >= 0 ? saved[pos].slice(0, sepIdx) : saved[pos];
+        const belowNames = sepIdx >= 0 ? saved[pos].slice(sepIdx + 1) : [];
 
-    for (const [name, info] of players) {
-      const cur = modifications[name] || latestStatus[name] || { status:'Available', injury:'', date:'' };
-      const isModified = !!modifications[name];
-      const isAvail = cur.status === 'Available';
+        // Above separator: place saved players, but force Out/Doubtful down
+        aboveNames.forEach(n => {
+          if (n === '__SPACER__' || globalPlaced.has(n)) return;
+          const p = pMap[n];
+          if (!p || p.team !== team.abbrev) return;
+          if (p.colorCode === 'injured' || p.colorCode === 'doubtful') { injuredByPos[pos].push(p); }
+          else { healthyByPos[pos].push(p); }
+          globalPlaced.add(n);
+        });
 
-      html += `<div class="player-row ${isModified?'modified':''}" data-player="${name}" data-team="${team}">`;
-      html += `<span class="player-name" title="${name}">${name}</span>`;
-      html += `<span class="player-salary">${fmtSal(info.salary)}</span>`;
-
-      // Status select
-      html += `<select class="${statusClass(cur.status)}" onchange="onStatusChange('${name.replace(/'/g,"\\'")}',this)">`;
-      for (const s of STATUSES) {
-        html += `<option value="${s}" ${s===cur.status?'selected':''}>${s}</option>`;
+        // Below separator: place saved players, but force non-injured/non-questionable up
+        belowNames.forEach(n => {
+          if (n === '__SPACER__' || globalPlaced.has(n)) return;
+          const p = pMap[n];
+          if (!p || p.team !== team.abbrev) return;
+          if (p.colorCode === 'injured' || p.colorCode === 'doubtful' || p.colorCode === 'questionable') { injuredByPos[pos].push(p); }
+          else { healthyByPos[pos].push(p); }
+          globalPlaced.add(n);
+        });
+      } else {
+        // No saved order — default sort by trade value
+        const posTp = tp.filter(p => p.position === pos && !globalPlaced.has(p.name)).sort((a,b) => b.tradeValue - a.tradeValue);
+        posTp.forEach(p => {
+          if (p.colorCode === 'injured' || p.colorCode === 'doubtful') injuredByPos[pos].push(p);
+          else healthyByPos[pos].push(p);
+          globalPlaced.add(p.name);
+        });
       }
-      html += `</select>`;
+    });
 
-      // Injury input
-      html += `<input type="text" value="${cur.injury||''}" class="${isAvail?'inactive':''}" placeholder="${isAvail?'—':'Injury reason'}" oninput="onInjuryChange('${name.replace(/'/g,"\\'")}',this)" onfocus="this.classList.remove('inactive')">`;
+    // Handle unplaced players (new additions or position mismatches)
+    tp.filter(p => !globalPlaced.has(p.name)).forEach(p => {
+      const pos = positions.includes(p.position) ? p.position : 'SF';
+      if (p.colorCode === 'injured' || p.colorCode === 'doubtful') injuredByPos[pos].push(p);
+      else healthyByPos[pos].push(p);
+    });
 
-      // Date input
-      html += `<input type="date" value="${cur.date||''}" class="${isAvail?'inactive':''}" onchange="onDateChange('${name.replace(/'/g,"\\'")}',this)">`;
+    // Count total healthy to determine row count
+    const totalHealthy = positions.reduce((s, pos) => s + healthyByPos[pos].length, 0);
+    const healthyRows = Math.max(1, Math.ceil(totalHealthy / 5));
 
-      // Previous status select (editable, defaults to computed prev)
-      const prevSt = getEffectivePrevStatus(name);
-      html += `<select class="prev-status ${statusClass(prevSt)}" onchange="onPrevStatusChange('${name.replace(/'/g,"\\'")}',this)">`;
-      html += `<option value="" ${!prevSt?'selected':''}>—</option>`;
-      for (const s of STATUSES) {
-        html += `<option value="${s}" ${s===prevSt?'selected':''}>${s}</option>`;
-      }
-      html += `</select>`;
+    html += `<div class="admin-team-row" data-team="${team.abbrev}">
+      <div class="admin-team-row-header"><img class="admin-team-row-logo" src="${team.logo}" alt="${team.name}" onerror="this.style.opacity='0.3'"><span class="admin-team-row-name">${team.name}</span><span class="admin-team-row-abbrev">${team.abbrev}</span></div>
+      <div class="admin-depth-chart" data-team="${team.abbrev}">`;
+    positions.forEach(pos => {
+      html += `<div class="admin-position-column" data-position="${pos}"><div class="admin-position-header">${pos}</div>`;
 
-      html += `</div>`;
-    }
-
-    html += `</div></div>`;
-  }
-
-  area.innerHTML = html;
-}
-
-function toggleTeam(el) {
-  el.closest('.team-section').classList.toggle('collapsed');
-}
-
-function getEffectiveStatus(name) {
-  return modifications[name] || latestStatus[name] || { status:'Available', injury:'', date:'' };
-}
-
-function onStatusChange(name, sel) {
-  const row = sel.closest('.player-row');
-  const injInput = row.querySelector('input[type="text"]');
-  const dateInput = row.querySelector('input[type="date"]');
-  const newStatus = sel.value;
-
-  // Determine the original status from JSON
-  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
-
-  // Effective status BEFORE this change (prior modification or original)
-  const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
-
-  // Update select color class
-  sel.className = statusClass(newStatus);
-
-  if (newStatus === original.status && !injInput.value && !dateInput.value) {
-    // Reverted to original — remove modification
-    delete modifications[name];
-    row.classList.remove('modified');
-    injInput.className = newStatus==='Available' ? 'inactive' : '';
-    dateInput.className = newStatus==='Available' ? 'inactive' : '';
-  } else {
-    // Set date to today on any status change
-    dateInput.value = todayISO();
-    // Carry forward injury from JSON if available and field empty
-    if (!injInput.value && original.injury && newStatus !== 'Available') {
-      injInput.value = original.injury;
-    }
-
-    modifications[name] = {
-      status: newStatus,
-      injury: injInput.value,
-      date: dateInput.value,
-      prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : (prevStatusSnapshot[name] || effectiveBefore)
-    };
-    row.classList.add('modified');
-    injInput.classList.remove('inactive');
-    dateInput.classList.remove('inactive');
-  }
-
-  // Update the prev-status select visually
-  const prevSel = row.querySelector('select.prev-status');
-  if (prevSel) {
-    const ps = getEffectivePrevStatus(name);
-    prevSel.value = ps || '';
-    prevSel.className = 'prev-status ' + statusClass(ps || '');
-  }
-
-  updateBadge();
-  updateTeamInjuredCounts();
-}
-
-function onInjuryChange(name, inp) {
-  const row = inp.closest('.player-row');
-  const sel = row.querySelector('select');
-  const dateInput = row.querySelector('input[type="date"]');
-  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
-  const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
-
-  if (sel.value === original.status && !inp.value && !dateInput.value) {
-    delete modifications[name];
-    row.classList.remove('modified');
-  } else {
-    if (!dateInput.value) dateInput.value = todayISO();
-    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : (prevStatusSnapshot[name] || effectiveBefore) };
-    row.classList.add('modified');
-  }
-  updateBadge();
-}
-
-function onDateChange(name, inp) {
-  const row = inp.closest('.player-row');
-  const sel = row.querySelector('select');
-  const injInput = row.querySelector('input[type="text"]');
-  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
-  const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
-  const prevSt = modifications[name]?.prevStatus !== undefined ? modifications[name].prevStatus : null;
-
-  if (sel.value === original.status && !injInput.value && !inp.value) {
-    delete modifications[name];
-    row.classList.remove('modified');
-  } else {
-    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, prevStatus: prevSt !== null ? prevSt : (prevStatusSnapshot[name] || effectiveBefore) };
-    row.classList.add('modified');
-  }
-  updateBadge();
-}
-
-function getEffectivePrevStatus(name) {
-  // 1) If modification has explicit prevStatus, use it
-  if (modifications[name] && modifications[name].prevStatus != null) {
-    return modifications[name].prevStatus;
-  }
-  // 2) Check purge snapshot (set when Purge Available is clicked)
-  if (prevStatusSnapshot[name]) {
-    return prevStatusSnapshot[name];
-  }
-  // 3) Check latest JSON entry for this player for prevStatus field
-  const entries = jsonEntries.filter(e => e.player === name);
-  const lastEntry = entries.length ? entries[entries.length - 1] : null;
-  if (lastEntry && lastEntry.prevStatus != null) {
-    return lastEntry.prevStatus;
-  }
-  // 4) Scan entries for latest status from a prior date
-  const today = todayISO();
-  let prev = null;
-  for (const e of jsonEntries) {
-    if (e.player === name && e.date && e.date.length >= 10 && e.date < today) {
-      prev = e.status;
-    }
-  }
-  return prev || '';
-}
-
-function onPrevStatusChange(name, sel) {
-  const row = sel.closest('.player-row');
-  const statusSel = row.querySelector('select:not(.prev-status)');
-  const injInput = row.querySelector('input[type="text"]');
-  const dateInput = row.querySelector('input[type="date"]');
-  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
-
-  // Update color class
-  sel.className = 'prev-status ' + statusClass(sel.value || '');
-
-  // Ensure a modification record exists
-  if (!modifications[name]) {
-    modifications[name] = {
-      status: statusSel.value,
-      injury: injInput.value,
-      date: dateInput.value || todayISO(),
-      prevStatus: sel.value || null
-    };
-  } else {
-    modifications[name].prevStatus = sel.value || null;
-  }
-  row.classList.add('modified');
-  updateBadge();
-}
-
-function updateBadge() {
-  const count = Object.keys(modifications).length;
-  const badge = document.getElementById('changesBadge');
-  badge.textContent = `${count} change${count!==1?'s':''}`;
-  badge.className = count ? 'badge has-changes' : 'badge';
-  // Auto-save to localStorage
-  try { localStorage.setItem('injuries_modifications', JSON.stringify(modifications)); } catch(e) {}
-  // Broadcast full latest status for other apps (Depth Charts, etc.)
-  broadcastInjuries();
-  // Debounced auto-push to GitHub
-  scheduleGitHubSync();
-}
-
-// Write full latest injury status to localStorage so other apps get instant access
-function broadcastInjuries() {
-  try {
-    const latest = {};
-    // Start with JSON base
-    for (const e of jsonEntries) {
-      latest[e.player] = { status: e.status, injury: e.injury || '', date: e.date || '' };
-    }
-    // Overlay modifications
-    for (const [name, mod] of Object.entries(modifications)) {
-      latest[name] = { status: mod.status, injury: mod.injury || '', date: mod.date || '' };
-    }
-    localStorage.setItem('injuries_latest', JSON.stringify(latest));
-  } catch(e) {}
-}
-
-// ===== GITHUB SYNC ENGINE =====
-function setSyncStatus(state, msg) {
-  const el = document.getElementById('syncStatus');
-  if (!el) return;
-  const icons = { idle:'🔗', syncing:'🔄', success:'✅', error:'❌', notoken:'🔑' };
-  el.innerHTML = `${icons[state]||''} <span>${msg}</span>`;
-  el.className = 'sync-status sync-' + state;
-}
-
-function setupGitHubToken() {
-  const current = _ghToken ? '(token is set)' : '(no token)';
-  const token = prompt(`GitHub Personal Access Token ${current}\n\nNeeds "Contents: Read and write" permission on ${GH_REPO}.\n\nPaste token (or leave blank to clear):`, '');
-  if (token === null) return; // cancelled
-  _ghToken = token.trim();
-  if (_ghToken) {
-    localStorage.setItem('gh_injuries_token', _ghToken);
-    setSyncStatus('idle', 'Token saved');
-  } else {
-    localStorage.removeItem('gh_injuries_token');
-    _ghToken = '';
-    setSyncStatus('notoken', 'No token');
-  }
-}
-
-function scheduleGitHubSync() {
-  if (!_ghToken) return;
-  clearTimeout(_ghSyncTimer);
-  _ghSyncTimer = setTimeout(() => pushToGitHub(), 3000);
-}
-
-async function pushToGitHub() {
-  if (!_ghToken) { setSyncStatus('notoken', 'Set token'); return; }
-  if (_ghSyncing) { scheduleGitHubSync(); return; } // retry after current push
-  _ghSyncing = true;
-  setSyncStatus('syncing', 'Pushing…');
-
-  try {
-    // Build merged JSON
-    const merged = buildMergedJSON();
-    const content = JSON.stringify(merged, null, 2) + '\n';
-    const b64 = btoa(unescape(encodeURIComponent(content)));
-
-    // Get current SHA (use cached if available, otherwise fetch)
-    let sha = _ghLastSha;
-    if (!sha) {
-      const getR = await fetch(GH_API + '?ref=' + GH_BRANCH, {
-        headers: { 'Authorization': 'token ' + _ghToken, 'Accept': 'application/vnd.github.v3+json' }
+      // Healthy players
+      let firstReal = true;
+      healthyByPos[pos].forEach(p => {
+        const sc = p.contractStatus==='10-DAY'?'ten-day':p.colorCode==='twoway'?'two-way':p.colorCode==='questionable'?'questionable':p.colorCode==='probable'?'probable':'';
+        html += `<div class="admin-player-card ${firstReal?'starter':''} ${sc}" draggable="true" data-player="${p.name}" data-tv="${p.tradeValue}"><div class="admin-player-name">${p.name}</div><div class="admin-trade-value ${valClass(p.tradeValue)}">${fmtSal(p.salary)}</div></div>`;
+        firstReal = false;
       });
-      if (!getR.ok) throw new Error('GET failed: ' + getR.status);
-      const getData = await getR.json();
-      sha = getData.sha;
-    }
 
-    // Build commit message
-    const names = Object.keys(modifications);
-    const msg = names.length <= 3
-      ? `Update: ${names.join(', ')}`
-      : `Update ${names.length} players`;
-
-    // PUT to update file
-    const putR = await fetch(GH_API, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'token ' + _ghToken,
-        'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        message: msg,
-        content: b64,
-        sha: sha,
-        branch: GH_BRANCH
-      })
-    });
-
-    if (!putR.ok) {
-      const err = await putR.json().catch(() => ({}));
-      if (putR.status === 409) {
-        // SHA conflict — clear cache and retry once
-        _ghLastSha = null;
-        _ghSyncing = false;
-        return pushToGitHub();
-      }
-      throw new Error(err.message || putR.status);
-    }
-
-    const putData = await putR.json();
-    _ghLastSha = putData.content.sha; // cache new SHA
-
-    // Merge modifications into jsonEntries so they're now "committed"
-    jsonEntries = merged;
-    modifications = {};
-    try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
-    // Cache committed JSON locally so page refresh uses it even if GitHub CDN is stale
-    try { localStorage.setItem('injuries_committed', JSON.stringify(jsonEntries)); } catch(e) {}
-
-    // Broadcast updated data to other apps immediately
-    broadcastInjuries();
-
-    // Update latestStatus from merged data so UI stays correct
-    latestStatus = {};
-    for (const e of jsonEntries) {
-      latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date };
-    }
-
-    // Update UI
-    const badge = document.getElementById('changesBadge');
-    badge.textContent = '0 changes';
-    badge.className = 'badge';
-    document.querySelectorAll('.player-row.modified').forEach(r => r.classList.remove('modified'));
-
-    setSyncStatus('success', 'Synced');
-    setTimeout(() => setSyncStatus('idle', 'Auto-sync on'), 3000);
-
-  } catch(err) {
-    console.error('GitHub sync error:', err);
-    setSyncStatus('error', err.message || 'Sync failed');
-  } finally {
-    _ghSyncing = false;
-  }
-}
-
-function updateTeamInjuredCounts() {
-  document.querySelectorAll('.team-section').forEach(sec => {
-    const team = sec.dataset.team;
-    const rows = sec.querySelectorAll('.player-row');
-    let injured = 0;
-    rows.forEach(r => {
-      const sel = r.querySelector('select');
-      if (sel && sel.value !== 'Available') injured++;
-    });
-    const badge = sec.querySelector('.team-injured');
-    if (badge) {
-      badge.textContent = `${injured} injured`;
-      badge.classList.toggle('none', injured === 0);
-    }
-  });
-}
-
-function filterPlayers() {
-  const q = document.getElementById('searchInput').value.toLowerCase();
-  document.querySelectorAll('.team-section').forEach(sec => {
-    let anyVisible = false;
-    sec.querySelectorAll('.player-row').forEach(row => {
-      const name = row.dataset.player.toLowerCase();
-      const team = row.dataset.team.toLowerCase();
-      let show = !q || name.includes(q) || team.includes(q);
-
-      // Apply active filter
-      if (show && activeFilter === 'modified') show = row.classList.contains('modified');
-      if (show && activeFilter === 'injured') {
-        const sel = row.querySelector('select');
-        show = sel && sel.value !== 'Available';
-      }
-      if (show && activeFilter === 'available') {
-        const sel = row.querySelector('select');
-        show = sel && sel.value === 'Available';
+      // Pad healthy section with spacers
+      for (let i = healthyByPos[pos].length; i < healthyRows; i++) {
+        html += `<div class="admin-player-card spacer" draggable="true" data-player="__SPACER__"><div><div class="admin-player-name" style="color:#666;">— blank —</div><div class="admin-trade-value" style="visibility:hidden;">&nbsp;</div></div></div>`;
       }
 
-      row.style.display = show ? '' : 'none';
-      if (show) anyVisible = true;
+      // Separator
+      html += `<div class="admin-separator"></div>`;
+
+      // Injured players
+      injuredByPos[pos].forEach(p => {
+        const sc = p.colorCode==='injured'?'injured':p.colorCode==='doubtful'?'doubtful':'questionable';
+        html += `<div class="admin-player-card ${sc}" draggable="true" data-player="${p.name}" data-tv="${p.tradeValue}"><div class="admin-player-name">${p.name}</div><div class="admin-trade-value ${valClass(p.tradeValue)}">${fmtSal(p.salary)}</div></div>`;
+      });
+
+      html += '</div>';
     });
-    sec.style.display = anyVisible ? '' : 'none';
-    if (anyVisible) sec.classList.remove('collapsed');
+    html += '</div></div>';
+  }
+  container.innerHTML = html;
+  document.getElementById('adminAllTeams').classList.add('active');
+  document.querySelectorAll('.admin-depth-chart').forEach(c => setupDragDrop(c, c.dataset.team, true));
+}
+
+// =====================================================
+// UNIFIED DRAG AND DROP
+// =====================================================
+function setupDragDrop(container, teamAbbrev, isAdminView) {
+  const cardSel = isAdminView ? '.admin-player-card' : '.player-card';
+  const colSel = isAdminView ? '.admin-position-column' : '.position-column';
+
+  container.querySelectorAll(cardSel).forEach(card => {
+    makeDraggable(card, container, teamAbbrev, cardSel, colSel);
   });
-}
 
-function toggleFilter(type, btn) {
-  if (activeFilter === type) {
-    activeFilter = null;
-    btn.classList.remove('active');
-  } else {
-    activeFilter = type;
-    document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  }
-  filterPlayers();
-}
-
-function resetAll() {
-  if (Object.keys(modifications).length && !confirm('Reset all changes?')) return;
-  modifications = {};
-  prePurgeSnapshot = null;
-  document.getElementById('undoBtn').style.display = 'none';
-  try { localStorage.removeItem('injuries_modifications'); } catch(e) {}
-  try { localStorage.removeItem('injuries_committed'); } catch(e) {}
-  renderRoster();
-  updateBadge();
-}
-
-let prePurgeSnapshot = null;
-let prevStatusSnapshot = {};    // player → status at time of last purge
-let prePurgePrevSnapshot = {};  // for undo
-
-function purgeAvailable(btn) {
-  // Save snapshot for undo
-  prePurgeSnapshot = JSON.parse(JSON.stringify(modifications));
-  prePurgePrevSnapshot = prevStatusSnapshot ? {...prevStatusSnapshot} : {};
-
-  // Step 1: Snapshot ALL current statuses → prevStatusSnapshot
-  // This sets the "previous status" baseline for the new day
-  prevStatusSnapshot = {};
-  for (const [player, entry] of Object.entries(latestStatus)) {
-    const effective = modifications[player] || entry;
-    prevStatusSnapshot[player] = effective.status || 'Available';
-  }
-  // Also capture any modified players not in latestStatus
-  for (const [player, mod] of Object.entries(modifications)) {
-    if (!prevStatusSnapshot[player]) {
-      prevStatusSnapshot[player] = mod.status || 'Available';
-    }
-  }
-
-  // Step 2: Purge available players (clear injury + date) AND set prevStatus on all
-  for (const [player, entry] of Object.entries(latestStatus)) {
-    const effective = modifications[player] || entry;
-    if (effective.status === 'Available' && (entry.injury || entry.date)) {
-      // Purge: clear injury/date, carry prevStatus from snapshot
-      modifications[player] = { status: 'Available', injury: '', date: '', prevStatus: prevStatusSnapshot[player] || null };
-    } else if (modifications[player]) {
-      // Non-available modified player: update prevStatus from snapshot
-      modifications[player].prevStatus = prevStatusSnapshot[player] || modifications[player].prevStatus || null;
-    }
-  }
-
-  renderRoster();
-  updateBadge();
-  updateTeamInjuredCounts();
-
-  document.getElementById('undoBtn').style.display = '';
-  const orig = btn.textContent;
-  btn.textContent = '✓ Purged!'; btn.classList.add('active');
-  setTimeout(() => { btn.textContent = orig; btn.classList.remove('active'); }, 2000);
-}
-
-function undoPurge(btn) {
-  if (prePurgeSnapshot !== null) {
-    modifications = prePurgeSnapshot;
-    prePurgeSnapshot = null;
-    prevStatusSnapshot = prePurgePrevSnapshot;
-    prePurgePrevSnapshot = {};
-    renderRoster();
-    updateBadge();
-    updateTeamInjuredCounts();
-  }
-  btn.style.display = 'none';
-}
-
-// ===== JSON GENERATION =====
-function buildMergedJSON() {
-  // Start with original entries
-  const merged = [...jsonEntries];
-
-  // Append modifications as new entries
-  for (const [player, mod] of Object.entries(modifications)) {
-    merged.push({
-      player,
-      status: mod.status,
-      injury: mod.injury || '',
-      date: mod.date !== undefined && mod.date !== null ? mod.date : todayISO(),
-      prevStatus: mod.prevStatus || prevStatusSnapshot[player] || null
+  container.querySelectorAll(colSel).forEach(col => {
+    col.addEventListener('dragover', function(e) { e.preventDefault(); });
+    col.addEventListener('drop', function(e) {
+      e.preventDefault();
+      if (draggedElement && !e.target.closest(cardSel)) {
+        // Dropped on empty area of column — append (before spacer btn if exists)
+        const addBtn = this.querySelector('.add-spacer-btn');
+        if (addBtn) this.insertBefore(draggedElement, addBtn);
+        else this.appendChild(draggedElement);
+      }
     });
-  }
-
-  return merged;
-}
-
-function copyJSON(btn) {
-  const merged = buildMergedJSON();
-  const json = JSON.stringify(merged, null, 2);
-  navigator.clipboard.writeText(json).then(() => {
-    const orig = btn.textContent;
-    btn.textContent = '✓ Copied!'; btn.classList.add('success');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
   });
 }
 
-// ===== PRESTO HTML GENERATION (same 4 tables) =====
-function buildPrestoHTML() {
-  const merged = buildMergedJSON();
+function makeDraggable(card, container, teamAbbrev, cardSel, colSel) {
+  card.addEventListener('dragstart', function(e) {
+    draggedElement = this;
+    this.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', this.dataset.player);
+  });
 
-  // Rebuild latest + prev from merged
-  const lat = {}, prv = {};
-  for (const e of merged) {
-    if (lat[e.player]) prv[e.player] = lat[e.player];
-    lat[e.player] = e;
-  }
+  card.addEventListener('dragend', function() {
+    this.classList.remove('dragging');
+    document.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+    draggedElement = null;
+    // Update starter highlights
+    container.querySelectorAll(colSel).forEach(col => {
+      let firstReal = true;
+      col.querySelectorAll(cardSel).forEach(c => {
+        if (c.classList.contains('spacer')) { c.classList.remove('starter'); return; }
+        c.classList.toggle('starter', firstReal);
+        firstReal = false;
+      });
+    });
+    saveTeamOrder(teamAbbrev, container);
+  });
 
-  return buildPrestoTables(merged, lat, prv, false);
+  card.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    if (!draggedElement || this === draggedElement) return;
+
+    const isSpacer = this.classList.contains('spacer');
+    const draggedIsSpacer = draggedElement.classList.contains('spacer');
+
+    // If one is spacer and other is player, just highlight — swap happens on drop
+    if (isSpacer !== draggedIsSpacer) {
+      this.classList.add('drag-over');
+      return;
+    }
+
+    // Normal reorder: live preview move
+    const col = this.parentElement;
+    const r = this.getBoundingClientRect();
+    const midY = r.top + r.height / 2;
+    if (e.clientY < midY) {
+      if (draggedElement.nextElementSibling !== this || draggedElement.parentElement !== col) {
+        col.insertBefore(draggedElement, this);
+      }
+    } else {
+      if (this.nextElementSibling !== draggedElement || draggedElement.parentElement !== col) {
+        col.insertBefore(draggedElement, this.nextSibling);
+      }
+    }
+  });
+
+  card.addEventListener('dragleave', function() {
+    this.classList.remove('drag-over');
+  });
+
+  card.addEventListener('drop', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    this.classList.remove('drag-over');
+    if (!draggedElement || this === draggedElement) return;
+
+    const isSpacer = this.classList.contains('spacer');
+    const draggedIsSpacer = draggedElement.classList.contains('spacer');
+
+    // Swap: player <-> spacer
+    if (isSpacer !== draggedIsSpacer) {
+      const placeholder = document.createElement('div');
+      this.parentElement.insertBefore(placeholder, this);
+      draggedElement.parentElement.insertBefore(this, draggedElement);
+      placeholder.parentElement.insertBefore(draggedElement, placeholder);
+      placeholder.remove();
+    }
+  });
 }
 
-function buildPrestoTables(entries, lat, prv, usePurge) {
-  const today = todayISO();
-
-  // Status class helper
-  function sCls(s) { return {Out:'s-out','Left Game':'s-doubt',Doubtful:'s-doubt',Questionable:'s-quest',Probable:'s-prob',Available:'s-avail'}[s]||''; }
-  function sTag(s) { const c = sCls(s); return c ? `<span class="${c}">${s}</span>` : s; }
-  function lImg(t) { const u = teamLogo(t); return u ? `<img src="${u}" width="28" height="28" class="inj-logo">` : ''; }
-
-  // Table 1: Today's Updates
-  const prevDateStatus = {};
-  for (const e of entries) {
-    if (e.date && e.date.length >= 10 && e.date < today) prevDateStatus[e.player] = e.status;
-  }
-  const todayEntries = Object.entries(lat)
-    .filter(([name,e]) => e.date === today && roster[name])
-    .map(([name,e]) => {
-      const r = roster[name] || {};
-      const prev = (e.prevStatus != null) ? e.prevStatus : prevDateStatus[name] || 'Available';
-      return { player:name, status:e.status, injury:e.injury, prevStatus:prev, team:r.team||'', salary:r.salary||0 };
-    })
-    .sort((a,b) => a.team !== b.team ? a.team.localeCompare(b.team) : lastName(a.player).localeCompare(lastName(b.player)));
-
-  let h1 = `<h2>Today's injury updates</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>PLAYER</th><th>STATUS</th><th>INJURY</th><th>PREVIOUS STATUS</th><th>SALARY</th></tr></thead><tbody>\n`;
-  let lt = '';
-  if (!todayEntries.length) h1 += `<tr><td colspan="6">No updates today</td></tr>\n`;
-  todayEntries.forEach(e => {
-    const logo = e.team !== lt ? lImg(e.team) : ''; lt = e.team;
-    h1 += `<tr><td class="logo-col">${logo}</td><td><strong>${e.player}</strong></td><td>${sTag(e.status)}</td><td>${e.injury}</td><td>${e.prevStatus ? sTag(e.prevStatus) : ''}</td><td>${fmtSal(e.salary)}</td></tr>\n`;
-  });
-  h1 += '</tbody></table>';
-
-  // Table 2: Full Report
-  const allInjured = Object.entries(lat)
-    .filter(([name,e]) => e.status !== 'Available' && roster[name])
-    .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
-    .sort((a,b) => a.team !== b.team ? a.team.localeCompare(b.team) : lastName(a.player).localeCompare(lastName(b.player)));
-
-  let h2 = `<h2>Full injury report</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>PLAYER</th><th>SALARY</th><th>STATUS</th><th>INJURY</th><th>DATE</th></tr></thead><tbody>\n`;
-  lt = '';
-  allInjured.forEach(e => {
-    const logo = e.team !== lt ? lImg(e.team) : ''; lt = e.team;
-    h2 += `<tr><td class="logo-col">${logo}</td><td><strong>${e.player}</strong></td><td>${fmtSal(e.salary)}</td><td>${sTag(e.status)}</td><td>${e.injury||''}</td><td>${e.date ? fmtDate(e.date) : ''}</td></tr>\n`;
-  });
-  h2 += '</tbody></table>';
-
-  // Table 3: Salary Per Team
-  const teamInjSal = {};
-  for (const e of allInjured) {
-    if (e.status === 'Out' || e.status === 'Doubtful') teamInjSal[e.team] = (teamInjSal[e.team]||0) + e.salary;
-  }
-  let totalNBASal = 0, totalNBAInj = 0;
-  for (const t of NBA_TEAMS) { totalNBASal += teamSalaries[t]||0; totalNBAInj += teamInjSal[t]||0; }
-  const teamRows = NBA_TEAMS.map(t => ({
-    team:t, injured:teamInjSal[t]||0, total:teamSalaries[t]||0,
-    pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
-  })).sort((a,b) => b.injured - a.injured);
-
-  let h3 = `<h2>Injured salary per team</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>TEAM</th><th>INJURED SALARY</th><th>% SALARY</th></tr></thead><tbody>\n`;
-  teamRows.forEach(r => {
-    h3 += `<tr><td class="logo-col">${lImg(r.team)}</td><td><strong>${r.team}</strong></td><td>${fmtSalFull(r.injured)}</td><td>${r.pct.toFixed(2)}%</td></tr>\n`;
-  });
-  h3 += `<tr class="inj-total"><td class="logo-col"><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" width="28" height="28" class="inj-logo"></td><td>NBA</td><td>${fmtSalFull(totalNBAInj)}</td><td>${totalNBASal?(totalNBAInj/totalNBASal*100).toFixed(2):'0.00'}%</td></tr>\n`;
-  h3 += '</tbody></table>';
-
-  // Table 4: Highest-Paid Injured
-  const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
-  let h4 = `<h2>Highest-paid injured players</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>PLAYER</th><th>SALARY</th><th>DAYS SINCE LAST GAME</th></tr></thead><tbody>\n`;
-  topPaid.forEach(e => {
-    h4 += `<tr><td class="logo-col">${lImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days||''}</td></tr>\n`;
-  });
-  h4 += '</tbody></table>';
-
-  return [h1, h2, h3, h4];
+// =====================================================
+// SPACER MANAGEMENT
+// =====================================================
+function addSpacer(btn) {
+  const col = btn.parentElement;
+  const teamAbbrev = btn.dataset.team;
+  const spacer = document.createElement('div');
+  spacer.className = 'admin-player-card spacer';
+  spacer.draggable = true;
+  spacer.dataset.player = '__SPACER__';
+  spacer.innerHTML = '<div><div class="admin-player-name" style="color:#666;">— blank —</div><div class="admin-trade-value" style="visibility:hidden;">&nbsp;</div></div><button class="spacer-delete" onclick="removeSpacer(this)" title="Remove spacer">✕</button>';
+  col.insertBefore(spacer, btn);
+  // Attach drag events to new spacer
+  const chart = col.closest('.admin-depth-chart');
+  attachCardDrag(spacer, chart, teamAbbrev);
+  saveTeamOrder(teamAbbrev, chart);
 }
 
-const PRESTO_CSS = '<style>\n'
-+ '.inj-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}\n'
-+ '.inj-wrap h2{font-size:22px;font-weight:700;margin-bottom:10px;font-family:Arial,sans-serif}\n'
-+ '.inj-tbl{border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%}\n'
-+ '.inj-tbl thead tr{background:#f2f2f2}\n'
-+ '.inj-tbl th{border:1px solid #ccc;padding:4px;text-align:center;height:36px}\n'
-+ '.inj-tbl th.logo-col{width:36px;min-width:36px}\n'
-+ '.inj-tbl td{border:1px solid #eee;padding:4px;text-align:center;height:40px}\n'
-+ '.inj-tbl td.logo-col{width:36px;min-width:36px}\n'
-+ '.inj-tbl tbody tr:nth-child(odd){background:#fff}\n'
-+ '.inj-tbl tbody tr:nth-child(even){background:#f9f9f9}\n'
-+ '.inj-tbl tbody tr.inj-total{background:#222;color:#fff;font-weight:700}\n'
-+ '.inj-logo{vertical-align:middle}\n'
-+ '.s-avail{color:#10b981;font-weight:700;white-space:nowrap}\n'
-+ '.s-prob{color:#22c55e;font-weight:700;white-space:nowrap}\n'
-+ '.s-quest{color:#eab308;font-weight:700;white-space:nowrap}\n'
-+ '.s-doubt{color:#f97316;font-weight:700;white-space:nowrap}\n'
-+ '.s-out{color:#ef4444;font-weight:700;white-space:nowrap}\n'
+function removeSpacer(deleteBtn) {
+  const spacer = deleteBtn.parentElement;
+  const chart = spacer.closest('.admin-depth-chart');
+  const teamAbbrev = chart.dataset.team;
+  spacer.remove();
+  saveTeamOrder(teamAbbrev, chart);
+}
+
+function attachCardDrag(card, container, teamAbbrev) {
+  makeDraggable(card, container, teamAbbrev, '.admin-player-card', '.admin-position-column');
+}
+
+// =====================================================
+// EXPORT HTML — shared generator
+// =====================================================
+const DC_PRESTO_CSS = '<style>\n'
++ '.dc-wrap{font-family:sans-serif;max-width:800px;margin:0 auto;overflow-x:auto;font-size:16px;text-align:center}\n'
++ '.dc-wrap .dc-team{text-align:center;font-size:1.2em;margin-bottom:.5em}\n'
++ '.dc-tbl{width:100%;text-align:center;border-collapse:collapse;font-size:12px}\n'
++ '.dc-tbl th,.dc-tbl td{border:none;padding:4px;text-align:center}\n'
++ '.dc-tbl tr.dc-hdr{background-color:#f2f2f2}\n'
++ '.dc-tbl tr.dc-hs-row{background-color:#fff}\n'
++ '.dc-tbl tr.dc-data{background-color:#f2f2f2}\n'
++ '.dc-tbl .dc-hs-img{display:block;width:80px;height:80px;object-fit:cover;margin:0 auto}\n'
++ '.dc-tbl .c-10day{background-color:yellow}\n'
++ '.dc-tbl .c-2way{background-color:#e1bee7}\n'
++ '.dc-tbl .c-inj{background-color:lightcoral}\n'
++ '.dc-tbl .c-quest{background-color:#f5b7b1}\n'
 + '<' + '/style>';
 
-function copyPrestoHTML(btn) {
-  const sections = buildPrestoHTML();
-  const html = `${PRESTO_CSS}\n\n<div class="inj-wrap">\n\n${sections.join('\n\n<br>\n\n')}\n\n</div>`;
-  navigator.clipboard.writeText(html).then(() => {
-    const orig = btn.textContent;
-    btn.textContent = '✓ Copied!'; btn.classList.add('success');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
-  });
-}
+function generateExportHTML(teamOrders, withHeadshots, startIdx, endIdx) {
+  const positions = ['PG','SG','SF','PF','C'];
+  const playerMap = {}; allPlayers.forEach(p => playerMap[p.name] = p);
 
-// ==========================================
-// REPORT MODE (non-admin)
-// ==========================================
-let sectionsHTML = [];
-let purgeActive = false;
-
-async function initReport() {
-  try {
-    const { prev } = await loadData();
-    buildReportSections(prev);
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('preview').style.display = 'block';
-    showTab(-1, document.querySelector('.tab-bar button.active'));
-  } catch(e) {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('error').style.display = 'block';
-    document.getElementById('error').textContent = 'Error: ' + e.message;
+  function cCls(p) {
+    if (!p) return '';
+    if (p.contractStatus === '10-DAY') return ' class="c-10day"';
+    if (p.colorCode === 'twoway') return ' class="c-2way"';
+    if (p.colorCode === 'injured' || p.colorCode === 'doubtful') return ' class="c-inj"';
+    if (p.colorCode === 'questionable') return ' class="c-quest"';
+    return '';
   }
+
+  let out = '<div class="dc-wrap">';
+  const teamsSlice = NBA_TEAMS.slice(startIdx, endIdx);
+  for (const team of teamsSlice) {
+    const order = teamOrders[team.abbrev];
+    if (!order) continue;
+    const posCols = {}; let maxRows = 0;
+    positions.forEach(pos => {
+      const names = order[pos]||[];
+      posCols[pos] = names.map(n => n === '__SPACER__' ? null : (playerMap[n]||null));
+      if (posCols[pos].length > maxRows) maxRows = posCols[pos].length;
+    });
+    while (maxRows > 0) {
+      const row = positions.map(pos => posCols[pos][maxRows-1] || null);
+      if (row.some(p => p !== null)) break;
+      maxRows--;
+    }
+    if (maxRows < 1) maxRows = 1;
+
+    out += `<div class="dc-team"><strong>${team.name.toUpperCase()}</strong></div>`;
+    out += `<table class="dc-tbl"><tbody>`;
+    out += `<tr class="dc-hdr">`;
+    positions.forEach(pos => { out += `<th>${pos}</th>`; });
+    out += `</tr>`;
+
+    for (let r = 0; r < maxRows; r++) {
+      const rp = positions.map(pos => posCols[pos][r] || null);
+      if (!rp.some(p => p !== null)) continue;
+      if (withHeadshots) {
+        out += `<tr class="dc-hs-row">`;
+        rp.forEach(p => {
+          out += p && p.headshot ? `<td><img src="${p.headshot}" class="dc-hs-img"/></td>` : `<td></td>`;
+        });
+        out += `</tr>`;
+      }
+      out += `<tr class="dc-data">`;
+      rp.forEach(p => { out += `<td${cCls(p)}>${p ? `<strong>${p.name}</strong>` : ''}</td>`; });
+      out += `</tr>`;
+      out += `<tr class="dc-data">`;
+      rp.forEach(p => { out += `<td${cCls(p)}>${p ? fmtSalFull(p.salary) : ''}</td>`; });
+      out += `</tr>`;
+    }
+    out += `</tbody></table><br>`;
+  }
+  out += '</div>';
+  return out;
 }
 
-function buildReportSections(prev) {
-  const lat = {};
-  for (const e of jsonEntries) { lat[e.player] = e; }
-  sectionsHTML = buildPrestoTables(jsonEntries, lat, prev, purgeActive);
+function exportHTML(withHeadshots, startIdx, endIdx) {
+  // Read order from DOM
+  const teamOrders = {};
+  document.querySelectorAll('.admin-depth-chart').forEach(chart => {
+    const ta = chart.dataset.team; const order = {};
+    chart.querySelectorAll('.admin-position-column').forEach(col => {
+      const pos = col.dataset.position; if (!pos) return; order[pos] = [];
+      col.querySelectorAll('.admin-player-card').forEach(card => {
+        if (card.dataset.player === '__SPACER__') order[pos].push('__SPACER__');
+        else if (card.dataset.player) order[pos].push(card.dataset.player);
+      });
+    });
+    teamOrders[ta] = order;
+  });
+
+  const out = DC_PRESTO_CSS + '\n\n' + generateExportHTML(teamOrders, withHeadshots, startIdx, endIdx);
+  const teamsSlice = NBA_TEAMS.slice(startIdx, endIdx);
+  const firstTeam = teamsSlice[0]?.abbrev || '?';
+  const lastTeam = teamsSlice[teamsSlice.length-1]?.abbrev || '?';
+  const blockLabel = `${firstTeam}–${lastTeam}`;
+  const modeLabel = withHeadshots ? '📷 Headshots' : '📋 Compact';
+  const sizeKB = (new Blob([out]).size / 1024).toFixed(1);
+  document.getElementById('exportCode').value = out;
+  document.getElementById('exportModalTitle').textContent = `${modeLabel} — ${blockLabel} (${teamsSlice.length} teams, ${sizeKB} KB)`;
+  document.getElementById('exportModal').classList.add('active');
 }
 
-function showTab(idx, btn) {
-  document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  // No preview render — data stays in memory for copy buttons only
-  document.getElementById('preview').innerHTML = '<p style="color:#888;text-align:center;padding:2rem;">Preview disabled for performance. Use the copy buttons above.</p>';
-}
-
-function copyToClipboard(html, btn) {
+// =====================================================
+// SAVE ORDER JSON (for GitHub Pages export)
+// =====================================================
+function downloadOrderJSON() {
+  // Force immediate push to GitHub
+  const orders = loadAllOrders();
+  const btn = event.target;
   const orig = btn.textContent;
-  const w = `${PRESTO_CSS}\n\n<div class="inj-wrap">\n${html}\n</div>`;
-  navigator.clipboard.writeText(w).then(() => {
-    btn.textContent = '✓ Copied!'; btn.classList.add('success');
-    setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  btn.textContent = '⏳ Pushing...';
+  btn.disabled = true;
+  pushToGitHub(orders).then(() => {
+    btn.textContent = '✓ Pushed!';
+    btn.style.background = '#16a34a'; btn.style.color = 'white';
+    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; }, 2000);
   });
 }
-function copyAll(btn) { copyToClipboard(sectionsHTML.join('\n<br>\n'), btn); }
-function copySection(idx, btn) { if (sectionsHTML[idx]) copyToClipboard(sectionsHTML[idx], btn); }
 
-async function refreshReport(btn) {
-  const o = btn.textContent; btn.textContent = '⏳ Refreshing...'; btn.disabled = true;
+// =====================================================
+// EXPORT RENDER MODE (for iframe embed in Presto)
+// ?export=1 → first half, ?export=2 → second half
+// ?headshots=0 → compact (default: headshots on)
+// =====================================================
+async function renderExportView(exportParam, withHeadshots) {
+  // Replace entire page with clean white canvas
+  document.body.style.cssText = 'background:white;margin:0;padding:0;color:#1a1a2e;';
+  document.querySelector('.container').style.display = 'none';
+  document.getElementById('adminBanner').style.display = 'none';
+
+  const statusEl = document.getElementById('loading');
+  statusEl.style.display = 'block';
+  statusEl.style.color = '#333';
+  statusEl.querySelector('p').textContent = 'Loading depth charts...';
+  statusEl.querySelector('.loading-spinner').style.borderTopColor = '#667eea';
+
   try {
-    const { prev } = await loadData();
-    buildReportSections(prev);
-    showTab(-1, document.querySelector('.tab-bar button.active'));
-  } catch(e) {}
-  btn.textContent = '✓ Updated!'; btn.classList.add('success');
-  setTimeout(() => { btn.textContent = o; btn.classList.remove('success'); btn.disabled = false; }, 2000);
+    const orderURL = new URL('order.json', window.location.href.split('?')[0]).href;
+    const [tvR, rR, oR] = await Promise.all([
+      fetch(TV_CSV_URL), fetch(ROSTER_CSV_URL), fetch(orderURL)
+    ]);
+    if (!tvR.ok || !rR.ok) throw new Error('Failed to fetch player data');
+    if (!oR.ok) throw new Error('order.json not found — save your order from admin mode first');
+
+    const [tvText, rText, orderData] = await Promise.all([tvR.text(), rR.text(), oR.json()]);
+    tradeValueMap = computeTradeValues(tvText);
+    allPlayers = parseRosterCSV(rText);
+    try { const ijR = await fetch(INJURIES_JSON_URL + '?t=' + Date.now()); if (ijR.ok) applyInjuriesJSON(await ijR.json()); } catch(e) {}
+
+    let startIdx, endIdx;
+    if (exportParam === '2') { startIdx = 15; endIdx = 30; }
+    else if (exportParam === 'all') { startIdx = 0; endIdx = 30; }
+    else { startIdx = 0; endIdx = 15; }
+
+    const html = generateExportHTML(orderData, withHeadshots, startIdx, endIdx);
+
+    statusEl.style.display = 'none';
+    // Inject the DC export CSS into page
+    const cssEl = document.createElement('style');
+    cssEl.textContent = DC_PRESTO_CSS.replace(/<\/?style>/g, '');
+    document.head.appendChild(cssEl);
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = html;
+    document.body.appendChild(wrapper);
+
+    // Fix mobile scroll: prevent horizontal scroll capture from blocking vertical scroll
+    const style = document.createElement('style');
+    style.textContent = '* { touch-action: pan-y !important; } div { overflow-x: visible !important; }';
+    document.head.appendChild(style);
+
+    // Auto-resize iframe if embedded
+    function notifyHeight() {
+      const h = document.body.scrollHeight;
+      window.parent.postMessage({type:'resize', height: h}, '*');
+    }
+    notifyHeight();
+    // Re-check after images load
+    window.addEventListener('load', notifyHeight);
+    setTimeout(notifyHeight, 3000);
+  } catch (err) {
+    console.error('Export render error:', err);
+    statusEl.style.display = 'none';
+    const errDiv = document.createElement('div');
+    errDiv.style.cssText = 'text-align:center;padding:2rem;color:#c00;font-family:sans-serif;';
+    errDiv.textContent = 'Error: ' + err.message;
+    document.body.appendChild(errDiv);
+  }
 }
 
-function togglePurge(btn) {
-  purgeActive = !purgeActive;
-  btn.classList.toggle('active', purgeActive);
-  btn.style.background = purgeActive ? 'rgba(239,68,68,0.2)' : '';
-  const prv = {};
-  const lat = {};
-  for (const e of jsonEntries) {
-    if (lat[e.player]) prv[e.player] = lat[e.player];
-    lat[e.player] = e;
-  }
-  buildReportSections(prv);
-  showTab(-1, document.querySelector('.tab-bar button.active'));
+function copyExportDirect(withHeadshots, startIdx, endIdx) {
+  const teamOrders = {};
+  document.querySelectorAll('.admin-depth-chart').forEach(chart => {
+    const ta = chart.dataset.team; const order = {};
+    chart.querySelectorAll('.admin-position-column').forEach(col => {
+      const pos = col.dataset.position; if (!pos) return; order[pos] = [];
+      col.querySelectorAll('.admin-player-card').forEach(card => {
+        if (card.dataset.player === '__SPACER__') order[pos].push('__SPACER__');
+        else if (card.dataset.player) order[pos].push(card.dataset.player);
+      });
+    });
+    teamOrders[ta] = order;
+  });
+  const out = DC_PRESTO_CSS + '\n\n' + generateExportHTML(teamOrders, withHeadshots, startIdx, endIdx);
+  const btn = event.target.closest('.export-btn');
+  const orig = btn.textContent;
+  const blob = new Blob([out], {type: 'text/plain'});
+  navigator.clipboard.write([new ClipboardItem({'text/plain': blob})]).then(() => {
+    btn.textContent = '✓ Copied!';
+    btn.style.background = '#16a34a'; btn.style.color = 'white';
+    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.style.color = ''; }, 2000);
+  }).catch(() => {
+    // Fallback
+    const ta = document.createElement('textarea');
+    ta.value = out; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => btn.textContent = orig, 2000);
+  });
 }
+
+function copyExportCode() {
+  const text = document.getElementById('exportCode').value;
+  // Force plain text only — no HTML clipboard metadata
+  const blob = new Blob([text], {type: 'text/plain'});
+  navigator.clipboard.write([new ClipboardItem({'text/plain': blob})]).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '📋 Copy to Clipboard'; btn.classList.remove('copied'); }, 2000);
+  }).catch(() => {
+    // Fallback
+    const ta = document.getElementById('exportCode');
+    ta.select(); ta.setSelectionRange(0, ta.value.length);
+    document.execCommand('copy');
+  });
+}
+
+function downloadExportCode() {
+  const text = document.getElementById('exportCode').value;
+  const blob = new Blob([text], {type: 'text/plain'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'depth-charts-export.txt';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+}
+
+function closeExportModal() { document.getElementById('exportModal').classList.remove('active'); }
+
+// =====================================================
+// AUTO-REFRESH DATA (updates cards in-place, preserves order)
+// =====================================================
+async function autoRefreshData() {
+  try {
+    const [tvR, rR] = await Promise.all([fetch(TV_CSV_URL), fetch(ROSTER_CSV_URL)]);
+    if (!tvR.ok || !rR.ok) return;
+    const [tvText, rText] = await Promise.all([tvR.text(), rR.text()]);
+    tradeValueMap = computeTradeValues(tvText);
+    allPlayers = parseRosterCSV(rText);
+    try { const ijR = await fetch(INJURIES_JSON_URL + '?t=' + Date.now()); if (ijR.ok) applyInjuriesJSON(await ijR.json()); } catch(e) {}
+    // Full re-render to move players between healthy/injured sections
+    renderAdminAllTeams();
+    const el = document.getElementById('refreshStatus');
+    if (el) {
+      const t = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+      el.textContent = `Updated ${t}`;
+      el.style.opacity = '1';
+      setTimeout(() => el.style.opacity = '0.7', 2000);
+    }
+  } catch (e) {
+    console.warn('Auto-refresh failed:', e);
+  }
+}
+
+async function manualRefresh(btn) {
+  const orig = btn.textContent;
+  btn.textContent = '⏳ Refreshing...';
+  btn.disabled = true;
+  try {
+    const [tvR, rR] = await Promise.all([fetch(TV_CSV_URL), fetch(ROSTER_CSV_URL)]);
+    if (!tvR.ok || !rR.ok) throw new Error('Fetch failed');
+    const [tvText, rText] = await Promise.all([tvR.text(), rR.text()]);
+    tradeValueMap = computeTradeValues(tvText);
+    allPlayers = parseRosterCSV(rText);
+    try { const ijR = await fetch(INJURIES_JSON_URL + '?t=' + Date.now()); if (ijR.ok) applyInjuriesJSON(await ijR.json()); } catch(e) {}
+    // Full re-render preserving saved orders
+    renderAdminAllTeams();
+    const el = document.getElementById('refreshStatus');
+    const t = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+    if (el) { el.textContent = `Updated ${t}`; el.style.opacity = '1'; setTimeout(() => el.style.opacity = '0.7', 2000); }
+  } catch(e) { console.warn('Refresh failed:', e); }
+  btn.textContent = '✓ Updated!';
+  btn.style.background = '#16a34a'; btn.style.color = 'white';
+  setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; }, 2000);
+}
+
+// =====================================================
+// INIT
+// =====================================================
+async function init() {
+  const params = new URLSearchParams(window.location.search);
+  const exportParam = params.get('export');
+  const teamParam = params.get('team')?.toUpperCase();
+  const adminParam = params.get('admin');
+  isAdmin = (adminParam === ADMIN_KEY);
+
+  // Export render mode — iframe-friendly, no UI
+  if (exportParam) {
+    const withHeadshots = params.get('headshots') !== '0';
+    return renderExportView(exportParam, withHeadshots);
+  }
+
+  try {
+    // Fetch player data + order.json from GitHub in parallel
+    const fetches = [fetch(TV_CSV_URL), fetch(ROSTER_CSV_URL), fetchFromGitHub()];
+    const [tvR, rR, ghOrders] = await Promise.all(fetches);
+    if (!tvR.ok || !rR.ok) throw new Error('Failed to fetch data');
+    const [tvText, rText] = await Promise.all([tvR.text(), rR.text()]);
+    tradeValueMap = computeTradeValues(tvText);
+    allPlayers = parseRosterCSV(rText);
+    try { const ijR = await fetch(INJURIES_JSON_URL + '?t=' + Date.now()); if (ijR.ok) applyInjuriesJSON(await ijR.json()); } catch(e) { console.warn('Injuries JSON unavailable:', e); }
+    document.getElementById('loading').style.display = 'none';
+    if (isAdmin && !teamParam) {
+      renderAdminAllTeams();
+      setInterval(autoRefreshData, 60000);
+    }
+    else if (teamParam && NBA_TEAMS.some(t=>t.abbrev===teamParam)) renderDepthChart(teamParam);
+    else renderTeamGrid();
+  } catch (err) {
+    console.error('Error:', err);
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').textContent = 'Error loading data. Please refresh.';
+    document.getElementById('error').style.display = 'block';
+  }
+}
+init();
 </script>
 </body>
 </html>
