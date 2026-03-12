@@ -9675,5 +9675,12 @@
     "injury": "Right Patella Tendonitis",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Out",
+    "injury": "Left Quadriceps Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
