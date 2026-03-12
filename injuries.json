@@ -9528,5 +9528,12 @@
     "injury": "Lower Back and Neck Soreness",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-12",
+    "prevStatus": "Available"
   }
 ]
