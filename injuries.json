@@ -9339,5 +9339,12 @@
     "injury": "Left Groin Strain",
     "date": "2026-03-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Questionable",
+    "injury": "Left Quadriceps Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Out"
   }
 ]
