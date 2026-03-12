@@ -9437,5 +9437,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-03-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
