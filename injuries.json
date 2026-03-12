@@ -9199,5 +9199,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-11",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-11",
+    "prevStatus": "Probable"
   }
 ]
