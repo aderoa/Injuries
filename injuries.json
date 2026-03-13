@@ -10284,5 +10284,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Available",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
