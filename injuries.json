@@ -10683,5 +10683,12 @@
     "injury": "Low Back and Neck Soreness",
     "date": "2026-03-13",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Probable"
   }
 ]
