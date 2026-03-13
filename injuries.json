@@ -10655,5 +10655,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-03-13",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Quenton Jackson",
+    "status": "Out",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-13",
+    "prevStatus": "Doubtful"
   }
 ]
