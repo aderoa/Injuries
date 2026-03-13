@@ -10592,5 +10592,12 @@
     "injury": "Right Knee Synovitis",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dyson Daniels",
+    "status": "Available",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
