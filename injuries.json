@@ -10081,5 +10081,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trae Young",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Left Game"
   }
 ]
