@@ -10494,5 +10494,12 @@
     "injury": "Right Foot ",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sharife Cooper",
+    "status": "Questionable",
+    "injury": "Right Foot Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
