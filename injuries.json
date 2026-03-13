@@ -9731,5 +9731,12 @@
     "injury": "Right Hamstring Injury",
     "date": "2026-03-12",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-03-12",
+    "prevStatus": "Out"
   }
 ]
