@@ -10277,5 +10277,12 @@
     "injury": "Return to Competition Reconditioning",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
