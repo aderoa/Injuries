@@ -9766,5 +9766,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-12",
+    "prevStatus": "Probable"
   }
 ]
