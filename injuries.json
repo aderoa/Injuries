@@ -10137,5 +10137,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
