@@ -9780,5 +9780,19 @@
     "injury": "Right Knee Contusion",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Harrison Barnes",
+    "status": "Available",
+    "injury": "Left Ankle Impingement",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lindy Waters III",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
