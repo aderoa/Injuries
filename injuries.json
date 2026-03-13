@@ -10711,5 +10711,19 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-13",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jeremy Sochan",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-13",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Out",
+    "injury": "Bilateral Knee Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Doubtful"
   }
 ]
