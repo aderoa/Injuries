@@ -10739,5 +10739,12 @@
     "injury": "Left Foot Soreness",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Doubtful"
   }
 ]
