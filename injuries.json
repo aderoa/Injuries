@@ -10179,5 +10179,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Probable",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
