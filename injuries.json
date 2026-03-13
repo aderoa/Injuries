@@ -9927,5 +9927,12 @@
     "injury": "Left Fibular Head Contusion",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Available",
+    "injury": "Right Hip Contusion / Left Foot Arthitis",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
