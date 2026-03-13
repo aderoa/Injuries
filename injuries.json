@@ -10389,5 +10389,12 @@
     "injury": "Left Fibular Head Contusion",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
