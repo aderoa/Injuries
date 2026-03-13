@@ -9801,5 +9801,12 @@
     "injury": "Illness",
     "date": "2026-03-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Lindy Waters III",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
