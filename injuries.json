@@ -9738,5 +9738,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-03-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Yanic Konan Niederhauser",
+    "status": "Out",
+    "injury": "Right Lisfranc Ligament Tear",
+    "date": "2026-03-05",
+    "prevStatus": "Out"
   }
 ]
