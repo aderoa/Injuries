@@ -10298,5 +10298,12 @@
     "injury": "Right Shoulder Contusionj",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
