@@ -10690,5 +10690,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-13",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Ivica Zubac",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
