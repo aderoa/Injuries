@@ -10312,5 +10312,12 @@
     "injury": "Rest",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
