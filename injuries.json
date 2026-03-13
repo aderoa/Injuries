@@ -10634,5 +10634,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
