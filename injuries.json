@@ -10697,5 +10697,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Low Back and Neck Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Probable"
   }
 ]
