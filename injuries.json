@@ -10725,5 +10725,12 @@
     "injury": "Bilateral Knee Soreness",
     "date": "2026-03-13",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-03-13",
+    "prevStatus": "Doubtful"
   }
 ]
