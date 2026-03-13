@@ -9857,5 +9857,12 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-03-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Doubtful",
+    "injury": "Left Calf Strain",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
   }
 ]
