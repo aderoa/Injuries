@@ -10627,5 +10627,12 @@
     "injury": "",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dru Smith",
+    "status": "Probable",
+    "injury": "Right Hip Contusion",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
