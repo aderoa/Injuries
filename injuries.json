@@ -10536,5 +10536,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Probable"
   }
 ]
