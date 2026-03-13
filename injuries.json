@@ -10529,5 +10529,12 @@
     "injury": "Right Achilles Injury Reconditioning",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Probable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
