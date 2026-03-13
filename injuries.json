@@ -10669,5 +10669,19 @@
     "injury": "Right Hamstring Soreness",
     "date": "2026-03-13",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Probable",
+    "injury": "Low Back and Neck Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Low Back and Neck Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Probable"
   }
 ]
