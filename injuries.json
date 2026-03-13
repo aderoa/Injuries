@@ -10354,5 +10354,12 @@
     "injury": "",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Doubtful",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
