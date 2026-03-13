@@ -10221,5 +10221,19 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Doubtful",
+    "injury": "Bilateral Knee Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Doubtful",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
