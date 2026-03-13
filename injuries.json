@@ -10256,5 +10256,12 @@
     "injury": "Left Calf Injury Management",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Doubtful",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
