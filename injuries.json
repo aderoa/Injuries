@@ -10109,5 +10109,12 @@
     "injury": "Q",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Questionable",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
