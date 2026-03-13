@@ -9899,5 +9899,26 @@
     "injury": "Left Calf Strain",
     "date": "2026-03-12",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-03-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-12",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Out",
+    "injury": "Left Foot Soreness",
+    "date": "2026-03-12",
+    "prevStatus": "Doubtful"
   }
 ]
