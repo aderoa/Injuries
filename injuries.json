@@ -10165,5 +10165,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jeremy Sochan",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
