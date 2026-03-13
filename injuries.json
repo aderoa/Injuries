@@ -10599,5 +10599,12 @@
     "injury": "Left Great Toe Sprain",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
