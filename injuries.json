@@ -10564,5 +10564,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
