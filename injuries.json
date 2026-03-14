@@ -10963,5 +10963,12 @@
     "injury": "Right Calf Contusion",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
