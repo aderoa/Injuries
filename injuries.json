@@ -11292,5 +11292,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-14",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Available",
+    "injury": "Back Soreness",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
   }
 ]
