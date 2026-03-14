@@ -11355,5 +11355,12 @@
     "injury": "Right Knee Synovitis",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Out",
+    "injury": "Left Adductor Strain",
+    "date": "2026-03-14",
+    "prevStatus": "Left Game"
   }
 ]
