@@ -11551,5 +11551,19 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-03-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Baylor Scheierman",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-14",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-03-14",
+    "prevStatus": "Probable"
   }
 ]
