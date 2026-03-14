@@ -11726,5 +11726,12 @@
     "injury": "Ilness",
     "date": "2026-03-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaime Jaquez",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-14",
+    "prevStatus": "Available"
   }
 ]
