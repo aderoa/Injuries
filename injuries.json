@@ -11341,5 +11341,19 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ousmane Dieng",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Porter",
+    "status": "Available",
+    "injury": "Right Knee Synovitis",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
   }
 ]
