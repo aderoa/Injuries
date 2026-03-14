@@ -10970,5 +10970,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Probable",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
