@@ -11299,5 +11299,12 @@
     "injury": "Back Soreness",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andre Drummond",
+    "status": "Out",
+    "injury": "Back Spasms",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
   }
 ]
