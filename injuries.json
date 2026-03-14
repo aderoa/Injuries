@@ -10879,5 +10879,12 @@
     "injury": "Left Adductor Injury Management",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Available",
+    "injury": "Bilateral Foot Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
