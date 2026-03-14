@@ -11516,5 +11516,12 @@
     "injury": "Rest",
     "date": "2026-03-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-03-14",
+    "prevStatus": "Out"
   }
 ]
