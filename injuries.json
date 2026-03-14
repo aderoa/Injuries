@@ -11684,5 +11684,12 @@
     "injury": "Right Calf Contusion",
     "date": "2026-03-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-14",
+    "prevStatus": "Available"
   }
 ]
