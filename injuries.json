@@ -11313,5 +11313,12 @@
     "injury": "Illness",
     "date": "2026-03-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ochai Agbaji",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-14",
+    "prevStatus": "Probable"
   }
 ]
