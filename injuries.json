@@ -11502,5 +11502,12 @@
     "injury": "Illness",
     "date": "2026-03-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Available",
+    "injury": "Bilateral Knee Soreness",
+    "date": "2026-03-14",
+    "prevStatus": "Out"
   }
 ]
