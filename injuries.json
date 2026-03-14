@@ -11586,5 +11586,12 @@
     "injury": "Left Foot Jones Fracture Surgery",
     "date": "2026-03-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-14",
+    "prevStatus": "Available"
   }
 ]
