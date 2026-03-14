@@ -11446,5 +11446,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sharife Cooper",
+    "status": "Available",
+    "injury": "Right Foot Sprain",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
   }
 ]
