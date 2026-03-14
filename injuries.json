@@ -10760,5 +10760,12 @@
     "injury": "",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Left Game",
+    "injury": "Right Calf Tightness",
+    "date": "2026-03-13",
+    "prevStatus": "Left Game"
   }
 ]
