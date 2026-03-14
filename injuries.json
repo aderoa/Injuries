@@ -11418,5 +11418,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-14",
+    "prevStatus": "Probable"
   }
 ]
