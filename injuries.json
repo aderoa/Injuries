@@ -11054,5 +11054,12 @@
     "injury": "",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Left Game",
+    "injury": "Left Adductor Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
