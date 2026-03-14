@@ -11628,5 +11628,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Branden Carlson",
+    "status": "Available",
+    "injury": "Low Back Strain",
+    "date": "2026-03-14",
+    "prevStatus": "Out"
   }
 ]
