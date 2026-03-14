@@ -11040,5 +11040,12 @@
     "injury": "Concussion",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Left Game",
+    "injury": "Concussion Symptoms",
+    "date": "2026-03-13",
+    "prevStatus": "Left Game"
   }
 ]
