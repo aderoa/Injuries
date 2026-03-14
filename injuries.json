@@ -10921,5 +10921,12 @@
     "injury": "Left Foot Soreness",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
