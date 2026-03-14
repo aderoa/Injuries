@@ -10977,5 +10977,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
