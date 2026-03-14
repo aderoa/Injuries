@@ -11649,5 +11649,12 @@
     "injury": "Low Back Strain",
     "date": "",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Questionable",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-14",
+    "prevStatus": "Out"
   }
 ]
