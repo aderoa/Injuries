@@ -10767,5 +10767,12 @@
     "injury": "Right Calf Tightness",
     "date": "2026-03-13",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Out",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
