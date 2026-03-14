@@ -10823,5 +10823,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
