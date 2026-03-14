@@ -10865,5 +10865,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Out",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
