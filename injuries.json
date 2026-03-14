@@ -11061,5 +11061,12 @@
     "injury": "Left Adductor Soreness",
     "date": "2026-03-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Left Game",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
