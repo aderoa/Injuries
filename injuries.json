@@ -10851,5 +10851,19 @@
     "injury": "Low Back Pain",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Available",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
