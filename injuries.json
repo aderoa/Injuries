@@ -11334,5 +11334,12 @@
     "injury": "Right Groin Strain",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Out",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
   }
 ]
