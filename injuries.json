@@ -11320,5 +11320,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-03-14",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Available",
+    "injury": "Left Quadriceps Soreness",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
   }
 ]
