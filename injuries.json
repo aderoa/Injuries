@@ -11453,5 +11453,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Available",
+    "injury": "Back Soreness",
+    "date": "2026-03-14",
+    "prevStatus": "Probable"
   }
 ]
