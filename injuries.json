@@ -11327,5 +11327,12 @@
     "injury": "Left Quadriceps Soreness",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Available",
+    "injury": "Right Groin Strain",
+    "date": "2026-03-14",
+    "prevStatus": "Questionable"
   }
 ]
