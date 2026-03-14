@@ -10928,5 +10928,19 @@
     "injury": "Illness",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Coby White",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
