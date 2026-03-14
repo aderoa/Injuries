@@ -10809,5 +10809,19 @@
     "injury": "Right Shoulder Contusionj",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Out",
+    "injury": "Left Hip Soreness",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
