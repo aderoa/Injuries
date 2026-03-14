@@ -10802,5 +10802,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Wells",
+    "status": "Out",
+    "injury": "Right Shoulder Contusionj",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
