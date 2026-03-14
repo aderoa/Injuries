@@ -11600,5 +11600,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-03-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Out",
+    "injury": "Rigth ",
+    "date": "2026-03-14",
+    "prevStatus": "Available"
   }
 ]
