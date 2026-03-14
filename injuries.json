@@ -11033,5 +11033,12 @@
     "injury": "Right Quadriceps Contusion",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Left Game",
+    "injury": "Concussion",
+    "date": "2026-03-13",
+    "prevStatus": "Available"
   }
 ]
