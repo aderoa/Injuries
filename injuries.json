@@ -10781,5 +10781,19 @@
     "injury": "Left Finger Sprain",
     "date": "2026-03-13",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Available",
+    "injury": "Return to Competition Reconditioning",
+    "date": "2026-03-13",
+    "prevStatus": "Questionable"
   }
 ]
