@@ -11425,5 +11425,12 @@
     "injury": "Illness",
     "date": "2026-03-14",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Coby White",
+    "status": "Available",
+    "injury": "Right Heel Contusion",
+    "date": "2026-03-14",
+    "prevStatus": "Probable"
   }
 ]
