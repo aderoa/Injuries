@@ -11005,5 +11005,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-03-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dylan Cardwell",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
