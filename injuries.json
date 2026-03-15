@@ -11943,5 +11943,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Probable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
   }
 ]
