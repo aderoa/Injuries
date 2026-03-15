@@ -12349,5 +12349,12 @@
     "injury": "Right Shoulder Contusionj",
     "date": "2026-03-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Questionable",
+    "injury": "Low Back Pain",
+    "date": "2026-03-15",
+    "prevStatus": "Out"
   }
 ]
