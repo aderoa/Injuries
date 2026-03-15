@@ -12041,5 +12041,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dalen Terry",
+    "status": "Questionable",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
   }
 ]
