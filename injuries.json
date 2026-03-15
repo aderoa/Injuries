@@ -11999,5 +11999,12 @@
     "injury": "Right Patella Tendonitis",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Probable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
   }
 ]
