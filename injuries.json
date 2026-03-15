@@ -12146,5 +12146,19 @@
     "injury": "Right Calf Contusion",
     "date": "2026-03-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Out",
+    "injury": "Right Knee Sprain",
+    "date": "2026-03-15",
+    "prevStatus": "Doubtful"
   }
 ]
