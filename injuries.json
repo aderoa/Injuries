@@ -12216,5 +12216,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dalen Terry",
+    "status": "Out",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
   }
 ]
