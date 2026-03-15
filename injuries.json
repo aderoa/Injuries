@@ -12279,5 +12279,12 @@
     "injury": "Left Achilles Soreness",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Drake Powell",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-15",
+    "prevStatus": "Out"
   }
 ]
