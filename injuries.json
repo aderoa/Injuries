@@ -12055,5 +12055,12 @@
     "injury": "Ilness",
     "date": "2026-03-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-15",
+    "prevStatus": "Out"
   }
 ]
