@@ -11789,5 +11789,12 @@
     "injury": "",
     "date": "2026-03-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Left Game",
+    "injury": "Left Ankle Injury",
+    "date": "2026-03-14",
+    "prevStatus": "Available"
   }
 ]
