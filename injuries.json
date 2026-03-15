@@ -12363,5 +12363,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
   }
 ]
