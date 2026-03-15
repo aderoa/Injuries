@@ -12377,5 +12377,12 @@
     "injury": "Illness",
     "date": "2026-03-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
   }
 ]
