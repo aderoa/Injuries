@@ -12076,5 +12076,19 @@
     "injury": "Illness",
     "date": "2026-03-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Available",
+    "injury": "Back Strain",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Available",
+    "injury": "Right Patella Tendonitis",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
   }
 ]
