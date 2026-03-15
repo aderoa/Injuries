@@ -12356,5 +12356,12 @@
     "injury": "Low Back Pain",
     "date": "2026-03-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
   }
 ]
