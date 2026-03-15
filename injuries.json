@@ -12069,5 +12069,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ousmane Dieng",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-15",
+    "prevStatus": "Out"
   }
 ]
