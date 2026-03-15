@@ -11761,5 +11761,12 @@
     "injury": "Left Hip Tightness",
     "date": "2026-03-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Out",
+    "injury": "Concussion Protocol",
+    "date": "2026-03-14",
+    "prevStatus": "Left Game"
   }
 ]
