@@ -12328,5 +12328,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Doubtful",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-15",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Doubtful",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
   }
 ]
