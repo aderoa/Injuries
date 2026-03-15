@@ -12237,5 +12237,12 @@
     "injury": "",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Out",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
   }
 ]
