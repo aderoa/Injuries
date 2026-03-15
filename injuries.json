@@ -11775,5 +11775,12 @@
     "injury": "Rest",
     "date": "2026-03-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "John Konchar",
+    "status": "Out",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-03-11",
+    "prevStatus": "Out"
   }
 ]
