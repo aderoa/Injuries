@@ -12097,5 +12097,12 @@
     "injury": "Right Patella Tendonitis",
     "date": "2026-03-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Available",
+    "injury": "Back Strain",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
   }
 ]
