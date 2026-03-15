@@ -12160,5 +12160,19 @@
     "injury": "Right Knee Sprain",
     "date": "2026-03-15",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ivica Zubac",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-15",
+    "prevStatus": "Questionable"
   }
 ]
