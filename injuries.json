@@ -12293,5 +12293,19 @@
     "injury": "Left Calf Contusion",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Available",
+    "injury": "Back Injury Management",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Andre Drummond",
+    "status": "Available",
+    "injury": "Back Spasms",
+    "date": "2026-03-15",
+    "prevStatus": "Out"
   }
 ]
