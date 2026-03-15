@@ -12104,5 +12104,12 @@
     "injury": "Back Strain",
     "date": "2026-03-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-15",
+    "prevStatus": "Doubtful"
   }
 ]
