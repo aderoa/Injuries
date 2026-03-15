@@ -12111,5 +12111,12 @@
     "injury": "Illness",
     "date": "2026-03-15",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Available",
+    "injury": "Left Finger Sprain",
+    "date": "2026-03-15",
+    "prevStatus": "Probable"
   }
 ]
