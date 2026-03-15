@@ -12027,5 +12027,12 @@
     "injury": "",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Questionable",
+    "injury": "Back Injury Management",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
   }
 ]
