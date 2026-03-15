@@ -12034,5 +12034,12 @@
     "injury": "Back Injury Management",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andre Drummond",
+    "status": "Questionable",
+    "injury": "Back Spasms",
+    "date": "2026-03-15",
+    "prevStatus": "Out"
   }
 ]
