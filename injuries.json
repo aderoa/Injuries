@@ -11985,5 +11985,12 @@
     "injury": "Right Knee Synovitis",
     "date": "2026-03-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Questionable",
+    "injury": "Back Strain",
+    "date": "2026-03-15",
+    "prevStatus": "Available"
   }
 ]
