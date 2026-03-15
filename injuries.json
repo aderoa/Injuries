@@ -11768,5 +11768,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-03-14",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Kyle Filipowski",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-03-14",
+    "prevStatus": "Available"
   }
 ]
