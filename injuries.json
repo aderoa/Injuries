@@ -12713,5 +12713,12 @@
     "injury": "General Illness Management",
     "date": "2026-03-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Questionable",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
