@@ -12685,5 +12685,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Questionable",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
