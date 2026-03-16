@@ -12734,5 +12734,12 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-03-16",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Out",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-16",
+    "prevStatus": "Questionable"
   }
 ]
