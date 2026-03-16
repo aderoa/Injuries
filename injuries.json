@@ -12923,5 +12923,12 @@
     "injury": "",
     "date": "2026-03-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Questionable",
+    "injury": "Right Ankle Injury Managementy / Cervical Strain",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
