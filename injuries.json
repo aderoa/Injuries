@@ -12825,5 +12825,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-15",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Bam Adebayo",
+    "status": "Questionable",
+    "injury": "Right Calf Tightness",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
