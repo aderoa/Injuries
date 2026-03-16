@@ -12650,5 +12650,12 @@
     "injury": "Right Calf Pain",
     "date": "2026-03-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Probable",
+    "injury": "Right Calf Pain",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
