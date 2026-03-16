@@ -12804,5 +12804,12 @@
     "injury": "Left Fibular Head Contusion",
     "date": "2026-03-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Available",
+    "injury": "Right Calf Pain",
+    "date": "2026-03-16",
+    "prevStatus": "Probable"
   }
 ]
