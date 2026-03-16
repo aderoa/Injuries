@@ -12951,5 +12951,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
