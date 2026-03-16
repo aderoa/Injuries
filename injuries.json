@@ -12699,5 +12699,12 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-03-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-16",
+    "prevStatus": "Out"
   }
 ]
