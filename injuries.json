@@ -12636,5 +12636,12 @@
     "injury": "",
     "date": "2026-03-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nick Richards",
+    "status": "Probable",
+    "injury": "Low Back Tightness",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
