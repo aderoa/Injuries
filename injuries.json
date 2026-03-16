@@ -12965,5 +12965,19 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-03-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jabari Walker",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-16",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Dalen Terry",
+    "status": "Questionable",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-03-16",
+    "prevStatus": "Out"
   }
 ]
