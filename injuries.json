@@ -12741,5 +12741,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-16",
+    "prevStatus": "Questionable"
   }
 ]
