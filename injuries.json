@@ -12657,5 +12657,12 @@
     "injury": "Right Calf Pain",
     "date": "2026-03-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
