@@ -12573,5 +12573,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ben Saraf",
+    "status": "Available",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-16",
+    "prevStatus": "Questionable"
   }
 ]
