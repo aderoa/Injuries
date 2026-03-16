@@ -13007,5 +13007,12 @@
     "injury": "Illness",
     "date": "2026-03-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-16",
+    "prevStatus": "Questionable"
   }
 ]
