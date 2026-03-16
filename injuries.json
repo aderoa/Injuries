@@ -13000,5 +13000,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-16",
+    "prevStatus": "Questionable"
   }
 ]
