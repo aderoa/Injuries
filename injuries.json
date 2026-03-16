@@ -12839,5 +12839,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-03-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Liam McNeeley",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-16",
+    "prevStatus": "Out"
   }
 ]
