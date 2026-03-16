@@ -12615,5 +12615,12 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-03-16",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
