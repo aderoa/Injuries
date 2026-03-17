@@ -13147,5 +13147,12 @@
     "injury": "Thoracic Spine Muscle Tightness",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bam Adebayo",
+    "status": "Doubtful",
+    "injury": "Right Calf Tightness",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
