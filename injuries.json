@@ -13294,5 +13294,12 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-03-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "Right Knee Inflammation",
+    "date": "2026-03-16",
+    "prevStatus": "Out"
   }
 ]
