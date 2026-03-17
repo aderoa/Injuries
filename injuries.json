@@ -13455,5 +13455,12 @@
     "injury": "Right Calf Contusion",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Questionable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
