@@ -13483,5 +13483,12 @@
     "injury": "",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Probable",
+    "injury": "Left Tibial Contusion",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
