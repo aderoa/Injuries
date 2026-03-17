@@ -13490,5 +13490,12 @@
     "injury": "Left Tibial Contusion",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Questionable",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
