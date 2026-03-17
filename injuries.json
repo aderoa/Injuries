@@ -13651,5 +13651,12 @@
     "injury": "Right Knee Surgery Recovery",
     "date": "2026-03-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Available",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
