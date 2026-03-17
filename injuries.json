@@ -13287,5 +13287,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dalen Terry",
+    "status": "Available",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
