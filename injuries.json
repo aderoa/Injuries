@@ -13595,5 +13595,12 @@
     "injury": "Illness",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Questionable",
+    "injury": "Concussion Protocol",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
