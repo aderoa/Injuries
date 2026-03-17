@@ -13196,5 +13196,12 @@
     "injury": "Illness",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
