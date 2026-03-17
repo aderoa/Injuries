@@ -13497,5 +13497,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Left Game",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
