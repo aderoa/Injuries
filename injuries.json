@@ -13700,5 +13700,19 @@
     "injury": "Illness",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Available",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Probable"
   }
 ]
