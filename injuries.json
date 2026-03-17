@@ -13546,5 +13546,12 @@
     "injury": "",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Probable",
+    "injury": "Right Eye Abrasion",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
