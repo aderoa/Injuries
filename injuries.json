@@ -13679,5 +13679,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Out",
+    "injury": "Right Great Toe Surgery Recovery",
+    "date": "2026-03-09",
+    "prevStatus": "Out"
   }
 ]
