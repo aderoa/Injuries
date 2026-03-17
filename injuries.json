@@ -13266,5 +13266,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaac Okoro",
+    "status": "Doubtful",
+    "injury": "Right Patellofemoral Pain Syndrome",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
