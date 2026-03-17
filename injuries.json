@@ -13406,5 +13406,12 @@
     "injury": "",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Out",
+    "injury": "Left Knee Hyperextension / Bone Bruise",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
