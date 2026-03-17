@@ -13329,5 +13329,19 @@
     "injury": "Right Hamstring Soreness",
     "date": "2026-03-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "injury": "Right Calf Contusion",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
