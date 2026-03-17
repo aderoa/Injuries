@@ -13644,5 +13644,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-03-17",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Out",
+    "injury": "Right Knee Surgery Recovery",
+    "date": "2026-03-03",
+    "prevStatus": "Out"
   }
 ]
