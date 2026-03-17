@@ -13511,5 +13511,12 @@
     "injury": "Rest",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Probable",
+    "injury": "Left Achilles Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
