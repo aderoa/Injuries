@@ -13672,5 +13672,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Available",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
