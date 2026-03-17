@@ -13385,5 +13385,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Out",
+    "injury": "Right Ankle Injury Managementy / Cervical Strain",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
