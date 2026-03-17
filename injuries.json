@@ -13231,5 +13231,12 @@
     "injury": "Right Quad Contusion",
     "date": "2026-03-17",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Available",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
