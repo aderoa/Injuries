@@ -13630,5 +13630,12 @@
     "injury": "Right Plantar Fascia Soreness",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
