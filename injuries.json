@@ -13154,5 +13154,12 @@
     "injury": "Right Calf Tightness",
     "date": "2026-03-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Jovic",
+    "status": "Available",
+    "injury": "Low Back Injury Management",
+    "date": "2026-03-17",
+    "prevStatus": "Probable"
   }
 ]
