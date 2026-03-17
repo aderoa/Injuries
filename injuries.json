@@ -13035,5 +13035,12 @@
     "injury": "Low Back Pain",
     "date": "2026-03-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trae Young",
+    "status": "Left Game",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-16",
+    "prevStatus": "Available"
   }
 ]
