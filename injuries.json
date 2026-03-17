@@ -13315,5 +13315,19 @@
     "injury": "Right Calf Tightness",
     "date": "2026-03-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Quenton Jackson",
+    "status": "Available",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Available",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
