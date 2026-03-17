@@ -13693,5 +13693,12 @@
     "injury": "Illness",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ousmane Dieng",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-17",
+    "prevStatus": "Out"
   }
 ]
