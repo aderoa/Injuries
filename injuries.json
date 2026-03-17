@@ -13686,5 +13686,12 @@
     "injury": "Right Great Toe Surgery Recovery",
     "date": "2026-03-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
