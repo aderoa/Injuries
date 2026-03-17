@@ -13224,5 +13224,12 @@
     "injury": "Right Retrocalcaneal Bursitis",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trae Young",
+    "status": "Out",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-17",
+    "prevStatus": "Left Game"
   }
 ]
