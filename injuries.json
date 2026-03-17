@@ -13133,5 +13133,12 @@
     "injury": "Right Ankle Injury Managementy / Cervical Strain",
     "date": "2026-03-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
