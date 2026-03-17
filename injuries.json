@@ -13658,5 +13658,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jahmai Mashack",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
