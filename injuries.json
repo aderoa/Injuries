@@ -13476,5 +13476,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
