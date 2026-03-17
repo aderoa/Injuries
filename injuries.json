@@ -13728,5 +13728,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
