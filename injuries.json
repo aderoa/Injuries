@@ -13308,5 +13308,12 @@
     "injury": "Low Back Pain",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bam Adebayo",
+    "status": "Out",
+    "injury": "Right Calf Tightness",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
