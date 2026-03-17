@@ -13539,5 +13539,12 @@
     "injury": "Left Foot Soreness",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
