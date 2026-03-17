@@ -13462,5 +13462,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
