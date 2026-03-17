@@ -13245,5 +13245,12 @@
     "injury": "",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Doubtful",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
