@@ -13140,5 +13140,12 @@
     "injury": "",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Questionable",
+    "injury": "Thoracic Spine Muscle Tightness",
+    "date": "2026-03-17",
+    "prevStatus": "Available"
   }
 ]
