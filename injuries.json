@@ -14232,5 +14232,12 @@
     "injury": "Left Hip Tightness",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Available",
+    "injury": "Left Tibial Contusion",
+    "date": "2026-03-18",
+    "prevStatus": "Probable"
   }
 ]
