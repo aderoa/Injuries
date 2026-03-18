@@ -14435,5 +14435,12 @@
     "injury": "Rest",
     "date": "2026-03-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
