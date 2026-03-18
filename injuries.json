@@ -14267,5 +14267,12 @@
     "injury": "Right Elbow Contusion",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Questionable",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-18",
+    "prevStatus": "Out"
   }
 ]
