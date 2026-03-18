@@ -14141,5 +14141,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Michael Porter",
+    "status": "Out",
+    "injury": "Right Ankle Sprain / Left Hamstring Tightness",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
   }
 ]
