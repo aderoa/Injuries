@@ -13756,5 +13756,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-17",
+    "prevStatus": "Questionable"
   }
 ]
