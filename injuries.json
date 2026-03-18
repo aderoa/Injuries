@@ -14407,5 +14407,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-03-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
   }
 ]
