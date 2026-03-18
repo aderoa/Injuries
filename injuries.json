@@ -14106,5 +14106,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
