@@ -14337,5 +14337,12 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-03-18",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-18",
+    "prevStatus": "Out"
   }
 ]
