@@ -14323,5 +14323,19 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Available",
+    "injury": "Left Fibular Head Contusion",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaac Okoro",
+    "status": "Out",
+    "injury": "Right Patellofemoral Pain Syndrome",
+    "date": "2026-03-18",
+    "prevStatus": "Doubtful"
   }
 ]
