@@ -14057,5 +14057,12 @@
     "injury": "Left Achilles Soreness",
     "date": "2026-03-18",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Michael Porter",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
   }
 ]
