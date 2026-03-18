@@ -14225,5 +14225,12 @@
     "injury": "",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaime Jaquez",
+    "status": "Questionable",
+    "injury": "Left Hip Tightness",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
