@@ -14253,5 +14253,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
