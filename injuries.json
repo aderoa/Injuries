@@ -14197,5 +14197,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Questionable",
+    "injury": "Left Big Toe ",
+    "date": "2026-03-18",
+    "prevStatus": "Out"
   }
 ]
