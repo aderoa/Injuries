@@ -14351,5 +14351,19 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nicolas Batum",
+    "status": "Probable",
+    "injury": "Rest",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
   }
 ]
