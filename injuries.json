@@ -14085,5 +14085,12 @@
     "injury": "Rest",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Out",
+    "injury": "Left Soleus Injury Management",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
