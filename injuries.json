@@ -14029,5 +14029,12 @@
     "injury": "Right Triceps Strain",
     "date": "2026-03-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
