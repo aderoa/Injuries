@@ -14015,5 +14015,12 @@
     "injury": "",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Questionable",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
