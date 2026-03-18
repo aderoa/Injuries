@@ -14295,5 +14295,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-03-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Available",
+    "injury": "Concussion Protocol",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
   }
 ]
