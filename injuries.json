@@ -14218,5 +14218,12 @@
     "injury": "Right Calf Tightness",
     "date": "2026-03-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaime Jaquez",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
