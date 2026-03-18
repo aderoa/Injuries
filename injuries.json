@@ -13987,5 +13987,12 @@
     "injury": "",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quenton Jackson",
+    "status": "Questionable",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
