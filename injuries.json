@@ -14260,5 +14260,12 @@
     "injury": "",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Probable",
+    "injury": "Right Elbow Contusion",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
