@@ -14071,5 +14071,12 @@
     "injury": "Right Eye Abrasion",
     "date": "2026-03-18",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Out",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-18",
+    "prevStatus": "Questionable"
   }
 ]
