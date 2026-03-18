@@ -14099,5 +14099,12 @@
     "injury": "Left Hip Contusion",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Questionable",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-18",
+    "prevStatus": "Available"
   }
 ]
