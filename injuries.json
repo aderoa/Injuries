@@ -14806,5 +14806,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Right Achilles Injury Management",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
