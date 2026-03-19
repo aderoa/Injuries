@@ -14995,5 +14995,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Questionable",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-19",
+    "prevStatus": "Out"
   }
 ]
