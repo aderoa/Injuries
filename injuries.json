@@ -15107,5 +15107,12 @@
     "injury": "Right Hip Tightness",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Out",
+    "injury": "Left Eye Contusion",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
