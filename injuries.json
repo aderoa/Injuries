@@ -14855,5 +14855,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "John Konchar",
+    "status": "Doubtful",
+    "injury": "Right Quad Contusio",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
