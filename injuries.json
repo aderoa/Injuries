@@ -15016,5 +15016,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Doubtful",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
