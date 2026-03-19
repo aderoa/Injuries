@@ -15072,5 +15072,12 @@
     "injury": "Left Foot Arthritis",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
