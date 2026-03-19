@@ -14757,5 +14757,12 @@
     "injury": "Right Forearm Contusion",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaime Jaquez",
+    "status": "Out",
+    "injury": "Left Hip Tightness",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
   }
 ]
