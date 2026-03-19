@@ -15086,5 +15086,12 @@
     "injury": "Right Forearm Contusion",
     "date": "2026-03-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
   }
 ]
