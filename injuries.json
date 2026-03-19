@@ -14869,5 +14869,12 @@
     "injury": "Right Quad Contusion",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brice Sensabaugh",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
