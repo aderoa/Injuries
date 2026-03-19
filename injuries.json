@@ -14981,5 +14981,12 @@
     "injury": "Right Knee Inflammation / Patellofemoral Pain Syndrome",
     "date": "2026-03-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "Right Knee Inflammation w/ Patellofemoral Pain Syndrome",
+    "date": "2026-03-16",
+    "prevStatus": "Out"
   }
 ]
