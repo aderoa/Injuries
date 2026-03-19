@@ -14477,5 +14477,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Doubtful",
+    "injury": "Right Oblique Strain",
+    "date": "2026-03-18",
+    "prevStatus": "Out"
   }
 ]
