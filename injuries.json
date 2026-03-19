@@ -14743,5 +14743,12 @@
     "injury": "Left Foot Arthritis",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
