@@ -14848,5 +14848,12 @@
     "injury": "",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Collier",
+    "status": "Out",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
