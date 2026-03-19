@@ -14673,5 +14673,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Out",
+    "injury": "Left Lung ",
+    "date": "2026-03-18",
+    "prevStatus": "Out"
   }
 ]
