@@ -14729,5 +14729,12 @@
     "injury": "Right Calf Strain Injury Management",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Questionable",
+    "injury": "Right Hip Soreness",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
