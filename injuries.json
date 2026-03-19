@@ -14813,5 +14813,12 @@
     "injury": "Right Achilles Injury Management",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bam Adebayo",
+    "status": "Available",
+    "injury": "Right Calf Tightness",
+    "date": "2026-03-19",
+    "prevStatus": "Probable"
   }
 ]
