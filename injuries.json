@@ -14505,5 +14505,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-03-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Drew Eubanks",
+    "status": "Out",
+    "injury": "Left Thumb Torn UCL Repair",
+    "date": "2026-03-13",
+    "prevStatus": "Out"
   }
 ]
