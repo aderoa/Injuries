@@ -14820,5 +14820,12 @@
     "injury": "Right Calf Tightness",
     "date": "2026-03-19",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Haywood Highsmith",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
