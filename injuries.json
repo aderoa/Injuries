@@ -14960,5 +14960,12 @@
     "injury": "",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Out",
+    "injury": "Right Knee Patella Femoral Syndrome",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
