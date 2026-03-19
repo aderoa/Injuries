@@ -14827,5 +14827,12 @@
     "injury": "",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Haywood Highsmith",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
