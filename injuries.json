@@ -14939,5 +14939,19 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-03-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Questionable",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Available",
+    "injury": "Right Ankle Injury Managementy / Cervical Strain",
+    "date": "2026-03-19",
+    "prevStatus": "Out"
   }
 ]
