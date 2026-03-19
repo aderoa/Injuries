@@ -14687,5 +14687,19 @@
     "injury": "Left Lung Pneumotorax",
     "date": "2026-03-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Available",
+    "injury": "Right Retrocalcaneal Bursitis",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Available",
+    "injury": "Left Big Toe Capsulitis",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
   }
 ]
