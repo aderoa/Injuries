@@ -14932,5 +14932,12 @@
     "injury": "Left Hand Soreness",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Probable",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-03-19",
+    "prevStatus": "Out"
   }
 ]
