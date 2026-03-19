@@ -14904,5 +14904,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-03-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Out",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
