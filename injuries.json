@@ -15114,5 +15114,12 @@
     "injury": "Left Eye Contusion",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Out",
+    "injury": "Right Retrocalcaneal Bursitis",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
   }
 ]
