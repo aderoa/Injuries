@@ -15079,5 +15079,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Available",
+    "injury": "Right Forearm Contusion",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
   }
 ]
