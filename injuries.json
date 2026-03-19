@@ -14736,5 +14736,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Left Foot Arthritis",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
