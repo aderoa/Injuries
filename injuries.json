@@ -15044,5 +15044,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Out",
+    "injury": "Right Calf Strain Injury Management",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
