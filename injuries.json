@@ -15576,5 +15576,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-03-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
