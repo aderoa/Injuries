@@ -15135,5 +15135,26 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Available",
+    "injury": "Right Elbow Contusion",
+    "date": "2026-03-19",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Kevin Porter",
+    "status": "Out",
+    "injury": "Right Knee Synovitis",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Available",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-19",
+    "prevStatus": "Questionable"
   }
 ]
