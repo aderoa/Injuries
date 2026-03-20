@@ -15331,5 +15331,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Questionable",
+    "injury": "Right Foot Contusion",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
