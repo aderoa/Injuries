@@ -15338,5 +15338,12 @@
     "injury": "Right Foot Contusion",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ivica Zubac",
+    "status": "Out",
+    "injury": "Fractured Rib",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
