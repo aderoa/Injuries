@@ -15443,5 +15443,12 @@
     "injury": "Left Toe Injury Management",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
