@@ -15296,5 +15296,12 @@
     "injury": "Illness",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
