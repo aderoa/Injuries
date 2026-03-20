@@ -15436,5 +15436,12 @@
     "injury": "Right Hip Tightness",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Darius Garland",
+    "status": "Available",
+    "injury": "Left Toe Injury Management",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
