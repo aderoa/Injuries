@@ -15506,5 +15506,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Micah Potter",
+    "status": "Questionable",
+    "injury": "Right Triceps Strain",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
