@@ -15268,5 +15268,12 @@
     "injury": "Illness",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ziaire Williams",
+    "status": "Available",
+    "injury": "Left Hand Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Questionable"
   }
 ]
