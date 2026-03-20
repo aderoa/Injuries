@@ -15275,5 +15275,12 @@
     "injury": "Left Hand Soreness",
     "date": "2026-03-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ben Saraf",
+    "status": "Available",
+    "injury": "Left Foot Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Probable"
   }
 ]
