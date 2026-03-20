@@ -15478,5 +15478,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-03-20",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Quenton Jackson",
+    "status": "Questionable",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
