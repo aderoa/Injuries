@@ -15583,5 +15583,12 @@
     "injury": "Personal Reasons",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Out",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Doubtful"
   }
 ]
