@@ -15590,5 +15590,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-20",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Doubtful"
   }
 ]
