@@ -15345,5 +15345,12 @@
     "injury": "Fractured Rib",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Wendell Carter Jr",
+    "status": "Questionable",
+    "injury": "Left Rib Mild Contusion",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
