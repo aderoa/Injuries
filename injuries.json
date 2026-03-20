@@ -15156,5 +15156,12 @@
     "injury": "Right Calf Strain",
     "date": "2026-03-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "John Konchar",
+    "status": "Out",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-19",
+    "prevStatus": "Available"
   }
 ]
