@@ -15422,5 +15422,12 @@
     "injury": "Personal Reasons",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Available",
+    "injury": "Right Achilles Injury Management",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
