@@ -15317,5 +15317,12 @@
     "injury": "",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Out",
+    "injury": "Right Hip Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
