@@ -15408,5 +15408,12 @@
     "injury": "Right Heel Contusion",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
