@@ -15261,5 +15261,12 @@
     "injury": "Personal Reasons",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
