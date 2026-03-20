@@ -15429,5 +15429,12 @@
     "injury": "Right Achilles Injury Management",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Questionable",
+    "injury": "Right Hip Tightness",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
