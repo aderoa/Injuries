@@ -15541,5 +15541,12 @@
     "injury": "Rib Fracture",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Out",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-20",
+    "prevStatus": "Questionable"
   }
 ]
