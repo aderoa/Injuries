@@ -15373,5 +15373,12 @@
     "injury": "",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Will Riley",
+    "status": "Questionable",
+    "injury": "Right Adductor Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
