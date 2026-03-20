@@ -15324,5 +15324,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-03-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Questionable",
+    "injury": "Back Spasms",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
