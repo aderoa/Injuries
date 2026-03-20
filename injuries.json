@@ -15457,5 +15457,12 @@
     "injury": "Left Eye Contusion",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
