@@ -15534,5 +15534,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ivica Zubac",
+    "status": "Out",
+    "injury": "Rib Fracture",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
