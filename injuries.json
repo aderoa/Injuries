@@ -16199,5 +16199,12 @@
     "injury": "Right Knee MCL Sprain",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Out",
+    "injury": "Right Hamstring Tightness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
