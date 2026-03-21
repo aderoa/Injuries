@@ -15828,5 +15828,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
