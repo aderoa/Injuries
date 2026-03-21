@@ -15730,5 +15730,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Doubtful",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
