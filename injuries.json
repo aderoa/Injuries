@@ -15625,5 +15625,12 @@
     "injury": "Right Knee Synovitis",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
