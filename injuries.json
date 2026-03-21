@@ -16094,5 +16094,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Questionable",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
