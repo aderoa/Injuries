@@ -15905,5 +15905,12 @@
     "injury": "Low Back Pain / Right Quad Contusion",
     "date": "2026-03-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
