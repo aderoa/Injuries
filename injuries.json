@@ -15632,5 +15632,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Amir Coffey",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-20",
+    "prevStatus": "Left Game"
   }
 ]
