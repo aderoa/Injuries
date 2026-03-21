@@ -16045,5 +16045,12 @@
     "injury": "Back Tightness",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Out",
+    "injury": "Left Calf Tightness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
