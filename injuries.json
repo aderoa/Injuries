@@ -15849,5 +15849,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "John Konchar",
+    "status": "Probable",
+    "injury": "Right Quad Contusion",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
