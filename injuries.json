@@ -15856,5 +15856,12 @@
     "injury": "Right Quad Contusion",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jae'Sean Tate",
+    "status": "Probable",
+    "injury": "Right Knee MCL Sprain",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
