@@ -15800,5 +15800,12 @@
     "injury": "",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
