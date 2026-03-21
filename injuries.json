@@ -16066,5 +16066,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
