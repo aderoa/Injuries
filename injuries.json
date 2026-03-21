@@ -15877,5 +15877,12 @@
     "injury": "Right Adductor Soreness",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Questionable",
+    "injury": "Back Tightness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
