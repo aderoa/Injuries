@@ -15961,5 +15961,12 @@
     "injury": "Left Rib Mild Contusion",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Questionable",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
