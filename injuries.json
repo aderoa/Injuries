@@ -16052,5 +16052,19 @@
     "injury": "Left Calf Tightness",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Malevy Leons",
+    "status": "Available",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
