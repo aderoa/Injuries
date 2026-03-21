@@ -16136,5 +16136,26 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Micah Potter",
+    "status": "Available",
+    "injury": "Right Triceps Strain",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Available",
+    "injury": "Right Knee Sprain",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
