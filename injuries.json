@@ -15611,5 +15611,12 @@
     "injury": "Left Adductor Soreness",
     "date": "2026-03-20",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Questionable",
+    "injury": "Left Groin Contusion",
+    "date": "2026-03-20",
+    "prevStatus": "Available"
   }
 ]
