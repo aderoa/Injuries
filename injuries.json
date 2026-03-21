@@ -16003,5 +16003,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
