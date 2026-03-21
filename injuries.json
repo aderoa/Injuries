@@ -16192,5 +16192,12 @@
     "injury": "Back Spasms",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jae'Sean Tate",
+    "status": "Available",
+    "injury": "Right Knee MCL Sprain",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
