@@ -16031,5 +16031,12 @@
     "injury": "Left Great Toe Sprain",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Out",
+    "injury": "Left Shoulder Inflammation",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
