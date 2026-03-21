@@ -16038,5 +16038,12 @@
     "injury": "Left Shoulder Inflammation",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Available",
+    "injury": "Back Tightness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
