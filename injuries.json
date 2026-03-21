@@ -15786,5 +15786,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Out",
+    "injury": "Right Hip Tightness",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
