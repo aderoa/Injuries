@@ -15737,5 +15737,12 @@
     "injury": "Left Great Toe Sprain",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Questionable",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
