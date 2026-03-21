@@ -15919,5 +15919,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-21",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Right Knee Patella Femoral Syndrome",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
