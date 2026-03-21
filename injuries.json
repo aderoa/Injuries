@@ -15982,5 +15982,26 @@
     "injury": "Left Shoulder Inflammation",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "DeJon Jarreau",
+    "status": "Available",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
