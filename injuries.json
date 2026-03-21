@@ -15863,5 +15863,19 @@
     "injury": "Right Knee MCL Sprain",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Out",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Will Riley",
+    "status": "Available",
+    "injury": "Right Adductor Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
