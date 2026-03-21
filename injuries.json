@@ -16185,5 +16185,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Available",
+    "injury": "Back Spasms",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
