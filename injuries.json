@@ -16234,5 +16234,12 @@
     "injury": "",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Out",
+    "injury": "Left Rib Costochondritis",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
