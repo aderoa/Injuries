@@ -16591,5 +16591,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-03-22",
+    "prevStatus": "Questionable"
   }
 ]
