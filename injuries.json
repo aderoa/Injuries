@@ -16927,5 +16927,12 @@
     "injury": "",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Killian Hayes",
+    "status": "Left Game",
+    "injury": "Left Toe Injury",
+    "date": "2026-03-22",
+    "prevStatus": "Left Game"
   }
 ]
