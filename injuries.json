@@ -16633,5 +16633,19 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Anfernee Simons",
+    "status": "Questionable",
+    "injury": "Left Wrist Ulnar Styloid Fracture",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Questionable",
+    "injury": "Right Calf Strain Injury Management",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
