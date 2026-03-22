@@ -16563,5 +16563,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
