@@ -16801,5 +16801,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dominick Barlow",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-22",
+    "prevStatus": "Left Game"
   }
 ]
