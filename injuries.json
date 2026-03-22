@@ -16577,5 +16577,12 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Probable",
+    "injury": "Left Hand Contusion",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
