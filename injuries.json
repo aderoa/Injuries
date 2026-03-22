@@ -16843,5 +16843,12 @@
     "injury": "",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Doubtful",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
