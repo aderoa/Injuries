@@ -16283,5 +16283,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Daeqwon Plowden",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
