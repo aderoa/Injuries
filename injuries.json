@@ -16787,5 +16787,12 @@
     "injury": "Low Back Strain",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Luguentz Dort",
+    "status": "Available",
+    "injury": "Left Knee Contusion",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
