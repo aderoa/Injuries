@@ -16570,5 +16570,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Probable",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
