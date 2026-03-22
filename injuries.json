@@ -16766,5 +16766,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Maxi Kleber",
+    "status": "Questionable",
+    "injury": "Lumbar Back Strain",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
