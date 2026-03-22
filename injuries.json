@@ -16661,5 +16661,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Royce O'Neale",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
