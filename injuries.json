@@ -16871,5 +16871,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Available",
+    "injury": "Left Quad Contusion",
+    "date": "2026-03-22",
+    "prevStatus": "Probable"
   }
 ]
