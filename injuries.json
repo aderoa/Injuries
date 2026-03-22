@@ -16297,5 +16297,12 @@
     "injury": "",
     "date": "2026-03-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Russell Westbrook",
+    "status": "Out",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-21",
+    "prevStatus": "Available"
   }
 ]
