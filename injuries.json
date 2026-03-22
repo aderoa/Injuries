@@ -16528,5 +16528,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
