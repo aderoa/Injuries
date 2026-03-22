@@ -16808,5 +16808,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-22",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Questionable",
+    "injury": "Right Hip Tightness",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
