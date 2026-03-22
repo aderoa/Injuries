@@ -16850,5 +16850,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Questionable",
+    "injury": "Left Shoulder Inflammation",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
