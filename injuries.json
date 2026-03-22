@@ -16885,5 +16885,12 @@
     "injury": "",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Danny Wolf",
+    "status": "Left Game",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
