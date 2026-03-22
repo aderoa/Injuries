@@ -16598,5 +16598,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-03-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Out",
+    "injury": "Left Foot Soreness",
+    "date": "2026-03-22",
+    "prevStatus": "Questionable"
   }
 ]
