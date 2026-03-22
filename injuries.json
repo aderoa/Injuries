@@ -16556,5 +16556,12 @@
     "injury": "League Suspension",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Moses Moody",
+    "status": "Questionable",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
