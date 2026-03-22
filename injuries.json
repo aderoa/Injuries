@@ -16675,5 +16675,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Out",
+    "injury": "Right Hip Strain",
+    "date": "2026-03-20",
+    "prevStatus": "Out"
   }
 ]
