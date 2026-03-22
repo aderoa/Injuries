@@ -16731,5 +16731,12 @@
     "injury": "Right Calf Contusion",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Questionable",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
