@@ -16584,5 +16584,12 @@
     "injury": "Left Hand Contusion",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Out",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
