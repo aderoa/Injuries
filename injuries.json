@@ -16899,5 +16899,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Available",
+    "injury": "Right Knee Patella Femoral Syndrome",
+    "date": "2026-03-22",
+    "prevStatus": "Questionable"
   }
 ]
