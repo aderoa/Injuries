@@ -16535,5 +16535,12 @@
     "injury": "",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Out",
+    "injury": "Left Big Toe Capsulitis",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
