@@ -16213,5 +16213,19 @@
     "injury": "Right Quad Contusion",
     "date": "2026-03-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Out",
+    "injury": "Left Groin Contusion",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Porter",
+    "status": "Out",
+    "injury": "Right Knee Synovitis",
+    "date": "2026-03-21",
+    "prevStatus": "Questionable"
   }
 ]
