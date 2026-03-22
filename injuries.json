@@ -16836,5 +16836,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
