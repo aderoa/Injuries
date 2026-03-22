@@ -16815,5 +16815,12 @@
     "injury": "Right Hip Tightness",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Questionable",
+    "injury": "Right Hamstring Tightness",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
