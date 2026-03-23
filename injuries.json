@@ -17011,5 +17011,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Suggs",
+    "status": "Available",
+    "injury": "I",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
