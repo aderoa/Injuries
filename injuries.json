@@ -17452,5 +17452,19 @@
     "injury": "Right Knee Tibial Plateau Contusion",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Right Calf Contusion",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
