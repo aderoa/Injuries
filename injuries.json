@@ -16997,5 +16997,12 @@
     "injury": "Left Ankle Injury",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Royce O'Neale",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-22",
+    "prevStatus": "Out"
   }
 ]
