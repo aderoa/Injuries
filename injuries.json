@@ -17193,5 +17193,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-23",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Quentin Grimes",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
