@@ -17417,5 +17417,12 @@
     "injury": "Right Quadricep Strain",
     "date": "2026-03-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Available",
+    "injury": "Right Hamstring Tightness",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
