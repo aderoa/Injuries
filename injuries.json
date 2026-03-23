@@ -17158,5 +17158,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Available",
+    "injury": "Right Hip Tightness",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
