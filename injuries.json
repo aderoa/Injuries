@@ -17207,5 +17207,12 @@
     "injury": "Illness",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaden Ivey",
+    "status": "Out",
+    "injury": "Left Patellofemoral Pain Syndrome",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
