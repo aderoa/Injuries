@@ -17298,5 +17298,12 @@
     "injury": "",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Out",
+    "injury": "Right Foot Plantar Fasc",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
