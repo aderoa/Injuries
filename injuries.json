@@ -17410,5 +17410,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tyrese Proctor",
+    "status": "Questionable",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-03-23",
+    "prevStatus": "Out"
   }
 ]
