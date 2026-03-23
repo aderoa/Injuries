@@ -17438,5 +17438,12 @@
     "injury": "Illness",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dominick Barlow",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
