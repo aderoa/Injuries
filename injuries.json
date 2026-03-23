@@ -17333,5 +17333,12 @@
     "injury": "Rest",
     "date": "2026-03-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
