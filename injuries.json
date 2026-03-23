@@ -17291,5 +17291,12 @@
     "injury": "Lower Back Injury Management",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
