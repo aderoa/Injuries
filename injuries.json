@@ -17004,5 +17004,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Left Game",
+    "injury": "Low Back Tightness",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
