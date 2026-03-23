@@ -17144,5 +17144,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
