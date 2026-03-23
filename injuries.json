@@ -17403,5 +17403,12 @@
     "injury": "Left Foot Soreness",
     "date": "2026-03-23",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Daeqwon Plowden",
+    "status": "Probable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Out"
   }
 ]
