@@ -17354,5 +17354,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-23",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
