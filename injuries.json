@@ -17487,5 +17487,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
