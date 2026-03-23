@@ -17312,5 +17312,12 @@
     "injury": "Right Foot Plantar Fasciitis",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cody Williams",
+    "status": "Doubtful",
+    "injury": "Right Shoulder Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
