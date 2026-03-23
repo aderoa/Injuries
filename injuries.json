@@ -17242,5 +17242,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-23",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Out",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
