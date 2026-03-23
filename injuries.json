@@ -17361,5 +17361,12 @@
     "injury": "",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
