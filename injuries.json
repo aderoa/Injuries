@@ -17529,5 +17529,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cody Williams",
+    "status": "Out",
+    "injury": "Right Shoulder Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Doubtful"
   }
 ]
