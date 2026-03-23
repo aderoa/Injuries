@@ -17165,5 +17165,26 @@
     "injury": "Right Hip Tightness",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaime Jaquez",
+    "status": "Available",
+    "injury": "Left Hip Tightness",
+    "date": "2026-03-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Available",
+    "injury": "Left Calf Tightness",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Available",
+    "injury": "Left Big Toe Sesamoiditis",
+    "date": "2026-03-23",
+    "prevStatus": "Probable"
   }
 ]
