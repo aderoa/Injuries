@@ -17270,5 +17270,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Questionable",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-03-23",
+    "prevStatus": "Out"
   }
 ]
