@@ -16990,5 +16990,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nique Clifford",
+    "status": "Left Game",
+    "injury": "Left Ankle Injury",
+    "date": "2026-03-22",
+    "prevStatus": "Available"
   }
 ]
