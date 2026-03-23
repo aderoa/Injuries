@@ -17501,5 +17501,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-23",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
