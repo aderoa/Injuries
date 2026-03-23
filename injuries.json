@@ -17389,5 +17389,12 @@
     "injury": "Lower Back Soreness",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nique Clifford",
+    "status": "Out",
+    "injury": "Left Foot Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Left Game"
   }
 ]
