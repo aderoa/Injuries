@@ -18103,5 +18103,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
