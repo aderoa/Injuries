@@ -18047,5 +18047,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kon Knueppel",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-24",
+    "prevStatus": "Probable"
   }
 ]
