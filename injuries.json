@@ -18005,5 +18005,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Moses Moody",
+    "status": "Left Game",
+    "injury": "Left Knee Torn Patellar Tendon",
+    "date": "2026-03-23",
+    "prevStatus": "Left Game"
   }
 ]
