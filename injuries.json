@@ -18250,5 +18250,12 @@
     "injury": "Rest",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Questionable",
+    "injury": "Right Achilles Soreness",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
