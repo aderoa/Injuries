@@ -17865,5 +17865,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Doubtful",
+    "injury": "Right Hip Strain",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
