@@ -18082,5 +18082,12 @@
     "injury": "Personal Reasons",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
