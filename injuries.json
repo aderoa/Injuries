@@ -18159,5 +18159,19 @@
     "injury": "Right Foot Plantar Fasciitis",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-24",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyrese Proctor",
+    "status": "Available",
+    "injury": "Right Quadricep Strain",
+    "date": "2026-03-24",
+    "prevStatus": "Questionable"
   }
 ]
