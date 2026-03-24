@@ -18201,5 +18201,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-03-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Kyle Filipowski",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
