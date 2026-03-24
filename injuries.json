@@ -17984,5 +17984,12 @@
     "injury": "League Suspension",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Questionable",
+    "injury": "Right Shoulder Sprain",
+    "date": "2026-03-24",
+    "prevStatus": "Left Game"
   }
 ]
