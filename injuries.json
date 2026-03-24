@@ -17620,5 +17620,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Wells",
+    "status": "Left Game",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
