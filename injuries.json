@@ -17942,5 +17942,19 @@
     "injury": "Right Calf Contusion",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Probable",
+    "injury": "Right Ankle Injury",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Probable",
+    "injury": "Right Calf Contusion",
+    "date": "2026-03-24",
+    "prevStatus": "Probable"
   }
 ]
