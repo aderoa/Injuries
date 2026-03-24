@@ -17571,5 +17571,19 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Available",
+    "injury": "Left Hand Contusion",
+    "date": "2026-03-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Available",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-03-23",
+    "prevStatus": "Probable"
   }
 ]
