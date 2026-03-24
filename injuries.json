@@ -17648,5 +17648,12 @@
     "injury": "",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Left Game",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-03-23",
+    "prevStatus": "Available"
   }
 ]
