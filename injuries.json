@@ -18236,5 +18236,12 @@
     "injury": "Rest",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Drake Powell",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
