@@ -17592,5 +17592,19 @@
     "injury": "Right Heel Soreness",
     "date": "2026-03-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Out",
+    "injury": "Left Groin Contusion",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Right Achilles Soreness",
+    "date": "2026-03-23",
+    "prevStatus": "Questionable"
   }
 ]
