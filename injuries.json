@@ -18131,5 +18131,12 @@
     "injury": "Right Great Toe Soreness",
     "date": "2026-03-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Questionable",
+    "injury": "Right Heel Soreness",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
