@@ -18124,5 +18124,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-03-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jaylen Wells",
+    "status": "Out",
+    "injury": "Right Great Toe Soreness",
+    "date": "2026-03-24",
+    "prevStatus": "Left Game"
   }
 ]
