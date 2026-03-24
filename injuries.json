@@ -18075,5 +18075,12 @@
     "injury": "Right Knee Management",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
