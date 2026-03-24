@@ -17557,5 +17557,12 @@
     "injury": "Right Heel Contusion",
     "date": "2026-03-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Out",
+    "injury": "Concussion Protocol",
+    "date": "2026-03-23",
+    "prevStatus": "Doubtful"
   }
 ]
