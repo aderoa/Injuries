@@ -17935,5 +17935,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Probable",
+    "injury": "Right Calf Contusion",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
