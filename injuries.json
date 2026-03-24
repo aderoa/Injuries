@@ -17872,5 +17872,19 @@
     "injury": "Right Hip Strain",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Questionable",
+    "injury": "Right Oblique Strain",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Paul George",
+    "status": "Available",
+    "injury": "League Suspension",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
