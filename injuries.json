@@ -18208,5 +18208,12 @@
     "injury": "Illness",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brice Sensabaugh",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
