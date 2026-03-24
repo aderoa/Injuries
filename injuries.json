@@ -18096,5 +18096,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jahmai Mashack",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
