@@ -18019,5 +18019,12 @@
     "injury": "Left Knee Torn Patellar Tendon",
     "date": "2026-03-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
