@@ -17991,5 +17991,12 @@
     "injury": "Right Shoulder Sprain",
     "date": "2026-03-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Out",
+    "injury": "Right Plantar Fascia Strain",
+    "date": "2026-03-23",
+    "prevStatus": "Out"
   }
 ]
