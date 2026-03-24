@@ -17977,5 +17977,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Available",
+    "injury": "League Suspension",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
