@@ -18145,5 +18145,12 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Questionable",
+    "injury": "Lower Back Injury Management",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
