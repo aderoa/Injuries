@@ -18229,5 +18229,12 @@
     "injury": "Left Patellar Tendon Rupture",
     "date": "2026-03-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
