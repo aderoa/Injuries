@@ -17858,5 +17858,12 @@
     "injury": "Left Shoulder Inflammation",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Javonte Green",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
