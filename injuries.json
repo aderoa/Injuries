@@ -17844,5 +17844,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
