@@ -18271,5 +18271,19 @@
     "injury": "Left Foot Soreness",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Questionable",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Questionable",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
