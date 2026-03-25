@@ -18614,5 +18614,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Doubtful",
+    "injury": "Right Foot Plantar Fasciitis",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
