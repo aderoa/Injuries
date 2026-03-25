@@ -18621,5 +18621,12 @@
     "injury": "Right Foot Plantar Fasciitis",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jordan Miller",
+    "status": "Out",
+    "injury": "Back Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
