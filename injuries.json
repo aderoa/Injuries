@@ -18817,5 +18817,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
