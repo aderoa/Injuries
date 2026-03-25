@@ -18579,5 +18579,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
