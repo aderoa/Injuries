@@ -18740,5 +18740,12 @@
     "injury": "Right Knee Sprain",
     "date": "2026-03-25",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-25",
+    "prevStatus": "Probable"
   }
 ]
