@@ -18796,5 +18796,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cody Williams",
+    "status": "Available",
+    "injury": "Right Shoulder Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
