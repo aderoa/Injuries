@@ -18663,5 +18663,12 @@
     "injury": "Left Toe Inflammation",
     "date": "2026-03-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Suggs",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-25",
+    "prevStatus": "Out"
   }
 ]
