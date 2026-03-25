@@ -18523,5 +18523,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Out",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Doubtful"
   }
 ]
