@@ -18607,5 +18607,12 @@
     "injury": "",
     "date": "2026-03-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Questionable",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
