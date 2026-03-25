@@ -18299,5 +18299,19 @@
     "injury": "",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Miller",
+    "status": "Questionable",
+    "injury": "Back Soreness",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Bennedict Mathurin",
+    "status": "Available",
+    "injury": "Right Toe Injury Management",
+    "date": "2026-03-24",
+    "prevStatus": "Out"
   }
 ]
