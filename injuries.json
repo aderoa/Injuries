@@ -18593,5 +18593,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Questionable",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
