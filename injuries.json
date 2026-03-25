@@ -18628,5 +18628,12 @@
     "injury": "Back Soreness",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
