@@ -18733,5 +18733,12 @@
     "injury": "Right Ankle Injury",
     "date": "2026-03-25",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Available",
+    "injury": "Right Knee Sprain",
+    "date": "2026-03-25",
+    "prevStatus": "Probable"
   }
 ]
