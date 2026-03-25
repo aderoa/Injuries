@@ -18768,5 +18768,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-03-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Oblique Strain",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
