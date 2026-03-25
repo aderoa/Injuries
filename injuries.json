@@ -18698,5 +18698,19 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-03-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Anfernee Simons",
+    "status": "Out",
+    "injury": "Left Wrist Ulnar Styloid Fracture",
+    "date": "2026-03-25",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-25",
+    "prevStatus": "Doubtful"
   }
 ]
