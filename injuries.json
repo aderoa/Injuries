@@ -18670,5 +18670,12 @@
     "injury": "Illness",
     "date": "2026-03-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Pat Connaughton",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-25",
+    "prevStatus": "Out"
   }
 ]
