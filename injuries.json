@@ -18460,5 +18460,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaac Okoro",
+    "status": "Questionable",
+    "injury": "Right Patellofemoral Pain Syndrome",
+    "date": "2026-03-25",
+    "prevStatus": "Doubtful"
   }
 ]
