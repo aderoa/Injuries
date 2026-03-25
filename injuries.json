@@ -18348,5 +18348,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Dunn",
+    "status": "Out",
+    "injury": "Right Groin Soreness",
+    "date": "2026-03-24",
+    "prevStatus": "Questionable"
   }
 ]
