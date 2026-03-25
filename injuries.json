@@ -18677,5 +18677,12 @@
     "injury": "Illness",
     "date": "2026-03-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Quentin Grimes",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
