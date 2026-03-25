@@ -18649,5 +18649,12 @@
     "injury": "Lower Back Soreness",
     "date": "2026-03-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Killian Hayes",
+    "status": "Questionable",
+    "injury": "Left Foot Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Out"
   }
 ]
