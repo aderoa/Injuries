@@ -18831,5 +18831,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Out",
+    "injury": "Right Calf Injury",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
