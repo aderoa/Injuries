@@ -18341,5 +18341,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-03-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-24",
+    "prevStatus": "Questionable"
   }
 ]
