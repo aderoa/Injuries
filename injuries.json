@@ -18509,5 +18509,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-03-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Questionable",
+    "injury": "Back Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
