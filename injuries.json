@@ -18320,5 +18320,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-24",
+    "prevStatus": "Available"
   }
 ]
