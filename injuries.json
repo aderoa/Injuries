@@ -18558,5 +18558,12 @@
     "injury": "Left Great Toe Bone Bruise",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Filipowski",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-25",
+    "prevStatus": "Doubtful"
   }
 ]
