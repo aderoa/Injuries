@@ -18838,5 +18838,12 @@
     "injury": "Right Calf Injury",
     "date": "2026-03-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Left Game",
+    "injury": "Right Calf Injury",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
