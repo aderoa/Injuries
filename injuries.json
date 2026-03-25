@@ -18803,5 +18803,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Malevy Leons",
+    "status": "Questionable",
+    "injury": "General Illness",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
