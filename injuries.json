@@ -18537,5 +18537,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-25",
+    "prevStatus": "Out"
   }
 ]
