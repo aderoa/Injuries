@@ -19167,5 +19167,12 @@
     "injury": "",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
