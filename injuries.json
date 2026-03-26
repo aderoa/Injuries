@@ -18908,5 +18908,12 @@
     "injury": "Right Foot Plantar Fasciitis",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Out",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
