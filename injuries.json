@@ -19370,5 +19370,12 @@
     "injury": "Illness",
     "date": "2026-03-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Liam McNeeley",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
