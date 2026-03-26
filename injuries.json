@@ -19475,5 +19475,12 @@
     "injury": "Right Wrist Injury Management / Right Hip Soreness",
     "date": "2026-03-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Filipowski",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-03-26",
+    "prevStatus": "Out"
   }
 ]
