@@ -19531,5 +19531,12 @@
     "injury": "",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Questionable",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
