@@ -19342,5 +19342,12 @@
     "injury": "Right Elbow Sprain",
     "date": "2026-03-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Anfernee Simons",
+    "status": "Doubtful",
+    "injury": "Left Wrist Ulnar Styloid Fracture",
+    "date": "2026-03-26",
+    "prevStatus": "Out"
   }
 ]
