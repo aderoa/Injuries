@@ -18950,5 +18950,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Malevy Leons",
+    "status": "Out",
+    "injury": "General Illness",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
