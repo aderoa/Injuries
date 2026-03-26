@@ -19272,5 +19272,12 @@
     "injury": "Right Knee Tendonitits",
     "date": "2026-03-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Max Strus",
+    "status": "Available",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-03-26",
+    "prevStatus": "Out"
   }
 ]
