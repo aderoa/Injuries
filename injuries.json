@@ -18866,5 +18866,26 @@
     "injury": "Concussion Protocol",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Right Achilles Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Out",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Out",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Available"
   }
 ]
