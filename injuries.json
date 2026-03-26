@@ -19118,5 +19118,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Available",
+    "injury": "Right Achilles Injury Management",
+    "date": "2026-03-26",
+    "prevStatus": "Questionable"
   }
 ]
