@@ -18859,5 +18859,12 @@
     "injury": "Right Shoulder Sprain",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Available",
+    "injury": "Concussion Protocol",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
