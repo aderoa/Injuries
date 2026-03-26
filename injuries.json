@@ -19146,5 +19146,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Javonte Green",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
