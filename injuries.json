@@ -19517,5 +19517,19 @@
     "injury": "Left Patellar Tendon Rupture",
     "date": "2026-03-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Available",
+    "injury": "Back Soreness",
+    "date": "2026-03-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
