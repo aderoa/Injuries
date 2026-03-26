@@ -19335,5 +19335,12 @@
     "injury": "Right Elbow Injury",
     "date": "2026-03-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Nick Richards",
+    "status": "Questionable",
+    "injury": "Right Elbow Sprain",
+    "date": "2026-03-26",
+    "prevStatus": "Left Game"
   }
 ]
