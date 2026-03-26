@@ -19405,5 +19405,19 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Javonte Green",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Available",
+    "injury": "Left Hip Soreness",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
