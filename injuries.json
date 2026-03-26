@@ -19419,5 +19419,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Questionable",
+    "injury": "Right Wrist Injury Management",
+    "date": "2026-03-26",
+    "prevStatus": "Probable"
   }
 ]
