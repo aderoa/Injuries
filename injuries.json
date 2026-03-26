@@ -19545,5 +19545,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Questionable",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-26",
+    "prevStatus": "Out"
   }
 ]
