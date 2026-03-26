@@ -18894,5 +18894,19 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-03-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Available",
+    "injury": "Lower Back Injury Management",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Out",
+    "injury": "Right Foot Plantar Fasciitis",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
