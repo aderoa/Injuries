@@ -19181,5 +19181,12 @@
     "injury": "",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Probable",
+    "injury": "Right Wrist Injury Management",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
