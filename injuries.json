@@ -19125,5 +19125,12 @@
     "injury": "Right Achilles Injury Management",
     "date": "2026-03-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Out",
+    "injury": "Right Calf Injury",
+    "date": "2026-03-26",
+    "prevStatus": "Left Game"
   }
 ]
