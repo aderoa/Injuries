@@ -18922,5 +18922,26 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Available",
+    "injury": "Left Foot Soreness",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Out",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-25",
+    "prevStatus": "Questionable"
   }
 ]
