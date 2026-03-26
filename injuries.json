@@ -19153,5 +19153,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
