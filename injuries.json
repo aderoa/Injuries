@@ -19356,5 +19356,12 @@
     "injury": "Right Calf Strain",
     "date": "2026-03-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
