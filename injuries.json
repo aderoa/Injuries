@@ -19132,5 +19132,12 @@
     "injury": "Right Calf Injury",
     "date": "2026-03-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
