@@ -19265,5 +19265,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Questionable",
+    "injury": "Right Knee Tendonitits",
+    "date": "2026-03-26",
+    "prevStatus": "Out"
   }
 ]
