@@ -19797,5 +19797,12 @@
     "injury": "Right Knee Tendonitits",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anfernee Simons",
+    "status": "Out",
+    "injury": "Left Wrist Ulnar Styloid Fracture",
+    "date": "2026-03-27",
+    "prevStatus": "Doubtful"
   }
 ]
