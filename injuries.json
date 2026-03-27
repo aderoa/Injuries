@@ -19811,5 +19811,12 @@
     "injury": "Right Achilles Injury Management",
     "date": "2026-03-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Out",
+    "injury": "Left Achilles Tendinitis",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
   }
 ]
