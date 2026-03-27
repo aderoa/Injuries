@@ -19804,5 +19804,12 @@
     "injury": "Left Wrist Ulnar Styloid Fracture",
     "date": "2026-03-27",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Right Achilles Injury Management",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
