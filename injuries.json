@@ -19755,5 +19755,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Available",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
   }
 ]
