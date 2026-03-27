@@ -19573,5 +19573,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Questionable",
+    "injury": "Right Retro",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
