@@ -19566,5 +19566,12 @@
     "injury": "Left Calf Contusion",
     "date": "2026-03-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Questionable",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-26",
+    "prevStatus": "Available"
   }
 ]
