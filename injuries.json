@@ -19622,5 +19622,12 @@
     "injury": "Rest",
     "date": "2026-03-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Killian Hayes",
+    "status": "Left Game",
+    "injury": "Left Fifth Finger Injury",
+    "date": "2026-03-26",
+    "prevStatus": "Questionable"
   }
 ]
