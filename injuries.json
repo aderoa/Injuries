@@ -19741,5 +19741,12 @@
     "injury": "",
     "date": "2026-03-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Questionable",
+    "injury": "Right Shoulder Impingement",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
