@@ -19874,5 +19874,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Questionable",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-27",
+    "prevStatus": "Out"
   }
 ]
