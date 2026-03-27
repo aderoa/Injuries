@@ -19734,5 +19734,12 @@
     "injury": "Back Soreness",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
