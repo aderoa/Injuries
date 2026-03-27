@@ -19846,5 +19846,19 @@
     "injury": "Right Foot Sprain",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Available",
+    "injury": "Left Big Toe Capsulitis",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Available",
+    "injury": "Low Back Tightness",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
   }
 ]
