@@ -19818,5 +19818,12 @@
     "injury": "Left Achilles Tendinitis",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "injury": "Right Hip Contusion",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
