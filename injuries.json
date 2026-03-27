@@ -20091,5 +20091,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Available",
+    "injury": "Right Knee Tendonitits",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
   }
 ]
