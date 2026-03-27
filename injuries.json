@@ -19881,5 +19881,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaden McDaniels",
+    "status": "Out",
+    "injury": "Right Knee Sorenes",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
