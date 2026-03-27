@@ -19895,5 +19895,19 @@
     "injury": "Right Knee Soreness",
     "date": "2026-03-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Available",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Available",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
   }
 ]
