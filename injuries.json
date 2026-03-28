@@ -20126,5 +20126,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-03-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Left Game",
+    "injury": "Concussion Protocol",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
