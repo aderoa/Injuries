@@ -20399,5 +20399,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-03-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nique Clifford",
+    "status": "Available",
+    "injury": "Left Mid Foot Sprain",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
