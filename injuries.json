@@ -20609,5 +20609,12 @@
     "injury": "Right Knee Tendonitis",
     "date": "2026-03-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Questionable",
+    "injury": "Lower Back Spasms",
+    "date": "2026-03-28",
+    "prevStatus": "Left Game"
   }
 ]
