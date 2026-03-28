@@ -20119,5 +20119,12 @@
     "injury": "Illness",
     "date": "2026-03-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ryan Dunn",
+    "status": "Available",
+    "injury": "Right Groin Soreness",
+    "date": "2026-03-27",
+    "prevStatus": "Out"
   }
 ]
