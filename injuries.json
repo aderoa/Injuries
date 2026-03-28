@@ -20182,5 +20182,12 @@
     "injury": "",
     "date": "2026-03-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Left Game",
+    "injury": "Right Calf Injury",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
