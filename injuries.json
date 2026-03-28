@@ -20140,5 +20140,19 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-03-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Out",
+    "injury": "Left Calf Contusion",
+    "date": "2026-03-27",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-27",
+    "prevStatus": "Questionable"
   }
 ]
