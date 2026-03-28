@@ -20462,5 +20462,12 @@
     "injury": "",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Thanasis Antetokounmpo",
+    "status": "Questionable",
+    "injury": "Left Calf Soreness",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
