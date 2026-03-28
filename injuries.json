@@ -20448,5 +20448,12 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-03-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Onyeka Okongwu",
+    "status": "Out",
+    "injury": "Left Index Finger Sprain",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
