@@ -20441,5 +20441,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Questionable",
+    "injury": "Right Shoulder Impingement",
+    "date": "2026-03-28",
+    "prevStatus": "Out"
   }
 ]
