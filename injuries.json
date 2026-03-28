@@ -20154,5 +20154,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
