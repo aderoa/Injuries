@@ -20385,5 +20385,12 @@
     "injury": "Right Knee Tendinopathy",
     "date": "2026-03-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Available",
+    "injury": "Right Hip Strain",
+    "date": "2026-03-28",
+    "prevStatus": "Probable"
   }
 ]
