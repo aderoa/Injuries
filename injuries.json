@@ -20455,5 +20455,12 @@
     "injury": "Left Index Finger Sprain",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Thanasis Antetokounmpo",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
