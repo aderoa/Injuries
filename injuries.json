@@ -20539,5 +20539,12 @@
     "injury": "Right Thumb ",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Questionable",
+    "injury": "Right Thumb Soreness",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
