@@ -20602,5 +20602,12 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Questionable",
+    "injury": "Right Knee Tendonitis",
+    "date": "2026-03-28",
+    "prevStatus": "Out"
   }
 ]
