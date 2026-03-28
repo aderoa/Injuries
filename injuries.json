@@ -20616,5 +20616,12 @@
     "injury": "Lower Back Spasms",
     "date": "2026-03-28",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Out",
+    "injury": "League Suspension",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
