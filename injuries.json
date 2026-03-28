@@ -20553,5 +20553,12 @@
     "injury": "Left Ankle Sprain / Nasal Fracture",
     "date": "2026-03-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Doubtful",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
