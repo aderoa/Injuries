@@ -20112,5 +20112,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-03-27",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Khris Middleton",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
