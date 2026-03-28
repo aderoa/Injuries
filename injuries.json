@@ -20630,5 +20630,12 @@
     "injury": "Right Finger Tendon Strain",
     "date": "2026-03-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Available",
+    "injury": "Left Elbow Sprain",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
