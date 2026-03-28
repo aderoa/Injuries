@@ -20476,5 +20476,19 @@
     "injury": "Right Achilles Tendinopathy",
     "date": "2026-03-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Out",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
