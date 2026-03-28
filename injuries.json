@@ -20378,5 +20378,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-03-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "Right Knee Tendinopathy",
+    "date": "2026-03-28",
+    "prevStatus": "Probable"
   }
 ]
