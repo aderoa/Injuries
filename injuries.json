@@ -20651,5 +20651,12 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-03-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
