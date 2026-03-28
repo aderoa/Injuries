@@ -20392,5 +20392,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-03-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Probable",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
