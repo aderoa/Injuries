@@ -20364,5 +20364,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Probable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
