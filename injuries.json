@@ -20637,5 +20637,19 @@
     "injury": "Left Elbow Sprain",
     "date": "2026-03-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dyson Daniels",
+    "status": "Out",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Available",
+    "injury": "Right Shoulder Impingement",
+    "date": "2026-03-28",
+    "prevStatus": "Questionable"
   }
 ]
