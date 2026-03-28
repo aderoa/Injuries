@@ -20525,5 +20525,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Doubtful",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
