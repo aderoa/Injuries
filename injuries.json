@@ -20133,5 +20133,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-03-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Available",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-03-27",
+    "prevStatus": "Out"
   }
 ]
