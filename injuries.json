@@ -20175,5 +20175,12 @@
     "injury": "Low Back Injury",
     "date": "2026-03-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-03-27",
+    "prevStatus": "Available"
   }
 ]
