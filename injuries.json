@@ -20742,5 +20742,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
