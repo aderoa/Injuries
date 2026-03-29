@@ -21477,5 +21477,12 @@
     "injury": "Right Elbow Sprain",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Questionable",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
   }
 ]
