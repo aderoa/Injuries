@@ -21183,5 +21183,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
