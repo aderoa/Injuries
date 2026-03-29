@@ -20868,5 +20868,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-03-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Questionable",
+    "injury": "Left Adductor Strain",
+    "date": "2026-03-28",
+    "prevStatus": "Out"
   }
 ]
