@@ -21407,5 +21407,26 @@
     "injury": "Illness",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Available",
+    "injury": "Right Heel Inflammation",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Available",
+    "injury": "Right Knee Tendonitis",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Available",
+    "injury": "Lower Back Spasms",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
   }
 ]
