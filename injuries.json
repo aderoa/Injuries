@@ -21638,5 +21638,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
