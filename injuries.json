@@ -21400,5 +21400,12 @@
     "injury": "Right Plantar Fascia Strain",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Khris Middleton",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
   }
 ]
