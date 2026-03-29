@@ -20700,5 +20700,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
