@@ -21239,5 +21239,19 @@
     "injury": "Left Calf Soreness",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Right Achilles Tendinopathy",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Out",
+    "injury": "Left Hip Flexor Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
