@@ -21225,5 +21225,12 @@
     "injury": "Cervical Strain",
     "date": "2026-03-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Wilson",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
