@@ -21596,5 +21596,19 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Questionable",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee Inflammation w/ Patellofemoral Pain Syndrome",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
   }
 ]
