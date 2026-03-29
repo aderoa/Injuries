@@ -20973,5 +20973,12 @@
     "injury": "",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "DeJon Jarreau",
+    "status": "Left Game",
+    "injury": "Right Elbow Soreness",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
