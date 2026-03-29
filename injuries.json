@@ -21260,5 +21260,19 @@
     "injury": "Right Patella Tendinopathy",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Leaky Black",
+    "status": "Available",
+    "injury": "Right Adductor Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Available",
+    "injury": "Right Retrocalcaneal Bursitis",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
   }
 ]
