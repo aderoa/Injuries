@@ -21176,5 +21176,12 @@
     "injury": "Right Achilles Repair Management",
     "date": "2026-03-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Doubtful",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
   }
 ]
