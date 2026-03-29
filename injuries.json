@@ -21190,5 +21190,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamison Battle",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
