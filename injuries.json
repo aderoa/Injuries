@@ -21568,5 +21568,12 @@
     "injury": "Right Hip Injury Managament",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
