@@ -21218,5 +21218,12 @@
     "injury": "Right Toe Injury Management",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Doubtful",
+    "injury": "Cervical Strain",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
   }
 ]
