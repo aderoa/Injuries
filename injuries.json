@@ -20945,5 +20945,12 @@
     "injury": "Left Big Toe Injury Management",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Out",
+    "injury": "Right Calf Strain",
+    "date": "2026-03-28",
+    "prevStatus": "Left Game"
   }
 ]
