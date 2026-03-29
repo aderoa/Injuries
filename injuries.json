@@ -20728,5 +20728,12 @@
     "injury": "",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "Low Back Injury Management",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
