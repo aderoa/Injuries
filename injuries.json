@@ -21624,5 +21624,12 @@
     "injury": "Right Thumb Soreness",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "DeJon Jarreau",
+    "status": "Questionable",
+    "injury": "Right Elbow Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Left Game"
   }
 ]
