@@ -20847,5 +20847,12 @@
     "injury": "Right Achilles Injury Management",
     "date": "2026-03-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Questionable",
+    "injury": "Pelvic Core Muscle Surgery",
+    "date": "2026-03-28",
+    "prevStatus": "Out"
   }
 ]
