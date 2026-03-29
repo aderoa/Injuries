@@ -21659,5 +21659,12 @@
     "injury": "",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Olivier-Maxence Prosper",
+    "status": "Doubtful",
+    "injury": "Right Wrist Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
