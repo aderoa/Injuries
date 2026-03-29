@@ -20931,5 +20931,12 @@
     "injury": "",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Out",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
