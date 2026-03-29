@@ -21680,5 +21680,12 @@
     "injury": "Pelvic Core Muscle Injury",
     "date": "2026-03-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
   }
 ]
