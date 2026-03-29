@@ -21099,5 +21099,12 @@
     "injury": "Left Calf Soreness",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Questionable",
+    "injury": "Right Achilles Tendinopathy",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
   }
 ]
