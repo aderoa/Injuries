@@ -20805,5 +20805,12 @@
     "injury": "",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "Right Achilles Repair Management",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
