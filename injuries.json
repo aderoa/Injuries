@@ -21393,5 +21393,12 @@
     "injury": "Illness",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Doubtful",
+    "injury": "Right Plantar Fascia Strain",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
   }
 ]
