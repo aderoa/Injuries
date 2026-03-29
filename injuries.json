@@ -20707,5 +20707,12 @@
     "injury": "",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "Back Spasms",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
