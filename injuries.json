@@ -20784,5 +20784,12 @@
     "injury": "Low Back Bruise",
     "date": "2026-03-28",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Questionable",
+    "injury": "Left Achilles Tendinitis",
+    "date": "2026-03-28",
+    "prevStatus": "Out"
   }
 ]
