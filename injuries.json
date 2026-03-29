@@ -20798,5 +20798,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-03-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-28",
+    "prevStatus": "Available"
   }
 ]
