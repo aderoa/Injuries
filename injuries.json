@@ -21470,5 +21470,12 @@
     "injury": "Left Index Finger Sprain",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nick Richards",
+    "status": "Questionable",
+    "injury": "Right Elbow Sprain",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
   }
 ]
