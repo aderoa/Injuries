@@ -21155,5 +21155,12 @@
     "injury": "Upper Respiratory Illness",
     "date": "2026-03-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Out",
+    "injury": "Left Achilles Tendinitis",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
   }
 ]
