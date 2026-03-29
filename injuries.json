@@ -21554,5 +21554,12 @@
     "injury": "Left Hip Injury Management",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
