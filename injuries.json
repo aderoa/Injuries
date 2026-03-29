@@ -21386,5 +21386,12 @@
     "injury": "Right Shoulder Sprain",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
