@@ -21526,5 +21526,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Questionable"
   }
 ]
