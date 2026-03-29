@@ -21211,5 +21211,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Russell Westbrook",
+    "status": "Out",
+    "injury": "Right Toe Injury Management",
+    "date": "2026-03-21",
+    "prevStatus": "Out"
   }
 ]
