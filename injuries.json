@@ -21589,5 +21589,12 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-03-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Available",
+    "injury": "Right Calf Soreness",
+    "date": "2026-03-29",
+    "prevStatus": "Out"
   }
 ]
