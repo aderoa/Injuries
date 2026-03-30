@@ -22387,5 +22387,12 @@
     "injury": "Illness",
     "date": "2026-03-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Questionable",
+    "injury": "Personal Reasons",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
   }
 ]
