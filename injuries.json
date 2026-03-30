@@ -22016,5 +22016,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-03-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-30",
+    "prevStatus": "Probable"
   }
 ]
