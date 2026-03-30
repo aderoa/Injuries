@@ -22268,5 +22268,19 @@
     "injury": "Right Elbow Soreness",
     "date": "2026-03-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Olivier-Maxence Prosper",
+    "status": "Out",
+    "injury": "Right Wrist Soreness",
+    "date": "2026-03-30",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-30",
+    "prevStatus": "Doubtful"
   }
 ]
