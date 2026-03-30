@@ -22450,5 +22450,12 @@
     "injury": "Core Muscle Surgery",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-03-30",
+    "prevStatus": "Questionable"
   }
 ]
