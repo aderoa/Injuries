@@ -22289,5 +22289,12 @@
     "injury": "Right Knee Inflammation w/ Patellofemoral Pain Syndrome",
     "date": "2026-03-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Out",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-03-30",
+    "prevStatus": "Questionable"
   }
 ]
