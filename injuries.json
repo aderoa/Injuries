@@ -22401,5 +22401,19 @@
     "injury": "Right Achilles Tendinopathy",
     "date": "2026-03-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Probable",
+    "injury": "Left Hip Flexor Soreness",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Available",
+    "injury": "Right Patella Tendinopathy",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
   }
 ]
