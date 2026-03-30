@@ -22079,5 +22079,12 @@
     "injury": "",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
