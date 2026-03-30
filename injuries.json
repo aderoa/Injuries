@@ -22191,5 +22191,12 @@
     "injury": "Lower Back Spasms",
     "date": "2026-03-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Available",
+    "injury": "Neck Soreness",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
