@@ -22429,5 +22429,12 @@
     "injury": "Right ",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Questionable",
+    "injury": "Pelvic Core Muscle Pla",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
