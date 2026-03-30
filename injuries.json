@@ -22156,5 +22156,12 @@
     "injury": "Neck Soreness",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
