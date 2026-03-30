@@ -22296,5 +22296,12 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-03-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Available",
+    "injury": "Right Shoulder Sprain",
+    "date": "2026-03-30",
+    "prevStatus": "Probable"
   }
 ]
