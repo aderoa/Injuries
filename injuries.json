@@ -22331,5 +22331,12 @@
     "injury": "Illness",
     "date": "2026-03-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Questionable",
+    "injury": "Left Big Toe Injury Management",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
