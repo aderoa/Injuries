@@ -22107,5 +22107,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Carlton Carrington",
+    "status": "Available",
+    "injury": "Muscle Cramping",
+    "date": "2026-03-30",
+    "prevStatus": "Left Game"
   }
 ]
