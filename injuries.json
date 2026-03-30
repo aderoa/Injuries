@@ -22345,5 +22345,19 @@
     "injury": "Left Big Toe Capsulitis",
     "date": "2026-03-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tidjane Salaun",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
   }
 ]
