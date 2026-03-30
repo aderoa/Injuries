@@ -22037,5 +22037,19 @@
     "injury": "Left Hip Injury Management",
     "date": "2026-03-30",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Out",
+    "injury": "Right Hip Injury Managament",
+    "date": "2026-03-30",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-03-30",
+    "prevStatus": "Questionable"
   }
 ]
