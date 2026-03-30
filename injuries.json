@@ -21995,5 +21995,12 @@
     "injury": "",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Probable",
+    "injury": "Left Triceps Contusion",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
