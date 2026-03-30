@@ -22163,5 +22163,12 @@
     "injury": "",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Probable",
+    "injury": "Left Shoulder Stiffness",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
