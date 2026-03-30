@@ -22135,5 +22135,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
   }
 ]
