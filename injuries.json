@@ -21778,5 +21778,12 @@
     "injury": "Left Hip Impingement",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
