@@ -21988,5 +21988,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-03-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
