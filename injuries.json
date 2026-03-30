@@ -22219,5 +22219,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
   }
 ]
