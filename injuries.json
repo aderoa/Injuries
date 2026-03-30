@@ -22198,5 +22198,12 @@
     "injury": "Neck Soreness",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Available",
+    "injury": "Left Triceps Contusion",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
