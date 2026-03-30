@@ -21736,5 +21736,12 @@
     "injury": "Muscle Cramping",
     "date": "2026-03-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Out",
+    "injury": "Left Calf Tightness",
+    "date": "2026-03-29",
+    "prevStatus": "Available"
   }
 ]
