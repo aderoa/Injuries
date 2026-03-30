@@ -22317,5 +22317,12 @@
     "injury": "Right Plantar Fascia Strain",
     "date": "2026-03-30",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
