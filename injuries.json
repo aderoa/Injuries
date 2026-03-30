@@ -22359,5 +22359,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Out",
+    "injury": "Left Achilles Sorenes",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
