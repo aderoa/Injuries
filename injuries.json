@@ -22415,5 +22415,12 @@
     "injury": "Right Patella Tendinopathy",
     "date": "2026-03-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
