@@ -21981,5 +21981,12 @@
     "injury": "Right Achilles Repair Management",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Probable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
   }
 ]
