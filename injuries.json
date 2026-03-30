@@ -22002,5 +22002,12 @@
     "injury": "Left Triceps Contusion",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
