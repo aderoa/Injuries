@@ -22247,5 +22247,19 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-03-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-03-30",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Out",
+    "injury": "Right Foot Soreness",
+    "date": "2026-03-30",
+    "prevStatus": "Doubtful"
   }
 ]
