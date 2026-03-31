@@ -22674,5 +22674,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Probable",
+    "injury": "Left Hip Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
