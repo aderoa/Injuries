@@ -23115,5 +23115,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
