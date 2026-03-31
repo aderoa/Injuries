@@ -22989,5 +22989,12 @@
     "injury": "Left Hip Flexor Soreness",
     "date": "2026-03-31",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
