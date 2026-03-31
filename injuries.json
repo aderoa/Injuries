@@ -22464,5 +22464,12 @@
     "injury": "",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Elijah Harkless",
+    "status": "Out",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-03-30",
+    "prevStatus": "Available"
   }
 ]
