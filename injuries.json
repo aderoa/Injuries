@@ -22744,5 +22744,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Out",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
