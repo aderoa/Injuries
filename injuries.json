@@ -23094,5 +23094,19 @@
     "injury": "Right Hip Strain",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Available",
+    "injury": "Right Heel Inflammation",
+    "date": "2026-03-31",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Available",
+    "injury": "Lower Back Spasms",
+    "date": "2026-03-31",
+    "prevStatus": "Questionable"
   }
 ]
