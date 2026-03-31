@@ -22933,5 +22933,12 @@
     "injury": "Lower Back Injury",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
