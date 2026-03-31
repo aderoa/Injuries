@@ -22786,5 +22786,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adou Thiero",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
