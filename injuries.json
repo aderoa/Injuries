@@ -22506,5 +22506,12 @@
     "injury": "",
     "date": "2026-03-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Wilson",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-03-31",
+    "prevStatus": "Probable"
   }
 ]
