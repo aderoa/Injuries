@@ -22758,5 +22758,12 @@
     "injury": "Left Groin Strain",
     "date": "2026-03-31",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Craig Porter",
+    "status": "Available",
+    "injury": "Left Groin Strain",
+    "date": "",
+    "prevStatus": "Probable"
   }
 ]
