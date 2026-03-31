@@ -22877,5 +22877,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Doubtful",
+    "injury": "Left 5th Finger Soreness",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
