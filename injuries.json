@@ -22681,5 +22681,12 @@
     "injury": "Left Hip Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Questionable",
+    "injury": "Right Knee Patellar Tendinopathy",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
