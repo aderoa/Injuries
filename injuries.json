@@ -22800,5 +22800,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Available",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Available",
+    "injury": "Right Achilles Repair Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
