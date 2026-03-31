@@ -22982,5 +22982,12 @@
     "injury": "Right Achilles Tendinopathy",
     "date": "2026-03-31",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Available",
+    "injury": "Left Hip Flexor Soreness",
+    "date": "2026-03-31",
+    "prevStatus": "Probable"
   }
 ]
