@@ -22709,5 +22709,12 @@
     "injury": "Left Shoulder Stiffness",
     "date": "2026-03-31",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
