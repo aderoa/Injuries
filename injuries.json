@@ -22730,5 +22730,12 @@
     "injury": "Right Hamstring Soreness",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Available",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
