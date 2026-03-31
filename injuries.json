@@ -22891,5 +22891,12 @@
     "injury": "Right Wrist Soreness",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
