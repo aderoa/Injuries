@@ -23017,5 +23017,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-03-31",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Zeke Nnaji",
+    "status": "Out",
+    "injury": "Left Hip Strain",
+    "date": "2026-03-31",
+    "prevStatus": "Left Game"
   }
 ]
