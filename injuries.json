@@ -22870,5 +22870,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Questionable",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
