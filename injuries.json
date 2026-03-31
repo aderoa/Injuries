@@ -22772,5 +22772,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Available",
+    "injury": "League Suspension",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
