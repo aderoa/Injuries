@@ -22723,5 +22723,12 @@
     "injury": "Left Hand Fracture",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "status": "Available",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
