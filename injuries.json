@@ -22737,5 +22737,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
