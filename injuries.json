@@ -23059,5 +23059,26 @@
     "injury": "Left Hip Stra",
     "date": "2026-03-31",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Available",
+    "injury": "Left Hip Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "Right Knee Patellar Tendinopathy",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
