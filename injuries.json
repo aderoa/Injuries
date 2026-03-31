@@ -22702,5 +22702,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Available",
+    "injury": "Left Shoulder Stiffness",
+    "date": "2026-03-31",
+    "prevStatus": "Probable"
   }
 ]
