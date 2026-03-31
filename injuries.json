@@ -22968,5 +22968,19 @@
     "injury": "Core Muscle Surgery",
     "date": "2026-03-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-03-31",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Available",
+    "injury": "Right Achilles Tendinopathy",
+    "date": "2026-03-31",
+    "prevStatus": "Probable"
   }
 ]
