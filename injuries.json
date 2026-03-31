@@ -22499,5 +22499,12 @@
     "injury": "",
     "date": "2026-03-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Leaky Black",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-03-30",
+    "prevStatus": "Out"
   }
 ]
