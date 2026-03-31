@@ -22688,5 +22688,12 @@
     "injury": "Right Knee Patellar Tendinopathy",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Probable",
+    "injury": "Right Hip Injury Managament",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
