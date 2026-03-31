@@ -22961,5 +22961,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Available",
+    "injury": "Core Muscle Surgery",
+    "date": "2026-03-31",
+    "prevStatus": "Questionable"
   }
 ]
