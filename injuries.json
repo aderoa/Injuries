@@ -23038,5 +23038,12 @@
     "injury": "Lower Back Spasms",
     "date": "2026-03-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Available",
+    "injury": "Left Lung Pneumotorax",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
