@@ -22667,5 +22667,12 @@
     "injury": "Illness",
     "date": "2026-03-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Probable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
