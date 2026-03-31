@@ -23024,5 +23024,12 @@
     "injury": "Left Hip Strain",
     "date": "2026-03-31",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Probable",
+    "injury": "Right Heel Inflammation",
+    "date": "2026-03-31",
+    "prevStatus": "Questionable"
   }
 ]
