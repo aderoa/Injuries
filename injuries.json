@@ -23003,5 +23003,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Out",
+    "injury": "Right Hamstring Tightness",
+    "date": "2026-03-31",
+    "prevStatus": "Left Game"
   }
 ]
