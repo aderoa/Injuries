@@ -23150,5 +23150,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Out",
+    "injury": "General Illness Management",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
