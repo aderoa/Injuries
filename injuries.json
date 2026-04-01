@@ -23437,5 +23437,12 @@
     "injury": "Left High Ankle Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Probable",
+    "injury": "Left Big Toe Sesamoiditis",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
