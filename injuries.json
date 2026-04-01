@@ -23472,5 +23472,12 @@
     "injury": "",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Right Achilles Tendinopathy",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
