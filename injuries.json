@@ -23584,5 +23584,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-01",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "PJ Hall",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
