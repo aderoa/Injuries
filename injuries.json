@@ -23738,5 +23738,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Available",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-04-01",
+    "prevStatus": "Out"
   }
 ]
