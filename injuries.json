@@ -23563,5 +23563,12 @@
     "injury": "Left High Ankle Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee Patellofemoral Pain Syndrome",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
