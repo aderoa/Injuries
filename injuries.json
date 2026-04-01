@@ -23689,5 +23689,12 @@
     "injury": "Left 5th Finger Soreness",
     "date": "2026-04-01",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Out",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
