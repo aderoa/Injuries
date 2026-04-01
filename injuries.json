@@ -23731,5 +23731,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Out",
+    "injury": "Right Pelvic Contusion",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
