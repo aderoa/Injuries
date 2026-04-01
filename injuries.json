@@ -23185,5 +23185,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Left Game",
+    "injury": "Right Hip Injury",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
