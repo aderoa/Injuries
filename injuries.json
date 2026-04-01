@@ -23710,5 +23710,12 @@
     "injury": "Left Shoulder Soreness",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-01",
+    "prevStatus": "Probable"
   }
 ]
