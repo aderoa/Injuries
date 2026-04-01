@@ -23514,5 +23514,12 @@
     "injury": "Right Knee Tibial Plateau Contusion",
     "date": "2026-04-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
