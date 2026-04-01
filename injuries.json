@@ -23675,5 +23675,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-01",
+    "prevStatus": "Out"
   }
 ]
