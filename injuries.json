@@ -23374,5 +23374,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
