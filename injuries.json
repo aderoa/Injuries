@@ -23745,5 +23745,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Out",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
