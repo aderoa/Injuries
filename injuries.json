@@ -23542,5 +23542,12 @@
     "injury": "Left Shoulder Soreness",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Garrett Temple",
+    "status": "Questionable",
+    "injury": "Left Shoulder Soreness",
+    "date": "2026-04-01",
+    "prevStatus": "Out"
   }
 ]
