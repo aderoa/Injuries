@@ -23479,5 +23479,12 @@
     "injury": "Right Achilles Tendinopathy",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bobby Portis",
+    "status": "Out",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-03-28",
+    "prevStatus": "Out"
   }
 ]
