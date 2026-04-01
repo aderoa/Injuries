@@ -23444,5 +23444,12 @@
     "injury": "Left Big Toe Sesamoiditis",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Questionable",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
