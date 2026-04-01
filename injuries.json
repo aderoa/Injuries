@@ -23493,5 +23493,12 @@
     "injury": "Neck Surgery Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
