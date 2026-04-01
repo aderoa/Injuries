@@ -23619,5 +23619,12 @@
     "injury": "Left Big Toe Sesamoiditis",
     "date": "2026-04-01",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Available",
+    "injury": "Right Soleus Injury Management",
+    "date": "2026-04-01",
+    "prevStatus": "Out"
   }
 ]
