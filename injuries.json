@@ -23381,5 +23381,12 @@
     "injury": "Illness",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ron Harper Jr",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
