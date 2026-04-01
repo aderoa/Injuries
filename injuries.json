@@ -23507,5 +23507,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Landry Shamet",
+    "status": "Available",
+    "injury": "Right Knee Tibial Plateau Contusion",
+    "date": "2026-04-01",
+    "prevStatus": "Out"
   }
 ]
