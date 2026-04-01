@@ -23535,5 +23535,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Garrett Temple",
+    "status": "Out",
+    "injury": "Left Shoulder Soreness",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
