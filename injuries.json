@@ -23423,5 +23423,12 @@
     "injury": "Left Big Toe Capsulitis",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Elijah Harkless",
+    "status": "Available",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
