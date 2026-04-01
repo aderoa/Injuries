@@ -23612,5 +23612,12 @@
     "injury": "Illness",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Available",
+    "injury": "Left Big Toe Sesamoiditis",
+    "date": "2026-04-01",
+    "prevStatus": "Probable"
   }
 ]
