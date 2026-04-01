@@ -23696,5 +23696,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Available",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
