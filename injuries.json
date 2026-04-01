@@ -23640,5 +23640,12 @@
     "injury": "",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
