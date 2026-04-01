@@ -23486,5 +23486,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-03-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Out",
+    "injury": "Neck Surgery Injury Management",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
