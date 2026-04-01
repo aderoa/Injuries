@@ -23626,5 +23626,19 @@
     "injury": "Right Soleus Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Available",
+    "injury": "Right Hamstring Injury Managemen",
+    "date": "2026-04-01",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
