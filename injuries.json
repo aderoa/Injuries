@@ -23661,5 +23661,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
