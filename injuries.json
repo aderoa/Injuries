@@ -23556,5 +23556,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Franz Wagner",
+    "status": "Available",
+    "injury": "Left High Ankle Injury Management",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
