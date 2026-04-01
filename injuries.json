@@ -23605,5 +23605,12 @@
     "injury": "Left Foot Third Metatarsal Stress Reaction",
     "date": "2026-04-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
