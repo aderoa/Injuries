@@ -23682,5 +23682,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Out",
+    "injury": "Left 5th Finger Soreness",
+    "date": "2026-04-01",
+    "prevStatus": "Doubtful"
   }
 ]
