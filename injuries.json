@@ -23164,5 +23164,19 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-03-31",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Available",
+    "injury": "Left Heel Soreness",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Questionable",
+    "injury": "Right Pelvic Contusion",
+    "date": "2026-03-31",
+    "prevStatus": "Available"
   }
 ]
