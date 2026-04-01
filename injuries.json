@@ -23654,5 +23654,12 @@
     "injury": "Left Hamstring Tightness",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Out",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
