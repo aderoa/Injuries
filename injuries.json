@@ -24053,5 +24053,12 @@
     "injury": "General Illness Management",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
