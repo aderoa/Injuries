@@ -24137,5 +24137,12 @@
     "injury": "Right High Ankle Sprain",
     "date": "2026-04-02",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Doubtful",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
