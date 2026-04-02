@@ -23997,5 +23997,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
