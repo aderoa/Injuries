@@ -23892,5 +23892,12 @@
     "injury": "Right Knee Patellofemoral Pain Syndrome / Illness",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamison Battle",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
