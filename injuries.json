@@ -23913,5 +23913,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tre Jones",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
