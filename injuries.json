@@ -24214,5 +24214,12 @@
     "injury": "Right Achilles Tendinopathy",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Available",
+    "injury": "Neck Surgery Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
