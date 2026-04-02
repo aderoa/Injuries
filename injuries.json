@@ -24025,5 +24025,12 @@
     "injury": "Left Adductor Injury Management",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Anthony Melton",
+    "status": "Questionable",
+    "injury": "Left Thumb Strain",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
