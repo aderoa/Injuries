@@ -24186,5 +24186,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Thanasis Antetokounmpo",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
