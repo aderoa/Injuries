@@ -24060,5 +24060,19 @@
     "injury": "",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
