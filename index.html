@@ -270,6 +270,7 @@ let daysMap = {};     // player -> days since last game
 let jsonEntries = []; // raw injuries.json
 let latestStatus = {}; // player -> {status, injury, date}
 let modifications = {}; // player -> {status, injury, date} (admin edits)
+let lastSyncedChanges = []; // captured at push time for report generation
 
 // ===== GITHUB AUTO-SYNC =====
 const GH_REPO = 'aderoa/Injuries';
@@ -792,6 +793,20 @@ async function pushToGitHub() {
 
     // Merge pushed modifications into jsonEntries
     jsonEntries = merged;
+    // Capture pushed changes for report generation (before clearing)
+    const syncedEntries = [];
+    for (const name of pushingNames) {
+      if (pushingMods[name]) {
+        syncedEntries.push({
+          name,
+          status: pushingMods[name].status,
+          injury: pushingMods[name].injury || '',
+          prevStatus: pushingMods[name].prevStatus || '',
+          team: (roster[name] || {}).team || ''
+        });
+      }
+    }
+    if (syncedEntries.length > 0) lastSyncedChanges = syncedEntries;
     // Only clear modifications that were actually in this push — preserve any
     // changes made during the async network call
     for (const name of pushingNames) {
@@ -1030,19 +1045,34 @@ function describeTransition(name, mod, prevStatus) {
 }
 
 function generateInjuryReport(btn) {
+  // Use current modifications if any, otherwise fall back to last synced changes
+  let changes = [];
   const modEntries = Object.entries(modifications);
-  if (modEntries.length === 0) {
-    alert('No modifications to report.');
+
+  if (modEntries.length > 0) {
+    // Unsaved changes — build from modifications
+    for (const [name, mod] of modEntries) {
+      changes.push({
+        name,
+        status: mod.status,
+        injury: mod.injury || '',
+        prevStatus: mod.prevStatus || (latestStatus[name] || {}).status || 'Available',
+        team: (roster[name] || {}).team || 'Unknown'
+      });
+    }
+  } else if (lastSyncedChanges.length > 0) {
+    // Modifications already pushed — use captured snapshot
+    changes = lastSyncedChanges;
+  } else {
+    alert('No modifications to report. Make changes, then click Generate Report (before or after sync).');
     return;
   }
 
   // Group by team
   const byTeam = {};
-  for (const [name, mod] of modEntries) {
-    const team = (roster[name] || {}).team || 'Unknown';
-    if (!byTeam[team]) byTeam[team] = [];
-    const prevStatus = mod.prevStatus || (latestStatus[name] || {}).status || 'Available';
-    byTeam[team].push({ name, mod, prevStatus });
+  for (const c of changes) {
+    if (!byTeam[c.team]) byTeam[c.team] = [];
+    byTeam[c.team].push({ name: c.name, mod: { status: c.status, injury: c.injury }, prevStatus: c.prevStatus });
   }
 
   const paragraphs = [];
