@@ -23906,5 +23906,12 @@
     "injury": "Right Foot Heel Inflammation",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
