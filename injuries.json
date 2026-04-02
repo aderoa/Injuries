@@ -24109,5 +24109,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-02",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "injury": "Cervical and Lumbar Soreness",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
