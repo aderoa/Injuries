@@ -23899,5 +23899,12 @@
     "injury": "Illness",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Available",
+    "injury": "Right Foot Heel Inflammation",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
