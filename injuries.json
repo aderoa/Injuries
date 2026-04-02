@@ -23976,5 +23976,26 @@
     "injury": "Low Back Spasms",
     "date": "2026-04-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Available",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Available",
+    "injury": "Core Muscle Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
