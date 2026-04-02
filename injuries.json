@@ -24130,5 +24130,12 @@
     "injury": "Illness",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Out",
+    "injury": "Right High Ankle Sprain",
+    "date": "2026-04-02",
+    "prevStatus": "Left Game"
   }
 ]
