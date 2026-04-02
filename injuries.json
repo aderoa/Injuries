@@ -24284,5 +24284,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Doubtful",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
