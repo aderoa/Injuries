@@ -81,6 +81,18 @@ tbody td { padding:0.55rem 0.5rem; vertical-align:middle; white-space:nowrap; }
 }
 
 /* — Admin layout — */
+.report-modal-overlay { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.4); z-index:10000; justify-content:center; align-items:center; padding:2rem; }
+.report-modal-overlay.active { display:flex; }
+.report-modal { background:#fff; border-radius:12px; max-width:700px; width:100%; max-height:80vh; display:flex; flex-direction:column; box-shadow:0 12px 40px rgba(0,0,0,0.2); }
+.report-modal-header { padding:1.25rem 1.5rem; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+.report-modal-header h3 { font-size:1rem; font-weight:700; }
+.report-modal-header button { background:none; border:none; font-size:1.2rem; cursor:pointer; color:var(--text2); padding:4px 8px; }
+.report-modal-body { padding:1.25rem 1.5rem; overflow-y:auto; flex:1; }
+.report-modal-body textarea { width:100%; min-height:250px; border:1px solid var(--border); border-radius:8px; padding:12px; font-family:inherit; font-size:13px; line-height:1.6; resize:vertical; color:var(--text); }
+.report-modal-footer { padding:1rem 1.5rem; border-top:1px solid var(--border); display:flex; gap:8px; justify-content:flex-end; }
+.report-modal-footer button { font-family:inherit; font-size:13px; font-weight:600; padding:8px 18px; border-radius:8px; border:1px solid var(--border); background:var(--surface); color:var(--text); cursor:pointer; }
+.report-modal-footer button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+.report-modal-footer button.primary:hover { background:#2563eb; }
 .admin-container { max-width:1100px; margin:0 auto; padding:16px 20px 80px; }
 .admin-header { display:flex; align-items:center; gap:16px; padding:20px 0 16px; border-bottom:1px solid var(--border); margin-bottom:16px; }
 .admin-header h1 { font-size:1.5rem; font-weight:800; letter-spacing:-0.02em; }
@@ -355,6 +367,7 @@ if (isAdmin) {
       <div class="admin-toolbar" id="toolbar">
         <button class="primary" onclick="copyPrestoHTML(this)">📋 Copy Presto HTML</button>
         <button onclick="copyJSON(this)">📋 Copy Updated JSON</button>
+        <button onclick="generateInjuryReport(this)">📝 Generate Report</button>
         <button onclick="pushToGitHub()">⬆️ Push Now</button>
         <button onclick="setupGitHubToken()">🔑 Token</button>
         <button class="btn-purge" onclick="purgeAvailable(this)">🧹 Purge Available</button>
@@ -974,6 +987,135 @@ function copyJSON(btn) {
     const orig = btn.textContent;
     btn.textContent = '✓ Copied!'; btn.classList.add('success');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('success'); }, 2000);
+  });
+}
+
+// ===== INJURY REPORT GENERATOR =====
+const HOOPSHYPE_LINK = 'https://www.hoopshype.com/story/sports/nba/2025/10/23/nba-injury-tracker-whos-not-available-right-now/86822180007/';
+
+const STATUS_SEVERITY = { 'Available':0, 'Probable':1, 'Questionable':2, 'Doubtful':3, 'Out':4, 'Left Game':5 };
+
+const TEAM_NICKNAMES = {
+  'Atlanta':'Hawks','Boston':'Celtics','Brooklyn':'Nets','Charlotte':'Hornets',
+  'Chicago':'Bulls','Cleveland':'Cavaliers','Dallas':'Mavericks','Denver':'Nuggets',
+  'Detroit':'Pistons','Golden State':'Warriors','Houston':'Rockets','Indiana':'Pacers',
+  'LA Clippers':'Clippers','LA Lakers':'Lakers','Memphis':'Grizzlies','Miami':'Heat',
+  'Milwaukee':'Bucks','Minnesota':'Timberwolves','New Orleans':'Pelicans','New York':'Knicks',
+  'Oklahoma City':'Thunder','Orlando':'Magic','Philadelphia':'76ers','Phoenix':'Suns',
+  'Portland':'Trail Blazers','Sacramento':'Kings','San Antonio':'Spurs','Toronto':'Raptors',
+  'Utah':'Jazz','Washington':'Wizards'
+};
+
+function describeTransition(name, mod, prevStatus) {
+  const injury = mod.injury ? ` (${mod.injury.toLowerCase()})` : '';
+  const newStatus = mod.status;
+  const prevSev = STATUS_SEVERITY[prevStatus] ?? -1;
+  const newSev = STATUS_SEVERITY[newStatus] ?? -1;
+
+  if (newStatus === 'Available') {
+    if (prevSev > 0) return `upgraded ${name}${injury} to available`;
+    return `listed ${name}${injury} as available`;
+  }
+  if (prevStatus === 'Available' || prevSev <= 0) {
+    // Was healthy or new
+    return `listed ${name}${injury} as ${newStatus.toLowerCase()}`;
+  }
+  if (newSev < prevSev) {
+    return `upgraded ${name}${injury} to ${newStatus.toLowerCase()}`;
+  }
+  if (newSev > prevSev) {
+    return `downgraded ${name}${injury} to ${newStatus.toLowerCase()}`;
+  }
+  return `listed ${name}${injury} as ${newStatus.toLowerCase()}`;
+}
+
+function generateInjuryReport(btn) {
+  const modEntries = Object.entries(modifications);
+  if (modEntries.length === 0) {
+    alert('No modifications to report.');
+    return;
+  }
+
+  // Group by team
+  const byTeam = {};
+  for (const [name, mod] of modEntries) {
+    const team = (roster[name] || {}).team || 'Unknown';
+    if (!byTeam[team]) byTeam[team] = [];
+    const prevStatus = mod.prevStatus || (latestStatus[name] || {}).status || 'Available';
+    byTeam[team].push({ name, mod, prevStatus });
+  }
+
+  const paragraphs = [];
+  const sortedTeams = Object.keys(byTeam).sort();
+
+  for (const team of sortedTeams) {
+    const players = byTeam[team];
+    const nickname = TEAM_NICKNAMES[team] || team;
+
+    // Sort: upgrades first, then downgrades, then same
+    players.sort((a, b) => {
+      const aSev = (STATUS_SEVERITY[a.mod.status] || 0) - (STATUS_SEVERITY[a.prevStatus] || 0);
+      const bSev = (STATUS_SEVERITY[b.mod.status] || 0) - (STATUS_SEVERITY[b.prevStatus] || 0);
+      if (aSev !== bSev) return aSev - bSev; // upgrades (negative) first
+      return a.name.localeCompare(b.name);
+    });
+
+    const descriptions = players.map(p => describeTransition(p.name, p.mod, p.prevStatus));
+
+    // Build: "The Bulls have upgraded X to available, downgraded Y to out, and listed Z as questionable."
+    let teamText;
+    if (descriptions.length === 1) {
+      teamText = `The ${nickname} have ${descriptions[0]}.`;
+    } else if (descriptions.length === 2) {
+      teamText = `The ${nickname} have ${descriptions[0]} and ${descriptions[1]}.`;
+    } else {
+      const allButLast = descriptions.slice(0, -1).join(', ');
+      teamText = `The ${nickname} have ${allButLast}, and ${descriptions[descriptions.length - 1]}.`;
+    }
+    paragraphs.push(teamText);
+  }
+
+  const reportText = paragraphs.join('\n\n') + '\n\nFor the latest NBA injury updates: ' + HOOPSHYPE_LINK;
+
+  showReportModal(reportText);
+}
+
+function showReportModal(text) {
+  // Remove existing modal if any
+  const existing = document.getElementById('reportModal');
+  if (existing) existing.remove();
+
+  const modal = document.createElement('div');
+  modal.id = 'reportModal';
+  modal.className = 'report-modal-overlay active';
+  modal.innerHTML = `
+    <div class="report-modal">
+      <div class="report-modal-header">
+        <h3>📝 Injury Report</h3>
+        <button onclick="document.getElementById('reportModal').remove()">&times;</button>
+      </div>
+      <div class="report-modal-body">
+        <textarea id="reportText" spellcheck="false">${text.replace(/</g,'&lt;')}</textarea>
+      </div>
+      <div class="report-modal-footer">
+        <button onclick="document.getElementById('reportModal').remove()">Close</button>
+        <button class="primary" onclick="copyReportText(this)">📋 Copy to Clipboard</button>
+      </div>
+    </div>
+  `;
+  modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+  document.body.appendChild(modal);
+  // Select all text
+  const ta = document.getElementById('reportText');
+  ta.focus();
+  ta.select();
+}
+
+function copyReportText(btn) {
+  const text = document.getElementById('reportText').value;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => { btn.textContent = '📋 Copy to Clipboard'; }, 2000);
   });
 }
 
