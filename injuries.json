@@ -24263,5 +24263,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Available",
+    "injury": "Left Foot Third Metatarsal Stress Reaction",
+    "date": "2026-04-02",
+    "prevStatus": "Questionable"
   }
 ]
