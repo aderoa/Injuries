@@ -24144,5 +24144,12 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
