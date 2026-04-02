@@ -24095,5 +24095,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Available",
+    "injury": "Left Achilles Soreness",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
