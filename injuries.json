@@ -23773,5 +23773,12 @@
     "injury": "Hip Contusion",
     "date": "2026-04-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Left Game",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
