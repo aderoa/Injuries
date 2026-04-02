@@ -24193,5 +24193,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
