@@ -23759,5 +23759,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-04-01",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-01",
+    "prevStatus": "Questionable"
   }
 ]
