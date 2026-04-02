@@ -24123,5 +24123,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
