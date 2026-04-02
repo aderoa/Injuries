@@ -24249,5 +24249,12 @@
     "injury": "Hip Contusion",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Questionable",
+    "injury": "Hip Contusion",
+    "date": "2026-04-02",
+    "prevStatus": "Left Game"
   }
 ]
