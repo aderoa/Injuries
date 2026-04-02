@@ -24151,5 +24151,12 @@
     "injury": "Illness",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Doubtful",
+    "injury": "Right Plantar Fascia Strain",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
