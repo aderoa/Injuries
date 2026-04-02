@@ -24172,5 +24172,12 @@
     "injury": "Illness",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "Right Knee Patellofemoral Pain Syndrome / Illness",
+    "date": "2026-04-02",
+    "prevStatus": "Questionable"
   }
 ]
