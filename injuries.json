@@ -24074,5 +24074,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
