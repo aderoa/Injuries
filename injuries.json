@@ -24004,5 +24004,12 @@
     "injury": "",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Questionable",
+    "injury": "Rig",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
