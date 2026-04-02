@@ -24116,5 +24116,12 @@
     "injury": "Cervical and Lumbar Soreness",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Out",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
