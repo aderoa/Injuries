@@ -24046,5 +24046,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Available",
+    "injury": "General Illness Management",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
