@@ -24032,5 +24032,12 @@
     "injury": "Left Thumb Strain",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
