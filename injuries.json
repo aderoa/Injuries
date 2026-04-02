@@ -23766,5 +23766,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Left Game",
+    "injury": "Hip Contusion",
+    "date": "2026-04-01",
+    "prevStatus": "Available"
   }
 ]
