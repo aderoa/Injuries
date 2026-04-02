@@ -24221,5 +24221,12 @@
     "injury": "Neck Surgery Injury Management",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Probable",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-02",
+    "prevStatus": "Out"
   }
 ]
