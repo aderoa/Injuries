@@ -23969,5 +23969,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-02",
+    "prevStatus": "Questionable"
   }
 ]
