@@ -24298,5 +24298,12 @@
     "injury": "Left 5th Finger Soreness",
     "date": "2026-04-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
