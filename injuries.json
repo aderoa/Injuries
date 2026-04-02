@@ -24179,5 +24179,12 @@
     "injury": "Right Knee Patellofemoral Pain Syndrome / Illness",
     "date": "2026-04-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Available",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-02",
+    "prevStatus": "Questionable"
   }
 ]
