@@ -24319,5 +24319,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-02",
+    "prevStatus": "Questionable"
   }
 ]
