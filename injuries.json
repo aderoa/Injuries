@@ -24942,5 +24942,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamison Battle",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
