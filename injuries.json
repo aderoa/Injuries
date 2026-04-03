@@ -24781,5 +24781,19 @@
     "injury": "Right Abdominal Tightness",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Mac McClung",
+    "status": "Available",
+    "injury": "Right Abdominal Tightness",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Available",
+    "injury": "Bilateral Plantar Fascitis",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
   }
 ]
