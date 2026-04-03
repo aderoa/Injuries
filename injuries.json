@@ -24354,5 +24354,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Questionable",
+    "injury": "Right Shoulder Soreness",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
