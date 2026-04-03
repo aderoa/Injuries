@@ -24347,5 +24347,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-02",
+    "prevStatus": "Questionable"
   }
 ]
