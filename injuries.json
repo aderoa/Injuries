@@ -24655,5 +24655,12 @@
     "injury": "Personal Reasons",
     "date": "2026-04-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
