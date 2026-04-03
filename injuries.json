@@ -24599,5 +24599,12 @@
     "injury": "",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "injury": "Right Elbow Impingement",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
