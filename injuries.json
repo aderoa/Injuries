@@ -24739,5 +24739,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-03",
+    "prevStatus": "Out"
   }
 ]
