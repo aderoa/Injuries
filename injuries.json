@@ -24928,5 +24928,12 @@
     "injury": "Right Patella Tendinopathy",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-03",
+    "prevStatus": "Doubtful"
   }
 ]
