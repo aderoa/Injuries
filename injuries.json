@@ -24648,5 +24648,12 @@
     "injury": "Right Achilles Injury Management",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
