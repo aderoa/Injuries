@@ -24872,5 +24872,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Questionable",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-03",
+    "prevStatus": "Left Game"
   }
 ]
