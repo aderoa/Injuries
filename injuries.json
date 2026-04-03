@@ -24914,5 +24914,12 @@
     "injury": "Hip Contusion",
     "date": "2026-04-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Out",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
   }
 ]
