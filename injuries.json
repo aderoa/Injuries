@@ -24634,5 +24634,12 @@
     "injury": "",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
