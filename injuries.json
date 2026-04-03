@@ -24536,5 +24536,12 @@
     "injury": "",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
