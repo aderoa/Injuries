@@ -24606,5 +24606,12 @@
     "injury": "Right Elbow Impingement",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
