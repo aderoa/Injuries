@@ -24760,5 +24760,12 @@
     "injury": "Right Knee Patellofemoral Pain Syndrome / Illness",
     "date": "2026-04-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Available",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
