@@ -24340,5 +24340,12 @@
     "injury": "Left Thumb Strain",
     "date": "2026-04-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Available",
+    "injury": "Right Pelvic Contusion",
+    "date": "2026-04-02",
+    "prevStatus": "Questionable"
   }
 ]
