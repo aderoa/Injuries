@@ -24935,5 +24935,12 @@
     "injury": "Illness",
     "date": "2026-04-03",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
