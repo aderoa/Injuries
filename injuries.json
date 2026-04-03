@@ -24585,5 +24585,12 @@
     "injury": "Left Hamstring Tightness",
     "date": "2026-04-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tre Jones",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
