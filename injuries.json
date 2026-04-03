@@ -24879,5 +24879,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-04-03",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Probable",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
