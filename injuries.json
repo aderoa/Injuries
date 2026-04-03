@@ -24592,5 +24592,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
