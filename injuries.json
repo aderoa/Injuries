@@ -24774,5 +24774,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mac McClung",
+    "status": "Doubtful",
+    "injury": "Right Abdominal Tightness",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
   }
 ]
