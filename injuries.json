@@ -24690,5 +24690,12 @@
     "injury": "Right Retro",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Carlton Carrington",
+    "status": "Questionable",
+    "injury": "Right Retrocalcaneal Bursitis",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
