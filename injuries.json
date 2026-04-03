@@ -24921,5 +24921,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jericho Sims",
+    "status": "Available",
+    "injury": "Right Patella Tendinopathy",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
   }
 ]
