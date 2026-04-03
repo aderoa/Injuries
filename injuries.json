@@ -24564,5 +24564,12 @@
     "injury": "Right Hand Soreness / Illness",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
   }
 ]
