@@ -24361,5 +24361,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-04-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-02",
+    "prevStatus": "Available"
   }
 ]
