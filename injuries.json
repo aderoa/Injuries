@@ -24900,5 +24900,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-03",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Thanasis Antetokounmpo",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
