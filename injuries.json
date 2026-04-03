@@ -24550,5 +24550,12 @@
     "injury": "Right Knee Patellofemoral Pain Syndrome / Illness",
     "date": "2026-04-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-04-03",
+    "prevStatus": "Doubtful"
   }
 ]
