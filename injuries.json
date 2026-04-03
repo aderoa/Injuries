@@ -24893,5 +24893,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-02",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-04-03",
+    "prevStatus": "Left Game"
   }
 ]
