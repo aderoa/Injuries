@@ -24515,5 +24515,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "PJ Hall",
+    "status": "Out",
+    "injury": "Right Ankle Fracture",
+    "date": "2026-04-01",
+    "prevStatus": "Out"
   }
 ]
