@@ -24732,5 +24732,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
   }
 ]
