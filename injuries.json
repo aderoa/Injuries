@@ -24578,5 +24578,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Probable",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
