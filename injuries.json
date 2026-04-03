@@ -24977,5 +24977,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-03",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Out",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-04-03",
+    "prevStatus": "Doubtful"
   }
 ]
