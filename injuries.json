@@ -24907,5 +24907,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Out",
+    "injury": "Hip Contusion",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
