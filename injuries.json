@@ -24830,5 +24830,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-04-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tim Hardaway Jr",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
