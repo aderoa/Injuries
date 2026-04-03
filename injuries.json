@@ -24795,5 +24795,12 @@
     "injury": "Bilateral Plantar Fascitis",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Nick Richards",
+    "status": "Out",
+    "injury": "Right Elbow Sprain",
+    "date": "2026-04-03",
+    "prevStatus": "Questionable"
   }
 ]
