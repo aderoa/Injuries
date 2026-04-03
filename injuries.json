@@ -24753,5 +24753,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Right Knee Patellofemoral Pain Syndrome / Illness",
+    "date": "2026-04-03",
+    "prevStatus": "Out"
   }
 ]
