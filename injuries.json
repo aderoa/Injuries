@@ -24823,5 +24823,12 @@
     "injury": "Right Ankle Surgery",
     "date": "2026-02-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-03",
+    "prevStatus": "Out"
   }
 ]
