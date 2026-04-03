@@ -24620,5 +24620,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-03",
+    "prevStatus": "Out"
   }
 ]
