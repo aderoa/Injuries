@@ -24627,5 +24627,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-04-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
