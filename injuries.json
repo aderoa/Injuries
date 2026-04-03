@@ -24865,5 +24865,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tim Hardaway Jr",
+    "status": "Probable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
