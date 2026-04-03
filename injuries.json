@@ -24816,5 +24816,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "David Jones",
+    "status": "Out",
+    "injury": "Right Ankle Surgery",
+    "date": "2026-02-04",
+    "prevStatus": "Out"
   }
 ]
