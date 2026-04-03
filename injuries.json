@@ -24557,5 +24557,12 @@
     "injury": "Illness",
     "date": "2026-04-03",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Available",
+    "injury": "Right Hand Soreness / Illness",
+    "date": "2026-04-03",
+    "prevStatus": "Probable"
   }
 ]
