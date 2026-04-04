@@ -25677,5 +25677,12 @@
     "injury": "Left Thigh Contusion",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Amir Coffey",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
