@@ -25187,5 +25187,12 @@
     "injury": "Illness",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marcus Sasser",
+    "status": "Available",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-04",
+    "prevStatus": "Probable"
   }
 ]
