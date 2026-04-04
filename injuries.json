@@ -25474,5 +25474,12 @@
     "injury": "",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Questionable",
+    "injury": "Right Hip Sprain",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
