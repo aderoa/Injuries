@@ -25369,5 +25369,12 @@
     "injury": "Right Finger Mallet",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Out",
+    "injury": "Right Hand Soreness",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
