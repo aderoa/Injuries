@@ -25600,5 +25600,19 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Available",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-04",
+    "prevStatus": "Questionable"
   }
 ]
