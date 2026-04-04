@@ -25341,5 +25341,12 @@
     "injury": "Right Elbow Sprain",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
