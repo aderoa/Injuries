@@ -25173,5 +25173,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Available",
+    "injury": "Right Foot Soreness",
+    "date": "2026-04-04",
+    "prevStatus": "Probable"
   }
 ]
