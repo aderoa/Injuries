@@ -25663,5 +25663,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-04-04",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Olivier-Maxence Prosper",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
