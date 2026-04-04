@@ -25551,5 +25551,19 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Tyler Smith",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
