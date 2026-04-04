@@ -25670,5 +25670,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Out",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
