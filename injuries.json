@@ -25684,5 +25684,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Out",
+    "injury": "Left Oblique Muscle Strain",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
