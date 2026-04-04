@@ -25264,5 +25264,12 @@
     "injury": "Personal Reasons",
     "date": "2026-04-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Nikola Vucevic",
+    "status": "Questionable",
+    "injury": "Right Ring Finger Fracture",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
