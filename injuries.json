@@ -25593,5 +25593,12 @@
     "injury": "Illness",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Paul George",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
