@@ -25418,5 +25418,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
