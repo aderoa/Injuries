@@ -25152,5 +25152,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Available",
+    "injury": "Right Foot Sprain",
+    "date": "2026-04-04",
+    "prevStatus": "Questionable"
   }
 ]
