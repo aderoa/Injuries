@@ -25628,5 +25628,12 @@
     "injury": "",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Doubtful",
+    "injury": "Low Back Soreness",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
