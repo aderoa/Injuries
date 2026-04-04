@@ -25446,5 +25446,12 @@
     "injury": "Left Oblique Muscle Injury",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Out",
+    "injury": "Bilateral Hamstring Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
