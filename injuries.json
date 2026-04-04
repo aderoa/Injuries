@@ -25460,5 +25460,12 @@
     "injury": "Back Thoracic and Lumbar Soreness",
     "date": "2026-03-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "injury": "Back Thoracic and Lumbar Injury Management",
+    "date": "2026-03-31",
+    "prevStatus": "Out"
   }
 ]
