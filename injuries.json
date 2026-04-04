@@ -25159,5 +25159,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-04-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Out",
+    "injury": "Left Big Toe Capsulitis",
+    "date": "2026-04-04",
+    "prevStatus": "Questionable"
   }
 ]
