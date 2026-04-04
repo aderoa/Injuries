@@ -25544,5 +25544,12 @@
     "injury": "Left Calf Injury Management",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Probable",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
