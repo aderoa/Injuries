@@ -25698,5 +25698,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ben Saraf",
+    "status": "Questionable",
+    "injury": "Back Tightness",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
