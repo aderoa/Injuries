@@ -25313,5 +25313,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Questionable",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
