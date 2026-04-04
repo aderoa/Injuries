@@ -25208,5 +25208,12 @@
     "injury": "Right Oblique Injury Management / Illness",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Paul George",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
