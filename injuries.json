@@ -25005,5 +25005,19 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-03",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
