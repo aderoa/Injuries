@@ -25579,5 +25579,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
