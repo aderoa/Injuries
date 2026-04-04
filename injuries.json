@@ -25572,5 +25572,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
