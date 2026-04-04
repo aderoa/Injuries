@@ -25691,5 +25691,12 @@
     "injury": "Left Oblique Muscle Strain",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarred Vanderbilt",
+    "status": "Questionable",
+    "injury": "Right Calf Soreness",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
