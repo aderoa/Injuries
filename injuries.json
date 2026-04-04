@@ -25201,5 +25201,12 @@
     "injury": "",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Right Oblique Injury Management / Illness",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
