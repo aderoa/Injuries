@@ -25299,5 +25299,12 @@
     "injury": "Left Hand Contusion",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Out",
+    "injury": "Left Hip Pointer",
+    "date": "2026-04-03",
+    "prevStatus": "Out"
   }
 ]
