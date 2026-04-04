@@ -25656,5 +25656,12 @@
     "injury": "Neck Soreness",
     "date": "2026-04-04",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jahmai Mashack",
+    "status": "Out",
+    "injury": "Concussion Protocol",
+    "date": "2026-04-04",
+    "prevStatus": "Left Game"
   }
 ]
