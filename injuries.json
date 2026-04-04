@@ -25222,5 +25222,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tim Hardaway Jr",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-04",
+    "prevStatus": "Probable"
   }
 ]
