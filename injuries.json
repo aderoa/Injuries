@@ -25194,5 +25194,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-04",
+    "prevStatus": "Available"
   }
 ]
