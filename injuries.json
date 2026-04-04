@@ -25271,5 +25271,12 @@
     "injury": "Right Ring Finger Fracture",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
