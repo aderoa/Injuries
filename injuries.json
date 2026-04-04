@@ -25586,5 +25586,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
