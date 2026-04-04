@@ -25481,5 +25481,12 @@
     "injury": "Right Hip Sprain",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-04",
+    "prevStatus": "Left Game"
   }
 ]
