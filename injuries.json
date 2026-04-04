@@ -25026,5 +25026,12 @@
     "injury": "Lower Back Bruise",
     "date": "2026-04-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jahmai Mashack",
+    "status": "Left Game",
+    "injury": "Neck Soreness",
+    "date": "2026-04-03",
+    "prevStatus": "Available"
   }
 ]
