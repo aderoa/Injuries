@@ -25649,5 +25649,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jahmai Mashack",
+    "status": "Out",
+    "injury": "Neck Soreness",
+    "date": "2026-04-04",
+    "prevStatus": "Left Game"
   }
 ]
