@@ -25999,5 +25999,12 @@
     "injury": "Right Ring Finger Fracture",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Available",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
