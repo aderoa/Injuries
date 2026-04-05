@@ -25705,5 +25705,12 @@
     "injury": "Back Tightness",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
