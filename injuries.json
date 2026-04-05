@@ -25992,5 +25992,12 @@
     "injury": "Right Elbow Sprain",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Vucevic",
+    "status": "Available",
+    "injury": "Right Ring Finger Fracture",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
