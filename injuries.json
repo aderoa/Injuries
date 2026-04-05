@@ -25838,5 +25838,12 @@
     "injury": "",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Justin Champagnie",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
