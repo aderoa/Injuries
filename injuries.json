@@ -26013,5 +26013,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Available",
+    "injury": "Bilateral Plantar Fasciitis",
+    "date": "2026-04-05",
+    "prevStatus": "Probable"
   }
 ]
