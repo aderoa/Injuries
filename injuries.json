@@ -25873,5 +25873,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Out",
+    "injury": "Left Ankle SPrain",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
