@@ -25985,5 +25985,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nick Richards",
+    "status": "Out",
+    "injury": "Right Elbow Sprain",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
