@@ -25719,5 +25719,12 @@
     "injury": "",
     "date": "2026-04-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cameron Payne",
+    "status": "Left Game",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-04-04",
+    "prevStatus": "Left Game"
   }
 ]
