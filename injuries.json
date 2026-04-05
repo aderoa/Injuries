@@ -25929,5 +25929,12 @@
     "injury": "Right Knee Patellofemoral Pain Syndrome",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Out",
+    "injury": "Right Patella Tendon and Left Achilles Soreness",
+    "date": "2026-04-05",
+    "prevStatus": "Probable"
   }
 ]
