@@ -25957,5 +25957,19 @@
     "injury": "Right Retrocalcaneal Bursitis",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Out",
+    "injury": "Right Foot Sprain",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Out",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
