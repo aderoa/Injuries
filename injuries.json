@@ -26027,5 +26027,12 @@
     "injury": "Right Finger Mallet",
     "date": "2026-04-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Available",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
