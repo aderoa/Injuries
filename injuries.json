@@ -25824,5 +25824,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
