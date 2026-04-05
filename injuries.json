@@ -25901,5 +25901,12 @@
     "injury": "Right Patella Tendon and Left Achilles Soreness",
     "date": "2026-04-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
