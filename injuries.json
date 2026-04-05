@@ -25894,5 +25894,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Questionable",
+    "injury": "Right Patella Tendon and Left Achilles Soreness",
+    "date": "2026-04-05",
+    "prevStatus": "Probable"
   }
 ]
