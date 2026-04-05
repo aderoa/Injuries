@@ -25922,5 +25922,12 @@
     "injury": "Left Hand Contusion",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "Right Knee Patellofemoral Pain Syndrome",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
