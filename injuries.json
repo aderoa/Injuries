@@ -25845,5 +25845,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Questionable",
+    "injury": "Right Retrocalcaneal Bursitis",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
