@@ -25866,5 +25866,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
