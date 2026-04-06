@@ -26076,5 +26076,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Out",
+    "injury": "Sacral Contusion",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
