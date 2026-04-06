@@ -26664,5 +26664,12 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-04-06",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Doubtful",
+    "injury": "Right Plantar Fascia Strain",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
