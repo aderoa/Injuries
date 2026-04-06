@@ -26622,5 +26622,12 @@
     "injury": "",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Out",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
