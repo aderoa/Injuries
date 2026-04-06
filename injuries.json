@@ -26727,5 +26727,12 @@
     "injury": "Right Foot Injury ",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Probable",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
