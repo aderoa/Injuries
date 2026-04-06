@@ -26111,5 +26111,12 @@
     "injury": "Illness",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-05",
+    "prevStatus": "Probable"
   }
 ]
