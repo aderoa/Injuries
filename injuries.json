@@ -26139,5 +26139,12 @@
     "injury": "Left Adductor Injury Management",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Available",
+    "injury": "Right Pelvic Contusion",
+    "date": "2026-04-05",
+    "prevStatus": "Probable"
   }
 ]
