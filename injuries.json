@@ -26811,5 +26811,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Questionable",
+    "injury": "Left Hand Contusion",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
