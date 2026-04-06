@@ -26188,5 +26188,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-04-05",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Bruce Brown",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
