@@ -26860,5 +26860,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Out",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
