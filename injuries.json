@@ -26503,5 +26503,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Probable",
+    "injury": "Return to Competition Conditioning",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
