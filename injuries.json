@@ -26853,5 +26853,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taj Gibson",
+    "status": "Out",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
