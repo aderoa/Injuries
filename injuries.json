@@ -26489,5 +26489,12 @@
     "injury": "Left Lateral Abdominal Strain",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Probable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
