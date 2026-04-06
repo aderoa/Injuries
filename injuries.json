@@ -26426,5 +26426,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Thomas Bryant",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
