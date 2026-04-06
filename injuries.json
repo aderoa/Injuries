@@ -26153,5 +26153,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
