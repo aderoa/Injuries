@@ -26384,5 +26384,12 @@
     "injury": "Left Lung Pneumotorax",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
