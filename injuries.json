@@ -26762,5 +26762,19 @@
     "injury": "Bilateral Knee Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Out",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-06",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
