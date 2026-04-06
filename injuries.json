@@ -26825,5 +26825,12 @@
     "injury": "Left Lateral Abdominal Strain",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Coby White",
+    "status": "Probable",
+    "injury": "Left Groin Soreness",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
