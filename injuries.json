@@ -26755,5 +26755,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-04-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Out",
+    "injury": "Bilateral Knee Injury Management",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
