@@ -26552,5 +26552,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Out",
+    "injury": "Right Pelvic Contusion",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
