@@ -26468,5 +26468,12 @@
     "injury": "Left Calf Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Max Strus",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
