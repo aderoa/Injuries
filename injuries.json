@@ -26832,5 +26832,12 @@
     "injury": "Left Groin Soreness",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
