@@ -26433,5 +26433,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "James Harden",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
