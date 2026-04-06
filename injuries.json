@@ -26125,5 +26125,19 @@
     "injury": "Illness",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Available",
+    "injury": "Right Patellofemoral Pain Syndrome",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Available",
+    "injury": "Left Adductor Injury Management",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
