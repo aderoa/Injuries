@@ -26790,5 +26790,12 @@
     "injury": "Back Tightness",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Coby White",
+    "status": "Out",
+    "injury": "Left Groin Soreness",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
