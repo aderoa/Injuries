@@ -26482,5 +26482,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Questionable",
+    "injury": "Left Lateral Abdominal Strain",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
