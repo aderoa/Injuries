@@ -26104,5 +26104,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
