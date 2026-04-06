@@ -26083,5 +26083,12 @@
     "injury": "Sacral Contusion",
     "date": "2026-04-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-05",
+    "prevStatus": "Probable"
   }
 ]
