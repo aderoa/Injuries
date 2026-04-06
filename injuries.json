@@ -26377,5 +26377,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Doubtful",
+    "injury": "Left Lung Pneumotorax",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
