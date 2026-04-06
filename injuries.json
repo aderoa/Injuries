@@ -26195,5 +26195,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zeke Nnaji",
+    "status": "Questionable",
+    "injury": "Left Hip Sprain",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
