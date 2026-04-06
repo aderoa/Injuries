@@ -26174,5 +26174,12 @@
     "injury": "Right Elbow Impingement",
     "date": "2026-04-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Oblique Injury Management / Illness",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
