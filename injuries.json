@@ -26419,5 +26419,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
