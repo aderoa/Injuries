@@ -26342,5 +26342,12 @@
     "injury": "Left High Ankle Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Doubtful",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-06",
+    "prevStatus": "Questionable"
   }
 ]
