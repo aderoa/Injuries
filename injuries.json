@@ -26874,5 +26874,12 @@
     "injury": "",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
