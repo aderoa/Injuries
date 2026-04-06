@@ -26461,5 +26461,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Evan Mobley",
+    "status": "Available",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
