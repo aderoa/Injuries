@@ -26496,5 +26496,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nikola Jovic",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
