@@ -26783,5 +26783,12 @@
     "injury": "Right Fifth Finger Sprain",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ben Saraf",
+    "status": "Probable",
+    "injury": "Back Tightness",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
