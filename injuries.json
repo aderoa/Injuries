@@ -26706,5 +26706,12 @@
     "injury": "Right Finger Mallet",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Questionable",
+    "injury": "Right Hip Sprain",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
