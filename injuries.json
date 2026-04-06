@@ -26202,5 +26202,12 @@
     "injury": "Left Hip Sprain",
     "date": "2026-04-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Left Game",
+    "injury": "Right Shoulder Strain",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
