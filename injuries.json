@@ -26713,5 +26713,12 @@
     "injury": "Right Hip Sprain",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
