@@ -26146,5 +26146,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Questionable",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-05",
+    "prevStatus": "Available"
   }
 ]
