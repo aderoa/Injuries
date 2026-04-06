@@ -26363,5 +26363,12 @@
     "injury": "Bilateral Knee Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Doubtful",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-06",
+    "prevStatus": "Questionable"
   }
 ]
