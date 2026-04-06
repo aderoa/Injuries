@@ -26608,5 +26608,12 @@
     "injury": "Right Foot Plantar Fasciitis",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Right Achilles Tendinopathy",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
