@@ -26748,5 +26748,12 @@
     "injury": "Left Lung Pneumotorax",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Out",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-06",
+    "prevStatus": "Questionable"
   }
 ]
