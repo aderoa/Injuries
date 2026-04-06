@@ -26594,5 +26594,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Questionable",
+    "injury": "Right Quad Contusion",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
