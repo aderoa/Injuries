@@ -26335,5 +26335,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Franz Wagner",
+    "status": "Out",
+    "injury": "Left High Ankle Injury Management",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
