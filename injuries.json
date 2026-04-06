@@ -26398,5 +26398,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-04-06",
+    "prevStatus": "Out"
   }
 ]
