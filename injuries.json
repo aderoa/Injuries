@@ -26839,5 +26839,12 @@
     "injury": "",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
