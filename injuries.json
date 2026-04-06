@@ -26097,5 +26097,12 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-04-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tyler Smith",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-05",
+    "prevStatus": "Questionable"
   }
 ]
