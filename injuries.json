@@ -26167,5 +26167,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Available",
+    "injury": "Right Elbow Impingement",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
