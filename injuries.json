@@ -26181,5 +26181,12 @@
     "injury": "Right Oblique Injury Management / Illness",
     "date": "2026-04-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cameron Payne",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-04-05",
+    "prevStatus": "Left Game"
   }
 ]
