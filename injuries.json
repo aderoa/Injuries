@@ -26776,5 +26776,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Out",
+    "injury": "Right Fifth Finger Sprain",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
