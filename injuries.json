@@ -26671,5 +26671,12 @@
     "injury": "Right Plantar Fascia Strain",
     "date": "2026-04-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
