@@ -27504,5 +27504,12 @@
     "injury": "Illness",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Out",
+    "injury": "Low Back Injury Management",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
