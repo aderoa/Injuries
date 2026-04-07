@@ -27364,5 +27364,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Available",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
