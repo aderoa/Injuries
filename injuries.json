@@ -27385,5 +27385,12 @@
     "injury": "Concussion Protocol / Nasal Fracture",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Olivier-Maxence Prosper",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
