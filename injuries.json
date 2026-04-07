@@ -27056,5 +27056,12 @@
     "injury": "Left Quad Contusion",
     "date": "2026-04-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jordan Hawkins",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
