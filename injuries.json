@@ -27497,5 +27497,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jordan Hawkins",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
