@@ -27112,5 +27112,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Probable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
