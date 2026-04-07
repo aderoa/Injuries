@@ -27140,5 +27140,12 @@
     "injury": "Illness",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Probable",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
