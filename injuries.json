@@ -27189,5 +27189,12 @@
     "injury": "Left Great Toe Bone Bruise",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
