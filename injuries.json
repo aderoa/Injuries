@@ -27203,5 +27203,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "status": "Out",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
