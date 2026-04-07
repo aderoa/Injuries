@@ -26923,5 +26923,12 @@
     "injury": "",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Left Game",
+    "injury": "Left Rib Contusion",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
