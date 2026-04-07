@@ -27168,5 +27168,12 @@
     "injury": "Personal Reasons",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
