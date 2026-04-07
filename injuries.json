@@ -27441,5 +27441,26 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sandro Mamukelashvili",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Probable",
+    "injury": "Left Quad Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Available",
+    "injury": "Right Foot Plantar Fasciitis",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
