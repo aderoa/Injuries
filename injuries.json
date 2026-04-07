@@ -27077,5 +27077,12 @@
     "injury": "Right Hand Sprain",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Left Hand Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
