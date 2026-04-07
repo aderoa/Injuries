@@ -27378,5 +27378,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jahmai Mashack",
+    "status": "Questionable",
+    "injury": "Concussion Protocol / Nasal Fracture",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
