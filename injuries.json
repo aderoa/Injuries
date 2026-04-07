@@ -27336,5 +27336,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
