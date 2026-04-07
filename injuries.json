@@ -27413,5 +27413,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Doubtful",
+    "injury": "Left Calf Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
