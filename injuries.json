@@ -26881,5 +26881,19 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bruce Brown",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-06",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Zeke Nnaji",
+    "status": "Left Game",
+    "injury": "Left Hip Sprain",
+    "date": "2026-04-06",
+    "prevStatus": "Questionable"
   }
 ]
