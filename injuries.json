@@ -27119,5 +27119,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Coby White",
+    "status": "Questionable",
+    "injury": "Left Groin Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
