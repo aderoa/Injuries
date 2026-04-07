@@ -27308,5 +27308,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Doubtful",
+    "injury": "Left Rib Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Left Game"
   }
 ]
