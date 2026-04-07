@@ -27154,5 +27154,12 @@
     "injury": "Left Elbow Soreness",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
