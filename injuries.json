@@ -27427,5 +27427,12 @@
     "injury": "Left Fibulla Stress Reaction",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
