@@ -27259,5 +27259,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamal Cain",
+    "status": "Questionable",
+    "injury": "Left Calf Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Left Game"
   }
 ]
