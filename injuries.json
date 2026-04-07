@@ -27511,5 +27511,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Yves Missi",
+    "status": "Out",
+    "injury": "Right Hand Sprain",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
