@@ -27322,5 +27322,12 @@
     "injury": "Bilateral Plantar Fasciitis",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Available",
+    "injury": "Right Finger Mallet",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
