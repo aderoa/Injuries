@@ -27483,5 +27483,19 @@
     "injury": "Left Groin Soreness",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ace Bailey",
+    "status": "Out",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Kyle Filipowski",
+    "status": "Available",
+    "injury": "Low Back Injury Management",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
