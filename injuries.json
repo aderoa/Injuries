@@ -27245,5 +27245,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaden Hardy",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
