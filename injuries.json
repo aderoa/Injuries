@@ -27476,5 +27476,12 @@
     "injury": "Right Knee Surgery",
     "date": "2026-03-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Coby White",
+    "status": "Out",
+    "injury": "Left Groin Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
