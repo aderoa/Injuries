@@ -27161,5 +27161,12 @@
     "injury": "Illness",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "James Harden",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
