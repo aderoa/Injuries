@@ -27147,5 +27147,12 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Doubtful",
+    "injury": "Left Elbow Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
