@@ -27238,5 +27238,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Available",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
