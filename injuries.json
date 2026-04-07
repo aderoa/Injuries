@@ -27420,5 +27420,12 @@
     "injury": "Left Calf Contusion",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Shaedon Sharpe",
+    "status": "Doubtful",
+    "injury": "Left Fibulla Stress Reaction",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
