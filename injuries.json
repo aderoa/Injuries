@@ -27273,5 +27273,12 @@
     "injury": "Neck Sprain",
     "date": "2026-04-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Wendell Carter Jr",
+    "status": "Questionable",
+    "injury": "Nasal Fracture",
+    "date": "2026-04-07",
+    "prevStatus": "Left Game"
   }
 ]
