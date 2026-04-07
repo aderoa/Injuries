@@ -27210,5 +27210,12 @@
     "injury": "Right Hamstring Soreness",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Questionable",
+    "injury": "Left Lung Pneumotorax",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
