@@ -27217,5 +27217,26 @@
     "injury": "Left Lung Pneumotorax",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "Bilateral Knee Injury Management",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Available",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
