@@ -27014,5 +27014,19 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Available",
+    "injury": "Right Foot Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Available",
+    "injury": "Return to Competition Conditioning",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
