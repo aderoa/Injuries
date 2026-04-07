@@ -27098,5 +27098,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-04-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
