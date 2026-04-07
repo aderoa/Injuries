@@ -27126,5 +27126,12 @@
     "injury": "Left Groin Soreness",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jaden Hardy",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
