@@ -27329,5 +27329,12 @@
     "injury": "Right Finger Mallet",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Available",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
