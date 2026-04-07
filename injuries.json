@@ -26916,5 +26916,12 @@
     "injury": "Right Hamstring Soreness",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
