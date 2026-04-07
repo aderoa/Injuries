@@ -27406,5 +27406,12 @@
     "injury": "",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cam Spencer",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
