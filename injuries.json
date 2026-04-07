@@ -27315,5 +27315,12 @@
     "injury": "Left Rib Contusion",
     "date": "2026-04-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Available",
+    "injury": "Bilateral Plantar Fasciitis",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
