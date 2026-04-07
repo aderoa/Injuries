@@ -27105,5 +27105,12 @@
     "injury": "",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
