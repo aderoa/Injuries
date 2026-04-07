@@ -27287,5 +27287,12 @@
     "injury": "Left High Ankle Injury Management",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Available",
+    "injury": "Sacral Contusion",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
