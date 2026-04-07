@@ -27343,5 +27343,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Ben Saraf",
+    "status": "Available",
+    "injury": "Back Tightness",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
