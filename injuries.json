@@ -27175,5 +27175,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Max Strus",
+    "status": "Available",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "Left Great Toe Bone Bruise",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
