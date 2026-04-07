@@ -26930,5 +26930,12 @@
     "injury": "Left Rib Contusion",
     "date": "2026-04-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamal Cain",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-06",
+    "prevStatus": "Available"
   }
 ]
