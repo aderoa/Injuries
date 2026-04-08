@@ -28008,5 +28008,12 @@
     "injury": "Illness",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Questionable",
+    "injury": "Right Quadriceps Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
