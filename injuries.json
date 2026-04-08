@@ -28092,5 +28092,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
