@@ -27896,5 +27896,12 @@
     "injury": "Left Quad Contusion",
     "date": "2026-04-08",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
