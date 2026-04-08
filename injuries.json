@@ -28295,5 +28295,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
