@@ -27819,5 +27819,12 @@
     "injury": "Left Hip Pointer",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Available",
+    "injury": "Right Hip Strain",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
