@@ -27938,5 +27938,12 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
