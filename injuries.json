@@ -28288,5 +28288,12 @@
     "injury": "Right Patella Tendinosis",
     "date": "2026-04-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Minott",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
