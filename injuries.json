@@ -27917,5 +27917,12 @@
     "injury": "",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Probable",
+    "injury": "Right Finger Mallet",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
