@@ -27952,5 +27952,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Doubtful",
+    "injury": "Left Hip Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
