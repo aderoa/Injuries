@@ -27602,5 +27602,12 @@
     "injury": "",
     "date": "2026-04-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Out",
+    "injury": "Left Foot Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Available"
   }
 ]
