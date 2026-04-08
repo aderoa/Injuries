@@ -28029,5 +28029,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Darius Garland",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
