@@ -27553,5 +27553,12 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Out",
+    "injury": "Right Shoulder Impingement",
+    "date": "2026-04-07",
+    "prevStatus": "Doubtful"
   }
 ]
