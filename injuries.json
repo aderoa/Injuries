@@ -28141,5 +28141,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Justin Champagnie",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
