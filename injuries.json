@@ -28211,5 +28211,12 @@
     "injury": "",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "Right Groin Soreness",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
