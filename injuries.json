@@ -28218,5 +28218,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dru Smith",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
