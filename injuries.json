@@ -27854,5 +27854,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
