@@ -28225,5 +28225,12 @@
     "injury": "",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dru Smith",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
