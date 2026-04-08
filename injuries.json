@@ -28281,5 +28281,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-04-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Terance Mann",
+    "status": "Out",
+    "injury": "Right Patella Tendinosis",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
