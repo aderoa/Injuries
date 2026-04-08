@@ -28267,5 +28267,12 @@
     "injury": "",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Questionable",
+    "injury": "Sacral Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
