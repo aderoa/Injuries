@@ -28246,5 +28246,12 @@
     "injury": "Right Oblique Strain",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kobe Brown",
+    "status": "Questionable",
+    "injury": "Lumbar Strain",
+    "date": "2026-04-08",
+    "prevStatus": "Left Game"
   }
 ]
