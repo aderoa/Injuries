@@ -27812,5 +27812,12 @@
     "injury": "Left Great Toe Bone Bruise",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Available",
+    "injury": "Left Hip Pointer",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
