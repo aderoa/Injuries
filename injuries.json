@@ -28043,5 +28043,19 @@
     "injury": "Left Toe Injury Management",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jamal Cain",
+    "status": "Available",
+    "injury": "Left Calf Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Wendell Carter Jr",
+    "status": "Available",
+    "injury": "Nasal Fracture",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
