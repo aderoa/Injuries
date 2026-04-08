@@ -27889,5 +27889,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-08",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Isaac Okoro",
+    "status": "Questionable",
+    "injury": "Left Quad Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Left Game"
   }
 ]
