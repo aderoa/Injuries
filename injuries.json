@@ -27826,5 +27826,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
