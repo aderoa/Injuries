@@ -28274,5 +28274,12 @@
     "injury": "Sacral Contusion",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Out",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-04-05",
+    "prevStatus": "Out"
   }
 ]
