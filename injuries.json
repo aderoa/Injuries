@@ -28316,5 +28316,12 @@
     "injury": "Left Knee Patella Tendinopathy",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
