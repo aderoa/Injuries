@@ -28253,5 +28253,12 @@
     "injury": "Lumbar Strain",
     "date": "2026-04-08",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Questionable",
+    "injury": "Right Hip Sprain",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
