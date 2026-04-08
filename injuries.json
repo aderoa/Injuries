@@ -28232,5 +28232,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyler Kolek",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
