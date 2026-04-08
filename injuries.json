@@ -27882,5 +27882,12 @@
     "injury": "Right Hand Soreness",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-08",
+    "prevStatus": "Doubtful"
   }
 ]
