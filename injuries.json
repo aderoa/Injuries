@@ -27875,5 +27875,12 @@
     "injury": "Left Knee Patella Tendinopathy",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Julius Randle",
+    "status": "Out",
+    "injury": "Right Hand Soreness",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
