@@ -28344,5 +28344,12 @@
     "injury": "Left Lung Pneumotorax",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
