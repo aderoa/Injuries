@@ -27539,5 +27539,12 @@
     "injury": "Right Patellofemoral Pain Syndrome",
     "date": "2026-04-07",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Questionable"
   }
 ]
