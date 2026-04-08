@@ -28302,5 +28302,12 @@
     "injury": "Rest",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ziaire Williams",
+    "status": "Out",
+    "injury": "Left Foot Tenosynovitis / Bursitis",
+    "date": "2026-04-04",
+    "prevStatus": "Out"
   }
 ]
