@@ -28120,5 +28120,12 @@
     "injury": "Illness Management",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Doubtful",
+    "injury": "Bilateral Low Back Soreness",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
