@@ -28351,5 +28351,12 @@
     "injury": "Illness",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
