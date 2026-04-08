@@ -28337,5 +28337,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Available",
+    "injury": "Left Lung Pneumotorax",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
