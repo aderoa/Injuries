@@ -28085,5 +28085,12 @@
     "injury": "Right Toe Sprain",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
