@@ -27833,5 +27833,12 @@
     "injury": "Illness",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mike Conley",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
