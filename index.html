@@ -320,28 +320,16 @@ async function loadData() {
     }
   }
 
-  // Days since last game: find columns by header name from Injuries CSV
+  // Days since last game: cols 71(player), 73(days) from Injuries CSV
+  // This section has NO header row — data starts at row 0
   daysMap = {};
-  if (injRows.length > 1) {
-    const injHeader = injRows[0].map(h => (h||'').toUpperCase().trim());
-    // Find the player and days columns — look for likely header names
-    let daysPlayerIdx = -1, daysValIdx = -1;
-    for (let i = 0; i < injHeader.length; i++) {
-      const h = injHeader[i];
-      if (daysPlayerIdx < 0 && (h === 'PLAYER' || h === 'PLAYER NAME') && i >= 60) daysPlayerIdx = i;
-      if (h === 'DAYS' || h === 'DAYS SINCE LAST GAME' || h === 'DAYS SINCE') daysValIdx = i;
-    }
-    // Fallback to hardcoded if headers not found
-    if (daysPlayerIdx < 0) daysPlayerIdx = 71;
-    if (daysValIdx < 0) daysValIdx = 73;
-    for (let i = 1; i < injRows.length; i++) {
-      const r = injRows[i];
-      const p = (r[daysPlayerIdx] || '').trim();
-      const d = (r[daysValIdx] || '').trim();
-      if (p && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
-    }
-    console.log('[Injuries] daysMap: found', Object.keys(daysMap).length, 'entries (playerCol=' + daysPlayerIdx + ', daysCol=' + daysValIdx + ', csvCols=' + injHeader.length + ')');
+  for (let i = 0; i < injRows.length; i++) {
+    const r = injRows[i];
+    const p = (r[71] || '').trim();
+    const d = (r[73] || '').trim();
+    if (p && p !== '#N/A' && /^\d+$/.test(d)) daysMap[p] = parseInt(d);
   }
+  console.log('[Injuries] daysMap:', Object.keys(daysMap).length, 'entries');
 
   // Process JSON entries — use local committed cache if it exists
   // This handles the race condition where auto-sync pushes to GitHub but CDN is still stale
