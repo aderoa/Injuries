@@ -28036,5 +28036,12 @@
     "injury": "",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Darius Garland",
+    "status": "Out",
+    "injury": "Left Toe Injury Management",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
