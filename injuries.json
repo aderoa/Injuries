@@ -27532,5 +27532,12 @@
     "injury": "Left Hip Sprain",
     "date": "2026-04-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Available",
+    "injury": "Right Patellofemoral Pain Syndrome",
+    "date": "2026-04-07",
+    "prevStatus": "Probable"
   }
 ]
