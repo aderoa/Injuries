@@ -28190,5 +28190,12 @@
     "injury": "Cervical / Lumbar Contusion",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaden Hardy",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
