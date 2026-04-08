@@ -28323,5 +28323,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Out",
+    "injury": "Left Great Toe Bone Bruise",
+    "date": "2026-04-08",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
