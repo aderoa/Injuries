@@ -28309,5 +28309,12 @@
     "injury": "Left Foot Tenosynovitis / Bursitis",
     "date": "2026-04-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaden McDaniels",
+    "status": "Available",
+    "injury": "Left Knee Patella Tendinopathy",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
