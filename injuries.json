@@ -28204,5 +28204,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
