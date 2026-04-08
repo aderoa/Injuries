@@ -28057,5 +28057,12 @@
     "injury": "Nasal Fracture",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Questionable",
+    "injury": "Left Achilles ",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
