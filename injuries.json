@@ -27840,5 +27840,12 @@
     "injury": "Rest",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
