@@ -27567,5 +27567,19 @@
     "injury": "Right Plantar Fascia Strain",
     "date": "2026-04-07",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "Left Elbow Soreness",
+    "date": "2026-04-07",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-07",
+    "prevStatus": "Doubtful"
   }
 ]
