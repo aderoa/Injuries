@@ -27805,5 +27805,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Doubtful",
+    "injury": "Left Great Toe Bone Bruise",
+    "date": "2026-04-08",
+    "prevStatus": "Questionable"
   }
 ]
