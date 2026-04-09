@@ -28925,5 +28925,19 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Mike Conley",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
