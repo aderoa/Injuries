@@ -28883,5 +28883,19 @@
     "injury": "Right Plantar Fascia Strain",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Doubtful",
+    "injury": "Left Elbow Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
