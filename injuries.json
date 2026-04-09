@@ -29051,5 +29051,12 @@
     "injury": "Right Wrist Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
