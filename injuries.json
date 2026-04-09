@@ -28764,5 +28764,12 @@
     "injury": "Left Groin Soreness",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
