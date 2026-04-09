@@ -28568,5 +28568,19 @@
     "injury": "Left Quad Contusion",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Out",
+    "injury": "Right Retrocalcaneal Bursitis",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Justin Champagnie",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
