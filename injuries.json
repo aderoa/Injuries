@@ -29002,5 +29002,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Available",
+    "injury": "Sacral Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
