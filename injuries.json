@@ -29030,5 +29030,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
