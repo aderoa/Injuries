@@ -28953,5 +28953,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Julius Randle",
+    "status": "Questionable",
+    "injury": "Right Hand Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
