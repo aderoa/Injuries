@@ -28806,5 +28806,12 @@
     "injury": "Left Great Toe Bone Bruise",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Questionable",
+    "injury": "Left Rib Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Doubtful"
   }
 ]
