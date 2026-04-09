@@ -29009,5 +29009,12 @@
     "injury": "Sacral Contusion",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Out",
+    "injury": "Right Hip Sprain",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
