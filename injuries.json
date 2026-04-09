@@ -28904,5 +28904,19 @@
     "injury": "Illness",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Available",
+    "injury": "Right Toe Sprain",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
