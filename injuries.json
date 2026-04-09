@@ -28631,5 +28631,12 @@
     "injury": "Low Back Spasm",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
