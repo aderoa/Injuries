@@ -28582,5 +28582,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Gill",
+    "status": "Available",
+    "injury": "Cervical / Lumbar Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
