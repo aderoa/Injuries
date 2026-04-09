@@ -28666,5 +28666,12 @@
     "injury": "Illness Management / Right Knee Soreness",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Out",
+    "injury": "Right Ankle Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
