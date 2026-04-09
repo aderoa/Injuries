@@ -28792,5 +28792,12 @@
     "injury": "",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
