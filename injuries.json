@@ -28981,5 +28981,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Available",
+    "injury": "Bilateral Plantar Fasciitis",
+    "date": "2026-04-09",
+    "prevStatus": "Probable"
   }
 ]
