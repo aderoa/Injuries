@@ -28946,5 +28946,12 @@
     "injury": "Rest",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bones Hyland",
+    "status": "Questionable",
+    "injury": "Right Hip Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
