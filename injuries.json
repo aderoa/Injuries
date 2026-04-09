@@ -28561,5 +28561,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaac Okoro",
+    "status": "Out",
+    "injury": "Left Quad Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
