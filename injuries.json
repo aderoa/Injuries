@@ -28456,5 +28456,12 @@
     "injury": "Right Quadriceps Contusion",
     "date": "2026-04-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Left Game",
+    "injury": "x",
+    "date": "2026-04-08",
+    "prevStatus": "Available"
   }
 ]
