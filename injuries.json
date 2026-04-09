@@ -29044,5 +29044,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Jokic",
+    "status": "Questionable",
+    "injury": "Right Wrist Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
