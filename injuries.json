@@ -28414,5 +28414,19 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-04-08",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Out",
+    "injury": "Left Hip Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Out",
+    "injury": "Right Plantar Fascia Strain",
+    "date": "2026-04-08",
+    "prevStatus": "Doubtful"
   }
 ]
