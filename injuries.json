@@ -28995,5 +28995,12 @@
     "injury": "Right Finger Mallet",
     "date": "2026-04-09",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Available",
+    "injury": "Right Groin Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
