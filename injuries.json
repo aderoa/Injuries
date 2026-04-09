@@ -28799,5 +28799,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "Left Great Toe Bone Bruise",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
