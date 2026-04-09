@@ -28680,5 +28680,12 @@
     "injury": "Right Oblique Strain",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
