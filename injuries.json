@@ -28715,5 +28715,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bryce McGowens",
+    "status": "Questionable",
+    "injury": "Right Small Toe Fracture",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
