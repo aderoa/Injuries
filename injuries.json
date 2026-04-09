@@ -28869,5 +28869,19 @@
     "injury": "Rest",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Doubtful",
+    "injury": "Left Hip Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Doubtful",
+    "injury": "Right Plantar Fascia Strain",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
