@@ -28736,5 +28736,19 @@
     "injury": "Left Hand Contusion",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Left Hand Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
