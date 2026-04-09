@@ -28855,5 +28855,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
