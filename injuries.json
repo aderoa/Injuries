@@ -28624,5 +28624,12 @@
     "injury": "Left Achilles Tendinitis",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sam Hauser",
+    "status": "Available",
+    "injury": "Low Back Spasm",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
