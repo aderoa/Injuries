@@ -28463,5 +28463,12 @@
     "injury": "x",
     "date": "2026-04-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Left Game",
+    "injury": "Left Ankle Injury",
+    "date": "2026-04-08",
+    "prevStatus": "Left Game"
   }
 ]
