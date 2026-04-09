@@ -28757,5 +28757,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Coby White",
+    "status": "Probable",
+    "injury": "Left Groin Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
