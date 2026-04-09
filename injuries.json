@@ -28603,5 +28603,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tari Eason",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
