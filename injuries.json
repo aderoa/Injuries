@@ -28785,5 +28785,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
