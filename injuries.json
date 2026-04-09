@@ -28386,5 +28386,12 @@
     "injury": "Left Fibulla Stress Reaction",
     "date": "2026-04-08",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Available",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
