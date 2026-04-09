@@ -29016,5 +29016,12 @@
     "injury": "Right Hip Sprain",
     "date": "2026-04-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kobe Brown",
+    "status": "Out",
+    "injury": "Lumbar Strain",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
