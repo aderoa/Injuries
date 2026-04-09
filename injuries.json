@@ -28393,5 +28393,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Questionable",
+    "injury": "Right Ankle Contusion",
+    "date": "2026-04-08",
+    "prevStatus": "Out"
   }
 ]
