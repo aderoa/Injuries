@@ -28827,5 +28827,19 @@
     "injury": "Right Achilles Tendinopathy",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
