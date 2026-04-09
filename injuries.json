@@ -28841,5 +28841,12 @@
     "injury": "",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Out",
+    "injury": "Oblique Muscle Strain",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
