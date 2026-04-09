@@ -28862,5 +28862,12 @@
     "injury": "Rest",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Doubtful",
+    "injury": "Rest",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
