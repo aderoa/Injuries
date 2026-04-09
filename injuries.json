@@ -28400,5 +28400,12 @@
     "injury": "Right Ankle Contusion",
     "date": "2026-04-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Available",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-04-08",
+    "prevStatus": "Probable"
   }
 ]
