@@ -28694,5 +28694,12 @@
     "injury": "",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Saddiq Bey",
+    "status": "Questionable",
+    "injury": "Rest",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
