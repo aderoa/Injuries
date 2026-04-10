@@ -30115,5 +30115,12 @@
     "injury": "Right Hip Sprain",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Out",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Left Game"
   }
 ]
