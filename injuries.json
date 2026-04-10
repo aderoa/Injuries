@@ -30339,5 +30339,12 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Available",
+    "injury": "Left Rib Contusion",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
