@@ -29786,5 +29786,12 @@
     "injury": "Left Shoulder Impingement",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dwight Powell",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
