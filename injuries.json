@@ -29233,5 +29233,19 @@
     "injury": "Left Toe Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Questionable",
+    "injury": "Left Calf Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Shaedon Sharpe",
+    "status": "Questionable",
+    "injury": "Left Fibulla Stress Reaction",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
