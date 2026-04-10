@@ -29912,5 +29912,12 @@
     "injury": "Right Shoulder Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tari Eason",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
