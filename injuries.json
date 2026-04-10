@@ -30136,5 +30136,12 @@
     "injury": "Left Quad Contusion",
     "date": "2026-04-10",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Davion Mitchell",
+    "status": "Out",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
