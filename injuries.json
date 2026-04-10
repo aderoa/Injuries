@@ -30157,5 +30157,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Available",
+    "injury": "Left Great Toe Bone Bruise",
+    "date": "2026-04-10",
+    "prevStatus": "Probable"
   }
 ]
