@@ -29191,5 +29191,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Available",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
