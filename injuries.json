@@ -29163,5 +29163,12 @@
     "injury": "Right Achilles Tendinitis",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
