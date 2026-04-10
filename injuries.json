@@ -29898,5 +29898,12 @@
     "injury": "Right Hand Soreness",
     "date": "2026-04-10",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
