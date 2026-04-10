@@ -29114,5 +29114,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Out",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
