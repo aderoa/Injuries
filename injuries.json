@@ -30003,5 +30003,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Luke Kennard",
+    "status": "Questionable",
+    "injury": "Left Finger Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
