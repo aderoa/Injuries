@@ -29821,5 +29821,12 @@
     "injury": "Right Hand Sprain",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaac Okoro",
+    "status": "Doubtful",
+    "injury": "Left Quad Contusion",
+    "date": "2026-04-10",
+    "prevStatus": "Out"
   }
 ]
