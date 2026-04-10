@@ -30171,5 +30171,12 @@
     "injury": "Lumbar Strain",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Available",
+    "injury": "Sacral Contusion",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
