@@ -29562,5 +29562,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Davion Mitchell",
+    "status": "Questionable",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
