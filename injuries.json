@@ -29100,5 +29100,12 @@
     "injury": "Left Soleus Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
