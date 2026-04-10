@@ -30031,5 +30031,19 @@
     "injury": "Left Achilles Tendinitis",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Available",
+    "injury": "Right Toe Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-10",
+    "prevStatus": "Probable"
   }
 ]
