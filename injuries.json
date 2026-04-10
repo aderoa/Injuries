@@ -30290,5 +30290,12 @@
     "injury": "Right Shoulder Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
