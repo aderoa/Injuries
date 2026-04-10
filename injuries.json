@@ -29793,5 +29793,12 @@
     "injury": "",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dwight Powell",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
