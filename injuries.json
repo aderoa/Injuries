@@ -30094,5 +30094,12 @@
     "injury": "Left Wrist Sprain",
     "date": "",
     "prevStatus": null
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Available",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Probable"
   }
 ]
