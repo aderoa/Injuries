@@ -30234,5 +30234,12 @@
     "injury": "Right Plantar Fascia Strain",
     "date": "2026-04-10",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Dwight Powell",
+    "status": "Available",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
