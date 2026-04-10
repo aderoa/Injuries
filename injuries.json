@@ -29268,5 +29268,19 @@
     "injury": "",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Green",
+    "status": "Questionable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Available",
+    "injury": "Left Ankle Injury",
+    "date": "2026-04-09",
+    "prevStatus": "Left Game"
   }
 ]
