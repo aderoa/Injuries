@@ -29170,5 +29170,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
