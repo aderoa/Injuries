@@ -29842,5 +29842,12 @@
     "injury": "Bilateral Plantar Fasciitis",
     "date": "2026-04-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
