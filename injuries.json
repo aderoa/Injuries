@@ -29219,5 +29219,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brice Sensabaugh",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
