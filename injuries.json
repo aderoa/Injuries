@@ -29933,5 +29933,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
