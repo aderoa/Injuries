@@ -30045,5 +30045,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Probable",
+    "injury": "Left Achilles Tendinitis",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
