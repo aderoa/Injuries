@@ -29597,5 +29597,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-04-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Questionable",
+    "injury": "Left Achilles Tendinitis",
+    "date": "2026-04-10",
+    "prevStatus": "Out"
   }
 ]
