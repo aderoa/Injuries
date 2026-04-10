@@ -29079,5 +29079,12 @@
     "injury": "Illness",
     "date": "2026-04-09",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
