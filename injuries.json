@@ -30192,5 +30192,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
