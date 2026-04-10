@@ -29177,5 +29177,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
