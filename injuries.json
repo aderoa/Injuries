@@ -29737,5 +29737,12 @@
     "injury": "Core Muscle Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Out",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
