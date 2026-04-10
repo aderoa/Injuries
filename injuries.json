@@ -30185,5 +30185,12 @@
     "injury": "",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
