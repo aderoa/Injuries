@@ -29086,5 +29086,12 @@
     "injury": "Rest",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Out",
+    "injury": "Right Oblique Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
