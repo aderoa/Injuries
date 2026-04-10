@@ -29709,5 +29709,12 @@
     "injury": "N",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Out",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
