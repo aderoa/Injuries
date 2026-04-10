@@ -29478,5 +29478,19 @@
     "injury": "Rest",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Herb Jones",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karlo Matkovic",
+    "status": "Out",
+    "injury": "Low Back Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
