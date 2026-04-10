@@ -29863,5 +29863,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Elijah Harkless",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
