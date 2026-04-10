@@ -29730,5 +29730,12 @@
     "injury": "",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Out",
+    "injury": "Core Muscle Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
