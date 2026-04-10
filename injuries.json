@@ -29961,5 +29961,12 @@
     "injury": "Left Adductor Management",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Available",
+    "injury": "Right Soleus Strain",
+    "date": "2026-04-10",
+    "prevStatus": "Out"
   }
 ]
