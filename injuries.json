@@ -29303,5 +29303,12 @@
     "injury": "Left Shoulder Sprain",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tari Eason",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
   }
 ]
