@@ -30080,5 +30080,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-04-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Available",
+    "injury": "Left Wrist Sprain",
+    "date": "",
+    "prevStatus": "Probable"
   }
 ]
