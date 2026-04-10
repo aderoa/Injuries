@@ -29065,5 +29065,19 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-09",
+    "prevStatus": "Probable"
   }
 ]
