@@ -29128,5 +29128,12 @@
     "injury": "Left Great Toe",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cason Wallace",
+    "status": "Out",
+    "injury": "Left Great Toe Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
