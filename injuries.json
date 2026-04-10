@@ -29632,5 +29632,12 @@
     "injury": "Right Toe Sprain",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
