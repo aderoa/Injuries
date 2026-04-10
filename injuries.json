@@ -29765,5 +29765,12 @@
     "injury": "",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pete Nance",
+    "status": "Out",
+    "injury": "Right Knee Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
