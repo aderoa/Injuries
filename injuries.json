@@ -29205,5 +29205,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Filipowski",
+    "status": "Out",
+    "injury": "Low Back Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
