@@ -29289,5 +29289,19 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Available",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-04-09",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Guerschon Yabusele",
+    "status": "Left Game",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
