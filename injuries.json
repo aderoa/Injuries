@@ -30297,5 +30297,40 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Christian Braun",
+    "status": "Out",
+    "injury": "Left Ankle Injury Management / Right Hip Flexor Strain",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Out",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Jokic",
+    "status": "Out",
+    "injury": "Right Wrist Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Available",
+    "injury": "Right Shoulder Impingement",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
