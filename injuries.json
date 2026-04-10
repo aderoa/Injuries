@@ -30283,5 +30283,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-04-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Out",
+    "injury": "Right Shoulder Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
