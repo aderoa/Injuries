@@ -29905,5 +29905,12 @@
     "injury": "",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Questionable",
+    "injury": "Right Shoulder Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
