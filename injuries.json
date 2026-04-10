@@ -29807,5 +29807,12 @@
     "injury": "Illness",
     "date": "2026-04-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Leonard Miller",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
