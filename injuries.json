@@ -29576,5 +29576,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Justin Champagnie",
+    "status": "Out",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
