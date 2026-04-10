@@ -30178,5 +30178,12 @@
     "injury": "Sacral Contusion",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
