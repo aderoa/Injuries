@@ -29926,5 +29926,12 @@
     "injury": "Illness",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
