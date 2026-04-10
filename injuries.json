@@ -30332,5 +30332,12 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Out",
+    "injury": "Right Shoulder Impingement",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
