@@ -29800,5 +29800,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-10",
+    "prevStatus": "Out"
   }
 ]
