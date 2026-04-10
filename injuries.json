@@ -29135,5 +29135,12 @@
     "injury": "Left Great Toe Soreness",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
