@@ -29751,5 +29751,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-10",
+    "prevStatus": "Out"
   }
 ]
