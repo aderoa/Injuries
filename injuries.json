@@ -29870,5 +29870,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Available",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
