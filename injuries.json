@@ -29618,5 +29618,12 @@
     "injury": "Low Back Spasm",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
