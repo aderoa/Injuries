@@ -29247,5 +29247,19 @@
     "injury": "Left Fibulla Stress Reaction",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Available",
+    "injury": "Right Quadriceps Contusion",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Devin Booker",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
