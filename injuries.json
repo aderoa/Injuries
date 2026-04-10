@@ -30199,5 +30199,12 @@
     "injury": "",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Out",
+    "injury": "Right Groin Tightness",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
