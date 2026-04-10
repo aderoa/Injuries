@@ -30241,5 +30241,19 @@
     "injury": "Left Hip Soreness",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "Left Elbow Soreness",
+    "date": "2026-04-10",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-10",
+    "prevStatus": "Doubtful"
   }
 ]
