@@ -29149,5 +29149,12 @@
     "injury": "",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylin Williams",
+    "status": "Out",
+    "injury": "Right Achilles ",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
