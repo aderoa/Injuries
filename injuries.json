@@ -30255,5 +30255,12 @@
     "injury": "Illness",
     "date": "2026-04-10",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Leonard Miller",
+    "status": "Available",
+    "injury": "Right Hand Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Probable"
   }
 ]
