@@ -30206,5 +30206,12 @@
     "injury": "Right Groin Tightness",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Available",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
