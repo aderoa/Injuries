@@ -29919,5 +29919,12 @@
     "injury": "",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tari Eason",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
