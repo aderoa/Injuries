@@ -30143,5 +30143,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyler Kolek",
+    "status": "Available",
+    "injury": "Right Oblique Strain",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
