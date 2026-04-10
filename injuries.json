@@ -29947,5 +29947,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Out",
+    "injury": "Left Adductor",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
