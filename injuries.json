@@ -29471,5 +29471,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Saddiq Bey",
+    "status": "Left Game",
+    "injury": "Rest",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
