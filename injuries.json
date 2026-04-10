@@ -29660,5 +29660,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kobe Brown",
+    "status": "Questionable",
+    "injury": "Lumbar Strain",
+    "date": "2026-04-10",
+    "prevStatus": "Out"
   }
 ]
