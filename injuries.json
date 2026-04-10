@@ -29261,5 +29261,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-04-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Green",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-09",
+    "prevStatus": "Available"
   }
 ]
