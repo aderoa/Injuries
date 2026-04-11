@@ -31529,5 +31529,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Royce O'Neale",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
