@@ -30486,5 +30486,19 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Questionable",
+    "injury": "Left Knee Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
