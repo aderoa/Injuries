@@ -30955,5 +30955,12 @@
     "injury": "Right Ring Finger Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Out",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
