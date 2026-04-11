@@ -31585,5 +31585,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Questionable",
+    "injury": "Right Ribcage Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
