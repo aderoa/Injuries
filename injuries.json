@@ -30444,5 +30444,12 @@
     "injury": "Bilateral Low Back Strain",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luke Kennard",
+    "status": "Available",
+    "injury": "Left Finger Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
