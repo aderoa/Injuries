@@ -30787,5 +30787,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Doubtful",
+    "injury": "Left Hip Contusion",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
