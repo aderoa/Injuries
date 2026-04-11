@@ -30843,5 +30843,19 @@
     "injury": "Illness",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Questionable",
+    "injury": "Neck Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Available",
+    "injury": "Right Foot Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
