@@ -31326,5 +31326,12 @@
     "injury": "Right Wrist Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
