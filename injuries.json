@@ -30927,5 +30927,12 @@
     "injury": "Left Foot Plantar Fasciitis",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
