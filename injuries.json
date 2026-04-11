@@ -31655,5 +31655,12 @@
     "injury": "Left Calf Contusion",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Matisse Thybulle",
+    "status": "Probable",
+    "injury": "R",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
