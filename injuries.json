@@ -31634,5 +31634,12 @@
     "injury": "Bilateral Low Back Strain",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Questionable",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
