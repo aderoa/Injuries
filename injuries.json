@@ -31319,5 +31319,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Jokic",
+    "status": "Questionable",
+    "injury": "Right Wrist Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
