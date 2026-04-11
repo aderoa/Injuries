@@ -31340,5 +31340,12 @@
     "injury": "Rest",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jabari Smith",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
