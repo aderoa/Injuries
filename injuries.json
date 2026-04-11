@@ -31487,5 +31487,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-04-11",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Dillon Brooks",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
