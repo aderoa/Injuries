@@ -30913,5 +30913,12 @@
     "injury": "Lef",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Doubtful",
+    "injury": "Left ",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
