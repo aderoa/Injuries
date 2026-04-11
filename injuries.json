@@ -31501,5 +31501,12 @@
     "injury": "Left 2nd Metacarpal Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Gillespie",
+    "status": "Questionable",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
