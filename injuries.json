@@ -31207,5 +31207,12 @@
     "injury": "Right Hip Sprain",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Questionable",
+    "injury": "Left Foot Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
