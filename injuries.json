@@ -31046,5 +31046,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Left Game"
   }
 ]
