@@ -31508,5 +31508,19 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Green",
+    "status": "Questionable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
