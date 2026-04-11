@@ -30458,5 +30458,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Left Game",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
