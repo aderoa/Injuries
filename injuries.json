@@ -31039,5 +31039,12 @@
     "injury": "Left Ankle Injury",
     "date": "2026-04-11",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
