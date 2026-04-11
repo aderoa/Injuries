@@ -30374,5 +30374,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Shaedon Sharpe",
+    "status": "Available",
+    "injury": "Left Fibulla Stress Reaction",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
