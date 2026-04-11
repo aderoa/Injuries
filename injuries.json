@@ -31403,5 +31403,12 @@
     "injury": "Right Hand Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Adama Bal",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
