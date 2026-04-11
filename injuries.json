@@ -31249,5 +31249,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-04-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
