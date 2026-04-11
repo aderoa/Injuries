@@ -31116,5 +31116,12 @@
     "injury": "",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keon Ellis",
+    "status": "Out",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
