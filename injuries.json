@@ -30892,5 +30892,12 @@
     "injury": "",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sam Hauser",
+    "status": "Doubtful",
+    "injury": "Low Back Spasm",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
