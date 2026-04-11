@@ -30409,5 +30409,12 @@
     "injury": "Low Back Spasm",
     "date": "2026-04-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Left Game",
+    "injury": "Left Ankle Injury",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
