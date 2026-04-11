@@ -31081,5 +31081,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
