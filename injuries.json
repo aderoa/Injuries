@@ -31599,5 +31599,12 @@
     "injury": "Left Ribcage Soreness",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ochai Agbaji",
+    "status": "Probable",
+    "injury": "Lower Back Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
