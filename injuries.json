@@ -31263,5 +31263,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Matas Buzelis",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Left Game"
   }
 ]
