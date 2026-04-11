@@ -31648,5 +31648,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Questionable",
+    "injury": "Left Calf Contusion",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
