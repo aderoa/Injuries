@@ -30808,5 +30808,19 @@
     "injury": "Illness",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Doubtful",
+    "injury": "Left Elbow Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
