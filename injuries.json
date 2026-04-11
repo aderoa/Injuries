@@ -31333,5 +31333,12 @@
     "injury": "Rest",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
