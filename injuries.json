@@ -31088,5 +31088,12 @@
     "injury": "",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Out",
+    "injury": "Right Retrocalcaneal Bursitis",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
