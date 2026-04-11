@@ -31298,5 +31298,12 @@
     "injury": "Right Finger Mallet / Left Elbow Contusion",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "Lef",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
