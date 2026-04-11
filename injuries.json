@@ -30479,5 +30479,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Left Game",
+    "injury": "Left Hamstring Injury",
+    "date": "2026-04-10",
+    "prevStatus": "Available"
   }
 ]
