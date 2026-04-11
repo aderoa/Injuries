@@ -31144,5 +31144,12 @@
     "injury": "Rest",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
