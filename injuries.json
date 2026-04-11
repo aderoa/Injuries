@@ -31452,5 +31452,12 @@
     "injury": "Left Hip Impingement",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
