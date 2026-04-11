@@ -30402,5 +30402,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sam Hauser",
+    "status": "Available",
+    "injury": "Low Back Spasm",
+    "date": "2026-04-10",
+    "prevStatus": "Probable"
   }
 ]
