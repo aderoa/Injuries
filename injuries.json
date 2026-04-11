@@ -31193,5 +31193,12 @@
     "injury": "",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kobe Brown",
+    "status": "Questionable",
+    "injury": "Lumbar Strain",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
