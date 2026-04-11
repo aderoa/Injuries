@@ -30878,5 +30878,12 @@
     "injury": "Left Achilles ",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Out",
+    "injury": "Left Achilles Tendinitis",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
