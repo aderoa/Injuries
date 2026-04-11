@@ -31557,5 +31557,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-04-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
