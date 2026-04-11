@@ -31053,5 +31053,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-11",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
