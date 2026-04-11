@@ -31123,5 +31123,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "James Harden",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
