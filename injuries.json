@@ -31221,5 +31221,12 @@
     "injury": "Right Groin Tightness",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Right Achilles Tendinopathy",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
