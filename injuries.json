@@ -30801,5 +30801,12 @@
     "injury": "Right Plantar Fascia Strain",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
