@@ -31256,5 +31256,12 @@
     "injury": "",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
