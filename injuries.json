@@ -31620,5 +31620,12 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
