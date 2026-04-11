@@ -30451,5 +30451,12 @@
     "injury": "Left Finger Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Green",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
