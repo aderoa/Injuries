@@ -31312,5 +31312,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tim Hardaway Jr",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
