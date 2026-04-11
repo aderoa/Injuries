@@ -30857,5 +30857,12 @@
     "injury": "Right Foot Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
