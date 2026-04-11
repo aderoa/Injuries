@@ -30528,5 +30528,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dru Smith",
+    "status": "Out",
+    "injury": "Right Big Toe Sprain",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
