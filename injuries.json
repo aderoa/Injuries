@@ -30395,5 +30395,12 @@
     "injury": "Right Pelvic Contusion",
     "date": "2026-04-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Out",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
