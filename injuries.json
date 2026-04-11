@@ -31543,5 +31543,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "status": "Out",
+    "injury": "Right Hamstring Strian",
+    "date": "2026-04-07",
+    "prevStatus": "Out"
   }
 ]
