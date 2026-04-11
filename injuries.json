@@ -31214,5 +31214,12 @@
     "injury": "Left Foot Sprain",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Harris",
+    "status": "Questionable",
+    "injury": "Right Groin Tightness",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
