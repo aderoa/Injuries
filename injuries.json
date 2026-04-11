@@ -31228,5 +31228,12 @@
     "injury": "Right Achilles Tendinopathy",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pete Nance",
+    "status": "Questionable",
+    "injury": "Right Knee Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
