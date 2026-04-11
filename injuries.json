@@ -31004,5 +31004,12 @@
     "injury": "Rest",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Onyeka Okongwu",
+    "status": "Questionable",
+    "injury": "Left ",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
