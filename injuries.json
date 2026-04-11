@@ -30430,5 +30430,19 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Available",
+    "injury": "Bilateral Low Back Strain",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
