@@ -31347,5 +31347,12 @@
     "injury": "Rest",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
