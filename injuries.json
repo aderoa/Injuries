@@ -31165,5 +31165,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Drake Powell",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
