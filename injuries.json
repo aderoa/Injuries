@@ -31592,5 +31592,12 @@
     "injury": "Right Ribcage Soreness",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Questionable",
+    "injury": "Left Ribcage Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
