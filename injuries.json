@@ -31067,5 +31067,12 @@
     "injury": "",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
