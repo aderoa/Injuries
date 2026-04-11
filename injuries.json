@@ -31522,5 +31522,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Haywood Highsmith",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
