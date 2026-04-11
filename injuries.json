@@ -31018,5 +31018,12 @@
     "injury": "Left Index Finger Sprain",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Coby White",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
