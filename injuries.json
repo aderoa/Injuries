@@ -30836,5 +30836,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
