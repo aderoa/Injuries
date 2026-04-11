@@ -31354,5 +31354,12 @@
     "injury": "Rest",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
