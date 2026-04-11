@@ -31606,5 +31606,19 @@
     "injury": "Lower Back Soreness",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Seth Curry",
+    "status": "Available",
+    "injury": "Left Adductor Management",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Questionable",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
