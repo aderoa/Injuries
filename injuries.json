@@ -30920,5 +30920,12 @@
     "injury": "Left ",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Doubtful",
+    "injury": "Left Foot Plantar Fasciitis",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
