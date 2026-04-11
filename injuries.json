@@ -30871,5 +30871,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Out",
+    "injury": "Left Achilles ",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
