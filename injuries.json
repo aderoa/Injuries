@@ -30535,5 +30535,12 @@
     "injury": "Right Big Toe Sprain",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Doubtful",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-04-11",
+    "prevStatus": "Left Game"
   }
 ]
