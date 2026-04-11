@@ -30367,5 +30367,12 @@
     "injury": "Right Oblique Strain",
     "date": "2026-04-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-10",
+    "prevStatus": "Questionable"
   }
 ]
