@@ -30500,5 +30500,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Probable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
