@@ -30976,5 +30976,12 @@
     "injury": "Left Great Toe SPrain",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dyson Daniels",
+    "status": "Questionable",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
