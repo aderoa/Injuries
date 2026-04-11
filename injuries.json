@@ -31130,5 +31130,12 @@
     "injury": "Rest",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Evan Mobley",
+    "status": "Out",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-04-11",
+    "prevStatus": "Available"
   }
 ]
