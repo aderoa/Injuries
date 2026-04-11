@@ -31571,5 +31571,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Questionable",
+    "injury": "Left Foot Soreness",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
