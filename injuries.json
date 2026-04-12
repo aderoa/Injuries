@@ -31739,5 +31739,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Hugo Gonzalez",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
