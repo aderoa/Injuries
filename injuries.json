@@ -32138,5 +32138,12 @@
     "injury": "Left Calf Contusion",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Matisse Thybulle",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Probable"
   }
 ]
