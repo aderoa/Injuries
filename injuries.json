@@ -31865,5 +31865,12 @@
     "injury": "",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Questionable",
+    "injury": "Right Lower Leg ",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
