@@ -31669,5 +31669,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brice Sensabaugh",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-11",
+    "prevStatus": "Out"
   }
 ]
