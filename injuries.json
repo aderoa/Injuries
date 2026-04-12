@@ -32054,5 +32054,12 @@
     "injury": "Right Shoulder Inflammation",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Out"
   }
 ]
