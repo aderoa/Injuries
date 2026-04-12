@@ -32040,5 +32040,12 @@
     "injury": "Illness",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pete Nance",
+    "status": "Out",
+    "injury": "Right Knee Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
