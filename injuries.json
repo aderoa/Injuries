@@ -31753,5 +31753,12 @@
     "injury": "Right Foot Pain",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ochai Agbaji",
+    "status": "Available",
+    "injury": "Lower Back Soreness",
+    "date": "2026-04-12",
+    "prevStatus": "Probable"
   }
 ]
