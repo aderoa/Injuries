@@ -31900,5 +31900,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
