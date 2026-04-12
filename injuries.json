@@ -31795,5 +31795,12 @@
     "injury": "",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mouhamed Gueye",
+    "status": "Questionable",
+    "injury": "Right Shoulder Inflammation",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
