@@ -32222,5 +32222,12 @@
     "injury": "Right Hamstring Tightness",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Available",
+    "injury": "Right Finger Mallet / Left Elbow Contusion",
+    "date": "2026-04-12",
+    "prevStatus": "Probable"
   }
 ]
