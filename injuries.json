@@ -31788,5 +31788,12 @@
     "injury": "Left Great Toe Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mouhamed Gueye",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
