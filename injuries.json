@@ -32145,5 +32145,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Available",
+    "injury": "Left Foot Soreness",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
