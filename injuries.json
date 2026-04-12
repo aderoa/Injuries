@@ -31830,5 +31830,12 @@
     "injury": "Rest",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Onyeka Okongwu",
+    "status": "Out",
+    "injury": "Left Index Finger Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
