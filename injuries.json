@@ -31837,5 +31837,12 @@
     "injury": "Left Index Finger Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gabe Vincent",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
