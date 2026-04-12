@@ -32243,5 +32243,12 @@
     "injury": "Left Thigh Contusion",
     "date": "2026-04-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Olivier-Maxence Prosper",
+    "status": "Available",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
