@@ -31998,5 +31998,12 @@
     "injury": "Left Foot Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kobe Brown",
+    "status": "Out",
+    "injury": "Lumbar Strain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
