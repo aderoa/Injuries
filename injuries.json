@@ -32089,5 +32089,19 @@
     "injury": "Right Ribcage Soreness",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Marvin Bagley",
+    "status": "Out",
+    "injury": "Left Shoulder Impingement",
+    "date": "2026-04-12",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-12",
+    "prevStatus": "Doubtful"
   }
 ]
