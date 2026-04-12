@@ -31991,5 +31991,12 @@
     "injury": "Right Foot Bone Bruise",
     "date": "2026-04-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarace Walker",
+    "status": "Out",
+    "injury": "Left Foot Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
