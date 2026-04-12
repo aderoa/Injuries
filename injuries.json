@@ -32152,5 +32152,12 @@
     "injury": "Left Foot Soreness",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Jokic",
+    "status": "Available",
+    "injury": "Right Wrist Injury Management",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
