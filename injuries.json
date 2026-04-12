@@ -32187,5 +32187,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Out",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
