@@ -31984,5 +31984,12 @@
     "injury": "Right Toe Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Hugo Gonzalez",
+    "status": "Out",
+    "injury": "Right Foot Bone Bruise",
+    "date": "2026-04-12",
+    "prevStatus": "Out"
   }
 ]
