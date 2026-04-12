@@ -31928,5 +31928,26 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Available",
+    "injury": "Neck Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
