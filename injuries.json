@@ -31760,5 +31760,12 @@
     "injury": "Lower Back Soreness",
     "date": "2026-04-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
