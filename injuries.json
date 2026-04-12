@@ -32026,5 +32026,12 @@
     "injury": "Right Groin Tightness",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pete Nance",
+    "status": "Available",
+    "injury": "Right Knee Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
