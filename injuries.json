@@ -32250,5 +32250,19 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Out",
+    "injury": "Left Hip Impingement",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Adama Bal",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
