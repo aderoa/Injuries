@@ -31823,5 +31823,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "CJ McCollum",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
