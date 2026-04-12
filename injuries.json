@@ -31781,5 +31781,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-04-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Dyson Daniels",
+    "status": "Out",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
