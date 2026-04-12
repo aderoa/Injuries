@@ -32236,5 +32236,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Available",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-04-12",
+    "prevStatus": "Probable"
   }
 ]
