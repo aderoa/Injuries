@@ -32208,5 +32208,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-04-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
