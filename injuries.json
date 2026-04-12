@@ -32229,5 +32229,12 @@
     "injury": "Right Finger Mallet / Left Elbow Contusion",
     "date": "2026-04-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Available",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
