@@ -31809,5 +31809,12 @@
     "injury": "Right Great Toe Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
