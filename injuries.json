@@ -32264,5 +32264,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Available",
+    "injury": "Bilateral Low Back Strain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
