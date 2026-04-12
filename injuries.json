@@ -31949,5 +31949,19 @@
     "injury": "Neck Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Hugo Gonzalez",
+    "status": "Out",
+    "injury": "Right Foot Pain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sam Hauser",
+    "status": "Out",
+    "injury": "Low Back Spasm",
+    "date": "2026-04-12",
+    "prevStatus": "Doubtful"
   }
 ]
