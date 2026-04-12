@@ -32159,5 +32159,33 @@
     "injury": "Right Wrist Injury Management",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Gillespie",
+    "status": "Out",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Green",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Haywood Highsmith",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
