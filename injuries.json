@@ -31732,5 +31732,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Landry Shamet",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
