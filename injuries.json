@@ -31851,5 +31851,12 @@
     "injury": "Left Knee Inflammation",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Coby White",
+    "status": "Available",
+    "injury": "Right Calf Soreness",
+    "date": "2026-04-12",
+    "prevStatus": "Probable"
   }
 ]
