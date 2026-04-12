@@ -32033,5 +32033,12 @@
     "injury": "Right Knee Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
