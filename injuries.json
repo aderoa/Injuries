@@ -32194,5 +32194,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lachlan Olbrich",
+    "status": "Available",
+    "injury": "Bilateral Plantar Fasciitis",
+    "date": "2026-04-12",
+    "prevStatus": "Probable"
   }
 ]
