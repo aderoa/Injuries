@@ -31844,5 +31844,12 @@
     "injury": "",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gabe Vincent",
+    "status": "Out",
+    "injury": "Left Knee Inflammation",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
