@@ -31879,5 +31879,19 @@
     "injury": "Right Lower Leg Contusion",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-04-12",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Out",
+    "injury": "Right Lower Leg Contusion",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
