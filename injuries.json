@@ -31858,5 +31858,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-04-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
