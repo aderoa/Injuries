@@ -31914,5 +31914,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Out",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
