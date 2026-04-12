@@ -31802,5 +31802,12 @@
     "injury": "Right Shoulder Inflammation",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nickeil Alexander-Walker",
+    "status": "Out",
+    "injury": "Right Great Toe Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Questionable"
   }
 ]
