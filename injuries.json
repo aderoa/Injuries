@@ -32754,5 +32754,26 @@
     "injury": "Left 2nd Metacarpal Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Collin Gillespie",
+    "status": "Available",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Green",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
