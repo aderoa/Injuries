@@ -32299,5 +32299,33 @@
     "injury": "Left Great Toe Sprain",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "CJ McCollum",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Onyeka Okongwu",
+    "status": "Available",
+    "injury": "Left Index Finger Sprain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
