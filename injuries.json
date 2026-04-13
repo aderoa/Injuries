@@ -33580,5 +33580,12 @@
     "injury": "Right Lower Leg Contusion",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dru Smith",
+    "status": "Out",
+    "injury": "Right Foot Soreness",
+    "date": "2026-04-09",
+    "prevStatus": "Out"
   }
 ]
