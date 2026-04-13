@@ -33482,5 +33482,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-04-12",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Landry Shamet",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
