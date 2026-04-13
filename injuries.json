@@ -33503,5 +33503,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Out",
+    "injury": "Left Ankle Surgery",
+    "date": "2026-01-28",
+    "prevStatus": "Out"
   }
 ]
