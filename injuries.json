@@ -32621,5 +32621,19 @@
     "injury": "Right Shoulder Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
