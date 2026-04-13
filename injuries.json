@@ -33517,5 +33517,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Out"
+  },
+  {
+    "player": "PJ Hall",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-04-13",
+    "prevStatus": null
   }
 ]
