@@ -32285,5 +32285,19 @@
     "injury": "Left Thumb Injury",
     "date": "2026-04-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nickeil Alexander-Walker",
+    "status": "Available",
+    "injury": "Right Great Toe Sprain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Dyson Daniels",
+    "status": "Available",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
