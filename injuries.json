@@ -32551,5 +32551,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Doubtful",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
