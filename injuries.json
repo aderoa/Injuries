@@ -32558,5 +32558,68 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Mike Conley",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Available",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Rudy Gobert",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Bones Hyland",
+    "status": "Available",
+    "injury": "Right Hip Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jaden McDaniels",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Julius Randle",
+    "status": "Available",
+    "injury": "Right Hand Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Available",
+    "injury": "Right Shoulder Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
