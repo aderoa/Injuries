@@ -32411,5 +32411,47 @@
     "injury": "Left Knee Contusion",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "James Harden",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Available",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Evan Mobley",
+    "status": "Available",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
