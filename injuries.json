@@ -32327,5 +32327,68 @@
     "injury": "Left Index Finger Sprain",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gabe Vincent",
+    "status": "Available",
+    "injury": "Left Knee Inflammation",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Questionable",
+    "injury": "Left Achilles Tendinitis",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Hugo Gonzalez",
+    "status": "Available",
+    "injury": "Right Foot Bone Bruise",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Sam Hauser",
+    "status": "Available",
+    "injury": "Low Back Spasm",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Available",
+    "injury": "Left Foot Plantar Fasciitis",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Neemias Queta",
+    "status": "Available",
+    "injury": "Right Toe Sprain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Available",
+    "injury": "Right Achilles Repair Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Nikola Vucevic",
+    "status": "Available",
+    "injury": "Right Ring Finger Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
