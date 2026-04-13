@@ -32495,5 +32495,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Left Low Back Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
