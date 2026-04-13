@@ -32635,5 +32635,19 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Tyler Kolek",
+    "status": "Out",
+    "injury": "Right Oblique Strain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
