@@ -32453,5 +32453,26 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Christian Braun",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management / Right Hip Flexor Strain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Available",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
