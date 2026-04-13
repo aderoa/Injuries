@@ -33510,5 +33510,12 @@
     "injury": "Left Ankle Surgery",
     "date": "2026-01-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "PJ Hall",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Out"
   }
 ]
