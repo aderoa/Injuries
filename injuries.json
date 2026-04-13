@@ -32390,5 +32390,26 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Thomas Bryant",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Keon Ellis",
+    "status": "Available",
+    "injury": "Left Knee Contusion",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
