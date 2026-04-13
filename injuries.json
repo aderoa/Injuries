@@ -32474,5 +32474,19 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tim Hardaway Jr",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Available",
+    "injury": "Right Shoulder Impingement",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
