@@ -33559,5 +33559,19 @@
     "injury": "",
     "date": "2026-04-13",
     "prevStatus": null
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "PJ Hall",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
