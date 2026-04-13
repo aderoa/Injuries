@@ -32271,5 +32271,12 @@
     "injury": "Bilateral Low Back Strain",
     "date": "2026-04-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Left Game",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-12",
+    "prevStatus": "Available"
   }
 ]
