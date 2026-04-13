@@ -32775,5 +32775,19 @@
     "injury": "Right Knee Soreness",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Royce O'Neale",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Available",
+    "injury": "Left Foot Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
