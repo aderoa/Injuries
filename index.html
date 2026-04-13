@@ -206,6 +206,9 @@ const NBA_TEAMS = [
   'New Orleans','New York','Oklahoma City','Orlando','Philadelphia','Phoenix',
   'Portland','Sacramento','San Antonio','Toronto','Utah','Washington'
 ];
+const ELIMINATED_TEAMS = new Set(['Milwaukee','Chicago','Brooklyn','Indiana','Washington','New Orleans','Dallas','Memphis','Sacramento','Utah']);
+const PLAYOFF_TEAMS = NBA_TEAMS.filter(t => !ELIMINATED_TEAMS.has(t));
+
 const TEAM_IDS = {
   'Atlanta':1610612737,'Boston':1610612738,'Brooklyn':1610612751,
   'Charlotte':1610612766,'Chicago':1610612741,'Cleveland':1610612739,
@@ -312,8 +315,10 @@ async function loadData() {
         const team = (row[teamIdx] || '').trim();
         const salRaw = salaryIdx >= 0 ? (row[salaryIdx] || '0').replace(/[$,]/g, '') : '0';
         const salary = parseInt(salRaw) || 0;
+        const stIdx = col('ST 25-26');
+        const contractStatus = stIdx >= 0 ? (row[stIdx] || '').trim() : '';
         if (player && team) {
-          roster[player] = { team, salary };
+          roster[player] = { team, salary, contractStatus };
           teamSalaries[team] = (teamSalaries[team] || 0) + salary;
         }
       }
@@ -461,7 +466,7 @@ function renderRoster() {
   const area = document.getElementById('rosterArea');
   let html = '';
 
-  for (const team of NBA_TEAMS) {
+  for (const team of PLAYOFF_TEAMS) {
     const players = Object.entries(roster)
       .filter(([_,v]) => v.team === team)
       .sort((a,b) => lastName(a[0]).localeCompare(lastName(b[0])));
@@ -1179,7 +1184,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     if (e.date && e.date.length >= 10 && e.date < today) prevDateStatus[e.player] = e.status;
   }
   const todayEntries = Object.entries(lat)
-    .filter(([name,e]) => e.date === today && roster[name])
+    .filter(([name,e]) => e.date === today && roster[name] && !ELIMINATED_TEAMS.has(roster[name].team))
     .map(([name,e]) => {
       const r = roster[name] || {};
       const prev = (e.prevStatus != null) ? e.prevStatus : prevDateStatus[name] || 'Available';
@@ -1201,7 +1206,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
 
   // Table 2: Full Report
   const allInjured = Object.entries(lat)
-    .filter(([name,e]) => e.status !== 'Available' && roster[name])
+    .filter(([name,e]) => e.status !== 'Available' && roster[name] && !ELIMINATED_TEAMS.has(roster[name].team))
     .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
     .sort((a,b) => a.team !== b.team ? a.team.localeCompare(b.team) : lastName(a.player).localeCompare(lastName(b.player)));
 
@@ -1219,8 +1224,8 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     if (e.status === 'Out' || e.status === 'Doubtful') teamInjSal[e.team] = (teamInjSal[e.team]||0) + e.salary;
   }
   let totalNBASal = 0, totalNBAInj = 0;
-  for (const t of NBA_TEAMS) { totalNBASal += teamSalaries[t]||0; totalNBAInj += teamInjSal[t]||0; }
-  const teamRows = NBA_TEAMS.map(t => ({
+  for (const t of PLAYOFF_TEAMS) { totalNBASal += teamSalaries[t]||0; totalNBAInj += teamInjSal[t]||0; }
+  const teamRows = PLAYOFF_TEAMS.map(t => ({
     team:t, injured:teamInjSal[t]||0, total:teamSalaries[t]||0,
     pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
   })).sort((a,b) => b.injured - a.injured);
