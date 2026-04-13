@@ -33454,5 +33454,12 @@
     "injury": "Right Knee Surgery Recovery",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Chucky Hepburn",
+    "status": "Available",
+    "injury": "Right Knee Surgery Recovery",
+    "date": "",
+    "prevStatus": "Out"
   }
 ]
