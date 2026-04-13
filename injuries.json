@@ -32488,5 +32488,12 @@
     "injury": "Right Shoulder Impingement",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
