@@ -32670,5 +32670,47 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Available",
+    "injury": "Right Oblique Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "status": "Available",
+    "injury": "Left Soleus Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
