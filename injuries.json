@@ -33461,5 +33461,19 @@
     "injury": "Right Knee Surgery Recovery",
     "date": "",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Chucky Hepburn",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
