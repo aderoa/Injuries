@@ -32544,5 +32544,12 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
