@@ -32712,5 +32712,26 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cason Wallace",
+    "status": "Available",
+    "injury": "Left Great Toe Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylin Williams",
+    "status": "Available",
+    "injury": "Right Achilles Tendinitis",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Available",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
