@@ -32502,5 +32502,33 @@
     "injury": "Left Low Back Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jabari Smith",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
