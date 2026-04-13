@@ -32733,5 +32733,26 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Available",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Devin Booker",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Dillon Brooks",
+    "status": "Available",
+    "injury": "Left 2nd Metacarpal Injury Management",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
