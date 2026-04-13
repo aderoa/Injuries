@@ -33475,5 +33475,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Left Game",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-04-12",
+    "prevStatus": "Left Game"
   }
 ]
