@@ -32789,5 +32789,19 @@
     "injury": "Left Foot Injury Management",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Available",
+    "injury": "Right Shoulder Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Available",
+    "injury": "Left Ribcage Soreness",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
