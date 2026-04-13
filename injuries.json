@@ -33545,5 +33545,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Out"
+  },
+  {
+    "player": "David Jones",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": null
   }
 ]
