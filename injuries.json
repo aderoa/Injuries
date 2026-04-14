@@ -33636,5 +33636,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trendon Watford",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-04-14",
+    "prevStatus": "Available"
   }
 ]
