@@ -33601,5 +33601,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-04-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Probable",
+    "injury": "Right Lower Leg Contusion",
+    "date": "2026-04-14",
+    "prevStatus": "Out"
   }
 ]
