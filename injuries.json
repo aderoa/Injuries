@@ -33587,5 +33587,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-04-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Questionable",
+    "injury": "Right Calf Strain",
+    "date": "2026-04-13",
+    "prevStatus": "Out"
   }
 ]
