@@ -33650,5 +33650,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Available",
+    "injury": "Right Calf Strain",
+    "date": "2026-04-14",
+    "prevStatus": "Questionable"
   }
 ]
