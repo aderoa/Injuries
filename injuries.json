@@ -33727,5 +33727,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trendon Watford",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-15",
+    "prevStatus": "Probable"
   }
 ]
