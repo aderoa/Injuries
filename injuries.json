@@ -33713,5 +33713,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-15",
+    "prevStatus": "Questionable"
   }
 ]
