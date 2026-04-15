@@ -33671,5 +33671,12 @@
     "injury": "",
     "date": "2026-04-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bam Adebayo",
+    "status": "Left Game",
+    "injury": "Lower Back ",
+    "date": "2026-04-14",
+    "prevStatus": "Available"
   }
 ]
