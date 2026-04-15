@@ -33706,5 +33706,12 @@
     "injury": "Left Thumb Injury",
     "date": "2026-04-15",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Isaiah Jackson",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-15",
+    "prevStatus": "Questionable"
   }
 ]
