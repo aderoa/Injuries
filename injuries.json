@@ -33685,5 +33685,19 @@
     "injury": "Lower Back Injury",
     "date": "2026-04-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
