@@ -33664,5 +33664,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-04-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bam Adebayo",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-14",
+    "prevStatus": "Available"
   }
 ]
