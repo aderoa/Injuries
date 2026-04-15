@@ -33720,5 +33720,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Out",
+    "injury": "Left Knee Sprain",
+    "date": "2026-04-15",
+    "prevStatus": "Questionable"
   }
 ]
