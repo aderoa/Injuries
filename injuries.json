@@ -33741,5 +33741,33 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-04-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Jackson",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Trendon Watford",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
