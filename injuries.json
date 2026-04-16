@@ -33776,5 +33776,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-16",
+    "prevStatus": "Available"
   }
 ]
