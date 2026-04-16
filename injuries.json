@@ -33734,5 +33734,12 @@
     "injury": "Illness",
     "date": "2026-04-15",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Isaiah Jackson",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-04-15",
+    "prevStatus": "Questionable"
   }
 ]
