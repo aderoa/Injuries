@@ -1204,9 +1204,10 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   });
   h1 += '</tbody></table>';
 
-  // Table 2: Full Report
+  // Table 2: Full Report (only Out, Doubtful, Left Game — Questionable/Probable stay with healthy players)
+  const injuredStatuses = new Set(['Out', 'Doubtful', 'Left Game']);
   const allInjured = Object.entries(lat)
-    .filter(([name,e]) => e.status !== 'Available' && roster[name] && !ELIMINATED_TEAMS.has(roster[name].team))
+    .filter(([name,e]) => injuredStatuses.has(e.status) && roster[name] && !ELIMINATED_TEAMS.has(roster[name].team))
     .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
     .sort((a,b) => a.team !== b.team ? a.team.localeCompare(b.team) : lastName(a.player).localeCompare(lastName(b.player)));
 
