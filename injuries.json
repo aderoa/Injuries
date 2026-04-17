@@ -33867,5 +33867,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Available",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-17",
+    "prevStatus": "Questionable"
   }
 ]
