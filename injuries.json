@@ -33839,5 +33839,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Thomas Bryant",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-17",
+    "prevStatus": "Available"
   }
 ]
