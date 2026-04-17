@@ -33860,5 +33860,12 @@
     "injury": "",
     "date": "2026-04-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-17",
+    "prevStatus": "Available"
   }
 ]
