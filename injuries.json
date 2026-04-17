@@ -33804,5 +33804,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-04-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Questionable",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-04-16",
+    "prevStatus": "Out"
   }
 ]
