@@ -33874,5 +33874,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-04-17",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Questionable",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-04-17",
+    "prevStatus": "Out"
   }
 ]
