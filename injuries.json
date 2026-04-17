@@ -33811,5 +33811,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-04-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-04-16",
+    "prevStatus": "Out"
   }
 ]
