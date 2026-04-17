@@ -33797,5 +33797,12 @@
     "injury": "",
     "date": "2026-04-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-04-16",
+    "prevStatus": "Available"
   }
 ]
