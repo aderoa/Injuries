@@ -33902,5 +33902,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-04-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Out",
+    "injury": "Left Foot Soreness",
+    "date": "2026-04-17",
+    "prevStatus": "Questionable"
   }
 ]
