@@ -33958,5 +33958,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Johni Broome",
+    "status": "Available",
+    "injury": "Right Knee Surgery Recovery",
+    "date": "2026-04-18",
+    "prevStatus": "Out"
   }
 ]
