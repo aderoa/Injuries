@@ -33965,5 +33965,12 @@
     "injury": "Right Knee Surgery Recovery",
     "date": "2026-04-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan McLaughlin",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-18",
+    "prevStatus": "Available"
   }
 ]
