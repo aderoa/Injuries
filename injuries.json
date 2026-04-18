@@ -33993,5 +33993,12 @@
     "injury": "Left Foot Soreness",
     "date": "2026-04-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Out",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-18",
+    "prevStatus": "Questionable"
   }
 ]
