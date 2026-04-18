@@ -33986,5 +33986,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Questionable",
+    "injury": "Left Foot Soreness",
+    "date": "2026-04-18",
+    "prevStatus": "Out"
   }
 ]
