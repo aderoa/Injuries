@@ -33944,5 +33944,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-04-18",
+    "prevStatus": "Questionable"
   }
 ]
