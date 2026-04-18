@@ -33951,5 +33951,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-04-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Questionable",
+    "injury": "Left Knee Sprain",
+    "date": "2026-04-18",
+    "prevStatus": "Out"
   }
 ]
