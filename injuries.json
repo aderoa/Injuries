@@ -34140,5 +34140,12 @@
     "injury": "Left Calf Soreness",
     "date": "2026-04-19",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-19",
+    "prevStatus": "Available"
   }
 ]
