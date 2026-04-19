@@ -34098,5 +34098,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-04-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Onyeka Okongwu",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-19",
+    "prevStatus": "Available"
   }
 ]
