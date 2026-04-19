@@ -34070,5 +34070,19 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Desmond Bane",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-19",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Out",
+    "injury": "Left Knee Sprain",
+    "date": "2026-04-19",
+    "prevStatus": "Questionable"
   }
 ]
