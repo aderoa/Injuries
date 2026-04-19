@@ -34126,5 +34126,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-19",
+    "prevStatus": "Available"
   }
 ]
