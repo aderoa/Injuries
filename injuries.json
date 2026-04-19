@@ -34133,5 +34133,12 @@
     "injury": "",
     "date": "2026-04-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Left Game",
+    "injury": "Left Calf Soreness",
+    "date": "2026-04-19",
+    "prevStatus": "Left Game"
   }
 ]
