@@ -34042,5 +34042,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Desmond Bane",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-19",
+    "prevStatus": "Available"
   }
 ]
