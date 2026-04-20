@@ -34203,5 +34203,12 @@
     "injury": "Right Knee Inflammation",
     "date": "2026-04-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-20",
+    "prevStatus": "Probable"
   }
 ]
