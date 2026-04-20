@@ -34161,5 +34161,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-20",
+    "prevStatus": "Out"
   }
 ]
