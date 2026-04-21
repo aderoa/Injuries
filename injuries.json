@@ -34266,5 +34266,12 @@
     "injury": "Left Calf Soreness",
     "date": "2026-04-21",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Questionable",
+    "injury": "Left Foot Soreness",
+    "date": "2026-04-21",
+    "prevStatus": "Out"
   }
 ]
