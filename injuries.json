@@ -34210,5 +34210,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-20",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-04-20",
+    "prevStatus": "Questionable"
   }
 ]
