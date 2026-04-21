@@ -34217,5 +34217,26 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Onyeka Okongwu",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
