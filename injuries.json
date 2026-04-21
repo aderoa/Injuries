@@ -34259,5 +34259,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Questionable",
+    "injury": "Left Calf Soreness",
+    "date": "2026-04-21",
+    "prevStatus": "Left Game"
   }
 ]
