@@ -420,7 +420,7 @@ if (isAdmin) {
         <button onclick="showTab(3,this)">Highest-Paid</button>
         <button class="active" onclick="showTab(-1,this)">All</button>
       </div>
-      <div id="loading" class="loading-state"><div class="loading-spinner"></div><p>Loading injury data...</p></div>
+      <div id="loading" class="loading-state"><div class="loading-spinner"></div><p>Loading injury report…</p></div>
       <div id="preview" class="preview" style="display:none;"></div>
       <div id="error" class="error-msg" style="display:none;"></div>
     </div>
@@ -1230,7 +1230,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
     pct: teamSalaries[t] ? ((teamInjSal[t]||0)/teamSalaries[t]*100) : 0
   })).sort((a,b) => b.injured - a.injured);
 
-  let h3 = `<h2>Injured salary per team</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>TEAM</th><th>INJURED SALARY</th><th>% SALARY</th></tr></thead><tbody>\n`;
+  let h3 = `<h2>Injured salary per team</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>TEAM</th><th>INJURED SALARY</th><th title="Injured salary as a percentage of the team's total payroll — higher means a bigger share of the roster is unavailable.">% SALARY</th></tr></thead><tbody>\n`;
   teamRows.forEach(r => {
     h3 += `<tr><td class="logo-col">${lImg(r.team)}</td><td><strong>${r.team}</strong></td><td>${fmtSalFull(r.injured)}</td><td>${r.pct.toFixed(2)}%</td></tr>\n`;
   });
@@ -1239,7 +1239,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
 
   // Table 4: Highest-Paid Injured
   const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
-  let h4 = `<h2>Highest-paid injured players</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>PLAYER</th><th>SALARY</th><th>DAYS SINCE LAST GAME</th></tr></thead><tbody>\n`;
+  let h4 = `<h2>Highest-paid injured players</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>PLAYER</th><th>SALARY</th><th title="Number of days since this player last appeared in a game — a proxy for how long they've been sidelined.">DAYS SINCE LAST GAME</th></tr></thead><tbody>\n`;
   topPaid.forEach(e => {
     h4 += `<tr><td class="logo-col">${lImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days||''}</td></tr>\n`;
   });
@@ -1294,7 +1294,8 @@ async function initReport() {
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
-    document.getElementById('error').textContent = 'Error: ' + e.message;
+    document.getElementById('error').textContent = "Couldn't load the injury report. Try refreshing — if this keeps happening, the data might be updating right now.";
+    console.error('[Injuries]', e);
   }
 }
 
