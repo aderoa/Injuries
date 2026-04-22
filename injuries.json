@@ -34336,5 +34336,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-04-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ja'Kobe Walter",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-22",
+    "prevStatus": "Available"
   }
 ]
