@@ -34329,5 +34329,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Questionable",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-04-22",
+    "prevStatus": "Out"
   }
 ]
