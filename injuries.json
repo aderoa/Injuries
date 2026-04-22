@@ -34364,5 +34364,12 @@
     "injury": "",
     "date": "2026-04-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Probable",
+    "injury": "Left Calf Tightness",
+    "date": "2026-04-22",
+    "prevStatus": "Available"
   }
 ]
