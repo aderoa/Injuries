@@ -34343,5 +34343,12 @@
     "injury": "Illness",
     "date": "2026-04-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Managem",
+    "date": "2026-04-22",
+    "prevStatus": "Available"
   }
 ]
