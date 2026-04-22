@@ -34294,5 +34294,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-04-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-04-21",
+    "prevStatus": "Questionable"
   }
 ]
