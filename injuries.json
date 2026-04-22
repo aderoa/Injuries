@@ -34357,5 +34357,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-22",
+    "prevStatus": "Available"
   }
 ]
