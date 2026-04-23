@@ -34399,5 +34399,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-23",
+    "prevStatus": "Available"
   }
 ]
