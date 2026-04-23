@@ -34455,5 +34455,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-23",
+    "prevStatus": "Available"
   }
 ]
