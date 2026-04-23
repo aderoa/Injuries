@@ -34462,5 +34462,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Out",
+    "injury": "Left Calf Tightness",
+    "date": "2026-04-23",
+    "prevStatus": "Probable"
   }
 ]
