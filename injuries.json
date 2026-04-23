@@ -34434,5 +34434,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-04-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Left Hamstring Straion",
+    "date": "2026-04-23",
+    "prevStatus": "Available"
   }
 ]
