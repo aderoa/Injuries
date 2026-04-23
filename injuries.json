@@ -34420,5 +34420,12 @@
     "injury": "Illness",
     "date": "2026-04-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Thomas Bryant",
+    "status": "Probable",
+    "injury": "Left Calf Strain",
+    "date": "2026-04-23",
+    "prevStatus": "Questionable"
   }
 ]
