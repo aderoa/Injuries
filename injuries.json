@@ -34413,5 +34413,12 @@
     "injury": "Illness",
     "date": "2026-04-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ja'Kobe Walter",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-23",
+    "prevStatus": "Questionable"
   }
 ]
