@@ -34518,5 +34518,26 @@
     "injury": "Concussion Protocol",
     "date": "2026-04-23",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Thomas Bryant",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Ja'Kobe Walter",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
