@@ -34511,5 +34511,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-04-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Questionable",
+    "injury": "Concussion Protocol",
+    "date": "2026-04-23",
+    "prevStatus": "Left Game"
   }
 ]
