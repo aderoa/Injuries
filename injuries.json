@@ -34546,5 +34546,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Post Appendectomy Surgery Recovery",
+    "date": "2026-04-24",
+    "prevStatus": "Doubtful"
   }
 ]
