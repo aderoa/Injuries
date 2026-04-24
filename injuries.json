@@ -34560,5 +34560,12 @@
     "injury": "Illness",
     "date": "2026-04-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-24",
+    "prevStatus": "Out"
   }
 ]
