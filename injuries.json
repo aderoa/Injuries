@@ -34553,5 +34553,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-24",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-04-24",
+    "prevStatus": "Out"
   }
 ]
