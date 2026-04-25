@@ -34665,5 +34665,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-04-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "AJ Lawson",
+    "status": "Questionable",
+    "injury": "Back Spasms",
+    "date": "2026-04-25",
+    "prevStatus": "Available"
   }
 ]
