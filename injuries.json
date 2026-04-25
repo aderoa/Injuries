@@ -34637,5 +34637,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-04-25",
+    "prevStatus": "Doubtful"
   }
 ]
