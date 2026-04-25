@@ -34693,5 +34693,12 @@
     "injury": "Left Oblique Muscle Strain",
     "date": "2026-04-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Available",
+    "injury": "Left Calf Tightness",
+    "date": "2026-04-25",
+    "prevStatus": "Questionable"
   }
 ]
