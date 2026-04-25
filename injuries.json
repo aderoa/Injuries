@@ -34686,5 +34686,12 @@
     "injury": "Right Adductor Soreness",
     "date": "2026-04-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Questionable",
+    "injury": "Left Oblique Muscle Strain",
+    "date": "2026-04-25",
+    "prevStatus": "Out"
   }
 ]
