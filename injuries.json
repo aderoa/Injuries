@@ -34616,5 +34616,19 @@
     "injury": "Concussion Protocol",
     "date": "2026-04-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
