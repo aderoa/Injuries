@@ -34679,5 +34679,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Questionable",
+    "injury": "Right Adductor Soreness",
+    "date": "2026-04-25",
+    "prevStatus": "Available"
   }
 ]
