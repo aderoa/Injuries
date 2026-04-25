@@ -34609,5 +34609,12 @@
     "injury": "Left Calf Soreness",
     "date": "2026-04-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Out",
+    "injury": "Concussion Protocol",
+    "date": "2026-04-24",
+    "prevStatus": "Questionable"
   }
 ]
