@@ -34868,5 +34868,12 @@
     "injury": "Left Knee Bone Bruise",
     "date": "2026-04-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Donte DiVincenzo",
+    "status": "Out",
+    "injury": "Right Achilles Tendon Repair",
+    "date": "2026-04-25",
+    "prevStatus": "Out"
   }
 ]
