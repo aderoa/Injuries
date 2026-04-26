@@ -34819,5 +34819,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-04-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-26",
+    "prevStatus": "Questionable"
   }
 ]
