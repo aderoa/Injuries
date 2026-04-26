@@ -34798,5 +34798,12 @@
     "injury": "Left Knee Bone Bruise and Hyperextension",
     "date": "2026-04-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "AJ Lawson",
+    "status": "Available",
+    "injury": "Back Spasms",
+    "date": "2026-04-26",
+    "prevStatus": "Questionable"
   }
 ]
