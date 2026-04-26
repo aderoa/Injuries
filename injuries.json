@@ -34777,5 +34777,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-04-26",
+    "prevStatus": "Available"
   }
 ]
