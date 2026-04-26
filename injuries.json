@@ -34728,5 +34728,12 @@
     "injury": "Right Lower Leg Injury",
     "date": "2026-04-25",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Donte DiVincenzo",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-25",
+    "prevStatus": "Left Game"
   }
 ]
