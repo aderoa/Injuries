@@ -34854,5 +34854,12 @@
     "injury": "Right Adductor Soreness",
     "date": "2026-04-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Post Appendectomy Surgery Recovery",
+    "date": "2026-04-26",
+    "prevStatus": "Doubtful"
   }
 ]
