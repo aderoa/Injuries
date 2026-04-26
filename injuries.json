@@ -34749,5 +34749,19 @@
     "injury": "Right Achilles Tear",
     "date": "2026-04-25",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
