@@ -34805,5 +34805,19 @@
     "injury": "Back Spasms",
     "date": "2026-04-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jordan McLaughlin",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-26",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Available",
+    "injury": "Concussion Protocol",
+    "date": "2026-04-26",
+    "prevStatus": "Questionable"
   }
 ]
