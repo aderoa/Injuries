@@ -34714,5 +34714,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Donte DiVincenzo",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-25",
+    "prevStatus": "Available"
   }
 ]
