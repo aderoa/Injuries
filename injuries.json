@@ -34763,5 +34763,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Post Appendectomy Surgery Recovery",
+    "date": "2026-04-26",
+    "prevStatus": "Doubtful"
   }
 ]
