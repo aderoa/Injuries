@@ -34707,5 +34707,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-04-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan McLaughlin",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-04-25",
+    "prevStatus": "Out"
   }
 ]
