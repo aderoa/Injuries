@@ -34833,5 +34833,12 @@
     "injury": "",
     "date": "2026-04-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-26",
+    "prevStatus": "Available"
   }
 ]
