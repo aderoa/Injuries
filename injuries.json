@@ -34847,5 +34847,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Available",
+    "injury": "Right Adductor Soreness",
+    "date": "2026-04-26",
+    "prevStatus": "Questionable"
   }
 ]
