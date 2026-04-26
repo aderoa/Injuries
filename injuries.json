@@ -34875,5 +34875,12 @@
     "injury": "Right Achilles Tendon Repair",
     "date": "2026-04-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Questionable",
+    "injury": "Left Calf Tightness",
+    "date": "2026-04-26",
+    "prevStatus": "Available"
   }
 ]
