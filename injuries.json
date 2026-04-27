@@ -34882,5 +34882,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-04-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Out",
+    "injury": "Left Oblique Muscle Strain",
+    "date": "2026-04-26",
+    "prevStatus": "Questionable"
   }
 ]
