@@ -34938,5 +34938,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-27",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-27",
+    "prevStatus": "Available"
   }
 ]
