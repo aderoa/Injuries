@@ -35022,5 +35022,19 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-28",
+    "prevStatus": "Available"
   }
 ]
