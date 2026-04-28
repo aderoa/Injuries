@@ -34952,5 +34952,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Available",
+    "injury": "Left Hip Soreness",
+    "date": "2026-04-27",
+    "prevStatus": "Questionable"
   }
 ]
