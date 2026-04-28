@@ -35036,5 +35036,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-04-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Left Adductor Strain",
+    "date": "2026-04-28",
+    "prevStatus": "Available"
   }
 ]
