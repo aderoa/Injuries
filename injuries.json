@@ -35008,5 +35008,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-04-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Franz Wagner",
+    "status": "Questionable",
+    "injury": "Right Calf Strain",
+    "date": "2026-04-28",
+    "prevStatus": "Questionable"
   }
 ]
