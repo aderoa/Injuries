@@ -35050,5 +35050,12 @@
     "injury": "Left Oblique Muscle Strain",
     "date": "2026-04-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Post Appendectomy Surgery Recovery",
+    "date": "2026-04-28",
+    "prevStatus": "Probable"
   }
 ]
