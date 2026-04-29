@@ -35057,5 +35057,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
