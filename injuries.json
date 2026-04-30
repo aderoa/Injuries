@@ -35246,5 +35246,12 @@
     "injury": "Lower Back Contusion",
     "date": "2026-04-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-04-30",
+    "prevStatus": "Available"
   }
 ]
