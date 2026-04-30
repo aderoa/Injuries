@@ -35197,5 +35197,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Left Adductor Strain",
+    "date": "2026-04-30",
+    "prevStatus": "Out"
   }
 ]
