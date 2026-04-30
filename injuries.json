@@ -35253,5 +35253,12 @@
     "injury": "Illness",
     "date": "2026-04-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Harrison Ingram",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-04-30",
+    "prevStatus": "Left Game"
   }
 ]
