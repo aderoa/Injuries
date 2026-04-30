@@ -35127,5 +35127,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-04-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bones Hyland",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-04-29",
+    "prevStatus": "Available"
   }
 ]
