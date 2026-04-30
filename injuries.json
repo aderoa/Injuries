@@ -35155,5 +35155,12 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-04-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
