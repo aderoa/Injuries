@@ -35141,5 +35141,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-04-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Harrison Ingram",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-04-29",
+    "prevStatus": "Available"
   }
 ]
