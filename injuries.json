@@ -35106,5 +35106,12 @@
     "injury": "",
     "date": "2026-04-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "Post Appe",
+    "date": "2026-04-29",
+    "prevStatus": "Available"
   }
 ]
