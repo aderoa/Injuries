@@ -35120,5 +35120,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Questionable",
+    "injury": "Left Calf Tightness",
+    "date": "2026-04-29",
+    "prevStatus": "Out"
   }
 ]
