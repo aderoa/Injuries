@@ -35239,5 +35239,12 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-04-30",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Available",
+    "injury": "Lower Back Contusion",
+    "date": "2026-04-30",
+    "prevStatus": "Questionable"
   }
 ]
