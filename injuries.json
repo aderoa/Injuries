@@ -35099,5 +35099,12 @@
     "injury": "Lower Back Contusion",
     "date": "2026-04-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-04-29",
+    "prevStatus": "Available"
   }
 ]
