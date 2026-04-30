@@ -35218,5 +35218,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-04-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-30",
+    "prevStatus": "Available"
   }
 ]
