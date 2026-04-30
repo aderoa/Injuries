@@ -35148,5 +35148,12 @@
     "injury": "",
     "date": "2026-04-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Harrison Ingram",
+    "status": "Left Game",
+    "injury": "Right Heel Inflammation",
+    "date": "2026-04-29",
+    "prevStatus": "Available"
   }
 ]
