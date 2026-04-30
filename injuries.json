@@ -35085,5 +35085,12 @@
     "injury": "Left Oblique Muscle Strain",
     "date": "2026-04-29",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-04-29",
+    "prevStatus": "Available"
   }
 ]
