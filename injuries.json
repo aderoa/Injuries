@@ -35092,5 +35092,12 @@
     "injury": "",
     "date": "2026-04-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Lower Back Contusion",
+    "date": "2026-04-29",
+    "prevStatus": "Available"
   }
 ]
