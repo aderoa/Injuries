@@ -35071,5 +35071,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-04-29",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Franz Wagner",
+    "status": "Out",
+    "injury": "Right Calf Strain",
+    "date": "2026-04-29",
+    "prevStatus": "Questionable"
   }
 ]
