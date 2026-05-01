@@ -35267,5 +35267,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-04-30",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-04-30",
+    "prevStatus": "Available"
   }
 ]
