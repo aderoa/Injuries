@@ -35351,5 +35351,12 @@
     "injury": "Post Appendectomy Surgery Recovery",
     "date": "2026-05-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Out",
+    "injury": "Right Heel Inflammation",
+    "date": "2026-05-01",
+    "prevStatus": "Questionable"
   }
 ]
