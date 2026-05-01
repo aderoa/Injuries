@@ -35281,5 +35281,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-04-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Out",
+    "injury": "Left Calf Tightness",
+    "date": "2026-04-30",
+    "prevStatus": "Questionable"
   }
 ]
