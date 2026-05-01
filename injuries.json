@@ -35323,5 +35323,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-05-01",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Doubtful",
+    "injury": "Right Heel Inflammation",
+    "date": "2026-05-01",
+    "prevStatus": "Questionable"
   }
 ]
