@@ -35358,5 +35358,19 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-05-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-05-01",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Out",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-01",
+    "prevStatus": "Questionable"
   }
 ]
