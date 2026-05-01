@@ -35316,5 +35316,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Durant",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-05-01",
+    "prevStatus": "Doubtful"
   }
 ]
