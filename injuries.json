@@ -35379,5 +35379,12 @@
     "injury": "Ill",
     "date": "2026-05-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Paul George",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-05-02",
+    "prevStatus": "Probable"
   }
 ]
