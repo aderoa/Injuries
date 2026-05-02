@@ -35372,5 +35372,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-05-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Paul George",
+    "status": "Probable",
+    "injury": "Ill",
+    "date": "2026-05-02",
+    "prevStatus": "Available"
   }
 ]
