@@ -35435,5 +35435,19 @@
     "injury": "Left Knee Stiffness",
     "date": "2026-05-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Post Appendectomy Surgery Recovery",
+    "date": "2026-05-02",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Paul George",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-05-02",
+    "prevStatus": "Probable"
   }
 ]
