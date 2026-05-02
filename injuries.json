@@ -35421,5 +35421,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Questionable",
+    "injury": "Right Heel Inflammation",
+    "date": "2026-05-02",
+    "prevStatus": "Out"
   }
 ]
