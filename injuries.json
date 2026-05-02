@@ -35428,5 +35428,12 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-05-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Out",
+    "injury": "Left Knee Stiffness",
+    "date": "2026-05-02",
+    "prevStatus": "Questionable"
   }
 ]
