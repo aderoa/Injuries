@@ -35400,5 +35400,12 @@
     "injury": "Left Knee Stiffness",
     "date": "2026-05-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Doubtful",
+    "injury": "Left Knee Sprain",
+    "date": "2026-05-02",
+    "prevStatus": "Out"
   }
 ]
