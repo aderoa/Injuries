@@ -35414,5 +35414,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-05-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
