@@ -35386,5 +35386,12 @@
     "injury": "Illness",
     "date": "2026-05-02",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-05-02",
+    "prevStatus": "Available"
   }
 ]
