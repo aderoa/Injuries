@@ -35393,5 +35393,12 @@
     "injury": "",
     "date": "2026-05-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "Left Knee Stiffness",
+    "date": "2026-05-02",
+    "prevStatus": "Questionable"
   }
 ]
