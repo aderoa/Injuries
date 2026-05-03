@@ -35498,5 +35498,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-05-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "Right Hip Contusion",
+    "date": "2026-05-03",
+    "prevStatus": "Available"
   }
 ]
