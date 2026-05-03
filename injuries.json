@@ -35519,5 +35519,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-05-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-05-03",
+    "prevStatus": "Out"
   }
 ]
