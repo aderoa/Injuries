@@ -35449,5 +35449,19 @@
     "injury": "Illness",
     "date": "2026-05-02",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Paul George",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
