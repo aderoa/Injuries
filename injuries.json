@@ -35533,5 +35533,12 @@
     "injury": "Right Heel Inflammation",
     "date": "2026-05-03",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Carter Bryant",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-05-03",
+    "prevStatus": "Available"
   }
 ]
