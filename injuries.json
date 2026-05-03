@@ -35491,5 +35491,12 @@
     "injury": "",
     "date": "2026-05-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jeremy Sochan",
+    "status": "Probable",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-05-03",
+    "prevStatus": "Available"
   }
 ]
