@@ -35505,5 +35505,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-05-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Left Knee Bone Bruise",
+    "date": "2026-05-03",
+    "prevStatus": "Out"
   }
 ]
