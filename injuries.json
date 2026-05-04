@@ -35568,5 +35568,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Out",
+    "injury": "Right Calf Soreness",
+    "date": "2026-05-04",
+    "prevStatus": "Questionable"
   }
 ]
