@@ -35582,5 +35582,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-05-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jeremy Sochan",
+    "status": "Available",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-05-04",
+    "prevStatus": "Questionable"
   }
 ]
