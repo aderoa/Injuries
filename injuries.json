@@ -35575,5 +35575,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-05-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-04",
+    "prevStatus": "Out"
   }
 ]
