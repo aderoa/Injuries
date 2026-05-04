@@ -35547,5 +35547,12 @@
     "injury": "Right Foot Sprain",
     "date": "2026-05-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jeremy Sochan",
+    "status": "Questionable",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-05-04",
+    "prevStatus": "Probable"
   }
 ]
