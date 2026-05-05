@@ -35638,5 +35638,12 @@
     "injury": "",
     "date": "2026-05-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-05-05",
+    "prevStatus": "Available"
   }
 ]
