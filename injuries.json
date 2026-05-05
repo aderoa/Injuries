@@ -35589,5 +35589,12 @@
     "injury": "Left Hamstring Tightness",
     "date": "2026-05-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Left Knee Bone Bruise",
+    "date": "2026-05-04",
+    "prevStatus": "Questionable"
   }
 ]
