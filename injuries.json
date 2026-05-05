@@ -35603,5 +35603,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-05-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Carter Bryant",
+    "status": "Out",
+    "injury": "Right Foot Sprain",
+    "date": "2026-05-04",
+    "prevStatus": "Questionable"
   }
 ]
