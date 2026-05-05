@@ -35610,5 +35610,26 @@
     "injury": "Right Foot Sprain",
     "date": "2026-05-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jeremy Sochan",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
