@@ -35596,5 +35596,12 @@
     "injury": "Left Knee Bone Bruise",
     "date": "2026-05-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Hip Contusion",
+    "date": "2026-05-04",
+    "prevStatus": "Probable"
   }
 ]
