@@ -35799,5 +35799,12 @@
     "injury": "Right Finger Dislocation",
     "date": "2026-05-06",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-05-06",
+    "prevStatus": "Questionable"
   }
 ]
