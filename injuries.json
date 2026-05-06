@@ -35757,5 +35757,12 @@
     "injury": "Right Ankle Sprain / Right Hip Soreness",
     "date": "2026-05-06",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Doubtful",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-06",
+    "prevStatus": "Out"
   }
 ]
