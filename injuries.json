@@ -35715,5 +35715,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-05-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
