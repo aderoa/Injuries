@@ -35701,5 +35701,12 @@
     "injury": "",
     "date": "2026-05-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Left Game",
+    "injury": "Left Hamstring Injury",
+    "date": "2026-05-05",
+    "prevStatus": "Available"
   }
 ]
