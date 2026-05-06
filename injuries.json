@@ -35778,5 +35778,12 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-05-06",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-05-06",
+    "prevStatus": "Left Game"
   }
 ]
