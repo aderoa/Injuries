@@ -35785,5 +35785,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-05-06",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Luke Kennard",
+    "status": "Questionable",
+    "injury": "Neck Soreness",
+    "date": "2026-05-06",
+    "prevStatus": "Available"
   }
 ]
