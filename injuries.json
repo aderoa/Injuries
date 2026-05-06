@@ -35680,5 +35680,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-05-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jarred Vanderbilt",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-05-05",
+    "prevStatus": "Available"
   }
 ]
