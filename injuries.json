@@ -35694,5 +35694,12 @@
     "injury": "Right Finger Dislocation",
     "date": "2026-05-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-05-05",
+    "prevStatus": "Available"
   }
 ]
