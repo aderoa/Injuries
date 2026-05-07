@@ -35841,5 +35841,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-05-07",
+    "prevStatus": "Available"
   }
 ]
