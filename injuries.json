@@ -35890,5 +35890,12 @@
     "injury": "Right Ankle Sprain / Right Hip Soreness",
     "date": "2026-05-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Questionable",
+    "injury": "Right Heel Pain",
+    "date": "2026-05-07",
+    "prevStatus": "Left Game"
   }
 ]
