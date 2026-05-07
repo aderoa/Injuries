@@ -35883,5 +35883,12 @@
     "injury": "Illness",
     "date": "2026-05-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain / Right Hip Soreness",
+    "date": "2026-05-07",
+    "prevStatus": "Out"
   }
 ]
