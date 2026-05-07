@@ -35869,5 +35869,12 @@
     "injury": "",
     "date": "2026-05-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-05-07",
+    "prevStatus": "Available"
   }
 ]
