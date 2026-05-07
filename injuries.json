@@ -35911,5 +35911,12 @@
     "injury": "Left Knee Bone Bruise",
     "date": "2026-05-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-05-07",
+    "prevStatus": "Questionable"
   }
 ]
