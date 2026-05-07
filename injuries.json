@@ -35813,5 +35813,12 @@
     "injury": "Left Knee Bone Bruise",
     "date": "2026-05-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Carter Bryant",
+    "status": "Available",
+    "injury": "Right Foot Sprain",
+    "date": "2026-05-06",
+    "prevStatus": "Questionable"
   }
 ]
