@@ -35876,5 +35876,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-05-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-05-07",
+    "prevStatus": "Out"
   }
 ]
