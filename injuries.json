@@ -35827,5 +35827,19 @@
     "injury": "Right Heel Pain",
     "date": "2026-05-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Carter Bryant",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
