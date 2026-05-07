@@ -35806,5 +35806,12 @@
     "injury": "Illness",
     "date": "2026-05-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Left Knee Bone Bruise",
+    "date": "2026-05-06",
+    "prevStatus": "Questionable"
   }
 ]
