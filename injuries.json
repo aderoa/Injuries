@@ -35967,5 +35967,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-05-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-05-08",
+    "prevStatus": "Questionable"
   }
 ]
