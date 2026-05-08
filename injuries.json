@@ -35974,5 +35974,19 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-05-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Available",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-05-08",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-05-08",
+    "prevStatus": "Probable"
   }
 ]
