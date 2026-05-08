@@ -35946,5 +35946,12 @@
     "injury": "Left Thumb Sprain",
     "date": "2026-05-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luke Kennard",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
