@@ -36072,5 +36072,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-05-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-05-09",
+    "prevStatus": "Available"
   }
 ]
