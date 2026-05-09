@@ -36002,5 +36002,12 @@
     "injury": "Left Knee Bone Bruise",
     "date": "2026-05-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jarred Vanderbilt",
+    "status": "Questionable",
+    "injury": "Right Finger Dislocation",
+    "date": "2026-05-08",
+    "prevStatus": "Out"
   }
 ]
