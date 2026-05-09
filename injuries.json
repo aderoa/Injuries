@@ -36009,5 +36009,12 @@
     "injury": "Right Finger Dislocation",
     "date": "2026-05-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ayo Dosunmu",
+    "status": "Available",
+    "injury": "Right Heel Soreness",
+    "date": "2026-05-08",
+    "prevStatus": "Questionable"
   }
 ]
