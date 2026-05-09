@@ -36079,5 +36079,12 @@
     "injury": "",
     "date": "2026-05-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "Right Hip Soreness",
+    "date": "2026-05-09",
+    "prevStatus": "Probable"
   }
 ]
