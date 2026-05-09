@@ -36086,5 +36086,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-05-09",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jarred Vanderbilt",
+    "status": "Available",
+    "injury": "Right Finger Dislocation",
+    "date": "2026-05-09",
+    "prevStatus": "Questionable"
   }
 ]
