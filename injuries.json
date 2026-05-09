@@ -36058,5 +36058,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-05-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Out",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-09",
+    "prevStatus": "Doubtful"
   }
 ]
