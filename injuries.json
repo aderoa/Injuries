@@ -36093,5 +36093,19 @@
     "injury": "Right Finger Dislocation",
     "date": "2026-05-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jarred Vanderbilt",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
