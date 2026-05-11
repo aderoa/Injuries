@@ -36135,5 +36135,12 @@
     "injury": "Right Heel Contusion",
     "date": "2026-05-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
