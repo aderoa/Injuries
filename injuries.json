@@ -36184,5 +36184,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-05-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Thomas Bryant",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-05-11",
+    "prevStatus": "Available"
   }
 ]
