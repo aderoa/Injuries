@@ -36156,5 +36156,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-05-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-05-11",
+    "prevStatus": "Available"
   }
 ]
