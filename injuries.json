@@ -36219,5 +36219,12 @@
     "injury": "",
     "date": "2026-05-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-05-12",
+    "prevStatus": "Available"
   }
 ]
