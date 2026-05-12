@@ -36191,5 +36191,19 @@
     "injury": "Low Back Spasms",
     "date": "2026-05-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Thomas Bryant",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
