@@ -36205,5 +36205,19 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-05-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-05-12",
+    "prevStatus": "Available"
   }
 ]
