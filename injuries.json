@@ -36226,5 +36226,19 @@
     "injury": "Left Knee Soreness",
     "date": "2026-05-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-05-12",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-12",
+    "prevStatus": "Out"
   }
 ]
