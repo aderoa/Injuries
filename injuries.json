@@ -36254,5 +36254,19 @@
     "injury": "Right Heel Contusion",
     "date": "2026-05-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-05-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-05-12",
+    "prevStatus": "Available"
   }
 ]
