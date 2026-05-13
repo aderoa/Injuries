@@ -36303,5 +36303,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-05-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "Right Heel Contusion",
+    "date": "2026-05-13",
+    "prevStatus": "Questionable"
   }
 ]
