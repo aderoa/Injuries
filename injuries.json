@@ -36268,5 +36268,40 @@
     "injury": "Left Knee Soreness",
     "date": "2026-05-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Available",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-13",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Doubtful",
+    "injury": "Right Heel Contusion",
+    "date": "2026-05-13",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-05-13",
+    "prevStatus": "Questionable"
   }
 ]
