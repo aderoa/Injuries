@@ -36331,5 +36331,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-05-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-05-14",
+    "prevStatus": "Available"
   }
 ]
