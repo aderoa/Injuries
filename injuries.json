@@ -36310,5 +36310,19 @@
     "injury": "Right Heel Contusion",
     "date": "2026-05-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
