@@ -36338,5 +36338,19 @@
     "injury": "",
     "date": "2026-05-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-14",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Questionable",
+    "injury": "Right Heel Contusion",
+    "date": "2026-05-14",
+    "prevStatus": "Available"
   }
 ]
