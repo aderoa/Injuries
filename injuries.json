@@ -36324,5 +36324,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-05-14",
+    "prevStatus": "Out"
   }
 ]
