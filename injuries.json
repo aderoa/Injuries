@@ -36352,5 +36352,12 @@
     "injury": "Right Heel Contusion",
     "date": "2026-05-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Questionable",
+    "injury": "Head Contusion",
+    "date": "2026-05-15",
+    "prevStatus": "Available"
   }
 ]
