@@ -36450,5 +36450,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-05-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-05-16",
+    "prevStatus": "Out"
   }
 ]
