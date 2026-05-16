@@ -36394,5 +36394,33 @@
     "injury": "Head Contusion",
     "date": "2026-05-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
