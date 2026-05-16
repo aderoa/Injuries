@@ -36436,5 +36436,12 @@
     "injury": "Left Adductor Strain",
     "date": "2026-05-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Questionable",
+    "injury": "Right Heel Contusion",
+    "date": "2026-05-16",
+    "prevStatus": "Available"
   }
 ]
