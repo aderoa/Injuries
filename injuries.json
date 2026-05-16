@@ -36443,5 +36443,12 @@
     "injury": "Right Heel Contusion",
     "date": "2026-05-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-05-16",
+    "prevStatus": "Available"
   }
 ]
