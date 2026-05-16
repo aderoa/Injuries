@@ -36422,5 +36422,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-05-16",
+    "prevStatus": "Available"
   }
 ]
