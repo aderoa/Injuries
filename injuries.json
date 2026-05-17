@@ -36457,5 +36457,12 @@
     "injury": "Illness",
     "date": "2026-05-16",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-05-17",
+    "prevStatus": "Out"
   }
 ]
