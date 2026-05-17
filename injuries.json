@@ -36485,5 +36485,26 @@
     "injury": "Left Foot Soreness",
     "date": "2026-05-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Available",
+    "injury": "Left Adductor Strain",
+    "date": "2026-05-17",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "Right Heel Contusion",
+    "date": "2026-05-17",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-05-17",
+    "prevStatus": "Available"
   }
 ]
