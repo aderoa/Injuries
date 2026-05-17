@@ -36478,5 +36478,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-05-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Questionable",
+    "injury": "Left Foot Soreness",
+    "date": "2026-05-17",
+    "prevStatus": "Available"
   }
 ]
