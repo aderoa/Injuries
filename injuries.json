@@ -36548,5 +36548,19 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-05-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Out",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-05-18",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Available",
+    "injury": "Left Foot Soreness",
+    "date": "2026-05-18",
+    "prevStatus": "Questionable"
   }
 ]
