@@ -36506,5 +36506,33 @@
     "injury": "Low Back Soreness",
     "date": "2026-05-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Caris LeVert",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Huerter",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
