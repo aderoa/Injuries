@@ -36569,5 +36569,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-05-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-05-19",
+    "prevStatus": "Questionable"
   }
 ]
