@@ -36590,5 +36590,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-05-19",
+    "prevStatus": "Available"
   }
 ]
