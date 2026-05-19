@@ -36576,5 +36576,19 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-05-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
