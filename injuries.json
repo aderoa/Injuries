@@ -36611,5 +36611,19 @@
     "injury": "Illness",
     "date": "2026-05-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
