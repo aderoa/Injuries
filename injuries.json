@@ -36625,5 +36625,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Out",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-05-20",
+    "prevStatus": "Questionable"
   }
 ]
