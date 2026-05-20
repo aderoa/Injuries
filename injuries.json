@@ -36604,5 +36604,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-05-19",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-05-19",
+    "prevStatus": "Questionable"
   }
 ]
