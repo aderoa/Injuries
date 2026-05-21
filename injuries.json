@@ -36632,5 +36632,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-05-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Left Game",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-05-20",
+    "prevStatus": "Available"
   }
 ]
