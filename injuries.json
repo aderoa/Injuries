@@ -36646,5 +36646,12 @@
     "injury": "",
     "date": "2026-05-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Left Game",
+    "injury": "Right Leg Injury",
+    "date": "2026-05-20",
+    "prevStatus": "Left Game"
   }
 ]
