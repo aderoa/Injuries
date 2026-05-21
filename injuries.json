@@ -36674,5 +36674,12 @@
     "injury": "Right Adductor Soreness",
     "date": "2026-05-21",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-05-21",
+    "prevStatus": "Out"
   }
 ]
