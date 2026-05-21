@@ -36639,5 +36639,12 @@
     "injury": "Left Hamstring Tightness",
     "date": "2026-05-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-05-20",
+    "prevStatus": "Available"
   }
 ]
