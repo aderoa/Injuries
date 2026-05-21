@@ -36667,5 +36667,12 @@
     "injury": "Right Leg Injury",
     "date": "2026-05-21",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Questionable",
+    "injury": "Right Adductor Soreness",
+    "date": "2026-05-21",
+    "prevStatus": "Left Game"
   }
 ]
