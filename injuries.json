@@ -36695,5 +36695,26 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-05-21",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-05-22",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-05-22",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Available",
+    "injury": "Right Adductor Soreness",
+    "date": "2026-05-22",
+    "prevStatus": "Questionable"
   }
 ]
