@@ -36737,5 +36737,12 @@
     "injury": "Left Hamstring Soreness",
     "date": "2026-05-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Out",
+    "injury": "Right Soleus Strain",
+    "date": "2026-05-23",
+    "prevStatus": "Available"
   }
 ]
