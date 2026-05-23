@@ -36716,5 +36716,19 @@
     "injury": "Right Adductor Soreness",
     "date": "2026-05-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "injury": "",
+    "date": "",
+    "prevStatus": "Available"
   }
 ]
