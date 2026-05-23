@@ -36730,5 +36730,12 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Questionable",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-05-23",
+    "prevStatus": "Out"
   }
 ]
