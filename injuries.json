@@ -36772,5 +36772,12 @@
     "injury": "Illness",
     "date": "2026-05-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-05-25",
+    "prevStatus": "Available"
   }
 ]
