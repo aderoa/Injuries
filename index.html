@@ -477,7 +477,8 @@ if (isAdmin) {
         <button onclick="setupGitHubToken()">🔑 Token</button>
         <button class="btn-purge" onclick="purgeAvailable(this)">🧹 Purge Available</button>
         <button id="undoBtn" style="display:none;" onclick="undoPurge(this)">↩ Undo Purge</button>
-        <button onclick="resetAll()">🗑 Reset All</button>
+        <button onclick="markAllAvailable()">🟢 All Available</button>
+        <button onclick="resetAll()" title="Throw away unsaved edits only">🗑 Discard Edits</button>
         <span class="spacer"></span>
         <span class="sync-status sync-idle" id="syncStatus" onclick="if(this.classList.contains('sync-error')||this.classList.contains('sync-notoken'))setupGitHubToken()">🔗 <span>Auto-sync on</span></span>
         <span class="badge" id="changesBadge">0 changes</span>
@@ -751,7 +752,7 @@ function onEtaChange(name, inp) {
     out.className = 'eta-out ' + (parsed ? (parsed.kind === 'indefinite' ? 'warn' : 'ok') : '');
   }
   inp.closest('.player-row').classList.toggle('modified', !!modifications[name]);
-  updateChangeBadge();
+  updateBadge();
 }
 
 function getEffectivePrevStatus(name) {
@@ -1042,6 +1043,33 @@ function toggleFilter(type, btn) {
     btn.classList.add('active');
   }
   filterPlayers();
+}
+
+// "Reset All" only throws away unsaved edits -- it falls back to latestStatus,
+// which is whatever injuries.json last said, so last season's injuries persist.
+// Clearing the board for a new season means writing an Available entry for
+// everyone still carrying a status, which the normal push flow then commits.
+// The log stays append-only, so the history is untouched.
+function markAllAvailable() {
+  const affected = Object.keys(roster).filter(n => {
+    const cur = modifications[n] || latestStatus[n];
+    return cur && cur.status !== 'Available';
+  });
+  if (!affected.length) { alert('Every player is already Available.'); return; }
+  if (!confirm('Mark ' + affected.length + ' player' + (affected.length === 1 ? '' : 's')
+    + ' Available as of ' + todayISO() + '?\n\n'
+    + 'This queues one new entry per player. Push to commit; history is kept.')) return;
+  const today = todayISO();
+  for (const n of affected) {
+    const cur = modifications[n] || latestStatus[n] || { status:'Available' };
+    modifications[n] = {
+      status: 'Available', injury: '', date: today, eta: '',
+      prevStatus: (modifications[n] && modifications[n].prevStatus != null)
+        ? modifications[n].prevStatus : cur.status,
+    };
+  }
+  renderRoster();
+  updateBadge();
 }
 
 function resetAll() {
