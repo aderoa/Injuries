@@ -235,6 +235,14 @@ const TEAM_ABBREV = {
   'New Orleans':'NOP','New York':'NYK','Oklahoma City':'OKC','Orlando':'ORL','Philadelphia':'PHI','Phoenix':'PHX',
   'Portland':'POR','Sacramento':'SAC','San Antonio':'SAS','Toronto':'TOR','Utah':'UTA','Washington':'WAS'
 };
+// ===== SEASON =====
+// Sheet1 carries one salary column per season, three columns apart, and the
+// column headed '2026' is the 2025-26 salary. Bump SEASON_OFFSET by 3 each
+// year rather than hunting for the right header.
+const BASE_SALARY_COL = '2026';   // 2025-26
+const SEASON_OFFSET   = 3;        // 3 -> 2026-27, 6 -> 2027-28
+const SEASON_LABEL    = '2026-27';
+const STATUS_COL      = 'ST 26-27';
 const STATUSES = ['Available','Probable','Questionable','Doubtful','Out','Left Game'];
 const STATUS_GRAVITY = { 'Out':0,'Left Game':0.5,'Doubtful':1,'Questionable':2,'Probable':3,'Available':4 };
 
@@ -383,7 +391,12 @@ async function loadData() {
   if (rosterRows.length > 1) {
     const header = rosterRows[0];
     const col = n => header.findIndex(h => h.toUpperCase().trim() === n.toUpperCase());
-    const playerIdx = col('PLAYER'), teamIdx = col('TEAM'), salaryIdx = col('2026');
+    const baseIdx = col(BASE_SALARY_COL);
+    const salaryIdx = baseIdx >= 0 ? baseIdx + SEASON_OFFSET : -1;
+    const playerIdx = col('PLAYER'), teamIdx = col('TEAM');
+    console.log('[Roster] ' + SEASON_LABEL + ' salary column: index ' + salaryIdx
+      + ' header "' + (header[salaryIdx] || '(none)') + '" (from "' + BASE_SALARY_COL
+      + '" at ' + baseIdx + ' + ' + SEASON_OFFSET + ')');
     if (playerIdx >= 0 && teamIdx >= 0) {
       for (let i = 1; i < rosterRows.length; i++) {
         const row = rosterRows[i];
@@ -391,7 +404,7 @@ async function loadData() {
         const team = (row[teamIdx] || '').trim();
         const salRaw = salaryIdx >= 0 ? (row[salaryIdx] || '0').replace(/[$,]/g, '') : '0';
         const salary = parseInt(salRaw) || 0;
-        const stIdx = col('ST 25-26');
+        const stIdx = col(STATUS_COL) >= 0 ? col(STATUS_COL) : col('ST 25-26');
         const contractStatus = stIdx >= 0 ? (row[stIdx] || '').trim() : '';
         // No salary means no contract -- free agents and expired deals still
         // sit in the sheet but should not appear on anyone's injury report.
