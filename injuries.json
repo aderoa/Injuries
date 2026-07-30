@@ -37830,5 +37830,12 @@
     "date": "2026-07-30",
     "prevStatus": "Out",
     "eta": "9-12 months"
+  },
+  {
+    "player": "Jimmy Butler",
+    "status": "Out",
+    "injury": "Torn Right Knee ACL",
+    "date": "2026-01-19",
+    "prevStatus": "Out"
   }
 ]
