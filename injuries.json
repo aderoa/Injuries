@@ -37668,5 +37668,12 @@
     "injury": "Torn Right ACL",
     "date": "2026-07-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jimmy Butler",
+    "status": "Out",
+    "injury": "Torn Right ACL",
+    "date": "2026-01-19",
+    "prevStatus": "Available"
   }
 ]
