@@ -37619,5 +37619,12 @@
     "injury": "Left Foot Fracture",
     "date": "2026-07-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Moses Moody",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-07-30",
+    "prevStatus": "Available"
   }
 ]
