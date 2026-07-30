@@ -210,7 +210,10 @@ const NBA_TEAMS = [
   'New Orleans','New York','Oklahoma City','Orlando','Philadelphia','Phoenix',
   'Portland','Sacramento','San Antonio','Toronto','Utah','Washington'
 ];
-const ELIMINATED_TEAMS = new Set(['Milwaukee','Chicago','Brooklyn','Indiana','Washington','New Orleans','Dallas','Memphis','Sacramento','Utah','Miami','LA Clippers','Charlotte','Golden State','Phoenix','Portland','Atlanta','Denver','Houston','Boston','Orlando','Toronto','Philadelphia','LA Lakers','Minnesota','Detroit','Cleveland','Oklahoma City']);
+// Left over from the last postseason -- with 28 teams in here only the two
+// survivors rendered. Empty during the regular season; refill it as teams are
+// knocked out and the roster view, reports and salary table all narrow again.
+const ELIMINATED_TEAMS = new Set([]);
 const PLAYOFF_TEAMS = NBA_TEAMS.filter(t => !ELIMINATED_TEAMS.has(t));
 
 const TEAM_IDS = {
@@ -376,6 +379,7 @@ async function loadData() {
 
   // Parse roster by header names (same source as Depth Charts)
   roster = {}; teamSalaries = {};
+  const skippedNoSalary = [];
   if (rosterRows.length > 1) {
     const header = rosterRows[0];
     const col = n => header.findIndex(h => h.toUpperCase().trim() === n.toUpperCase());
@@ -389,13 +393,21 @@ async function loadData() {
         const salary = parseInt(salRaw) || 0;
         const stIdx = col('ST 25-26');
         const contractStatus = stIdx >= 0 ? (row[stIdx] || '').trim() : '';
-        if (player && team) {
+        // No salary means no contract -- free agents and expired deals still
+        // sit in the sheet but should not appear on anyone's injury report.
+        if (player && team && salary > 0) {
           roster[player] = { team, salary, contractStatus };
           teamSalaries[team] = (teamSalaries[team] || 0) + salary;
+        } else if (player && team) {
+          skippedNoSalary.push(player);
         }
       }
     }
   }
+
+  console.log('[Roster] ' + Object.keys(roster).length + ' players under contract across '
+    + Object.keys(teamSalaries).length + ' teams; dropped ' + skippedNoSalary.length
+    + ' with no salary', skippedNoSalary.slice(0, 20));
 
   // Days since last game: cols 71(player), 73(days) from Injuries CSV
   // This section has NO header row — data starts at row 0
