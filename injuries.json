@@ -37724,5 +37724,12 @@
     "injury": "Torn Right ACL",
     "date": "2026-01-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Donte DiVincenzo",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-07-30",
+    "prevStatus": "Available"
   }
 ]
