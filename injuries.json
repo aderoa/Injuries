@@ -36779,5 +36779,26 @@
     "injury": "Illness",
     "date": "2026-05-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-05-29",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Available",
+    "injury": "Right Hand Fractured 5th Metacarpal",
+    "date": "2026-06-05",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Luke Kornet",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-06-13",
+    "prevStatus": "Available"
   }
 ]
