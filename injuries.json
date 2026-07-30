@@ -37626,5 +37626,12 @@
     "injury": "",
     "date": "2026-07-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Moses Moody",
+    "status": "Out",
+    "injury": "Left Patellar Tendon ",
+    "date": "2026-07-30",
+    "prevStatus": "Out"
   }
 ]
