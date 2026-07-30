@@ -453,7 +453,7 @@ async function loadData() {
   const prev = {};
   for (const e of jsonEntries) {
     if (latestStatus[e.player]) prev[e.player] = latestStatus[e.player];
-    latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date };
+    latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date, eta: e.eta || '' };
   }
 
   return { prev };
@@ -675,6 +675,7 @@ function onStatusChange(name, sel) {
       status: newStatus,
       injury: injInput.value,
       date: dateInput.value,
+      eta: newStatus === 'Available' ? '' : (modifications[name]?.eta ?? original.eta ?? ''),
       prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : (prevStatusSnapshot[name] || effectiveBefore)
     };
     row.classList.add('modified');
@@ -706,7 +707,7 @@ function onInjuryChange(name, inp) {
     row.classList.remove('modified');
   } else {
     if (!dateInput.value) dateInput.value = todayISO();
-    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : (prevStatusSnapshot[name] || effectiveBefore) };
+    modifications[name] = { status: sel.value, injury: inp.value, date: dateInput.value, eta: (modifications[name]?.eta ?? original.eta ?? ''), prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus : (prevStatusSnapshot[name] || effectiveBefore) };
     row.classList.add('modified');
   }
   updateBadge();
@@ -724,7 +725,7 @@ function onDateChange(name, inp) {
     delete modifications[name];
     row.classList.remove('modified');
   } else {
-    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, prevStatus: prevSt !== null ? prevSt : (prevStatusSnapshot[name] || effectiveBefore) };
+    modifications[name] = { status: sel.value, injury: injInput.value, date: inp.value, eta: (modifications[name]?.eta ?? original.eta ?? ''), prevStatus: prevSt !== null ? prevSt : (prevStatusSnapshot[name] || effectiveBefore) };
     row.classList.add('modified');
   }
   updateBadge();
@@ -797,6 +798,7 @@ function onPrevStatusChange(name, sel) {
       status: statusSel.value,
       injury: injInput.value,
       date: dateInput.value || todayISO(),
+      eta: (latestStatus[name] || {}).eta || '',
       prevStatus: sel.value || null
     };
   } else {
@@ -962,7 +964,7 @@ async function pushToGitHub() {
     // Update latestStatus from merged data so UI stays correct
     latestStatus = {};
     for (const e of jsonEntries) {
-      latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date };
+      latestStatus[e.player] = { status: e.status, injury: e.injury, date: e.date, eta: e.eta || '' };
     }
 
     // Update UI — reflect remaining unpushed modifications
@@ -1153,7 +1155,8 @@ function buildMergedJSON() {
       status: mod.status,
       injury: mod.injury || '',
       date: mod.date !== undefined && mod.date !== null ? mod.date : todayISO(),
-      prevStatus: mod.prevStatus || prevStatusSnapshot[player] || null
+      prevStatus: mod.prevStatus || prevStatusSnapshot[player] || null,
+      ...(mod.eta ? { eta: mod.eta } : {})
     });
   }
 
