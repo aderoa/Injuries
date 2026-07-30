@@ -141,7 +141,11 @@ tbody td { padding:0.55rem 0.5rem; vertical-align:middle; white-space:nowrap; }
 .team-players { border:1px solid var(--border); border-top:none; border-radius:0 0 10px 10px; overflow:hidden; }
 
 /* — Player row — */
-.player-row { display:grid; grid-template-columns:1fr 90px 130px 1fr 110px 100px; gap:8px; align-items:center; padding:6px 12px; border-bottom:1px solid var(--border); font-size:13px; transition:background 0.15s; }
+.eta-input { font-family:inherit; }
+.eta-out { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.eta-out.ok { color:var(--accent); }
+.eta-out.warn { color:#f97316; }
+.player-row { display:grid; grid-template-columns:1fr 80px 120px 1fr 105px 110px 150px 90px; gap:8px; align-items:center; padding:6px 12px; border-bottom:1px solid var(--border); font-size:13px; transition:background 0.15s; }
 .player-row:last-child { border-bottom:none; }
 .player-row:hover { background:rgba(59,130,246,0.03); }
 .player-row.modified { background:var(--modified-bg); border-color:var(--modified-border); }
@@ -165,7 +169,7 @@ tbody td { padding:0.55rem 0.5rem; vertical-align:middle; white-space:nowrap; }
 .player-row select.prev-status:hover { opacity:1; }
 
 /* — Column headers — */
-.col-headers { display:grid; grid-template-columns:1fr 90px 130px 1fr 110px 100px; gap:8px; padding:8px 12px; font-size:11px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:0.05em; background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:50px; z-index:50; }
+.col-headers { display:grid; grid-template-columns:1fr 80px 120px 1fr 105px 110px 150px 90px; gap:8px; padding:8px 12px; font-size:11px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:0.05em; background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:50px; z-index:50; }
 .col-headers span:nth-child(2) { text-align:right; }
 
 /* — Report view — */
@@ -240,6 +244,74 @@ function sColor(s) { return {Out:'#ef4444','Left Game':'#f97316',Doubtful:'#f973
 function sSpan(s) { return `<span style="color:${sColor(s)};font-weight:700;white-space:nowrap;">${s}</span>`; }
 function statusClass(s) { return 's-'+s.toLowerCase().replace(/\s+/g,'-'); }
 function lastName(name) { const parts = name.trim().split(/\s+/); return parts.length > 1 ? parts[parts.length-1] : name; }
+// ===== INJURY TIMELINE =====
+// A reported timeline ("3-4 months") becomes a return WINDOW rather than a
+// single date: out until the optimistic end, then questionable until the
+// pessimistic end, then assumed available. That questionable stretch is the
+// thing Season Projections needs -- a rotation player 3 months out is really
+// 3 months gone plus a fourth month of doubt.
+const SEASON_END = '2027-04-12';
+const UNIT_DAYS = { day:1, week:7, month:30, year:365 };
+const NUM_WORDS = { a:1, an:1, one:1, two:2, three:3, four:4, five:5, six:6,
+  seven:7, eight:8, nine:9, ten:10, eleven:11, twelve:12 };
+
+function addDays(iso, n) {
+  const d = new Date(iso + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + Math.round(n));
+  return d.toISOString().slice(0, 10);
+}
+function parseETA(text, fromISO) {
+  if (!text || !fromISO) return null;
+  const t = String(text).toLowerCase().trim()
+    .replace(/[\u2013\u2014]/g, '-')
+    .replace(/\bweeks?-to-weeks?\b/g, 'week to week')
+    .replace(/\bdays?-to-days?\b/g, 'day to day');
+  const mk = (lo, hi, kind) => ({ raw:String(text).trim(), kind,
+    minDays:Math.round(lo), maxDays:Math.round(hi),
+    earliest:addDays(fromISO, lo), latest:addDays(fromISO, hi) });
+
+  if (/\b(season[- ]ending|out for the season|rest of (the )?season|misses? the season)\b/.test(t)) {
+    const d = Math.max(0, (new Date(SEASON_END) - new Date(fromISO)) / 86400000);
+    return mk(d, d, 'season');
+  }
+  if (/\b(indefinite|indefinitely|tbd|unknown|no timetable|no timeline)\b/.test(t))
+    return { raw:String(text).trim(), kind:'indefinite', minDays:null, maxDays:null, earliest:null, latest:null };
+  if (/\bday to day\b/.test(t)) return mk(0, 3, 'dtd');
+  if (/\bweek to week\b/.test(t)) return mk(7, 21, 'wtw');
+
+  const num = '(\\d+(?:\\.\\d+)?|' + Object.keys(NUM_WORDS).join('|') + ')';
+  const re = new RegExp(num + '\\s*(?:-|to)\\s*' + num + '\\s*(day|week|month|year)s?\\b'
+                        + '|' + num + '\\s*(day|week|month|year)s?\\b');
+  const m = t.match(re);
+  if (!m) return null;
+  const val = x => (x == null ? null : (NUM_WORDS[x] != null ? NUM_WORDS[x] : parseFloat(x)));
+  const ranged = m[3] != null;
+  const unit = UNIT_DAYS[ranged ? m[3] : m[5]];
+  let lo = val(ranged ? m[1] : m[4]) * unit;
+  let hi = ranged ? val(m[2]) * unit : null;
+  const reeval = /\b(re-?eval|reevaluat|recheck|reassess|imaging|update)/.test(t);
+  if (hi == null) hi = reeval ? lo + 14 : lo * 1.34;   // a single figure is a target, not a promise
+  if (hi < lo) { const tmp = lo; lo = hi; hi = tmp; }
+  return mk(lo, hi, reeval ? 'reeval' : (ranged ? 'range' : 'point'));
+}
+function availabilityOn(eta, dateISO) {
+  if (!eta || !eta.earliest) return 'out';
+  if (dateISO < eta.earliest) return 'out';
+  if (dateISO < eta.latest) return 'questionable';
+  return 'available';
+}
+function etaSummary(eta) {
+  if (!eta) return '';
+  if (eta.kind === 'indefinite') return 'no timetable';
+  if (eta.kind === 'season') return 'out for the season';
+  const back = fmtDate(eta.earliest);
+  if (eta.earliest === eta.latest) return 'back ' + back;
+  return 'back ' + back + ' \u00b7 ? to ' + fmtDate(eta.latest);
+}
+function daysUntil(iso) {
+  return Math.round((new Date(iso + 'T00:00:00Z') - new Date(todayISO() + 'T00:00:00Z')) / 86400000);
+}
+
 function todayISO() {
   return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
 }
@@ -392,7 +464,7 @@ if (isAdmin) {
         <button class="filter-btn" onclick="toggleFilter('available',this)" title="Show only available">🟢 Available</button>
       </div>
       <div class="col-headers">
-        <span>Player</span><span>Salary</span><span>Status</span><span>Injury</span><span>Date</span><span>Prev</span>
+        <span>Player</span><span>Salary</span><span>Status</span><span>Injury</span><span>Date</span><span>Timeline</span><span>Estimate</span><span>Prev</span>
       </div>
       <div id="rosterArea"><div class="loading-state"><div class="loading-spinner"></div><p>Loading roster...</p></div></div>
     </div>
@@ -492,6 +564,7 @@ function renderRoster() {
       const cur = modifications[name] || latestStatus[name] || { status:'Available', injury:'', date:'' };
       const isModified = !!modifications[name];
       const isAvail = cur.status === 'Available';
+      const curEta = parseETA(cur.eta, cur.date);
 
       html += `<div class="player-row ${isModified?'modified':''}" data-player="${name}" data-team="${team}">`;
       html += `<span class="player-name" title="${name}">${name}</span>`;
@@ -509,6 +582,13 @@ function renderRoster() {
 
       // Date input
       html += `<input type="date" value="${cur.date||''}" class="${isAvail?'inactive':''}" onchange="onDateChange('${name.replace(/'/g,"\\'")}',this)">`;
+
+      // Expected timeline -- free text, parsed into a return window
+      html += `<input type="text" value="${cur.eta||''}" class="eta-input ${isAvail?'inactive':''}" `
+        + `placeholder="${isAvail?'\u2014':'e.g. 3-4 months'}" `
+        + `title="${curEta ? 'out until '+(curEta.earliest||'?')+', questionable to '+(curEta.latest||'?') : 'Reported timeline'}" `
+        + `oninput="onEtaChange('${name.replace(/'/g,"\\'")}',this)" onfocus="this.classList.remove('inactive')">`;
+      html += `<span class="eta-out ${curEta ? (curEta.kind==='indefinite'?'warn':'ok') : ''}">${curEta ? etaSummary(curEta) : ''}</span>`;
 
       // Previous status select (editable, defaults to computed prev)
       const prevSt = getEffectivePrevStatus(name);
@@ -622,6 +702,31 @@ function onDateChange(name, inp) {
     row.classList.add('modified');
   }
   updateBadge();
+}
+
+function onEtaChange(name, inp) {
+  const original = latestStatus[name] || { status:'Available', injury:'', date:'' };
+  const effectiveBefore = modifications[name] ? modifications[name].status : original.status;
+  const cur = modifications[name] || original;
+  const val = inp.value;
+  if (val === (original.eta || '') && (!modifications[name] ||
+      (cur.status === original.status && cur.injury === original.injury && cur.date === original.date))) {
+    delete modifications[name];
+  } else {
+    modifications[name] = {
+      status: cur.status, injury: cur.injury, date: cur.date, eta: val,
+      prevStatus: (modifications[name]?.prevStatus != null) ? modifications[name].prevStatus
+        : (prevStatusSnapshot[name] || effectiveBefore),
+    };
+  }
+  const parsed = parseETA(val, cur.date);
+  const out = inp.parentElement.querySelector('.eta-out');
+  if (out) {
+    out.textContent = parsed ? etaSummary(parsed) : '';
+    out.className = 'eta-out ' + (parsed ? (parsed.kind === 'indefinite' ? 'warn' : 'ok') : '');
+  }
+  inp.closest('.player-row').classList.toggle('modified', !!modifications[name]);
+  updateChangeBadge();
 }
 
 function getEffectivePrevStatus(name) {
