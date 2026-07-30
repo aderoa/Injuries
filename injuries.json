@@ -37815,5 +37815,12 @@
     "injury": "Right Knee Meniscus Surgery",
     "date": "2026-07-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jamir Watkins",
+    "status": "Out",
+    "injury": "Left Knee Torn ACL",
+    "date": "2026-07-30",
+    "prevStatus": "Available"
   }
 ]
