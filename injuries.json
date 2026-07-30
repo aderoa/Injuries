@@ -37822,5 +37822,13 @@
     "injury": "Left Knee Torn ACL",
     "date": "2026-07-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jamir Watkins",
+    "status": "Out",
+    "injury": "Left Knee Torn ACL",
+    "date": "2026-07-30",
+    "prevStatus": "Out",
+    "eta": "9-12 months"
   }
 ]
