@@ -37780,5 +37780,12 @@
     "injury": "Left Ankle Fracture",
     "date": "2026-07-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jayden Quaintance",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-07-30",
+    "prevStatus": "Available"
   }
 ]
