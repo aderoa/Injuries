@@ -37837,5 +37837,12 @@
     "injury": "Torn Right Knee ACL",
     "date": "2026-01-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Johnny Furphy",
+    "status": "Available",
+    "injury": "Torn Right Knee ACL",
+    "date": "2026-02-08",
+    "prevStatus": "Available"
   }
 ]
