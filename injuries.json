@@ -37858,5 +37858,12 @@
     "injury": "Torn Right Knee ACL",
     "date": "2026-07-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-08-19",
+    "prevStatus": "Out"
   }
 ]
