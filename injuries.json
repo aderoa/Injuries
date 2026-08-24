@@ -37872,5 +37872,13 @@
     "injury": "Knee Torn Meniscus",
     "date": "2026-08-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Day'Ron Sharpe",
+    "status": "Out",
+    "injury": "Knee Torn Meniscus",
+    "date": "2026-08-24",
+    "prevStatus": "Out",
+    "eta": "6 months"
   }
 ]
