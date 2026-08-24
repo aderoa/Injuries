@@ -37865,5 +37865,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-08-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Day'Ron Sharpe",
+    "status": "Out",
+    "injury": "Knee Torn Meniscus",
+    "date": "2026-08-24",
+    "prevStatus": "Available"
   }
 ]
