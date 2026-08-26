@@ -37964,5 +37964,21 @@
     "date": "2026-03-23",
     "prevStatus": "Out",
     "eta": "12 m"
+  },
+  {
+    "player": "Moses Moody",
+    "status": "Out",
+    "injury": "Left Patellar Tendon Rupture",
+    "date": "2026-03-23",
+    "prevStatus": "Out",
+    "eta": "9 months"
+  },
+  {
+    "player": "Jimmy Butler",
+    "status": "Out",
+    "injury": "Torn Right Knee ACL",
+    "date": "2026-01-19",
+    "prevStatus": "Out",
+    "eta": "12 months"
   }
 ]
