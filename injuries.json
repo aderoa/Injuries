@@ -37925,5 +37925,12 @@
     "date": "2026-02-08",
     "prevStatus": "Out",
     "eta": "12 months"
+  },
+  {
+    "player": "Bradley Beal",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-08-26",
+    "prevStatus": "Out"
   }
 ]
