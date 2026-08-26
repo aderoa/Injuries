@@ -37910,5 +37910,12 @@
     "date": "2026-08-26",
     "prevStatus": "Out",
     "eta": "6 months"
+  },
+  {
+    "player": "Johnny Furphy",
+    "status": "Out",
+    "injury": "Torn Right Knee ACL",
+    "date": "2026-02-08",
+    "prevStatus": "Out"
   }
 ]
