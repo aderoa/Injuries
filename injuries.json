@@ -37902,5 +37902,13 @@
     "injury": "Torn Left Rotator Cuff",
     "date": "2026-08-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan Miller",
+    "status": "Out",
+    "injury": "Torn Left Rotator Cuff",
+    "date": "2026-08-26",
+    "prevStatus": "Out",
+    "eta": "6 months"
   }
 ]
