@@ -37932,5 +37932,13 @@
     "injury": "",
     "date": "2026-08-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Donte DiVincenzo",
+    "status": "Out",
+    "injury": "Right Achilles Tendon Fracture",
+    "date": "2026-04-25",
+    "prevStatus": "Out",
+    "eta": "12 months"
   }
 ]
