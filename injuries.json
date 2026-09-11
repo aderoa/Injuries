@@ -38010,5 +38010,12 @@
     "injury": "o",
     "date": "2026-09-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Out",
+    "injury": "Left Shoulder Torn Labrum",
+    "date": "2026-09-11",
+    "prevStatus": "Available"
   }
 ]
