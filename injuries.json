@@ -38003,5 +38003,12 @@
     "date": "2026-08-25",
     "prevStatus": "Available",
     "eta": "6 months"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Left Game",
+    "injury": "o",
+    "date": "2026-09-11",
+    "prevStatus": "Available"
   }
 ]
