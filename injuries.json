@@ -38032,5 +38032,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-09-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-09-13",
+    "prevStatus": "Out"
   }
 ]
