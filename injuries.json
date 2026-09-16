@@ -38039,5 +38039,12 @@
     "injury": "Illness",
     "date": "2026-09-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Drew Eubanks",
+    "status": "Available",
+    "injury": "Left Thumb Torn UCL Repair",
+    "date": "2026-09-15",
+    "prevStatus": "Out"
   }
 ]
