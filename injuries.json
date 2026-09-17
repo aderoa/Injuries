@@ -38053,5 +38053,12 @@
     "injury": "",
     "date": "2026-09-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Questionable",
+    "injury": "Left Foot Sprain",
+    "date": "2026-09-17",
+    "prevStatus": "Available"
   }
 ]
