@@ -38082,5 +38082,13 @@
     "injury": "Right Knee Torn ACL",
     "date": "2026-09-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Henri Veesaar",
+    "status": "Out",
+    "injury": "Right Knee Torn ACL",
+    "date": "2026-09-21",
+    "prevStatus": "Available",
+    "eta": "9-12 months"
   }
 ]
