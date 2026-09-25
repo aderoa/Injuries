@@ -38097,5 +38097,13 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-09-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kon Knueppel",
+    "status": "Out",
+    "injury": "Left Hamstring Injury",
+    "date": "2026-09-25",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
