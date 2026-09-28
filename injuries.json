@@ -38164,5 +38164,13 @@
     "injury": "Right Foot Lisfranc Injury",
     "date": "2026-09-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Yanic Konan Niederhauser",
+    "status": "Out",
+    "injury": "Right Foot Lisfranc Injury",
+    "date": "2026-09-28",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
