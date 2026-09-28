@@ -38141,5 +38141,13 @@
     "injury": "Partial Torn Achilles",
     "date": "2026-09-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Out",
+    "injury": "Partial Torn Achilles",
+    "date": "2026-09-28",
+    "prevStatus": "Out",
+    "eta": "1 month"
   }
 ]
