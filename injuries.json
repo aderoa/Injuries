@@ -38202,5 +38202,12 @@
     "injury": "",
     "date": "2026-10-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Out",
+    "injury": "Left Hip Impingement",
+    "date": "2026-10-01",
+    "prevStatus": "Out"
   }
 ]
