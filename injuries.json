@@ -38195,5 +38195,12 @@
     "injury": "Right Elbow Sprain",
     "date": "2026-09-28",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-01",
+    "prevStatus": "Available"
   }
 ]
