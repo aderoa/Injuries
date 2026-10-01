@@ -38209,5 +38209,13 @@
     "injury": "Left Hip Impingement",
     "date": "2026-10-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tristan Vukcevic",
+    "status": "Out",
+    "injury": "Left Hip Impingement",
+    "date": "2026-10-01",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
