@@ -38224,5 +38224,12 @@
     "injury": "",
     "date": "2026-10-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tobias Harris",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-10-04",
+    "prevStatus": "Available"
   }
 ]
