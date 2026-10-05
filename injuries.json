@@ -38245,5 +38245,12 @@
     "injury": "",
     "date": "2026-10-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Max Strus",
+    "status": "Out",
+    "injury": "Right Foot Plantar Fascia Tear",
+    "date": "2026-10-05",
+    "prevStatus": "Out"
   }
 ]
