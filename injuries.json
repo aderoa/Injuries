@@ -38238,5 +38238,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-10-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Max Strus",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-05",
+    "prevStatus": "Available"
   }
 ]
