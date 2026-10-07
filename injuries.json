@@ -38274,5 +38274,13 @@
     "injury": "Right Knee Achilles Tear",
     "date": "2026-10-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ariel Hukporti",
+    "status": "Out",
+    "injury": "Right Knee Achilles Tear",
+    "date": "2026-10-06",
+    "prevStatus": "Available",
+    "eta": "12 months"
   }
 ]
