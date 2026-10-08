@@ -38303,5 +38303,13 @@
     "injury": "Right Foot Plantar Tear",
     "date": "2026-10-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jusuf Nurkic",
+    "status": "Out",
+    "injury": "Right Foot Plantar Tear",
+    "date": "2026-10-07",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
