@@ -38340,5 +38340,12 @@
     "injury": "",
     "date": "2026-10-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Maxime Raynaud",
+    "status": "Out",
+    "injury": "Right Patellar Subluxation",
+    "date": "2026-10-11",
+    "prevStatus": "Out"
   }
 ]
