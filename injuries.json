@@ -38362,5 +38362,13 @@
     "injury": "",
     "date": "2026-10-13",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Cardwell",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-10-13",
+    "prevStatus": "Available",
+    "eta": "2-3 weeks"
   }
 ]
