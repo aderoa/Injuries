@@ -38399,5 +38399,13 @@
     "injury": "Left Knee Sprain",
     "date": "2026-10-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Julian Strawther",
+    "status": "Out",
+    "injury": "Left Knee Sprain",
+    "date": "2026-10-17",
+    "prevStatus": "Available",
+    "eta": "6-8 weeks"
   }
 ]
