@@ -38414,5 +38414,12 @@
     "injury": "Partial Torn",
     "date": "2026-10-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Noah Penda",
+    "status": "Out",
+    "injury": "Partial Torn Right Hamstring",
+    "date": "2026-10-17",
+    "prevStatus": "Out"
   }
 ]
