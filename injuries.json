@@ -38518,5 +38518,12 @@
     "injury": "Left Hamstring Tireness / Soreness",
     "date": "2026-10-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-19",
+    "prevStatus": "Available"
   }
 ]
