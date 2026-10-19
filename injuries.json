@@ -38511,5 +38511,12 @@
     "injury": "",
     "date": "2026-10-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anfernee Simons",
+    "status": "Questionable",
+    "injury": "Left Hamstring Tireness / Soreness",
+    "date": "2026-10-19",
+    "prevStatus": "Available"
   }
 ]
