@@ -38488,5 +38488,13 @@
     "injury": "Tacko Fall",
     "date": "2026-10-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tacko Fall",
+    "status": "Out",
+    "injury": "Tacko Fall",
+    "date": "2026-10-19",
+    "prevStatus": "Available",
+    "eta": "7-10 days"
   }
 ]
