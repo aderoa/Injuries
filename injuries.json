@@ -38539,5 +38539,13 @@
     "injury": "Left Foot Sprain",
     "date": "2026-10-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Otega Oweh",
+    "status": "Out",
+    "injury": "Right Achilles Tendon Surgery",
+    "date": "2026-10-14",
+    "prevStatus": "Out",
+    "eta": "9-12 months"
   }
 ]
