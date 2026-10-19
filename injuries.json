@@ -38474,5 +38474,12 @@
     "date": "2026-10-19",
     "prevStatus": "Left Game",
     "eta": "Day-to-Day"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Questionable",
+    "injury": "Personal Reasons",
+    "date": "2026-10-19",
+    "prevStatus": "Available"
   }
 ]
