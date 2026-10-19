@@ -38583,5 +38583,13 @@
     "injury": "Low Back Surgery",
     "date": "2026-10-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Topic",
+    "status": "Out",
+    "injury": "Low Back Surgery",
+    "date": "2026-10-19",
+    "prevStatus": "Available",
+    "eta": "2-4 weeks"
   }
 ]
