@@ -38443,5 +38443,13 @@
     "injury": "Lumbar Spine Bone Stress",
     "date": "2026-10-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dominick Barlow",
+    "status": "Out",
+    "injury": "Lumbar Spine Bone Stress",
+    "date": "2026-10-19",
+    "prevStatus": "Available",
+    "eta": "2-3 weeks"
   }
 ]
