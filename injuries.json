@@ -38466,5 +38466,13 @@
     "date": "2026-10-19",
     "prevStatus": "Available",
     "eta": "Day-to-Day"
+  },
+  {
+    "player": "Devin Carter",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-10-19",
+    "prevStatus": "Left Game",
+    "eta": "Day-to-Day"
   }
 ]
