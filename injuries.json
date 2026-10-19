@@ -38525,5 +38525,12 @@
     "injury": "",
     "date": "2026-10-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-19",
+    "prevStatus": "Available"
   }
 ]
