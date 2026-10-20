@@ -38629,5 +38629,12 @@
     "injury": "Personal Reasons",
     "date": "2026-10-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nae'Qwan Tomlin",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-20",
+    "prevStatus": "Available"
   }
 ]
