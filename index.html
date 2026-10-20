@@ -867,6 +867,12 @@ function scheduleGitHubSync() {
   _ghSyncTimer = setTimeout(() => pushToGitHub(), 1500);
 }
 
+// How many rows the last successful push carried. Memory only: it survives
+// a re-render but not a reload, which is the right scope -- after a reload
+// the first push has nothing to compare against and only the empty test
+// applies.
+let _ghLastRowCount = 0;
+
 async function pushToGitHub() {
   if (!_ghToken) { setSyncStatus('notoken', 'Set token'); return; }
   if (_ghSyncing) { scheduleGitHubSync(); return; } // retry after current push
@@ -881,6 +887,40 @@ async function pushToGitHub() {
   try {
     // Build merged JSON
     const merged = buildMergedJSON();
+
+    // NEVER PUSH AN EMPTY FILE, AND NEVER PUSH A COLLAPSE.
+    //
+    // On 20 October two pushes a second apart replaced 5,532 rows with [].
+    // An app that starts with no data -- a failed load, or a load of an
+    // already-empty file -- used to write that straight over the real one,
+    // and then reload the emptiness it had just published, which is why it
+    // happened twice rather than once.
+    //
+    // The half-size test is here for the case that would be worse: a
+    // PARTIAL wipe. Nobody notices forty rows where there were five
+    // thousand until a player is missing from a chart weeks later.
+    //
+    // Refusing is loud. Reporting "Synced" over a file we declined to
+    // write would be the same silence that let this run for 25 minutes.
+    const n = Array.isArray(merged) ? merged.length : 0;
+    const allowEmpty = (typeof window !== 'undefined'
+                        && window.ALLOW_EMPTY_INJURIES_PUSH === true);
+    if (!n && !allowEmpty) {
+      console.error('[Injuries] REFUSED to push an empty injuries.json.'
+        + ' Nothing was written. Reload the page: if the file on GitHub is'
+        + ' already empty it must be restored from history first, or this'
+        + ' app will keep republishing the emptiness it just loaded.');
+      setSyncStatus('error', 'Refused: file would be empty');
+      return;
+    }
+    if (_ghLastRowCount && n < _ghLastRowCount / 2 && !allowEmpty) {
+      console.error('[Injuries] REFUSED to push ' + n + ' row(s) when the'
+        + ' last push had ' + _ghLastRowCount + '. Nothing was written.'
+        + ' Set window.ALLOW_EMPTY_INJURIES_PUSH = true to override.');
+      setSyncStatus('error', 'Refused: ' + n + ' rows vs ' + _ghLastRowCount);
+      return;
+    }
+
     const content = JSON.stringify(merged, null, 2) + '\n';
     const b64 = btoa(unescape(encodeURIComponent(content)));
 
@@ -975,6 +1015,9 @@ async function pushToGitHub() {
     if (!remaining) {
       document.querySelectorAll('.player-row.modified').forEach(r => r.classList.remove('modified'));
     }
+
+    // Only a push that actually landed moves the watermark.
+    _ghLastRowCount = Array.isArray(merged) ? merged.length : _ghLastRowCount;
 
     setSyncStatus('success', 'Synced');
     setTimeout(() => setSyncStatus('idle', 'Auto-sync on'), 3000);
