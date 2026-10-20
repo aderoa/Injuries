@@ -38599,5 +38599,12 @@
     "date": "2026-10-19",
     "prevStatus": "Questionable",
     "eta": "Day-to-Day"
+  },
+  {
+    "player": "Ben Simmons",
+    "status": "Out",
+    "injury": "Right Torn Achilles",
+    "date": "2026-10-20",
+    "prevStatus": "Available"
   }
 ]
