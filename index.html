@@ -913,10 +913,50 @@ async function pushToGitHub() {
       setSyncStatus('error', 'Refused: file would be empty');
       return;
     }
+    // ASK GITHUB, DO NOT TRUST MEMORY.
+    //
+    // _ghLastRowCount starts at 0 on every page load, so the first push
+    // after a reload used to compare against nothing and was always let
+    // through. That is how 5,532 rows became 1 at 16:09 with this guard
+    // already deployed. The thing worth comparing against is the file that
+    // is actually published, and the API call below for the SHA proves we
+    // can reach it.
+    //
+    // It also catches the case that caused this: a tab opened BEFORE a
+    // restore still holds the old empty data, and its next push carries two
+    // rows while the live file has five thousand. No in-memory counter can
+    // know that; the live count can.
+    if (!_ghLastRowCount && !allowEmpty) {
+      try {
+        const liveR = await fetch(GH_API + '?ref=' + GH_BRANCH + '&t=' + Date.now(), {
+          headers: { 'Authorization': 'token ' + _ghToken,
+                     'Accept': 'application/vnd.github.v3+json' }
+        });
+        if (liveR.ok) {
+          const liveData = await liveR.json();
+          const txt = decodeURIComponent(escape(atob((liveData.content || '').replace(/\s/g, ''))));
+          const live = JSON.parse(txt);
+          if (Array.isArray(live)) {
+            _ghLastRowCount = live.length;
+            _ghLastSha = liveData.sha || _ghLastSha;
+          }
+        }
+      } catch(e) {
+        // REFUSE WHEN BLIND. A guard that opens because it could not look
+        // is not a guard, and the costs are not symmetric: a refused push
+        // is a nuisance, an accepted one costs the file.
+        console.error('[Injuries] REFUSED: could not read the published file'
+          + ' to check this push against it.', e);
+        setSyncStatus('error', 'Refused: cannot verify');
+        return;
+      }
+    }
     if (_ghLastRowCount && n < _ghLastRowCount / 2 && !allowEmpty) {
       console.error('[Injuries] REFUSED to push ' + n + ' row(s) when the'
-        + ' last push had ' + _ghLastRowCount + '. Nothing was written.'
-        + ' Set window.ALLOW_EMPTY_INJURIES_PUSH = true to override.');
+        + ' published file has ' + _ghLastRowCount + '. Nothing was written.'
+        + ' If this page has been open since before a restore, RELOAD IT --'
+        + ' it is holding stale data. Set window.ALLOW_EMPTY_INJURIES_PUSH'
+        + ' = true to override deliberately.');
       setSyncStatus('error', 'Refused: ' + n + ' rows vs ' + _ghLastRowCount);
       return;
     }
