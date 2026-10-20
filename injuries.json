@@ -38622,5 +38622,12 @@
     "date": "2026-10-20",
     "prevStatus": "Available",
     "eta": "2-4 weeks"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-10-20",
+    "prevStatus": "Questionable"
   }
 ]
