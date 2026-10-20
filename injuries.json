@@ -38636,5 +38636,12 @@
     "injury": "",
     "date": "2026-10-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nae'Qwan Tomlin",
+    "status": "Out",
+    "injury": "Lower Back Stress Reaction",
+    "date": "2026-10-20",
+    "prevStatus": "Out"
   }
 ]
