@@ -39418,5 +39418,12 @@
     "injury": "Bilateral Hamstring Injury Management",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Probable",
+    "injury": "Personal Reasons",
+    "date": "2026-10-22",
+    "prevStatus": "Out"
   }
 ]
