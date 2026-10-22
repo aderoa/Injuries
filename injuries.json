@@ -38687,5 +38687,13 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-10-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Henri Veesaar",
+    "status": "Out",
+    "injury": "Right ACL Tear",
+    "date": "2026-09-21",
+    "prevStatus": "Out",
+    "eta": "9-12 months"
   }
 ]
