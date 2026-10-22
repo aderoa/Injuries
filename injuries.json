@@ -39380,5 +39380,13 @@
     "injury": "Right Patellar Tendinopathy",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nae'Qwan Tomlin",
+    "status": "Out",
+    "injury": "Low Back Stress Reaction",
+    "date": "2026-10-20",
+    "prevStatus": "Out",
+    "eta": "3-4 weeks"
   }
 ]
