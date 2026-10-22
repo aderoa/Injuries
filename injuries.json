@@ -38920,5 +38920,12 @@
     "injury": "Gastroin",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Hawkins",
+    "status": "Out",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
   }
 ]
