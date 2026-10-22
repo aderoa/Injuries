@@ -39453,5 +39453,21 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Hawkins",
+    "status": "Questionable",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-10-22",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Questionable",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-10-22",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
