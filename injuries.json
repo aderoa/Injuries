@@ -39512,5 +39512,13 @@
     "injury": "",
     "date": "",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-22",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
