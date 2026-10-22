@@ -38868,5 +38868,13 @@
     "date": "2026-10-21",
     "prevStatus": "Available",
     "eta": "6 months"
+  },
+  {
+    "player": "Shaedon Sharpe",
+    "status": "Left Game",
+    "injury": "Right Knee Torn Meniscus",
+    "date": "2026-10-21",
+    "prevStatus": "Out",
+    "eta": "6 months"
   }
 ]
