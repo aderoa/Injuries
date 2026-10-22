@@ -39158,5 +39158,20 @@
     "injury": "Bilateral Low Back Soreness",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandin Podziemski",
+    "status": "Out",
+    "injury": "Bilateral Low Back Soreness",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "status": "Out",
+    "injury": "Not With Team",
+    "date": "2026-10-20",
+    "prevStatus": "Out",
+    "eta": "2-4 weeks"
   }
 ]
