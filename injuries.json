@@ -39425,5 +39425,12 @@
     "injury": "Personal Reasons",
     "date": "2026-10-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Probable",
+    "injury": "Left MCL Sprain",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
