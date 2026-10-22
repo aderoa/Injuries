@@ -38846,5 +38846,12 @@
     "date": "2026-10-21",
     "prevStatus": "Available",
     "eta": "Day-to-Day"
+  },
+  {
+    "player": "Day'Ron Sharpe",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-10-21",
+    "prevStatus": "Out"
   }
 ]
