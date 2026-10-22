@@ -39020,5 +39020,13 @@
     "injury": "Right Knee Surgery",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Out",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-21",
+    "prevStatus": "Available",
+    "eta": "2-4 "
   }
 ]
