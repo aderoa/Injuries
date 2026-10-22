@@ -38716,5 +38716,13 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Izaiyah Nelson",
+    "status": "Out",
+    "injury": "Left Ankle Injury Recovery",
+    "date": "2026-07-12",
+    "prevStatus": "Out",
+    "eta": "3-4 months"
   }
 ]
