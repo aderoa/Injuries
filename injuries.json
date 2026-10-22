@@ -38748,5 +38748,21 @@
     "date": "2026-10-21",
     "prevStatus": null,
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Anfernee Simons",
+    "status": "Available",
+    "injury": "Left Hamstring Tireness / Soreness",
+    "date": "2026-10-20",
+    "prevStatus": "Available",
+    "eta": "Day-to-day"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-20",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
