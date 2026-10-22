@@ -39527,5 +39527,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Felix Okpara",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
