@@ -38965,5 +38965,13 @@
     "injury": "Right Foot Avulsion Fracture",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nate Bittle",
+    "status": "Out",
+    "injury": "Right Foot Avulsion Fracture",
+    "date": "2026-10-21",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
