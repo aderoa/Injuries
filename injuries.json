@@ -39151,5 +39151,12 @@
     "injury": "",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandin Podziemski",
+    "status": "Available",
+    "injury": "Bilateral Low Back Soreness",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
   }
 ]
