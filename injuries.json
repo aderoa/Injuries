@@ -39280,5 +39280,13 @@
     "injury": "",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Chris Youngblood",
+    "status": "Out",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-10-21",
+    "prevStatus": "Available",
+    "eta": "Day-to-day"
   }
 ]
