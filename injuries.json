@@ -39334,5 +39334,13 @@
     "date": "2026-10-21",
     "prevStatus": "Available",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Out",
+    "injury": "Right Heel Surgery",
+    "date": "2026-09-28",
+    "prevStatus": "Out",
+    "eta": "5-7 weeks"
   }
 ]
