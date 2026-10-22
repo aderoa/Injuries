@@ -38831,5 +38831,12 @@
     "injury": "",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyler Bilodeau",
+    "status": "Out",
+    "injury": "Right Shoulder Sprain",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
   }
 ]
