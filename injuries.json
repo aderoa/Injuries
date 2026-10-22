@@ -39081,5 +39081,13 @@
     "injury": "",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Out",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-10-21",
+    "prevStatus": "Available",
+    "eta": "Day-to-day"
   }
 ]
