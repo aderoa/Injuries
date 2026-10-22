@@ -38816,5 +38816,13 @@
     "injury": "Left Calf Strain",
     "date": "2026-10-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Coby White",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-10-21",
+    "prevStatus": "Questionable",
+    "eta": "Day-to-Day"
   }
 ]
