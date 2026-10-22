@@ -39144,5 +39144,12 @@
     "date": "2026-03-23",
     "prevStatus": "Out",
     "eta": "9 months"
+  },
+  {
+    "player": "Brandin Podziemski",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
   }
 ]
