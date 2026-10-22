@@ -38740,5 +38740,13 @@
     "date": "2026-10-21",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Jonathan Isaac",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-21",
+    "prevStatus": null,
+    "eta": "Day-to-day"
   }
 ]
