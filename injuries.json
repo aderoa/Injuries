@@ -38942,5 +38942,13 @@
     "injury": "",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Out",
+    "injury": "Gs",
+    "date": "2026-10-21",
+    "prevStatus": "Available",
+    "eta": "Day-to-day"
   }
 ]
