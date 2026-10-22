@@ -39498,5 +39498,12 @@
     "injury": "",
     "date": "2026-10-22",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kobe Brown",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
