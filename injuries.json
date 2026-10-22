@@ -39395,5 +39395,13 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Khalifa Diop",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-21",
+    "prevStatus": "Out",
+    "eta": "Day-to-Day"
   }
 ]
