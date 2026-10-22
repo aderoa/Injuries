@@ -39373,5 +39373,12 @@
     "injury": "",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Questionable",
+    "injury": "Right Patellar Tendinopathy",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
   }
 ]
