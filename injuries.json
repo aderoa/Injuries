@@ -39520,5 +39520,12 @@
     "date": "2026-10-22",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
