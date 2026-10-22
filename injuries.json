@@ -38794,5 +38794,12 @@
     "injury": "",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kylan Boswell",
+    "status": "Out",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
   }
 ]
