@@ -39066,5 +39066,13 @@
     "injury": "Right Foot Surgery",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dereck Lively",
+    "status": "Out",
+    "injury": "Right Foot Surgery",
+    "date": "2026-10-21",
+    "prevStatus": "Available",
+    "eta": "2-4 weeks"
   }
 ]
