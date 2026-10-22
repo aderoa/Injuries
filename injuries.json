@@ -39446,5 +39446,12 @@
     "injury": "Right Quadriceps Sprain",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Probable",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
