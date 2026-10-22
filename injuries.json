@@ -39218,5 +39218,13 @@
     "injury": "Left Knee Effusion / Swelling",
     "date": "2026-10-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adou Thiero",
+    "status": "Out",
+    "injury": "Left Knee Effusion / Swelling",
+    "date": "2026-10-21",
+    "prevStatus": "Available",
+    "eta": "Day-to-day"
   }
 ]
