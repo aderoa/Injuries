@@ -39273,5 +39273,12 @@
     "date": "2026-10-21",
     "prevStatus": "Left Game",
     "eta": "6 months"
+  },
+  {
+    "player": "Chris Youngblood",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-21",
+    "prevStatus": "Available"
   }
 ]
