@@ -39534,5 +39534,13 @@
     "injury": "Illness",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Questionable",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-10-22",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
