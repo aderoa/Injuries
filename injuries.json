@@ -39120,5 +39120,13 @@
     "date": "2026-10-21",
     "prevStatus": "Available",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Jimmy Butler",
+    "status": "Out",
+    "injury": "Right ACL Repair",
+    "date": "2026-01-19",
+    "prevStatus": "Out",
+    "eta": "12 months"
   }
 ]
