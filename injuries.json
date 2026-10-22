@@ -39439,5 +39439,12 @@
     "injury": "",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zach Collins",
+    "status": "Probable",
+    "injury": "Right Quadriceps Sprain",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
