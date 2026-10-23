@@ -39623,5 +39623,12 @@
     "injury": "Right Soleus Strain",
     "date": "2026-10-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jake LaRavia",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
