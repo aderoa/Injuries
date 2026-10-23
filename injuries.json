@@ -39564,5 +39564,12 @@
     "date": "2026-07-15",
     "prevStatus": "Out",
     "eta": "6 months"
+  },
+  {
+    "player": "Keldon Johnson",
+    "status": "Questionable",
+    "injury": "Mouth Laceration",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
