@@ -39594,5 +39594,12 @@
     "date": "2026-10-22",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Tony Bradley",
+    "status": "Available",
+    "injury": "Left Quadriceps Strain",
+    "date": "2026-10-22",
+    "prevStatus": "Questionable"
   }
 ]
