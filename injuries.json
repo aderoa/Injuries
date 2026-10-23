@@ -39616,5 +39616,12 @@
     "date": "2026-10-22",
     "prevStatus": "Questionable",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Available",
+    "injury": "Right Soleus Strain",
+    "date": "2026-10-22",
+    "prevStatus": "Out"
   }
 ]
