@@ -39637,5 +39637,20 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-22",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-10-22",
+    "prevStatus": "Available"
   }
 ]
