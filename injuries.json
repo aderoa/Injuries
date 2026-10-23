@@ -39763,5 +39763,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-10-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tony Bradley",
+    "status": "Available",
+    "injury": "Left Quadriceps Strain",
+    "date": "2026-10-23",
+    "prevStatus": "Questionable"
   }
 ]
