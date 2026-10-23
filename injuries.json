@@ -39674,5 +39674,13 @@
     "injury": "Bilateral Low Back Soreness",
     "date": "2026-10-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Probable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-10-22",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
