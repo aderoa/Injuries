@@ -39659,5 +39659,13 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Questionable",
+    "injury": "Right Patellar Tendinopathy",
+    "date": "2026-10-22",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
