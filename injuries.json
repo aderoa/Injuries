@@ -39556,5 +39556,13 @@
     "injury": "Left Knee Contusion / Bone Bruise",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jayden Quaintance",
+    "status": "Out",
+    "injury": "Right Knee Surgery",
+    "date": "2026-07-15",
+    "prevStatus": "Out",
+    "eta": "6 months"
   }
 ]
