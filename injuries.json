@@ -39571,5 +39571,12 @@
     "injury": "Mouth Laceration",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trey Alexander",
+    "status": "Available",
+    "injury": "Left Knee Contusion / Bone Bruise",
+    "date": "2026-10-22",
+    "prevStatus": "Out"
   }
 ]
