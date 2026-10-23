@@ -39601,5 +39601,12 @@
     "injury": "Left Quadriceps Strain",
     "date": "2026-10-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Available",
+    "injury": "Right Patellar Tendinopathy",
+    "date": "2026-10-22",
+    "prevStatus": "Questionable"
   }
 ]
