@@ -39706,5 +39706,12 @@
     "date": "2026-10-23",
     "prevStatus": "Questionable",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-10-23",
+    "prevStatus": "Probable"
   }
 ]
