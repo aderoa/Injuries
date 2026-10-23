@@ -39713,5 +39713,33 @@
     "injury": "Personal Reasons",
     "date": "2026-10-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Available",
+    "injury": "Left MCL Sprain",
+    "date": "2026-10-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Zach Collins",
+    "status": "Available",
+    "injury": "Right Quadriceps Sprain",
+    "date": "2026-10-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Available",
+    "injury": "Left Wrist Spra",
+    "date": "2026-10-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Jordan Hawkins",
+    "status": "Available",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-10-23",
+    "prevStatus": "Probable"
   }
 ]
