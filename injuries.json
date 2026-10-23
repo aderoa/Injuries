@@ -39630,5 +39630,12 @@
     "injury": "",
     "date": "2026-10-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jake LaRavia",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-22",
+    "prevStatus": "Questionable"
   }
 ]
