@@ -39608,5 +39608,13 @@
     "injury": "Right Patellar Tendinopathy",
     "date": "2026-10-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-22",
+    "prevStatus": "Questionable",
+    "eta": "Day-to-day"
   }
 ]
