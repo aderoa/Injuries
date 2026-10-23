@@ -39741,5 +39741,13 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-10-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Left Game",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-10-23",
+    "prevStatus": "Probable",
+    "eta": "Day-to-day"
   }
 ]
