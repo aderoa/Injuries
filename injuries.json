@@ -39857,5 +39857,12 @@
     "injury": "Left Knee Contusion / Bone Bruise",
     "date": "2026-10-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keldon Johnson",
+    "status": "Available",
+    "injury": "Mouth Laceration",
+    "date": "2026-10-23",
+    "prevStatus": "Questionable"
   }
 ]
