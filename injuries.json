@@ -39922,5 +39922,12 @@
     "injury": "",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Questionable",
+    "injury": "Low Back Sciatica",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
