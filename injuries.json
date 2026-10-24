@@ -39784,5 +39784,12 @@
     "injury": "Right Thigh Injury",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
