@@ -40140,5 +40140,12 @@
     "injury": "Right Shin Splits",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Morez Johnson",
+    "status": "Questionable",
+    "injury": "Right Shin Splints",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
