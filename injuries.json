@@ -39986,5 +39986,12 @@
     "date": "2026-10-23",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Yves Missi",
+    "status": "Left Game",
+    "injury": "Left Knee Injury",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
