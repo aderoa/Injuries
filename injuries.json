@@ -40243,5 +40243,20 @@
     "date": "2026-10-24",
     "prevStatus": "Doubtful",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-10-24",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
+  },
+  {
+    "player": "Brandin Podziemski",
+    "status": "Out",
+    "injury": "Bilateral Low Back Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
