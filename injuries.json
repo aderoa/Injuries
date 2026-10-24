@@ -40258,5 +40258,13 @@
     "injury": "Bilateral Low Back Soreness",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandin Podziemski",
+    "status": "Out",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Available",
+    "eta": "Day-to-Day"
   }
 ]
