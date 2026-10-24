@@ -40295,5 +40295,13 @@
     "injury": "Bilateral Low Back Soreness",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Available",
+    "eta": "Day-to-Day"
   }
 ]
