@@ -39871,5 +39871,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cedric Coward",
+    "status": "Out",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-10-23",
+    "prevStatus": "Doubtful"
   }
 ]
