@@ -39791,5 +39791,12 @@
     "injury": "",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Left Game",
+    "injury": "Left Shoulder Soreness",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
