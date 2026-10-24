@@ -40374,5 +40374,12 @@
     "injury": "",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jose Alvarado",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
