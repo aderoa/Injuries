@@ -39900,5 +39900,12 @@
     "date": "2026-10-23",
     "prevStatus": "Questionable",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Malik Monk",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-10-23",
+    "prevStatus": "Probable"
   }
 ]
