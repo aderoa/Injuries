@@ -40200,5 +40200,12 @@
     "date": "2026-10-24",
     "prevStatus": "Left Game",
     "eta": "6-8 weeks"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Questionable",
+    "injury": "Left Forearm Strain",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
