@@ -40154,5 +40154,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Out",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Left Game"
   }
 ]
