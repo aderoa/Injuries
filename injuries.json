@@ -40325,5 +40325,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
