@@ -39943,5 +39943,12 @@
     "injury": "",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alpha Diallo",
+    "status": "Questionable",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
