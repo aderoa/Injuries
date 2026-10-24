@@ -40037,5 +40037,12 @@
     "date": "2026-10-24",
     "prevStatus": "Available",
     "eta": "Day-to-Day"
+  },
+  {
+    "player": "Reed Sheppard",
+    "status": "Questionable",
+    "injury": "Left Knee Contusion / Bone Bruise",
+    "date": "2026-10-24",
+    "prevStatus": "Out"
   }
 ]
