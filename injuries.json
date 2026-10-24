@@ -40360,5 +40360,12 @@
     "injury": "Right Head Contusion",
     "date": "2026-10-24",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Available",
+    "injury": "Left Finger Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Probable"
   }
 ]
