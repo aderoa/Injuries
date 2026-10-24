@@ -40221,5 +40221,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-10-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
