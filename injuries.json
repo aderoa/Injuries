@@ -40367,5 +40367,12 @@
     "injury": "Left Finger Sprain",
     "date": "2026-10-24",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jose Alvarado",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
