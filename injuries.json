@@ -39936,5 +39936,12 @@
     "injury": "Low Back Sciatica Management",
     "date": "2026-10-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alpha Diallo",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
