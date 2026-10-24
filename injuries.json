@@ -40402,5 +40402,13 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Questionable",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Doubtful",
+    "eta": "Day-to-day"
   }
 ]
