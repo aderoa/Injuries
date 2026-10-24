@@ -40273,5 +40273,12 @@
     "injury": "",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Out",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
