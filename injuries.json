@@ -40161,5 +40161,12 @@
     "injury": "Left Shoulder Sprain",
     "date": "2026-10-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Questionable",
+    "injury": "Right Shin Contusion",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
