@@ -39864,5 +39864,12 @@
     "injury": "Mouth Laceration",
     "date": "2026-10-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jake LaRavia",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-23",
+    "prevStatus": "Questionable"
   }
 ]
