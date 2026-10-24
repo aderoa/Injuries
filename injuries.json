@@ -39836,5 +39836,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Felix Okpara",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-10-23",
+    "prevStatus": "Questionable"
   }
 ]
