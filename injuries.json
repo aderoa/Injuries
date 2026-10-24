@@ -39777,5 +39777,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Left Game",
+    "injury": "Right Thigh Injury",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
