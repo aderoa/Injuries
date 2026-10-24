@@ -40029,5 +40029,13 @@
     "injury": " Left Ankle Injury Management",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Out",
+    "injury": " Left Ankle Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Available",
+    "eta": "Day-to-Day"
   }
 ]
