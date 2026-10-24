@@ -40089,5 +40089,12 @@
     "injury": "Left Finger Sprain",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Christian Anderson",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
