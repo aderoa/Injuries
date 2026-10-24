@@ -40000,5 +40000,12 @@
     "injury": "Right Head Contusion",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Paolo Banchero",
+    "status": "Out",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Left Game"
   }
 ]
