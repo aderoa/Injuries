@@ -40311,5 +40311,12 @@
     "date": "2026-10-24",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Christian Anderson",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Probable"
   }
 ]
