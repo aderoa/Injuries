@@ -39964,5 +39964,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Oso Ighodaro",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
