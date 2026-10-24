@@ -40014,5 +40014,13 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-24",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Paolo Banchero",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Left Game",
+    "eta": "4-6 weeks"
   }
 ]
