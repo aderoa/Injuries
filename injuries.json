@@ -40059,5 +40059,13 @@
     "date": "2026-10-24",
     "prevStatus": "Available",
     "eta": "Day-to-Day"
+  },
+  {
+    "player": "Fred VanVleet",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable",
+    "eta": "Day-to-Day"
   }
 ]
