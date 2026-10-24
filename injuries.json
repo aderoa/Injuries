@@ -40280,5 +40280,20 @@
     "injury": "Bilateral Low Back Injury Management",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Out",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Available",
+    "eta": "Day-to-Day"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Doubtful",
+    "injury": "Bilateral Low Back Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
