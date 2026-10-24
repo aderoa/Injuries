@@ -39978,5 +39978,13 @@
     "injury": "Right Oblique Strain",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Luke Kennard",
+    "status": "Questionable",
+    "injury": "Left Knee Tendinopathy",
+    "date": "2026-10-23",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
