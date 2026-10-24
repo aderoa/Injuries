@@ -40381,5 +40381,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zaccharie Risacher",
+    "status": "Probable",
+    "injury": "Right Hip Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
