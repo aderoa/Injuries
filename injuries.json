@@ -40044,5 +40044,12 @@
     "injury": "Left Knee Contusion / Bone Bruise",
     "date": "2026-10-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Fred VanVleet",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
