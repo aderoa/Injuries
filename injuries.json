@@ -39957,5 +39957,12 @@
     "injury": "",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
