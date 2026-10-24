@@ -40168,5 +40168,13 @@
     "injury": "Right Shin Contusion",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Doubtful",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
