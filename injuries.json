@@ -39770,5 +39770,12 @@
     "injury": "Left Quadriceps Strain",
     "date": "2026-10-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Paolo Banchero",
+    "status": "Left Game",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
