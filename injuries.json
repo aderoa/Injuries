@@ -39950,5 +39950,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-10-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-23",
+    "prevStatus": "Available"
   }
 ]
