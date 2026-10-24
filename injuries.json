@@ -39805,5 +39805,13 @@
     "injury": "Left Knee Torn Meniscus",
     "date": "2026-10-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Out",
+    "injury": "Left Knee Torn Meniscus",
+    "date": "2026-10-23",
+    "prevStatus": "Out",
+    "eta": "3-6 months"
   }
 ]
