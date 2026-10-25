@@ -40758,5 +40758,12 @@
     "injury": "Left Shoulder Sprain",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kylan Boswell",
+    "status": "Available",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
