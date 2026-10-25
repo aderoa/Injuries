@@ -40935,5 +40935,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Out",
+    "injury": "Abdominal Contusion",
+    "date": "2026-10-25",
+    "prevStatus": "Questionable"
   }
 ]
