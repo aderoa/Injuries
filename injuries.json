@@ -40523,5 +40523,12 @@
     "injury": "Bilateral Low Back Soreness",
     "date": "2026-10-24",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Available",
+    "injury": "Right Patellar Tendinopathy",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
