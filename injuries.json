@@ -40453,5 +40453,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-10-24",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jett Howard",
+    "status": "Available",
+    "injury": "Right Calf Strain",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
