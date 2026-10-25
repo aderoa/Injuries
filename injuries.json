@@ -40942,5 +40942,12 @@
     "injury": "Abdominal Contusion",
     "date": "2026-10-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Out",
+    "injury": "Left Ankle Capsulitis",
+    "date": "2026-10-25",
+    "prevStatus": "Doubtful"
   }
 ]
