@@ -40418,5 +40418,12 @@
     "date": "2026-10-24",
     "prevStatus": "Questionable",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Jabari Walker",
+    "status": "Left Game",
+    "injury": "R",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
