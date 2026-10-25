@@ -40772,5 +40772,12 @@
     "injury": "",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Questionable",
+    "injury": "Abdominal Contusion",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
