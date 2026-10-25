@@ -40722,5 +40722,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Karim Lopez",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion / Bone Bruise",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
