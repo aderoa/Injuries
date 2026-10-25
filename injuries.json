@@ -40765,5 +40765,12 @@
     "injury": "Right Knee Surgery",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
