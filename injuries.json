@@ -40650,5 +40650,12 @@
     "injury": "Back Injury Management",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "RightPlantarfasciitis injurymanagement",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
