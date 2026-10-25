@@ -40928,5 +40928,12 @@
     "injury": "Right Wrist Sprain / Personal Reasons",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Doubtful",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
