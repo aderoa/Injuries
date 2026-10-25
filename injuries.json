@@ -40835,5 +40835,12 @@
     "injury": "Right Patellar Tendinopathy",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-25",
+    "prevStatus": "Questionable"
   }
 ]
