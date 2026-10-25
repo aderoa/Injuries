@@ -40460,5 +40460,12 @@
     "injury": "Right Calf Strain",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Available",
+    "injury": "Right Shin Contusion",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
