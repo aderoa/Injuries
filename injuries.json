@@ -40744,5 +40744,12 @@
     "date": "2026-10-25",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
