@@ -40432,5 +40432,12 @@
     "injury": "Right Knee Injury",
     "date": "2026-10-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zaccharie Risacher",
+    "status": "Available",
+    "injury": "Right Hip Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Probable"
   }
 ]
