@@ -40849,5 +40849,13 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-25",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Out",
+    "injury": "Right Soleus Strain",
+    "date": "2026-10-24",
+    "prevStatus": "Out",
+    "eta": "Day-to-Day"
   }
 ]
