@@ -40751,5 +40751,12 @@
     "injury": "Illness",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Questionable",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
