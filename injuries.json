@@ -40857,5 +40857,12 @@
     "date": "2026-10-24",
     "prevStatus": "Out",
     "eta": "Day-to-Day"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Available",
+    "injury": "Left Forearm Strain",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
