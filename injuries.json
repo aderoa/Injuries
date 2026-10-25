@@ -40864,5 +40864,19 @@
     "injury": "Left Forearm Strain",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Questionable",
+    "injury": "Left Forearm Strain",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Fred VanVleet",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
