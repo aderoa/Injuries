@@ -40593,5 +40593,13 @@
     "injury": "Left Forearm Strain",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-10-24",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
