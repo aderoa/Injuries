@@ -40516,5 +40516,12 @@
     "injury": "Right Head Contusion",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Out",
+    "injury": "Bilateral Low Back Soreness",
+    "date": "2026-10-24",
+    "prevStatus": "Doubtful"
   }
 ]
