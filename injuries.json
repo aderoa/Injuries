@@ -40779,5 +40779,12 @@
     "injury": "Abdominal Contusion",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandin Podziemski",
+    "status": "Available",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
