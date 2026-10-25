@@ -40467,5 +40467,12 @@
     "injury": "Right Shin Contusion",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
