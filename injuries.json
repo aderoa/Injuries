@@ -40899,5 +40899,12 @@
     "injury": "",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Out",
+    "injury": " Left Knee Effusion / Swelling",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
