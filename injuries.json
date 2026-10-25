@@ -40622,5 +40622,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-10-25",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
