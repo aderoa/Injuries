@@ -40949,5 +40949,12 @@
     "injury": "Left Ankle Capsulitis",
     "date": "2026-10-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Ivica Zubac",
+    "status": "Left Game",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
