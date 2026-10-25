@@ -40636,5 +40636,12 @@
     "injury": "Right Plantarfasciitis Management",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
