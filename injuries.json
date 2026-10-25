@@ -40708,5 +40708,12 @@
     "injury": "Right Adductor / Groin Soreness / Tightness",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Doubtful",
+    "injury": "Left Ankle Capsulitis",
+    "date": "2026-10-25",
+    "prevStatus": "Questionable"
   }
 ]
