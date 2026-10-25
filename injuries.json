@@ -40786,5 +40786,26 @@
     "injury": "Bilateral Low Back Injury Management",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Available",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Bilateral Low Back Soreness",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
