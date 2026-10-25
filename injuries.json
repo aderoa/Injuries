@@ -40678,5 +40678,13 @@
     "injury": "Right Plantar Fasciitis Injury Management",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nae'Qwan Tomlin",
+    "status": "Out",
+    "injury": "LeftLowBackStress Reaction",
+    "date": "2026-10-20",
+    "prevStatus": "Out",
+    "eta": "3-4 weeks"
   }
 ]
