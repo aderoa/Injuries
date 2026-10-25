@@ -40821,5 +40821,19 @@
     "injury": "Left Knee ",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Questionable",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Probable",
+    "injury": "Right Patellar Tendinopathy",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
