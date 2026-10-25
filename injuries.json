@@ -40615,5 +40615,12 @@
     "injury": "Right Knee Injury",
     "date": "2026-10-25",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jabari Walker",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-10-25",
+    "prevStatus": "Left Game"
   }
 ]
