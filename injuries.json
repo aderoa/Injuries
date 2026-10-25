@@ -40729,5 +40729,12 @@
     "injury": "Right Knee Contusion / Bone Bruise",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
