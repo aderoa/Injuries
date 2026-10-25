@@ -40906,5 +40906,13 @@
     "injury": " Left Knee Effusion / Swelling",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Oso Ighodaro",
+    "status": "Doubtful",
+    "injury": "Right Oblique Strain",
+    "date": "2026-10-25",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
