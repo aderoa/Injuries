@@ -40439,5 +40439,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-10-24",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Morez Johnson",
+    "status": "Available",
+    "injury": "Right Shin Splints",
+    "date": "2026-10-24",
+    "prevStatus": "Probable"
   }
 ]
