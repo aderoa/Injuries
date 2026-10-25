@@ -40446,5 +40446,12 @@
     "injury": "Right Shin Splints",
     "date": "2026-10-24",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-24",
+    "prevStatus": "Doubtful"
   }
 ]
