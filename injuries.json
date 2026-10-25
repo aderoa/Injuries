@@ -40537,5 +40537,12 @@
     "injury": "Left Knee Tendinopathy",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alpha Diallo",
+    "status": "Out",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
