@@ -40629,5 +40629,12 @@
     "injury": "",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Right Plantarfasciitis Management",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
