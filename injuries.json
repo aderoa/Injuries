@@ -40474,5 +40474,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Out",
+    "injury": "Right Adductor / Groin Soreness / Tightness",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
