@@ -40544,5 +40544,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-24",
+    "prevStatus": "Available"
   }
 ]
