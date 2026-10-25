@@ -40579,5 +40579,19 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-10-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Reed Sheppard",
+    "status": "Available",
+    "injury": "Left Knee Contusion / Bone Bruise",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Out",
+    "injury": "Left Forearm Strain",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
