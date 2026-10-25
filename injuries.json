@@ -40701,5 +40701,12 @@
     "injury": "Right Head Contusion",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Questionable",
+    "injury": "Right Adductor / Groin Soreness / Tightness",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
