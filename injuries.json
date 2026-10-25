@@ -40530,5 +40530,12 @@
     "injury": "Right Patellar Tendinopathy",
     "date": "2026-10-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luke Kennard",
+    "status": "Available",
+    "injury": "Left Knee Tendinopathy",
+    "date": "2026-10-24",
+    "prevStatus": "Questionable"
   }
 ]
