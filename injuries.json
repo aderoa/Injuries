@@ -40807,5 +40807,19 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Questionable",
+    "injury": "Left Knee ",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
