@@ -41281,5 +41281,13 @@
     "injury": "Right Knee Contusion",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jusuf Nurkic",
+    "status": "Out",
+    "injury": "Right Foot 2nd Plantar Plate Tear",
+    "date": "2026-10-07",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
