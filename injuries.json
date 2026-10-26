@@ -41139,5 +41139,12 @@
     "injury": "Left Shoulder Soreness",
     "date": "2026-10-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jaylin Williams",
+    "status": "Available",
+    "injury": "Right Wrist Soreness",
+    "date": "2026-10-26",
+    "prevStatus": "Left Game"
   }
 ]
