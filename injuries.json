@@ -41211,5 +41211,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karim Lopez",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion / Bone Bruise",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
   }
 ]
