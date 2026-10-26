@@ -41218,5 +41218,12 @@
     "injury": "Right Knee Contusion / Bone Bruise",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
   }
 ]
