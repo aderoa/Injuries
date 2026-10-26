@@ -40984,5 +40984,12 @@
     "injury": "Right Wrist Soreness",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cason Wallace",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
