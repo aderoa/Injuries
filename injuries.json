@@ -41012,5 +41012,12 @@
     "injury": "Hip Contusion",
     "date": "2026-10-25",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Left Game",
+    "injury": "Ankle ",
+    "date": "2026-10-25",
+    "prevStatus": "Available"
   }
 ]
