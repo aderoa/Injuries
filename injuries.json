@@ -41132,5 +41132,12 @@
     "injury": "Left Lower Leg Injury",
     "date": "2026-10-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Cason Wallace",
+    "status": "Out",
+    "injury": "Left Shoulder Soreness",
+    "date": "2026-10-26",
+    "prevStatus": "Left Game"
   }
 ]
