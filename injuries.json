@@ -41033,5 +41033,12 @@
     "injury": "",
     "date": "2026-10-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Suggs",
+    "status": "Left Game",
+    "injury": "Right Knee Injury",
+    "date": "2026-10-25",
+    "prevStatus": "Left Game"
   }
 ]
