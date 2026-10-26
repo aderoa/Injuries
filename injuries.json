@@ -41076,5 +41076,12 @@
     "date": "2026-10-26",
     "prevStatus": "Doubtful",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Ivica Zubac",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-26",
+    "prevStatus": "Left Game"
   }
 ]
