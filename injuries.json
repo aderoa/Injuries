@@ -41239,5 +41239,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Topic",
+    "status": "Out",
+    "injury": "Low Back Surgery",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
