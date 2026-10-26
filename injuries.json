@@ -41054,5 +41054,12 @@
     "injury": "Left Forearm Strain",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
