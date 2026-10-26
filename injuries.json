@@ -41274,5 +41274,12 @@
     "injury": "Right Knee Contusio",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karim Lopez",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
