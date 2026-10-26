@@ -41083,5 +41083,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-10-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Probable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
