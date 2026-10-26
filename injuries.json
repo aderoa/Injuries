@@ -41104,5 +41104,12 @@
     "injury": "Neck Stiffness / ",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "Neck Stiffness / Soreness",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
