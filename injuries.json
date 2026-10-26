@@ -41061,5 +41061,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cooper Flagg",
+    "status": "Probable",
+    "injury": "Left Shoulder Sprain",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
