@@ -41246,5 +41246,19 @@
     "injury": "Low Back Surgery",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Topic",
+    "status": "Out",
+    "injury": "Low Back Surgery",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Thomas Sorber",
+    "status": "Out",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
