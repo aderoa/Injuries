@@ -40963,5 +40963,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-10-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karim Lopez",
+    "status": "Out",
+    "injury": "Right Knee Contusion / Bone Bruise",
+    "date": "2026-10-25",
+    "prevStatus": "Questionable"
   }
 ]
