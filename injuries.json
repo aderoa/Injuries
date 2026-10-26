@@ -41125,5 +41125,12 @@
     "injury": "Low Back Surgery",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Left Lower Leg Injury",
+    "date": "2026-10-26",
+    "prevStatus": "Left Game"
   }
 ]
