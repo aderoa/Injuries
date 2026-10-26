@@ -41111,5 +41111,19 @@
     "injury": "Neck Stiffness / Soreness",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Thomas Sorber",
+    "status": "Available",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Nikola Topic",
+    "status": "Available",
+    "injury": "Low Back Surgery",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
   }
 ]
