@@ -41260,5 +41260,12 @@
     "injury": "Right Knee Surgery",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Thomas Sorber",
+    "status": "Out",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
   }
 ]
