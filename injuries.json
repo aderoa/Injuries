@@ -41225,5 +41225,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
