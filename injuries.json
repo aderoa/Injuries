@@ -41146,5 +41146,12 @@
     "injury": "Right Wrist Soreness",
     "date": "2026-10-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "injury": "Right Patellar Tendonitis",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
