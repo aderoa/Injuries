@@ -41204,5 +41204,12 @@
     "injury": "",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Questionable",
+    "injury": "Right Shoulder Soreness",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
