@@ -41416,5 +41416,12 @@
     "injury": "Right ankle Sprain",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
