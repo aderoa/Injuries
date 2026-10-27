@@ -41430,5 +41430,12 @@
     "injury": "Right Knee Injury",
     "date": "2026-10-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Left Game",
+    "injury": "Right Wrist Injury",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
