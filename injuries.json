@@ -41550,5 +41550,12 @@
     "injury": "Right Head Contusion",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Noa Essengue",
+    "status": "Available",
+    "injury": "Right Head Contusion",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
