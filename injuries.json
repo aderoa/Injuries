@@ -41349,5 +41349,13 @@
     "injury": "Left Fibula Fracture / Ankle Dislocation",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Left Fibula Fracture / Ankle Dislocation",
+    "date": "2026-10-26",
+    "prevStatus": "Out",
+    "eta": "6-9 months"
   }
 ]
