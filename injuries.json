@@ -41465,5 +41465,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Naz Reid",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-10-26",
+    "prevStatus": "Probable"
   }
 ]
