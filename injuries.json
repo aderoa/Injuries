@@ -41458,5 +41458,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-10-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
   }
 ]
