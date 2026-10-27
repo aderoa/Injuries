@@ -41694,5 +41694,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-10-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Probable",
+    "injury": "Left Finger Sprain",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
