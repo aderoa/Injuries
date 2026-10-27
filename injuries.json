@@ -41585,5 +41585,13 @@
     "injury": " Left Knee Swelling",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Out",
+    "injury": " Left Knee Swelling",
+    "date": "2026-10-25",
+    "prevStatus": "Out",
+    "eta": "1-3 weeks"
   }
 ]
