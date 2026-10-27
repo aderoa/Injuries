@@ -41666,5 +41666,12 @@
     "injury": "",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Out",
+    "injury": "Left Quadriceps Soreness",
+    "date": "2026-10-27",
+    "prevStatus": "Out"
   }
 ]
