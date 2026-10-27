@@ -41522,5 +41522,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "injury": "Neck Stiffness / Soreness",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
