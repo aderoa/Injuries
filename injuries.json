@@ -41578,5 +41578,12 @@
     "injury": "Left Shoulder Sprain",
     "date": "2026-10-26",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Out",
+    "injury": " Left Knee Swelling",
+    "date": "2026-10-25",
+    "prevStatus": "Out"
   }
 ]
