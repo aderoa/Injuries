@@ -41402,5 +41402,12 @@
     "injury": "Right Foot Injury",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
