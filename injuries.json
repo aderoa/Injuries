@@ -41395,5 +41395,12 @@
     "injury": "",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Justin Champagnie",
+    "status": "Left Game",
+    "injury": "Right Foot Injury",
+    "date": "2026-10-26",
+    "prevStatus": "Available"
   }
 ]
