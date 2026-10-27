@@ -41507,5 +41507,13 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Branden Carlson",
+    "status": "Questionable",
+    "injury": "Concussion Protocol",
+    "date": "2026-10-26",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
