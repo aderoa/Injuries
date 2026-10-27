@@ -41652,5 +41652,12 @@
     "injury": "",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Poole",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
