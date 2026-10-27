@@ -41536,5 +41536,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-26",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
