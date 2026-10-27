@@ -41296,5 +41296,12 @@
     "injury": "",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sergio De Larrea",
+    "status": "Left Game",
+    "injury": "Right Knee Strain",
+    "date": "2026-10-26",
+    "prevStatus": "Left Game"
   }
 ]
