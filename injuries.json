@@ -41451,5 +41451,12 @@
     "injury": "Right Shoulder Sprain",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Questionable",
+    "injury": "Right Hip Contusion",
+    "date": "2026-10-26",
+    "prevStatus": "Left Game"
   }
 ]
