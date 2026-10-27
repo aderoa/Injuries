@@ -41616,5 +41616,12 @@
     "injury": "",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Probable",
+    "injury": "Right Hip Synovitis",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
