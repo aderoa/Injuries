@@ -41673,5 +41673,12 @@
     "injury": "Left Quadriceps Soreness",
     "date": "2026-10-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
