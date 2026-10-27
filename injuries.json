@@ -41659,5 +41659,12 @@
     "injury": "Illness",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
