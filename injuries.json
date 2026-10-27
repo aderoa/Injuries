@@ -41486,5 +41486,12 @@
     "injury": "Right Head Contusion",
     "date": "2026-10-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Chris Youngblood",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
   }
 ]
