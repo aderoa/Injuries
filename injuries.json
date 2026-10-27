@@ -41623,5 +41623,12 @@
     "injury": "Right Hip Synovitis",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "status": "Out",
+    "injury": "Right Knee Injury",
+    "date": "2026-10-27",
+    "prevStatus": "Left Game"
   }
 ]
