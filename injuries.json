@@ -41437,5 +41437,12 @@
     "injury": "Right Wrist Injury",
     "date": "2026-10-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Available",
+    "injury": "Back Injury Management",
+    "date": "2026-10-26",
+    "prevStatus": "Out"
   }
 ]
