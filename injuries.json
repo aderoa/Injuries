@@ -41472,5 +41472,12 @@
     "injury": "Illness",
     "date": "2026-10-26",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Available",
+    "injury": "Right Adductor / Groin Soreness / Tightness",
+    "date": "2026-10-26",
+    "prevStatus": "Questionable"
   }
 ]
