@@ -194,13 +194,17 @@ tbody td { padding:0.55rem 0.5rem; vertical-align:middle; white-space:nowrap; }
 
 <script>
 // ===== CONFIG =====
-const API_KEY = 'AIzaSyCPUpmuvHXD-kt3Lylx5KW5IPHvQx-cygk';
+// NO KEY IN THIS PAGE. Both feeds come through the HoopsMatic Worker, which
+// holds the Sheets key server-side (env.SHEETS_API_KEY) and already lets
+// aderoa.github.io call /api/inj-csv and /api/roster. The line stays, empty,
+// because older copies of the Worker rewrite it.
+const API_KEY = '';
 const INJ_SHEETS_ID = '14TQPdQ9mDhHMMMQa5vcs0coL98ZloHORtYElDikKoWY';
 const SHEETS_API = 'https://sheets.googleapis.com/v4/spreadsheets';
-const CSV_URL = `${SHEETS_API}/${INJ_SHEETS_ID}/values/Injuries?key=${API_KEY}`;
+const CSV_URL = 'https://hoopsmatic.com/api/inj-csv';            // Injuries tab, as CSV
 const ROSTER_SHEETS_ID = '11llk0icQqoi0JwJXat5KO8y2RQeBMN5rS9FhAY56Idc';
 
-const ROSTER_CSV_URL = `${SHEETS_API}/${ROSTER_SHEETS_ID}/values/Sheet1?key=${API_KEY}`;
+const ROSTER_CSV_URL = 'https://hoopsmatic.com/api/roster';      // Sheet1, as CSV
 const JSON_URL = 'injuries.json';
 
 const NBA_TEAMS = [
@@ -330,6 +334,10 @@ function todayISO() {
 async function fetchSheets(url) {
   const r = await fetch(url);
   if (!r.ok) return r;
+  // The Worker's feeds are already CSV -- the same conversion as below, done
+  // server-side -- so they pass straight through. Only a Sheets values JSON
+  // answer needs turning into CSV here.
+  if (!/json/i.test(r.headers.get('content-type') || '')) return r;
   const json = await r.json();
   const vals = json.values || [];
   const csv = vals.map(row => row.map(c => c != null && (c.includes(',') || c.includes('"') || c.includes('\n')) ? '"' + c.replace(/"/g,'""') + '"' : (c || '')).join(',')).join('\n');
