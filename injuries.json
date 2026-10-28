@@ -42192,5 +42192,12 @@
     "injury": "Back Tightness",
     "date": "2026-10-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-28",
+    "prevStatus": "Probable"
   }
 ]
