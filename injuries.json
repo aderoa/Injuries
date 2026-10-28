@@ -41981,5 +41981,13 @@
     "injury": "Right Foot Injury",
     "date": "2026-10-27",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "AJ Dybantsa",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-27",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
