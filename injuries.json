@@ -42177,5 +42177,13 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-10-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adou Thiero",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-21",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
