@@ -41917,5 +41917,12 @@
     "injury": "Neck Stiffness / Soreness",
     "date": "2026-10-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Probable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
