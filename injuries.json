@@ -41772,5 +41772,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-10-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
