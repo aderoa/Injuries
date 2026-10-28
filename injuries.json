@@ -41910,5 +41910,12 @@
     "injury": "Left Hamstring Tightness / Soreness",
     "date": "2026-10-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "Neck Stiffness / Soreness",
+    "date": "2026-10-27",
+    "prevStatus": "Out"
   }
 ]
