@@ -41786,5 +41786,13 @@
     "injury": "Right Adductor Strain",
     "date": "2026-10-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Doubtful",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-27",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
