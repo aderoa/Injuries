@@ -42199,5 +42199,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Neck Stiffness / Soreness",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
