@@ -41966,5 +41966,13 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-10-27",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "status": "Out",
+    "injury": "Right Knee MCL Tear",
+    "date": "2026-10-27",
+    "prevStatus": "Out",
+    "eta": "6-8 weeks"
   }
 ]
