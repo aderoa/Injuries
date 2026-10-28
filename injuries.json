@@ -42249,5 +42249,12 @@
     "injury": "Right Achilles Soreness",
     "date": "2026-10-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Yaxel Lendeborg",
+    "status": "Available",
+    "injury": "Left Foot Inflammation / Soreness",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
