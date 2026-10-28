@@ -41758,5 +41758,12 @@
     "injury": "Right Leg Contusion",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Wiggins",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
