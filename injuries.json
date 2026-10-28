@@ -41751,5 +41751,12 @@
     "injury": "",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Egor Demin",
+    "status": "Left Game",
+    "injury": "Right Leg Contusion",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
