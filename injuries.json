@@ -42074,5 +42074,12 @@
     "injury": "Left Knee Contusion",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "AJ Dybantsa",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
