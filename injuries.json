@@ -42039,5 +42039,12 @@
     "injury": "Illness",
     "date": "2026-10-27",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Scoot Henderson",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-10-27",
+    "prevStatus": "Questionable"
   }
 ]
