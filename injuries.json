@@ -41736,5 +41736,13 @@
     "injury": "Right Knee Injury",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "Right Knee Injury",
+    "date": "2026-10-27",
+    "prevStatus": "Questionable",
+    "eta": "2-3 months"
   }
 ]
