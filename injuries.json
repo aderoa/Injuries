@@ -41903,5 +41903,12 @@
     "injury": "",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyrese Haliburton",
+    "status": "Questionable",
+    "injury": "Left Hamstring Tightness / Soreness",
+    "date": "2026-10-27",
+    "prevStatus": "Questionable"
   }
 ]
