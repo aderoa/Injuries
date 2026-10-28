@@ -41802,5 +41802,12 @@
     "date": "2026-10-27",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Sergio De Larrea",
+    "status": "Out",
+    "injury": "Right Knee Strain",
+    "date": "2026-10-27",
+    "prevStatus": "Left Game"
   }
 ]
