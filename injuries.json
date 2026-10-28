@@ -41765,5 +41765,12 @@
     "injury": "",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Wiggins",
+    "status": "Questionable",
+    "injury": "Left Knee Contusion",
+    "date": "2026-10-27",
+    "prevStatus": "Questionable"
   }
 ]
