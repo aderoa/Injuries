@@ -41959,5 +41959,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-10-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Questionable",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-10-27",
+    "prevStatus": "Left Game"
   }
 ]
