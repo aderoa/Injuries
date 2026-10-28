@@ -42110,5 +42110,12 @@
     "injury": "Left Forearm Strain",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jordan Poole",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-10-28",
+    "prevStatus": "Probable"
   }
 ]
