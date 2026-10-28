@@ -42242,5 +42242,12 @@
     "injury": "",
     "date": "2026-10-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Out",
+    "injury": "Right Achilles Soreness",
+    "date": "2026-10-28",
+    "prevStatus": "Available"
   }
 ]
