@@ -42025,5 +42025,12 @@
     "injury": "Right Patellar Tendinopathy",
     "date": "2026-10-27",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Available",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-10-27",
+    "prevStatus": "Questionable"
   }
 ]
