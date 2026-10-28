@@ -41924,5 +41924,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
