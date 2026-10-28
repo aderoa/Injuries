@@ -42081,5 +42081,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-28",
+    "prevStatus": "Available"
   }
 ]
