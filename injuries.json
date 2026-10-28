@@ -42053,5 +42053,12 @@
     "injury": "Personal Reasons",
     "date": "2026-10-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-10-28",
+    "prevStatus": "Doubtful"
   }
 ]
