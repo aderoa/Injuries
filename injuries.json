@@ -41938,5 +41938,19 @@
     "injury": "Left Hand Sprain",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "VJ Edgecombe",
+    "status": "Available",
+    "injury": "Abdominal Contusion",
+    "date": "2026-10-27",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Plantar Fasciitis Injury Management",
+    "date": "2026-10-27",
+    "prevStatus": "Out"
   }
 ]
