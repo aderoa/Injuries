@@ -42270,5 +42270,12 @@
     "injury": "Left Knee Tendinitis",
     "date": "2026-10-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ausar Thompson",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-28",
+    "prevStatus": "Probable"
   }
 ]
