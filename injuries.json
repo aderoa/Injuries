@@ -42185,5 +42185,12 @@
     "date": "2026-10-21",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Out",
+    "injury": "Back Tightness",
+    "date": "2026-10-28",
+    "prevStatus": "Available"
   }
 ]
