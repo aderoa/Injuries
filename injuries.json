@@ -42147,5 +42147,13 @@
     "injury": "Right Foot Fracture",
     "date": "2026-10-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Justin Champagnie",
+    "status": "Out",
+    "injury": "Right Foot Fracture",
+    "date": "2026-10-27",
+    "prevStatus": "Out",
+    "eta": "4-5 monts"
   }
 ]
