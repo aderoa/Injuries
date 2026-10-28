@@ -42206,5 +42206,12 @@
     "injury": "Neck Stiffness / Soreness",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
