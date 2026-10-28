@@ -42213,5 +42213,12 @@
     "injury": "Personal Reasons",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Available",
+    "injury": "Left Hand Sprain",
+    "date": "2026-10-28",
+    "prevStatus": "Probable"
   }
 ]
