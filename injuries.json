@@ -41896,5 +41896,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyrese Haliburton",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-27",
+    "prevStatus": "Available"
   }
 ]
