@@ -42011,5 +42011,12 @@
     "injury": "",
     "date": "2026-10-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Yaxel Lendeborg",
+    "status": "Questionable",
+    "injury": "Left Foot Inflammation / Soreness",
+    "date": "2026-10-27",
+    "prevStatus": "Questionable"
   }
 ]
