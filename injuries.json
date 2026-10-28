@@ -42256,5 +42256,12 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
