@@ -42277,5 +42277,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Out",
+    "injury": "Right Adductor Strain",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
