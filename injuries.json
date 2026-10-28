@@ -42046,5 +42046,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-10-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Questionable",
+    "injury": "Personal Reasons",
+    "date": "2026-10-28",
+    "prevStatus": "Available"
   }
 ]
