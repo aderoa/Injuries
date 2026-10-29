@@ -42347,5 +42347,13 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-10-28",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Out",
+    "injury": " Left Knee Swelling",
+    "date": "2026-10-25",
+    "prevStatus": "Out",
+    "eta": "3-4 weeks"
   }
 ]
