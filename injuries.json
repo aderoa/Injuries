@@ -42511,5 +42511,13 @@
     "injury": "Right Achilles Soreness / Tightness",
     "date": "2026-10-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Justin Champagnie",
+    "status": "Out",
+    "injury": "Right Foot Surgery",
+    "date": "2026-10-27",
+    "prevStatus": "Out",
+    "eta": "4-5 months"
   }
 ]
