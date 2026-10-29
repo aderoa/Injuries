@@ -42541,5 +42541,13 @@
     "injury": "Neck Stiffness / Soreness",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "status": "Out",
+    "injury": " Left Knee Injury Management",
+    "date": "2026-10-25",
+    "prevStatus": "Out",
+    "eta": "3-4 weeks"
   }
 ]
