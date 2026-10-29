@@ -42584,5 +42584,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-10-29",
+    "prevStatus": "Out"
   }
 ]
