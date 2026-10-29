@@ -42447,5 +42447,12 @@
     "injury": "",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Doubtful",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
