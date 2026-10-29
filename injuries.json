@@ -42577,5 +42577,12 @@
     "injury": "",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
