@@ -42630,5 +42630,12 @@
     "date": "2026-10-27",
     "prevStatus": "Out",
     "eta": "2-3 months"
+  },
+  {
+    "player": "Jordan Poole",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-29",
+    "prevStatus": "Doubtful"
   }
 ]
