@@ -42556,5 +42556,12 @@
     "injury": " Left Patellar Tendinopathy",
     "date": "2026-10-25",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
