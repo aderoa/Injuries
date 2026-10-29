@@ -42490,5 +42490,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-10-29",
+    "prevStatus": "Out"
   }
 ]
