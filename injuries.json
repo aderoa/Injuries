@@ -42312,5 +42312,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Available",
+    "injury": "Right Shoulder Soreness",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
