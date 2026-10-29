@@ -42412,5 +42412,12 @@
     "injury": "Cervical Strain",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Meleek Thomas",
+    "status": "Questionable",
+    "injury": "Right Foot Inflammation / Soreness",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
