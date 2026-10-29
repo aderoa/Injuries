@@ -1459,7 +1459,7 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   // Table 2: Full Report (all players with any injury designation except Available)
   const allInjured = Object.entries(lat)
     .filter(([name,e]) => e.status !== 'Available' && roster[name] && !ELIMINATED_TEAMS.has(roster[name].team))
-    .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:daysMap[name]||0 }))
+    .map(([name,e]) => ({ player:name, ...e, team:(roster[name]||{}).team||'', salary:(roster[name]||{}).salary||0, days:(name in daysMap ? daysMap[name] : null) }))
     .sort((a,b) => a.team !== b.team ? a.team.localeCompare(b.team) : lastName(a.player).localeCompare(lastName(b.player)));
 
   let h2 = `<h2>Full injury report</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>PLAYER</th><th>SALARY</th><th>STATUS</th><th>INJURY</th><th>DATE</th></tr></thead><tbody>\n`;
@@ -1491,9 +1491,13 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
 
   // Table 4: Highest-Paid Injured
   const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
+  // 0 IS A NUMBER: a player whose last game was today read as blank. A blank
+  // now means only that the Injuries sheet's days block (cols BT/BV) has no row for him.
+  const noDays = topPaid.filter(e => e.days === null).map(e => e.player);
+  if (noDays.length) console.warn('[Injuries] no days-since-last-game row for:', noDays);
   let h4 = `<h2>Highest-paid injured players</h2>\n<table class="inj-tbl"><thead><tr><th class="logo-col"></th><th>PLAYER</th><th>SALARY</th><th title="Number of days since this player last appeared in a game — a proxy for how long they've been sidelined.">DAYS SINCE LAST GAME</th></tr></thead><tbody>\n`;
   topPaid.forEach(e => {
-    h4 += `<tr><td class="logo-col">${lImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days||''}</td></tr>\n`;
+    h4 += `<tr><td class="logo-col">${lImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days === null || e.days === undefined ? '' : e.days}</td></tr>\n`;
   });
   h4 += '</tbody></table>';
 

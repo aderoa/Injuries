@@ -98,7 +98,7 @@ const TAB=params.has('tab')?parseInt(params.get('tab')):-1;
     // === Table 1: Full Report ===
     const allInj=Object.entries(lat)
       .filter(([n,e])=>e.status!=='Available'&&roster[n])
-      .map(([n,e])=>({player:n,...e,team:(roster[n]||{}).team||'',salary:(roster[n]||{}).salary||0,days:daysMap[n]||0}))
+      .map(([n,e])=>({player:n,...e,team:(roster[n]||{}).team||'',salary:(roster[n]||{}).salary||0,days:(n in daysMap?daysMap[n]:null)}))
       .sort((a,b)=>a.team!==b.team?a.team.localeCompare(b.team):lastName(a.player).localeCompare(lastName(b.player)));
     let h2='<h2>Full injury report</h2><table><thead><tr><th></th><th>PLAYER</th><th>SALARY</th><th>STATUS</th><th>INJURY</th><th>DATE</th></tr></thead><tbody>';
     lt='';
@@ -120,7 +120,7 @@ const TAB=params.has('tab')?parseInt(params.get('tab')):-1;
     // === Table 3: Highest-Paid Injured ===
     const top=[...allInj].sort((a,b)=>b.salary-a.salary).slice(0,25);
     let h4='<h2>Highest-paid injured players</h2><table><thead><tr><th></th><th>PLAYER</th><th>SALARY</th><th>DAYS SINCE LAST GAME</th></tr></thead><tbody>';
-    top.forEach((e,i)=>{h4+=`<tr class="${i%2?'odd':''}"><td>${logoImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days||''}</td></tr>`});
+    top.forEach((e,i)=>{h4+=`<tr class="${i%2?'odd':''}"><td>${logoImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days==null?'':e.days}</td></tr>`});
     h4+='</tbody></table>';
     sections.push(h4);
 
