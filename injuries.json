@@ -42291,5 +42291,12 @@
     "injury": "Illness",
     "date": "2026-10-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Poole",
+    "status": "Left Game",
+    "injury": "Left Ankle Injury",
+    "date": "2026-10-28",
+    "prevStatus": "Available"
   }
 ]
