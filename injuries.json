@@ -42405,5 +42405,12 @@
     "injury": "",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "Cervical Strain",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
