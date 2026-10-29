@@ -42461,5 +42461,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-10-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Questionable",
+    "injury": "Left Forearm Strain",
+    "date": "2026-10-29",
+    "prevStatus": "Out"
   }
 ]
