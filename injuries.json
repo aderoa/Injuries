@@ -42454,5 +42454,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Questionable",
+    "injury": "Right Hip Contusion",
+    "date": "2026-10-29",
+    "prevStatus": "Out"
   }
 ]
