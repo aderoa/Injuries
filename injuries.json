@@ -42319,5 +42319,12 @@
     "injury": "Right Shoulder Soreness",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
