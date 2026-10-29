@@ -42419,5 +42419,12 @@
     "injury": "Right Foot Inflammation / Soreness",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Questionable",
+    "injury": "Right Adductor Strain",
+    "date": "2026-10-29",
+    "prevStatus": "Out"
   }
 ]
