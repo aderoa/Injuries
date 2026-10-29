@@ -42622,5 +42622,13 @@
     "injury": "Left Quadriceps Soreness",
     "date": "2026-10-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Anthony Edwards",
+    "status": "Out",
+    "injury": "Right Knee Arthroscopy",
+    "date": "2026-10-27",
+    "prevStatus": "Out",
+    "eta": "2-3 months"
   }
 ]
