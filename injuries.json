@@ -42391,5 +42391,12 @@
     "injury": "Left Ankle Injury",
     "date": "2026-10-29",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jordan Poole",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-29",
+    "prevStatus": "Left Game"
   }
 ]
