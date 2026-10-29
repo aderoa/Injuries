@@ -42483,5 +42483,12 @@
     "injury": "Low Back Sor",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Reed Sheppard",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
