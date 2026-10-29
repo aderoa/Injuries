@@ -42398,5 +42398,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-10-29",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
