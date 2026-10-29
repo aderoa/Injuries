@@ -42591,5 +42591,13 @@
     "injury": "Illness",
     "date": "2026-10-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tarik Biberovic",
+    "status": "Doubtful",
+    "injury": "Right Heel Bursitis",
+    "date": "2026-10-29",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
