@@ -42376,5 +42376,13 @@
     "injury": "Right Leg Bone Bruise",
     "date": "2026-10-29",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Egor Demin",
+    "status": "Out",
+    "injury": "Right Leg Bone Bruise",
+    "date": "2026-10-29",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
