@@ -42333,5 +42333,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-10-28",
+    "prevStatus": "Doubtful"
   }
 ]
