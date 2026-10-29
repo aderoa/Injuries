@@ -42563,5 +42563,12 @@
     "injury": "",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
