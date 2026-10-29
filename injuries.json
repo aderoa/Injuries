@@ -42440,5 +42440,12 @@
     "injury": "Left Finger Sprain",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Doubtful",
+    "injury": "",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
