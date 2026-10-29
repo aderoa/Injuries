@@ -42326,5 +42326,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-10-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Available",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-10-28",
+    "prevStatus": "Questionable"
   }
 ]
