@@ -42912,5 +42912,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
