@@ -42884,5 +42884,12 @@
     "injury": " Left Patellar Tendinopathy",
     "date": "2026-10-30",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Available",
+    "injury": "Right Adductor Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
