@@ -42800,5 +42800,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-10-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Naji Marshall",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
