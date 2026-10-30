@@ -42877,5 +42877,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-10-30",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Out",
+    "injury": " Left Patellar Tendinopathy",
+    "date": "2026-10-30",
+    "prevStatus": "Doubtful"
   }
 ]
