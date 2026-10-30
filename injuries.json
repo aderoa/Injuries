@@ -42779,5 +42779,12 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Out",
+    "injury": "Right Hip Contusion",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
