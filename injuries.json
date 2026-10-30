@@ -42644,5 +42644,12 @@
     "injury": "Personal Reasons",
     "date": "2026-10-29",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ja Morant",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-10-30",
+    "prevStatus": "Available"
   }
 ]
