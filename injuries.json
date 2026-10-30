@@ -42849,5 +42849,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-10-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Doubtful",
+    "injury": " Left Patellar Tendinopathy",
+    "date": "2026-10-30",
+    "prevStatus": "Doubtful"
   }
 ]
