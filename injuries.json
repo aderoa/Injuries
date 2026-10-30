@@ -42984,5 +42984,12 @@
     "injury": "Upper Back Soreness",
     "date": "2026-10-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Questionable",
+    "injury": "Lower Back Soreness",
+    "date": "2026-10-30",
+    "prevStatus": "Available"
   }
 ]
