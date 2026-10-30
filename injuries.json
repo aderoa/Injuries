@@ -42764,5 +42764,13 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-30",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Ja Morant",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Left Game",
+    "eta": "4-6 weeks"
   }
 ]
