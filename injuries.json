@@ -42651,5 +42651,12 @@
     "injury": "",
     "date": "2026-10-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ja Morant",
+    "status": "Left Game",
+    "injury": "Left Hamstring Injury",
+    "date": "2026-10-30",
+    "prevStatus": "Available"
   }
 ]
