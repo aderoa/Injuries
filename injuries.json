@@ -42963,5 +42963,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Doubtful",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-30",
+    "prevStatus": "Left Game"
   }
 ]
