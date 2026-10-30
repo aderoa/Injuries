@@ -42658,5 +42658,12 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-10-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-10-30",
+    "prevStatus": "Available"
   }
 ]
