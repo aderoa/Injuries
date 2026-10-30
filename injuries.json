@@ -42828,5 +42828,12 @@
     "injury": "Left Knee Tendinitis",
     "date": "2026-10-30",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Simone Fontecchio",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
