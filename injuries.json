@@ -42750,5 +42750,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Probable",
+    "injury": "Left Quadriceps Soreness",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
