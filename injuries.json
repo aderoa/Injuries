@@ -42722,5 +42722,12 @@
     "injury": "Right Wrist Sprain / Personal Reasons",
     "date": "2026-10-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Available",
+    "injury": "Cervical Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
