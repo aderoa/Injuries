@@ -42977,5 +42977,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Questionable",
+    "injury": "Upper Back Soreness",
+    "date": "2026-10-30",
+    "prevStatus": "Available"
   }
 ]
