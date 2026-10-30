@@ -42700,5 +42700,13 @@
     "injury": "Left Knee Tendinitis",
     "date": "2026-10-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Oso Ighodaro",
+    "status": "Questionable",
+    "injury": "Right Oblique Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Out",
+    "eta": "Day-to-day"
   }
 ]
