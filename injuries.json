@@ -42991,5 +42991,12 @@
     "injury": "Lower Back Soreness",
     "date": "2026-10-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karim Lopez",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-10-29",
+    "prevStatus": "Available"
   }
 ]
