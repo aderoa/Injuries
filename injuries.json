@@ -42821,5 +42821,12 @@
     "injury": "Right Low Back Soreness",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Questionable",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-10-30",
+    "prevStatus": "Doubtful"
   }
 ]
