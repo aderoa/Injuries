@@ -42898,5 +42898,19 @@
     "injury": "Right Low Back Soreness",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Left Finger Sprain",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
