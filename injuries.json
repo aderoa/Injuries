@@ -42786,5 +42786,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Doubtful",
+    "injury": "Left Knee Soreness",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
