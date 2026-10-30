@@ -42856,5 +42856,12 @@
     "injury": " Left Patellar Tendinopathy",
     "date": "2026-10-30",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Meleek Thomas",
+    "status": "Questionable",
+    "injury": "Right Foot Inflammation / Soreness",
+    "date": "2026-10-30",
+    "prevStatus": "Out"
   }
 ]
