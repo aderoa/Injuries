@@ -42863,5 +42863,12 @@
     "injury": "Right Foot Inflammation / Soreness",
     "date": "2026-10-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-10-30",
+    "prevStatus": "Out"
   }
 ]
