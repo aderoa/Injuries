@@ -42793,5 +42793,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Probable",
+    "injury": "Left Wrist Sprain",
+    "date": "2026-10-30",
+    "prevStatus": "Available"
   }
 ]
