@@ -43042,5 +43042,19 @@
     "injury": "Left Forearm Strain",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Neck Stiffness / Soreness",
+    "date": "2026-10-30",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Probable"
   }
 ]
