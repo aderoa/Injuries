@@ -42757,5 +42757,12 @@
     "injury": "Left Quadriceps Soreness",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ja Morant",
+    "status": "Left Game",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Left Game"
   }
 ]
