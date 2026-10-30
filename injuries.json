@@ -43012,5 +43012,13 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-10-30",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Williams",
+    "status": "Out",
+    "injury": "Left Ankle Surgery",
+    "date": "2026-10-26",
+    "prevStatus": "Out",
+    "eta": "6-9 months"
   }
 ]
