@@ -42814,5 +42814,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-10-30",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Questionable",
+    "injury": "Right Low Back Soreness",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
