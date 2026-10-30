@@ -42926,5 +42926,13 @@
     "injury": "Right Achilles Soreness / Tightness",
     "date": "2026-10-30",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Out",
+    "injury": "Right Knee Surgery",
+    "date": "2026-10-30",
+    "prevStatus": "Doubtful",
+    "eta": "1-2 weeks"
   }
 ]
