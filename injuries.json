@@ -42693,5 +42693,12 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-10-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Doubtful",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-10-30",
+    "prevStatus": "Out"
   }
 ]
