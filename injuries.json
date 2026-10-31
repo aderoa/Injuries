@@ -43348,5 +43348,19 @@
     "injury": " Left Patellar Tendinopathy",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tacko Fall",
+    "status": "Available",
+    "injury": "Left Quadriceps Strain",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jabari Walker",
+    "status": "Available",
+    "injury": " Left Patellar Tendinopathy",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
