@@ -43201,5 +43201,12 @@
     "injury": " Left Patellar Tendinopathy",
     "date": "2026-10-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Fred VanVleet",
+    "status": "Questionable",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
   }
 ]
