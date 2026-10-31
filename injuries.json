@@ -43327,5 +43327,12 @@
     "injury": "Back Injury Management",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-10-31",
+    "prevStatus": "Out"
   }
 ]
