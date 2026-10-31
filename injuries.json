@@ -43292,5 +43292,12 @@
     "injury": "Migraine",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Out",
+    "injury": " Right Knee Injury Management",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
   }
 ]
