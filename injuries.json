@@ -43257,5 +43257,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Meleek Thomas",
+    "status": "Probable",
+    "injury": "Right Foot Inflammation / Soreness",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
