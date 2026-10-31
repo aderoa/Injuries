@@ -43130,5 +43130,12 @@
     "injury": "Right Wrist Sprain / Personal Reasons",
     "date": "2026-10-30",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Oso Ighodaro",
+    "status": "Available",
+    "injury": "Right Oblique Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
