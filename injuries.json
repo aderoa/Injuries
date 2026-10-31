@@ -43376,5 +43376,12 @@
     "injury": "Low Back Spasma",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Rudy Gobert",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
