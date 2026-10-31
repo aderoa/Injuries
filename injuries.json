@@ -43222,5 +43222,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-10-31",
+    "prevStatus": "Out"
   }
 ]
