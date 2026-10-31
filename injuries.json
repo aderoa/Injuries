@@ -43341,5 +43341,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Available",
+    "injury": " Left Patellar Tendinopathy",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
