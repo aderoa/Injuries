@@ -43320,5 +43320,12 @@
     "injury": "Rest",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Out",
+    "injury": "Back Injury Management",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
   }
 ]
