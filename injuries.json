@@ -43236,5 +43236,19 @@
     "injury": "Low Back Spasms",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Chris Youngblood",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
