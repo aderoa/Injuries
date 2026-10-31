@@ -43362,5 +43362,12 @@
     "injury": " Left Patellar Tendinopathy",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
   }
 ]
