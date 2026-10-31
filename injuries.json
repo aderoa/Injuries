@@ -43250,5 +43250,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Available",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
