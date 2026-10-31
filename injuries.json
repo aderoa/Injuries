@@ -43369,5 +43369,12 @@
     "injury": "Personal Reasons",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Rudy Gobert",
+    "status": "Out",
+    "injury": "Low Back Spasma",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
