@@ -43383,5 +43383,19 @@
     "injury": "Low Back Spasms",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Upper Back Soreness",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Out",
+    "injury": "Lower Back Soreness",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
