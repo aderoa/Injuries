@@ -43109,5 +43109,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-10-30",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Available",
+    "injury": "Left Forearm Strain",
+    "date": "2026-10-30",
+    "prevStatus": "Probable"
   }
 ]
