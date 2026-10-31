@@ -43165,5 +43165,12 @@
     "injury": "Back Management",
     "date": "2026-10-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Out",
+    "injury": "Low Back Sciatica Management",
+    "date": "2026-10-31",
+    "prevStatus": "Out"
   }
 ]
