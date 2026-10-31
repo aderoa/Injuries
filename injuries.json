@@ -43278,5 +43278,12 @@
     "injury": "Low Back Spasma",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Colin Castleton",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
   }
 ]
