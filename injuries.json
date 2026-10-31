@@ -43179,5 +43179,12 @@
     "injury": "Right Foot Plantar Fascia Injury Management",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Questionable",
+    "injury": " Left Patellar Tendinopathy",
+    "date": "2026-10-31",
+    "prevStatus": "Out"
   }
 ]
