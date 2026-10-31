@@ -43299,5 +43299,12 @@
     "injury": " Right Knee Injury Management",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Out",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
   }
 ]
