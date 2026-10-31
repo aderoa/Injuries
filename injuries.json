@@ -43186,5 +43186,13 @@
     "injury": " Left Patellar Tendinopathy",
     "date": "2026-10-31",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tacko Fall",
+    "status": "Questionable",
+    "injury": "Left Quadriceps Strain",
+    "date": "2026-10-31",
+    "prevStatus": "Out",
+    "eta": "7-10 days"
   }
 ]
