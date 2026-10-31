@@ -43285,5 +43285,12 @@
     "injury": "",
     "date": "2026-10-31",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephon Castle",
+    "status": "Questionable",
+    "injury": "Migraine",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
   }
 ]
