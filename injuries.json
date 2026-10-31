@@ -43264,5 +43264,19 @@
     "injury": "Right Foot Inflammation / Soreness",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Colin Castleton",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-10-31",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Rudy Gobert",
+    "status": "Questionable",
+    "injury": "Low Back Spasma",
+    "date": "2026-10-31",
+    "prevStatus": "Questionable"
   }
 ]
