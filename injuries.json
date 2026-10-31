@@ -43411,5 +43411,12 @@
     "injury": "Migraine",
     "date": "2026-10-31",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Meleek Thomas",
+    "status": "Available",
+    "injury": "Right Foot Inflammation / Soreness",
+    "date": "2026-10-31",
+    "prevStatus": "Probable"
   }
 ]
