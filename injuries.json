@@ -43116,5 +43116,12 @@
     "injury": "Left Forearm Strain",
     "date": "2026-10-30",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-10-30",
+    "prevStatus": "Questionable"
   }
 ]
