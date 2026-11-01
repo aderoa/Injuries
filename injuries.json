@@ -43474,5 +43474,12 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-11-01",
+    "prevStatus": "Questionable"
   }
 ]
