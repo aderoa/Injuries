@@ -43446,5 +43446,12 @@
     "injury": "Rest",
     "date": "2026-11-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
