@@ -43481,5 +43481,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-11-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Fred VanVleet",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
