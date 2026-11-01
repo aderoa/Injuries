@@ -43460,5 +43460,12 @@
     "injury": "Left Ankle Tendinopathy",
     "date": "2026-10-29",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Probable",
+    "injury": " Bilateral Patella Tendinopathy",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
