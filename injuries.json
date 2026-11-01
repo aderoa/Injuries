@@ -43418,5 +43418,12 @@
     "injury": "Right Foot Inflammation / Soreness",
     "date": "2026-10-31",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cameron Carr",
+    "status": "Available",
+    "injury": "Right Oblique Strain",
+    "date": "2026-10-31",
+    "prevStatus": "Out"
   }
 ]
