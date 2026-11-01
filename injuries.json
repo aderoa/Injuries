@@ -43495,5 +43495,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-11-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Clint Capela",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
