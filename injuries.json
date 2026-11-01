@@ -43488,5 +43488,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-11-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Reed Sheppard",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
