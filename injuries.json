@@ -43687,5 +43687,12 @@
     "injury": "",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zach LaVine",
+    "status": "Questionable",
+    "injury": "Right Elbow Inflammation / Soreness",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
