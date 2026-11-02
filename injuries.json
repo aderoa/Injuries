@@ -43644,5 +43644,12 @@
     "injury": "Left Hip Strain",
     "date": "2026-11-01",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
