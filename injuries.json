@@ -43976,5 +43976,12 @@
     "injury": "Rest",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Paul George",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
