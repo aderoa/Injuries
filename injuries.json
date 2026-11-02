@@ -44005,5 +44005,13 @@
     "injury": "Left Shoulder Bursitis",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dylan Cardwell",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-02",
+    "prevStatus": "Probable",
+    "eta": "3-4 weeks"
   }
 ]
