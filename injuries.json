@@ -43751,5 +43751,12 @@
     "injury": "Personal Reasons",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Available",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-11-01",
+    "prevStatus": "Probable"
   }
 ]
