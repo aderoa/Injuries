@@ -43955,5 +43955,12 @@
     "injury": "",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Questionable",
+    "injury": "Right Wrist Contusion",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
