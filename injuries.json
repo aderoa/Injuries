@@ -43601,5 +43601,13 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Doubtful",
+    "injury": "Right Knee Surgery",
+    "date": "2026-11-01",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
