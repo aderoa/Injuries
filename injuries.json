@@ -43885,5 +43885,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
