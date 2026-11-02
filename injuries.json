@@ -43637,5 +43637,12 @@
     "injury": "Left Hip Injury",
     "date": "2026-11-01",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Out",
+    "injury": "Left Hip Strain",
+    "date": "2026-11-01",
+    "prevStatus": "Left Game"
   }
 ]
