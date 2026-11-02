@@ -43623,5 +43623,12 @@
     "injury": "Right Foot Plantar Fascia Injury Management",
     "date": "2026-11-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Coby White",
+    "status": "Available",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
