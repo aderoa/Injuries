@@ -43962,5 +43962,12 @@
     "injury": "Right Wrist Contusion",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Questionable",
+    "injury": "Left Hip Contusion",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
