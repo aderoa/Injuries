@@ -43502,5 +43502,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Out",
+    "injury": "League Suspension",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
