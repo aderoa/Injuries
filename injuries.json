@@ -43716,5 +43716,12 @@
     "injury": "",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Out",
+    "injury": "Left Shoulder Bursitis",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
