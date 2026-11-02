@@ -43523,5 +43523,12 @@
     "injury": "Right Knee Injury",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Available",
+    "injury": "Right Low Back Soreness",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
