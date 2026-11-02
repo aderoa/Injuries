@@ -44020,5 +44020,19 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Available",
+    "injury": " Right Knee Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
   }
 ]
