@@ -43913,5 +43913,12 @@
     "injury": "Cervical Injury Management",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
