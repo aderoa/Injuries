@@ -43765,5 +43765,12 @@
     "injury": "Upper Back Soreness",
     "date": "2026-11-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
