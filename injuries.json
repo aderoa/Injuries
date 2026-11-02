@@ -43779,5 +43779,12 @@
     "injury": "Lower Back Soreness",
     "date": "2026-11-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Reece Beekman",
+    "status": "Out",
+    "injury": "right acromioclavicular (AC) joint injury",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
