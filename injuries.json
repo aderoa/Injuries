@@ -43899,5 +43899,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Out",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
