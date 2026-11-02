@@ -43694,5 +43694,13 @@
     "injury": "Right Elbow Inflammation / Soreness",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Cardwell",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-01",
+    "prevStatus": "Out",
+    "eta": "3-4 weeks"
   }
 ]
