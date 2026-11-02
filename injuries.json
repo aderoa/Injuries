@@ -43822,5 +43822,12 @@
     "injury": "Personal Reasons",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Out",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
