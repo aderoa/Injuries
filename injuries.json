@@ -43616,5 +43616,12 @@
     "injury": "Low Back Sciatica Management",
     "date": "2026-11-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Questionable",
+    "injury": "Right Foot Plantar Fascia Injury Management",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
