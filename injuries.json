@@ -43580,5 +43580,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-11-01",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Available",
+    "injury": "Right Hip Contusion",
+    "date": "2026-11-01",
+    "prevStatus": "Questionable"
   }
 ]
