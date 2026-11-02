@@ -43509,5 +43509,12 @@
     "injury": "League Suspension",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick Jones",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
