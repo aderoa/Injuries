@@ -43934,5 +43934,12 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-02",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Doubtful",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
