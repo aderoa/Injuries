@@ -43969,5 +43969,12 @@
     "injury": "Left Hip Contusion",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
   }
 ]
