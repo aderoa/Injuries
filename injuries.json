@@ -43948,5 +43948,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
