@@ -43744,5 +43744,12 @@
     "injury": "",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tim Hardaway Jr",
+    "status": "Questionable",
+    "injury": "Personal Reasons",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
