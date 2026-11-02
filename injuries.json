@@ -44055,5 +44055,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-02",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Rui Hachimura",
+    "status": "Out",
+    "injury": "Left Quadriceps Soreness",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
