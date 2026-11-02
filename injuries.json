@@ -43864,5 +43864,12 @@
     "injury": "Back Injury Management",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
