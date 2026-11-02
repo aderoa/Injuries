@@ -43829,5 +43829,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Questionable",
+    "injury": "Right Hip Contusion",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
