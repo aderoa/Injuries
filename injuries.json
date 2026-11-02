@@ -44034,5 +44034,12 @@
     "injury": "Bilateral Low Back Injury Management",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Max Strus",
+    "status": "Available",
+    "injury": "Right Plantar Fascia Tear",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
   }
 ]
