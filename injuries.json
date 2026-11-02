@@ -43673,5 +43673,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Gill",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
