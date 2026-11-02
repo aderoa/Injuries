@@ -43516,5 +43516,12 @@
     "injury": "",
     "date": "2026-11-01",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick Jones",
+    "status": "Left Game",
+    "injury": "Right Knee Injury",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
