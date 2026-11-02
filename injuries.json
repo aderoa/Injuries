@@ -43878,5 +43878,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Obi Toppin",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
   }
 ]
