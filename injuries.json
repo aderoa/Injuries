@@ -44041,5 +44041,12 @@
     "injury": "Right Plantar Fascia Tear",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Derrick Jones",
+    "status": "Out",
+    "injury": "Right Knee Injury",
+    "date": "2026-11-02",
+    "prevStatus": "Left Game"
   }
 ]
