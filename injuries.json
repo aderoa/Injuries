@@ -43906,5 +43906,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "injury": "Cervical Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
