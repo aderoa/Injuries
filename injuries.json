@@ -43702,5 +43702,12 @@
     "date": "2026-11-01",
     "prevStatus": "Out",
     "eta": "3-4 weeks"
+  },
+  {
+    "player": "Rudy Gobert",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
