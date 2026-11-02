@@ -43737,5 +43737,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tim Hardaway Jr",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-01",
+    "prevStatus": "Available"
   }
 ]
