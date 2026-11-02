@@ -44062,5 +44062,12 @@
     "injury": "Left Quadriceps Soreness",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
