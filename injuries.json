@@ -43800,5 +43800,12 @@
     "injury": "Right Acromioclavicular Joint injury",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Reece Beekman",
+    "status": "Out",
+    "injury": "Right Acromioclavicular Joint Injury",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
   }
 ]
