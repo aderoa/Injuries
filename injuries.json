@@ -43573,5 +43573,12 @@
     "injury": "Right Hamstring Tightness / Soreness",
     "date": "2026-11-01",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Questionable",
+    "injury": "Right Hip Contusion",
+    "date": "2026-11-01",
+    "prevStatus": "Out"
   }
 ]
