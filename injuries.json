@@ -44310,5 +44310,12 @@
     "injury": "Bruised Left Knee",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Out",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
