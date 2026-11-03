@@ -44175,5 +44175,20 @@
     "injury": "Right Hip Contusion",
     "date": "2026-11-02",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Out",
+    "injury": "Right Knee Surgery",
+    "date": "2026-11-02",
+    "prevStatus": "Doubtful",
+    "eta": "1-2 weeks"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Doubtful"
   }
 ]
