@@ -44275,5 +44275,12 @@
     "injury": "Left Hip Contusion",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jose Alvarado",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
