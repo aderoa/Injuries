@@ -44261,5 +44261,19 @@
     "injury": "Right Wrist Contusion",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Available",
+    "injury": "Right Wrist Contusion",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Out",
+    "injury": "Left Hip Contusion",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
