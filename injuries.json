@@ -44083,5 +44083,12 @@
     "injury": "Personal Reasons",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Foot Plantar Fascia Injury Management",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
