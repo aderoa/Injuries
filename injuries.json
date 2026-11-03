@@ -44324,5 +44324,13 @@
     "injury": "Left Finger Sprain",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-11-03",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
