@@ -44090,5 +44090,12 @@
     "injury": "Right Foot Plantar Fascia Injury Management",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alpha Diallo",
+    "status": "Available",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
