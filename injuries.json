@@ -44076,5 +44076,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
