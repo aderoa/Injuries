@@ -44197,5 +44197,12 @@
     "injury": "Right Hip Injury",
     "date": "2026-11-02",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Out",
+    "injury": "Right Hamstring Tightness / Soreness",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
