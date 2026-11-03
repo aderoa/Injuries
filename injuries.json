@@ -44296,5 +44296,12 @@
     "injury": "Lower Back Soreness",
     "date": "2026-11-02",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
