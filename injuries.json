@@ -44097,5 +44097,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Left Finger Sprain",
+    "date": "2026-11-02",
+    "prevStatus": "Probable"
   }
 ]
