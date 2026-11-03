@@ -44168,5 +44168,12 @@
     "injury": "Right Shin Contusion",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Left Game",
+    "injury": "Right Hip Contusion",
+    "date": "2026-11-02",
+    "prevStatus": "Left Game"
   }
 ]
