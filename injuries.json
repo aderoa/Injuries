@@ -44104,5 +44104,20 @@
     "injury": "Left Finger Sprain",
     "date": "2026-11-02",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-11-02",
+    "prevStatus": "Doubtful",
+    "eta": "2-3 weeks"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-02",
+    "prevStatus": "Probable"
   }
 ]
