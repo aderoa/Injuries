@@ -44133,5 +44133,12 @@
     "injury": "Illness",
     "date": "2026-11-02",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Out",
+    "injury": "Left Quadriceps Contusio",
+    "date": "2026-11-02",
+    "prevStatus": "Available"
   }
 ]
