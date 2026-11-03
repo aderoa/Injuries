@@ -44190,5 +44190,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-11-02",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Left Game",
+    "injury": "Right Hip Injury",
+    "date": "2026-11-02",
+    "prevStatus": "Left Game"
   }
 ]
