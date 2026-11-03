@@ -44247,5 +44247,12 @@
     "injury": "Left Hip Contusion",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Out",
+    "injury": "Right Wrist Contusion",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
