@@ -44154,5 +44154,12 @@
     "injury": "Left Shoulder Bursitis",
     "date": "2026-11-02",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Available",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-02",
+    "prevStatus": "Questionable"
   }
 ]
