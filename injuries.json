@@ -44303,5 +44303,12 @@
     "injury": "",
     "date": "2026-11-02",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Out",
+    "injury": "Bruised Left Knee",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
   }
 ]
