@@ -44663,5 +44663,12 @@
     "injury": "Lumbar Disc Herniation",
     "date": "2026-11-02",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
