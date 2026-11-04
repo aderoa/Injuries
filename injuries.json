@@ -44360,5 +44360,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-11-03",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Coby White",
+    "status": "Probable",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
