@@ -44572,5 +44572,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Questionable",
+    "injury": "Left Shoulder Bursitis",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
