@@ -44474,5 +44474,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Precious Achiuwa",
+    "status": "Probable",
+    "injury": "",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
