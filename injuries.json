@@ -44417,5 +44417,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
