@@ -44424,5 +44424,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
