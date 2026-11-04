@@ -44670,5 +44670,12 @@
     "injury": "Personal Reasons",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan Poole",
+    "status": "Probable",
+    "injury": "Left Ankle Tendinopathy",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
