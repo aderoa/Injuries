@@ -44614,5 +44614,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
