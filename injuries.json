@@ -44431,5 +44431,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Out",
+    "injury": "Right Hip Injury",
+    "date": "2026-11-03",
+    "prevStatus": "Left Game"
   }
 ]
