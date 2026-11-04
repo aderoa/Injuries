@@ -44445,5 +44445,13 @@
     "injury": "Right Hip Soreness / Tightness",
     "date": "2026-11-03",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Questionable",
+    "injury": "Right Knee Surgery",
+    "date": "2026-11-03",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
