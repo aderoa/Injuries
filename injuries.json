@@ -44621,5 +44621,12 @@
     "injury": "Illness",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ivica Zubac",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
