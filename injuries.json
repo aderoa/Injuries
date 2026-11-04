@@ -44453,5 +44453,12 @@
     "date": "2026-11-03",
     "prevStatus": "Out",
     "eta": "1-2 weeks"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Available",
+    "injury": "League Suspension",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
