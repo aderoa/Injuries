@@ -44523,5 +44523,12 @@
     "injury": "Right Quadriceps Contusion",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Probable",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
