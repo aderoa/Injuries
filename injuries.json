@@ -44565,5 +44565,12 @@
     "injury": "Lower Body Injury Management",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alpha Diallo",
+    "status": "Probable",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
