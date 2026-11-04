@@ -44656,5 +44656,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Out",
+    "injury": "Lumbar Disc Herniation",
+    "date": "2026-11-02",
+    "prevStatus": "Out"
   }
 ]
