@@ -44733,5 +44733,12 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-11-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Out",
+    "injury": "Left Hip Contusion",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
