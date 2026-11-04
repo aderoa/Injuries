@@ -44712,5 +44712,12 @@
     "injury": "",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
