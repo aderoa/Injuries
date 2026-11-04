@@ -44762,5 +44762,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-11-04",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Myron Gardner",
+    "status": "Available",
+    "injury": "Right Quadriceps Contusion",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
