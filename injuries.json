@@ -44593,5 +44593,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
