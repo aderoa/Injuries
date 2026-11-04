@@ -44719,5 +44719,12 @@
     "injury": "Illness",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Out",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
