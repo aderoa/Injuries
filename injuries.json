@@ -44691,5 +44691,12 @@
     "injury": "",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kam Jones",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
