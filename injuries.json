@@ -44530,5 +44530,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
