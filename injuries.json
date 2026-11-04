@@ -44747,5 +44747,13 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Doubtful",
+    "injury": "Right Knee Surgery",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable",
+    "eta": "1-2 weeks"
   }
 ]
