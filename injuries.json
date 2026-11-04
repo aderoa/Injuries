@@ -44516,5 +44516,12 @@
     "injury": "",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Myron Gardner",
+    "status": "Questionable",
+    "injury": "Right Quadriceps Contusion",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
