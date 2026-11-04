@@ -44339,5 +44339,12 @@
     "injury": "Rest",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "Rest",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
