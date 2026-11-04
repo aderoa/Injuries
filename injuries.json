@@ -44346,5 +44346,12 @@
     "injury": "Rest",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
