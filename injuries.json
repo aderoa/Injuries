@@ -44367,5 +44367,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Coby White",
+    "status": "Probable",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-11-03",
+    "prevStatus": "Probable"
   }
 ]
