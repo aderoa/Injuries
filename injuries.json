@@ -44353,5 +44353,12 @@
     "injury": "",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Questionable",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-11-03",
+    "prevStatus": "Questionable"
   }
 ]
