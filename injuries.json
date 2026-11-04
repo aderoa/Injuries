@@ -44495,5 +44495,12 @@
     "injury": "",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mo Bamba",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
