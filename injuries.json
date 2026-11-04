@@ -44374,5 +44374,13 @@
     "injury": "Left Calf Injury Management",
     "date": "2026-11-03",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kon Knueppel",
+    "status": "Probable",
+    "injury": "Left Hamstring Injury",
+    "date": "2026-11-03",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
