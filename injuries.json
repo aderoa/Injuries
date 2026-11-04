@@ -44438,5 +44438,12 @@
     "injury": "Right Hip Injury",
     "date": "2026-11-03",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Out",
+    "injury": "Right Hip Soreness / Tightness",
+    "date": "2026-11-03",
+    "prevStatus": "Left Game"
   }
 ]
