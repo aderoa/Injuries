@@ -44403,5 +44403,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
