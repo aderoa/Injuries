@@ -44684,5 +44684,12 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kam Jones",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
