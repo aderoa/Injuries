@@ -44600,5 +44600,19 @@
     "injury": "Rest",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Cervical Injury Management",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-03",
+    "prevStatus": "Out"
   }
 ]
