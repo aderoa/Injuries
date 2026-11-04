@@ -44396,5 +44396,12 @@
     "injury": "Right Wrist Soreness",
     "date": "2026-11-03",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylin Williams",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
