@@ -44389,5 +44389,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-03",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylin Williams",
+    "status": "Questionable",
+    "injury": "Right Wrist Soreness",
+    "date": "2026-11-03",
+    "prevStatus": "Available"
   }
 ]
