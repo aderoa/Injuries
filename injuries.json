@@ -45051,5 +45051,12 @@
     "injury": "Left Groin Soreness",
     "date": "2026-11-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Available",
+    "injury": "Left Quadriceps Contusion",
+    "date": "2026-11-04",
+    "prevStatus": "Out"
   }
 ]
