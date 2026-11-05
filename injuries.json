@@ -44769,5 +44769,12 @@
     "injury": "Right Quadriceps Contusion",
     "date": "2026-11-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Asa Newell",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
