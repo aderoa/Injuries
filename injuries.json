@@ -44783,5 +44783,12 @@
     "injury": "Left Great Toe Hyperextension",
     "date": "2026-11-04",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Left Game",
+    "injury": "Left Finger Sprain",
+    "date": "2026-11-04",
+    "prevStatus": "Probable"
   }
 ]
