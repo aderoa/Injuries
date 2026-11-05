@@ -44973,5 +44973,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Available",
+    "injury": "Left Shoulder Bursitis",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
