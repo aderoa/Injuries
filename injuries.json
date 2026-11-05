@@ -44966,5 +44966,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-11-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
