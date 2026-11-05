@@ -45065,5 +45065,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jordan Poole",
+    "status": "Available",
+    "injury": "Left Ankle Tendinopathy",
+    "date": "2026-11-04",
+    "prevStatus": "Probable"
   }
 ]
