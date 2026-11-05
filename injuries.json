@@ -45037,5 +45037,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
