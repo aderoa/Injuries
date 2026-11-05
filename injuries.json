@@ -44923,5 +44923,12 @@
     "injury": "Illness",
     "date": "2026-11-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Gill",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
