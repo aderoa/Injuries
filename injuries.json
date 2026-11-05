@@ -44797,5 +44797,12 @@
     "injury": "Left Hand Injury",
     "date": "2026-11-04",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Left Game",
+    "injury": "Left Hand Injury",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
