@@ -45044,5 +45044,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Jackson",
+    "status": "Available",
+    "injury": "Left Groin Soreness",
+    "date": "2026-11-04",
+    "prevStatus": "Questionable"
   }
 ]
