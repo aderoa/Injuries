@@ -45093,5 +45093,12 @@
     "injury": "Lower Body Injury Management",
     "date": "2026-11-05",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Available",
+    "injury": "Lower Body Injury Management",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
