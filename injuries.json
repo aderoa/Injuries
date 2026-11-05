@@ -44860,5 +44860,12 @@
     "injury": "Right Knee Injury",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
