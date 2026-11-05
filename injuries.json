@@ -44853,5 +44853,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Left Game",
+    "injury": "Right Knee Injury",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
