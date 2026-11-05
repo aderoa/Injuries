@@ -45079,5 +45079,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-11-04",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Coby White",
+    "status": "Available",
+    "injury": "Left Calf Injury Management",
+    "date": "2026-11-04",
+    "prevStatus": "Probable"
   }
 ]
