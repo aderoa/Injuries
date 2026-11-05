@@ -44818,5 +44818,12 @@
     "injury": "Right Knee Injury",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kon Knueppel",
+    "status": "Left Game",
+    "injury": "Left Hamstring Injury",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
