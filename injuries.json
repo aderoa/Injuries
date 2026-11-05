@@ -44804,5 +44804,12 @@
     "injury": "Left Hand Injury",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Left Game",
+    "injury": "Right Patellar Tendinopathy",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
