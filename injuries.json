@@ -44832,5 +44832,12 @@
     "injury": "Left Leg Soreness",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Left Game",
+    "injury": "Illness",
+    "date": "2026-11-04",
+    "prevStatus": "Available"
   }
 ]
