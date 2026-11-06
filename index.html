@@ -1490,7 +1490,10 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   h3 += '</tbody></table>';
 
   // Table 4: Highest-Paid Injured
-  const topPaid = [...allInjured].sort((a,b) => b.salary - a.salary).slice(0,25);
+  // OUT AND DOUBTFUL ONLY (2026-11-06), the same two the injured-salary table
+  // counts: a Questionable or Probable player is expected to play.
+  const topPaid = allInjured.filter(e => e.status === 'Out' || e.status === 'Doubtful')
+    .sort((a,b) => b.salary - a.salary).slice(0,25);
   // 0 IS A NUMBER: a player whose last game was today read as blank. A blank
   // now means only that the Injuries sheet's days block (cols BT/BV) has no row for him.
   const noDays = topPaid.filter(e => e.days === null).map(e => e.player);

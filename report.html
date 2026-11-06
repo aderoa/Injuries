@@ -118,7 +118,8 @@ const TAB=params.has('tab')?parseInt(params.get('tab')):-1;
     sections.push(h3);
 
     // === Table 3: Highest-Paid Injured ===
-    const top=[...allInj].sort((a,b)=>b.salary-a.salary).slice(0,25);
+    // Out and Doubtful only (2026-11-06), as in the injured-salary table above.
+    const top=allInj.filter(e=>e.status==='Out'||e.status==='Doubtful').sort((a,b)=>b.salary-a.salary).slice(0,25);
     let h4='<h2>Highest-paid injured players</h2><table><thead><tr><th></th><th>PLAYER</th><th>SALARY</th><th>DAYS SINCE LAST GAME</th></tr></thead><tbody>';
     top.forEach((e,i)=>{h4+=`<tr class="${i%2?'odd':''}"><td>${logoImg(e.team)}</td><td><strong>${e.player}</strong></td><td>${fmtSalFull(e.salary)}</td><td>${e.days==null?'':e.days}</td></tr>`});
     h4+='</tbody></table>';
