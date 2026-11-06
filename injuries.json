@@ -45346,5 +45346,12 @@
     "injury": "Right Eye Abrasion",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Available",
+    "injury": "Bilateral Patella Tendinopathy",
+    "date": "2026-11-06",
+    "prevStatus": "Probable"
   }
 ]
