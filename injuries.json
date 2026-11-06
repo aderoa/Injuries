@@ -45416,5 +45416,13 @@
     "injury": "Illness",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Asa Newell",
+    "status": "Out",
+    "injury": "Left Great Toe Hyperextension",
+    "date": "2026-11-05",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
