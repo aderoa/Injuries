@@ -45269,5 +45269,12 @@
     "injury": "",
     "date": "2026-11-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyrese Proctor",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
