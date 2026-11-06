@@ -45255,5 +45255,19 @@
     "injury": "Right Hamstring Tightness / Soreness",
     "date": "2026-11-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Questionable",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-11-05",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyrese Proctor",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
