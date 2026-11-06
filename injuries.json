@@ -45439,5 +45439,12 @@
     "injury": "Illness",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Sandro Mamukelashvili",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
