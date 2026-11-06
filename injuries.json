@@ -45199,5 +45199,12 @@
     "injury": "",
     "date": "2026-11-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keshon Gilbert",
+    "status": "Out",
+    "injury": "Left Knee Inflammation",
+    "date": "2026-11-05",
+    "prevStatus": "Out"
   }
 ]
