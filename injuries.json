@@ -45388,5 +45388,12 @@
     "injury": "Right Hamstring Tightness / Soreness",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Out",
+    "injury": "Left Hip Contusion",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
