@@ -45100,5 +45100,12 @@
     "injury": "Lower Body Injury Management",
     "date": "2026-11-04",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Probable",
+    "injury": "Bilateral Patella Tendinopathy",
+    "date": "2026-11-05",
+    "prevStatus": "Out"
   }
 ]
