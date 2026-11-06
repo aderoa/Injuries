@@ -45107,5 +45107,12 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-05",
+    "prevStatus": "Out"
   }
 ]
