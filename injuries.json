@@ -45248,5 +45248,12 @@
     "injury": "Right Quadriceps Tendinopathy",
     "date": "2026-11-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Questionable",
+    "injury": "Right Hamstring Tightness / Soreness",
+    "date": "2026-11-05",
+    "prevStatus": "Out"
   }
 ]
