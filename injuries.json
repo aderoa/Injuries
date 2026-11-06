@@ -45185,5 +45185,12 @@
     "injury": "Left Great Toe Hyperextension",
     "date": "2026-11-05",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-05",
+    "prevStatus": "Out"
   }
 ]
