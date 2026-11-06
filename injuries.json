@@ -45163,5 +45163,13 @@
     "injury": "Right Knee Bone Bruise",
     "date": "2026-11-05",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Probable",
+    "injury": "Right Knee Surgery",
+    "date": "2026-11-05",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
