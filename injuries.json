@@ -45304,5 +45304,12 @@
     "injury": "Illness",
     "date": "2026-11-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
