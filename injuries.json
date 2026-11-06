@@ -45409,5 +45409,12 @@
     "injury": "Left Leg Soreness",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
