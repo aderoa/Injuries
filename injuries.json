@@ -45325,5 +45325,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-11-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Sandro Mamukelashvili",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
