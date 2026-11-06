@@ -45276,5 +45276,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Left Game",
+    "injury": "Right Knee Contusion",
+    "date": "2026-11-04",
+    "prevStatus": "Left Game"
   }
 ]
