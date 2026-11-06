@@ -45234,5 +45234,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-11-05",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
