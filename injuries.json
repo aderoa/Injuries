@@ -45446,5 +45446,12 @@
     "injury": "Illness",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
