@@ -45297,5 +45297,12 @@
     "injury": "Left Ankle Fracture",
     "date": "2026-11-05",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Daeqwon Plowden",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-05",
+    "prevStatus": "Out"
   }
 ]
