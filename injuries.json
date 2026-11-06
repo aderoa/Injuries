@@ -45332,5 +45332,12 @@
     "injury": "Illness",
     "date": "2026-11-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
