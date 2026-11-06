@@ -45339,5 +45339,12 @@
     "injury": "Illness",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Payton Pritchard",
+    "status": "Available",
+    "injury": "Right Eye Abrasion",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
