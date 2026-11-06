@@ -45135,5 +45135,12 @@
     "injury": "Cervical Spine Sprain",
     "date": "2026-11-05",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Anthony Davis",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
