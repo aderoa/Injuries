@@ -45318,5 +45318,12 @@
     "injury": "Left Adductor / Groin Soreness / Tightness",
     "date": "2026-11-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Adou Thiero",
+    "status": "Available",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-05",
+    "prevStatus": "Out"
   }
 ]
