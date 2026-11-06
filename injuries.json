@@ -45121,5 +45121,12 @@
     "injury": "Right Eye Abrasion",
     "date": "2026-11-05",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Doubtful",
+    "injury": "Left Foot Sprain",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
