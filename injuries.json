@@ -45128,5 +45128,12 @@
     "injury": "Left Foot Sprain",
     "date": "2026-11-05",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Doubtful",
+    "injury": "Cervical Spine Sprain",
+    "date": "2026-11-05",
+    "prevStatus": "Doubtful"
   }
 ]
