@@ -45360,5 +45360,12 @@
     "injury": "Left h",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Probable",
+    "injury": "Right Hamstring Tightness / Soreness",
+    "date": "2026-11-06",
+    "prevStatus": "Probable"
   }
 ]
