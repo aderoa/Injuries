@@ -45149,5 +45149,12 @@
     "injury": "Left Hip Contusion",
     "date": "2026-11-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Out",
+    "injury": "Right Knee Injury",
+    "date": "2026-11-05",
+    "prevStatus": "Left Game"
   }
 ]
