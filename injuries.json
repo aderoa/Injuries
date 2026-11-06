@@ -45395,5 +45395,19 @@
     "injury": "Left Hip Contusion",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Out",
+    "injury": "Right Quadriceps Tendinopathy",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Out",
+    "injury": "Left Leg Soreness",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
