@@ -45353,5 +45353,12 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-06",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Probable",
+    "injury": "Left h",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
