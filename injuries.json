@@ -45206,5 +45206,12 @@
     "injury": "Left Knee Inflammation",
     "date": "2026-11-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
