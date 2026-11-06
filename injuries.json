@@ -45220,5 +45220,12 @@
     "injury": "Left Leg Soreness",
     "date": "2026-11-05",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kon Knueppel",
+    "status": "Out",
+    "injury": "Left Leg Soreness",
+    "date": "2026-11-05",
+    "prevStatus": "Left Game"
   }
 ]
