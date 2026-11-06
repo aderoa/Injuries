@@ -45192,5 +45192,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-05",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keshon Gilbert",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-05",
+    "prevStatus": "Available"
   }
 ]
