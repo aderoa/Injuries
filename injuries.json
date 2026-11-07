@@ -45657,5 +45657,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Andre Hunter",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
