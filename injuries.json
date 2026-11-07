@@ -45686,5 +45686,12 @@
     "injury": "Illness",
     "date": "2026-11-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Out",
+    "injury": "Right Elbow Injury",
+    "date": "2026-11-07",
+    "prevStatus": "Left Game"
   }
 ]
