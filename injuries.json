@@ -45517,5 +45517,12 @@
     "date": "2026-11-06",
     "prevStatus": "Out",
     "eta": "Day-to-day"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Out",
+    "injury": "Cervical Spine Sprain",
+    "date": "2026-11-06",
+    "prevStatus": "Doubtful"
   }
 ]
