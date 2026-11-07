@@ -45629,5 +45629,12 @@
     "injury": "Right Elbow Injury",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Miller",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
