@@ -45650,5 +45650,12 @@
     "injury": "Cervical Strain",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
