@@ -45721,5 +45721,12 @@
     "injury": "",
     "date": "2026-11-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Desmond Bane",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-07",
+    "prevStatus": "Available"
   }
 ]
