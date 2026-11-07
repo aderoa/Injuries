@@ -45467,5 +45467,12 @@
     "injury": "Nasal Fracture",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Out",
+    "injury": "Right Hamstring Tightness / Soreness",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
