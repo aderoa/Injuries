@@ -45573,5 +45573,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyrese Proctor",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
