@@ -45481,5 +45481,19 @@
     "injury": "Left Shoulder Bursitis",
     "date": "2026-11-06",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Out",
+    "injury": "Left Adductor / Groin Soreness / Tightness",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyle Anderson",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-06",
+    "prevStatus": "Questionable"
   }
 ]
