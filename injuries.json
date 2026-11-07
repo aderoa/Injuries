@@ -45735,5 +45735,12 @@
     "injury": "Left Calf Contusion",
     "date": "2026-11-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-07",
+    "prevStatus": "Questionable"
   }
 ]
