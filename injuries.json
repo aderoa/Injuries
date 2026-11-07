@@ -45531,5 +45531,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-11-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Rasheer Fleming",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-06",
+    "prevStatus": "Out"
   }
 ]
