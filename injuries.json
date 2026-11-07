@@ -45601,5 +45601,26 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-06",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Available",
+    "injury": "Right Knee Surgery",
+    "date": "2026-11-06",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Available",
+    "injury": "Right Hip Soreness / Tightness",
+    "date": "2026-11-06",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-06",
+    "prevStatus": "Probable"
   }
 ]
