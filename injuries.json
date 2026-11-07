@@ -45679,5 +45679,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-07",
+    "prevStatus": "Left Game"
   }
 ]
