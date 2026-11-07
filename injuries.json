@@ -45643,5 +45643,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Out",
+    "injury": "Cervical Strain",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
