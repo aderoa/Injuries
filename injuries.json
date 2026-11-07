@@ -45700,5 +45700,12 @@
     "injury": "Right Elbow Injury Management",
     "date": "2026-11-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Probable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-07",
+    "prevStatus": "Out"
   }
 ]
