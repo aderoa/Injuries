@@ -45664,5 +45664,13 @@
     "injury": "Illness",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "status": "Out",
+    "injury": "Lumbar Disc Herniation",
+    "date": "2026-11-02",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
