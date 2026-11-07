@@ -45524,5 +45524,12 @@
     "injury": "Cervical Spine Sprain",
     "date": "2026-11-06",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Doubtful",
+    "injury": "Right Calf Soreness",
+    "date": "2026-11-06",
+    "prevStatus": "Out"
   }
 ]
