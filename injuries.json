@@ -45806,5 +45806,12 @@
     "injury": "Back Tightness",
     "date": "2026-11-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Questionable",
+    "injury": "Low Back Tightness",
+    "date": "2026-11-07",
+    "prevStatus": "Available"
   }
 ]
