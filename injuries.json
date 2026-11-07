@@ -45742,5 +45742,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-07",
+    "prevStatus": "Available"
   }
 ]
