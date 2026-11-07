@@ -45552,5 +45552,12 @@
     "injury": "Right Calf Tightness / Soreness",
     "date": "2026-11-06",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Questionable",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
