@@ -45587,5 +45587,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-11-06",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Spencer Jones",
+    "status": "Available",
+    "injury": "Bilateral Hamstring Injury Management",
+    "date": "2026-11-06",
+    "prevStatus": "Out"
   }
 ]
