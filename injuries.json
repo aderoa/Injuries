@@ -45777,5 +45777,12 @@
     "injury": "Left Finger Sprain",
     "date": "2026-11-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Zach Collins",
+    "status": "Out",
+    "injury": "Respiratory Illness",
+    "date": "2026-11-07",
+    "prevStatus": "Available"
   }
 ]
