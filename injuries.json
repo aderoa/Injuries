@@ -45460,5 +45460,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joan Beringer",
+    "status": "Left Game",
+    "injury": "Nasal Fracture",
+    "date": "2026-11-06",
+    "prevStatus": "Available"
   }
 ]
