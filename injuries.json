@@ -45474,5 +45474,12 @@
     "injury": "Right Hamstring Tightness / Soreness",
     "date": "2026-11-06",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "status": "Available",
+    "injury": "Left Shoulder Bursitis",
+    "date": "2026-11-06",
+    "prevStatus": "Probable"
   }
 ]
