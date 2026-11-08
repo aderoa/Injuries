@@ -45862,5 +45862,12 @@
     "injury": "Right Elbow Inflammation / Soreness",
     "date": "2026-11-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Johnson",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-07",
+    "prevStatus": "Probable"
   }
 ]
