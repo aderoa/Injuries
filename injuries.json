@@ -45876,5 +45876,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Out",
+    "injury": "Right Calf Soreness",
+    "date": "2026-11-07",
+    "prevStatus": "Doubtful"
   }
 ]
