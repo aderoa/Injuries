@@ -46039,5 +46039,13 @@
     "injury": "Right Hip Strain",
     "date": "2026-11-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dennis Schroeder",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-11-06",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
