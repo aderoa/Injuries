@@ -45820,5 +45820,12 @@
     "injury": "Lower Leg Injury",
     "date": "2026-11-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Terrence Shannon",
+    "status": "Available",
+    "injury": "Left Hip Contusion",
+    "date": "2026-11-07",
+    "prevStatus": "Out"
   }
 ]
