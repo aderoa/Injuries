@@ -45940,5 +45940,13 @@
     "injury": "Right Shoulder Inflammation / Soreness",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Duren",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-10-24",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
