@@ -46125,5 +46125,12 @@
     "injury": "Left Shin / Tibia Contusion",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Jokic",
+    "status": "Questionable",
+    "injury": "Right Elbow Sprain",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
