@@ -1368,14 +1368,30 @@ function generateInjuryReport(btn) {
       return a.name.localeCompare(b.name);
     });
 
-    const descriptions = players.map(p => describeTransition(p.name, p.mod, p.prevStatus));
+    // ONE VERB PER KIND OF CHANGE (2026-11-08): "upgraded A to available and
+    // B to questionable", not "upgraded A ... and upgraded B ...". Players
+    // sharing a verb are gathered under it, in the order the verbs first come.
+    const byVerb = {}, verbs = [];
+    for (const p of players) {
+      const d = describeTransition(p.name, p.mod, p.prevStatus);
+      const sp = d.indexOf(' ');
+      const verb = d.slice(0, sp), rest = d.slice(sp + 1);
+      if (!byVerb[verb]) { byVerb[verb] = []; verbs.push(verb); }
+      byVerb[verb].push(rest);
+    }
+    const listOf = xs => xs.length === 1 ? xs[0]
+      : xs.slice(0, -1).join(', ') + ' and ' + xs[xs.length - 1];
+    const descriptions = verbs.map(v => v + ' ' + listOf(byVerb[v]));
 
     // Build: "The Bulls have upgraded X to available, downgraded Y to out, and listed Z as questionable."
     let teamText;
     if (descriptions.length === 1) {
       teamText = `The ${nickname} have ${descriptions[0]}.`;
     } else if (descriptions.length === 2) {
-      teamText = `The ${nickname} have ${descriptions[0]} and ${descriptions[1]}.`;
+      // A comma before the second verb when the first already holds an "and"
+      // ("upgraded A and B, and listed C") so the two lists stay apart.
+      const sep = byVerb[verbs[0]].length > 1 ? ', and ' : ' and ';
+      teamText = `The ${nickname} have ${descriptions[0]}${sep}${descriptions[1]}.`;
     } else {
       const allButLast = descriptions.slice(0, -1).join(', ');
       teamText = `The ${nickname} have ${allButLast}, and ${descriptions[descriptions.length - 1]}.`;
