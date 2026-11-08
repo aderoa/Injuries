@@ -46032,5 +46032,12 @@
     "injury": "Right Groin Soreness",
     "date": "2026-11-08",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Brandon Miller",
+    "status": "Out",
+    "injury": "Right Hip Strain",
+    "date": "2026-11-08",
+    "prevStatus": "Out"
   }
 ]
