@@ -45969,5 +45969,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
