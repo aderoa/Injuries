@@ -45890,5 +45890,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Probable",
+    "injury": "Right Foot Plantar Fascia Injury Management",
+    "date": "2026-11-07",
+    "prevStatus": "Available"
   }
 ]
