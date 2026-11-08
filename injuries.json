@@ -46132,5 +46132,12 @@
     "injury": "Right Elbow Sprain",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Questionable",
+    "injury": "Lower Body Injury Management",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
