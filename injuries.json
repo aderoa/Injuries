@@ -45925,5 +45925,13 @@
     "injury": "Illness",
     "date": "2026-11-07",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Questionable",
+    "injury": "Left Ankle Capsulitis",
+    "date": "2026-11-07",
+    "prevStatus": "Out",
+    "eta": "10-20 days"
   }
 ]
