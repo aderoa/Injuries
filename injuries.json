@@ -46004,5 +46004,12 @@
     "injury": "Back Injury Management",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Available",
+    "injury": "Left MCL Sprain",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
