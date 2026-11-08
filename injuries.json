@@ -46069,5 +46069,19 @@
     "injury": "Left Ankle Capsulitis",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Questionable",
+    "injury": "Left Adductor / Groin Soreness / Tightness",
+    "date": "2026-11-08",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Questionable",
+    "injury": "Right Hamstring Tightness / Soreness",
+    "date": "2026-11-08",
+    "prevStatus": "Out"
   }
 ]
