@@ -45911,5 +45911,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Noah Clowney",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-07",
+    "prevStatus": "Questionable"
   }
 ]
