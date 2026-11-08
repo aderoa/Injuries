@@ -45848,5 +45848,12 @@
     "injury": "Left Knee Tendinitis",
     "date": "2026-11-07",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Available",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-11-07",
+    "prevStatus": "Questionable"
   }
 ]
