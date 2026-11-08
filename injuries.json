@@ -45990,5 +45990,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Out",
+    "injury": "Right Shoulder Inflammation / Soreness",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
