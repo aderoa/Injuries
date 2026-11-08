@@ -46146,5 +46146,12 @@
     "injury": "Lower Body Injury Management",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
