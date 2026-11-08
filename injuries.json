@@ -45955,5 +45955,12 @@
     "injury": "Illness",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joan Beringer",
+    "status": "Available",
+    "injury": "Nasal Fracture",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
