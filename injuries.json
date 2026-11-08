@@ -45841,5 +45841,12 @@
     "injury": "Nasal Fracture",
     "date": "2026-11-07",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Available",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-11-07",
+    "prevStatus": "Questionable"
   }
 ]
