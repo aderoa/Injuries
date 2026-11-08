@@ -46025,5 +46025,12 @@
     "injury": "Right Foot Plantar Fascia Injury Management",
     "date": "2026-11-08",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Brandon Miller",
+    "status": "Out",
+    "injury": "Right Groin Soreness",
+    "date": "2026-11-08",
+    "prevStatus": "Left Game"
   }
 ]
