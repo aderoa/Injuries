@@ -45813,5 +45813,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-07",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Left Game",
+    "injury": "Lower Leg Injury",
+    "date": "2026-11-07",
+    "prevStatus": "Available"
   }
 ]
