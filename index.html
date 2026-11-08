@@ -1303,27 +1303,42 @@ function describeTransition(name, mod, prevStatus) {
   return `listed ${name}${injury} as ${newStatus.toLowerCase()}`;
 }
 
-function generateInjuryReport(btn) {
-  // Use current modifications if any, otherwise fall back to last synced changes
-  let changes = [];
-  const modEntries = Object.entries(modifications);
+// THE LAST 10 UPDATES, NOT JUST THE LAST SYNC (2026-11-08).
+//
+// The report used to be built from the edits not yet pushed, or failing that
+// from the last push -- which after a reload was nothing at all, so the button
+// said "No modifications to report" on a page full of the day's news. It now
+// walks the injury list from the newest entry back, unsaved edits included
+// (they are at the end of buildMergedJSON()), and takes the 10 most recent
+// updates, one per player: a player updated twice counts once, at his latest.
+const REPORT_UPDATES = 10;
 
-  if (modEntries.length > 0) {
-    // Unsaved changes — build from modifications
-    for (const [name, mod] of modEntries) {
-      changes.push({
-        name,
-        status: mod.status,
-        injury: mod.injury || '',
-        prevStatus: mod.prevStatus || (latestStatus[name] || {}).status || 'Available',
-        team: (roster[name] || {}).team || 'Unknown'
-      });
+function generateInjuryReport(btn) {
+  const merged = buildMergedJSON();
+  const changes = [];
+  const seen = new Set();
+  for (let i = merged.length - 1; i >= 0 && changes.length < REPORT_UPDATES; i--) {
+    const e = merged[i];
+    if (!e || !e.player || seen.has(e.player)) continue;
+    seen.add(e.player);
+    const r = roster[e.player];
+    if (!r || !r.team) continue;              // not on a roster: nothing to say
+    // The status before this update: the entry's own, else the one before it.
+    let prev = e.prevStatus;
+    if (prev == null) {
+      for (let j = i - 1; j >= 0; j--) {
+        if (merged[j].player === e.player) { prev = merged[j].status; break; }
+      }
     }
-  } else if (lastSyncedChanges.length > 0) {
-    // Modifications already pushed — use captured snapshot
-    changes = lastSyncedChanges;
-  } else {
-    alert('No modifications to report. Make changes, then click Generate Report (before or after sync).');
+    if (prev == null) prev = 'Available';
+    // Not news: back to Available from Available, or nothing changed at all.
+    if (e.status === prev && !e.injury) continue;
+    if (e.status === 'Available' && prev === 'Available') continue;
+    changes.push({ name: e.player, status: e.status, injury: e.injury || '',
+                   prevStatus: prev, team: r.team, rank: changes.length });
+  }
+  if (!changes.length) {
+    alert('No injury updates to report yet.');
     return;
   }
 
@@ -1335,7 +1350,11 @@ function generateInjuryReport(btn) {
   }
 
   const paragraphs = [];
-  const sortedTeams = Object.keys(byTeam).sort();
+  // ONE ITEM PER TEAM, the team with the newest update first: two injuries on
+  // one club are one sentence, wherever in the 10 they fell.
+  const newest = {};
+  for (const c of changes) if (!(c.team in newest)) newest[c.team] = c.rank;
+  const sortedTeams = Object.keys(byTeam).sort((a, b) => newest[a] - newest[b]);
 
   for (const team of sortedTeams) {
     const players = byTeam[team];
