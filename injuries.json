@@ -45962,5 +45962,12 @@
     "injury": "Nasal Fracture",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Out",
+    "injury": "Low Back Tightness",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
