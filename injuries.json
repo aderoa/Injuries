@@ -46288,5 +46288,12 @@
     "date": "2026-10-20",
     "prevStatus": "Out",
     "eta": "9-12 months"
+  },
+  {
+    "player": "Domantas Sabonis",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
