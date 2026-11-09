@@ -46414,5 +46414,12 @@
     "injury": "Right Elbow Sprain",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Probable",
+    "injury": "Left Shin / Tibia Contusion",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
