@@ -46295,5 +46295,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
