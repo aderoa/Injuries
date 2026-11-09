@@ -46195,5 +46195,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Questionable",
+    "injury": "Right Calf Soreness",
+    "date": "2026-11-08",
+    "prevStatus": "Out"
   }
 ]
