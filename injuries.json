@@ -46167,5 +46167,12 @@
     "injury": "Left Calf Contusion / Illness",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
