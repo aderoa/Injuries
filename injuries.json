@@ -46202,5 +46202,12 @@
     "injury": "Right Calf Soreness",
     "date": "2026-11-08",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Questionable",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
