@@ -46351,5 +46351,12 @@
     "injury": "Illness",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Out",
+    "injury": "Left Adductor Tightness",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
