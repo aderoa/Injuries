@@ -46344,5 +46344,12 @@
     "injury": "",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
