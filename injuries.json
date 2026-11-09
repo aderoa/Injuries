@@ -46230,5 +46230,12 @@
     "injury": "Left Adductor Tightness",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Richie Saunders",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
