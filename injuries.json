@@ -46323,5 +46323,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
