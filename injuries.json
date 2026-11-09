@@ -46272,5 +46272,13 @@
     "injury": "Left Thumb UCL Tear",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Out",
+    "injury": "Left Thumb UCL Tear",
+    "date": "2026-11-08",
+    "prevStatus": "Out",
+    "eta": "6-8 weeks"
   }
 ]
