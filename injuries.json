@@ -46216,5 +46216,12 @@
     "injury": "Illness",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
