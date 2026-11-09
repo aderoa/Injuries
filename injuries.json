@@ -46302,5 +46302,12 @@
     "injury": "Illness",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Oscar Tshiebwe",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
