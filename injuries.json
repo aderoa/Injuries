@@ -46316,5 +46316,12 @@
     "injury": "Right Quadriceps Tendinopathy",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Luka Doncic",
+    "status": "Available",
+    "injury": "Low Back Tightness",
+    "date": "2026-11-09",
+    "prevStatus": "Out"
   }
 ]
