@@ -46309,5 +46309,12 @@
     "injury": "Illness",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Moussa Diabate",
+    "status": "Doubtful",
+    "injury": "Right Quadriceps Tendinopathy",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
