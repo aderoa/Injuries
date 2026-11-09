@@ -46209,5 +46209,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
