@@ -46258,5 +46258,12 @@
     "injury": "Left Knee Tendinitis",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
