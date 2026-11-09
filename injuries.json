@@ -46251,5 +46251,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-08",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Probable",
+    "injury": "Left Knee Tendinitis",
+    "date": "2026-11-08",
+    "prevStatus": "Available"
   }
 ]
