@@ -46365,5 +46365,12 @@
     "injury": "Left Hand Soreness",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Morez Johnson",
+    "status": "Questionable",
+    "injury": "Left Shin/Tibia Contusion",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
