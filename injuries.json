@@ -46379,5 +46379,40 @@
     "injury": "Left Shin / Tibia Contusion",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Christian Braun",
+    "status": "Probable",
+    "injury": "Left Calf Contusion / Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "status": "Probable",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Probable",
+    "injury": "Lower Body Injury Management",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Probable",
+    "injury": "Lower Body Injury Management",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Jokic",
+    "status": "Probable",
+    "injury": "Right Elbow Sprain",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
