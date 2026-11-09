@@ -46421,5 +46421,12 @@
     "injury": "Left Shin / Tibia Contusion",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Questionable",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
