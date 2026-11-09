@@ -46337,5 +46337,12 @@
     "injury": "Right Finger Sprain",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
