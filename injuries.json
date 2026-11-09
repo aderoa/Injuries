@@ -46244,5 +46244,12 @@
     "injury": "Right Knee Surgery",
     "date": "2026-11-08",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-11-08",
+    "prevStatus": "Questionable"
   }
 ]
