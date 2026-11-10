@@ -46778,5 +46778,12 @@
     "injury": "Rest",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Probable",
+    "injury": "Bilateral Patella Tendinopathy",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
