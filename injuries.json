@@ -46764,5 +46764,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
