@@ -46631,5 +46631,12 @@
     "injury": "Illness",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Out",
+    "injury": "Left Adductor / Groin Soreness / Tightness",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
