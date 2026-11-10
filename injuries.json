@@ -46596,5 +46596,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Morez Johnson",
+    "status": "Out",
+    "injury": "Left Shin / Tibia Contusion",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
