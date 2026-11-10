@@ -46934,5 +46934,13 @@
     "injury": "Right Calf Tightness / Soreness",
     "date": "2026-11-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Egor Demin",
+    "status": "Probable",
+    "injury": "Right Leg Bone Bruise",
+    "date": "2026-11-10",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
