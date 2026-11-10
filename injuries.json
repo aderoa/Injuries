@@ -46442,5 +46442,12 @@
     "injury": "Head Injury",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Left Game",
+    "injury": "Left Quadriceps Contusion",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
