@@ -46949,5 +46949,12 @@
     "injury": "Left Adductor Tightness",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-10",
+    "prevStatus": "Doubtful"
   }
 ]
