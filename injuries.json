@@ -46680,5 +46680,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Available",
+    "injury": "Right Knee Contusion",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
