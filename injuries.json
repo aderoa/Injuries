@@ -46589,5 +46589,12 @@
     "injury": "",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Cam Christie",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
