@@ -46561,5 +46561,12 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-09",
+    "prevStatus": "Out"
   }
 ]
