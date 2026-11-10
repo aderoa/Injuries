@@ -46540,5 +46540,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Questionable",
+    "injury": "Left Ankle Capsulitis",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
