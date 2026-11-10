@@ -46963,5 +46963,12 @@
     "injury": "Illness",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Quentin Grimes",
+    "status": "Questionable",
+    "injury": "Right Finger Sprain",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
