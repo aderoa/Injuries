@@ -46836,5 +46836,12 @@
     "injury": "Lower Leg Injury",
     "date": "2026-11-10",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Bilal Coulibaly",
+    "status": "Available",
+    "injury": "Left Hand Soreness",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
