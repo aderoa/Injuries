@@ -46435,5 +46435,12 @@
     "injury": "Left Knee Inflammation",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Left Game",
+    "injury": "Head Injury",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
