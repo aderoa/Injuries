@@ -46899,5 +46899,12 @@
     "injury": "Right Shoulder Inflammation / Soreness",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
