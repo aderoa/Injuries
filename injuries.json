@@ -46617,5 +46617,19 @@
     "injury": "Left Hip Strain",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Out",
+    "injury": "Right Hamstring Tightness / Soreness",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
