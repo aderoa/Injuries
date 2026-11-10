@@ -46729,5 +46729,12 @@
     "injury": "Left Knee Tendinitis",
     "date": "2026-11-09",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
