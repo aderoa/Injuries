@@ -46743,5 +46743,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-11-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kel'el Ware",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-10",
+    "prevStatus": "Available"
   }
 ]
