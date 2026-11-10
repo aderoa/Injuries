@@ -46652,5 +46652,12 @@
     "injury": "Rest",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Davis",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
