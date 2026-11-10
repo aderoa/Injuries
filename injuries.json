@@ -46715,5 +46715,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
