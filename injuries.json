@@ -46491,5 +46491,33 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamal Murray",
+    "status": "Available",
+    "injury": "Left Shin / Tibia Contusion",
+    "date": "2026-11-09",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Nikola Jokic",
+    "status": "Available",
+    "injury": "Right Elbow Sprain",
+    "date": "2026-11-09",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Cameron Johnson",
+    "status": "Available",
+    "injury": "Lower Body Injury Management",
+    "date": "2026-11-09",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Aaron Gordon",
+    "status": "Available",
+    "injury": "Lower Body Injury Management",
+    "date": "2026-11-09",
+    "prevStatus": "Probable"
   }
 ]
