@@ -46673,5 +46673,12 @@
     "injury": "Right Quadriceps Tendinopathy",
     "date": "2026-11-09",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Questionable",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-11-09",
+    "prevStatus": "Out"
   }
 ]
