@@ -46864,5 +46864,12 @@
     "injury": "Illness",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trayce Jackson-Davis",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-10",
+    "prevStatus": "Available"
   }
 ]
