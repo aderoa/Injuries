@@ -46645,5 +46645,12 @@
     "injury": "Right Ankle Soreness",
     "date": "2026-11-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
