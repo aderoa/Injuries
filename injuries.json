@@ -46885,5 +46885,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Available",
+    "injury": "Right Disc Irritation",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
