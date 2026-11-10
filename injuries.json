@@ -46519,5 +46519,19 @@
     "injury": "Lower Body Injury Management",
     "date": "2026-11-09",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-09",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Christian Braun",
+    "status": "Available",
+    "injury": "Left Calf Contusion / Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Probable"
   }
 ]
