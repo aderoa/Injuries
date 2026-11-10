@@ -46927,5 +46927,12 @@
     "injury": "Back Injury Management",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Questionable",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-11-10",
+    "prevStatus": "Available"
   }
 ]
