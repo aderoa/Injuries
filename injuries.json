@@ -46750,5 +46750,12 @@
     "injury": "",
     "date": "2026-11-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kel'el Ware",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
