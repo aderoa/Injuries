@@ -46920,5 +46920,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Available",
+    "injury": "Back Injury Management",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
