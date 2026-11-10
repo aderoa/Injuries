@@ -46829,5 +46829,12 @@
     "date": "2026-11-10",
     "prevStatus": "Out",
     "eta": "6-8 weeks"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Available",
+    "injury": "Lower Leg Injury",
+    "date": "2026-11-10",
+    "prevStatus": "Left Game"
   }
 ]
