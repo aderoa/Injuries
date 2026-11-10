@@ -46956,5 +46956,12 @@
     "injury": "Illness",
     "date": "2026-11-10",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
