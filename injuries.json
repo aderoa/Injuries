@@ -46610,5 +46610,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Available",
+    "injury": "Left Hip Strain",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
