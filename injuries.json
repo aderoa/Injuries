@@ -46970,5 +46970,12 @@
     "injury": "Right Finger Sprain",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "injury": "Right Knee Bone Bruise",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
