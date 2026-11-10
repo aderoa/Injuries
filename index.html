@@ -1542,7 +1542,11 @@ function buildPrestoTables(entries, lat, prv, usePurge) {
   return [h1, h2, h3, h4];
 }
 
-const PRESTO_CSS = '<style>\n'
+// PRESTO WANTS @scope. A <style> element in the body is refused unless its
+// rules sit inside an @scope rule ("Style rule ... not allowed outside an
+// @scope rule in a style element in body"). @scope with no selector scopes
+// to the style element's parent, which holds the table pasted beside it.
+const PRESTO_CSS = '<style>\n@scope {\n'
 + '.inj-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}\n'
 + '.inj-wrap h2{font-size:22px;font-weight:700;margin-bottom:10px;font-family:Arial,sans-serif}\n'
 + '.inj-tbl{border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;border:1px solid #ccc;width:100%}\n'
@@ -1560,6 +1564,7 @@ const PRESTO_CSS = '<style>\n'
 + '.s-quest{color:#eab308;font-weight:700;white-space:nowrap}\n'
 + '.s-doubt{color:#f97316;font-weight:700;white-space:nowrap}\n'
 + '.s-out{color:#ef4444;font-weight:700;white-space:nowrap}\n'
++ '}\n'
 + '<' + '/style>';
 
 function copyPrestoHTML(btn) {
