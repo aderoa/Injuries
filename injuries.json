@@ -46792,5 +46792,13 @@
     "injury": "Right Calf Injury Management",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-11-10",
+    "prevStatus": "Left Game",
+    "eta": "1-2 weeks"
   }
 ]
