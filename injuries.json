@@ -46575,5 +46575,12 @@
     "injury": "Left Groin Soreness",
     "date": "2026-11-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nick Martinelli",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
