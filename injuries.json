@@ -46554,5 +46554,12 @@
     "injury": "Right Wrist Soreness",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan Goodwin",
+    "status": "Out",
+    "injury": "Right Calf Injury Management",
+    "date": "2026-11-09",
+    "prevStatus": "Questionable"
   }
 ]
