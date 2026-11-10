@@ -46771,5 +46771,12 @@
     "injury": "Illness",
     "date": "2026-11-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
