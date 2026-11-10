@@ -46800,5 +46800,19 @@
     "date": "2026-11-10",
     "prevStatus": "Left Game",
     "eta": "1-2 weeks"
+  },
+  {
+    "player": "Domantas Sabonis",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Available",
+    "injury": "Right Wrist Soreness",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
