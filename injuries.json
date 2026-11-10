@@ -46913,5 +46913,12 @@
     "injury": "Respiratory Illness",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Questionable",
+    "injury": "Low Back Tightness",
+    "date": "2026-11-10",
+    "prevStatus": "Available"
   }
 ]
