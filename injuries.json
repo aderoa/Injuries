@@ -46977,5 +46977,12 @@
     "injury": "Right Knee Bone Bruise",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Out",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-10",
+    "prevStatus": "Left Game"
   }
 ]
