@@ -46814,5 +46814,12 @@
     "injury": "Right Wrist Soreness",
     "date": "2026-11-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Oscar Tshiebwe",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
