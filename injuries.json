@@ -46906,5 +46906,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach Collins",
+    "status": "Questionable",
+    "injury": "Respiratory Illness",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
