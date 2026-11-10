@@ -46456,5 +46456,12 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trendon Watford",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
