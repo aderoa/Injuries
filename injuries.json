@@ -46687,5 +46687,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-11-09",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Desmond Bane",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Out"
   }
 ]
