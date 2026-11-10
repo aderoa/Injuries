@@ -46878,5 +46878,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
