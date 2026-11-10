@@ -46533,5 +46533,12 @@
     "injury": "Left Calf Contusion / Illness",
     "date": "2026-11-09",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Domantas Sabonis",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-09",
+    "prevStatus": "Out"
   }
 ]
