@@ -46694,5 +46694,12 @@
     "injury": "Illness",
     "date": "2026-11-09",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Gary Trent Jr",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-09",
+    "prevStatus": "Out"
   }
 ]
