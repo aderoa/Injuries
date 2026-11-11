@@ -46998,5 +46998,12 @@
     "injury": "Concussion Protoco",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Kent",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-11-10",
+    "prevStatus": "Available"
   }
 ]
