@@ -47181,5 +47181,13 @@
     "injury": "Right Finger Sprain",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Probable",
+    "injury": "Left Thumb UCL Tear",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable",
+    "eta": "6-8 weeks"
   }
 ]
