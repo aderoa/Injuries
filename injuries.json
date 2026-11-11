@@ -47246,5 +47246,12 @@
     "injury": "Right Foot Injury",
     "date": "2026-11-11",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Chris Youngblood",
+    "status": "Out",
+    "injury": "Right Bone Bruise",
+    "date": "2026-11-11",
+    "prevStatus": "Left Game"
   }
 ]
