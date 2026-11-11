@@ -47224,5 +47224,13 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Vit Krejci",
+    "status": "Out",
+    "injury": "Left Ankle Fracture",
+    "date": "2026-11-05",
+    "prevStatus": "Out",
+    "eta": "8-12 weeks"
   }
 ]
