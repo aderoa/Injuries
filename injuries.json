@@ -47131,5 +47131,12 @@
     "injury": "Left Wrist Sprain",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "injury": "Left Calf Soreness",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
