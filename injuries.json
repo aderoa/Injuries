@@ -47203,5 +47203,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-11-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tristan Da Silva",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-11",
+    "prevStatus": "Out"
   }
 ]
