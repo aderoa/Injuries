@@ -47096,5 +47096,12 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-11",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
