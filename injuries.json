@@ -47260,5 +47260,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-11",
+    "prevStatus": "Available"
   }
 ]
