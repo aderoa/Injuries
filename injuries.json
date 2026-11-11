@@ -47138,5 +47138,12 @@
     "injury": "Left Calf Soreness",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Paul George",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-11",
+    "prevStatus": "Available"
   }
 ]
