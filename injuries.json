@@ -47089,5 +47089,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Doubtful",
+    "injury": "Bilateral Patella Tendinopathy",
+    "date": "2026-11-11",
+    "prevStatus": "Probable"
   }
 ]
