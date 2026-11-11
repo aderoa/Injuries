@@ -47040,5 +47040,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-10",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Available",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
