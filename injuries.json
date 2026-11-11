@@ -47026,5 +47026,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-11-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kel'el Ware",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
