@@ -47166,5 +47166,13 @@
     "injury": "Right Hand Non-Displaced Fracture",
     "date": "2026-11-10",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "injury": "Right Hand Non-Displaced Fracture",
+    "date": "2026-11-10",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
