@@ -47019,5 +47019,12 @@
     "injury": "Right Foot Injury",
     "date": "2026-11-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Out",
+    "injury": "Right Knee Contusion",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
