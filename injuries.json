@@ -47117,5 +47117,12 @@
     "injury": "Illness",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-11-11",
+    "prevStatus": "Out"
   }
 ]
