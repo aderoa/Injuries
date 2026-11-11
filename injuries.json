@@ -47075,5 +47075,12 @@
     "injury": "Left Lower Leg Contusion",
     "date": "2026-11-10",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-11",
+    "prevStatus": "Available"
   }
 ]
