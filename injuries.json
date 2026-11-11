@@ -47189,5 +47189,12 @@
     "date": "2026-11-11",
     "prevStatus": "Questionable",
     "eta": "6-8 weeks"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-11",
+    "prevStatus": "Available"
   }
 ]
