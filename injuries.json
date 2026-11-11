@@ -47047,5 +47047,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-10",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tristan Da Silva",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-10",
+    "prevStatus": "Questionable"
   }
 ]
