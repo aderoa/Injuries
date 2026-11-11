@@ -47159,5 +47159,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "injury": "Right Hand Non-Displaced Fracture",
+    "date": "2026-11-10",
+    "prevStatus": "Out"
   }
 ]
