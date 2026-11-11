@@ -46984,5 +46984,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-10",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jayson Kent",
+    "status": "Left Game",
+    "injury": "",
+    "date": "2026-11-10",
+    "prevStatus": "Available"
   }
 ]
