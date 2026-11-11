@@ -47103,5 +47103,12 @@
     "injury": "Illness",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Egor Demin",
+    "status": "Available",
+    "injury": "Right Leg Bone Bruise",
+    "date": "2026-11-11",
+    "prevStatus": "Probable"
   }
 ]
