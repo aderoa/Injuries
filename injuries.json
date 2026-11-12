@@ -47524,5 +47524,12 @@
     "injury": "LeftKnee Inflammation",
     "date": "2026-11-09",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Out",
+    "injury": "Left Knee Inflammation",
+    "date": "2026-11-11",
+    "prevStatus": "Available"
   }
 ]
