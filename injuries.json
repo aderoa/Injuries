@@ -47309,5 +47309,13 @@
     "injury": "Right Abdominal Soreness",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyrese Haliburton",
+    "status": "Out",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-10-28",
+    "prevStatus": "Out",
+    "eta": " weeks"
   }
 ]
