@@ -47389,5 +47389,19 @@
     "injury": "Illness",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-11",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Available",
+    "injury": "Left Calf Soreness",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
