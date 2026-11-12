@@ -47517,5 +47517,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Gary Payton II",
+    "status": "Available",
+    "injury": "LeftKnee Inflammation",
+    "date": "2026-11-09",
+    "prevStatus": "Available"
   }
 ]
