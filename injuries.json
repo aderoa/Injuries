@@ -47447,5 +47447,12 @@
     "injury": "Right Disc Irritation",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
