@@ -47347,5 +47347,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caleb Wilson",
+    "status": "Available",
+    "injury": "Right Hip Soreness / Tightness",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
