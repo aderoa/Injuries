@@ -47368,5 +47368,12 @@
     "injury": "Right Hand Injury",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Left Game",
+    "injury": "Left Heel Injury",
+    "date": "2026-11-11",
+    "prevStatus": "Available"
   }
 ]
