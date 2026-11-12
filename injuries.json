@@ -47375,5 +47375,19 @@
     "injury": "Left Heel Injury",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "status": "Available",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
