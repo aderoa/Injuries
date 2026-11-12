@@ -47553,5 +47553,13 @@
     "injury": "Oblique Abdominal Ter",
     "date": "2026-11-12",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Out",
+    "injury": "Oblique Abdominal Tear",
+    "date": "2026-11-12",
+    "prevStatus": "Left Game",
+    "eta": "2-3 weeks"
   }
 ]
