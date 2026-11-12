@@ -47531,5 +47531,13 @@
     "injury": "Left Knee Inflammation",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Out",
+    "injury": "Cervical Spine Sprain",
+    "date": "2026-11-06",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
