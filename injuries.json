@@ -47496,5 +47496,12 @@
     "injury": "Right Knee Contusion",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keyonte George",
+    "status": "Available",
+    "injury": "Right Ankle Injury",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
