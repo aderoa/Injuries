@@ -47340,5 +47340,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-11",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Left Game",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-11",
+    "prevStatus": "Available"
   }
 ]
