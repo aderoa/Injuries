@@ -47539,5 +47539,12 @@
     "date": "2026-11-06",
     "prevStatus": "Out",
     "eta": "1-2 weeks"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Out",
+    "injury": "Right Abdominal Soreness",
+    "date": "2026-11-12",
+    "prevStatus": "Left Game"
   }
 ]
