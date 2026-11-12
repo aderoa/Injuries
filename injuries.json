@@ -47433,5 +47433,12 @@
     "injury": "Right Quadriceps Tendinopathy",
     "date": "2026-11-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Will Richard",
+    "status": "Available",
+    "injury": "Left Thumb UCL Tear",
+    "date": "2026-11-11",
+    "prevStatus": "Probable"
   }
 ]
