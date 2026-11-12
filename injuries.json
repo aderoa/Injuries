@@ -47461,5 +47461,12 @@
     "injury": "Respiratory Illness",
     "date": "2026-11-11",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-11",
+    "prevStatus": "Questionable"
   }
 ]
