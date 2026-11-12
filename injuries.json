@@ -47410,5 +47410,13 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-11",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Probable",
+    "injury": "Right Hamstring Injury",
+    "date": "2026-11-11",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
