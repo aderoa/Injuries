@@ -48163,5 +48163,13 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Yves Missi",
+    "status": "Probable",
+    "injury": "Left Knee Contusion / Bone Bruise",
+    "date": "2026-11-14",
+    "prevStatus": "Out",
+    "eta": "6-8 weeks"
   }
 ]
