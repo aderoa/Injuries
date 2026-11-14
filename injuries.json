@@ -48375,5 +48375,26 @@
     "injury": "Left Finger Sprain",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "James Harden",
+    "status": "Out",
+    "injury": " Left Lower Leg / Calf Tightness",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Out",
+    "injury": "Left Knee Contusion / Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
