@@ -47833,5 +47833,12 @@
     "injury": "League Suspension",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Questionable",
+    "injury": "Lumbar Spasm",
+    "date": "2026-11-12",
+    "prevStatus": "Available"
   }
 ]
