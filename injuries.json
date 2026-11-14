@@ -47854,5 +47854,12 @@
     "injury": "Left Shin / Tibia Contusion",
     "date": "2026-11-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Questionable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-12",
+    "prevStatus": "Left Game"
   }
 ]
