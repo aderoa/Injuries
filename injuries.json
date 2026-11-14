@@ -47826,5 +47826,12 @@
     "injury": "Right Foot Plantar Fascia Injury Management",
     "date": "2026-11-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Questionable",
+    "injury": "League Suspension",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
