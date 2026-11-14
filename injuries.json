@@ -48255,5 +48255,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Carlton Carrington",
+    "status": "Questionable",
+    "injury": "Chest / Sternum Contusion",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
