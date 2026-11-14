@@ -48178,5 +48178,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
   }
 ]
