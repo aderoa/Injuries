@@ -48283,5 +48283,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
