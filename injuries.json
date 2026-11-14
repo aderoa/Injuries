@@ -48410,5 +48410,12 @@
     "injury": "Lumbar Spasm",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Available",
+    "injury": "Right Wrist Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Probable"
   }
 ]
