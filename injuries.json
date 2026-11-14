@@ -47655,5 +47655,13 @@
     "injury": "Disc Irritation",
     "date": "2026-11-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Suggs",
+    "status": "Questionable",
+    "injury": "Right Knee Contusion / Bone Bruise",
+    "date": "2026-11-12",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
