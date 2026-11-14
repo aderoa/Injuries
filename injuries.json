@@ -48452,5 +48452,12 @@
     "injury": "Personal Reasons",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Probable"
   }
 ]
