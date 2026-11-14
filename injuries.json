@@ -47691,5 +47691,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-11-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Doubtful",
+    "injury": "Bilateral Patella Tendinopathy",
+    "date": "0012-11-14",
+    "prevStatus": "Out"
   }
 ]
