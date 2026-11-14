@@ -47604,5 +47604,12 @@
     "injury": "Left Toe Soreness",
     "date": "2026-11-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Evan Mobley",
+    "status": "Out",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-11-12",
+    "prevStatus": "Available"
   }
 ]
