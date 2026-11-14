@@ -48403,5 +48403,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Out",
+    "injury": "Lumbar Spasm",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
