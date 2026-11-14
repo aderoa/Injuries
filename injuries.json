@@ -47677,5 +47677,12 @@
     "injury": "Right Disc Irritation",
     "date": "2026-11-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tristan Da Silva",
+    "status": "Questionable",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-12",
+    "prevStatus": "Out"
   }
 ]
