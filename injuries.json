@@ -48480,5 +48480,12 @@
     "injury": "Low Back Injury Management",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Available",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-11-14",
+    "prevStatus": "Probable"
   }
 ]
