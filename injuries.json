@@ -48445,5 +48445,12 @@
     "injury": "Left Shin / Tibia Contusion",
     "date": "2026-11-14",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Michael Porter",
+    "status": "Questionable",
+    "injury": "Personal Reasons",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
