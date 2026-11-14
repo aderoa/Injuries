@@ -47925,5 +47925,12 @@
     "injury": "Illness",
     "date": "2026-11-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Topic",
+    "status": "Available",
+    "injury": "Low Back Surgery",
+    "date": "2026-11-13",
+    "prevStatus": "Out"
   }
 ]
