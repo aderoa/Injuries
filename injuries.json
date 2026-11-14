@@ -47960,5 +47960,12 @@
     "injury": "Lumbar Spasm",
     "date": "2026-11-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Probable",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "0003-11-14",
+    "prevStatus": "Out"
   }
 ]
