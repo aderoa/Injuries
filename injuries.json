@@ -47698,5 +47698,27 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "0012-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Doubtful",
+    "injury": "Bilateral Patella Tendinopathy",
+    "date": "2026-11-12",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Out",
+    "injury": "Low Back Tightness",
+    "date": "2026-11-11",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Caleb Wilson",
+    "status": "Out",
+    "injury": "Right Metacarpal Fracture",
+    "date": "2026-11-12",
+    "prevStatus": "Out",
+    "eta": "4-6 week"
   }
 ]
