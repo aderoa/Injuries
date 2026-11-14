@@ -48319,5 +48319,12 @@
     "date": "2026-11-14",
     "prevStatus": "Out",
     "eta": "10-15 days"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Available",
+    "injury": "Low Back Sciatica Management",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
   }
 ]
