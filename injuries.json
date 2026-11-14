@@ -48459,5 +48459,12 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Out",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
