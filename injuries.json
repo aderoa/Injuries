@@ -48354,5 +48354,12 @@
     "injury": "Left Knee Contusion / Bone Bruise",
     "date": "2026-11-14",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Bennedict Mathurin",
+    "status": "Out",
+    "injury": "Left Plantar Fasciitis",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
