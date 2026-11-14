@@ -48086,5 +48086,19 @@
     "injury": "Rest",
     "date": "2026-11-13",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Out",
+    "injury": "Right Disc Irritation",
+    "date": "2026-11-13",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-13",
+    "prevStatus": "Questionable"
   }
 ]
