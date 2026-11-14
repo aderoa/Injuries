@@ -48311,5 +48311,13 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Probable",
+    "injury": "Right Soleus Strain",
+    "date": "2026-11-14",
+    "prevStatus": "Out",
+    "eta": "10-15 days"
   }
 ]
