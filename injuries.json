@@ -48044,5 +48044,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-11-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
