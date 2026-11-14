@@ -48333,5 +48333,12 @@
     "injury": "Right Foot Plantar Fascia Injury Management",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Paul George",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
   }
 ]
