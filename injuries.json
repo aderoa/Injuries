@@ -47582,5 +47582,13 @@
     "injury": "Left Knee Inflammation",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Stephen Curry",
+    "status": "Out",
+    "injury": "Right Oblique Tear",
+    "date": "2026-11-12",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
