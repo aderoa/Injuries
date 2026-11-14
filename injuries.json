@@ -48058,5 +48058,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-13",
+    "prevStatus": "Probable"
   }
 ]
