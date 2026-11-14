@@ -47840,5 +47840,12 @@
     "injury": "Lumbar Spasm",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Out",
+    "injury": "League Suspension",
+    "date": "2026-11-12",
+    "prevStatus": "Available"
   }
 ]
