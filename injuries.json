@@ -47981,5 +47981,12 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-13",
+    "prevStatus": "Out"
   }
 ]
