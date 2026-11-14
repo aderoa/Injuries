@@ -47735,5 +47735,12 @@
     "injury": "",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bryce McGowens",
+    "status": "Doubtful",
+    "injury": "Left Elbow Infection",
+    "date": "2026-11-12",
+    "prevStatus": "Available"
   }
 ]
