@@ -48107,5 +48107,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Mikel Brown",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
