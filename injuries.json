@@ -48417,5 +48417,19 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-14",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Available",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-11-14",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Doubtful"
   }
 ]
