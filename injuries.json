@@ -48142,5 +48142,12 @@
     "injury": "Right Disc Irritation",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Questionable",
+    "injury": "Left Finger Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
