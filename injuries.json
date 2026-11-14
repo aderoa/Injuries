@@ -48248,5 +48248,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
