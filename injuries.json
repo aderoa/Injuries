@@ -48340,5 +48340,12 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Devin Carter",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
   }
 ]
