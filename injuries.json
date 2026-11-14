@@ -48234,5 +48234,19 @@
     "injury": "Right Hip Soreness",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Questionable",
+    "injury": "Head Injury",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Questionable",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
   }
 ]
