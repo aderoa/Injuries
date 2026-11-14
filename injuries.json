@@ -47742,5 +47742,12 @@
     "injury": "Left Elbow Infection",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bennedict Mathurin",
+    "status": "Doubtful",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-11-12",
+    "prevStatus": "Out"
   }
 ]
