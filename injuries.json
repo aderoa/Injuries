@@ -47812,5 +47812,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-12",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Out",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-11-12",
+    "prevStatus": "Available"
   }
 ]
