@@ -48262,5 +48262,12 @@
     "injury": "Chest / Sternum Contusion",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Questionable",
+    "injury": "Left Hand Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
