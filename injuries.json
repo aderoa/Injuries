@@ -47889,5 +47889,13 @@
     "injury": "Bilateral Patella Tendinopathy",
     "date": "2026-11-13",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Yves Missi",
+    "status": "Out",
+    "injury": "Left Knee Contusion / Bone Bruise",
+    "date": "2026-11-13",
+    "prevStatus": "Doubtful",
+    "eta": "6-8 weeks"
   }
 ]
