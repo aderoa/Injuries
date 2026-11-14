@@ -47597,5 +47597,12 @@
     "injury": "Right Patellar Tendinopathy",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Probable",
+    "injury": "Left Toe Soreness",
+    "date": "2026-11-12",
+    "prevStatus": "Probable"
   }
 ]
