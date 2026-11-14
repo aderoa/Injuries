@@ -47939,5 +47939,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-13",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Bennedict Mathurin",
+    "status": "Available",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-11-13",
+    "prevStatus": "Questionable"
   }
 ]
