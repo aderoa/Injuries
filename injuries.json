@@ -47749,5 +47749,12 @@
     "injury": "Right Thumb Sprain",
     "date": "2026-11-12",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Klay Thompson",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-11-12",
+    "prevStatus": "Available"
   }
 ]
