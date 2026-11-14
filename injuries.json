@@ -47763,5 +47763,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-12",
+    "prevStatus": "Available"
   }
 ]
