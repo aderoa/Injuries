@@ -48023,5 +48023,12 @@
     "injury": "Illness",
     "date": "2026-11-13",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jalen Suggs",
+    "status": "Available",
+    "injury": "Right Knee Contusion / Bone Bruise",
+    "date": "2026-11-13",
+    "prevStatus": "Questionable"
   }
 ]
