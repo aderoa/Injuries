@@ -48072,5 +48072,12 @@
     "injury": "Right Quadriceps Tendinopathy",
     "date": "2026-11-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-12",
+    "prevStatus": "Probable"
   }
 ]
