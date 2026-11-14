@@ -48227,5 +48227,12 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Out",
+    "injury": "Right Hip Soreness",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
