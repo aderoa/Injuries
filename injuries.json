@@ -48192,5 +48192,12 @@
     "injury": "Right Wrist Sprain",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Questionable",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
