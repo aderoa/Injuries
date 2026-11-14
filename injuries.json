@@ -48304,5 +48304,12 @@
     "injury": "Left Adductor / Groin Soreness / Tightness",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Fred VanVleet",
+    "status": "Out",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
