@@ -48473,5 +48473,12 @@
     "injury": "Left Finger Sprain",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Available",
+    "injury": "Low Back Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
