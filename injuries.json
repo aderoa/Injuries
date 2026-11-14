@@ -48347,5 +48347,12 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Yves Missi",
+    "status": "Available",
+    "injury": "Left Knee Contusion / Bone Bruise",
+    "date": "2026-11-14",
+    "prevStatus": "Probable"
   }
 ]
