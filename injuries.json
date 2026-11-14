@@ -47868,5 +47868,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dejounte Murray",
+    "status": "Doubtful",
+    "injury": "Personal Reasons",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
