@@ -48431,5 +48431,19 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Morez Johnson",
+    "status": "Available",
+    "injury": "Left Shin / Tibia Contusion",
+    "date": "2026-11-14",
+    "prevStatus": "Probable"
   }
 ]
