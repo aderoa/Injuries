@@ -48079,5 +48079,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-12",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-13",
+    "prevStatus": "Out"
   }
 ]
