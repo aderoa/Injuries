@@ -48100,5 +48100,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-13",
+    "prevStatus": "Questionable"
   }
 ]
