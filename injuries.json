@@ -47611,5 +47611,12 @@
     "injury": "Left Great Toe Sprain",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caleb Wilson",
+    "status": "Out",
+    "injury": "Right Metacarpal Fracture",
+    "date": "2026-11-14",
+    "prevStatus": "Left Game"
   }
 ]
