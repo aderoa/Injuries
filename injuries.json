@@ -48037,5 +48037,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-11-13",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jamal Cain",
+    "status": "Available",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-11-13",
+    "prevStatus": "Questionable"
   }
 ]
