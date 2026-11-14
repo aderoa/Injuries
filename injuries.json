@@ -48206,5 +48206,12 @@
     "injury": "",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Questionable",
+    "injury": "Left Knee Contusion / Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
