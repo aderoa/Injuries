@@ -47663,5 +47663,19 @@
     "date": "2026-11-12",
     "prevStatus": "Out",
     "eta": "2-3 weeks"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-12",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dailyn Swain",
+    "status": "Questionable",
+    "injury": "Right Disc Irritation",
+    "date": "2026-11-12",
+    "prevStatus": "Questionable"
   }
 ]
