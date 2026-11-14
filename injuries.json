@@ -47791,5 +47791,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-11-12",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Questionable",
+    "injury": "Left Adductor Tightness",
+    "date": "2026-11-12",
+    "prevStatus": "Out"
   }
 ]
