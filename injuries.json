@@ -47847,5 +47847,12 @@
     "injury": "League Suspension",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Morez Johnson",
+    "status": "Available",
+    "injury": "Left Shin / Tibia Contusion",
+    "date": "2026-11-12",
+    "prevStatus": "Probable"
   }
 ]
