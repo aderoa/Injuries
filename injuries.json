@@ -47819,5 +47819,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-11-12",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Foot Plantar Fascia Injury Management",
+    "date": "2026-11-12",
+    "prevStatus": "Questionable"
   }
 ]
