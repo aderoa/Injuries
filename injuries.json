@@ -48368,5 +48368,12 @@
     "injury": "",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ousmane Dieng",
+    "status": "Out",
+    "injury": "Left Finger Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
