@@ -48121,5 +48121,12 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Doubtful",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
