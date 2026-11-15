@@ -48669,5 +48669,12 @@
     "injury": "Stinger",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
