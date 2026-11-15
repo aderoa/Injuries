@@ -48690,5 +48690,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-15",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
