@@ -48704,5 +48704,12 @@
     "injury": "Illness",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Available",
+    "injury": "Right Soleus Strain",
+    "date": "2026-11-15",
+    "prevStatus": "Probable"
   }
 ]
