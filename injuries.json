@@ -48508,5 +48508,12 @@
     "injury": "Left Heel Bruise",
     "date": "2026-11-14",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Cameron Carr",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
