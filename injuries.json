@@ -48732,5 +48732,12 @@
     "injury": "IllnessLeft Knee Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Questionable",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
