@@ -48865,5 +48865,12 @@
     "injury": "Left Adductor / Groin Soreness / Tightness",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
