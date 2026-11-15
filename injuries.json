@@ -48774,5 +48774,12 @@
     "injury": "Left Hip Tightness",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alex Sarr",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
