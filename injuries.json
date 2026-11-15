@@ -48522,5 +48522,12 @@
     "injury": "Right Finger Sprain",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Bronny James",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
