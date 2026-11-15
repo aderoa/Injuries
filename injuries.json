@@ -49013,5 +49013,12 @@
     "injury": "Left Knee Tendinitis",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Questionable",
+    "injury": "Right Ankle Inflammation",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
