@@ -49027,5 +49027,12 @@
     "injury": "Left Toe Soreness",
     "date": "2026-11-15",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Chris Youngblood",
+    "status": "Out",
+    "injury": "Right Heel Contusion / Bone Bruise",
+    "date": "2026-11-11",
+    "prevStatus": "Out"
   }
 ]
