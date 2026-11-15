@@ -48984,5 +48984,12 @@
     "injury": "Right Shoulder Stinger",
     "date": "2026-11-15",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Out",
+    "injury": "Low Back Soreness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
