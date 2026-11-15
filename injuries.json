@@ -48879,5 +48879,19 @@
     "injury": "Right Knee Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "James Harden",
+    "status": "Available",
+    "injury": " Left Lower Leg / Calf Tightness",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "status": "Available",
+    "injury": "Left Knee Contusion / Injury Management",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
