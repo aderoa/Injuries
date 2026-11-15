@@ -48655,5 +48655,12 @@
     "injury": "Left Foot Injury",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Left Game",
+    "injury": "Right Hamstring Soreness",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
