@@ -48662,5 +48662,12 @@
     "injury": "Right Hamstring Soreness",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Left Game",
+    "injury": "Stinger",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
