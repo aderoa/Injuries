@@ -48942,5 +48942,12 @@
     "injury": "Left Foot Injury",
     "date": "2026-11-15",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Out",
+    "injury": "Left Foot Injury",
+    "date": "2026-11-15",
+    "prevStatus": "Left Game"
   }
 ]
