@@ -48557,5 +48557,12 @@
     "injury": "Left Knee Strain",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Devin Vassell",
+    "status": "Available",
+    "injury": "Left Adductor Tightness",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
