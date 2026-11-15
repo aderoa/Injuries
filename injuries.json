@@ -48872,5 +48872,12 @@
     "injury": "Illness",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jarrett Allen",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
