@@ -48725,5 +48725,12 @@
     "injury": "Right Hip Inflammation",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Questionable",
+    "injury": "IllnessLeft Knee Injury Management",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
