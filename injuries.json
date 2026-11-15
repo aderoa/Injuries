@@ -48634,5 +48634,12 @@
     "injury": "Left Shin / Tibia Contusion",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ajay Mitchell",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
   }
 ]
