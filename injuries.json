@@ -48753,5 +48753,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
