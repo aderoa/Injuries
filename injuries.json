@@ -48571,5 +48571,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Michael Porter",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
