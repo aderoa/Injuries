@@ -48641,5 +48641,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Left Game",
+    "injury": "Left Foot Injuy",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
