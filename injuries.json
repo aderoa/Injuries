@@ -48501,5 +48501,12 @@
     "injury": "Left Heel Injury",
     "date": "2026-11-14",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Out",
+    "injury": "Left Heel Bruise",
+    "date": "2026-11-14",
+    "prevStatus": "Left Game"
   }
 ]
