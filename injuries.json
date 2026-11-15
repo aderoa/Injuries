@@ -48606,5 +48606,12 @@
     "injury": "Right Hip Strain",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Questionable",
+    "injury": "Cervical Injury Management",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
