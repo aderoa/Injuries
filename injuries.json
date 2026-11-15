@@ -48914,5 +48914,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Available",
+    "injury": "Head Injury",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
