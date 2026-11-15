@@ -48823,5 +48823,12 @@
     "injury": "Left Finger Fracture",
     "date": "2026-11-14",
     "prevStatus": "Out"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Out",
+    "injury": "Left Hip Tightness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
