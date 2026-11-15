@@ -48494,5 +48494,12 @@
     "injury": "Head Injury",
     "date": "2026-11-14",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Out",
+    "injury": "Left Heel Injury",
+    "date": "2026-11-14",
+    "prevStatus": "Left Game"
   }
 ]
