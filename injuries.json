@@ -49034,5 +49034,12 @@
     "injury": "Right Heel Contusion / Bone Bruise",
     "date": "2026-11-11",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
