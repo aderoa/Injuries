@@ -48529,5 +48529,12 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Adou Thiero",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
