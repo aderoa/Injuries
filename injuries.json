@@ -48739,5 +48739,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Probable",
+    "injury": "Right Shoulder Stinger",
+    "date": "2026-11-15",
+    "prevStatus": "Left Game"
   }
 ]
