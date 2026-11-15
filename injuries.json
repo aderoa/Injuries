@@ -48921,5 +48921,12 @@
     "injury": "Head Injury",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
