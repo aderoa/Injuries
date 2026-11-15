@@ -48788,5 +48788,12 @@
     "injury": "Chest / Sternum Contusion",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Keegan Murray",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
