@@ -48795,5 +48795,26 @@
     "injury": "Illness",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Adou Thiero",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Available",
+    "injury": "Right Orbital Laceration",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Bronny James",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
