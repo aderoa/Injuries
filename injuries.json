@@ -48837,5 +48837,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-15",
+    "prevStatus": "Doubtful"
   }
 ]
