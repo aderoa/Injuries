@@ -48977,5 +48977,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Daniel Gafford",
+    "status": "Available",
+    "injury": "Right Shoulder Stinger",
+    "date": "2026-11-15",
+    "prevStatus": "Probable"
   }
 ]
