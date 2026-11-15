@@ -49020,5 +49020,12 @@
     "injury": "Right Ankle Inflammation",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Charles Bassey",
+    "status": "Available",
+    "injury": "Left Toe Soreness",
+    "date": "2026-11-15",
+    "prevStatus": "Probable"
   }
 ]
