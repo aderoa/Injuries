@@ -48851,5 +48851,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Questionable",
+    "injury": "Left Finger Sprain",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
