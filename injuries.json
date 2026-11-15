@@ -48893,5 +48893,12 @@
     "injury": "Left Knee Contusion / Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Questionable",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
