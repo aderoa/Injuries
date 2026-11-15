@@ -48844,5 +48844,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-15",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Available",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
