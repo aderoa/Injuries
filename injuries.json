@@ -48935,5 +48935,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Questionable",
+    "injury": "Left Foot Injury",
+    "date": "2026-11-15",
+    "prevStatus": "Left Game"
   }
 ]
