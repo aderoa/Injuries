@@ -48697,5 +48697,12 @@
     "injury": "",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ryan Rollins",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
