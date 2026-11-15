@@ -48830,5 +48830,12 @@
     "injury": "Left Hip Tightness",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
