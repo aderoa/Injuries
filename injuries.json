@@ -48858,5 +48858,12 @@
     "injury": "Left Finger Sprain",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Available",
+    "injury": "Left Adductor / Groin Soreness / Tightness",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
