@@ -48487,5 +48487,12 @@
     "injury": "Right Calf Tightness / Soreness",
     "date": "2026-11-14",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Out",
+    "injury": "Head Injury",
+    "date": "2026-11-14",
+    "prevStatus": "Questionable"
   }
 ]
