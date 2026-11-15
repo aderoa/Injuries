@@ -48543,5 +48543,12 @@
     "injury": "Right Soleus Strain",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Sexton",
+    "status": "Questionable",
+    "injury": "Right Orbital Laceration",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
