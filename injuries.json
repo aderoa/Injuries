@@ -48760,5 +48760,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
