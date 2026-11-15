@@ -48599,5 +48599,12 @@
     "injury": "Illness",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Miller",
+    "status": "Available",
+    "injury": "Right Hip Strain",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
   }
 ]
