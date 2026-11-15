@@ -48998,5 +48998,13 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-15",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jaylen Clark",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-15",
+    "prevStatus": "Left Game",
+    "eta": "2-3 weeks"
   }
 ]
