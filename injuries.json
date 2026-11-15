@@ -48963,5 +48963,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Michael Porter",
+    "status": "Available",
+    "injury": "Personal Reasons",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
