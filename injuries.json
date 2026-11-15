@@ -48550,5 +48550,12 @@
     "injury": "Right Orbital Laceration",
     "date": "2026-11-14",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Out",
+    "injury": "Left Knee Strain",
+    "date": "2026-11-14",
+    "prevStatus": "Available"
   }
 ]
