@@ -48928,5 +48928,12 @@
     "injury": "Illness",
     "date": "2026-11-15",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Quinten Post",
+    "status": "Questionable",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
