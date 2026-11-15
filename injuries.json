@@ -49041,5 +49041,12 @@
     "injury": "Illness",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Out",
+    "injury": "Right Hip Inflammation",
+    "date": "2026-11-15",
+    "prevStatus": "Questionable"
   }
 ]
