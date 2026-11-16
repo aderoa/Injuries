@@ -49205,5 +49205,19 @@
     "date": "2026-11-15",
     "prevStatus": "Out",
     "eta": "2-3 months"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Out",
+    "injury": "Low Back Sciatica Management",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Questionable",
+    "injury": "Right Foot Plantar Fascia Injury Management",
+    "date": "2026-11-16",
+    "prevStatus": "Out"
   }
 ]
