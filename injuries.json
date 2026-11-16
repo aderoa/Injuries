@@ -49349,5 +49349,19 @@
     "injury": " Left Knee Contusion / Bone Bruise",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nikola Jovic",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-16",
+    "prevStatus": "Doubtful"
   }
 ]
