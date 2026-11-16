@@ -49321,5 +49321,12 @@
     "injury": "Left Quadriceps Strain",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
