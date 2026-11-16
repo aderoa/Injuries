@@ -49328,5 +49328,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Doubtful",
+    "injury": "Right Hip Contusion",
+    "date": "2026-11-16",
+    "prevStatus": "Out"
   }
 ]
