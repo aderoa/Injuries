@@ -49090,5 +49090,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach LaVine",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-15",
+    "prevStatus": "Available"
   }
 ]
