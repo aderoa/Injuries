@@ -49307,5 +49307,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-11-16",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
