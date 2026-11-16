@@ -49314,5 +49314,12 @@
     "injury": "",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Duncan Robinson",
+    "status": "Out",
+    "injury": "Left Quadriceps Strain",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
