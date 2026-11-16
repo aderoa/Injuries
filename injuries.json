@@ -49134,5 +49134,19 @@
     "date": "2026-11-02",
     "prevStatus": "Out",
     "eta": "3-4 weeks"
+  },
+  {
+    "player": "Pelle Larsson",
+    "status": "Doubtful",
+    "injury": "Illness",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nikola Jovic",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
