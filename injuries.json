@@ -49247,5 +49247,13 @@
     "injury": "Rest",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Evan Mobley",
+    "status": "Out",
+    "injury": "Left Great Toe Sprain",
+    "date": "2026-11-12",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
