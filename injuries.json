@@ -49148,5 +49148,12 @@
     "injury": "Illness",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Doubtful",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
   }
 ]
