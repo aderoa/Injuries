@@ -49286,5 +49286,12 @@
     "injury": "Low Back Soreness",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "injury": "Left Hip Tightness",
+    "date": "2026-11-16",
+    "prevStatus": "Out"
   }
 ]
