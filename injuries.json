@@ -49279,5 +49279,12 @@
     "date": "2026-11-12",
     "prevStatus": "Out",
     "eta": "15-20 days"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Available",
+    "injury": "Low Back Soreness",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
   }
 ]
