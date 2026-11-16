@@ -49197,5 +49197,13 @@
     "injury": "Illness",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Out",
+    "injury": "Left 5th Metatarsal Fracture",
+    "date": "2026-11-15",
+    "prevStatus": "Out",
+    "eta": "2-3 months"
   }
 ]
