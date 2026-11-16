@@ -49363,5 +49363,12 @@
     "injury": "Illness",
     "date": "2026-11-16",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Left Finger Sprain",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
   }
 ]
