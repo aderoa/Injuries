@@ -49155,5 +49155,33 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tre Johnson",
+    "status": "Questionable",
+    "injury": "Low Back Soreness",
+    "date": "2026-11-16",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Fred VanVleet",
+    "status": "Available",
+    "injury": "Right Knee Injury Management",
+    "date": "2026-11-16",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Out",
+    "injury": "Right Soleus Strain",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
