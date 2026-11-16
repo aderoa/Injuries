@@ -49226,5 +49226,12 @@
     "injury": "Rest",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ryan Dunn",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
