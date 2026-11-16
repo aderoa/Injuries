@@ -49111,5 +49111,12 @@
     "injury": "Left Hip Soreness / Tightness",
     "date": "2026-11-15",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "GG Jackson",
+    "status": "Out",
+    "injury": "Left Foot Fifth Metatarsal Fracture",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
