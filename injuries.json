@@ -49370,5 +49370,12 @@
     "injury": "Left Finger Sprain",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
   }
 ]
