@@ -49546,5 +49546,12 @@
     "injury": "",
     "date": "2026-11-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "CJ McCollum",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-17",
+    "prevStatus": "Available"
   }
 ]
