@@ -49539,5 +49539,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "CJ McCollum",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-17",
+    "prevStatus": "Available"
   }
 ]
