@@ -49412,5 +49412,12 @@
     "injury": "Right Thumb Soreness",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Carr",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-16",
+    "prevStatus": "Out"
   }
 ]
