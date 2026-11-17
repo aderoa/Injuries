@@ -49426,5 +49426,12 @@
     "injury": "Right Lower Leg Soreness",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Left Game",
+    "injury": "Right Adductor Strain",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
