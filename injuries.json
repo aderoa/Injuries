@@ -49497,5 +49497,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-11-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zyon Pullin",
+    "status": "Out",
+    "injury": "Right Quadriceps Contusion",
+    "date": "2026-11-17",
+    "prevStatus": "Available"
   }
 ]
