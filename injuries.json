@@ -49440,5 +49440,12 @@
     "injury": "Right Fifth Finger Injury",
     "date": "2026-11-16",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Bam Adebayo",
+    "status": "Left Game",
+    "injury": "Right Hip Tightness",
+    "date": "2026-11-16",
+    "prevStatus": "Available"
   }
 ]
