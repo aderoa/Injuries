@@ -49511,5 +49511,12 @@
     "injury": "Right Fifth Finger Injury",
     "date": "2026-11-17",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "Right Finger Dislocation",
+    "date": "2026-11-17",
+    "prevStatus": "Probable"
   }
 ]
