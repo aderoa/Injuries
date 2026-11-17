@@ -49405,5 +49405,12 @@
     "injury": "Right Ankle Inflammation",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Dunn",
+    "status": "Available",
+    "injury": "Right Thumb Soreness",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
   }
 ]
