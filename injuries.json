@@ -49532,5 +49532,12 @@
     "injury": "League Suspension",
     "date": "2026-11-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-17",
+    "prevStatus": "Out"
   }
 ]
