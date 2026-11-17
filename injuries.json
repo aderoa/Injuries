@@ -49490,5 +49490,12 @@
     "injury": "",
     "date": "2026-11-17",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Out",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-11-17",
+    "prevStatus": "Out"
   }
 ]
