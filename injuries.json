@@ -49518,5 +49518,12 @@
     "injury": "Right Finger Dislocation",
     "date": "2026-11-17",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Available",
+    "injury": "Left Lower Leg Injury Management",
+    "date": "2026-11-17",
+    "prevStatus": "Out"
   }
 ]
