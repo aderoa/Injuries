@@ -49391,5 +49391,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Right Foot Plantar Fascia Injury Management",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
   }
 ]
