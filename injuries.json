@@ -49525,5 +49525,12 @@
     "injury": "Left Lower Leg Injury Management",
     "date": "2026-11-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Marcus Smart",
+    "status": "Available",
+    "injury": "League Suspension",
+    "date": "2026-11-17",
+    "prevStatus": "Out"
   }
 ]
