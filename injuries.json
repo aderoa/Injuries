@@ -49384,5 +49384,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-16",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Out",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-16",
+    "prevStatus": "Questionable"
   }
 ]
