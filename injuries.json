@@ -49833,5 +49833,12 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "De'Andre Hunter",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
