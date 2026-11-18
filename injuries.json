@@ -49826,5 +49826,12 @@
     "injury": "Left Knee Strain",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Precious Achiuwa",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
