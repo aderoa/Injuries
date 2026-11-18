@@ -50008,5 +50008,19 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Out",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Right Elbow Inflammation / Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
