@@ -49896,5 +49896,12 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Available",
+    "injury": "Right Finger Dislocation",
+    "date": "2026-11-18",
+    "prevStatus": "Probable"
   }
 ]
