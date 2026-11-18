@@ -49973,5 +49973,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Out",
+    "injury": "Low Back Contusion",
+    "date": "2026-11-18",
+    "prevStatus": "Doubtful"
   }
 ]
