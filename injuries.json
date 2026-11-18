@@ -49931,5 +49931,19 @@
     "injury": "Right Lisfranc Surgery",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Olivier-Maxence Prosper",
+    "status": "Available",
+    "injury": "",
+    "date": "2026-11-18",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
