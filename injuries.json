@@ -49903,5 +49903,12 @@
     "injury": "Right Finger Dislocation",
     "date": "2026-11-18",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-18",
+    "prevStatus": "Available"
   }
 ]
