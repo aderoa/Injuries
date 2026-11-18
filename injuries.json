@@ -49959,5 +49959,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-11-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zyon Pullin",
+    "status": "Questionable",
+    "injury": "Right Quadriceps Contusion",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
