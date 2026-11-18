@@ -49910,5 +49910,12 @@
     "injury": "",
     "date": "2026-11-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Out",
+    "injury": "Left Hip Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Available"
   }
 ]
