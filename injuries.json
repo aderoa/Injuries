@@ -49924,5 +49924,12 @@
     "injury": "Right Hamstring Tightness / Soreness",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Yanic Konan Niederhauser",
+    "status": "Available",
+    "injury": "Right Lisfranc Surgery",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
