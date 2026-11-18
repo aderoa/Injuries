@@ -49952,5 +49952,12 @@
     "injury": "",
     "date": "2026-11-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyrese Maxey",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Available"
   }
 ]
