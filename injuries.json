@@ -49980,5 +49980,12 @@
     "injury": "Low Back Contusion",
     "date": "2026-11-18",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Sam Merrill",
+    "status": "Available",
+    "injury": "Right Elbow Injury Management",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
