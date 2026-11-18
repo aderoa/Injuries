@@ -942,7 +942,22 @@ async function pushToGitHub() {
         });
         if (liveR.ok) {
           const liveData = await liveR.json();
-          const txt = decodeURIComponent(escape(atob((liveData.content || '').replace(/\s/g, ''))));
+          // OVER 1 MB GITHUB SENDS NO CONTENT HERE. The file passed 1,048,576
+          // bytes on 17 November; from then on this answer carried the SHA and
+          // an empty "content" (encoding "none"), JSON.parse('') threw, and
+          // every push was "Refused: cannot verify". Above that size the text
+          // has to be asked for in the raw media type, as a second request.
+          let txt;
+          if ((liveData.content || '').replace(/\s/g, '')) {
+            txt = decodeURIComponent(escape(atob(liveData.content.replace(/\s/g, ''))));
+          } else {
+            const rawR = await fetch(GH_API + '?ref=' + GH_BRANCH + '&t=' + Date.now(), {
+              headers: { 'Authorization': 'token ' + _ghToken,
+                         'Accept': 'application/vnd.github.raw' }
+            });
+            if (!rawR.ok) throw new Error('raw GET failed: ' + rawR.status);
+            txt = await rawR.text();
+          }
           const live = JSON.parse(txt);
           if (Array.isArray(live)) {
             _ghLastRowCount = live.length;
