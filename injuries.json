@@ -49812,5 +49812,12 @@
     "injury": "Right Hip Contusion",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Walker Kessler",
+    "status": "Available",
+    "injury": "Right Lower Leg Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
