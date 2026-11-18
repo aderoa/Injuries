@@ -50001,5 +50001,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Amen Thompson",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
