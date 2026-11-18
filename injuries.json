@@ -49987,5 +49987,12 @@
     "injury": "Right Elbow Injury Management",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Out",
+    "injury": "Left Hamstring Tightness / Soreness.",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
