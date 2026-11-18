@@ -49882,5 +49882,12 @@
     "injury": "",
     "date": "2026-11-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Toumani Camara",
+    "status": "Questionable",
+    "injury": "Abdominal Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
