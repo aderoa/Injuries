@@ -49854,5 +49854,19 @@
     "injury": "Left Ankle Soreness",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Out",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Available",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-18",
+    "prevStatus": "Probable"
   }
 ]
