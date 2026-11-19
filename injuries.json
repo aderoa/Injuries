@@ -50127,5 +50127,12 @@
     "injury": "Left Low Back Soreness",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-19",
+    "prevStatus": "Out"
   }
 ]
