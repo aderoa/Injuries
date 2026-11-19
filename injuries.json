@@ -50120,5 +50120,12 @@
     "injury": "",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Questionable",
+    "injury": "Left Low Back Soreness",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
