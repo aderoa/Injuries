@@ -50022,5 +50022,12 @@
     "injury": "Right Elbow Inflammation / Soreness",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylin Williams",
+    "status": "Available",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
