@@ -50148,5 +50148,12 @@
     "injury": "Illness",
     "date": "2026-11-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Myles Turner",
+    "status": "Out",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
