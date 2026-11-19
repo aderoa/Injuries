@@ -50050,5 +50050,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-18",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Tobi Lawal",
+    "status": "Out",
+    "injury": "Right Groin Tightness",
+    "date": "2026-11-18",
+    "prevStatus": "Doubtful"
   }
 ]
