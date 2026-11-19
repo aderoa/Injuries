@@ -50198,5 +50198,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-19",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
