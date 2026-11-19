@@ -50029,5 +50029,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-18",
+    "prevStatus": "Probable"
   }
 ]
