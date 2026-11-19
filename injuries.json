@@ -50113,5 +50113,12 @@
     "injury": "Bilateral Low Back Injury Management",
     "date": "2026-11-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
