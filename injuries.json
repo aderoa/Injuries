@@ -50106,5 +50106,12 @@
     "injury": "Right Quadriceps Contusion",
     "date": "2026-11-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Al Horford",
+    "status": "Available",
+    "injury": "Bilateral Low Back Injury Management",
+    "date": "2026-11-19",
+    "prevStatus": "Out"
   }
 ]
