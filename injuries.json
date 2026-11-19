@@ -50078,5 +50078,12 @@
     "injury": "Left Eye Injury",
     "date": "2026-11-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Left Game",
+    "injury": "Illness",
+    "date": "2026-11-18",
+    "prevStatus": "Available"
   }
 ]
