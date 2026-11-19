@@ -50184,5 +50184,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Scottie Barnes",
+    "status": "Available",
+    "injury": "Left Groin Injury Management",
+    "date": "2026-11-19",
+    "prevStatus": "Out"
   }
 ]
