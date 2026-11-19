@@ -50085,5 +50085,12 @@
     "injury": "Illness",
     "date": "2026-11-18",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Available",
+    "injury": "Left Knee Strain",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
