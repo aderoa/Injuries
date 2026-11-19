@@ -50099,5 +50099,12 @@
     "injury": "Illness",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zyon Pullin",
+    "status": "Available",
+    "injury": "Right Quadriceps Contusion",
+    "date": "2026-11-19",
+    "prevStatus": "Questionable"
   }
 ]
