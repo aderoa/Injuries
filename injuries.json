@@ -50205,5 +50205,13 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "RJ Barrett",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-18",
+    "prevStatus": "Out",
+    "eta": "2-4 weeks"
   }
 ]
