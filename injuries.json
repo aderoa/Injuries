@@ -50092,5 +50092,12 @@
     "injury": "Left Knee Strain",
     "date": "2026-11-18",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach LaVine",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
