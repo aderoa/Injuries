@@ -50036,5 +50036,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-18",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Max Christie",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Santiago Aldama",
+    "status": "Available",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-18",
+    "prevStatus": "Probable"
   }
 ]
