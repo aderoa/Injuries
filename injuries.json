@@ -50134,5 +50134,12 @@
     "injury": "Illness",
     "date": "2026-11-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Out",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
