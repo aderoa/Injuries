@@ -50057,5 +50057,19 @@
     "injury": "Right Groin Tightness",
     "date": "2026-11-18",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaiah Joe",
+    "status": "Available",
+    "injury": "Right Hip Contusion",
+    "date": "2026-11-18",
+    "prevStatus": "Questionable"
   }
 ]
