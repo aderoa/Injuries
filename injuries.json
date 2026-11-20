@@ -50571,5 +50571,12 @@
     "injury": "Left Calf Strain",
     "date": "2026-11-20",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-11-20",
+    "prevStatus": "Out"
   }
 ]
