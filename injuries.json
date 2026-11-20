@@ -50290,5 +50290,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Noa Essengue",
+    "status": "Probable",
+    "injury": "Right Head Contusion",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
