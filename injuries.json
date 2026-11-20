@@ -50255,5 +50255,12 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Out",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-17",
+    "prevStatus": "Out"
   }
 ]
