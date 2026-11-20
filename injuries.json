@@ -50332,5 +50332,12 @@
     "injury": "Left Lower Leg Injury Management",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Questionable",
+    "injury": " Right Quadriceps Contusion",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
