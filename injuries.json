@@ -50451,5 +50451,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ron Holland",
+    "status": "Doubtful",
+    "injury": " Left Knee Contusion / Bone Bruise",
+    "date": "2026-11-20",
+    "prevStatus": "Out"
   }
 ]
