@@ -50374,5 +50374,12 @@
     "injury": "Abdominal Soreness",
     "date": "2026-11-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Left Game",
+    "injury": "Head Injury",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
