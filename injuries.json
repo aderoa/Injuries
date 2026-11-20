@@ -50543,5 +50543,19 @@
     "injury": "Lumbar Spasm",
     "date": "2026-11-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Braden Smith",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "status": "Available",
+    "injury": "Left Hip Sprain",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
