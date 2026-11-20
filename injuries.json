@@ -50592,5 +50592,12 @@
     "injury": "Personal Reasons",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Out",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
