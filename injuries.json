@@ -50234,5 +50234,12 @@
     "injury": "Low Back Contusion",
     "date": "2026-11-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jock Landale",
+    "status": "Out",
+    "injury": "Right Great Toe Sprain",
+    "date": "2026-11-15",
+    "prevStatus": "Out"
   }
 ]
