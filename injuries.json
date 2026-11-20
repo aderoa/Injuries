@@ -50437,5 +50437,12 @@
     "injury": "Right Elbow Injury Management",
     "date": "2026-11-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Out",
+    "injury": "Right Elbow Injury Management",
+    "date": "2026-11-19",
+    "prevStatus": "Out"
   }
 ]
