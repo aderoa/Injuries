@@ -50606,5 +50606,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-11-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Available",
+    "injury": "Bilateral Patella Tendinopathy",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
