@@ -50297,5 +50297,12 @@
     "injury": "Right Head Contusion",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Noa Essengue",
+    "status": "Probable",
+    "injury": "Bilateral Wrist Soreness",
+    "date": "2026-11-19",
+    "prevStatus": "Probable"
   }
 ]
