@@ -50262,5 +50262,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-17",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Braden Smith",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
