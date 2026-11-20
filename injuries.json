@@ -50402,5 +50402,12 @@
     "injury": "Left Lower Leg Contusion",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Andre Hunter",
+    "status": "Questionable",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
