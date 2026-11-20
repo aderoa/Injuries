@@ -50360,5 +50360,19 @@
     "injury": "Illness",
     "date": "2026-11-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Deni Avdija",
+    "status": "Out",
+    "injury": "Left Foot Inflammation / Soreness",
+    "date": "2026-11-19",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Toumani Camara",
+    "status": "Available",
+    "injury": "Abdominal Soreness",
+    "date": "2026-11-19",
+    "prevStatus": "Questionable"
   }
 ]
