@@ -50578,5 +50578,12 @@
     "injury": "Left Ankle Injury Management",
     "date": "2026-11-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Probable",
+    "injury": "Right Hip Impingement",
+    "date": "2026-11-20",
+    "prevStatus": "Out"
   }
 ]
