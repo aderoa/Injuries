@@ -50585,5 +50585,12 @@
     "injury": "Right Hip Impingement",
     "date": "2026-11-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Javon Small",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
