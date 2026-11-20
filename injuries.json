@@ -50430,5 +50430,12 @@
     "injury": "Right Elbow Inflammation / Soreness",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Out",
+    "injury": "Right Elbow Injury Management",
+    "date": "2026-11-20",
+    "prevStatus": "Out"
   }
 ]
