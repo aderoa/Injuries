@@ -50241,5 +50241,12 @@
     "injury": "Right Great Toe Sprain",
     "date": "2026-11-15",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Questionable",
+    "injury": "Lumbar Spasm",
+    "date": "2026-11-19",
+    "prevStatus": "Out"
   }
 ]
