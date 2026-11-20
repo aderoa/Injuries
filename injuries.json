@@ -50395,5 +50395,12 @@
     "injury": "Left Calf Injury",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Precious Achiuwa",
+    "status": "Doubtful",
+    "injury": "Left Lower Leg Contusion",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
