@@ -50283,5 +50283,12 @@
     "injury": "Left Hip Sprain",
     "date": "2026-11-19",
     "prevStatus": "Out"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Probable",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
