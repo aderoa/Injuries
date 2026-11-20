@@ -50479,5 +50479,12 @@
     "injury": "Left Lower Leg Contusion",
     "date": "2026-11-20",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Robert Williams",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-20",
+    "prevStatus": "Out"
   }
 ]
