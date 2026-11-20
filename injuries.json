@@ -50493,5 +50493,12 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-11-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tyrese Maxey",
+    "status": "Questionable",
+    "injury": "Right Foot Soreness",
+    "date": "2026-11-20",
+    "prevStatus": "Out"
   }
 ]
