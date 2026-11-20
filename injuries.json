@@ -50536,5 +50536,12 @@
     "injury": "Left Calf Injury",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Out",
+    "injury": "Lumbar Spasm",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
