@@ -50529,5 +50529,12 @@
     "injury": "Right Plantar Fasciitis",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Questionable",
+    "injury": "Left Calf Injury",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
