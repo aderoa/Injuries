@@ -50507,5 +50507,13 @@
     "injury": "Right Foot Sprain",
     "date": "2026-11-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dominick Barlow",
+    "status": "Probable",
+    "injury": "Lumbar Spine Bone Stress",
+    "date": "2026-11-20",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
   }
 ]
