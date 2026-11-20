@@ -50353,5 +50353,12 @@
     "injury": "Right Shoulder Contusion",
     "date": "2026-11-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-19",
+    "prevStatus": "Questionable"
   }
 ]
