@@ -50318,5 +50318,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Questionable",
+    "injury": "Left Eye Corneal Abrasion",
+    "date": "2026-11-19",
+    "prevStatus": "Left Game"
   }
 ]
