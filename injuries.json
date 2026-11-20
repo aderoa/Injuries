@@ -50325,5 +50325,12 @@
     "injury": "Left Eye Corneal Abrasion",
     "date": "2026-11-19",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Questionable",
+    "injury": "Left Lower Leg Injury Management",
+    "date": "2026-11-19",
+    "prevStatus": "Available"
   }
 ]
