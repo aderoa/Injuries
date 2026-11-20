@@ -50564,5 +50564,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jerami Grant",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-20",
+    "prevStatus": "Left Game"
   }
 ]
