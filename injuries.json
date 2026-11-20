@@ -50346,5 +50346,12 @@
     "injury": "Left Low Back Soreness",
     "date": "2026-11-19",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "status": "Available",
+    "injury": "Right Shoulder Contusion",
+    "date": "2026-11-19",
+    "prevStatus": "Questionable"
   }
 ]
