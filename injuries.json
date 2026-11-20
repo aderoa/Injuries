@@ -50339,5 +50339,12 @@
     "injury": " Right Quadriceps Contusion",
     "date": "2026-11-19",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LJ Cryer",
+    "status": "Available",
+    "injury": "Left Low Back Soreness",
+    "date": "2026-11-19",
+    "prevStatus": "Questionable"
   }
 ]
