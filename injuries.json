@@ -50599,5 +50599,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Out",
+    "injury": "Right Hip Soreness",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
