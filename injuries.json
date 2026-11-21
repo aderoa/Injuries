@@ -50767,5 +50767,12 @@
     "injury": "Illness",
     "date": "2026-11-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ty Jerome",
+    "status": "Available",
+    "injury": "Right Hip Impingement",
+    "date": "2026-11-21",
+    "prevStatus": "Probable"
   }
 ]
