@@ -50662,5 +50662,12 @@
     "injury": "Right Hip Synovitis",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Questionable",
+    "injury": " Left AC Joint Contusion",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
