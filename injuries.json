@@ -50732,5 +50732,12 @@
     "injury": "Left Calf Injury",
     "date": "2026-11-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Doubtful",
+    "injury": "Left Calf Tightness",
+    "date": "2026-11-21",
+    "prevStatus": "Questionable"
   }
 ]
