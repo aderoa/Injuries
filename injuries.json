@@ -50823,5 +50823,19 @@
     "injury": "Right Hamstring Tightness / Soreness",
     "date": "2026-11-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-21",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Out",
+    "injury": " Left AC Joint Contusion",
+    "date": "2026-11-21",
+    "prevStatus": "Questionable"
   }
 ]
