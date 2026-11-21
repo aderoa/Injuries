@@ -50669,5 +50669,19 @@
     "injury": " Left AC Joint Contusion",
     "date": "2026-11-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Available",
+    "injury": " Right Quadriceps Contusion",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alperen Sengun",
+    "status": "Available",
+    "injury": "Left Eye Corneal Abrasion",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
