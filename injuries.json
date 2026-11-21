@@ -50753,5 +50753,12 @@
     "injury": "Lumbar Spine Bone Stress",
     "date": "2026-11-21",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Trey Murphy",
+    "status": "Out",
+    "injury": "Bilateral Patellar Tendinopathy Injury Maintenance",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
