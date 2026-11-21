@@ -50991,5 +50991,12 @@
     "injury": "Illness",
     "date": "2026-11-21",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Isaiah Evans",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-21",
+    "prevStatus": "Questionable"
   }
 ]
