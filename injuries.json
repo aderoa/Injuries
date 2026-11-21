@@ -50900,5 +50900,12 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-11-21",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Out",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-11-21",
+    "prevStatus": "Left Game"
   }
 ]
