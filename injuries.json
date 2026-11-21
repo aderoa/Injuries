@@ -50872,5 +50872,12 @@
     "injury": " Left Knee Contusion / Bone Bruise",
     "date": "2026-11-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Probable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
