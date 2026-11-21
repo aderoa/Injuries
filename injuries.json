@@ -50648,5 +50648,19 @@
     "injury": "Bilateral Wrist Soreness",
     "date": "2026-11-20",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Questionable",
+    "injury": "Rest",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Questionable",
+    "injury": "Right Hip Synovitis",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
