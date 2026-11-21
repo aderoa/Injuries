@@ -50760,5 +50760,12 @@
     "injury": "Bilateral Patellar Tendinopathy Injury Maintenance",
     "date": "2026-11-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Isaiah Evans",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
