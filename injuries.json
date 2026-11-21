@@ -50739,5 +50739,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-11-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tyrese Maxey",
+    "status": "Available",
+    "injury": "Right Foot Sprain",
+    "date": "2026-11-21",
+    "prevStatus": "Questionable"
   }
 ]
