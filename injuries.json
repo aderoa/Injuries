@@ -50921,5 +50921,12 @@
     "injury": "Lumbar Strain",
     "date": "2026-11-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jaylin Williams",
+    "status": "Out",
+    "injury": "Low Back Spasms",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
