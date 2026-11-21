@@ -50956,5 +50956,12 @@
     "injury": "Illness",
     "date": "2026-11-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "Right Finger Dislocation",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
