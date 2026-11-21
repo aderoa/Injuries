@@ -50704,5 +50704,12 @@
     "injury": "Right Hamstring Injury",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ryan Dunn",
+    "status": "Left Game",
+    "injury": "Right Quadriceps Injury",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
