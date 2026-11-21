@@ -50809,5 +50809,12 @@
     "injury": "Right Grointendinitis",
     "date": "2026-11-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Questionable",
+    "injury": "Right Groin Tendinitis",
+    "date": "2026-11-21",
+    "prevStatus": "Questionable"
   }
 ]
