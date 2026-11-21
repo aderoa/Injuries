@@ -50711,5 +50711,12 @@
     "injury": "Right Quadriceps Injury",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Left Game",
+    "injury": "Left Hamstring Injury",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
