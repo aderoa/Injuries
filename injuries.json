@@ -50858,5 +50858,12 @@
     "injury": "Left Calf Tightness",
     "date": "2026-11-21",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Out",
+    "injury": "Right Knee Arthroscopy",
+    "date": "2026-11-16",
+    "prevStatus": "Out"
   }
 ]
