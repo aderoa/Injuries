@@ -50816,5 +50816,12 @@
     "injury": "Right Groin Tendinitis",
     "date": "2026-11-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Myron Gardner",
+    "status": "Probable",
+    "injury": "Right Hamstring Tightness / Soreness",
+    "date": "2026-11-21",
+    "prevStatus": "Out"
   }
 ]
