@@ -50690,5 +50690,12 @@
     "injury": "Left Hip Soreness / Tightness",
     "date": "2026-11-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Left Game",
+    "injury": "Right Calf Tightness / Soreness",
+    "date": "2026-11-20",
+    "prevStatus": "Available"
   }
 ]
