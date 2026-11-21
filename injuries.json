@@ -50977,5 +50977,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Questionable",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
