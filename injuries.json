@@ -50949,5 +50949,12 @@
     "injury": "Right Elbow Injury Management",
     "date": "2026-11-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-21",
+    "prevStatus": "Questionable"
   }
 ]
