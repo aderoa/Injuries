@@ -50627,5 +50627,19 @@
     "injury": "Low Back Contusion",
     "date": "2026-11-20",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-20",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Ron Holland",
+    "status": "Out",
+    "injury": " Left Knee Contusion / Bone Bruise",
+    "date": "2026-11-20",
+    "prevStatus": "Doubtful"
   }
 ]
