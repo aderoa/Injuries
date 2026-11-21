@@ -50942,5 +50942,12 @@
     "injury": "Low Back Contusion / Neck Strain",
     "date": "2026-11-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Draymond Green",
+    "status": "Available",
+    "injury": "Right Elbow Injury Management",
+    "date": "2026-11-21",
+    "prevStatus": "Out"
   }
 ]
