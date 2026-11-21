@@ -50963,5 +50963,12 @@
     "injury": "Right Finger Dislocation",
     "date": "2026-11-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Probable",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
