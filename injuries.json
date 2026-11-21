@@ -50928,5 +50928,12 @@
     "injury": "Low Back Spasms",
     "date": "2026-11-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
