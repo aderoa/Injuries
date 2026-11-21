@@ -50641,5 +50641,12 @@
     "injury": " Left Knee Contusion / Bone Bruise",
     "date": "2026-11-20",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Noa Essengue",
+    "status": "Available",
+    "injury": "Bilateral Wrist Soreness",
+    "date": "2026-11-20",
+    "prevStatus": "Probable"
   }
 ]
