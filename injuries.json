@@ -50620,5 +50620,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-20",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Peyton Watson",
+    "status": "Available",
+    "injury": "Low Back Contusion",
+    "date": "2026-11-20",
+    "prevStatus": "Questionable"
   }
 ]
