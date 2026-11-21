@@ -50718,5 +50718,12 @@
     "injury": "Left Hamstring Injury",
     "date": "2026-11-20",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
