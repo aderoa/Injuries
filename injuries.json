@@ -51034,5 +51034,12 @@
     "date": "2026-11-21",
     "prevStatus": "Questionable",
     "eta": "5-10 days"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
