@@ -51147,5 +51147,12 @@
     "injury": "Right Hamstring Strain",
     "date": "2026-11-22",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Grant Nelson",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
