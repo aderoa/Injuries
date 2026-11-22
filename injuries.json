@@ -51274,5 +51274,12 @@
     "injury": "Right Groin Tendinitis",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Brandon Miller",
+    "status": "Probable",
+    "injury": "Right Knee Contusion /Bone Bruise",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
