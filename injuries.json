@@ -51189,5 +51189,12 @@
     "injury": " Left AC Joint Contusion",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Paul George",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
