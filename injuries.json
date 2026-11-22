@@ -51133,5 +51133,12 @@
     "injury": "Illness",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Tobe Awaka",
+    "status": "Available",
+    "injury": "Low Back Tightness",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
