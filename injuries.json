@@ -51309,5 +51309,12 @@
     "injury": "Left Patellar Tendinitis",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Doubtful"
   }
 ]
