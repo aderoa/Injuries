@@ -51055,5 +51055,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
