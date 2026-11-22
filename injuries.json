@@ -51012,5 +51012,12 @@
     "injury": "Rest",
     "date": "2026-11-21",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Out",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
