@@ -51175,5 +51175,12 @@
     "injury": "Left Elbow Infection",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jayson Tatum",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
