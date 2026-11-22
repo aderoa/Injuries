@@ -51203,5 +51203,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Clint Capela",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
