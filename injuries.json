@@ -51140,5 +51140,12 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Nolan Traore",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-22",
+    "prevStatus": "Left Game"
   }
 ]
