@@ -51126,5 +51126,12 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-22",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
