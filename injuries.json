@@ -51267,5 +51267,12 @@
     "injury": "Personal Reasons",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Out",
+    "injury": "Right Groin Tendinitis",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
