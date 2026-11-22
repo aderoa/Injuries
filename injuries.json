@@ -51048,5 +51048,12 @@
     "injury": "Illness",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Probable",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
