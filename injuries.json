@@ -51105,5 +51105,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Questionable",
+    "injury": "Left Patellar Tendinitis",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
