@@ -51224,5 +51224,12 @@
     "injury": "Right Hamstring Tightness / Soreness",
     "date": "2026-11-22",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Ousmane Dieng",
+    "status": "Questionable",
+    "injury": "Left Finger Fracture",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
