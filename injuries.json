@@ -51210,5 +51210,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Out",
+    "injury": "Low Back Contusion / Neck Strain",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
