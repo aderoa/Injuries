@@ -51351,5 +51351,12 @@
     "injury": "Right Shin Contusion",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Brandon Ingram",
+    "status": "Available",
+    "injury": "Right Heel Surgery",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
