@@ -51090,5 +51090,13 @@
     "injury": " Left Knee Contusion / Bone Bruise",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Norman Powell",
+    "status": "Out",
+    "injury": "Right Hamstring Strain",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable",
+    "eta": "5-10 days"
   }
 ]
