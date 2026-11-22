@@ -51098,5 +51098,12 @@
     "date": "2026-11-22",
     "prevStatus": "Questionable",
     "eta": "5-10 days"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
