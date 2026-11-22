@@ -51302,5 +51302,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-22",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Walter Clayton",
+    "status": "Available",
+    "injury": "Left Patellar Tendinitis",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
