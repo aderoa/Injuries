@@ -51288,5 +51288,19 @@
     "injury": "Right Knee Contusion / Bone Bruise",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Patrick Williams",
+    "status": "Available",
+    "injury": "Left Thumb Sprain",
+    "date": "2026-11-22",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Probable"
   }
 ]
