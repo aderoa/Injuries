@@ -51196,5 +51196,12 @@
     "injury": "Rest",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Collin Murray-Boyles",
+    "status": "Probable",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
