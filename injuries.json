@@ -51005,5 +51005,12 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-11-21",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Out",
+    "injury": "Rest",
+    "date": "2026-11-21",
+    "prevStatus": "Available"
   }
 ]
