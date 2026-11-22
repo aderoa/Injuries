@@ -51358,5 +51358,19 @@
     "injury": "Right Heel Surgery",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Deandre Ayton",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Carlton Carrington",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
