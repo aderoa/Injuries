@@ -51076,5 +51076,12 @@
     "injury": "Illness",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Kingston Flemings",
+    "status": "Available",
+    "injury": "Lumbar Strain",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
