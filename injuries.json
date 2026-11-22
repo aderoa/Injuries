@@ -51119,5 +51119,12 @@
     "injury": "Illness",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Available",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-22",
+    "prevStatus": "Probable"
   }
 ]
