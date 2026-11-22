@@ -51238,5 +51238,12 @@
     "injury": "Right Ankle Injury Management",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Probable",
+    "injury": "Left Hamstring Tightness / Soreness.",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
