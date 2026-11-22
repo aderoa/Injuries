@@ -51245,5 +51245,13 @@
     "injury": "Left Hamstring Tightness / Soreness.",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Probable",
+    "injury": "Cervical Spine Sprain",
+    "date": "2026-11-22",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
