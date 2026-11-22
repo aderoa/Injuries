@@ -51069,5 +51069,12 @@
     "injury": "Chest / Sternum Contusion",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Carlton Carrington",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
