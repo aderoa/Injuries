@@ -51344,5 +51344,12 @@
     "injury": "",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aday Mara",
+    "status": "Out",
+    "injury": "Right Shin Contusion",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
