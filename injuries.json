@@ -51154,5 +51154,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-22",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Probable",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
   }
 ]
