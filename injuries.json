@@ -51372,5 +51372,12 @@
     "injury": "Illness",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Dunn",
+    "status": "Questionable",
+    "injury": "Right Quadriceps Soreness",
+    "date": "2026-11-22",
+    "prevStatus": "Left Game"
   }
 ]
