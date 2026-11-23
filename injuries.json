@@ -51479,5 +51479,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jaden Bradley",
+    "status": "Questionable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-23",
+    "prevStatus": "Available"
   }
 ]
