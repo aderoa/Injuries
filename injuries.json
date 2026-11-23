@@ -51563,5 +51563,12 @@
     "injury": "Right Quadriceps Soreness",
     "date": "2026-11-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Out",
+    "injury": "Left Knee Injury",
+    "date": "2026-11-23",
+    "prevStatus": "Left Game"
   }
 ]
