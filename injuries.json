@@ -51570,5 +51570,12 @@
     "injury": "Left Knee Injury",
     "date": "2026-11-23",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Paul George",
+    "status": "Available",
+    "injury": "Rest",
+    "date": "2026-11-23",
+    "prevStatus": "Out"
   }
 ]
