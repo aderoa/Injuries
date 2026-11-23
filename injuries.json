@@ -51465,5 +51465,12 @@
     "date": "2026-11-22",
     "prevStatus": "Out",
     "eta": "8-10 weeks"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-23",
+    "prevStatus": "Available"
   }
 ]
