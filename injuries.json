@@ -51521,5 +51521,12 @@
     "injury": "python gr_allworld_page.py python gr_wnba_push.py --repo allworld-rating --file out\\allworld.html python gr_daily.py",
     "date": "2026-11-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Out",
+    "injury": "Right Hip Impingement",
+    "date": "2026-11-20",
+    "prevStatus": "Out"
   }
 ]
