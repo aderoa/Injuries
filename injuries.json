@@ -51450,5 +51450,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Questionable",
+    "injury": "Bilateral Low Back Tightness",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
