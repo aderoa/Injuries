@@ -51486,5 +51486,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Questionable",
+    "injury": "Left Hip Injury Management",
+    "date": "2026-11-23",
+    "prevStatus": "Available"
   }
 ]
