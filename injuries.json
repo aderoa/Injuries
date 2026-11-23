@@ -51443,5 +51443,12 @@
     "injury": "",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan McLaughlin",
+    "status": "Questionable",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
