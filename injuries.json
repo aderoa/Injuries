@@ -51436,5 +51436,12 @@
     "injury": "Right Shin Contusion",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jordan McLaughlin",
+    "status": "Questionable",
+    "injury": "",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
