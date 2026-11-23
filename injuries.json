@@ -51612,5 +51612,13 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Cameron Boozer",
+    "status": "Out",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-20",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
