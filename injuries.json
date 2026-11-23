@@ -51535,5 +51535,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Nicolas Claxton",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-23",
+    "prevStatus": "Out"
   }
 ]
