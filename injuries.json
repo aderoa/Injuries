@@ -51429,5 +51429,12 @@
     "injury": "Left Knee Injury",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Questionable",
+    "injury": "Right Shin Contusion",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
