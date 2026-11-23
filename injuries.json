@@ -51507,5 +51507,12 @@
     "injury": "Left Finger Fracture",
     "date": "2026-11-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "status": "Available",
+    "injury": "Low Back Contusion / Neck Strain",
+    "date": "2026-11-23",
+    "prevStatus": "Out"
   }
 ]
