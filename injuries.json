@@ -51407,5 +51407,13 @@
     "injury": "Left Hip Soreness / Tightness",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Available",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-11-20",
+    "prevStatus": "Available",
+    "eta": "2-3 weeks"
   }
 ]
