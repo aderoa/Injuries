@@ -51598,5 +51598,12 @@
     "injury": "Right Knee Contusion / Bone Bruise",
     "date": "2026-11-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-23",
+    "prevStatus": "Questionable"
   }
 ]
