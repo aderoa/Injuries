@@ -51634,5 +51634,19 @@
     "injury": "Left Hip Injury Management",
     "date": "2026-11-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Adem Bona",
+    "status": "Available",
+    "injury": "Cervical Spine Sprain",
+    "date": "2026-11-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Available",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-11-23",
+    "prevStatus": "Probable"
   }
 ]
