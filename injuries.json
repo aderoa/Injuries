@@ -51472,5 +51472,12 @@
     "injury": "Illness",
     "date": "2026-11-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grant Nelson",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-23",
+    "prevStatus": "Probable"
   }
 ]
