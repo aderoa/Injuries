@@ -118,6 +118,31 @@ tbody td { padding:0.55rem 0.5rem; vertical-align:middle; white-space:nowrap; }
 .sync-notoken { color:var(--orange); cursor:pointer; }
 @keyframes syncPulse { 0%,100%{opacity:1} 50%{opacity:.5} }
 
+/* — Injury Pulse suggestions (v2.5) — */
+.pulse-panel { border:1px solid var(--border); border-left:4px solid var(--accent-gold); border-radius:10px; background:var(--surface); margin-bottom:16px; }
+.pulse-panel.empty { border-left-color:var(--border); }
+.pulse-head { display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:10px 12px; }
+.pulse-head .pulse-title { font-size:13px; font-weight:700; }
+.pulse-head .pulse-meta { font-size:12px; color:var(--text2); }
+.pulse-head .pulse-count { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:600; padding:3px 9px; border-radius:99px; background:rgba(240,182,55,0.18); color:#8a5a00; }
+.pulse-head .spacer { flex:1; }
+.pulse-panel button { font-family:inherit; font-size:12px; font-weight:600; padding:5px 11px; border-radius:7px; border:1px solid var(--border); background:var(--surface); color:var(--text); cursor:pointer; white-space:nowrap; }
+.pulse-panel button:hover { border-color:var(--accent); background:var(--surface2); }
+.pulse-panel button.ok { background:var(--green); border-color:var(--green); color:#fff; }
+.pulse-panel button.ok:hover { background:#15803d; }
+.pulse-row { display:grid; grid-template-columns:44px minmax(120px,1fr) 205px minmax(140px,1.3fr) auto; gap:8px; align-items:center; padding:6px 12px; border-top:1px solid var(--border); font-size:13px; }
+.pulse-row .pulse-team { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text2); }
+.pulse-row .pulse-name { font-weight:600; cursor:pointer; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.pulse-row .pulse-name:hover { color:var(--accent); }
+.pulse-row .pulse-change { font-size:12px; white-space:nowrap; }
+.pulse-row .pulse-tag { display:block; font-size:10.5px; color:var(--text-muted); white-space:normal; }
+.pulse-row input { font-family:inherit; font-size:12px; padding:4px 6px; border-radius:6px; border:1px solid var(--border); background:var(--surface); color:var(--text); outline:none; width:100%; }
+.pulse-row input:focus { border-color:var(--accent); }
+.pulse-row .pulse-btns { display:flex; gap:6px; }
+.pulse-foot { padding:8px 12px; border-top:1px solid var(--border); font-size:11.5px; color:var(--text2); line-height:1.6; }
+.pulse-foot a { color:var(--accent); cursor:pointer; text-decoration:underline; }
+@media (max-width:760px) { .pulse-row { grid-template-columns:40px 1fr auto; } .pulse-row .pulse-change, .pulse-row input { grid-column:2 / 4; } }
+
 /* — Filter bar — */
 .filter-bar { display:flex; gap:8px; margin-bottom:16px; align-items:center; }
 .filter-bar input { font-family:inherit; font-size:13px; padding:8px 12px; border-radius:8px; border:1px solid var(--border); background:var(--surface); color:var(--text); flex:1; max-width:320px; outline:none; }
@@ -474,7 +499,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="admin-container">
       <div class="admin-header">
-        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.4</span></h1>
+        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.5</span></h1>
         <span class="subtitle" id="lastUpdate"></span>
       </div>
       <div class="admin-toolbar" id="toolbar">
@@ -491,6 +516,7 @@ if (isAdmin) {
         <span class="sync-status sync-idle" id="syncStatus" onclick="if(this.classList.contains('sync-error')||this.classList.contains('sync-notoken'))setupGitHubToken()">🔗 <span>Auto-sync on</span></span>
         <span class="badge" id="changesBadge">0 changes</span>
       </div>
+      <div class="pulse-panel empty" id="pulsePanel"></div>
       <div class="filter-bar">
         <input type="text" id="searchInput" placeholder="Search player or team..." oninput="filterPlayers()">
         <button class="filter-btn" onclick="toggleFilter('modified',this)" title="Show only modified">✎ Modified</button>
@@ -508,7 +534,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="report-container">
       <div class="admin-header">
-        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.4</span></h1>
+        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.5</span></h1>
       </div>
       <div class="report-toolbar" id="reportToolbar">
         <button onclick="copyAll(this)">📋 Copy Full Report</button>
@@ -550,6 +576,7 @@ async function initAdmin() {
     document.getElementById('lastUpdate').textContent = `${Object.keys(roster).length} players loaded`;
     renderRoster();
     updateBadge();
+    initPulse();
     // Initialize GitHub sync status
     if (_ghToken) {
       setSyncStatus('idle', 'Auto-sync on');
@@ -827,6 +854,286 @@ function updateBadge() {
   broadcastInjuries();
   // Debounced auto-push to GitHub
   scheduleGitHubSync();
+  // An edit can settle or create a Pulse suggestion
+  pulseRender();
+}
+
+
+// ==========================================
+// INJURY PULSE SUGGESTIONS (v2.5)
+// ==========================================
+// The Injury Pulse page (aderoa/nba-injury-pulse) reads the NBA's official
+// injury report every 15 minutes. This panel compares that report with what
+// the tracker holds and lists the differences as SUGGESTIONS.
+//
+// NOTHING HERE WRITES ANYTHING BY ITSELF. A suggestion sits in the panel
+// until someone clicks Accept; only then does it become an ordinary edit --
+// the same code path as changing the row by hand (onStatusChange /
+// onInjuryChange) -- and the usual auto-sync publishes it. Dismiss hides a
+// suggestion until the report says something different about that player.
+//
+// What is suggested:
+//   status   the report lists the player with another status than the tracker
+//   text     same status, different injury wording. The tracker's wording is
+//            curated, so these are folded away behind "show" and are never
+//            part of Accept all.
+//   cleared  the tracker has him injured, his team's latest report does not
+//            list him at all, and the tracker's entry is OLDER than that
+//            report's game date -> Available
+// The tracker's own injury text is kept whenever it has one for a player who
+// is already hurt; the report's wording is only used to fill a blank.
+// What is not: G League rows (the tracker does not log assignments), teams
+// whose report is NOT YET SUBMITTED for the "cleared" rule, and any report
+// name that cannot be matched to exactly one roster player (listed under the
+// panel instead, so nothing is guessed).
+const PULSE_URL = 'https://aderoa.github.io/nba-injury-pulse/data/injury_pulse_live.json';
+const PULSE_REFRESH_MS = 5 * 60 * 1000;
+const PULSE_SKIP_REASONS = [/^g\s*league/i];
+const PULSE_STATUS = { out:'Out', questionable:'Questionable', probable:'Probable', doubtful:'Doubtful', available:'Available' };
+const PULSE_DISMISS_KEY = 'injuries_pulse_dismissed';
+const PULSE_DISMISS_DAYS = 30;
+let pulseData = null, pulseError = '', pulseFetchedAt = 0;
+let pulseDismissed = {};   // suggestion key -> time dismissed
+let pulseList = [];        // suggestions on screen
+let pulseUnmatched = [];   // report names with no roster player
+let pulseTimer = null;
+let pulseShowText = false; // wording-only differences are folded away
+
+function pulseKey(name) {
+  return String(name || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
+    .replace(/\b(jr|sr|ii|iii|iv|v)\b\.?/g, ' ').replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim();
+}
+function pulseLast(name) { const k = pulseKey(name).split(' '); return k[k.length - 1] || ''; }
+function pulseFlat(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
+function pulseEsc(s) { return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// "Injury/Illness - Right Knee Contusion /Bone Bruise" -> "Right Knee Contusion / Bone Bruise"
+function pulseClean(reason) {
+  return String(reason || '').replace(/^\s*injury\s*\/\s*illness\s*-\s*/i, '')
+    .replace(/\s*\/\s*/g, ' / ').replace(/\s*;\s*/g, '; ').replace(/\s+/g, ' ').trim();
+}
+
+// "11/23/2026" -> "2026-11-23"
+function pulseISO(mdY) {
+  const m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(String(mdY || '').trim());
+  return m ? `${m[3]}-${m[1].padStart(2,'0')}-${m[2].padStart(2,'0')}` : '';
+}
+
+function pulseBuild() {
+  pulseList = []; pulseUnmatched = [];
+  if (!pulseData || !Array.isArray(pulseData.teams)) return;
+  const abbrOf = {};                       // roster team -> abbreviation
+  for (const [t, a] of Object.entries(TEAM_ABBREV)) abbrOf[t] = a;
+  const byKey = {}, byTeamLast = {};
+  for (const [name, info] of Object.entries(roster)) {
+    const k = pulseKey(name);
+    byKey[k] = (k in byKey) ? null : name; // null = two players, ambiguous
+    const tl = (abbrOf[info.team] || info.team) + '|' + pulseLast(name);
+    (byTeamLast[tl] = byTeamLast[tl] || []).push(name);
+  }
+  const match = (name, abbr) => {
+    const exact = byKey[pulseKey(name)];
+    if (exact) return exact;
+    const c = byTeamLast[abbr + '|' + pulseLast(name)] || [];
+    return c.length === 1 ? c[0] : null;   // one man of that surname on that team
+  };
+
+  // everyone the report names, on whatever team it has him (a traded player's
+  // roster team can lag), and the surnames it names that matched nobody
+  const listed = new Set(), lostLast = new Set();
+  for (const t of pulseData.teams) {
+    for (const p of (t.players || [])) {
+      const name = match(p.name, t.team_abbr);
+      if (name) listed.add(name); else lostLast.add(pulseLast(p.name));
+    }
+  }
+
+  for (const t of pulseData.teams) {
+    const abbr = t.team_abbr;
+    let reportDate = '';
+    for (const p of (t.players || [])) {
+      const d = pulseISO(p.game_date);
+      if (d > reportDate) reportDate = d;
+      const name = match(p.name, abbr);
+      const skip = PULSE_SKIP_REASONS.some(re => re.test(p.reason || ''));
+      if (!name) {
+        if (!skip) pulseUnmatched.push(`${p.name} (${abbr}, ${p.status})`);
+        continue;
+      }
+      if (skip) continue;
+      const st = PULSE_STATUS[String(p.status || '').toLowerCase()];
+      if (!st) continue;
+      const cur = getEffectiveStatus(name);
+      const clean = pulseClean(p.reason);
+      const stale = t.not_yet_submitted ? 'from the previous report (today’s not yet submitted)' : '';
+      if (cur.status !== st) {
+        // his own wording wins when he is already hurt; the report fills a blank
+        const keep = cur.status !== 'Available' && cur.injury;
+        const text = st === 'Available' ? (cur.injury || '') : (keep ? cur.injury : (clean || cur.injury || ''));
+        const says = clean && pulseFlat(clean) !== pulseFlat(text) ? 'report says “' + clean + '”' : '';
+        pulseList.push({ type:'status', name, abbr, from:cur.status, to:st, injury: text,
+          tag: [says, stale].filter(Boolean).join('; '), pulseText: clean });
+      } else if (st !== 'Available' && clean && pulseFlat(clean) !== pulseFlat(cur.injury)) {
+        pulseList.push({ type:'text', name, abbr, from:cur.status, to:st, injury:clean,
+          tag: 'wording only' + (cur.injury ? ` — now “${cur.injury}”` : '') + (stale ? '; ' + stale : ''),
+          pulseText: clean });
+      }
+    }
+    // CLEARED: injured in the tracker, gone from a submitted report that is
+    // newer than the tracker's entry.
+    if (t.not_yet_submitted || !reportDate) continue;
+    for (const [name, info] of Object.entries(roster)) {
+      if ((abbrOf[info.team] || info.team) !== abbr || listed.has(name)) continue;
+      const cur = getEffectiveStatus(name);
+      if (!cur.status || cur.status === 'Available') continue;
+      if (!cur.date || cur.date >= reportDate) continue;       // same day or newer: leave it
+      if (lostLast.has(pulseLast(name))) continue;              // may be an unmatched row
+      pulseList.push({ type:'status', name, abbr, from:cur.status, to:'Available',
+        injury: cur.injury || '', tag: `not on the report for ${fmtDate(reportDate)}`,
+        pulseText: 'cleared since ' + cur.date });   // a dismissal lasts until his entry changes
+    }
+  }
+  for (const s of pulseList) s.key = [s.name, s.type, s.to, pulseFlat(s.type === 'text' ? s.injury : s.pulseText)].join('|');
+  pulseList.sort((a, b) => (a.type === b.type ? 0 : a.type === 'status' ? -1 : 1)
+    || a.abbr.localeCompare(b.abbr) || lastName(a.name).localeCompare(lastName(b.name)));
+}
+
+function pulseRender() {
+  const el = document.getElementById('pulsePanel');
+  if (!el) return;
+  // keep what has been typed into the panel across a rebuild
+  const typed = {};
+  el.querySelectorAll('.pulse-row input').forEach(inp => {
+    const old = pulseList[+inp.dataset.i];
+    if (old && inp.value !== old.injury) typed[old.key] = inp.value;
+  });
+  const focusKey = (document.activeElement && el.contains(document.activeElement)
+    && pulseList[+document.activeElement.dataset.i] || {}).key;
+  pulseBuild();
+  const hidden = pulseList.filter(s => pulseDismissed[s.key]).length;
+  const live = pulseList.filter(s => !pulseDismissed[s.key]);
+  const nStatus = live.filter(s => s.type === 'status').length;
+  const nText = live.length - nStatus;
+  const shown = live.filter(s => s.type === 'status' || pulseShowText);
+  el.classList.toggle('empty', !shown.length);
+  let h = '<div class="pulse-head"><span class="pulse-title">📡 Injury Pulse</span>';
+  if (pulseError && !pulseData) {
+    h += `<span class="pulse-meta">not reachable (${pulseEsc(pulseError)})</span>`;
+  } else if (!pulseData) {
+    h += '<span class="pulse-meta">loading…</span>';
+  } else {
+    h += `<span class="pulse-meta">report ${pulseEsc(pulseData.report_ts || '?')}</span>`;
+    h += nStatus ? `<span class="pulse-count">${nStatus} to review</span>`
+                 : '<span class="pulse-meta">— no status changes to review</span>';
+    if (pulseError) h += `<span class="pulse-meta">(last check failed: ${pulseEsc(pulseError)})</span>`;
+  }
+  h += '<span class="spacer"></span>';
+  if (nStatus > 1) h += `<button class="ok" data-act="all">✓ Accept all ${nStatus} status changes</button>`;
+  h += '<button data-act="refresh" title="Read the Injury Pulse file again">↻ Check now</button></div>';
+  shown.forEach(s => {
+    const i = pulseList.indexOf(s);
+    h += `<div class="pulse-row"><span class="pulse-team">${pulseEsc(s.abbr)}</span>`
+      + `<span class="pulse-name" data-act="goto" data-i="${i}" title="Show his row">${pulseEsc(s.name)}</span>`
+      + `<span class="pulse-change">${s.type === 'status' ? sSpan(s.from) + ' → ' + sSpan(s.to) : sSpan(s.to)}`
+      + (s.tag ? `<span class="pulse-tag">${pulseEsc(s.tag)}</span>` : '') + '</span>'
+      + `<input type="text" data-i="${i}" value="${pulseEsc(s.key in typed ? typed[s.key] : s.injury)}" placeholder="${s.to === 'Available' ? '—' : 'Injury reason'}">`
+      + `<span class="pulse-btns"><button class="ok" data-act="accept" data-i="${i}">✓ Accept</button>`
+      + `<button data-act="dismiss" data-i="${i}">✕ Dismiss</button></span></div>`;
+  });
+  const foot = [];
+  if (shown.length) foot.push('Nothing here is live. <b>Accept</b> turns a line into an ordinary edit, which auto-sync then publishes; the injury text can be changed first.');
+  if (nText) foot.push(nText + ' player' + (nText === 1 ? '' : 's') + ' with the same status but different injury wording in the report — '
+    + '<a data-act="text">' + (pulseShowText ? 'hide' : 'show') + '</a>');
+  if (hidden) foot.push(`${hidden} dismissed — <a data-act="restore">show again</a>`);
+  if (pulseData) {
+    const nys = (pulseData.teams || []).filter(t => t.not_yet_submitted).map(t => t.team_abbr);
+    if (nys.length) foot.push('Not yet submitted today: ' + pulseEsc(nys.join(', ')));
+    if (pulseUnmatched.length) foot.push('On the report but not matched to a roster player (not suggested): ' + pulseEsc(pulseUnmatched.join(' · ')));
+  }
+  if (foot.length) h += '<div class="pulse-foot">' + foot.join('<br>') + '</div>';
+  el.innerHTML = h;
+  if (focusKey) {
+    const i = pulseList.findIndex(s => s.key === focusKey);
+    const inp = i >= 0 && el.querySelector(`.pulse-row input[data-i="${i}"]`);
+    if (inp) { inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length); }
+  }
+}
+
+function pulseRow(name) {
+  return [...document.querySelectorAll('.player-row')].find(r => r.dataset.player === name) || null;
+}
+
+// The one place a suggestion becomes an edit: through the row's own handlers.
+function pulseApply(s, injuryText) {
+  const row = pulseRow(s.name);
+  if (!row) return false;
+  const sel = row.querySelector('select:not(.prev-status)');
+  const inj = row.querySelector('input[type="text"]:not(.eta-input)');
+  if (!sel || !inj) return false;
+  inj.value = injuryText;
+  if (s.type === 'status') { sel.value = s.to; onStatusChange(s.name, sel); }
+  else onInjuryChange(s.name, inj);
+  return true;
+}
+
+function pulseSaveDismissed() {
+  const cutoff = Date.now() - PULSE_DISMISS_DAYS * 864e5;
+  for (const k of Object.keys(pulseDismissed)) if (pulseDismissed[k] < cutoff) delete pulseDismissed[k];
+  try { localStorage.setItem(PULSE_DISMISS_KEY, JSON.stringify(pulseDismissed)); } catch (e) {}
+}
+
+function pulseClick(ev) {
+  const b = ev.target.closest('[data-act]');
+  if (!b) return;
+  const act = b.dataset.act, s = pulseList[+b.dataset.i];
+  if (act === 'refresh') { pulseFetch(true); return; }
+  if (act === 'text') { pulseShowText = !pulseShowText; pulseRender(); return; }
+  if (act === 'restore') { pulseDismissed = {}; pulseSaveDismissed(); pulseRender(); return; }
+  if (act === 'all') {
+    const todo = pulseList.filter(x => x.type === 'status' && !pulseDismissed[x.key]);
+    if (!todo.length || !confirm('Apply ' + todo.length + ' status change' + (todo.length === 1 ? '' : 's')
+      + ' from the Injury Pulse report of ' + (pulseData.report_ts || '?') + '?\n\n'
+      + todo.map(x => x.name + ': ' + x.from + ' → ' + x.to).join('\n')
+      + '\n\nThey become edits and auto-sync publishes them.')) return;
+    const typed = {};
+    document.querySelectorAll('#pulsePanel .pulse-row input').forEach(inp => { typed[inp.dataset.i] = inp.value; });
+    todo.forEach(x => { const i = pulseList.indexOf(x); pulseApply(x, i in typed ? typed[i] : x.injury); });
+    return;
+  }
+  if (!s) return;
+  if (act === 'goto') {
+    const row = pulseRow(s.name);
+    if (row) { row.closest('.team-section').classList.remove('collapsed'); row.scrollIntoView({ block:'center' }); }
+  } else if (act === 'dismiss') {
+    pulseDismissed[s.key] = Date.now(); pulseSaveDismissed(); pulseRender();
+  } else if (act === 'accept') {
+    const inp = document.querySelector(`#pulsePanel .pulse-row input[data-i="${b.dataset.i}"]`);
+    if (!pulseApply(s, inp ? inp.value : s.injury)) alert('Could not find ' + s.name + ' in the roster view.');
+  }
+}
+
+async function pulseFetch(manual) {
+  try {
+    const r = await fetch(PULSE_URL + '?t=' + Date.now(), { cache:'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    if (!d || !Array.isArray(d.teams)) throw new Error('unexpected file');
+    pulseData = d; pulseError = ''; pulseFetchedAt = Date.now();
+  } catch (e) {
+    pulseError = e.message || 'fetch failed';
+  }
+  pulseRender();
+}
+
+function initPulse() {
+  const el = document.getElementById('pulsePanel');
+  if (!el) return;
+  try { pulseDismissed = JSON.parse(localStorage.getItem(PULSE_DISMISS_KEY) || '{}') || {}; } catch (e) { pulseDismissed = {}; }
+  el.addEventListener('click', pulseClick);
+  pulseRender();
+  pulseFetch(false);
+  clearInterval(pulseTimer);
+  pulseTimer = setInterval(() => { if (!document.hidden) pulseFetch(false); }, PULSE_REFRESH_MS);
 }
 
 // Write full latest injury status to localStorage so other apps get instant access
@@ -1078,6 +1385,9 @@ async function pushToGitHub() {
     if (!remaining) {
       document.querySelectorAll('.player-row.modified').forEach(r => r.classList.remove('modified'));
     }
+
+    // latestStatus just changed under the Pulse suggestions
+    pulseRender();
 
     // Only a push that actually landed moves the watermark.
     _ghLastRowCount = Array.isArray(merged) ? merged.length : _ghLastRowCount;
