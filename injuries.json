@@ -51379,5 +51379,12 @@
     "injury": "Right Quadriceps Soreness",
     "date": "2026-11-22",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Out",
+    "injury": "",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
