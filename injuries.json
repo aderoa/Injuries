@@ -51422,5 +51422,12 @@
     "injury": "Left Knee Strain",
     "date": "2026-11-22",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Left Game",
+    "injury": "Left Knee Injury",
+    "date": "2026-11-22",
+    "prevStatus": "Available"
   }
 ]
