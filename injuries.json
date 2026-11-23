@@ -51655,5 +51655,12 @@
     "injury": "Illness",
     "date": "2026-11-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-23",
+    "prevStatus": "Out"
   }
 ]
