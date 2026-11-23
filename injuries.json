@@ -51556,5 +51556,12 @@
     "injury": "Left Elbow Infection",
     "date": "2026-11-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Ryan Dunn",
+    "status": "Available",
+    "injury": "Right Quadriceps Soreness",
+    "date": "2026-11-23",
+    "prevStatus": "Questionable"
   }
 ]
