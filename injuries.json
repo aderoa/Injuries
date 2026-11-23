@@ -51500,5 +51500,12 @@
     "injury": "Right Foot Soreness",
     "date": "2026-11-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ousmane Dieng",
+    "status": "Available",
+    "injury": "Left Finger Fracture",
+    "date": "2026-11-23",
+    "prevStatus": "Questionable"
   }
 ]
