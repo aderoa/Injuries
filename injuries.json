@@ -51528,5 +51528,12 @@
     "injury": "Right Hip Impingement",
     "date": "2026-11-20",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Probable",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-11-23",
+    "prevStatus": "Available"
   }
 ]
