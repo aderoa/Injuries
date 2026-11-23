@@ -51493,5 +51493,12 @@
     "injury": "Left Hip Injury Management",
     "date": "2026-11-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Out",
+    "injury": "Right Foot Soreness",
+    "date": "2026-11-23",
+    "prevStatus": "Available"
   }
 ]
