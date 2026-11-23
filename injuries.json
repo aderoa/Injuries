@@ -51577,5 +51577,12 @@
     "injury": "Rest",
     "date": "2026-11-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Derrick White",
+    "status": "Available",
+    "injury": " Left AC Joint Contusion",
+    "date": "2026-11-23",
+    "prevStatus": "Out"
   }
 ]
