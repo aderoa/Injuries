@@ -499,7 +499,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="admin-container">
       <div class="admin-header">
-        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.5</span></h1>
+        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.5.1</span></h1>
         <span class="subtitle" id="lastUpdate"></span>
       </div>
       <div class="admin-toolbar" id="toolbar">
@@ -534,7 +534,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="report-container">
       <div class="admin-header">
-        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.5</span></h1>
+        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.5.1</span></h1>
       </div>
       <div class="report-toolbar" id="reportToolbar">
         <button onclick="copyAll(this)">📋 Copy Full Report</button>
@@ -899,9 +899,26 @@ let pulseUnmatched = [];   // report names with no roster player
 let pulseTimer = null;
 let pulseShowText = false; // wording-only differences are folded away
 
+// Name key for matching the report to the roster. Accents, punctuation and
+// Jr./II/III go; and the three ways of writing an umlaut are made one, so that
+// Schroeder (roster), Schroder (the NBA's report) and Schröder all meet.
 function pulseKey(name) {
   return String(name || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
-    .replace(/\b(jr|sr|ii|iii|iv|v)\b\.?/g, ' ').replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim();
+    .replace(/\b(jr|sr|ii|iii|iv|v)\b\.?/g, ' ').replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim()
+    .replace(/ae/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u');
+}
+// letters that differ between two spellings (edit distance)
+function pulseDist(a, b) {
+  const m = a.length, n = b.length;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const cur = [i];
+    for (let j = 1; j <= n; j++) {
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+    prev = cur;
+  }
+  return prev[n];
 }
 function pulseLast(name) { const k = pulseKey(name).split(' '); return k[k.length - 1] || ''; }
 function pulseFlat(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
@@ -924,27 +941,36 @@ function pulseBuild() {
   if (!pulseData || !Array.isArray(pulseData.teams)) return;
   const abbrOf = {};                       // roster team -> abbreviation
   for (const [t, a] of Object.entries(TEAM_ABBREV)) abbrOf[t] = a;
-  const byKey = {}, byTeamLast = {};
+  const byKey = {}, byTeamLast = {}, byTeam = {};
   for (const [name, info] of Object.entries(roster)) {
-    const k = pulseKey(name);
+    const k = pulseKey(name), ab = abbrOf[info.team] || info.team;
     byKey[k] = (k in byKey) ? null : name; // null = two players, ambiguous
-    const tl = (abbrOf[info.team] || info.team) + '|' + pulseLast(name);
+    const tl = ab + '|' + pulseLast(name);
     (byTeamLast[tl] = byTeamLast[tl] || []).push(name);
+    (byTeam[ab] = byTeam[ab] || []).push(name);
   }
+  // the same man under two spellings: same first initial, surname at most two
+  // letters apart (surnames of four letters or fewer must be one apart)
+  const alike = (a, b) => {
+    const ka = pulseKey(a), kb = pulseKey(b), la = pulseLast(a), lb = pulseLast(b);
+    return ka[0] === kb[0] && pulseDist(la, lb) <= (Math.min(la.length, lb.length) <= 4 ? 1 : 2);
+  };
   const match = (name, abbr) => {
     const exact = byKey[pulseKey(name)];
     if (exact) return exact;
-    const c = byTeamLast[abbr + '|' + pulseLast(name)] || [];
-    return c.length === 1 ? c[0] : null;   // one man of that surname on that team
+    let c = byTeamLast[abbr + '|' + pulseLast(name)] || [];
+    if (c.length === 1) return c[0];       // one man of that surname on that team
+    c = (byTeam[abbr] || []).filter(n => alike(n, name));
+    return c.length === 1 ? c[0] : null;   // one near-spelling on that team
   };
 
   // everyone the report names, on whatever team it has him (a traded player's
-  // roster team can lag), and the surnames it names that matched nobody
-  const listed = new Set(), lostLast = new Set();
+  // roster team can lag), and the names it has that matched nobody
+  const listed = new Set(), lost = {};
   for (const t of pulseData.teams) {
     for (const p of (t.players || [])) {
       const name = match(p.name, t.team_abbr);
-      if (name) listed.add(name); else lostLast.add(pulseLast(p.name));
+      if (name) listed.add(name); else (lost[t.team_abbr] = lost[t.team_abbr] || []).push(p.name);
     }
   }
 
@@ -987,7 +1013,11 @@ function pulseBuild() {
       const cur = getEffectiveStatus(name);
       if (!cur.status || cur.status === 'Available') continue;
       if (!cur.date || cur.date >= reportDate) continue;       // same day or newer: leave it
-      if (lostLast.has(pulseLast(name))) continue;              // may be an unmatched row
+      // An unmatched report row on his team that could be him (same surname,
+      // a near-spelling, or the same first name): never call him cleared.
+      const first = pulseKey(name).split(' ')[0];
+      if ((lost[abbr] || []).some(u => pulseLast(u) === pulseLast(name) || alike(u, name)
+          || pulseKey(u).split(' ')[0] === first)) continue;
       pulseList.push({ type:'status', name, abbr, from:cur.status, to:'Available',
         injury: cur.injury || '', tag: `not on the report for ${fmtDate(reportDate)}`,
         pulseText: 'cleared since ' + cur.date });   // a dismissal lasts until his entry changes
