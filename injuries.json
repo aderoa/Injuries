@@ -51400,5 +51400,12 @@
     "injury": "Illness",
     "date": "2026-11-22",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Pascal Siakam",
+    "status": "Available",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-22",
+    "prevStatus": "Questionable"
   }
 ]
