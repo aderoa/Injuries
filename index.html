@@ -499,7 +499,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="admin-container">
       <div class="admin-header">
-        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.5.1</span></h1>
+        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.6</span></h1>
         <span class="subtitle" id="lastUpdate"></span>
       </div>
       <div class="admin-toolbar" id="toolbar">
@@ -534,7 +534,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="report-container">
       <div class="admin-header">
-        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.5.1</span></h1>
+        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.6</span></h1>
       </div>
       <div class="report-toolbar" id="reportToolbar">
         <button onclick="copyAll(this)">📋 Copy Full Report</button>
@@ -678,6 +678,7 @@ function getEffectiveStatus(name) {
 }
 
 function onStatusChange(name, sel) {
+  pulseNoteManual(name);
   const row = sel.closest('.player-row');
   const injInput = row.querySelector('input[type="text"]');
   const dateInput = row.querySelector('input[type="date"]');
@@ -731,6 +732,7 @@ function onStatusChange(name, sel) {
 }
 
 function onInjuryChange(name, inp) {
+  pulseNoteManual(name);
   const row = inp.closest('.player-row');
   const sel = row.querySelector('select');
   const dateInput = row.querySelector('input[type="date"]');
@@ -899,6 +901,43 @@ let pulseUnmatched = [];   // report names with no roster player
 let pulseTimer = null;
 let pulseShowText = false; // wording-only differences are folded away
 
+// A HAND EDIT IS A DECISION, NOT A DIFFERENCE (v2.6).
+//
+// Changing a player's status or injury text by hand, while the report says
+// something else, is the user overruling the report with what he knows. Up to
+// v2.5.1 the panel then offered to change it straight back. Now a hand edit
+// records what the report said about that player at that moment, and nothing
+// is suggested for him while the report still says the same:
+//     s  the report's status for him then ('absent' = not on it)
+//     t  the report's injury wording then, flattened
+// A status suggestion returns only when the report's STATUS for him changes;
+// a wording suggestion only when its wording does. Accepting a suggestion is
+// not a hand edit and clears the note.
+// Kept in this browser (localStorage), like the dismissals.
+const PULSE_MANUAL_KEY = 'injuries_pulse_manual';
+const PULSE_MANUAL_DAYS = 60;
+let pulseManual = {};      // player -> { s, t, at } or { pending:true, at }
+let pulseNow = {};         // player -> { s, t }: what the report says now
+let pulseApplying = false; // true while Accept is driving the row's handlers
+let pulseHeld = 0;         // suggestions held back by a hand edit, last build
+
+function pulseSaveManual() {
+  const cutoff = Date.now() - PULSE_MANUAL_DAYS * 864e5;
+  for (const k of Object.keys(pulseManual)) if (!(pulseManual[k].at > cutoff)) delete pulseManual[k];
+  try { localStorage.setItem(PULSE_MANUAL_KEY, JSON.stringify(pulseManual)); } catch (e) {}
+}
+
+// Called first thing by onStatusChange and onInjuryChange.
+function pulseNoteManual(name) {
+  if (pulseApplying) return;
+  const now = pulseNow[name];
+  // No report read yet: note the edit, and take the report's word for him
+  // from the first one that arrives.
+  pulseManual[name] = pulseData ? { s: now ? now.s : 'absent', t: now ? now.t : '', at: Date.now() }
+                                : { pending: true, at: Date.now() };
+  pulseSaveManual();
+}
+
 // Name key for matching the report to the roster. Accents, punctuation and
 // Jr./II/III go; and the three ways of writing an umlaut are made one, so that
 // Schroeder (roster), Schroder (the NBA's report) and Schröder all meet.
@@ -937,8 +976,9 @@ function pulseISO(mdY) {
 }
 
 function pulseBuild() {
-  pulseList = []; pulseUnmatched = [];
+  pulseList = []; pulseUnmatched = []; pulseHeld = 0;
   if (!pulseData || !Array.isArray(pulseData.teams)) return;
+  pulseNow = {};
   const abbrOf = {};                       // roster team -> abbreviation
   for (const [t, a] of Object.entries(TEAM_ABBREV)) abbrOf[t] = a;
   const byKey = {}, byTeamLast = {}, byTeam = {};
@@ -991,8 +1031,15 @@ function pulseBuild() {
       if (!st) continue;
       const cur = getEffectiveStatus(name);
       const clean = pulseClean(p.reason);
+      pulseNow[name] = { s: st, t: pulseFlat(clean) };
+      let hand = pulseManual[name];
+      if (hand && hand.pending) hand = pulseManual[name] = { s: st, t: pulseFlat(clean), at: hand.at };
       const stale = t.not_yet_submitted ? 'from the previous report (today’s not yet submitted)' : '';
-      if (cur.status !== st) {
+      if (cur.status !== st && hand && hand.s === st) {
+        pulseHeld++;                         // edited by hand; the report has not moved
+      } else if (cur.status === st && hand && hand.t === pulseFlat(clean)) {
+        // same status, and the wording is his own choice: nothing to say
+      } else if (cur.status !== st) {
         // his own wording wins when he is already hurt; the report fills a blank
         const keep = cur.status !== 'Available' && cur.injury;
         const text = st === 'Available' ? (cur.injury || '') : (keep ? cur.injury : (clean || cur.injury || ''));
@@ -1011,8 +1058,11 @@ function pulseBuild() {
     for (const [name, info] of Object.entries(roster)) {
       if ((abbrOf[info.team] || info.team) !== abbr || listed.has(name)) continue;
       const cur = getEffectiveStatus(name);
+      let hand = pulseManual[name];
+      if (hand && hand.pending) hand = pulseManual[name] = { s: 'absent', t: '', at: hand.at };
       if (!cur.status || cur.status === 'Available') continue;
       if (!cur.date || cur.date >= reportDate) continue;       // same day or newer: leave it
+      if (hand && hand.s === 'absent') { pulseHeld++; continue; }   // set by hand while already off the report
       // An unmatched report row on his team that could be him (same surname,
       // a near-spelling, or the same first name): never call him cleared.
       const first = pulseKey(name).split(' ')[0];
@@ -1023,6 +1073,11 @@ function pulseBuild() {
         pulseText: 'cleared since ' + cur.date });   // a dismissal lasts until his entry changes
     }
   }
+  if (Object.values(pulseManual).some(h => h.pending)) {
+    // edited before any report was read, and not on this one at all
+    for (const k of Object.keys(pulseManual)) if (pulseManual[k].pending) pulseManual[k] = { s: 'absent', t: '', at: pulseManual[k].at };
+  }
+  pulseSaveManual();
   for (const s of pulseList) s.key = [s.name, s.type, s.to, pulseFlat(s.type === 'text' ? s.injury : s.pulseText)].join('|');
   pulseList.sort((a, b) => (a.type === b.type ? 0 : a.type === 'status' ? -1 : 1)
     || a.abbr.localeCompare(b.abbr) || lastName(a.name).localeCompare(lastName(b.name)));
@@ -1075,6 +1130,9 @@ function pulseRender() {
   if (nText) foot.push(nText + ' player' + (nText === 1 ? '' : 's') + ' with the same status but different injury wording in the report — '
     + '<a data-act="text">' + (pulseShowText ? 'hide' : 'show') + '</a>');
   if (hidden) foot.push(`${hidden} dismissed — <a data-act="restore">show again</a>`);
+  if (pulseHeld) foot.push(pulseHeld + ' difference' + (pulseHeld === 1 ? '' : 's')
+    + ' left alone because you set the player by hand and the report has not changed since \u2014 '
+    + '<a data-act="manual">show anyway</a>');
   if (pulseData) {
     const nys = (pulseData.teams || []).filter(t => t.not_yet_submitted).map(t => t.team_abbr);
     if (nys.length) foot.push('Not yet submitted today: ' + pulseEsc(nys.join(', ')));
@@ -1101,8 +1159,15 @@ function pulseApply(s, injuryText) {
   const inj = row.querySelector('input[type="text"]:not(.eta-input)');
   if (!sel || !inj) return false;
   inj.value = injuryText;
-  if (s.type === 'status') { sel.value = s.to; onStatusChange(s.name, sel); }
-  else onInjuryChange(s.name, inj);
+  // Accepting is not a hand edit: it must not be remembered as one, and it
+  // ends any earlier one for this player.
+  pulseApplying = true;
+  try {
+    delete pulseManual[s.name];
+    if (s.type === 'status') { sel.value = s.to; onStatusChange(s.name, sel); }
+    else onInjuryChange(s.name, inj);
+  } finally { pulseApplying = false; }
+  pulseSaveManual();
   return true;
 }
 
@@ -1117,6 +1182,7 @@ function pulseClick(ev) {
   if (!b) return;
   const act = b.dataset.act, s = pulseList[+b.dataset.i];
   if (act === 'refresh') { pulseFetch(true); return; }
+  if (act === 'manual') { pulseManual = {}; pulseSaveManual(); pulseRender(); return; }
   if (act === 'text') { pulseShowText = !pulseShowText; pulseRender(); return; }
   if (act === 'restore') { pulseDismissed = {}; pulseSaveDismissed(); pulseRender(); return; }
   if (act === 'all') {
@@ -1159,6 +1225,7 @@ function initPulse() {
   const el = document.getElementById('pulsePanel');
   if (!el) return;
   try { pulseDismissed = JSON.parse(localStorage.getItem(PULSE_DISMISS_KEY) || '{}') || {}; } catch (e) { pulseDismissed = {}; }
+  try { pulseManual = JSON.parse(localStorage.getItem(PULSE_MANUAL_KEY) || '{}') || {}; } catch (e) { pulseManual = {}; }
   el.addEventListener('click', pulseClick);
   pulseRender();
   pulseFetch(false);
