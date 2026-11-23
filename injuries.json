@@ -51584,5 +51584,12 @@
     "injury": " Left AC Joint Contusion",
     "date": "2026-11-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Probable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-23",
+    "prevStatus": "Available"
   }
 ]
