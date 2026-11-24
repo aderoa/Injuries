@@ -51676,5 +51676,26 @@
     "injury": "Left Hamstring Tightness / Soreness.",
     "date": "2026-11-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Available",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-11-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Jaylon Tyson",
+    "status": "Available",
+    "injury": "Right Ankle Injury Management",
+    "date": "2026-11-23",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Zion Williamson",
+    "status": "Available",
+    "injury": "Left Thigh Contusion",
+    "date": "2026-11-23",
+    "prevStatus": "Probable"
   }
 ]
