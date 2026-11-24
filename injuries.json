@@ -51735,5 +51735,21 @@
     "date": "2026-02-08",
     "prevStatus": "Out",
     "eta": "12 months"
+  },
+  {
+    "player": "Ben Sheppard",
+    "status": "Out",
+    "injury": "Left Meniscus Surgery",
+    "date": "2026-10-23",
+    "prevStatus": "Out",
+    "eta": "3-6 months"
+  },
+  {
+    "player": "Jordan Miller",
+    "status": "Out",
+    "injury": "Left Rotator Cuff Surgery",
+    "date": "2026-08-26",
+    "prevStatus": "Out",
+    "eta": "6 months"
   }
 ]
