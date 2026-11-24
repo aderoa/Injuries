@@ -51904,5 +51904,12 @@
     "injury": "Left Shoulder Contusion",
     "date": "2026-11-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Left Game",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-11-23",
+    "prevStatus": "Available"
   }
 ]
