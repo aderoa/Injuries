@@ -51971,5 +51971,12 @@
     "injury": "Right Groin Tendinitis",
     "date": "2026-11-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Questionable",
+    "injury": "Right Shoulder Sprain",
+    "date": "2026-11-24",
+    "prevStatus": "Available"
   }
 ]
