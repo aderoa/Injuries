@@ -51890,5 +51890,12 @@
     "injury": "Bilateral Low Back Tightness",
     "date": "2026-11-23",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Julian Strawther",
+    "status": "Available",
+    "injury": "Left Knee Sprain",
+    "date": "2026-11-23",
+    "prevStatus": "Out"
   }
 ]
