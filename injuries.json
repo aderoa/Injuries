@@ -51719,5 +51719,21 @@
     "date": "2026-01-19",
     "prevStatus": "Out",
     "eta": "12 months"
+  },
+  {
+    "player": "Moses Moody",
+    "status": "Out",
+    "injury": "Left Patellar Tendon Repair / Surgery",
+    "date": "2026-03-23",
+    "prevStatus": "Out",
+    "eta": "9 months"
+  },
+  {
+    "player": "Johnny Furphy",
+    "status": "Out",
+    "injury": "Right ACL Repair / Surgery",
+    "date": "2026-02-08",
+    "prevStatus": "Out",
+    "eta": "12 months"
   }
 ]
