@@ -51704,5 +51704,12 @@
     "injury": "Right Knee Sprain",
     "date": "2026-10-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tobi Lawal",
+    "status": "Out",
+    "injury": "Right Groin Strain",
+    "date": "2026-11-18",
+    "prevStatus": "Out"
   }
 ]
