@@ -51711,5 +51711,13 @@
     "injury": "Right Groin Strain",
     "date": "2026-11-18",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jimmy Butler",
+    "status": "Out",
+    "injury": "Right ACL Repair / Surgery",
+    "date": "2026-01-19",
+    "prevStatus": "Out",
+    "eta": "12 months"
   }
 ]
