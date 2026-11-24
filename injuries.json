@@ -51932,5 +51932,13 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-24",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Ebuka Okorie",
+    "status": "Out",
+    "injury": " Left Oblique Strain",
+    "date": "2026-11-19",
+    "prevStatus": "Out",
+    "eta": "1-2 weeks"
   }
 ]
