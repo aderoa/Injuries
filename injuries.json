@@ -51918,5 +51918,12 @@
     "injury": "Left Hip Soreness",
     "date": "2026-11-23",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tre Mann",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-24",
+    "prevStatus": "Available"
   }
 ]
