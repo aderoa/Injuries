@@ -52006,5 +52006,33 @@
     "injury": "Left Calf Strain",
     "date": "2026-11-21",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Questionable",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-24",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Sion James",
+    "status": "Probable",
+    "injury": "Left Thigh Soreness",
+    "date": "2026-11-24",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Doubtful",
+    "injury": "Left Hip Soreness",
+    "date": "2026-11-24",
+    "prevStatus": "Left Game"
+  },
+  {
+    "player": "Grant Williams",
+    "status": "Available",
+    "injury": "Right Hamstring Injury Management",
+    "date": "2026-11-24",
+    "prevStatus": "Out"
   }
 ]
