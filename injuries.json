@@ -51876,5 +51876,12 @@
     "date": "2026-07-30",
     "prevStatus": "Out",
     "eta": "9-12 months"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Out",
+    "injury": "Right Shin Contusion",
+    "date": "2026-11-23",
+    "prevStatus": "Questionable"
   }
 ]
