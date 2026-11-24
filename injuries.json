@@ -51897,5 +51897,12 @@
     "injury": "Left Knee Sprain",
     "date": "2026-11-23",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan McLaughlin",
+    "status": "Available",
+    "injury": "Left Shoulder Contusion",
+    "date": "2026-11-23",
+    "prevStatus": "Questionable"
   }
 ]
