@@ -51697,5 +51697,12 @@
     "injury": "Left Thigh Contusion",
     "date": "2026-11-23",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Sergio De Larrea",
+    "status": "Out",
+    "injury": "Right Knee Sprain",
+    "date": "2026-10-27",
+    "prevStatus": "Out"
   }
 ]
