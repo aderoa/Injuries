@@ -51751,5 +51751,130 @@
     "date": "2026-08-26",
     "prevStatus": "Out",
     "eta": "6 months"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Out",
+    "injury": "Left Heel Contusion / Bone Bruise",
+    "date": "2026-11-14",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Donte DiVincenzo",
+    "status": "Out",
+    "injury": "Right Achilles Tendon Repair / Surgery",
+    "date": "2026-04-25",
+    "prevStatus": "Out",
+    "eta": "12 months"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Out",
+    "injury": "Left Left Adductor Tightness",
+    "date": "2026-11-22",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Chet Holmgren",
+    "status": "Out",
+    "injury": "Right Knee / Injury Recovery",
+    "date": "2026-10-26",
+    "prevStatus": "Out",
+    "eta": "8-10 weeks"
+  },
+  {
+    "player": "Paolo Banchero",
+    "status": "Out",
+    "injury": "Right High Ankle Sprain",
+    "date": "2026-10-24",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
+  },
+  {
+    "player": "Noah Penda",
+    "status": "Out",
+    "injury": "Right Partiallytorn hamstring",
+    "date": "2026-10-17",
+    "prevStatus": "Out",
+    "eta": "3-6 weeks"
+  },
+  {
+    "player": "Ariel Hukporti",
+    "status": "Out",
+    "injury": "Right Achilles Tendon Rupture / Tear",
+    "date": "2026-10-06",
+    "prevStatus": "Out",
+    "eta": "12 months"
+  },
+  {
+    "player": "Mark Williams",
+    "status": "Out",
+    "injury": "Left Shoulder Surgery",
+    "date": "2026-09-11",
+    "prevStatus": "Out",
+    "eta": "5-7 months"
+  },
+  {
+    "player": "Maxime Raynaud",
+    "status": "Out",
+    "injury": "Right Patella Subluxation",
+    "date": "2026-10-11",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
+  },
+  {
+    "player": "Ben Simmons",
+    "status": "Out",
+    "injury": "Right Achilles Tendon Repair / Surgery",
+    "date": "2026-10-20",
+    "prevStatus": "Out",
+    "eta": "9-12 months"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Out",
+    "injury": "Left Knee Strain",
+    "date": "2026-11-23",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "status": "Out",
+    "injury": "Right MCL Tear",
+    "date": "2026-10-27",
+    "prevStatus": "Out",
+    "eta": "6-8 weeks"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "status": "Out",
+    "injury": "Right Hand Fracture",
+    "date": "2026-11-10",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
+  },
+  {
+    "player": "Jusuf Nurkic",
+    "status": "Out",
+    "injury": "Right 2nd Plantar Plate Tear",
+    "date": "2026-10-07",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
+  },
+  {
+    "player": "Reece Beekman",
+    "status": "Out",
+    "injury": "Right AC Joint Sprain / Separation",
+    "date": "2026-11-02",
+    "prevStatus": "Out",
+    "eta": "3-4 weeks"
+  },
+  {
+    "player": "Jamir Watkins",
+    "status": "Out",
+    "injury": "Left ACL Repair / Surgery",
+    "date": "2026-07-30",
+    "prevStatus": "Out",
+    "eta": "9-12 months"
   }
 ]
