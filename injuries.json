@@ -52070,5 +52070,12 @@
     "injury": "Illness",
     "date": "2026-11-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Questionable",
+    "injury": "Bilateral Low Back Tightness",
+    "date": "2026-11-24",
+    "prevStatus": "Out"
   }
 ]
