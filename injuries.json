@@ -52210,5 +52210,12 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-11-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Left Game",
+    "injury": "Left Hamstring Tightness",
+    "date": "2026-11-25",
+    "prevStatus": "Left Game"
   }
 ]
