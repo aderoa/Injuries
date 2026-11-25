@@ -52112,5 +52112,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Out",
+    "injury": "Left Hip Soreness",
+    "date": "2026-11-25",
+    "prevStatus": "Doubtful"
   }
 ]
