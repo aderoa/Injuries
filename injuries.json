@@ -52161,5 +52161,12 @@
     "injury": "Right Groin Tendinitis",
     "date": "2026-11-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach LaVine",
+    "status": "Questionable",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-25",
+    "prevStatus": "Available"
   }
 ]
