@@ -52063,5 +52063,12 @@
     "injury": "Right Hip Impingement",
     "date": "2026-11-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Tre Mann",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-24",
+    "prevStatus": "Questionable"
   }
 ]
