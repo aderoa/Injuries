@@ -52147,5 +52147,12 @@
     "injury": "Right Knee Inflammation",
     "date": "2026-11-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-25",
+    "prevStatus": "Doubtful"
   }
 ]
