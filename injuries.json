@@ -52168,5 +52168,19 @@
     "injury": "Right Knee Soreness",
     "date": "2026-11-25",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Available",
+    "injury": "Right Groin Tendinitis",
+    "date": "2026-11-25",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Probable",
+    "injury": "Illness",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
   }
 ]
