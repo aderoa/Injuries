@@ -52182,5 +52182,26 @@
     "injury": "Illness",
     "date": "2026-11-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Sion James",
+    "status": "Available",
+    "injury": "Left Thigh Soreness",
+    "date": "2026-11-25",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Out",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach LaVine",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
   }
 ]
