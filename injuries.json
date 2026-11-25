@@ -52154,5 +52154,12 @@
     "injury": "Illness",
     "date": "2026-11-25",
     "prevStatus": "Doubtful"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Probable",
+    "injury": "Right Groin Tendinitis",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
   }
 ]
