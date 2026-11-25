@@ -52105,5 +52105,12 @@
     "injury": "Illness",
     "date": "2026-11-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Out",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
   }
 ]
