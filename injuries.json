@@ -52098,5 +52098,12 @@
     "injury": "Right Shin Contusion",
     "date": "2026-11-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "PJ Washington",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-24",
+    "prevStatus": "Questionable"
   }
 ]
