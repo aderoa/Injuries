@@ -52034,5 +52034,34 @@
     "injury": "Right Hamstring Injury Management",
     "date": "2026-11-24",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Out",
+    "injury": "Right Knee Soreness",
+    "date": "2026-11-24",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Yaxel Lendeborg",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-24",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Questionable",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-11-24",
+    "prevStatus": "Out",
+    "eta": "2-3 weeks"
+  },
+  {
+    "player": "Alex Caruso",
+    "status": "Available",
+    "injury": "Right Hip Impingement",
+    "date": "2026-11-24",
+    "prevStatus": "Out"
   }
 ]
