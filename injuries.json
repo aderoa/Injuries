@@ -52217,5 +52217,26 @@
     "injury": "Left Hamstring Tightness",
     "date": "2026-11-25",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Jalen Brunson",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-25",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Josh Hart",
+    "status": "Available",
+    "injury": "Right Shoulder Sprain",
+    "date": "2026-11-25",
+    "prevStatus": "Probable"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "status": "Available",
+    "injury": "Right Knee Inflammation",
+    "date": "2026-11-25",
+    "prevStatus": "Probable"
   }
 ]
