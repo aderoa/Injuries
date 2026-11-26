@@ -52289,5 +52289,13 @@
     "date": "2026-11-25",
     "prevStatus": "Available",
     "eta": "2-3 weeks"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Left Game",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-11-25",
+    "prevStatus": "Left Game",
+    "eta": "2-3 weeks"
   }
 ]
