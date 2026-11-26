@@ -52297,5 +52297,12 @@
     "date": "2026-11-25",
     "prevStatus": "Left Game",
     "eta": "2-3 weeks"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Left Game",
+    "injury": "Left Ankle Injury",
+    "date": "2026-11-25",
+    "prevStatus": "Available"
   }
 ]
