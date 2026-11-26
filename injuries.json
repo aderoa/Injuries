@@ -52252,5 +52252,13 @@
     "injury": "Left Hamstring Strain",
     "date": "2026-11-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Cameron Boozer",
+    "status": "Out",
+    "injury": "Right Medial Ankle Sprain",
+    "date": "2026-11-20",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
