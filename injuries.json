@@ -52281,5 +52281,13 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-25",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Left Game",
+    "injury": "Left Ankle Injury Management",
+    "date": "2026-11-25",
+    "prevStatus": "Available",
+    "eta": "2-3 weeks"
   }
 ]
