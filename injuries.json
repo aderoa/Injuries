@@ -52267,5 +52267,19 @@
     "injury": "Low Back Tightness",
     "date": "2026-11-24",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Out",
+    "injury": "Right Shin Contusion",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "status": "Available",
+    "injury": "Low Back Tightness",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
   }
 ]
