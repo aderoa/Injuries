@@ -52238,5 +52238,19 @@
     "injury": "Right Knee Inflammation",
     "date": "2026-11-25",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Yaxel Lendeborg",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Brandon Williams",
+    "status": "Available",
+    "injury": "Left Hamstring Strain",
+    "date": "2026-11-25",
+    "prevStatus": "Questionable"
   }
 ]
