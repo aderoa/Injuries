@@ -52743,5 +52743,12 @@
     "injury": "Right Abdominal Contusion",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Out",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
