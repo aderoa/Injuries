@@ -52596,5 +52596,12 @@
     "injury": "Right Shin Contusion",
     "date": "2026-11-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Out",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-27",
+    "prevStatus": "Doubtful"
   }
 ]
