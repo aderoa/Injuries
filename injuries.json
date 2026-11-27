@@ -52368,5 +52368,26 @@
     "injury": "Right Hip Soreness",
     "date": "2026-11-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "status": "Probable",
+    "injury": "Right Groin Tendinitis",
+    "date": "2026-11-26",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-26",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Questionable",
+    "injury": "Left Ankle Injury",
+    "date": "2026-11-26",
+    "prevStatus": "Left Game"
   }
 ]
