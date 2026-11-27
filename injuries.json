@@ -52582,5 +52582,12 @@
     "injury": "Left Ankle Tenosynovitis",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Out",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
