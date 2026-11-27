@@ -52403,5 +52403,19 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "OG Anunoby",
+    "status": "Doubtful",
+    "injury": "Left Calf Strain",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jordan Clarkson",
+    "status": "Questionable",
+    "injury": "Right Plantar Fasciitis",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
   }
 ]
