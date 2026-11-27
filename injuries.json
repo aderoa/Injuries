@@ -52519,5 +52519,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaylen Brown",
+    "status": "Out",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
   }
 ]
