@@ -52554,5 +52554,12 @@
     "injury": "Left Knee Injury Management",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Probable",
+    "injury": "Right Ankle Bruise",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
