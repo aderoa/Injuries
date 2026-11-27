@@ -52445,5 +52445,13 @@
     "injury": "Illness",
     "date": "2026-11-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Questionable",
+    "injury": "Left Hip External Rotator Strain",
+    "date": "2026-11-26",
+    "prevStatus": "Out",
+    "eta": "1-3 weeks"
   }
 ]
