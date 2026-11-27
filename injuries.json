@@ -52561,5 +52561,12 @@
     "injury": "Right Ankle Bruise",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Available",
+    "injury": "Left Heel Contusion / Bone Bruise",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
