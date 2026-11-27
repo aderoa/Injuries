@@ -52568,5 +52568,12 @@
     "injury": "Left Heel Contusion / Bone Bruise",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "status": "Available",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-27",
+    "prevStatus": "Probable"
   }
 ]
