@@ -52453,5 +52453,27 @@
     "date": "2026-11-26",
     "prevStatus": "Out",
     "eta": "1-3 weeks"
+  },
+  {
+    "player": "Alijah Martin",
+    "status": "Questionable",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-26",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Questionable",
+    "injury": "Left Knee Strain",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Jusuf Nurkic",
+    "status": "Questionable",
+    "injury": "Right 2nd Plantar Plate Tear",
+    "date": "2026-11-26",
+    "prevStatus": "Out",
+    "eta": "4-6 weeks"
   }
 ]
