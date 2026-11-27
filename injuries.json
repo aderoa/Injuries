@@ -52750,5 +52750,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Available",
+    "injury": "Right Ankle Bruise",
+    "date": "2026-11-27",
+    "prevStatus": "Probable"
   }
 ]
