@@ -52687,5 +52687,26 @@
     "injury": "Returnto Competition Reconditioning",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Questionable",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-27",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Probable",
+    "injury": "Left Hip Soreness",
+    "date": "2026-11-27",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Questionable",
+    "injury": "Right Patellofemoral Pain",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
