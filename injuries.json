@@ -52318,5 +52318,33 @@
     "injury": "Illness",
     "date": "2026-11-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-11-26",
+    "prevStatus": "Left Game"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Questionable",
+    "injury": "Left Hamstring Soreness",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "status": "Available",
+    "injury": "Right Foot Soreness",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Questionable",
+    "injury": "Right Hand Laceration",
+    "date": "2026-11-26",
+    "prevStatus": "Available"
   }
 ]
