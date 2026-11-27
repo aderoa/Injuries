@@ -52575,5 +52575,12 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-27",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Kasparas Jakucionis",
+    "status": "Out",
+    "injury": "Left Ankle Tenosynovitis",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
