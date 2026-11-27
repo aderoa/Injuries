@@ -52533,5 +52533,19 @@
     "injury": "Illness",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Noa Essengue",
+    "status": "Probable",
+    "injury": "Right Thumb Sprain",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jalen Smith",
+    "status": "Probable",
+    "injury": "Gastrointestinal Illness",
+    "date": "2026-11-27",
+    "prevStatus": "Out"
   }
 ]
