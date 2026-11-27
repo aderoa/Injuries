@@ -499,7 +499,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="admin-container">
       <div class="admin-header">
-        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.6</span></h1>
+        <h1>🏥 Injury Report — Admin <span style="font-size:11px;color:#888;font-weight:400;">v2.6.1</span></h1>
         <span class="subtitle" id="lastUpdate"></span>
       </div>
       <div class="admin-toolbar" id="toolbar">
@@ -534,7 +534,7 @@ if (isAdmin) {
   document.body.innerHTML = `
     <div class="report-container">
       <div class="admin-header">
-        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.6</span></h1>
+        <h1>🏥 NBA Injury Report <span style="font-size:11px;color:#888;font-weight:400;">v2.6.1</span></h1>
       </div>
       <div class="report-toolbar" id="reportToolbar">
         <button onclick="copyAll(this)">📋 Copy Full Report</button>
@@ -920,6 +920,7 @@ let pulseManual = {};      // player -> { s, t, at } or { pending:true, at }
 let pulseNow = {};         // player -> { s, t }: what the report says now
 let pulseApplying = false; // true while Accept is driving the row's handlers
 let pulseHeld = 0;         // suggestions held back by a hand edit, last build
+let pulseHeldNames = [];   // ... and whose they are, so the panel can say (v2.6.1)
 
 function pulseSaveManual() {
   const cutoff = Date.now() - PULSE_MANUAL_DAYS * 864e5;
@@ -960,6 +961,12 @@ function pulseDist(a, b) {
   return prev[n];
 }
 function pulseLast(name) { const k = pulseKey(name).split(' '); return k[k.length - 1] || ''; }
+// Two more ways one name is written two ways (v2.6.1). The report says
+// "Hansen Yang" where the roster says "Yang Hansen": the same words, the other
+// way round. And it says "T. J. McConnell" and "Da Ron Holmes" where the roster
+// says "TJ McConnell" and "DaRon Holmes": the same letters, spaced differently.
+function pulseWords(name) { return pulseKey(name).split(' ').sort().join(' '); }
+function pulseSquash(name) { return pulseKey(name).replace(/ /g, ''); }
 function pulseFlat(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
 function pulseEsc(s) { return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
@@ -976,15 +983,18 @@ function pulseISO(mdY) {
 }
 
 function pulseBuild() {
-  pulseList = []; pulseUnmatched = []; pulseHeld = 0;
+  pulseList = []; pulseUnmatched = []; pulseHeld = 0; pulseHeldNames = [];
   if (!pulseData || !Array.isArray(pulseData.teams)) return;
   pulseNow = {};
   const abbrOf = {};                       // roster team -> abbreviation
   for (const [t, a] of Object.entries(TEAM_ABBREV)) abbrOf[t] = a;
-  const byKey = {}, byTeamLast = {}, byTeam = {};
+  const byKey = {}, byTeamLast = {}, byTeam = {}, byWords = {}, bySquash = {};
   for (const [name, info] of Object.entries(roster)) {
     const k = pulseKey(name), ab = abbrOf[info.team] || info.team;
     byKey[k] = (k in byKey) ? null : name; // null = two players, ambiguous
+    const w = pulseWords(name), q = pulseSquash(name);
+    byWords[w] = (w in byWords) ? null : name;
+    bySquash[q] = (q in bySquash) ? null : name;
     const tl = ab + '|' + pulseLast(name);
     (byTeamLast[tl] = byTeamLast[tl] || []).push(name);
     (byTeam[ab] = byTeam[ab] || []).push(name);
@@ -998,6 +1008,10 @@ function pulseBuild() {
   const match = (name, abbr) => {
     const exact = byKey[pulseKey(name)];
     if (exact) return exact;
+    // the same letters spaced differently, then the same words in another
+    // order -- each only when exactly one roster player answers to it (v2.6.1)
+    const other = bySquash[pulseSquash(name)] || byWords[pulseWords(name)];
+    if (other) return other;
     let c = byTeamLast[abbr + '|' + pulseLast(name)] || [];
     if (c.length === 1) return c[0];       // one man of that surname on that team
     c = (byTeam[abbr] || []).filter(n => alike(n, name));
@@ -1037,6 +1051,7 @@ function pulseBuild() {
       const stale = t.not_yet_submitted ? 'from the previous report (today’s not yet submitted)' : '';
       if (cur.status !== st && hand && hand.s === st) {
         pulseHeld++;                         // edited by hand; the report has not moved
+        pulseHeldNames.push(name);
       } else if (cur.status === st && hand && hand.t === pulseFlat(clean)) {
         // same status, and the wording is his own choice: nothing to say
       } else if (cur.status !== st) {
@@ -1062,7 +1077,7 @@ function pulseBuild() {
       if (hand && hand.pending) hand = pulseManual[name] = { s: 'absent', t: '', at: hand.at };
       if (!cur.status || cur.status === 'Available') continue;
       if (!cur.date || cur.date >= reportDate) continue;       // same day or newer: leave it
-      if (hand && hand.s === 'absent') { pulseHeld++; continue; }   // set by hand while already off the report
+      if (hand && hand.s === 'absent') { pulseHeld++; pulseHeldNames.push(name); continue; }   // set by hand while already off the report
       // An unmatched report row on his team that could be him (same surname,
       // a near-spelling, or the same first name): never call him cleared.
       const first = pulseKey(name).split(' ')[0];
@@ -1131,7 +1146,8 @@ function pulseRender() {
     + '<a data-act="text">' + (pulseShowText ? 'hide' : 'show') + '</a>');
   if (hidden) foot.push(`${hidden} dismissed — <a data-act="restore">show again</a>`);
   if (pulseHeld) foot.push(pulseHeld + ' difference' + (pulseHeld === 1 ? '' : 's')
-    + ' left alone because you set the player by hand and the report has not changed since \u2014 '
+    + ' left alone because you set the player by hand and the report has not changed since ('
+    + pulseEsc(pulseHeldNames.join(', ')) + ') \u2014 '
     + '<a data-act="manual">show anyway</a>');
   if (pulseData) {
     const nys = (pulseData.teams || []).filter(t => t.not_yet_submitted).map(t => t.team_abbr);
