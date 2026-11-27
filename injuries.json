@@ -52389,5 +52389,19 @@
     "injury": "Left Ankle Injury",
     "date": "2026-11-26",
     "prevStatus": "Left Game"
+  },
+  {
+    "player": "Bennedict Mathurin",
+    "status": "Doubtful",
+    "injury": "Left Plantar Fasciitis",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Trendon Watford",
+    "status": "Probable",
+    "injury": "Right Ankle Sprain",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
   }
 ]
