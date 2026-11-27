@@ -52673,5 +52673,19 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Questionable",
+    "injury": "Back Soreness",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kevin Porter",
+    "status": "Out",
+    "injury": "Returnto Competition Reconditioning",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
