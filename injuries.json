@@ -52353,5 +52353,20 @@
     "injury": "Left Heel Contusion / Bone Bruise",
     "date": "2026-11-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Zach Edey",
+    "status": "Questionable",
+    "injury": "Left Ankle Soreness",
+    "date": "2026-11-26",
+    "prevStatus": "Left Game",
+    "eta": "2-3 weeks"
+  },
+  {
+    "player": "Isaiah Stewart",
+    "status": "Questionable",
+    "injury": "Right Hip Soreness",
+    "date": "2026-11-26",
+    "prevStatus": "Available"
   }
 ]
