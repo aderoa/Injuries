@@ -52346,5 +52346,12 @@
     "injury": "Right Hand Laceration",
     "date": "2026-11-26",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Austin Reaves",
+    "status": "Questionable",
+    "injury": "Left Heel Contusion / Bone Bruise",
+    "date": "2026-11-26",
+    "prevStatus": "Out"
   }
 ]
