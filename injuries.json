@@ -52512,5 +52512,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-26",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "LaMelo Ball",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-26",
+    "prevStatus": "Questionable"
   }
 ]
