@@ -52715,5 +52715,26 @@
     "injury": "Right Groin Tendinitis",
     "date": "2026-11-27",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Out",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kelly Oubre",
+    "status": "Available",
+    "injury": "Right Hand Laceration",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Alijah Martin",
+    "status": "Available",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
