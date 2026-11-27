@@ -52638,5 +52638,12 @@
     "injury": "Head Injury",
     "date": "2026-11-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Dean Wade",
+    "status": "Questionable",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
