@@ -52498,5 +52498,19 @@
     "date": "2026-11-16",
     "prevStatus": "Out",
     "eta": "5-6 weeks"
+  },
+  {
+    "player": "Larry Nance Jr",
+    "status": "Questionable",
+    "injury": "Right Ankle Bruise",
+    "date": "2026-11-26",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Questionable",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-26",
+    "prevStatus": "Questionable"
   }
 ]
