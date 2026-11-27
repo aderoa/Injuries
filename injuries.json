@@ -52483,5 +52483,20 @@
     "date": "2026-09-21",
     "prevStatus": "Out",
     "eta": "9-12 months"
+  },
+  {
+    "player": "Cade Cunningham",
+    "status": "Out",
+    "injury": "Right Knee Tendinopathy",
+    "date": "2026-11-24",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Out",
+    "injury": "Right Arthroscopy",
+    "date": "2026-11-16",
+    "prevStatus": "Out",
+    "eta": "5-6 weeks"
   }
 ]
