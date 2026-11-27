@@ -52547,5 +52547,12 @@
     "injury": "Gastrointestinal Illness",
     "date": "2026-11-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Questionable",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
