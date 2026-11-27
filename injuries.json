@@ -52526,5 +52526,12 @@
     "injury": "Left Hamstring Injury Management",
     "date": "2026-11-26",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Mitchell Robinson",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
