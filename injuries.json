@@ -52666,5 +52666,12 @@
     "injury": "",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Yang Hansen",
+    "status": "Questionable",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
