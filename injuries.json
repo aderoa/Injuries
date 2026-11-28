@@ -52757,5 +52757,12 @@
     "injury": "Right Ankle Bruise",
     "date": "2026-11-27",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Available",
+    "injury": "Illness",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
