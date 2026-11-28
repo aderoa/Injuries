@@ -52778,5 +52778,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Miles McBride",
+    "status": "Out",
+    "injury": "Left Athletic Pubalgia",
+    "date": "2026-11-27",
+    "prevStatus": "Out"
   }
 ]
