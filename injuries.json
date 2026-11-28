@@ -52800,5 +52800,12 @@
     "injury": "Right Hip Soreness",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Kyrie Irving",
+    "status": "Out",
+    "injury": "Left Knee Injury Management",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
