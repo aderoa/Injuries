@@ -52891,5 +52891,12 @@
     "injury": "Left Knee Soreness",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Out",
+    "injury": "Right Patellofemoral Pain",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
   }
 ]
