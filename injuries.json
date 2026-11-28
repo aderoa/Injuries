@@ -52905,5 +52905,12 @@
     "injury": "Concussion Protocol",
     "date": "2026-11-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Available",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-28",
+    "prevStatus": "Probable"
   }
 ]
