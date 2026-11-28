@@ -52764,5 +52764,12 @@
     "injury": "Illness",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Probable",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-27",
+    "prevStatus": "Probable"
   }
 ]
