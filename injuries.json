@@ -52947,5 +52947,12 @@
     "injury": "Right Shin Contusion",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Available",
+    "injury": "Left Hip External Rotator Strain",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
