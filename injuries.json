@@ -52835,5 +52835,26 @@
     "injury": "Right Ankle Sprain",
     "date": "2026-11-27",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Mo Bamba",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jaxson Hayes",
+    "status": "Available",
+    "injury": "Left Knee Strain",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Jusuf Nurkic",
+    "status": "Available",
+    "injury": "Right 2nd Plantar Plate Tear",
+    "date": "2026-11-27",
+    "prevStatus": "Questionable"
   }
 ]
