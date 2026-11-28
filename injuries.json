@@ -52785,5 +52785,13 @@
     "injury": "Left Athletic Pubalgia",
     "date": "2026-11-27",
     "prevStatus": "Out"
+  },
+  {
+    "player": "Taurean Prince",
+    "status": "Out",
+    "injury": "Right Knee Arthroscopy",
+    "date": "2026-11-16",
+    "prevStatus": "Out",
+    "eta": "5-6 weeks"
   }
 ]
