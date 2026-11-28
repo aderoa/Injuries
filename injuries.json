@@ -52884,5 +52884,12 @@
     "injury": "Left Ankle Sprain",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Gui Santos",
+    "status": "Left Game",
+    "injury": "Left Knee Soreness",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
