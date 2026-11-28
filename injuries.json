@@ -52856,5 +52856,19 @@
     "injury": "Right 2nd Plantar Plate Tear",
     "date": "2026-11-27",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Probable",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Ryan Kalkbrenner",
+    "status": "Available",
+    "injury": "Left Hip Soreness / Tightness",
+    "date": "2026-11-28",
+    "prevStatus": "Probable"
   }
 ]
