@@ -52982,5 +52982,12 @@
     "injury": "Illness",
     "date": "2026-11-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Black",
+    "status": "Out",
+    "injury": "Back Soreness",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
   }
 ]
