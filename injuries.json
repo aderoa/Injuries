@@ -52898,5 +52898,12 @@
     "injury": "Right Patellofemoral Pain",
     "date": "2026-11-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Grayson Allen",
+    "status": "Probable",
+    "injury": "Concussion Protocol",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
   }
 ]
