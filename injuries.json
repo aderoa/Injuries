@@ -52989,5 +52989,12 @@
     "injury": "Back Soreness",
     "date": "2026-11-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Anthony Davis",
+    "status": "Out",
+    "injury": "Illness",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
   }
 ]
