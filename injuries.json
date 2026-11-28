@@ -52975,5 +52975,12 @@
     "injury": "Left Foot Inflammation / Soreness",
     "date": "2026-11-28",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Anthony Davis",
+    "status": "Questionable",
+    "injury": "Illness",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
   }
 ]
