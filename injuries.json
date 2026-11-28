@@ -52940,5 +52940,12 @@
     "injury": "Left Hip External Rotator Strain",
     "date": "2026-11-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "injury": "Right Shin Contusion",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
