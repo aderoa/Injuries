@@ -52870,5 +52870,19 @@
     "injury": "Left Hip Soreness / Tightness",
     "date": "2026-11-28",
     "prevStatus": "Probable"
+  },
+  {
+    "player": "Josh Giddey",
+    "status": "Questionable",
+    "injury": "Right Ankle Soreness",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Steven Adams",
+    "status": "Out",
+    "injury": "Right Patellofemoral Pain",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
   }
 ]
