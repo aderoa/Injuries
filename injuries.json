@@ -52954,5 +52954,26 @@
     "injury": "Left Hip External Rotator Strain",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Tyler Herro",
+    "status": "Out",
+    "injury": "Right Foot Inflammation / Soreness",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Jaime Jaquez",
+    "status": "Out",
+    "injury": "Right Ankle Impingement",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "status": "Out",
+    "injury": "Left Foot Inflammation / Soreness",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
   }
 ]
