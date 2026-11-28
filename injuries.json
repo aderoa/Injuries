@@ -52884,5 +52884,61 @@
     "injury": "Right Patellofemoral Pain",
     "date": "2026-11-28",
     "prevStatus": "Questionable"
+  },
+  {
+    "player": "Quenton Jackson",
+    "status": "Out",
+    "injury": "Personal Reasons",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "TJ McConnell",
+    "status": "Questionable",
+    "injury": "Left Hamstring Injury Management",
+    "date": "2026-11-28",
+    "prevStatus": "Out"
+  },
+  {
+    "player": "Dominick Barlow",
+    "status": "Out",
+    "injury": "Low Back Injury Management",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Kentavious Caldwell-Pope",
+    "status": "Questionable",
+    "injury": "Left Hand Sprain",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "Joel Embiid",
+    "status": "Out",
+    "injury": "Right Foot Plantar Fascia Injury Management",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "LeBron James",
+    "status": "Out",
+    "injury": "Low Back / Sciatica Management",
+    "date": "2026-11-28",
+    "prevStatus": "Available"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "status": "Available",
+    "injury": "Right Shin Contusion",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
+  },
+  {
+    "player": "Dylan Harper",
+    "status": "Available",
+    "injury": "Left Hip External Rotator Strain",
+    "date": "2026-11-28",
+    "prevStatus": "Questionable"
   }
 ]
