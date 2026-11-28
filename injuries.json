@@ -52877,5 +52877,12 @@
     "injury": "Right Quadriceps Contusion",
     "date": "2026-11-27",
     "prevStatus": "Available"
+  },
+  {
+    "player": "Caleb Martin",
+    "status": "Left Game",
+    "injury": "Left Ankle Sprain",
+    "date": "2026-11-27",
+    "prevStatus": "Available"
   }
 ]
